@@ -1,0 +1,87 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: pb8ud8/B5pJA3zh6A3tfrzSM7vUj0
+ 4Ao9ogiuSaNN8k=
+SHA-256-Digest-Manifest: ToatPKUJdVH13piy7YyYUytJeEJL+8J8DLFbOGst9o0=
+Created-By: 1.8.0_162 (Oracle Corporation)
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.fasterxml.jackson.j
+ axrs.jackson-jaxrs-base/pom.xml
+SHA-256-Digest: O/L7SfewHgH4eW3FKS0XKDfj1EE98M04bYi7VJnv7cI=
+
+Name: com/fasterxml/jackson/jaxrs/base/nocontent/JaxRS2NoContentExcept
+ ionSupplier.class
+SHA-256-Digest: wgFqIRcQM2NyeGfVonKINjud1YlSO7XvkT3JwK4QbkI=
+
+Name: com/fasterxml/jackson/jaxrs/cfg/ObjectReaderModifier.class
+SHA-256-Digest: Rd/LPPze6VM73BPIqVieFSFpZaYlBowLK82p5WkY6bs=
+
+Name: com/fasterxml/jackson/jaxrs/base/JsonParseExceptionMapper.class
+SHA-256-Digest: fFbE3BUG3OBsaE5aNyRu8uTv4wWv3xM3MaIVYAXiNRQ=
+
+Name: com/fasterxml/jackson/jaxrs/util/EndpointAsBeanProperty.class
+SHA-256-Digest: TWT046slmZ3PGhbf+BTscgOoKAZdyUovGbjA2AEIXYQ=
+
+Name: com/fasterxml/jackson/jaxrs/cfg/ObjectWriterInjector.class
+SHA-256-Digest: XB/nCLWOtfqj+fMWUQTl32HYfK0+WOOpvTz6GuzTu2c=
+
+Name: com/fasterxml/jackson/jaxrs/cfg/AnnotationBundleKey.class
+SHA-256-Digest: BG1jbsyambDeNmZKGwR2D4DDKxSEHnqQNoC4NwwQ8vY=
+
+Name: com/fasterxml/jackson/jaxrs/base/nocontent/JaxRS1NoContentExcept
+ ionSupplier.class
+SHA-256-Digest: 33D7M4hO5LDHQdeEmn1lC6mV6Cu5DAm3A6tSwMrZ2r8=
+
+Name: com/fasterxml/jackson/jaxrs/base/ProviderBase.class
+SHA-256-Digest: zdSiMlmRRqJ9mJQD7ipG/f0Bjf9endVhPjpu9KhIe8U=
+
+Name: about.html
+SHA-256-Digest: 7Ox06pKP5ZcJsBl3kZ+5ECtqRGBmjhz4KhS6mFaL5Zk=
+
+Name: META-INF/LICENSE
+SHA-256-Digest: d9F7uy/Aqin2klP6pynl2jX8gubGQEjNZ2TLxGMOd3c=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.fasterxml.jackson.j
+ axrs.jackson-jaxrs-base/pom.properties
+SHA-256-Digest: KPVznlVMkwpGWXwY8+WYNt2VRlgTZNoxZgA6FPmRGUs=
+
+Name: about_files/THE_APACHE_SOFTWARE_LICENSE__VERSION_2.0.txt
+SHA-256-Digest: 70sq4AoiKPmbnFMVhYi1e9oPczCS6WKy+maEqwyunWY=
+
+Name: com/fasterxml/jackson/jaxrs/base/NoContentExceptionSupplier.clas
+ s
+SHA-256-Digest: nyU5QRY79DmbsrHausKdySqwFjAr1Otevhp391gHocg=
+
+Name: com/fasterxml/jackson/jaxrs/annotation/JacksonFeatures.class
+SHA-256-Digest: MWKFh/Wcvz9melmmFteC2NT5FnaLyGe5OV50ZwHZS7g=
+
+Name: com/fasterxml/jackson/jaxrs/cfg/MapperConfiguratorBase.class
+SHA-256-Digest: FuHWW5hUjloKPdUntnMzxxu13VunQZElFwaHC5mqum0=
+
+Name: com/fasterxml/jackson/jaxrs/cfg/ObjectReaderInjector.class
+SHA-256-Digest: 77ejxerkOuT/vtiinCX2jUUwiTnwZpphBtKYB2hIHbE=
+
+Name: com/fasterxml/jackson/jaxrs/cfg/JaxRSFeature.class
+SHA-256-Digest: Ey3+ZFBrWJLwuo130z3T88cabnOeq5Uo7MAoM7L/wwc=
+
+Name: com/fasterxml/jackson/jaxrs/cfg/Annotations.class
+SHA-256-Digest: u7g2DmltYX+lkJKqFdTt+f0rpWQVs1/kuXBtlENJKMI=
+
+Name: com/fasterxml/jackson/jaxrs/base/JsonMappingExceptionMapper.clas
+ s
+SHA-256-Digest: QM6+MYDTimSuy7xUO52xzqbJiCD56IxalyTclGrWpAc=
+
+Name: com/fasterxml/jackson/jaxrs/cfg/EndpointConfigBase.class
+SHA-256-Digest: m6rVLsuUhPxyl+CTCRWHE8eN2aOuhlBhj4XcpDhQPfI=
+
+Name: com/fasterxml/jackson/jaxrs/util/ClassKey.class
+SHA-256-Digest: plejkaM89MNL2DB5JYx1IiS/WE4uwpmKRiUFHPfzbwM=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: WgnnExW+SKMjNakudTuPGqwilKGNl4bUcY7lonO8br4=
+
+Name: com/fasterxml/jackson/jaxrs/cfg/ObjectWriterModifier.class
+SHA-256-Digest: pteB6ADdfQbDIpBiAFklMp/GCHYP3Ge4IZbgy9SH3nw=
+
+Name: com/fasterxml/jackson/jaxrs/util/LRUMap.class
+SHA-256-Digest: X7Y5J74Hx8Gw7BEYs+fF5E9XAQTyiXqv+9+t78hfDwU=
+

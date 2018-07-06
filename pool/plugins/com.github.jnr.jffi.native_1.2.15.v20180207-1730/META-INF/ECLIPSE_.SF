@@ -1,0 +1,68 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: TJOp36KyC2UpxDztA8qFB34/szVzJ
+ OioiTpBv9WfzyY=
+SHA-256-Digest-Manifest: K1Jy19V6JXbEdatpIZwaOYudjWmxBQfAISukB35O3s8=
+Created-By: 1.8.0_162 (Oracle Corporation)
+
+Name: about.html
+SHA-256-Digest: 0kj+26xC+ge9EqV26pZfS+2S7B1R2nfFXXNWePZTCHo=
+
+Name: jni/i386-SunOS/libjffi-1.2.so
+SHA-256-Digest: v6AOJwVd0TvVsJAEjg+IHiQDMMxTD8b4MRWDcAmS50c=
+
+Name: about_files/THE_APACHE_SOFTWARE_LICENSE__VERSION_2.0.txt
+SHA-256-Digest: 70sq4AoiKPmbnFMVhYi1e9oPczCS6WKy+maEqwyunWY=
+
+Name: jni/Darwin/libjffi-1.2.jnilib
+SHA-256-Digest: N8h+qqSAz3uYybPrGEMK7bzsYX3b9P/ys+616rQ6yDg=
+
+Name: jni/x86_64-Windows/jffi-1.2.dll
+SHA-256-Digest: gF07C0hAkIIxYI/skJMDward++B8z/ho0raP+fgCIIs=
+
+Name: jni/ppc64-Linux/libjffi-1.2.so
+SHA-256-Digest: IHdaKqsFytp93EQzuaS+hpp3L+zp9cLCLB4m9Thllig=
+
+Name: jni/ppc-AIX/libjffi-1.2.a
+SHA-256-Digest: c0QfQMg+1XJhuEifKNp7avrx9J9pyye6SSfFwH3BNoQ=
+
+Name: jni/sparcv9-SunOS/libjffi-1.2.so
+SHA-256-Digest: 9sv7z/PA+Y1zci4sT0wiWCmchEMJ90eVEl5EnbHsTtA=
+
+Name: jni/i386-Linux/libjffi-1.2.so
+SHA-256-Digest: iMfJgAYWVZMWVJJ93WtzvDgeoYjn9o+bFYgzaN97mjA=
+
+Name: jni/i386-Windows/jffi-1.2.dll
+SHA-256-Digest: VYcRxpEGrQ3/gQA/v1Y8Sgy1PTRqj8Jr1oQ27q198w4=
+
+Name: jni/x86_64-FreeBSD/libjffi-1.2.so
+SHA-256-Digest: uZgy2+yM8abeKcaSp5K2x+RM+qN02xEOK/ZO5l37sgk=
+
+Name: jni/x86_64-OpenBSD/libjffi-1.2.so
+SHA-256-Digest: dP4fla++dIrDFC/JX3L7gnU97GFSh32RXEe9ZdhIskM=
+
+Name: jni/arm-Linux/libjffi-1.2.so
+SHA-256-Digest: 1dHjGikq52V4bUyIZbHpOZgNxG3R8/o5837zVtwMKr4=
+
+Name: jni/x86_64-SunOS/libjffi-1.2.so
+SHA-256-Digest: GZkF1IpIAsRn5As/B1v8haEuJ5g15gkaje2WchYaBrQ=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.github.jnr.jffi.nat
+ ive/pom.xml
+SHA-256-Digest: 9GCLmIvZ2COfOv5O6WZPoZxY44FUcBaI88rrfJ7Whp4=
+
+Name: jni/x86_64-Linux/libjffi-1.2.so
+SHA-256-Digest: a3tN5PqxmrOPQZCGh89o4QFzsHo+HHZJyIYi3J/4K58=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: YwLebvJR3XKH8hmXsrofLJwBG0wcOMTxYNdZ3Le4/qg=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.github.jnr.jffi.nat
+ ive/pom.properties
+SHA-256-Digest: RqU2Vj0hDFTBfVtOFtptYMDXd7gOEWKDJOF6J7IkgQU=
+
+Name: jni/aarch64-Linux/libjffi-1.2.so
+SHA-256-Digest: r2WEiNEe4oVVFeBtu64JlZkY2b9PCVq3H8FlbgaEmOU=
+
+Name: jni/ppc64le-Linux/libjffi-1.2.so
+SHA-256-Digest: JpYJ+g0cTtSR78ErK5Pb1f7CkInTKVkn/B39MaGsepU=
+

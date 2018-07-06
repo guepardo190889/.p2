@@ -1,0 +1,114 @@
+Manifest-Version: 1.0
+Bundle-Description: Native I/O access for java
+Automatic-Module-Name: com.github.jnr.enxio
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: com.github.jnr.enxio
+Archiver-Version: Plexus Archiver
+Built-By: genie.orbit
+Require-Bundle: com.github.jnr.ffi,com.github.jnr.jffi
+Bundle-ManifestVersion: 2
+Bundle-Vendor: %bundleVendor
+Import-Package: jnr.constants.platform;version="0.9.8",jnr.ffi;version
+ ="2.1.4",jnr.ffi.annotations;version="2.1.4",jnr.ffi.provider.jffi;ve
+ rsion="2.1.4",jnr.ffi.types;version="2.1.4"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.5))"
+Originally-Created-By: Apache Maven Bundle Plugin
+Export-Package: jnr.enxio.channels;version="0.16.0";uses:="jnr.constan
+ ts.platform,jnr.ffi,jnr.ffi.annotations,jnr.ffi.types"
+Bundle-Name: %bundleName
+Bundle-Version: 0.16.0.v20180207-1730
+Created-By: Eclipse Bundle Recipe Maven Plug-in
+Build-Jdk: 1.8.0_162
+
+Name: jnr/enxio/channels/Native$LibC.class
+SHA-256-Digest: s49KRhD+iylS8Isoy124LXNuu6Rem4LCDL6eEM4py2s=
+
+Name: jnr/enxio/channels/NativeDeviceChannel$1.class
+SHA-256-Digest: Y5UTjqan/tZ3UhLOTP+RjohUjGEUCmuphfzs8HDNQTY=
+
+Name: jnr/enxio/channels/KQSelector.class
+SHA-256-Digest: 7EPQBZP95EnHhOlom7YhcfuJA2pFjyCIQPJwaGZAw78=
+
+Name: jnr/enxio/channels/KQSelector$EventLayout.class
+SHA-256-Digest: 8RuVq75U02lBzid/8aIqvygGYbXJcMUENXuPm1lFtoQ=
+
+Name: jnr/enxio/channels/Native$SingletonHolder.class
+SHA-256-Digest: V5cSMU7ew/RDQqqmNuxapQ02PkMaKKSrR6YMXafa+UI=
+
+Name: jnr/enxio/channels/Native$Timespec.class
+SHA-256-Digest: xStzJ6KbdBBtxISgLUbIgYzoB5GTA9rtFYfXiNOxC08=
+
+Name: jnr/enxio/channels/KQSelector$EventIO.class
+SHA-256-Digest: CXgTIhCRXinFf8UoiRAaZoNFkBkitHyHVqUmqKLzx5s=
+
+Name: jnr/enxio/channels/AbstractNativeSocketChannel.class
+SHA-256-Digest: CBEHGQ1Qb0DxhiSKkQw26yZTwhonIvLUEV5qwumRdmU=
+
+Name: jnr/enxio/channels/NativeSocketChannel.class
+SHA-256-Digest: OYOGSO2rupjanvhyKH0nJ8GWdql7S9jLqUgQMi+Mbyg=
+
+Name: jnr/enxio/channels/Native.class
+SHA-256-Digest: VWtPd8UjJf3sbihYb4iFZB7Z1/WQvKXGRCAgbnS8KHU=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.github.jnr.enxio/po
+ m.xml
+SHA-256-Digest: 99iEaH6nvA9enG1JpPDhfYIYIHCTgVIq1oaEWd/pnfQ=
+
+Name: jnr/enxio/channels/NativeException.class
+SHA-256-Digest: 5RbUPcHlCfJrzYtFXBLQUXSxEVpCaOaEZkGRjbuKi3U=
+
+Name: jnr/enxio/channels/KQSelector$1.class
+SHA-256-Digest: TARtidJy0yKmTaFrA8bk413V8L4sRui5viseVtliQis=
+
+Name: about.html
+SHA-256-Digest: Qy0JSus3yOQcWMuWzaArcP5Yhi5TKaREHqX73UQfgTo=
+
+Name: jnr/enxio/channels/NativeSocketChannel$1.class
+SHA-256-Digest: ncI1BMnc6+DPBDNLdUa0X2PnhYz/WAdgRKQ3vQzFxH0=
+
+Name: about_files/THE_APACHE_SOFTWARE_LICENSE__VERSION_2.0.txt
+SHA-256-Digest: z8d0m5b2O9McPEK1xHG/dWgUBT6EfBDz6wA0F7xSPTA=
+
+Name: jnr/enxio/channels/NativeSelectorProvider.class
+SHA-256-Digest: 5mohdA30+Qt5Y3YluruiQu+LDGn4Heg+LYox8Rxhgs4=
+
+Name: jnr/enxio/channels/KQSelectionKey.class
+SHA-256-Digest: 3Q0UTdxyOJ8iUFdnVeD9Ni+fW6HAXS4WNIKmXYCmHLs=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.github.jnr.enxio/po
+ m.properties
+SHA-256-Digest: gMJugoH6HoyZB2pe/gfa0Lmg5h5PRZOVqmczhcrd3Zw=
+
+Name: jnr/enxio/channels/NativeServerSocketChannel.class
+SHA-256-Digest: 3etrzATmz/Yg2sbrZyPus3mkNfhjp7wSON+M0O//oXk=
+
+Name: jnr/enxio/channels/KQSelector$Descriptor.class
+SHA-256-Digest: rG0DAND3XPn5C6jhddee7QKJGwRaLnDHK0AsLzm4D+Q=
+
+Name: jnr/enxio/channels/Common.class
+SHA-256-Digest: 3l7uh2BO7fQOYD6Qv9DIxBy5gcBrLaV/IDEbe1OOQTA=
+
+Name: jnr/enxio/channels/PollSelectionKey.class
+SHA-256-Digest: iNtgAjKu4MbYUNCqUZ08vfwzdevy5hu9hhhmnL9RL9s=
+
+Name: jnr/enxio/channels/AbstractNativeDatagramChannel.class
+SHA-256-Digest: 88OpO5CY12eaxwJFNfkx5Q4bYQ5hze9R7U3deS/eN0o=
+
+Name: jnr/enxio/channels/PollSelector.class
+SHA-256-Digest: A3u/KRXHhR8HeGGq6FFDcRvcWyPSHno5H8bNBMbcJsE=
+
+Name: jnr/enxio/channels/NativeSelectableChannel.class
+SHA-256-Digest: 6irGkLXUDc6+4G3ZqkwvVzhBYfxumuLb3VMEAf4A6q4=
+
+Name: jnr/enxio/channels/Common$1.class
+SHA-256-Digest: ETzM8vFEew08IfqqxuV16KKhM/N79Z/+REmzsuU6YiA=
+
+Name: jnr/enxio/channels/NativeSelectorProvider$SingletonHolder.class
+SHA-256-Digest: J+RPGCBmOGo2vRLU9wV8EELve6p7YUR385gk2nMhM7A=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: whWIIZbb7YU/BmKzSm3miyv6Of45DAflNE9/3yy1qqM=
+
+Name: jnr/enxio/channels/NativeDeviceChannel.class
+SHA-256-Digest: sxccti7RUD5XjrEMA710lcQ0pr9XYlmbLZqRzN8ugPM=
+

@@ -1,0 +1,247 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.apache.wsil4j
+Bundle-SymbolicName: org.apache.wsil4j
+Archiver-Version: Plexus Archiver
+Built-By: genie.orbit
+Require-Bundle: org.uddi4j;bundle-version="[2.0.4,3.0.0)",org.apache.a
+ xis;bundle-version="[1.3.0,2.0.0)",javax.wsdl;bundle-version="[1.4.0,
+ 1.7.0)"
+Bnd-LastModified: 1528295179528
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: J2SE-1.4
+Eclipse-BuddyPolicy: registered
+Bundle-Vendor: %bundleVendor
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.2))"
+Tool: Bnd-3.2.0.201605172007
+Export-Package: org.apache.wsil.util;uses:="javax.wsdl.xml,javax.wsdl.
+ factory,javax.wsdl";version="1.0.0",org.apache.wsil;version="1.0.0",o
+ rg.apache.wsil.client;version="1.0.0",org.apache.wsil.extension;versi
+ on="1.0.0",org.apache.wsil.extension.uddi;version="1.0.0",org.apache.
+ wsil.extension.wsdl;version="1.0.0",org.apache.wsil.impl;version="1.0
+ .0",org.apache.wsil.impl.extension;version="1.0.0",org.apache.wsil.im
+ pl.extension.uddi;version="1.0.0",org.apache.wsil.impl.extension.wsdl
+ ;version="1.0.0",org.apache.wsil.xml;version="1.0.0"
+Bundle-Name: %bundleName
+Bundle-Version: 1.0.0.v20180522-1857
+Created-By: Eclipse Bundle Recipe Maven Plug-in
+Build-Jdk: 1.8.0_162
+
+Name: org/apache/wsil/impl/extension/wsdl/WSDLExtensionBuilder.class
+SHA-256-Digest: zIGx4peKIRdg8Kv8J14VWFjZXWGRQTwq/jDYa+ONt1k=
+
+Name: org/apache/wsil/impl/extension/uddi/UDDIExtensionBuilder.class
+SHA-256-Digest: f62B9tU7XUvYlXMeS14CzM83gRNfAMtoqbN/st1Jwbg=
+
+Name: org/apache/wsil/util/FileFilterImpl.class
+SHA-256-Digest: GRvPLu8DbAq5s2BXGZ5jcmHYLzpmCPsWfOsxv/W4vMk=
+
+Name: org/apache/wsil/Inspection.class
+SHA-256-Digest: S+dMIIxS36OqFC1Dh/dGJzjnNw7bVZgZTIQLq65NTOo=
+
+Name: org/apache/wsil/util/FileListBuilder.class
+SHA-256-Digest: 2gPwIDuvLfH7kCCPutZ7VpUy2MRu8ejpJno7KprK5Pg=
+
+Name: about_files/README.htm
+SHA-256-Digest: flssKXzwAULavSzadmtu0cpL+3n/lzf3JygUFBNa3TE=
+
+Name: org/apache/wsil/util/WSILDocBuilder.class
+SHA-256-Digest: KGpqZE5OoF9v9JMzEC6smwu/ly5CN9gQbRtAIzTZMq0=
+
+Name: org/apache/wsil/extension/ExtensionWriter.class
+SHA-256-Digest: WMPFdKZ10F/IreM4DhZuHo1cdKBO2SoguXvG1ZL83a4=
+
+Name: org/apache/wsil/impl/WSILDocumentFactoryImpl.class
+SHA-256-Digest: VDa91zjv7qFg9o+gbMYD73SFD/oZQ1l+wQbV4sVU87o=
+
+Name: org/apache/wsil/WSILDocumentFactory.class
+SHA-256-Digest: ffmd+jRMhSqh1+V2UbgwBOn6Q4zR/PGHCm3irOvP+bs=
+
+Name: org/apache/wsil/extension/uddi/UDDIConstants.class
+SHA-256-Digest: 8cbjqa9BzpPxtg/74/MaJU6l5WK6C+QEFoWGxmP92R8=
+
+Name: org/apache/wsil/impl/extension/uddi/ServiceDescriptionImpl.class
+SHA-256-Digest: OshLjoq53YfNizoXge6i2k7DSTPemnXHPJlFA5F6LPA=
+
+Name: org/apache/wsil/impl/extension/ExtensionRegistryImpl.class
+SHA-256-Digest: gCC/mAFlM0kv/25dPtY7KwvulBkAG/73IAB5R68+4jU=
+
+Name: about_files/LICENSE
+SHA-256-Digest: YyByxUW8SlQhltK6rDaEKhCPOcmRxLay0PsB/WRbk2U=
+
+Name: org/apache/wsil/impl/AbstractImpl.class
+SHA-256-Digest: 0ywUB+g6JsfjGk5fL/G0O6HYKtO0qTR8ffb0RUuUpuw=
+
+Name: org/apache/wsil/WSILElement.class
+SHA-256-Digest: 2viaZMKjvm/B4MCyZz19jxX8Xipo2prcvKtUWpVGRyc=
+
+Name: org/apache/wsil/client/WSILProxy.class
+SHA-256-Digest: MhLKR69TnmsYk+fAlvHN/c45+Lg6NHQZXCQcQxuWDeQ=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.apache.wsil4j/pom.p
+ roperties
+SHA-256-Digest: cF8awyILexPA0RO+zbwzUKt4j3ovMTTdQqLSvaXIKXI=
+
+Name: org/apache/wsil/impl/extension/uddi/UDDIExtensionReader.class
+SHA-256-Digest: VCCa98PpIMtQWA5oriMEgGtlzsgbrnWmQOLgpuLL2v8=
+
+Name: org/apache/wsil/util/WSILProperties.class
+SHA-256-Digest: a/ndHFjQBll9DROD+BoPGRe4GsjqzcTCeg28r/E+rEY=
+
+Name: org/apache/wsil/WSILException.class
+SHA-256-Digest: fQj/RZ9l5vQjzBtOM86R9HcUrw7H/HuHLmK4VFz9Vu4=
+
+Name: org/apache/wsil/extension/wsdl/Reference.class
+SHA-256-Digest: okSshnn23ibsYFqEwrzDY//Qq+KGkDqeaRAv0hVa0dw=
+
+Name: org/apache/wsil/impl/extension/wsdl/WSDLExtensionReader.class
+SHA-256-Digest: tmp7AvQeIO/zFVTjCgEUudjfp23WNTRUIPZA9WAFQac=
+
+Name: org/apache/wsil/util/Util.class
+SHA-256-Digest: A7zJdpkd+xJiAptaQ2TZaJXSIqGb1pLZ2iIy7KIl+7A=
+
+Name: org/apache/wsil/impl/extension/uddi/BusinessDescriptionImpl.clas
+ s
+SHA-256-Digest: QURE/tn9EVK1idGYxrDDvNJGnvmbSl0UnKGhL7o5zGY=
+
+Name: org/apache/wsil/impl/ServiceImpl.class
+SHA-256-Digest: ioKXQXTobA8mklR4lI8KxFON4snMgJbV1gtqJ+a1Ec8=
+
+Name: org/apache/wsil/ServiceName.class
+SHA-256-Digest: Y6agkZYzdExokfTMnNnYIZJhe3zf+xZR1ws+f4n/AAQ=
+
+Name: org/apache/wsil/extension/ExtensionReader.class
+SHA-256-Digest: Zdmm7zRHxnFsJw8FNaxQgJNPxFxUltwWf9NE84VCrHY=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: el5tZtkeY2hy9cDGgw+cDs2IWPlSLfVCUfCBbbjA/+M=
+
+Name: org/apache/wsil/util/WSDLDocumentIdentifier.class
+SHA-256-Digest: sn7If9qtepHl5xnj2X5FbdOOnyfRDYtxlQbMYMncCk4=
+
+Name: org/apache/wsil/impl/WSILDocumentImpl.class
+SHA-256-Digest: BNfr9fL9yfaaRvOkwvbimAsxj6CT1ech2sRTjRIaQ7w=
+
+Name: org/apache/wsil/extension/ExtensionElement.class
+SHA-256-Digest: i73ASHlXr0SKOFuz7wNYCUfY2TcSYnCKVC0dxj8yJGk=
+
+Name: org/apache/wsil/Description.class
+SHA-256-Digest: 66veXeLj9HEO1+iutf2TPCC2103RfiMIl5IiceuDN2w=
+
+Name: org/apache/wsil/extension/ExtensionBuilder.class
+SHA-256-Digest: EAIFlw81jsDFDIqATwQvZDJYcQHxOFA4veah195INhU=
+
+Name: org/apache/wsil/impl/ServiceNameImpl.class
+SHA-256-Digest: /HKwcQelFwVQzepqwKO6vL+ydZIikoV9qsRngMoxEyI=
+
+Name: org/apache/wsil/impl/DescriptionImpl.class
+SHA-256-Digest: peDR6b5eJ7g55Uegyrb6MmGFmvBBDTOKXfRQN4Pcv6Y=
+
+Name: org/apache/wsil/impl/ServiceReferenceElement.class
+SHA-256-Digest: 79ZyenCe/SCTw9+4Z/QWrZoYxUVLa7TEHsPdvBVBTIA=
+
+Name: org/apache/wsil/impl/InspectionImpl.class
+SHA-256-Digest: YkSmaPq2GN0fXSGgJ2SJHN8jjDVjyP9AUODEjfxdze8=
+
+Name: org/apache/wsil/Abstract.class
+SHA-256-Digest: fYb+3OlWCw1JjPqRTlj/DYwGP3txdw4sKTJH0ErQH4E=
+
+Name: org/apache/wsil/DocumentReader.class
+SHA-256-Digest: i8PvP6UlXhJ0nXhfAov9i76D99Wt7dFqH9ORRBlp70A=
+
+Name: org/apache/wsil/impl/WSILElementWithTextImpl.class
+SHA-256-Digest: xliN9OcAirM56J4eyWUWmVDSYyJoCgTwUcXFaHUrheE=
+
+Name: org/apache/wsil/impl/extension/ExtensionElementImpl.class
+SHA-256-Digest: 0eFQRfTflj/u2oUeiZNEUdXInu3xXDEYrWpvBAjMOFQ=
+
+Name: org/apache/wsil/impl/extension/wsdl/ReferencedServiceImpl.class
+SHA-256-Digest: vt+enn7uD8rAddcRRFN6NKULMtz6YeL6Qqd1GO80KPA=
+
+Name: org/apache/wsil/impl/LinkImpl.class
+SHA-256-Digest: RmkJ65qMDQgiGUK79JPoxMpfDPp9bWyJfoOvZyv7VJU=
+
+Name: org/apache/wsil/WSILDocument.class
+SHA-256-Digest: 4BeuEi1+vh/GD5yMuwBDfAlsUVhl9QZPALNn3C5oxEg=
+
+Name: org/apache/wsil/extension/ExtensionRegistry.class
+SHA-256-Digest: fN+3do3R96bdYEPyFw9ONtoFPDi7lbjLoS6F51+rOqY=
+
+Name: org/apache/wsil/impl/extension/wsdl/ImplementedBindingImpl.class
+SHA-256-Digest: MN3dNAu4lew4SSdGotDr6zF+6kywED+E9fOiFUrtve4=
+
+Name: org/apache/wsil/extension/uddi/BusinessDescription.class
+SHA-256-Digest: Qrc+eTqkgv8kcaF+Jn01lOL9Pl+g4LrzZFZTot0D8xc=
+
+Name: org/apache/wsil/Base64Converter.class
+SHA-256-Digest: 7SePYOULjPCJsLsEvJ4//JZUCQQbwAuwxjndN1yN/5k=
+
+Name: org/apache/wsil/xml/XMLWriter.class
+SHA-256-Digest: LhstWyJYVB6SShrYhldoHxBEgKD3p0ieVQFY2pRvn5M=
+
+Name: org/apache/wsil/extension/wsdl/ImplementedBinding.class
+SHA-256-Digest: GlTToyV0uiuF4SUJ7NckmtlB+At4rVNk17MyMe8jHnY=
+
+Name: org/apache/wsil/extension/wsdl/WSDLConstants.class
+SHA-256-Digest: 5SfrfbmCOKIwA0kDXojYqSOO5eZzaaLHoC2GldAWg7Q=
+
+Name: org/apache/wsil/Service.class
+SHA-256-Digest: DmiD/fI0PdtSfLTJXmeyvEBHStwvnHLEwKvaGtsorZ8=
+
+Name: org/apache/wsil/Link.class
+SHA-256-Digest: M0YyVKP7qUpkVcCz3BfcqgvA6yaKfy7QQxLjHxJQwRE=
+
+Name: org/apache/wsil/DocumentWriter.class
+SHA-256-Digest: Jkb5yIm8dMYlt+R4Cnnp9S8gwJjg+CZyQ96SSKsjltY=
+
+Name: org/apache/wsil/QName.class
+SHA-256-Digest: 5+vVwRdqXCoFNaUfl7J4rhHaBfgTu5Bo7ikoGGdOsDs=
+
+Name: org/apache/wsil/WSILConstants.class
+SHA-256-Digest: TlLiQ0FpsKVI0M7pVKNKykfUsWt55Xvn0ntdNnL6Ctc=
+
+Name: org/apache/wsil/WSILElementWithText.class
+SHA-256-Digest: otii5J7GMt49qVHNe9PO3+gYP2dDxaQRFKiJA9Yies0=
+
+Name: about.html
+SHA-256-Digest: PRztHRcvqSIODwiuhiEOF6q+qQBtGC+QkgL87KaeifA=
+
+Name: org/apache/wsil/impl/extension/uddi/UDDIExtensionWriter.class
+SHA-256-Digest: SdSMi7g4HXAAHTh5g3zO8rF6AWzF0fG7asEVFD+4jwM=
+
+Name: org/apache/wsil/impl/extension/wsdl/WSDLExtensionWriter.class
+SHA-256-Digest: QY2nWdx7+uKe47D5M3szemYHXoI8ZiZmRnNcQL7V/Vc=
+
+Name: org/apache/wsil/impl/WSILElementWithAbstractImpl.class
+SHA-256-Digest: l9C4haHk2D2BE5rQpQfJTGzVpdug63hjQ1t1x9NknH4=
+
+Name: org/apache/wsil/extension/uddi/ServiceDescription.class
+SHA-256-Digest: EyGwycA9Ghnzm6gxfougONptZc+5gRM/oqiKfHeyYMo=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.apache.wsil4j/pom.x
+ ml
+SHA-256-Digest: 1PACS7ngD8BfhGU8DqI6YEXHlDp4xErMYnRHbVgqfxU=
+
+Name: org/apache/wsil/extension/UnknownExtensionElement.class
+SHA-256-Digest: AdyTdsv9MSw5PPw/ItN6lY5lrNIKlkiqmGhoKtKsbPA=
+
+Name: org/apache/wsil/util/WSILProperties$ThreadTest.class
+SHA-256-Digest: 0pIjMEydP7fH5RsbRfYPZpbvFOcQl3y46whuxRsq79g=
+
+Name: org/apache/wsil/util/XMLUtil.class
+SHA-256-Digest: gxhoWlVcu1xUzmFpTVBghpeLmnQiQyfxFjq+lW8Gu3o=
+
+Name: org/apache/wsil/extension/wsdl/ReferencedService.class
+SHA-256-Digest: iX7HJZMbGQ7pMszGNvlw5C/vfHFhIIF4qnfLNS98OYw=
+
+Name: org/apache/wsil/impl/extension/wsdl/ReferenceImpl.class
+SHA-256-Digest: sl8lsmkBPBh66JxWWnh95hVAsJiVAwCggqhkRYO1nkQ=
+
+Name: org/apache/wsil/util/WSDLDocument.class
+SHA-256-Digest: 0yCZsjgZL9pzvIKQNKFQUEND/4AIgjhGNKLQ82K/3rQ=
+
+Name: org/apache/wsil/WSILElementWithAbstract.class
+SHA-256-Digest: 6pPkXKTFncyW0e5Z7T3aGQL8cDrv55UPyE+bcH0cacU=
+
+Name: org/apache/wsil/xml/XMLReader.class
+SHA-256-Digest: sxlZf1Fe2brp7epwmz/7MBz/OxWXN4QGMUD5lwfhRHc=
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.jboss.tools.central.easymport.feature"
+      label="%featureName"
+      version="4.4.200.v20180614-1229"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+     <!-- This is in the TP but not part of an included feature yet, so require it here -->
+     <import plugin="org.eclipse.egit.ui.smartimport"/>
+   </requires>
+
+</feature>

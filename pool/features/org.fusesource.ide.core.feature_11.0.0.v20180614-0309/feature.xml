@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.fusesource.ide.core.feature"
+      label="%featureName"
+      version="11.0.0.v20180614-0309"
+      provider-name="%providerName"
+      plugin="org.fusesource.ide.tooling">
+
+   <description url="http://tools.jboss.org/features/apachecamel.html">
+      %description
+   </description>
+
+   <copyright url="http://redhat.com/">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.ui.cheatsheets" version="3.4.200" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.runtime" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.resources" version="3.7.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.variables" version="3.2.800" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jface" version="3.10.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jface.text" version="3.9.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.ide" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.views" version="3.7.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.help" version="3.6.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.m2e.archetype.common" version="1.5.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.m2e.core" version="1.5.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.m2e.core.ui" version="1.5.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.m2e.discovery" version="1.5.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.m2e.editor" version="1.5.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.m2e.editor.xml" version="1.5.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.m2e.jdt" version="1.5.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.m2e.launching" version="1.5.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.m2e.lifecyclemapping.defaults" version="1.5.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.m2e.maven.indexer" version="1.5.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.m2e.model.edit" version="1.5.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.m2e.refactoring" version="1.5.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.m2e.scm" version="1.5.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.draw2d" version="3.9.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.zest.core" version="1.5.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.zest.layouts" version="1.1.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.osgi" version="3.10.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.osgi.services" version="3.4.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.databinding" version="1.4.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.databinding.beans" version="1.2.200" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.databinding.property" version="1.4.200" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jdt.core" version="3.10.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jface.databinding" version="1.6.200" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.views.properties.tabbed" version="3.6.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.navigator" version="3.5.400" match="greaterOrEqual"/>
+      <import plugin="org.apache.commons.io" version="2.0.1" match="greaterOrEqual"/>
+      <import plugin="org.jboss.tools.usage"/>
+      <import feature="org.jboss.tools.jmx.feature" version="1.6.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="org.fusesource.ide.foundation.core"
+         download-size="56"
+         install-size="101"
+         version="11.0.0.v20180530-1347"
+         unpack="false"/>
+
+   <plugin
+         id="org.fusesource.ide.foundation.ui"
+         download-size="249"
+         install-size="472"
+         version="11.0.0.v20180430-1737"
+         unpack="false"/>
+
+   <plugin
+         id="org.fusesource.ide.camel.model.service.core"
+         download-size="175"
+         install-size="373"
+         version="11.0.0.v20180607-1327"
+         unpack="false"/>
+
+   <plugin
+         id="org.fusesource.ide.cheatsheets"
+         download-size="4"
+         install-size="4"
+         version="11.0.0.v20180419-1151"
+         unpack="false"/>
+
+   <plugin
+         id="org.fusesource.ide.graph"
+         download-size="27"
+         install-size="49"
+         version="11.0.0.v20180419-1151"
+         unpack="false"/>
+
+   <plugin
+         id="org.fusesource.ide.help"
+         download-size="17730"
+         install-size="27995"
+         version="11.0.0.v20180608-0741"
+         unpack="false"/>
+
+   <plugin
+         id="org.fusesource.ide.imports"
+         download-size="75"
+         install-size="151"
+         version="11.0.0.v20180614-0309"
+         unpack="false"/>
+
+   <plugin
+         id="org.fusesource.ide.maven"
+         download-size="4"
+         install-size="5"
+         version="11.0.0.v20180419-1151"
+         unpack="false"/>
+
+   <plugin
+         id="org.fusesource.ide.preferences"
+         download-size="20"
+         install-size="34"
+         version="11.0.0.v20180524-1201"
+         unpack="false"/>
+
+   <plugin
+         id="org.fusesource.ide.tooling"
+         download-size="4"
+         install-size="3"
+         version="11.0.0.v20180419-1151"
+         unpack="false"/>
+
+   <plugin
+         id="org.fusesource.ide.camel.validation"
+         download-size="27"
+         install-size="52"
+         version="11.0.0.v20180419-1151"
+         unpack="false"/>
+
+   <plugin id="org.fusesource.ide.camel.model.service.impl" download-size="15679" install-size="17371" version="11.0.0.v20180524-1500" unpack="false"/>
+   <plugin id="org.fusesource.ide.camel.model.service.impl.v2151redhat621216" download-size="3721" install-size="4182" version="11.0.0.v20180418-1424" unpack="false"/>
+   <plugin id="org.fusesource.ide.camel.model.service.impl.v2170redhat630343" download-size="4320" install-size="4830" version="11.0.0.v20180607-1327" unpack="false"/>
+   <plugin id="org.fusesource.ide.camel.model.service.impl.v2181redhat000021" download-size="7307" install-size="8106" version="11.0.0.v20180418-1424" unpack="false"/>
+   <plugin id="org.fusesource.ide.camel.model.service.impl.v2203" download-size="10671" install-size="11642" version="11.0.0.v20180418-1424" unpack="false"/>
+   <plugin id="org.fusesource.ide.camel.model.service.impl.v2210fuse000077redhat1" download-size="10593" install-size="11549" version="11.0.0.v20180604-0623" unpack="false"/>
+
+</feature>

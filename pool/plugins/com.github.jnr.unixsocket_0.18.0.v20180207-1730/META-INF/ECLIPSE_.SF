@@ -1,0 +1,92 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: qq5bnKQ7Z3pZ5e1l5EPNZpbfMWtng
+ EDFFD0z1P2DJNU=
+SHA-256-Digest-Manifest: nQs5ApBRlRgf/n4gyZKYniBZUA9FOKxxg4SxfS/T/MI=
+Created-By: 1.8.0_162 (Oracle Corporation)
+
+Name: jnr/unixsocket/UnixDatagramChannel.class
+SHA-256-Digest: Bae6qI91YT+2GoHR57TULgVi9uPUA7TBrwuBH2BNhD8=
+
+Name: jnr/unixsocket/Native.class
+SHA-256-Digest: dpiSOBUZsQNyUF/Y/L5wdV6B6fytouuKe8SQyhsr+rQ=
+
+Name: jnr/unixsocket/UnixServerSocketChannel.class
+SHA-256-Digest: ALTmfpQmKJCVEzwF7PPGZF4C1UqBplwP6wCB0px+UqI=
+
+Name: jnr/unixsocket/UnixSocketOptions.class
+SHA-256-Digest: 6EA5K5eblgX7jZobayGbNgZgic+ZdEjCGTgeB3wglmU=
+
+Name: jnr/unixsocket/UnixSocketChannel$State.class
+SHA-256-Digest: NOrs6Xwwu36SsSs5FkEEVshN7D1o2Fh9lIoabBlcx5Y=
+
+Name: jnr/unixsocket/UnixSocket.class
+SHA-256-Digest: pNXblGG9fhDUeM+OMwWbUeiYUBnl+mDuR/eluJf38Qk=
+
+Name: jnr/unixsocket/Common.class
+SHA-256-Digest: JYZyOni+U4OduMkWu63U52oUGW28vUU3NTMwhon0w3g=
+
+Name: jnr/unixsocket/BindHandler.class
+SHA-256-Digest: rQE64dBqsjz43S6/QtTD7LZ8bDvM5YycePaFk4lB/54=
+
+Name: jnr/unixsocket/SockAddrUnix.class
+SHA-256-Digest: z1LKFw8a6YdI/E2Id4m1Cwevwm5msHSjDHCGl02ll7A=
+
+Name: jnr/unixsocket/UnixSocketAddress.class
+SHA-256-Digest: 2bDsuc6No3z7mnEEYezKGeNqOxLUdsXhAc59JetNj5Y=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.github.jnr.unixsock
+ et/pom.xml
+SHA-256-Digest: HQVabmYcXyMbhgZWDwmwkOaBJ7K64/JJ1TdzQreeThE=
+
+Name: jnr/unixsocket/UnixSocketChannel.class
+SHA-256-Digest: P4cBE5F74ftkMV7FZNJWu/cJeENyJIEJPW7n3t61+YE=
+
+Name: jnr/unixsocket/UnixDatagramSocket.class
+SHA-256-Digest: 7ktHpJe7s13gvULULexDzJV6NE83t7QxvT1scy4Jx08=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.github.jnr.unixsock
+ et/pom.properties
+SHA-256-Digest: o+jj/GNVV4OZPKH/RGwad4xY81uCM2UYPzro0/uKd38=
+
+Name: jnr/unixsocket/Credentials.class
+SHA-256-Digest: iliWMXbDG0Nlve6jNVOU2N+zI6Q749JWiEjj/2PbZCg=
+
+Name: jnr/unixsocket/UnixServerSocket.class
+SHA-256-Digest: jprVh6gTnVh6Jnx6C/j4ru7A7gdO8gTQNa21VVBO9QA=
+
+Name: about.html
+SHA-256-Digest: pzJ3Ppp6yl9YNM3GcN5IOpEuEsG2U4QMXS1gLl1/ROI=
+
+Name: jnr/unixsocket/UnixSocketChannel$DefaultOptionsHolder.class
+SHA-256-Digest: JQco3Oaiilqzfgp/mzAqGJAa28I9RUmnd2IUxrGb5r8=
+
+Name: about_files/THE_APACHE_SOFTWARE_LICENSE__VERSION_2.0.txt
+SHA-256-Digest: 70sq4AoiKPmbnFMVhYi1e9oPczCS6WKy+maEqwyunWY=
+
+Name: jnr/unixsocket/Native$LibC.class
+SHA-256-Digest: oWzUKUxoP7XL1l+1vJAVxdhA9CPBiPyxxiKDW46+Y5Q=
+
+Name: jnr/unixsocket/SockAddrUnix$BSDSockAddrUnix.class
+SHA-256-Digest: v6YM0mnqGEBD/gNUYIl1LhMqIbj+/FYIhkHuPkEU5uk=
+
+Name: jnr/unixsocket/SockAddrUnix$DefaultSockAddrUnix.class
+SHA-256-Digest: 42y6uHQ4IK3m2bqSrm4pgUGKEI8ROFWRXOEILzhb0cY=
+
+Name: jnr/unixsocket/UnixDatagramChannel$DefaultOptionsHolder.class
+SHA-256-Digest: RyrkB9Ga5x9gD5J6sfKoqT30cLEAsg/mfnnqu9M7NA0=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: WtH0rhLvSDQZp40Pan89VbTpJy+KR+DlH3z60MUtNsg=
+
+Name: jnr/unixsocket/UnixDatagramChannel$State.class
+SHA-256-Digest: aihYu6dvRSglFEFyskNP9kvuQUDN86UCQSwfDgme4Zc=
+
+Name: jnr/unixsocket/UnixSocketChannel$1.class
+SHA-256-Digest: 5G8JuZy14NfjhE63VwAHsoIe1BVD22/AufkwZvtOoqY=
+
+Name: jnr/unixsocket/UnixSocketOptions$GenericOption.class
+SHA-256-Digest: efofr7e9nLoyAg1kGTde5/mj6G0LL1cG5WJ6lRmZzLw=
+
+Name: jnr/unixsocket/Ucred.class
+SHA-256-Digest: U6V3cTLC9O0FOj2OThtg3SKl+4gOx17YF3SYLSZeutw=
+

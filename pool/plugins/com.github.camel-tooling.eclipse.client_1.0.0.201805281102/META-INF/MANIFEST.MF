@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: com.github.camel-tooling.eclipse.client;singleton
+ :=true
+Archiver-Version: Plexus Archiver
+Built-By: travis
+Require-Bundle: org.eclipse.lsp4e;bundle-version="0.3.0",org.eclipse.c
+ ore.runtime;bundle-version="3.13.0",org.eclipse.jface.text;bundle-ver
+ sion="3.12.0",org.eclipse.wst.sse.ui;bundle-version="1.3.600"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %Bundle-Vendor
+Export-Package: com.github.cameltooling.eclipse.client;x-friends:="com
+ .github.camel-tooling.eclipse.client.tests.integration"
+Bundle-Name: %Bundle-Name
+Bundle-Version: 1.0.0.201805281102
+Bundle-Activator: com.github.cameltooling.eclipse.client.ActivatorCame
+ lLspClient
+Created-By: Apache Maven 3.5.2
+Build-Jdk: 1.8.0_151
+Eclipse-BundleShape: dir
+

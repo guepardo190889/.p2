@@ -1,0 +1,87 @@
+Manifest-Version: 1.0
+Bundle-Description: Java Foreign Function Interface - Native Libraries
+Automatic-Module-Name: com.github.jnr.jffi.native
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: com.github.jnr.jffi.native
+Archiver-Version: Plexus Archiver
+Built-By: genie.orbit
+Bundle-ManifestVersion: 2
+Bundle-Vendor: %bundleVendor
+Fragment-Host: com.github.jnr.jffi
+Originally-Created-By: Apache Maven Bundle Plugin
+Export-Package: jni.Darwin;version="1.2.15",jni.aarch64-Linux;version=
+ "1.2.15",jni.arm-Linux;version="1.2.15",jni.i386-Linux;version="1.2.1
+ 5",jni.i386-SunOS;version="1.2.15",jni.i386-Windows;version="1.2.15",
+ jni.ppc-AIX;version="1.2.15",jni.ppc64-Linux;version="1.2.15",jni.ppc
+ 64le-Linux;version="1.2.15",jni.sparcv9-SunOS;version="1.2.15",jni.x8
+ 6_64-FreeBSD;version="1.2.15",jni.x86_64-Linux;version="1.2.15",jni.x
+ 86_64-OpenBSD;version="1.2.15",jni.x86_64-SunOS;version="1.2.15",jni.
+ x86_64-Windows;version="1.2.15"
+Bundle-Name: %bundleName
+Bundle-Version: 1.2.15.v20180207-1730
+Bundle-ClassPath: .,jni/
+Created-By: Eclipse Bundle Recipe Maven Plug-in
+Build-Jdk: 1.8.0_162
+
+Name: about.html
+SHA-256-Digest: 2cIkTAk2bCGO1QakX9QRWiOoLlrA25cFFNc6mQxtQu0=
+
+Name: jni/i386-SunOS/libjffi-1.2.so
+SHA-256-Digest: z2RAdGj450tKnyijF7r5e8xQl9b0XdJ/20qro3dwiyA=
+
+Name: about_files/THE_APACHE_SOFTWARE_LICENSE__VERSION_2.0.txt
+SHA-256-Digest: z8d0m5b2O9McPEK1xHG/dWgUBT6EfBDz6wA0F7xSPTA=
+
+Name: jni/Darwin/libjffi-1.2.jnilib
+SHA-256-Digest: ehrHBTU89chE7NLIn9Ky361ZvKGYq6gWBBh2qfz2ezw=
+
+Name: jni/x86_64-Windows/jffi-1.2.dll
+SHA-256-Digest: WDmLpc2ht8uJrU4D3UplgAaVb4Gs/vTvtOfdk04nM+8=
+
+Name: jni/ppc64-Linux/libjffi-1.2.so
+SHA-256-Digest: EDHMZ3H8D3RjlNYDypG/+mSUCns09sKwq8r/jqtCeUQ=
+
+Name: jni/ppc-AIX/libjffi-1.2.a
+SHA-256-Digest: tt2EIRgMWaAesIreTA1AJg26rNWx479vbUE6VsPdXaQ=
+
+Name: jni/sparcv9-SunOS/libjffi-1.2.so
+SHA-256-Digest: nTwxpucuf3Vl55zZCixZxhrsL9GxqWTCppqj4Ancnuw=
+
+Name: jni/i386-Linux/libjffi-1.2.so
+SHA-256-Digest: FtX7ueyXFQU6QE2zpRiNnl1H9Ff2Lv+NoL6f4V3kkQM=
+
+Name: jni/i386-Windows/jffi-1.2.dll
+SHA-256-Digest: 1jsOyafMdcJvqVGSi/VQwOml5sGVo96UqcJJlSBrv9I=
+
+Name: jni/x86_64-FreeBSD/libjffi-1.2.so
+SHA-256-Digest: PJ/5xmIEbMh0fZgZkwIHJjjUZjfkjbqW/SEBVkSJ95g=
+
+Name: jni/x86_64-OpenBSD/libjffi-1.2.so
+SHA-256-Digest: mtZpCUk6xnyxR3aitwOZlD6kGxoF6UG0BEOHeFF+N40=
+
+Name: jni/arm-Linux/libjffi-1.2.so
+SHA-256-Digest: tPf8lnk7y1du1w9D7yIlpMNo1NJJGPRiRrRC2gaqA6E=
+
+Name: jni/x86_64-SunOS/libjffi-1.2.so
+SHA-256-Digest: BTzy4oNudS7PMp+wKxLbmxgBuoc453lEazGXqzwb9Jk=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.github.jnr.jffi.nat
+ ive/pom.xml
+SHA-256-Digest: F1hPgGM2WAnyknGQRHYxrLzmw5YmV4TvaWMNvg3KjXw=
+
+Name: jni/x86_64-Linux/libjffi-1.2.so
+SHA-256-Digest: nDhhAlBzg1kgtnfLHx8OfPfR6sA6xKqNUPB0t61ylSg=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: iEsjCv3f0Faut/9NuQySbPCLd246musQ4bHOiUkTmY4=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.github.jnr.jffi.nat
+ ive/pom.properties
+SHA-256-Digest: sNSrWs+sDWEetd/yBwiagSkA0Pcp9gPKsQFJCac6TV8=
+
+Name: jni/aarch64-Linux/libjffi-1.2.so
+SHA-256-Digest: BRIv1ywm0hc0P6UiSoXsU40Q4BIP3xBTFHDxBeWl0lE=
+
+Name: jni/ppc64le-Linux/libjffi-1.2.so
+SHA-256-Digest: mypsUtZ8hjr6L/8+lBRY8fNx4xXZKrjUoy8OYjFR85o=
+

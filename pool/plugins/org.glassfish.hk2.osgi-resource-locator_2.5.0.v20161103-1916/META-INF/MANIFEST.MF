@@ -1,0 +1,81 @@
+Manifest-Version: 1.0
+Bundle-Description: Used by various API providers that rely on META-IN
+ F/services mechanism to locate providers.
+Bundle-License: https://glassfish.java.net/nonav/public/CDDL+GPL_1_1.h
+ tml
+Bundle-SymbolicName: org.glassfish.hk2.osgi-resource-locator
+Archiver-Version: Plexus Archiver
+Built-By: genie.orbit
+Bundle-ActivationPolicy: lazy
+Bundle-ManifestVersion: 2
+Bundle-DocURL: http://www.oracle.com
+Bundle-Vendor: %bundleVendor
+Import-Package: org.osgi.framework;version="[1.7,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Originally-Created-By: Apache Maven Bundle Plugin
+Export-Package: org.glassfish.hk2.osgiresourcelocator;version="2.5.0.b
+ 03";uses:="org.osgi.framework"
+Bundle-Name: %bundleName
+Bundle-Version: 2.5.0.v20161103-1916
+Bundle-Activator: org.glassfish.hk2.osgiresourcelocator.Activator
+Created-By: Eclipse Bundle Recipe Maven Plug-in
+Build-Jdk: 1.8.0_131
+
+Name: org/glassfish/hk2/osgiresourcelocator/ServiceLoaderImpl$1.class
+SHA-256-Digest: 8/iVVR02PhH8/cWFdkOCnPX0Yvoo+80U45P4TK2bz0s=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.glassfish.hk2.osgi-
+ resource-locator/pom.properties
+SHA-256-Digest: k28p8StBc7W8en8dteh6VYmZu69hw8GOPzEHsfWgy98=
+
+Name: about.html
+SHA-256-Digest: Dxgz6dtKYqvm+fxwZXay7gBSe5xdtWTLbvBmQb+2qdY=
+
+Name: org/glassfish/hk2/osgiresourcelocator/ServiceLoader$ProviderFact
+ ory.class
+SHA-256-Digest: Gt6Zq6J94XJaP4ZL/q3WqOAVT1dm6bSWzYctqHDmoq8=
+
+Name: org/glassfish/hk2/osgiresourcelocator/ServiceLoader.class
+SHA-256-Digest: SOpBaEh42XgbHp4H1GdOSi4YOx9liHA8pogipQ7GewY=
+
+Name: org/glassfish/hk2/osgiresourcelocator/ServiceLoaderImpl$Provider
+ sPerBundle.class
+SHA-256-Digest: ZJrjIqWDQOKeeWfJqWLZHv36twyCM8jYs7ThJxs/FPA=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.glassfish.hk2.osgi-
+ resource-locator/pom.xml
+SHA-256-Digest: vjYeYR4rpQusIzDHDx56Ei8GR+RAfmlsFJFC8HixluI=
+
+Name: org/glassfish/hk2/osgiresourcelocator/ResourceFinder.class
+SHA-256-Digest: Dj3RClqVI3sgQHiSFpEsT3zxy8MFkrB5BODbuD7QlNA=
+
+Name: org/glassfish/hk2/osgiresourcelocator/ResourceFinderImpl.class
+SHA-256-Digest: ZMm2KHUY5ApQ7+NGdbu0uNxAmHA1DAxl8TSPQpfSmj4=
+
+Name: org/glassfish/hk2/osgiresourcelocator/Activator.class
+SHA-256-Digest: axGcqydim51U3RaLYTgI/xIEyd73OeVEFComk3x+wMk=
+
+Name: org/glassfish/hk2/osgiresourcelocator/ServiceLoaderImpl$DefaultF
+ actory.class
+SHA-256-Digest: VhXFVyA7477TXyZFsO59GL0sbmDDInLISPFUok+FSP0=
+
+Name: about_files/COMMON_DEVELOPMENT_AND_DISTRIBUTION_LICENSE.html
+SHA-256-Digest: RpLGLLt4tjsK1wHgR8X1f8Ad1f5mJqKg6v5aQ84JOso=
+
+Name: org/glassfish/hk2/osgiresourcelocator/ServiceLoaderImpl.class
+SHA-256-Digest: HQQYN8/lqvgEwivoI48SuJj2Wb8ETMs+wcMabiRXzwA=
+
+Name: org/glassfish/hk2/osgiresourcelocator/ServiceLoaderImpl$BundleTr
+ acker.class
+SHA-256-Digest: 3hus3N2utLYgqlcwoDl33r8zq7iCbWaswe9PPmgzX5A=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: jByL9DLECZaZCSG572tw3qdQeoXbACSzz9Inol0Z2yE=
+
+Name: org/glassfish/hk2/osgiresourcelocator/ServiceLoaderImpl$Provider
+ sList.class
+SHA-256-Digest: 3Rz/R64ywynPliRYebHqot5ini4GcqI0wozJuFKD2gA=
+
+Name: org/glassfish/hk2/osgiresourcelocator/ServiceLoaderImpl$2.class
+SHA-256-Digest: lO2j3fSipPivOmbEs4ZciR+t7AkoDaWxHjKGgFFgxpM=
+

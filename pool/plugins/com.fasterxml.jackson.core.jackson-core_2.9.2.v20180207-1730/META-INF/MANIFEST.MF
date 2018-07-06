@@ -1,0 +1,411 @@
+Manifest-Version: 1.0
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: com.fasterxml.jackson.core.jackson-core
+Archiver-Version: Plexus Archiver
+Built-By: genie.orbit
+Implementation-Vendor-Id: com.fasterxml.jackson.core
+Specification-Title: Jackson-core
+Bundle-DocURL: https://github.com/FasterXML/jackson-core
+Import-Package: com.fasterxml.jackson.core;resolution:=optional;versio
+ n="[2.9,3)",com.fasterxml.jackson.core.async;resolution:=optional;ver
+ sion="[2.9,3)",com.fasterxml.jackson.core.base;resolution:=optional;v
+ ersion="[2.9,3)",com.fasterxml.jackson.core.format;resolution:=option
+ al;version="[2.9,3)",com.fasterxml.jackson.core.io;resolution:=option
+ al;version="[2.9,3)",com.fasterxml.jackson.core.json;resolution:=opti
+ onal;version="[2.9,3)",com.fasterxml.jackson.core.json.async;resoluti
+ on:=optional;version="[2.9,3)",com.fasterxml.jackson.core.sym;resolut
+ ion:=optional;version="[2.9,3)",com.fasterxml.jackson.core.type;resol
+ ution:=optional;version="[2.9,3)",com.fasterxml.jackson.core.util;res
+ olution:=optional;version="[2.9,3)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Implementation-Build-Date: 2017-10-14 03:25:27+0000
+Export-Package: com.fasterxml.jackson.core;version="2.9.2";uses:="com.
+ fasterxml.jackson.core.async,com.fasterxml.jackson.core.format,com.fa
+ sterxml.jackson.core.io,com.fasterxml.jackson.core.sym,com.fasterxml.
+ jackson.core.type,com.fasterxml.jackson.core.util",com.fasterxml.jack
+ son.core.async;version="2.9.2",com.fasterxml.jackson.core.base;versio
+ n="2.9.2";uses:="com.fasterxml.jackson.core,com.fasterxml.jackson.cor
+ e.io,com.fasterxml.jackson.core.json,com.fasterxml.jackson.core.util"
+ ,com.fasterxml.jackson.core.filter;version="2.9.2";uses:="com.fasterx
+ ml.jackson.core,com.fasterxml.jackson.core.util",com.fasterxml.jackso
+ n.core.format;version="2.9.2";uses:="com.fasterxml.jackson.core",com.
+ fasterxml.jackson.core.io;version="2.9.2";uses:="com.fasterxml.jackso
+ n.core,com.fasterxml.jackson.core.util",com.fasterxml.jackson.core.js
+ on;version="2.9.2";uses:="com.fasterxml.jackson.core,com.fasterxml.ja
+ ckson.core.base,com.fasterxml.jackson.core.format,com.fasterxml.jacks
+ on.core.io,com.fasterxml.jackson.core.sym",com.fasterxml.jackson.core
+ .json.async;version="2.9.2";uses:="com.fasterxml.jackson.core,com.fas
+ terxml.jackson.core.async,com.fasterxml.jackson.core.base,com.fasterx
+ ml.jackson.core.io,com.fasterxml.jackson.core.sym",com.fasterxml.jack
+ son.core.sym;version="2.9.2",com.fasterxml.jackson.core.type;version=
+ "2.9.2";uses:="com.fasterxml.jackson.core",com.fasterxml.jackson.core
+ .util;version="2.9.2";uses:="com.fasterxml.jackson.core,com.fasterxml
+ .jackson.core.io"
+Bundle-Name: %bundleName
+Bundle-Description: Core Jackson processing abstractions (aka Streamin
+ g API), implementation for JSON
+Implementation-Title: Jackson-core
+Automatic-Module-Name: com.fasterxml.jackson.core.jackson-core
+Implementation-Version: 2.9.2
+Bundle-ManifestVersion: 2
+Specification-Vendor: FasterXML
+Bundle-Vendor: %bundleVendor
+Implementation-Vendor: FasterXML
+Originally-Created-By: Apache Maven Bundle Plugin
+Bundle-Version: 2.9.2.v20180207-1730
+X-Compile-Target-JDK: 1.6
+X-Compile-Source-JDK: 1.6
+Created-By: Eclipse Bundle Recipe Maven Plug-in
+Build-Jdk: 1.8.0_162
+Specification-Version: 2.9.2
+
+Name: com/fasterxml/jackson/core/JsonGenerator$Feature.class
+SHA-256-Digest: cVF4Yhwtwa1OPQo0wZIAyNpp94iuUo8zUaEQh4Zid7E=
+
+Name: com/fasterxml/jackson/core/io/SegmentedStringWriter.class
+SHA-256-Digest: TNBWNhw7uddmBHn3m30KZ8otsjxqyX4re/5HBok4kvs=
+
+Name: com/fasterxml/jackson/core/util/Separators.class
+SHA-256-Digest: drI8JO9gJ1hfG6p5UhalozpTB5q3AbSTGA0Bp7mzsyg=
+
+Name: com/fasterxml/jackson/core/TreeNode.class
+SHA-256-Digest: qbtn57v3BxJ9Zi9ESsrhlSvrUffUVlW/saW2/mUxeqI=
+
+Name: com/fasterxml/jackson/core/sym/Name.class
+SHA-256-Digest: VJYz8E70q7LHQCrncdHKB9EoiB0n8xMWJGdLYj/Zj8A=
+
+Name: com/fasterxml/jackson/core/util/RequestPayload.class
+SHA-256-Digest: pE8uRqACzjFm61bQcOF5rwHK2ZxV+L67a8XS6TSIolw=
+
+Name: com/fasterxml/jackson/core/util/JsonGeneratorDelegate.class
+SHA-256-Digest: oHazzFHEjBhUgAAhmUD+DgagiMAOHaml5Es3KoqIsfo=
+
+Name: com/fasterxml/jackson/core/async/NonBlockingInputFeeder.class
+SHA-256-Digest: x3MGKyd4IzI+8JsVvdzzlPDpinjTFLPjyE8lgYg0WB4=
+
+Name: com/fasterxml/jackson/core/JsonFactory.class
+SHA-256-Digest: EyiE9yLI1jHBzhBbBymbJV/KCnzeWO8NUJdl52xng9k=
+
+Name: com/fasterxml/jackson/core/util/DefaultPrettyPrinter$Indenter.cl
+ ass
+SHA-256-Digest: h9Im/xTVvj4kFBeT6aKDhmajoeQMLiICwEvJBMZorjw=
+
+Name: com/fasterxml/jackson/core/JsonParseException.class
+SHA-256-Digest: ghwFqEtmEQQpmHy7TNqarh3PDHQN5JQ3nw60CKCu4UI=
+
+Name: com/fasterxml/jackson/core/JsonParser$NumberType.class
+SHA-256-Digest: t9TRKJjw8/+d3Iwp2V/uUiILPUDLCizB4bjt9bbnA28=
+
+Name: com/fasterxml/jackson/core/JsonpCharacterEscapes.class
+SHA-256-Digest: c3demcdQXFP5PgciBlTszxWsg/Z92LPQDbF/mAS8suw=
+
+Name: com/fasterxml/jackson/core/SerializableString.class
+SHA-256-Digest: sExhtXCSiPOGqxdcZBaFdrFk+grkKz7PAMot4CFFZSg=
+
+Name: about_files/THE_APACHE_SOFTWARE_LICENSE__VERSION_2.0.txt
+SHA-256-Digest: z8d0m5b2O9McPEK1xHG/dWgUBT6EfBDz6wA0F7xSPTA=
+
+Name: com/fasterxml/jackson/core/sym/NameN.class
+SHA-256-Digest: SiXfjA7ftVqaRFESJb8zh0KVCEE1ooPqhZUec2lX/oI=
+
+Name: com/fasterxml/jackson/core/format/InputAccessor.class
+SHA-256-Digest: Wo+8DEl+eAPrGmKRaMW1p1WSZF1Rj2Gyf8+OF1NgRyg=
+
+Name: com/fasterxml/jackson/core/JsonProcessingException.class
+SHA-256-Digest: Ep2vyqTeU+8o4X1qTT/yQPphOhATB6wYhM030Sz1D9Y=
+
+Name: com/fasterxml/jackson/core/util/MinimalPrettyPrinter.class
+SHA-256-Digest: FQMuXWiWeJ8mF8OITtDPsPvA/lHedgnTln1WscTFYpo=
+
+Name: com/fasterxml/jackson/core/ObjectCodec.class
+SHA-256-Digest: MEmNwgT2fRQ5HOrrqlwFvQgC6ens5zXSf5FMfW+769M=
+
+Name: com/fasterxml/jackson/core/sym/Name1.class
+SHA-256-Digest: pfC6AoQ6YEH/T5D1Hu2AwJTzaZ2MZ74QuqnbnHJ5Psw=
+
+Name: com/fasterxml/jackson/core/json/async/NonBlockingJsonParserBase.
+ class
+SHA-256-Digest: jdCbDUFaPoukM0pozE+7RluRNNYv9YtLQUir+BhM1NM=
+
+Name: com/fasterxml/jackson/core/json/UTF8StreamJsonParser.class
+SHA-256-Digest: 8V2bhdmCAtCM5hDjn3EBENxwlBDt2Sjnd8rF2OL0y0E=
+
+Name: com/fasterxml/jackson/core/sym/CharsToNameCanonicalizer$Bucket.c
+ lass
+SHA-256-Digest: 1sB9H2m3XUVDAcHkAw8mtoyDKxGFrPE05sJGOuXLraI=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: fVC4lzzy3hKZRLGQvcFbk3MfL0N21KY9EBC7waniZOs=
+
+Name: com/fasterxml/jackson/core/filter/FilteringParserDelegate.class
+SHA-256-Digest: nS39/uCNWGNpbw2ZzqGt7BOe08Wv+j0Wxt09n8sKK1A=
+
+Name: com/fasterxml/jackson/core/filter/JsonPointerBasedFilter.class
+SHA-256-Digest: elezEguLFDk5II3XbVU79j3wYKE7jkxNxVpHlbQOkcY=
+
+Name: com/fasterxml/jackson/core/json/JsonWriteContext.class
+SHA-256-Digest: rlOF47mcg/q8NrcrNq1PWdXINS6UHga3Kv//XBIqEdA=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.fasterxml.jackson.c
+ ore.jackson-core/pom.xml
+SHA-256-Digest: WUuVTL6IzrFb5U2xCqqPNtklY4ErmOvSPelxWz+AfZQ=
+
+Name: com/fasterxml/jackson/core/format/MatchStrength.class
+SHA-256-Digest: nrZVXIdqvZhTRHJymTr/QJUzVc0ScHZcUUEoiK1yMhc=
+
+Name: com/fasterxml/jackson/core/util/BufferRecyclers.class
+SHA-256-Digest: gbDdKX6A5sa2DtDGQKuuClpGQ5wKGHxJT9I+yn8/mjg=
+
+Name: com/fasterxml/jackson/core/util/TextBuffer.class
+SHA-256-Digest: FieTltF+te0PAFDCqSpYqhb/n0IjcSwpB4WoTgYb2Uk=
+
+Name: com/fasterxml/jackson/core/JsonGenerationException.class
+SHA-256-Digest: 1IcduhoeNcwRTX9+tRYSsSaCKoj7Wesu8wca9VVlv24=
+
+Name: com/fasterxml/jackson/core/format/DataFormatMatcher.class
+SHA-256-Digest: JqjKZ7YsyXZ3XqdwxGOhQZUIy8uEhJCv2dUT+AzHAio=
+
+Name: com/fasterxml/jackson/core/io/JsonStringEncoder.class
+SHA-256-Digest: r4GuKn5dqVmt3O2qxtvtbDSjMLuA9qdFamzlh/UWAv4=
+
+Name: com/fasterxml/jackson/core/util/VersionUtil.class
+SHA-256-Digest: ETsC0OrqWhFgnWHDm7RLw8DrBpq1Pfg6qDa22aH6k1k=
+
+Name: com/fasterxml/jackson/core/util/DefaultIndenter.class
+SHA-256-Digest: mpy/wrbdQenPvAIUN7NjMUXQgrOjtDzu9nsxZDPLTHw=
+
+Name: com/fasterxml/jackson/core/filter/FilteringGeneratorDelegate.cla
+ ss
+SHA-256-Digest: rjJKcGUMxlu2M8iG2GPuGvrDAqK+9iJurt6tUOSx2/A=
+
+Name: com/fasterxml/jackson/core/JsonPointer.class
+SHA-256-Digest: CcMxFkFVXuHDCAtp4VY+5TynEil1mZnkKzMoQCIvdCg=
+
+Name: com/fasterxml/jackson/core/JsonFactory$Feature.class
+SHA-256-Digest: qQIuk45JzHtMrNHO3t/aWdkiAPFXfS9StMoTzkW5C2Y=
+
+Name: com/fasterxml/jackson/core/Base64Variants.class
+SHA-256-Digest: OxWTcnu++zE+rMzmutkmlZjgUkHTf2Kb5Rr60SlG+jg=
+
+Name: com/fasterxml/jackson/core/filter/TokenFilterContext.class
+SHA-256-Digest: adyCILW/p8i50Ov57RXvcBbz614A+gjTGHjeYzMAg80=
+
+Name: com/fasterxml/jackson/core/json/ByteSourceJsonBootstrapper.class
+SHA-256-Digest: RFkIue+wuSOE+mGMuqiARa6BP8A39rWDobPcldepUos=
+
+Name: com/fasterxml/jackson/core/JsonTokenId.class
+SHA-256-Digest: 3XS9RcCvMl99L/A7Pb/HfMXhhCx+s+cEY5cNlnxtCUs=
+
+Name: com/fasterxml/jackson/core/io/UTF32Reader.class
+SHA-256-Digest: LiWqmLLm+r7ICvuBJcP2qYgr++h42hnL6KDXfA4IzI4=
+
+Name: com/fasterxml/jackson/core/json/JsonReadContext.class
+SHA-256-Digest: frf8eIxdxekudCqGaUChK6EU38ujvhgfJXu1PL/3v4E=
+
+Name: com/fasterxml/jackson/core/sym/CharsToNameCanonicalizer.class
+SHA-256-Digest: 2MoMjiajCLRGwaJktiffwMADusWbZExWG5m/wkhJPbo=
+
+Name: com/fasterxml/jackson/core/json/WriterBasedJsonGenerator.class
+SHA-256-Digest: vJewNAawV7LgQFlpEsWAtg6Zo1osXaVtA357hgbA5qg=
+
+Name: com/fasterxml/jackson/core/type/WritableTypeId$Inclusion.class
+SHA-256-Digest: JpWvi4AYR8qf3ispix3PFAhfXMOODOhtRR8ufSrrJzE=
+
+Name: com/fasterxml/jackson/core/io/JsonEOFException.class
+SHA-256-Digest: RvAa37kFLZMZYBArewICVKFCUdJ/nLTbMzgXIfSJ8Qc=
+
+Name: com/fasterxml/jackson/core/util/ByteArrayBuilder.class
+SHA-256-Digest: nHrtj5wcw/stPivH/u3TPRnswWHDNl/nIToU2m5hdcg=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.fasterxml.jackson.c
+ ore.jackson-core/pom.properties
+SHA-256-Digest: DzuvQaA9/dYbws/Og171hcKB8O5cCvf+QR7NHN8vXIg=
+
+Name: com/fasterxml/jackson/core/Version.class
+SHA-256-Digest: zqFvJi2K7CA6HPrQa15uoAgL7HFIDHEym3dgkMmy0IM=
+
+Name: com/fasterxml/jackson/core/Versioned.class
+SHA-256-Digest: 6TaEezDQFGp0mrW4pyw+cE1y26WumGCOD5Nx718i3O0=
+
+Name: com/fasterxml/jackson/core/sym/CharsToNameCanonicalizer$TableInf
+ o.class
+SHA-256-Digest: DIGyzJRJ1nfgeWAifz0h/MhB9y/6hBJO5IqHB0v+a6k=
+
+Name: com/fasterxml/jackson/core/type/WritableTypeId.class
+SHA-256-Digest: 1SZBocmm13mrM77SX6VK5FZ7eNWtMigNl7RZ7R/naBY=
+
+Name: com/fasterxml/jackson/core/FormatSchema.class
+SHA-256-Digest: 2RBnv50nGAJoSfKZ9bvkf0398ByH56xUJXtHcF3gZyU=
+
+Name: com/fasterxml/jackson/core/io/InputDecorator.class
+SHA-256-Digest: eiv9QhR6mM3yfaNUV1jV2N8pMER6dtjgj1lm03PxrIY=
+
+Name: com/fasterxml/jackson/core/type/ResolvedType.class
+SHA-256-Digest: A8RaJo6/HXGYrbaU7lgcY0jml7kiv/yJVAGywbZDNaY=
+
+Name: com/fasterxml/jackson/core/format/DataFormatDetector.class
+SHA-256-Digest: KvpMV6aOr5wvtX+kbmZvS0KCZSuU7IdPiFDLEaltFR0=
+
+Name: com/fasterxml/jackson/core/JsonLocation.class
+SHA-256-Digest: rt2oJh8HM/3nc8S3pUgoND+N+agFmkWm424tZfgZbnc=
+
+Name: com/fasterxml/jackson/core/JsonStreamContext.class
+SHA-256-Digest: O3krtJV7z2ixaFe8S3sXylg6bSC95I2KXPNGoW2kU+o=
+
+Name: com/fasterxml/jackson/core/JsonParser.class
+SHA-256-Digest: /bOKV8SMbVDql66EZEjFuZoFQGdPK2HHqiBtkbF4mKk=
+
+Name: com/fasterxml/jackson/core/base/ParserMinimalBase.class
+SHA-256-Digest: pCaJVReCHKX6//WafQmx65GeWKCpjiaSur6NuvSQ5/A=
+
+Name: META-INF/LICENSE
+SHA-256-Digest: rYGf6som6++4TbO+XeGKzbILO0HVZSqt7gx8FQ+jLYk=
+
+Name: com/fasterxml/jackson/core/util/DefaultPrettyPrinter$NopIndenter
+ .class
+SHA-256-Digest: oXUcvvjU214oSv8hQ4USTeQa14Nkiz0vuC+he0V/1/c=
+
+Name: com/fasterxml/jackson/core/JsonEncoding.class
+SHA-256-Digest: zYgQmNBg7hAUAfPjSO4V6fUbqlVTjoFeE2yjacSktvE=
+
+Name: com/fasterxml/jackson/core/type/TypeReference.class
+SHA-256-Digest: Pft6+UGeLHqEpsZY9KkJaAerPDLwyVXUwFM8eMUns9c=
+
+Name: com/fasterxml/jackson/core/util/InternCache.class
+SHA-256-Digest: 6akZiVcl7tgxK4q4vv18R7zj9xJSuGUP//PSpOGwlx8=
+
+Name: com/fasterxml/jackson/core/io/NumberInput.class
+SHA-256-Digest: H3cWw6vAgoQxuk3/Hhio0WNfPEsS9GhwAK1LwLs03Zw=
+
+Name: com/fasterxml/jackson/core/JsonParser$Feature.class
+SHA-256-Digest: vihz6XlHiDZimJnl5BwmbuTm8+h33f/M/lqyGWNAc/0=
+
+Name: com/fasterxml/jackson/core/base/ParserBase.class
+SHA-256-Digest: DJjD6MxoAFziYSUH/pcV04yhRLrUvADbyFyklAIhS4g=
+
+Name: com/fasterxml/jackson/core/JsonToken.class
+SHA-256-Digest: ORnJtU/yeVKMGNSsq7U7otEigalBi2+znP9R52oL/JA=
+
+Name: com/fasterxml/jackson/core/Base64Variant.class
+SHA-256-Digest: Fdbtd54fLVpx2oOfpQg+zrlWpcqZW5ngWnHdOoxjAVs=
+
+Name: com/fasterxml/jackson/core/JsonGenerator$1.class
+SHA-256-Digest: OIHpZ1LSB3RvMvaa4AHvpWXakY4EAhErrtN0NIIOv5o=
+
+Name: com/fasterxml/jackson/core/util/BufferRecycler.class
+SHA-256-Digest: lYEp05B8GoI5dmBZClUfTpzZT4q2qhGCXm8lzghnp1w=
+
+Name: com/fasterxml/jackson/core/json/async/NonBlockingJsonParser.clas
+ s
+SHA-256-Digest: I78hLRm1+i4iVnaJdl77aUPCTA+qIpiVxZBN5D2n7jk=
+
+Name: com/fasterxml/jackson/core/json/ReaderBasedJsonParser.class
+SHA-256-Digest: CwN+H0VoYZrs9vCTRevKbKP9XkGu1fnsMYjlkFz3ElQ=
+
+Name: com/fasterxml/jackson/core/json/DupDetector.class
+SHA-256-Digest: +UkCV+Z4e2c0wspWKQEEy4hrAUmO5MD6tuH6RlJfgN4=
+
+Name: com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer.class
+SHA-256-Digest: PuicwoC9ebjsCO+p1bhR1gGNYnaHeqc29+b39EbitiM=
+
+Name: com/fasterxml/jackson/core/filter/TokenFilter.class
+SHA-256-Digest: 84y1xvITHiR7My27QrnRHy4enuxPo84u9+d0ssEkW5A=
+
+Name: com/fasterxml/jackson/core/io/SerializedString.class
+SHA-256-Digest: jDlUoLvE5Brh47gPB6BVOM/XXGaP0HByWsXseSiLWFE=
+
+Name: com/fasterxml/jackson/core/json/JsonGeneratorImpl.class
+SHA-256-Digest: TxSfiNUKXVnXcodAOT1LBEpL/uqUWFslWTabPoweeSM=
+
+Name: com/fasterxml/jackson/core/util/DefaultPrettyPrinter$FixedSpaceI
+ ndenter.class
+SHA-256-Digest: EOjJBZiFZwcN0WMTETE0qGfhl7gmsoCP7tup22YUjv0=
+
+Name: com/fasterxml/jackson/core/io/IOContext.class
+SHA-256-Digest: rEO7UhK/gt1HfVKD9By/0dLFWnmtP7xEcSs4zBg5YWk=
+
+Name: META-INF/services/com.fasterxml.jackson.core.JsonFactory
+SHA-256-Digest: i/cV+/TDNDbM5V+SafwzHrJVwyIjPN7a5EVil7M4qvA=
+
+Name: com/fasterxml/jackson/core/async/ByteBufferFeeder.class
+SHA-256-Digest: l/dYrDun/+YpTVw/da4L9UqPIgke2YXXDCNlaUSHmgE=
+
+Name: com/fasterxml/jackson/core/io/NumberOutput.class
+SHA-256-Digest: ZYws/GJHoNvZn3uv/ngrpeCWgd3AgrLaoj/H+XPmUA4=
+
+Name: com/fasterxml/jackson/core/base/GeneratorBase.class
+SHA-256-Digest: K9s75dfP5q8zXYcL8PJQazAe0/UDHD6agU9e/lHxeqM=
+
+Name: com/fasterxml/jackson/core/format/InputAccessor$Std.class
+SHA-256-Digest: Vkke2AZSA5CWPaOUqMaiM8Alewwes1kYathL3JenpAk=
+
+Name: com/fasterxml/jackson/core/sym/Name2.class
+SHA-256-Digest: SrD+Wsdu38mxAVvcCzUkwERkh5VSmXC38wqcaf1ZxQo=
+
+Name: com/fasterxml/jackson/core/io/CharTypes.class
+SHA-256-Digest: zp05cg2M6BxBPAkkChFiTSNtDDQmYc23PQcrzpy5THw=
+
+Name: com/fasterxml/jackson/core/io/UTF8Writer.class
+SHA-256-Digest: okGUzQ9GSP0anqICg/IYh9r6myMI2ApZe/SXTALHcBo=
+
+Name: com/fasterxml/jackson/core/util/JsonParserDelegate.class
+SHA-256-Digest: cz+A6JGvneQkddTtz3p/vM7LIbS22+ji6ejg/ADB9f4=
+
+Name: com/fasterxml/jackson/core/util/Instantiatable.class
+SHA-256-Digest: VvgMfpnPMDzBi+f7cm9ifj1+8uYuIPKNntGbq8Ireuo=
+
+Name: META-INF/NOTICE
+SHA-256-Digest: qRvfmnbyexV/DElS9mc5r303qbq5vKdXUYd3z4y+scA=
+
+Name: about.html
+SHA-256-Digest: Q2fXUKIZFu+ziP3+Ickeg3fHZXBa1NIxYd2VVoMIKDs=
+
+Name: com/fasterxml/jackson/core/async/ByteArrayFeeder.class
+SHA-256-Digest: 4AY7jY8jRttQZY8o/u7+8l8yueWoC3Nk4EHqhiQBM+A=
+
+Name: com/fasterxml/jackson/core/io/DataOutputAsStream.class
+SHA-256-Digest: KcxsqhcU5+Jsz/scaqn4wlwW7QG6XHZ2jWEqDIWHq0o=
+
+Name: com/fasterxml/jackson/core/JsonGenerator.class
+SHA-256-Digest: uLh86VAnQM+zzsr1bBsR8gl/sJa4d9Q51E57Kk/OCas=
+
+Name: com/fasterxml/jackson/core/io/OutputDecorator.class
+SHA-256-Digest: 0Fm0XqQzGVLmYJWUTT5aa78ayRnSNSMrTwg2Zxqzl7c=
+
+Name: com/fasterxml/jackson/core/PrettyPrinter.class
+SHA-256-Digest: YomWCqBZyov/lat3rH5ncTHyePm3T+oHwYoFFj7/gxw=
+
+Name: com/fasterxml/jackson/core/TreeCodec.class
+SHA-256-Digest: LB6JCyX2ZU/BhGkdFqf+nieKKZvcWc81/vbx2OM5lDQ=
+
+Name: com/fasterxml/jackson/core/json/PackageVersion.class
+SHA-256-Digest: 9aFf399o7a2mbaRjp3HO3+LBsMkNXn7fj0t4JLa6Pv4=
+
+Name: com/fasterxml/jackson/core/json/UTF8JsonGenerator.class
+SHA-256-Digest: qMiNKDE1j0suJGPYo0b5GUrzcjb8pdTo/KMoHH5lxeo=
+
+Name: com/fasterxml/jackson/core/util/JsonParserSequence.class
+SHA-256-Digest: 1krFOlutaY5PJW7zTMv18uTWrHuFrq16LoqLCeHcCiI=
+
+Name: com/fasterxml/jackson/core/sym/ByteQuadsCanonicalizer$TableInfo.
+ class
+SHA-256-Digest: j/G5WGXoF+xBIcja5adgvFX7YQjKOyV1TGQBWsqc8yI=
+
+Name: com/fasterxml/jackson/core/json/UTF8DataInputJsonParser.class
+SHA-256-Digest: artEOXtvRqc8q/Y2usI2/mjwkdDdsCosqAIupm1iTjg=
+
+Name: com/fasterxml/jackson/core/io/CharacterEscapes.class
+SHA-256-Digest: er/b7HN8X5JKmVbPyqymX2XKuSNFHSu7ZOJAm8l6rOg=
+
+Name: com/fasterxml/jackson/core/FormatFeature.class
+SHA-256-Digest: s4o2FYsBT/iLPpY8n77F8LOGaYp/qJ5BNw8Ok6VlTUQ=
+
+Name: com/fasterxml/jackson/core/sym/Name3.class
+SHA-256-Digest: wzjBmx//MefBrriySLJxuMpxIzBqtgF3MyxoEpzrErk=
+
+Name: com/fasterxml/jackson/core/util/DefaultPrettyPrinter.class
+SHA-256-Digest: 2Kx1Nj4bSGmbBDnK/2oSS5Eq/J4abiewmH1gtWmLjZg=
+
+Name: com/fasterxml/jackson/core/io/MergedStream.class
+SHA-256-Digest: VzlfD+JDmXjazQ91I/MaaOIdAldQVMiq4lYGWRfZGYQ=
+

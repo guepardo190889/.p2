@@ -1,0 +1,121 @@
+Manifest-Version: 1.0
+Bundle-Description: Jersey JSON Jackson (2.x) entity providers support
+  module.
+Bundle-License: http://glassfish.java.net/public/CDDL+GPL_1_1.html
+Bundle-SymbolicName: org.glassfish.jersey.media.jersey-media-json-jack
+ son
+Archiver-Version: Plexus Archiver
+Built-By: genie.orbit
+Bundle-ManifestVersion: 2
+Bundle-DocURL: http://www.oracle.com/
+Bundle-Vendor: %bundleVendor
+Import-Package: com.fasterxml.jackson.core;version="[2.5,3)",com.faste
+ rxml.jackson.databind;version="[2.5,3)",com.fasterxml.jackson.databin
+ d.introspect;version="[2.5,3)",com.fasterxml.jackson.databind.jsonFor
+ matVisitors;version="[2.5,3)",com.fasterxml.jackson.databind.node;ver
+ sion="[2.5,3)",com.fasterxml.jackson.databind.ser;version="[2.5,3)",c
+ om.fasterxml.jackson.databind.ser.impl;version="[2.5,3)",com.fasterxm
+ l.jackson.jaxrs.base;version="[2.5,3)",com.fasterxml.jackson.jaxrs.cf
+ g;version="[2.5,3)",com.fasterxml.jackson.jaxrs.json;version="[2.5,3)
+ ",javax.annotation;version="[1.2,2)",javax.inject;version="[1.0,2)",j
+ avax.ws.rs;version="[2.0,3)",javax.ws.rs.core;version="[2.0,3)",javax
+ .ws.rs.ext;version="[2.0,3)",org.glassfish.hk2.api;version="[2.4,3)",
+ org.glassfish.hk2.utilities.binding;version="[2.4,3)",org.glassfish.j
+ ersey;version="[2.22,3)",org.glassfish.jersey.internal.spi;version="[
+ 2.22,3)",org.glassfish.jersey.internal.util;version="[2.22,3)",org.gl
+ assfish.jersey.jackson;version="[2.22,3)",org.glassfish.jersey.jackso
+ n.internal;version="[2.22,3)",org.glassfish.jersey.message.filtering;
+ version="[2.22,3)",org.glassfish.jersey.message.filtering.spi;version
+ ="[2.22,3)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Originally-Created-By: Apache Maven Bundle Plugin
+Export-Package: org.glassfish.jersey.jackson.internal;x-internal:=true
+ ;version="2.22.1";uses:="com.fasterxml.jackson.databind,com.fasterxml
+ .jackson.jaxrs.cfg,com.fasterxml.jackson.jaxrs.json,javax.annotation,
+ javax.inject,javax.ws.rs.core,org.glassfish.jersey.internal.spi",org.
+ glassfish.jersey.jackson;version="2.22.1";uses:="javax.ws.rs.core"
+Bundle-Name: %bundleName
+Bundle-Version: 2.22.1.v20161117-2005
+Created-By: Eclipse Bundle Recipe Maven Plug-in
+Build-Jdk: 1.8.0_131
+
+Name: org/glassfish/jersey/jackson/internal/JacksonFilteringFeature$1.
+ class
+SHA-256-Digest: +l7sptmsQKYROXLXeSJZn8VorFCx1RTRdPApx+szDRI=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.glassfish.jersey.me
+ dia.jersey-media-json-jackson/pom.xml
+SHA-256-Digest: D8Al/CG1Z7LadH+rwpgNHrzBBuWJ8o4DUBNbT8/Y2iY=
+
+Name: about.html
+SHA-256-Digest: 3KJbLXfp+KpU5XTX897O72sqaROf7/PrRSvQSYMOBVw=
+
+Name: org/glassfish/jersey/jackson/internal/FilteringJacksonJaxbJsonPr
+ ovider$1.class
+SHA-256-Digest: 8ocL8TI9bTAu8zMqeVz6Fc9OdwcsCFhAHTNAYJBEBmg=
+
+Name: org/glassfish/jersey/jackson/internal/JacksonFilteringFeature.cl
+ ass
+SHA-256-Digest: 9rPuGss2Sz/CJM85dFt3RaEeKmKqnG4kga4uqFUz37Q=
+
+Name: org/glassfish/jersey/jackson/internal/JacksonAutoDiscoverable.cl
+ ass
+SHA-256-Digest: 3Hxk6edF2n50n0wKHpK1s1FwaVNTMeZKQZdlT1cbdP8=
+
+Name: about_files/CDDL+GPL_LICENSE.html
+SHA-256-Digest: oPsIkt8F7XgZHSv6Z8CnMbEPNY+V5oTqWWxTPv5Pk/I=
+
+Name: org/glassfish/jersey/jackson/internal/JacksonObjectProvider$Filt
+ eringFilterProvider.class
+SHA-256-Digest: g+7XR7qCBSF/XZJVdYGoiLyLneACbtvBpfvbqc9L6H4=
+
+Name: org/glassfish/jersey/jackson/internal/JacksonFilteringFeature$Bi
+ nder$1.class
+SHA-256-Digest: 9Rv3PcgEV13LC9s8jPmnoTRvIxoFTUyaEEBOHnYWr68=
+
+Name: org/glassfish/jersey/jackson/internal/JacksonObjectProvider$Filt
+ eringPropertyFilter.class
+SHA-256-Digest: CMt7GZNjc1nguJA5R6h/90vlN4i/kLkOMt4oTbRwNf0=
+
+Name: org/glassfish/jersey/jackson/internal/FilteringJacksonJaxbJsonPr
+ ovider$FilteringObjectWriterModifier.class
+SHA-256-Digest: Z7H0p6azZq6sja7Mv1ULPbu+M7WD0OdEB03e8qcNJ2Y=
+
+Name: org/glassfish/jersey/jackson/internal/JacksonFilteringFeature$Bi
+ nder$2.class
+SHA-256-Digest: YqXYgTqbaUKg4l9NpZClJdLeq5IMlrHAIJHGB5ZzbOM=
+
+Name: org/glassfish/jersey/jackson/internal/JacksonObjectProvider$1.cl
+ ass
+SHA-256-Digest: QPljoBQ2qA9meQcYnZ7vPYJD47vv7ECMbgIHpF3L6sw=
+
+Name: org/glassfish/jersey/jackson/internal/JacksonObjectProvider.clas
+ s
+SHA-256-Digest: pb2E8VuELnZGbngeTnHZ+kCONhxB1bVqWVwSCTXsZOM=
+
+Name: org/glassfish/jersey/jackson/JacksonFeature.class
+SHA-256-Digest: jMeQ9C9Tn3bKCWxMT3eWMDT7h6UyiEJTUOTt4ooLJyU=
+
+Name: org/glassfish/jersey/jackson/internal/FilteringJacksonJaxbJsonPr
+ ovider.class
+SHA-256-Digest: 7kZDYbEj191XqF6gWGEcPDe4cCmMxhUsl82Kx5wmdN0=
+
+Name: META-INF/services/org.glassfish.jersey.internal.spi.AutoDiscover
+ able
+SHA-256-Digest: wqH0jEXGh8izUwLXj08C5tP3FSgWKqzrEs2U/2hU1ZA=
+
+Name: org/glassfish/jersey/jackson/internal/FilteringJacksonJaxbJsonPr
+ ovider$FilteringObjectWriterModifier$1.class
+SHA-256-Digest: hikoi8zuD7stAoulKKJhslMhg6/EIktYKKjJQO8fmog=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: MfR3rC7WB4+DtbJIr5iRsE4CKe42y1qEDc17PQFfbBc=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.glassfish.jersey.me
+ dia.jersey-media-json-jackson/pom.properties
+SHA-256-Digest: q8+fU+dN/a3DCTHPWkWhsyhq1vY+15EitY1Eabqz1OQ=
+
+Name: org/glassfish/jersey/jackson/internal/JacksonFilteringFeature$Bi
+ nder.class
+SHA-256-Digest: HbQTPlIqY3+n1PKBPs8zw4HECxqSts4dZJa4JYXetfI=
+

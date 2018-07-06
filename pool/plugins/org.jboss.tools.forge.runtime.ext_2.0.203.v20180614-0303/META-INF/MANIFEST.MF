@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.jboss.tools.forge.runtime.ext
+Built-By: hudson
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-SourceReferences: scm:git:https://github.com/jbosstools/jbosst
+ ools-forge.git;path="plugins/org.jboss.tools.forge.runtime.ext";commi
+ tId=ad77fa8de0f78ec0db44dba9b8d684b7a44122cd
+Bundle-Vendor: %BundleProvider
+Bundle-Name: %BundleName
+Bundle-Version: 2.0.203.v20180614-0303
+Bundle-Localization: plugin
+Created-By: Apache Maven 3.5.2
+Build-Jdk: 1.8.0_171
+Eclipse-BundleShape: dir
+

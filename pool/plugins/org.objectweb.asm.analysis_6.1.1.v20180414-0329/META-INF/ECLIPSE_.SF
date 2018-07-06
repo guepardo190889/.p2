@@ -1,0 +1,68 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: zg3FcS16OKfaTQp0OpKllJHfL/DKO
+ JG8w8Azbked46s=
+SHA-256-Digest-Manifest: D/jZxljKnWOv4zD2/gKfcB0p+OgWvFvuRwhr8AKR/ck=
+Created-By: 1.8.0_162 (Oracle Corporation)
+
+Name: org/objectweb/asm/tree/analysis/SourceInterpreter.class
+SHA-256-Digest: qYCclbQIBHp6NgerE2PePiX4QverhOYTVNm+Ved77FY=
+
+Name: about.html
+SHA-256-Digest: 7FXRxVCnWDcOpY2LRQUS0/JnhfiCHKQEUOXQsxIFhVk=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.objectweb.asm.analy
+ sis/pom.properties
+SHA-256-Digest: tCZhey3HB0ylH13JUymaXKKCSfhhPkLCCF1qrVnoBkY=
+
+Name: org/objectweb/asm/tree/analysis/SimpleVerifier.class
+SHA-256-Digest: pYQI8QKv/U8HGnbbTlLxcKN0MUSOhYZIUDdJrEOawT0=
+
+Name: org/objectweb/asm/tree/analysis/SmallSet.class
+SHA-256-Digest: aYbDwuedGmjWB4bSQJn4zLwwedHbNtOZm/kvgDoAIFg=
+
+Name: org/objectweb/asm/tree/analysis/Analyzer.class
+SHA-256-Digest: aJ76QvPJ8uo08LaE0bb+wz7pAumXwYC3e1EqPKJUpQ4=
+
+Name: org/objectweb/asm/tree/analysis/Frame.class
+SHA-256-Digest: 42e2FWk8rCVyMRIIXKRgzGd0PSZi5xo0rPCWpU1sYQw=
+
+Name: org/objectweb/asm/tree/analysis/SourceValue.class
+SHA-256-Digest: IJE9Ravo0+7Bit6PpYh5MSaeth6GX4iAawKw0sN7Qwg=
+
+Name: org/objectweb/asm/tree/analysis/BasicValue.class
+SHA-256-Digest: s3pEF3MCE6LJT01x2Pizxsd3AbMGnjJjf0MATE//uSY=
+
+Name: org/objectweb/asm/tree/analysis/BasicInterpreter.class
+SHA-256-Digest: ZvZOGzrYb5FiCQ7t2poHLIluYjVTb5ULducBI0NmUpM=
+
+Name: org/objectweb/asm/tree/analysis/Interpreter.class
+SHA-256-Digest: RStrfvzQtAchs/WyJoUSHCpvIMQAbB4qyjetbnLFSN4=
+
+Name: org/objectweb/asm/tree/analysis/Subroutine.class
+SHA-256-Digest: 36uWyxB0S1VovJtd03nlcxu9CYfMzMnvOZ/Tx6D0OWg=
+
+Name: org/objectweb/asm/tree/analysis/AnalyzerException.class
+SHA-256-Digest: aIvrv20gzNJ1TYFTv0OzsrSR/qgDBxePXNRe9BFbJ3A=
+
+Name: org/objectweb/asm/tree/analysis/BasicVerifier.class
+SHA-256-Digest: Um48tJOwLYvs8IqbXLCu9Ltl1jyqx4m47Y/q72Ne59w=
+
+Name: module-info.class
+SHA-256-Digest: IyQADk0WeyrOkXp3G5b+JmwhfYrDqgM7f5HHgLR3RE8=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: G6O0JA7SdZu8RfrmKznzErVIy7q3YVjqNxTBXB+q63k=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.objectweb.asm.analy
+ sis/pom.xml
+SHA-256-Digest: waEsAOVPlUfjDkJMVI4v67pagE43PRToCtLJrahCq4I=
+
+Name: about_files/NEW_BSD_LICENSE.html
+SHA-256-Digest: xL5Xqq7y4ou+bizODIO/mbWPuYrTTPbG7CLezyxkmsc=
+
+Name: org/objectweb/asm/tree/analysis/SmallSet$IteratorImpl.class
+SHA-256-Digest: Hy1pNESOjUlHdkDcKF6b0weMR1D5eQQQkuheQeLwvBk=
+
+Name: org/objectweb/asm/tree/analysis/Value.class
+SHA-256-Digest: eSrIcnKQ6DT206gUvM/a9jQop5Szd0Y944d3CPZaFnk=
+

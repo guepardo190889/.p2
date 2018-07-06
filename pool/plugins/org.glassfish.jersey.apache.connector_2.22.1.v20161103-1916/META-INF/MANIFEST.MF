@@ -1,0 +1,94 @@
+Manifest-Version: 1.0
+Bundle-Description: Jersey Client Transport via Apache
+Bundle-License: http://glassfish.java.net/public/CDDL+GPL_1_1.html
+Bundle-SymbolicName: org.glassfish.jersey.apache.connector
+Archiver-Version: Plexus Archiver
+Built-By: genie.orbit
+Bundle-ManifestVersion: 2
+Bundle-DocURL: http://www.oracle.com/
+Bundle-Vendor: %bundleVendor
+Import-Package: org.apache.http;version="[4.4,5)",org.apache.http.auth
+ ;version="[4.4,5)",org.apache.http.client;version="[4.4,5)",org.apach
+ e.http.client.config;version="[4.4,5)",org.apache.http.client.methods
+ ;version="[4.4,5)",org.apache.http.client.protocol;version="[4.4,5)",
+ org.apache.http.config;version="[4.4,5)",org.apache.http.conn;version
+ ="[4.4,5)",org.apache.http.conn.routing;version="[4.4,5)",org.apache.
+ http.conn.socket;version="[4.4,5)",org.apache.http.conn.ssl;version="
+ [4.4,5)",org.apache.http.entity;version="[4.4,5)",org.apache.http.imp
+ l.auth;version="[4.4,5)",org.apache.http.impl.client;version="[4.4,5)
+ ",org.apache.http.impl.conn;version="[4.4,5)",org.apache.http.impl.io
+ ;version="[4.4,5)",org.apache.http.io;version="[4.4,5)",org.apache.ht
+ tp.protocol;version="[4.4,5)",org.apache.http.util;version="[4.4,5)",
+ javax.ws.rs;version="[2.0,3)",javax.ws.rs.client;version="[2.0,3)",ja
+ vax.ws.rs.core;version="[2.0,3)",org.glassfish.jersey.internal.l10n;v
+ ersion="[2.22.1,2.23)",org.glassfish.jersey.internal.util;version="[2
+ .22.1,2.23)",org.glassfish.jersey.message.internal;version="[2.22.1,2
+ .23)",org.glassfish.jersey.client;version="[2.22,3)",org.glassfish.je
+ rsey.client.spi;version="[2.22,3)",jersey.repackaged.com.google.commo
+ n.util.concurrent;version="[2.22,3)",javax.net,javax.net.ssl
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Originally-Created-By: Apache Maven Bundle Plugin
+Export-Package: org.glassfish.jersey.apache.connector;version="2.22.1"
+ ;uses:="javax.ws.rs.client,javax.ws.rs.core,org.apache.http.client,or
+ g.glassfish.jersey.client.spi,org.glassfish.jersey.internal.l10n,org.
+ glassfish.jersey.internal.util"
+Bundle-Name: %bundleName
+Bundle-Version: 2.22.1.v20161103-1916
+Created-By: Eclipse Bundle Recipe Maven Plug-in
+Build-Jdk: 1.8.0_131
+
+Name: about.html
+SHA-256-Digest: V+WaU91MoFv+4XzLY2YC5VohAy4pH+3xkFWe+vL7j3Y=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.glassfish.jersey.ap
+ ache.connector/pom.xml
+SHA-256-Digest: u681FUQRclTRRJli8YzbrJsnnHRbopyKxPObWh+OCr4=
+
+Name: about_files/CDDL+GPL_LICENSE.html
+SHA-256-Digest: oPsIkt8F7XgZHSv6Z8CnMbEPNY+V5oTqWWxTPv5Pk/I=
+
+Name: org/glassfish/jersey/apache/connector/ApacheConnectorProvider.cl
+ ass
+SHA-256-Digest: COMW7DzF4ouTZaHc0k9uHCz1dKMjDCJeCw7zxzggO6g=
+
+Name: org/glassfish/jersey/apache/connector/localization.properties
+SHA-256-Digest: moTG94l1/94o+S62Dx4QPPDsKdz+MUrCfp+AYmglQG8=
+
+Name: org/glassfish/jersey/apache/connector/ApacheConnector$2.class
+SHA-256-Digest: 9XHxjiugCpxQm78pbR/Cb+APxK0ok7Cw62RLDudXwbM=
+
+Name: org/glassfish/jersey/apache/connector/ApacheConnector$1.class
+SHA-256-Digest: oyWTR2UQ49yTCmsO785q+Rz3htIGxY/9q9KowMtnT7A=
+
+Name: org/glassfish/jersey/apache/connector/ApacheConnector.class
+SHA-256-Digest: 9jA+QTAf/B30cWgfVk6BDT0wssIPqi85w4k2zn0ZbXs=
+
+Name: org/glassfish/jersey/apache/connector/ApacheConnector$HttpClient
+ Connection.class
+SHA-256-Digest: QnCJi1nRJQ3P+hbiBO6wzUkMUCQB/a/OTFd0ecPZgqU=
+
+Name: org/glassfish/jersey/apache/connector/ApacheClientProperties.cla
+ ss
+SHA-256-Digest: vix+0hRsl+DRSyVGC/KCX9j+ElX6uswVwwZfkJ+JOoI=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.glassfish.jersey.ap
+ ache.connector/pom.properties
+SHA-256-Digest: /H6DFfqpRJ3iqXeSAoznpsycZJq/vfA9SWYtnKWIBJo=
+
+Name: org/glassfish/jersey/apache/connector/ApacheConnector$2$1.class
+SHA-256-Digest: 9Bd1HK7OY3gATUhuPtgZ8PQEvkF/tpbSaZErUdxUeOo=
+
+Name: org/glassfish/jersey/apache/connector/ApacheConnector$Connection
+ Factory.class
+SHA-256-Digest: uCwodHb+oUvos5P2FEramRDeLUYGAtwrNEN9rFKeJhE=
+
+Name: org/glassfish/jersey/apache/connector/ApacheConnector$HttpClient
+ ResponseInputStream.class
+SHA-256-Digest: D+hmtfsQw/K/pqf3Q9vUbn6SRLVywhtE1AuLqIzfXeM=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: XXl5les8JPTb4Zzg5mFI2lrywJf47sHtiXgisJVg0pc=
+
+Name: org/glassfish/jersey/apache/connector/LocalizationMessages.class
+SHA-256-Digest: 52H50q4rEyf48thlNG3sQ9d2MDOxL0vkimYFu/9P120=
+

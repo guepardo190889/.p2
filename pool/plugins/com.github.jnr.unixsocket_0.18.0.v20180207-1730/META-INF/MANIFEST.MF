@@ -1,0 +1,109 @@
+Manifest-Version: 1.0
+Bundle-Description: Native I/O access for java
+Automatic-Module-Name: com.github.jnr.unixsocket
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: com.github.jnr.unixsocket
+Archiver-Version: Plexus Archiver
+Built-By: genie.orbit
+Require-Bundle: com.github.jnr.ffi,com.github.jnr.jffi
+Bundle-ManifestVersion: 2
+Bundle-Vendor: %bundleVendor
+Import-Package: jnr.constants.platform;version="0.9.8",jnr.enxio.chann
+ els;version="0.16.0",jnr.ffi;version="2.1.4",jnr.ffi.annotations;vers
+ ion="2.1.4",jnr.ffi.byref;version="2.1.4",jnr.ffi.types;version="2.1.
+ 4",jnr.posix;version="3.0.35"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Originally-Created-By: Apache Maven Bundle Plugin
+Export-Package: jnr.unixsocket;version="0.18.0";uses:="jnr.enxio.chann
+ els,jnr.ffi.annotations,jnr.ffi.byref,jnr.ffi.types,jnr.posix"
+Bundle-Name: %bundleName
+Bundle-Version: 0.18.0.v20180207-1730
+Created-By: Eclipse Bundle Recipe Maven Plug-in
+Build-Jdk: 1.8.0_162
+
+Name: jnr/unixsocket/UnixDatagramChannel.class
+SHA-256-Digest: e5tiIilQSp+6h6+/RFuEkxV5FL2iA6mclwM464n86q0=
+
+Name: jnr/unixsocket/Native.class
+SHA-256-Digest: EkTsjDGUrWmc9o5HG6J3J0xWQY2cTV4RxB+CeQax1QQ=
+
+Name: jnr/unixsocket/UnixServerSocketChannel.class
+SHA-256-Digest: YP3+1531FAtfkDcTwU4vvxO1eEyEejvndX+TI4mAUTE=
+
+Name: jnr/unixsocket/UnixSocketOptions.class
+SHA-256-Digest: f3J0q7vF1ltsz93YT3hgxPzgLaqiqy2tabsEEK3XZfM=
+
+Name: jnr/unixsocket/UnixSocketChannel$State.class
+SHA-256-Digest: 3pZT5miFNswgw4yFBlQ+c0Gn6SWPUkojhcaZ8RhDGXs=
+
+Name: jnr/unixsocket/UnixSocket.class
+SHA-256-Digest: zSVEQbM9L116zRYRVqwz6WvfJLwk1QWm0DM9x/gXSD8=
+
+Name: jnr/unixsocket/Common.class
+SHA-256-Digest: Lbx2It8njLuUfC0FG/K7Qd7/eB3AXzmaY3GJ3CpEgCg=
+
+Name: jnr/unixsocket/BindHandler.class
+SHA-256-Digest: vP9QmVXgOu0upJN5a3StWWHfy2oGnb/ThwZ+yn7iqcc=
+
+Name: jnr/unixsocket/SockAddrUnix.class
+SHA-256-Digest: LY3LnjFGFG58GJpb37hA9UMDkE5mDO/cSaY3X43bgZc=
+
+Name: jnr/unixsocket/UnixSocketAddress.class
+SHA-256-Digest: FfnR7CWMDEPGrcg18H/pW1p9MvOt7vrm+WrFTy4ZaWA=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.github.jnr.unixsock
+ et/pom.xml
+SHA-256-Digest: C0b28FmeU4uV/gRqBHDSl+RVjoJ5WHlyglI2l3GBLIg=
+
+Name: jnr/unixsocket/UnixSocketChannel.class
+SHA-256-Digest: q1hmke64IlsRzabiR/ligYEf6rcDuwCN7MNWLarMLss=
+
+Name: jnr/unixsocket/UnixDatagramSocket.class
+SHA-256-Digest: TqmkDofvxCFtrwG5IakjWt2wuRUtUIQ/7rOHiSbuy/A=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.github.jnr.unixsock
+ et/pom.properties
+SHA-256-Digest: bjB8+8i/dJQU01jachWyOFsPomhd+WzH8mfZxZFDv+M=
+
+Name: jnr/unixsocket/Credentials.class
+SHA-256-Digest: 17OKnrSgPK3Igog2TtXrRA79dV4sadx05eNObcPdCkk=
+
+Name: jnr/unixsocket/UnixServerSocket.class
+SHA-256-Digest: BV4ilSmJ9A4wsFsRODfsT078F13tHDCyezK5H2XyUiY=
+
+Name: about.html
+SHA-256-Digest: bxswBGp0qo+INCosceTH4WEvgV3cVvFjpPmLnaQd6gs=
+
+Name: jnr/unixsocket/UnixSocketChannel$DefaultOptionsHolder.class
+SHA-256-Digest: eXkELEHXZMO2jc+gRkzU/xAmHdvH2tCpD5lKbzwVP0w=
+
+Name: about_files/THE_APACHE_SOFTWARE_LICENSE__VERSION_2.0.txt
+SHA-256-Digest: z8d0m5b2O9McPEK1xHG/dWgUBT6EfBDz6wA0F7xSPTA=
+
+Name: jnr/unixsocket/Native$LibC.class
+SHA-256-Digest: 3p7S3cdSh5+lSmWlH12uqzy2/jXkhj7uMdC9MKWAYAo=
+
+Name: jnr/unixsocket/SockAddrUnix$BSDSockAddrUnix.class
+SHA-256-Digest: Kpr86b1sYq2VWhP2l4uMiNRbSyt1yf12Vm6tO7eL7Vs=
+
+Name: jnr/unixsocket/SockAddrUnix$DefaultSockAddrUnix.class
+SHA-256-Digest: s5t2rJ5Yfdt0vMBRv7YCqPv6RHlZ/4y/p4G+d3TGp24=
+
+Name: jnr/unixsocket/UnixDatagramChannel$DefaultOptionsHolder.class
+SHA-256-Digest: F7WBgaN2nVE42z7MejTwCUdfLhVNL8Qjx5e9Wi2+/Fg=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: wahF1W+vBTl/lDxI71a37RqyOxp31UlBmq9JjyZeBVA=
+
+Name: jnr/unixsocket/UnixDatagramChannel$State.class
+SHA-256-Digest: wEWrhilIYTJN8JZDppCkLLTl5DK0DFPBsRjsQOmvkwA=
+
+Name: jnr/unixsocket/UnixSocketChannel$1.class
+SHA-256-Digest: Rl+OxeLz72NuVSfeXhCDtRZEPZ5F/OQkNd6+ud4j9eI=
+
+Name: jnr/unixsocket/UnixSocketOptions$GenericOption.class
+SHA-256-Digest: SNtrHdpAwK7gSXjwPj83WZTU8ugqe4KzzqrmIi+FS9c=
+
+Name: jnr/unixsocket/Ucred.class
+SHA-256-Digest: qrxHJfYhcJ9zQO3WFzqXXLyXZNzPqQMoOO/Xog9Urjo=
+

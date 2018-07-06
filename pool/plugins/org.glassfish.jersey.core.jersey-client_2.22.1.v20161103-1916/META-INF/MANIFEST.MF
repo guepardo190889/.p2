@@ -1,0 +1,428 @@
+Manifest-Version: 1.0
+Bundle-Description: Jersey core client implementation
+Bundle-License: http://glassfish.java.net/public/CDDL+GPL_1_1.html
+Bundle-SymbolicName: org.glassfish.jersey.core.jersey-client
+Archiver-Version: Plexus Archiver
+Built-By: genie.orbit
+Require-Bundle: org.glassfish.hk2.locator;bundle-version="2.5.0"
+Bundle-ManifestVersion: 2
+Bundle-DocURL: http://www.oracle.com/
+Bundle-Vendor: %bundleVendor
+Import-Package: javax.ws.rs;version="[2.0,3)",javax.ws.rs.client;versi
+ on="[2.0,3)",javax.ws.rs.core;version="[2.0,3)",javax.ws.rs.ext;versi
+ on="[2.0,3)",javax.inject;version="[1.0,2)",javax.annotation;version=
+ "[1.2,2)",org.glassfish.jersey.client.internal;version="[2.22.1,2.23)
+ ",org.glassfish.jersey.internal;version="[2.22.1,2.23)",org.glassfish
+ .jersey.internal.inject;version="[2.22.1,2.23)",org.glassfish.jersey.
+ internal.l10n;version="[2.22.1,2.23)",org.glassfish.jersey.internal.s
+ pi;version="[2.22.1,2.23)",org.glassfish.jersey.internal.util;version
+ ="[2.22.1,2.23)",org.glassfish.jersey.internal.util.collection;versio
+ n="[2.22.1,2.23)",org.glassfish.jersey.message.internal;version="[2.2
+ 2.1,2.23)",org.glassfish.jersey.model.internal;version="[2.22.1,2.23)
+ ",org.glassfish.jersey.process.internal;version="[2.22.1,2.23)",org.g
+ lassfish.jersey.spi;version="[2.22.1,2.23)",org.glassfish.jersey;vers
+ ion="[2.22,3)",org.glassfish.jersey.client;version="[2.22,3)",org.gla
+ ssfish.jersey.client.spi;version="[2.22,3)",org.glassfish.jersey.mess
+ age;version="[2.22,3)",org.glassfish.jersey.process;version="[2.22,3)
+ ",org.glassfish.jersey.uri;version="[2.22,3)",jersey.repackaged.com.g
+ oogle.common.base;version="[2.22,3)",jersey.repackaged.com.google.com
+ mon.collect;version="[2.22,3)",jersey.repackaged.com.google.common.ut
+ il.concurrent;version="[2.22,3)",org.glassfish.hk2.api;version="[2.4,
+ 3)",org.glassfish.hk2.utilities;version="[2.4,3)",org.glassfish.hk2.u
+ tilities.binding;version="[2.4,3)",javax.net.ssl
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Originally-Created-By: Apache Maven Bundle Plugin
+Export-Package: org.glassfish.jersey.client.internal;x-internal:=true;
+ version="2.22.1";uses:="javax.ws.rs.client,org.glassfish.jersey.clien
+ t,org.glassfish.jersey.client.spi,org.glassfish.jersey.internal.l10n"
+ ,org.glassfish.jersey.client;version="2.22.1";uses:="javax.inject,jav
+ ax.net.ssl,javax.ws.rs,javax.ws.rs.client,javax.ws.rs.core,javax.ws.r
+ s.ext,jersey.repackaged.com.google.common.base,org.glassfish.hk2.api,
+ org.glassfish.jersey,org.glassfish.jersey.client.spi,org.glassfish.je
+ rsey.internal,org.glassfish.jersey.internal.inject,org.glassfish.jers
+ ey.internal.util,org.glassfish.jersey.internal.util.collection,org.gl
+ assfish.jersey.message,org.glassfish.jersey.message.internal,org.glas
+ sfish.jersey.spi",org.glassfish.jersey.client.authentication;version=
+ "2.22.1";uses:="javax.ws.rs,javax.ws.rs.client,javax.ws.rs.core",org.
+ glassfish.jersey.client.filter;version="2.22.1";uses:="javax.ws.rs.cl
+ ient,javax.ws.rs.core",org.glassfish.jersey.client.spi;version="2.22.
+ 1";uses:="javax.net.ssl,javax.ws.rs.client,javax.ws.rs.core,org.glass
+ fish.jersey.client,org.glassfish.jersey.process"
+Bundle-Name: %bundleName
+Bundle-Version: 2.22.1.v20161103-1916
+Created-By: Eclipse Bundle Recipe Maven Plug-in
+Build-Jdk: 1.8.0_131
+
+Name: org/glassfish/jersey/client/ChunkParser.class
+SHA-256-Digest: nSdmpCONeRTeHnfE/5J1Yn1pvDG8fvdKaXkNClSLueY=
+
+Name: org/glassfish/jersey/client/HttpUrlConnectorProvider.class
+SHA-256-Digest: /pCLAOd3HsB4yMhZFzlCZuOLGND9TUAE3Q7PQ6bEWhk=
+
+Name: org/glassfish/jersey/client/JerseyInvocation$EntityPresence.clas
+ s
+SHA-256-Digest: a5wWIbByPsyD0708liPsKgs/LUCUInsr0w/Cw3taxRE=
+
+Name: org/glassfish/jersey/client/ResponseCallback.class
+SHA-256-Digest: XFqXhTqxG22ouH8jTmScYOUm0BBBrFT6I8VFx5pROn0=
+
+Name: org/glassfish/jersey/client/authentication/RequestAuthentication
+ Exception.class
+SHA-256-Digest: DIgcoUiitsJGQ6ENvYLyOPgrsISevnggoyQdC6pUSL0=
+
+Name: org/glassfish/jersey/client/JerseyInvocation$5.class
+SHA-256-Digest: qFYQTSaLhE8QfwvQXcxEV/RKsXFHpocXUO0y84AIrhc=
+
+Name: org/glassfish/jersey/client/ClientConfig$State$4.class
+SHA-256-Digest: 158RxmFixUUqglpAgkLaiSvGq2M/FOCEqkEjcCNlRdk=
+
+Name: org/glassfish/jersey/client/ClientResponse$1.class
+SHA-256-Digest: RPQUYsWkgHoLUU8BXNSeudZwSv4HyYi4KVDlonX8sbM=
+
+Name: org/glassfish/jersey/client/InboundJaxrsResponse$2.class
+SHA-256-Digest: CfQRCjwzGnA8KWEYqMx3LPeKyo+N1NXuzFiyK/9rBwU=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.glassfish.jersey.co
+ re.jersey-client/pom.xml
+SHA-256-Digest: I5pj//ArE9uZnd7dqbDvyK8JuiSUKFkICYxEx/G0Kj0=
+
+Name: org/glassfish/jersey/client/internal/HttpUrlConnector$5.class
+SHA-256-Digest: O68bEPUjC2E9ZzVA86dS9p+XBomRFa3tzfBd515A4L0=
+
+Name: org/glassfish/jersey/client/DefaultClientAsyncExecutorProvider$1
+ .class
+SHA-256-Digest: 8ZEdyAzWIltL+abUii1PVJDHd3KQkVt13lFFafUvxZk=
+
+Name: org/glassfish/jersey/client/filter/CsrfProtectionFilter.class
+SHA-256-Digest: tOSLA1g4mKbYKkumYCZyat7pkTPpC/UoVYumkDwsFbc=
+
+Name: org/glassfish/jersey/client/filter/EncodingFilter.class
+SHA-256-Digest: 5+rvSM/aeA68oh8/dk3Nu7gSr+BK3nim0E4j39o3qhM=
+
+Name: org/glassfish/jersey/client/spi/DefaultSslContextProvider.class
+SHA-256-Digest: dqobX8swYSW3PFVXxXROjVNXuNlsmap+waRRwVOIWX4=
+
+Name: org/glassfish/jersey/client/internal/LocalizationMessages.class
+SHA-256-Digest: Seugo+nVV0q7Z5uKBFk+yYt5iBeCsn6DwVsyny1ZFXs=
+
+Name: org/glassfish/jersey/client/JerseyInvocation$2.class
+SHA-256-Digest: cyJhVkcY0Aiu37xAfGY+bqxgJkNVN0yP8t6iwULZ0xw=
+
+Name: org/glassfish/jersey/client/ServiceLocatorClientProvider.class
+SHA-256-Digest: 1341NiYpQ3sBUTyxr7SZ9j56ZZrNWUfc20ol9FgPMO4=
+
+Name: org/glassfish/jersey/client/ClientBinder$2.class
+SHA-256-Digest: B9Y3gZOoy1BPmziLudiptL9GVzFpjAGdCcdK6utmnbg=
+
+Name: org/glassfish/jersey/client/authentication/HttpAuthenticationFea
+ ture$Mode.class
+SHA-256-Digest: kSGD/BWmooBYNcJYRrMmNqhyUuXGvoldlgVDm9OB3EE=
+
+Name: org/glassfish/jersey/client/authentication/HttpAuthenticationFil
+ ter$2.class
+SHA-256-Digest: 1R2G437qGeQNOZMvX8eQkcGv6Lprq08qFIaeUx5cAak=
+
+Name: org/glassfish/jersey/client/ClientProperties.class
+SHA-256-Digest: BNzk9Lrp2RdWtScBwwDTUq7D1tlYfWtruNusRusxrx8=
+
+Name: org/glassfish/jersey/client/ClientRuntime$2$1.class
+SHA-256-Digest: 0KPbyXQ0UOi9LR3VLPj4/W3n/CuCmXcXF3z4Wr8C808=
+
+Name: org/glassfish/jersey/client/RequestEntityProcessing.class
+SHA-256-Digest: UENhfK57yvI1xSHTnE/Nh7mrWejZTS2Hmwjs2uSPTeM=
+
+Name: org/glassfish/jersey/client/ClientFilteringStages$1.class
+SHA-256-Digest: biJB31CEfn/RXtH9hcWa43VgHI9aLI+2jSa4lIBIgLk=
+
+Name: org/glassfish/jersey/client/ClientFilteringStages.class
+SHA-256-Digest: 89bS6Sh0d8uEU2b2fzdMJ3slPrX68CrW+k5Fp2FpBGs=
+
+Name: org/glassfish/jersey/client/DefaultClientAsyncExecutorProvider.c
+ lass
+SHA-256-Digest: lahU6k4Wulc9Z0oLp/gM+U7HMXWc1/uJQpk1sLX5/1A=
+
+Name: org/glassfish/jersey/client/JerseyClientBuilder$1.class
+SHA-256-Digest: QyeTf2jbpRDFutw08jABQQTuzcgJIEUvqcYSCwEzEME=
+
+Name: org/glassfish/jersey/client/spi/ConnectorProvider.class
+SHA-256-Digest: tFO1m6QImGIntkSQXcO9+s0x7Jw1TLa41G7Yde3SMJg=
+
+Name: org/glassfish/jersey/client/JerseyInvocation$8.class
+SHA-256-Digest: oIxRyBSUWstt00hSIICe3frhTny39o5tlQTe2vpMA78=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: rqT3/zHsJSpdjNlPXAuX/kfhDwIv9shk+4gf4BXBZ4s=
+
+Name: org/glassfish/jersey/client/AbortException.class
+SHA-256-Digest: 6ygRs8OTVEegqh0MdU+jC8LI7VH6c2nsxVRdiLxToLE=
+
+Name: org/glassfish/jersey/client/ClientBinder.class
+SHA-256-Digest: oVNoeGEOOkQrSFHFNu7E7DfSycMFPF/BkRjLHI0KTHs=
+
+Name: org/glassfish/jersey/client/authentication/HttpAuthenticationFil
+ ter$Type.class
+SHA-256-Digest: 7zAlxMxmIENThqkCsWNl32ExxDNDc2S+xkU0jizqNnI=
+
+Name: org/glassfish/jersey/client/authentication/DigestAuthenticator$Q
+ OP.class
+SHA-256-Digest: kc1/H16NBrOll520hah1enCDnXQhhYIRF2EO5KhefXI=
+
+Name: org/glassfish/jersey/client/InboundJaxrsResponse$1.class
+SHA-256-Digest: Y84sAwWFSpc+1XhbgUA0DPaqTV/fCtLLA1MUeCXiW28=
+
+Name: org/glassfish/jersey/client/ChunkedInputReader.class
+SHA-256-Digest: kSzMM34HT6eHwnqkzG1eFHesRrYuMZfg8m8FP2jyuOQ=
+
+Name: org/glassfish/jersey/client/JerseyInvocation$7.class
+SHA-256-Digest: +149QUEtF5u5trYKvrhhxpzUQ/pUC4avqcDtOMNGjUU=
+
+Name: org/glassfish/jersey/client/spi/AsyncConnectorCallback.class
+SHA-256-Digest: hFKxzgmKqGYUGoD1pB/poClLN6wRNOGXxZbEGJJeCQE=
+
+Name: org/glassfish/jersey/client/JerseyClient$2.class
+SHA-256-Digest: FaoTWELQXP7KVGthcBZnE7VUgPkUGXBgzoAV91WuqE4=
+
+Name: org/glassfish/jersey/client/authentication/DigestAuthenticator.c
+ lass
+SHA-256-Digest: z4DFbUmBcTrTyX5o8io1l3i5CcbSmrKPZlVNjbGINlQ=
+
+Name: org/glassfish/jersey/client/authentication/HttpAuthenticationFea
+ ture$BasicBuilder.class
+SHA-256-Digest: bj2FyrPdcx4+0txD15N/IxPt0eDs5tUOodipELXS238=
+
+Name: org/glassfish/jersey/client/authentication/HttpAuthenticationFea
+ ture.class
+SHA-256-Digest: 5HCExL4HQWyDNj7hfjKHyR8RZ4BHdwZvrz6U5vPtMoQ=
+
+Name: org/glassfish/jersey/client/HttpUrlConnectorProvider$ConnectionF
+ actory.class
+SHA-256-Digest: MmP9Z4Wtu/3gbz2VQUC36JCnU6yuL4GJ8QTtTpbSCHs=
+
+Name: org/glassfish/jersey/client/ClientConfig$State$2.class
+SHA-256-Digest: xHNHCx739H5igiz/7U7qSd0Th5jzQsua5ijE9eyzd/0=
+
+Name: org/glassfish/jersey/client/spi/CachingConnectorProvider.class
+SHA-256-Digest: hbBY1f1K6i3Afo9L9xrNQ23dAk1ckzFFFOyaQ40QwSU=
+
+Name: org/glassfish/jersey/client/spi/Connector.class
+SHA-256-Digest: uSHg0iSasDqaixOQxBnv0l+J330/DBw3sJTXJYkJK+Y=
+
+Name: org/glassfish/jersey/client/ClientConfig$1.class
+SHA-256-Digest: MwxVI9gQnpjI1+XdgtfiXDECTEukctQbH6Fn8poEQDw=
+
+Name: org/glassfish/jersey/client/ClientAsyncExecutorLiteral.class
+SHA-256-Digest: tG/pXm5CcGbVhJVAvL3sodNPznFQBmd4kSxkczpevGk=
+
+Name: org/glassfish/jersey/client/JerseyInvocation.class
+SHA-256-Digest: Irk83euJKP92sOhPwa+hN6umdGtdJeR4C1v1RV/n2SA=
+
+Name: org/glassfish/jersey/client/authentication/BasicAuthenticator.cl
+ ass
+SHA-256-Digest: 4v46acvbYvjn06wN13vECdEWVHB/xB2fvM1v8pSNV7g=
+
+Name: org/glassfish/jersey/client/ClientLifecycleListener.class
+SHA-256-Digest: tFYwM3KOF6Ob6R6Lxi1//zM6n2s6HmuotymmXayrjZE=
+
+Name: org/glassfish/jersey/client/JerseyInvocation$6.class
+SHA-256-Digest: 83ThmJyFaF72o9aPcaJch32JG4oCpI5GeDv2FURcjBo=
+
+Name: org/glassfish/jersey/client/JerseyClient$ShutdownHook.class
+SHA-256-Digest: lr3uK7Y1uP2skYjBLzMf0T1wEtPkh7E/3ya35YvMa68=
+
+Name: org/glassfish/jersey/client/authentication/HttpAuthenticationFea
+ ture$UniversalBuilder.class
+SHA-256-Digest: gJbaVNzRns6Y239UtZOaQhmVsP8sd0RID4ZOJsOxnbg=
+
+Name: org/glassfish/jersey/client/ClientConfig$State$StateChangeStrate
+ gy.class
+SHA-256-Digest: AP1dcJM1McVeZ0Ta6+kpzG+r0irttrbKO2wnadsq9sQ=
+
+Name: org/glassfish/jersey/client/ClientFilteringStages$ResponseFilter
+ Stage.class
+SHA-256-Digest: l8/BQ3AChR92lEC+3ZG993Mb7coEiDXrlaJGqTpUxoA=
+
+Name: org/glassfish/jersey/client/ClientConfig$State$1.class
+SHA-256-Digest: y8QKVh50rT47tZgND+AuqcrhumESrSQl3VU0DgRUKNo=
+
+Name: org/glassfish/jersey/client/internal/localization.properties
+SHA-256-Digest: FWCWPzaV3qem8mZe5PSpuPtRZP6fcbSdT/c/v/vlbpw=
+
+Name: org/glassfish/jersey/client/internal/HttpUrlConnector$1.class
+SHA-256-Digest: OmtAHC9/brsZu7NxcRnGpWfHUR1xmc67P0y4mUnhdAg=
+
+Name: org/glassfish/jersey/client/Initializable.class
+SHA-256-Digest: KBv271hVk7nxw4wehWvDi/jR1+USifVD0bG5FMpTh/0=
+
+Name: org/glassfish/jersey/client/internal/HttpUrlConnector.class
+SHA-256-Digest: lc1d4QoNYhoA2eH1SnUDou59RqPXcRUwBEtcjdgeVoc=
+
+Name: org/glassfish/jersey/client/ClientAsyncExecutor.class
+SHA-256-Digest: FncTFsYtH4Mx6fU/o8tAz73nIF+kjIWSkKW+ZvoHy0I=
+
+Name: org/glassfish/jersey/client/authentication/HttpAuthenticationFil
+ ter.class
+SHA-256-Digest: cNrXuol2skY+JHsK/TOLK42Wv8SUrwLSpFgnYPPq0C4=
+
+Name: org/glassfish/jersey/client/authentication/DigestAuthenticator$D
+ igestScheme.class
+SHA-256-Digest: c6Il0KajWb9t6vJXiHqWcxbs20tufDXGGd0QTJYOERc=
+
+Name: org/glassfish/jersey/client/ClientBinder$PropertiesDelegateFacto
+ ry.class
+SHA-256-Digest: KSo8dovAsL+j0na05fPtAm4HrALSMzeUcTGQ2qgO57U=
+
+Name: org/glassfish/jersey/client/InboundJaxrsResponse.class
+SHA-256-Digest: znKm1yugz6dpkTBZEz2RGE7p2t5HmYzZ/rswrTaSE3g=
+
+Name: org/glassfish/jersey/client/JerseyInvocation$4.class
+SHA-256-Digest: mxKocMrgFU0vbXTTtlsVvW6FWa2ZiyqOP4Cbsr3dEco=
+
+Name: org/glassfish/jersey/client/InboundJaxrsResponse$3.class
+SHA-256-Digest: 3ZkrSbqGlQBmsQjm8de7a1I/M37M97bLgaUdiQ8EJ4g=
+
+Name: org/glassfish/jersey/client/authentication/HttpAuthenticationFil
+ ter$Credentials.class
+SHA-256-Digest: r7RZCHfzr0a94Y19L3ZVqvmUl5qc2yJWH6XA+sHfOSo=
+
+Name: org/glassfish/jersey/client/ChunkedInput.class
+SHA-256-Digest: ktIXMLfgl6TNAz8FdR6RoY4Ab6lKNQfUD7sVLvO8rgA=
+
+Name: org/glassfish/jersey/client/internal/HttpUrlConnector$4.class
+SHA-256-Digest: 1ORom5MKilqFJ6ADggN27R+VpFTqzCb7N2gZ+aWZdEQ=
+
+Name: org/glassfish/jersey/client/ClientConfig$State$3.class
+SHA-256-Digest: ORi/qTLo3WGpzqyq5ODObgN9YzKG3YxlfUYqgSAJDhs=
+
+Name: org/glassfish/jersey/client/authentication/HttpAuthenticationFea
+ ture$1.class
+SHA-256-Digest: 5OB96J/LVLSpK+YJSGQQB0HAMqV27FMiHIQrjZLCKAk=
+
+Name: org/glassfish/jersey/client/JerseyInvocation$1.class
+SHA-256-Digest: uio9TNkJy8DaGV6K5gLc26JssQEZ7BR/NNYBy3myMWE=
+
+Name: org/glassfish/jersey/client/JerseyInvocation$AsyncInvoker.class
+SHA-256-Digest: hzAzqJZmaaxAkMjk+YazKLdbWy5aPDl8fxYATTXMaKU=
+
+Name: org/glassfish/jersey/client/authentication/HttpAuthenticationFea
+ ture$Builder.class
+SHA-256-Digest: O8I39dE1pxdgOKldDY8QhSs5cAZ2SEx0yiNBWbYKI1k=
+
+Name: org/glassfish/jersey/client/ClientRuntime$1.class
+SHA-256-Digest: 8NbBR5oExHRioOTXrWv5SFniGJO6U4EYOeGHx7IjZ0U=
+
+Name: org/glassfish/jersey/client/JerseyClient$1.class
+SHA-256-Digest: NpYxLp9fndcedHkpFg74ZEtz24T46sGMIpgEgwMbPBg=
+
+Name: org/glassfish/jersey/client/JerseyClientBuilder.class
+SHA-256-Digest: pyM6YBrXx97AD8ZflOeoQ67zQgl5HKvhGekJX4EBtuo=
+
+Name: org/glassfish/jersey/client/authentication/HttpAuthenticationFil
+ ter$1.class
+SHA-256-Digest: eKH52h4N08/+Hgcp389oFI+pu/FpmRqlB2WmExLrJiE=
+
+Name: org/glassfish/jersey/client/InboundJaxrsResponse$4.class
+SHA-256-Digest: C0jokCF3KqVqHVRa8ZK4yH1ezVruvKicZlNDig/EZ7g=
+
+Name: org/glassfish/jersey/client/JerseyInvocation$3.class
+SHA-256-Digest: E1dJ9BKLiw2tOHRneAvbOWHYWxVJqznx4dQr2x3tFlQ=
+
+Name: org/glassfish/jersey/client/internal/HttpUrlConnector$2$1.class
+SHA-256-Digest: QctjlJj3CwuR7M9B1lrZ2nzFXOfXWNrWXCl9GjWWpKw=
+
+Name: org/glassfish/jersey/client/filter/EncodingFeature.class
+SHA-256-Digest: /odPFT8u31x7QOqUxZiLlihAjH+ZFq0o0glb8k/knbs=
+
+Name: org/glassfish/jersey/client/HttpUrlConnectorProvider$1.class
+SHA-256-Digest: z1yibeE0VSwaFF3jHq8ykOfhjkY4SISZA98UPnbawEA=
+
+Name: org/glassfish/jersey/client/ClientBinder$1.class
+SHA-256-Digest: jl19fpS3E9U5TMdzzI9+1hmT8VTev0staU08U5j5Npc=
+
+Name: org/glassfish/jersey/client/ClientResponse.class
+SHA-256-Digest: itOeA879kRxdH0nun672cyUJmJDBq15yHr7figcC3Vs=
+
+Name: org/glassfish/jersey/client/internal/HttpUrlConnector$3.class
+SHA-256-Digest: kyVpFZdpAcL5u57aC55kQoaTy0LgpkXZVmcCqpVGSbo=
+
+Name: org/glassfish/jersey/client/ClientFilteringStages$RequestFilteri
+ ngStage.class
+SHA-256-Digest: 8+FyX75xRkiylC8lrItt619bAvv5zkE8ZgUOvCU6rgQ=
+
+Name: org/glassfish/jersey/client/ClientRuntime.class
+SHA-256-Digest: 8Lb8Ot6jTMB0Ryx6aPNhnDRN3dcCdPIdD2i7AQVQCtk=
+
+Name: org/glassfish/jersey/client/ClientConfig.class
+SHA-256-Digest: r38K05RTqzcIV6y5gQjksRWOSnSTbqg9piPxHR2uCSs=
+
+Name: org/glassfish/jersey/client/ClientRuntime$2.class
+SHA-256-Digest: rc82I0MOMVdYXVtv4gQ3lyM0ohDqY/mUaCsxq6n4ov8=
+
+Name: org/glassfish/jersey/client/JerseyClient.class
+SHA-256-Digest: wGqjIviDIO7lk/VZPcFdEHL48AlfxswYr/Ky4tPB6zQ=
+
+Name: about.html
+SHA-256-Digest: U6JeHwa7TQ08d/6nQVRSuzqx3iNbg1IybG6lnsIkrhM=
+
+Name: org/glassfish/jersey/client/authentication/HttpAuthenticationFea
+ ture$BuilderImpl.class
+SHA-256-Digest: Qp95IqF7cNL70PvFUEzZtboPMQS3r5tdoKtPBQKvsqA=
+
+Name: org/glassfish/jersey/client/HttpUrlConnectorProvider$DefaultConn
+ ectionFactory.class
+SHA-256-Digest: 9s3NlxJoFP90GXvCBhoPhccKQd49Db9eHOL6TRtKmB8=
+
+Name: about_files/CDDL+GPL_LICENSE.html
+SHA-256-Digest: oPsIkt8F7XgZHSv6Z8CnMbEPNY+V5oTqWWxTPv5Pk/I=
+
+Name: org/glassfish/jersey/client/ClientRequest.class
+SHA-256-Digest: acB3AW6F9GbdyhNIpUyhG7p3yE5EAMWBT5Fq1cX76Yw=
+
+Name: org/glassfish/jersey/client/ClientResponse$2.class
+SHA-256-Digest: vGfIBFqhHZbiJJY32rLS7+rohLm8HRymI74YO390eEs=
+
+Name: org/glassfish/jersey/client/authentication/DigestAuthenticator$A
+ lgorithm.class
+SHA-256-Digest: nZW4ZCq0XfW7Jriu8RNH2236QSlmDpwj0XC8WitlsoY=
+
+Name: org/glassfish/jersey/client/CustomProvidersFeature.class
+SHA-256-Digest: T9o2GP5id1xd1Wm6/PBlo3IfWhQW9iMbdz4RuQuc5PU=
+
+Name: org/glassfish/jersey/client/internal/HttpUrlConnector$2.class
+SHA-256-Digest: FUnppe/D20gXdcM9NSoa0Rl09Og0FIfbWwYNKeJDHm0=
+
+Name: org/glassfish/jersey/client/JerseyInvocation$Builder.class
+SHA-256-Digest: 2QgSuPBngWNm6+HHbwF29/g5tfdzZOwQqmadpvZqi/k=
+
+Name: org/glassfish/jersey/client/ClientConfig$State.class
+SHA-256-Digest: 6YH/mQOtRwPc07LOdLWZQcBZakq4LTpVA9NnUhtTeik=
+
+Name: org/glassfish/jersey/client/ChunkedInput$FixedBoundaryParser.cla
+ ss
+SHA-256-Digest: g98TrJeG5qu4xc+CyMOG2bfilRDGihZKPF70/4hO6Ak=
+
+Name: org/glassfish/jersey/client/ClientBinder$RequestContextInjection
+ Factory.class
+SHA-256-Digest: GBIqs/axThLX2awQYiTsXJ7spLnArkpWFAJrsnNOMeg=
+
+Name: org/glassfish/jersey/client/ClientRuntime$3.class
+SHA-256-Digest: /5vfMny2xndQQeYcjOp43Z0d64qKmn5DlQaBI6bTBHY=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.glassfish.jersey.co
+ re.jersey-client/pom.properties
+SHA-256-Digest: EjSBXu2qnp+m7cCy4MzXMl8NrKNivqZrdC/28AL7rIU=
+
+Name: org/glassfish/jersey/client/authentication/ResponseAuthenticatio
+ nException.class
+SHA-256-Digest: 7fbCYNzNS9kbf59G6bSBW9s+MAB7GqUrK+S6XnVx2Yw=
+
+Name: org/glassfish/jersey/client/JerseyWebTarget.class
+SHA-256-Digest: K7Cooe3jCW9R5OCcxADvVOdqA8XghvFHjCArz7VIb7g=
+
+Name: org/glassfish/jersey/client/authentication/DigestAuthenticator$1
+ .class
+SHA-256-Digest: fdNacBciR7sVLvoUAdYKz419QxoztJkzr/UVsJR1Azc=
+
+Name: org/glassfish/jersey/client/RequestProcessingInitializationStage
+ .class
+SHA-256-Digest: tq+0YKUxSkLI5bh/aABdlWuuk/Zp6VxTD6jjYx3wT0I=
+

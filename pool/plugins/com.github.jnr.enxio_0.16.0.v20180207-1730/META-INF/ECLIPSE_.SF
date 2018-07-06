@@ -1,0 +1,98 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: B3a9e7Oe62RZ3pdbH3rei40Okq7OL
+ fnuDuCRM/FSouo=
+SHA-256-Digest-Manifest: KVpjiZmIX6TSCN+p/Vy4aQ39sK3DU4e8HH1RYQTLSS0=
+Created-By: 1.8.0_162 (Oracle Corporation)
+
+Name: jnr/enxio/channels/Native$LibC.class
+SHA-256-Digest: O2smn0vLV+0qdOZi/5vfh9VKB5vpQZ2KUkTV5zHs8Q4=
+
+Name: jnr/enxio/channels/NativeDeviceChannel$1.class
+SHA-256-Digest: nniRj7PEAfrGDrHcgsFjWKnt7e7f2VKSEXvBX47aqIM=
+
+Name: jnr/enxio/channels/KQSelector.class
+SHA-256-Digest: bScsmN723BE9S+P225Qcot8Dl/KOEPEfo7qm81Jn/uQ=
+
+Name: jnr/enxio/channels/KQSelector$EventLayout.class
+SHA-256-Digest: HZTmq5dHKGLv8hm9ROl62eB0ruHZ0EtnWh6pBxoKfd0=
+
+Name: jnr/enxio/channels/Native$SingletonHolder.class
+SHA-256-Digest: 8twpT+CqtTAbsYN8Ucfen7kzqtBR9qdTXwdXRwO0kgQ=
+
+Name: jnr/enxio/channels/Native$Timespec.class
+SHA-256-Digest: LNeLfRcNz6Q+wGSwWtDOGS4N2m10/G+MVGWzXORJTfg=
+
+Name: jnr/enxio/channels/KQSelector$EventIO.class
+SHA-256-Digest: uyiQk7EXbI8B6HnuqI5BDvmcS+zVWjMb9KcASJBf024=
+
+Name: jnr/enxio/channels/AbstractNativeSocketChannel.class
+SHA-256-Digest: mnxn7lFn7NALoShgg3Ji+jvEVwRL2M+zGzQSZBCnzPg=
+
+Name: jnr/enxio/channels/NativeSocketChannel.class
+SHA-256-Digest: uW5a4rsfXL3MxwqroIn/kB9tG+K8IUg5gtX8txrYonM=
+
+Name: jnr/enxio/channels/Native.class
+SHA-256-Digest: FfoiEQGBBmvq1HE0H/J437zQTDroDgwilHx8rp9O1tI=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.github.jnr.enxio/po
+ m.xml
+SHA-256-Digest: l/COBvBEpNpanjgDwZSFKsx79PYquG/2PI+/43JgNd0=
+
+Name: jnr/enxio/channels/NativeException.class
+SHA-256-Digest: RjqXrlvaiEzFlzLsn6pecdz4vrPhvKlbMwFPO7FvJP0=
+
+Name: jnr/enxio/channels/KQSelector$1.class
+SHA-256-Digest: kLWO/2f5oLK6puPVHdmJYmDs1cfB3r++P/IVAkSeuxM=
+
+Name: about.html
+SHA-256-Digest: iegk8ANiMyltfXgx82g+fK/Qi1qqntpkMRrMAGVoLCQ=
+
+Name: jnr/enxio/channels/NativeSocketChannel$1.class
+SHA-256-Digest: sJu0BWj+l8o5Ya9VH2aKTTRe46s3TfMA3dtyDz4unhg=
+
+Name: about_files/THE_APACHE_SOFTWARE_LICENSE__VERSION_2.0.txt
+SHA-256-Digest: 70sq4AoiKPmbnFMVhYi1e9oPczCS6WKy+maEqwyunWY=
+
+Name: jnr/enxio/channels/NativeSelectorProvider.class
+SHA-256-Digest: +7pRlAUCrMwRpFtzGGTjNEA07Oz7OTmIGsTqZPciJs0=
+
+Name: jnr/enxio/channels/KQSelectionKey.class
+SHA-256-Digest: TwD0CnMQkDLFxqW2pijmvQPtCL3873vaV8kqttKSDsM=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.github.jnr.enxio/po
+ m.properties
+SHA-256-Digest: htX1eVx7P3H2Ur0Ey8M9s4gvTq/YBfVAKtDNzCvwZQ4=
+
+Name: jnr/enxio/channels/NativeServerSocketChannel.class
+SHA-256-Digest: 0+KpINkFylwgrwSEiqMLx431z8nnuOJOq0q9GOHGR9Q=
+
+Name: jnr/enxio/channels/KQSelector$Descriptor.class
+SHA-256-Digest: xkj2owX+ISQfbvpeeMNgBRyjFbuOklKstNkbEsr2AZM=
+
+Name: jnr/enxio/channels/Common.class
+SHA-256-Digest: P4PbEqu7voNumeEfmWxdjq69e+QVZr0w7OAqGcfu3d8=
+
+Name: jnr/enxio/channels/PollSelectionKey.class
+SHA-256-Digest: fPRo/GlMcPJyAtbJaXp1c70eBEkWLs5/Xo6/GohVTE4=
+
+Name: jnr/enxio/channels/AbstractNativeDatagramChannel.class
+SHA-256-Digest: Xd7QQyMhWntvykU2doW2T9p33sgu8cgZ7vqS12K+V4g=
+
+Name: jnr/enxio/channels/PollSelector.class
+SHA-256-Digest: UZF06hCe/RSjH83385gcjMxU/IwQ+xJ/KrYZjLTNJVc=
+
+Name: jnr/enxio/channels/NativeSelectableChannel.class
+SHA-256-Digest: B4NOO+uJolHp5tK7Tf3TZkwIvADlej8ofchkoaUWJns=
+
+Name: jnr/enxio/channels/Common$1.class
+SHA-256-Digest: sAWmu3t9PJ9lBsylnTA2kgWC4GB11nBE0HDRWyiqXkA=
+
+Name: jnr/enxio/channels/NativeSelectorProvider$SingletonHolder.class
+SHA-256-Digest: hgPwR/CbsmpeIFYoVMAJpyYSBLAK3xGSHuSMddKwZu0=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: 7QoWwES/s27rTaD8xAGwqgw2AWNVLjQpPnssfDuS0TU=
+
+Name: jnr/enxio/channels/NativeDeviceChannel.class
+SHA-256-Digest: 5r8VJ5ed1iNWzs/RRUMZDirvgJrsk5S2vGvO2n6/0HI=
+

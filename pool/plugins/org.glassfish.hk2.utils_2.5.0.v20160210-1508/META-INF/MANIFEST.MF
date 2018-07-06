@@ -1,0 +1,328 @@
+Manifest-Version: 1.0
+Bundle-Description: HK2 Implementation Utilities
+Bundle-License: https://glassfish.java.net/nonav/public/CDDL+GPL_1_1.h
+ tml
+Bundle-SymbolicName: org.glassfish.hk2.utils
+Archiver-Version: Plexus Archiver
+Built-By: genie.orbit
+Bundle-ManifestVersion: 2
+Bundle-DocURL: http://www.oracle.com
+Bundle-Vendor: %bundleVendor
+Import-Package: javax.inject;version="[1.0,2)",javax.annotation;versio
+ n="[1.2,2)",org.glassfish.hk2.utilities.cache;version="[2.5.0,2.6)",o
+ rg.glassfish.hk2.utilities.cache.internal;version="[2.5.0,2.6)",org.g
+ lassfish.hk2.utilities.general;version="[2.5.0,2.6)",org.glassfish.hk
+ 2.utilities.general.internal;version="[2.5.0,2.6)",org.glassfish.hk2.
+ utilities.reflection;version="[2.5.0,2.6)",org.glassfish.hk2.utilitie
+ s.reflection.internal;version="[2.5.0,2.6)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Originally-Created-By: Apache Maven
+Export-Package: org.glassfish.hk2.utilities.cache.internal;x-internal:
+ =true;version="2.5.0.b03";uses:="org.glassfish.hk2.utilities.cache",o
+ rg.glassfish.hk2.utilities.general.internal;x-internal:=true;version=
+ "2.5.0.b03";uses:="org.glassfish.hk2.utilities.cache,org.glassfish.hk
+ 2.utilities.general",org.glassfish.hk2.utilities.reflection.internal;
+ x-internal:=true;version="2.5.0.b03";uses:="org.glassfish.hk2.utiliti
+ es.reflection",org.glassfish.hk2.utilities.cache;version="2.5.0.b03",
+ org.glassfish.hk2.utilities.general;version="2.5.0.b03";uses:="org.gl
+ assfish.hk2.utilities.cache",org.glassfish.hk2.utilities.reflection;v
+ ersion="2.5.0.b03",org.jvnet.hk2.component;version="2.5.0.b03",org.jv
+ net.tiger_types;version="2.5.0.b03"
+Bundle-Name: %bundleName
+Bundle-Version: 2.5.0.v20160210-1508
+service: foo
+Created-By: Eclipse Bundle Recipe Maven Plug-in
+Build-Jdk: 1.8.0_131
+
+Name: org/glassfish/hk2/utilities/cache/Cache$1.class
+SHA-256-Digest: bCaiRBBBaNK2J/5avweByTrDxLzvEQMSPy47Gw02Ea0=
+
+Name: org/glassfish/hk2/utilities/reflection/internal/ClassReflectionH
+ elperImpl$4.class
+SHA-256-Digest: cfQJ+sHZmlxu5OfNOHAaT+17OE6uO3zOtGKI3jPeV5w=
+
+Name: org/jvnet/hk2/component/MultiMap$1.class
+SHA-256-Digest: SW+o/FVd2+tFlIJ6mQ0AGeDzOsV5zCXE9ne1QZyE7Nc=
+
+Name: org/glassfish/hk2/utilities/cache/internal/WeakCARCacheImpl$1.cl
+ ass
+SHA-256-Digest: 9CqwusaA1v0LAVuXxjlEhzMUd6gZHtzEPVyAOZtdrqQ=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.glassfish.hk2.utils
+ /pom.xml
+SHA-256-Digest: tbxFmwj+orGwsDpdwNnN42wIOHqlG6t5ljJDX36qsh8=
+
+Name: org/glassfish/hk2/utilities/cache/LRUHybridCache.class
+SHA-256-Digest: Km4THmx/GqKvwYu6iOfkUDSOkArmlSb+FpLv09CoPdw=
+
+Name: org/glassfish/hk2/utilities/cache/LRUCache.class
+SHA-256-Digest: PeUtYpddt+vJiA/jAvx+f0AdBLw1A+K0yPWJ+UQyCLI=
+
+Name: org/glassfish/hk2/utilities/reflection/internal/ClassReflectionH
+ elperUtilities.class
+SHA-256-Digest: Sy0gkq0xcMwI5qRBhAx/GYYOigRX1Xs+Rym9kCKOfyE=
+
+Name: org/glassfish/hk2/utilities/reflection/ClassReflectionHelper.cla
+ ss
+SHA-256-Digest: HERxGJQzpJ67BnDAtbOfN9GfKU8NOCxPkBjVVqK/Fvo=
+
+Name: org/glassfish/hk2/utilities/cache/CacheEntry.class
+SHA-256-Digest: lOGugGf6+8V6x5hVIBmUclB/wNO2J4l5uIScuaSHrfU=
+
+Name: org/glassfish/hk2/utilities/reflection/ReflectionHelper.class
+SHA-256-Digest: xduOn66j0ADkzNKuc7KE4AksSIsHDu0zv3AENW43kkA=
+
+Name: org/glassfish/hk2/utilities/general/ThreadSpecificObject.class
+SHA-256-Digest: UQINiTJEyuSSlK7JPOiYdrgBm1bfTf1QUN4iWGHROHI=
+
+Name: org/glassfish/hk2/utilities/general/internal/DoubleNode.class
+SHA-256-Digest: MPih1rwnDaBTD8qQF3UkD3WuTK6kJjN2BFH8fd1Flf4=
+
+Name: org/glassfish/hk2/utilities/reflection/ScopeInfo.class
+SHA-256-Digest: Vakm1N7jC41fGbBYFdNl4oRfCVCVuL+1gkBa4aZl/H0=
+
+Name: org/glassfish/hk2/utilities/cache/LRUHybridCache$CycleHandler.cl
+ ass
+SHA-256-Digest: OnZiKDqF7uQGbcYe5aUxDW7+fbGkSiXezSygteL0+BY=
+
+Name: org/glassfish/hk2/utilities/reflection/MethodWrapper.class
+SHA-256-Digest: SGeRujL2bTK1sOV1dZ/nsYoBs3iyg8uRwjbTbK71dgg=
+
+Name: org/glassfish/hk2/utilities/cache/CacheUtilities.class
+SHA-256-Digest: iEtJGgHIzTvipDwEWl/fLwpTeW4FHinRHYFdOdFZFNA=
+
+Name: org/glassfish/hk2/utilities/reflection/ReflectionHelper$4.class
+SHA-256-Digest: P6lifID51rQnRi5K3a/Mtgyutv39F53X53ziSciPg0g=
+
+Name: org/jvnet/tiger_types/Types$2.class
+SHA-256-Digest: oFu39p6I+CckPcXeYsLdHFPZITR0AmCSQBo6LcYSmB4=
+
+Name: org/glassfish/hk2/utilities/cache/ComputationErrorException.clas
+ s
+SHA-256-Digest: Z55bceZedp7IO64LdV3Oc8vg3RE+cnZTnvsdRisxnPw=
+
+Name: org/glassfish/hk2/utilities/reflection/internal/ClassReflectionH
+ elperImpl$LifecycleKey.class
+SHA-256-Digest: Q8Umir+6s+m2LkwzkIuOF77IDjol6F1YMzGiw3dAw4M=
+
+Name: org/glassfish/hk2/utilities/reflection/internal/ClassReflectionH
+ elperUtilities$3.class
+SHA-256-Digest: BwfL6EwrfCC5nmf2OIc5x138fmEuCCfgSPFGqMCmaVI=
+
+Name: org/glassfish/hk2/utilities/general/WeakHashLRU.class
+SHA-256-Digest: UNjj4Fkgi/IliLb8DuS5RjswRCn9Q+Z/jYzP2njZ83U=
+
+Name: org/glassfish/hk2/utilities/cache/Cache$OriginThreadAwareFuture$
+ 1.class
+SHA-256-Digest: xrIk/PrXb0J8trvieATEPaSfDuFAlyBBL7mbTQEZGsc=
+
+Name: org/glassfish/hk2/utilities/reflection/internal/ClassReflectionH
+ elperUtilities$2.class
+SHA-256-Digest: Pa0+B0DMJNZPn8didbTbrjJa3U6YGvVrcrM1dIZwn/M=
+
+Name: org/jvnet/tiger_types/Types.class
+SHA-256-Digest: DWTiba3Bw2Av9RLz8fUw+J0z9UuKqwnl3lJ1jq9ucV0=
+
+Name: org/glassfish/hk2/utilities/reflection/ReflectionHelper$3.class
+SHA-256-Digest: /E/D7BP1N+b6qOVXddjPsRMCUmHNj9xwf/ANzxMmeY8=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.glassfish.hk2.utils
+ /pom.properties
+SHA-256-Digest: BLHmuh77Yjeiok62X58N4vyvI9cQYhDGCzz7D+18NTk=
+
+Name: org/glassfish/hk2/utilities/cache/LRUHybridCache$CacheEntryImplC
+ omparator.class
+SHA-256-Digest: uCZ7qAF7ffRptjPHoZr5ceR3wg6t+wFdp8N2RrTyWkg=
+
+Name: org/glassfish/hk2/utilities/cache/internal/LRUCacheCheapRead.cla
+ ss
+SHA-256-Digest: C83s8FtjW4AalYdEyq71oZKAu7ORioaPqoL5jxNlXf4=
+
+Name: org/glassfish/hk2/utilities/cache/Computable.class
+SHA-256-Digest: 16rTFgumf6GHqUejGaJwFwajmRkhbNQ4TAJrjScXNQg=
+
+Name: org/glassfish/hk2/utilities/cache/internal/LRUCacheCheapRead$Cac
+ heEntryImpl.class
+SHA-256-Digest: f5av3nTRNpF98B7OoP5gwNeDOsiyxTZMLucwZVkxom8=
+
+Name: org/glassfish/hk2/utilities/cache/HybridCacheEntry.class
+SHA-256-Digest: ZoF4U4vgFNyl/9O8QburGoQjrKj2s+9hGXPBjFvSLNQ=
+
+Name: org/glassfish/hk2/utilities/reflection/BeanReflectionHelper$1.cl
+ ass
+SHA-256-Digest: hnf6Jkj0j9p3D5sR0BcEpmZfTjtnkRZQ/JCOoMsGyWs=
+
+Name: org/glassfish/hk2/utilities/cache/internal/WeakCARCacheImpl.clas
+ s
+SHA-256-Digest: Hj60iI49T+ycVxJjLgJCFVC8v6wWVoqVpTHZ4G67yms=
+
+Name: org/jvnet/tiger_types/Types$1.class
+SHA-256-Digest: k2QPbT+MatX0I6IrPS+WWnq6nVhICJOb+fVb9wWZW8o=
+
+Name: org/glassfish/hk2/utilities/reflection/Constants.class
+SHA-256-Digest: HKaX+GgUplFwcGZEVamZW0xjePIfDTOP3xDP/zR3d5E=
+
+Name: org/jvnet/tiger_types/TypeVisitor.class
+SHA-256-Digest: eNX/8BUS9VrXxwaaqs+iyWuiixfYMXqNhZztMnmTmhU=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: ipADYMDszmDrwkw6/DMtLTsOAvjaEKtGdJAtdbOT6qw=
+
+Name: org/glassfish/hk2/utilities/cache/internal/LRUCacheCheapRead$Cac
+ heEntryImplComparator.class
+SHA-256-Digest: XLJ3uFQeN6rFdVILP2Crz0VmZowrq/7P9QDCdsrGQ2M=
+
+Name: org/glassfish/hk2/utilities/reflection/internal/ClassReflectionH
+ elperImpl$3.class
+SHA-256-Digest: Rds7N+obS6hM8bS+eshOVSdaRM3XbLwqOyXWdtnv27Q=
+
+Name: org/glassfish/hk2/utilities/reflection/Pretty.class
+SHA-256-Digest: jPicGA+/5fHdDlayQdma4nod1njLR4HrXj4SncSIU5c=
+
+Name: org/glassfish/hk2/utilities/general/Hk2ThreadLocal.class
+SHA-256-Digest: OOqgfDUZTfjaxgoSY15sy4mVZgmy7SQBKxq+en2rSBs=
+
+Name: org/glassfish/hk2/utilities/cache/LRUHybridCache$1.class
+SHA-256-Digest: lmLbKI4ScW0OgMXJyVUuwaYtvVUKEVEHRS9VbIjwNb8=
+
+Name: org/glassfish/hk2/utilities/reflection/ReflectionHelper$2.class
+SHA-256-Digest: X561w/mrnsBwbcyMOOzqsbVY05q+SLL06ct09Opti2U=
+
+Name: org/jvnet/tiger_types/Types$BinderArg.class
+SHA-256-Digest: yK/5OWvprELA61ArSo2VwbQQPEOwxzd4Nfogp3fliyw=
+
+Name: org/glassfish/hk2/utilities/reflection/internal/ClassReflectionH
+ elperUtilities$1.class
+SHA-256-Digest: N5ubvVwHK9+F3l0DExOpfyfl/8Pvzyk9D3Y2WWMKlA8=
+
+Name: org/glassfish/hk2/utilities/reflection/internal/ClassReflectionH
+ elperImpl.class
+SHA-256-Digest: BfLysXk8HwsqQD/eIAd4m8zbESXgqmeyAIaDhqUHpGI=
+
+Name: org/glassfish/hk2/utilities/cache/Cache$OriginThreadAwareFuture.
+ class
+SHA-256-Digest: Ka5r9gJw6SLnUUUzVCPrAgdpR89RWMcdyINWWiu0nyc=
+
+Name: org/glassfish/hk2/utilities/reflection/internal/MethodWrapperImp
+ l.class
+SHA-256-Digest: gJxVBGjbLLWvFl3Aq/SvwhdKLwDHAfLZ4R3XCOTcutY=
+
+Name: org/glassfish/hk2/utilities/reflection/TypeChecker.class
+SHA-256-Digest: va9NLGF0lNTx92kZoHcXfnJcpqj4GTaBnOvcLdx8Ajw=
+
+Name: org/jvnet/tiger_types/Lister$2.class
+SHA-256-Digest: AyM0TK/hX0B+yn8lv5N3mjd2doOluLi0rZrC+okJNHg=
+
+Name: org/glassfish/hk2/utilities/cache/LRUHybridCache$OriginThreadAwa
+ reFuture.class
+SHA-256-Digest: zmZxtGo+7wMCgukhFAc7jkqWVGy3I1rVbSJRuK+Mw8I=
+
+Name: org/glassfish/hk2/utilities/reflection/internal/ClassReflectionH
+ elperImpl$2.class
+SHA-256-Digest: LbYRo87a7OVFVnUkltybnycsVeuoq3JJ2oCPd0W0cnU=
+
+Name: org/glassfish/hk2/utilities/reflection/BeanReflectionHelper.clas
+ s
+SHA-256-Digest: ErGl+iZZANTdq0GwWBOheNqvGvNqv+QPi7KJmGPBMw4=
+
+Name: org/glassfish/hk2/utilities/general/GeneralUtilities.class
+SHA-256-Digest: H9b4k85f57kZNV0exnGpQSpNiEnwu77SvF3sma4Jsqg=
+
+Name: org/glassfish/hk2/utilities/cache/internal/LRUCacheCheapRead$1.c
+ lass
+SHA-256-Digest: km/s9APLbivcQHiT5+ljHnxhAKJR/h7D6cwvqi8H/2E=
+
+Name: org/glassfish/hk2/utilities/cache/LRUHybridCache$OriginThreadAwa
+ reFuture$1.class
+SHA-256-Digest: xdvRZAszui5N1btk5wZrt2ixw6jCZfJPML+T3me8/6o=
+
+Name: org/glassfish/hk2/utilities/cache/LRUHybridCache$HybridCacheEntr
+ yImpl.class
+SHA-256-Digest: a5KG/nFbY0iYXbqf+g8K2MPFk75xkPD6JCS/ela4MlY=
+
+Name: org/jvnet/tiger_types/WildcardTypeImpl.class
+SHA-256-Digest: kXcmeJnnHdZ9zsyjXyaA8QB2PH/rRfkzkicYNXqCBrs=
+
+Name: org/glassfish/hk2/utilities/reflection/Logger$1.class
+SHA-256-Digest: grB77L1MBCXgFJatXGa45nhtIotlOH0K7c0WoE1fxKY=
+
+Name: org/glassfish/hk2/utilities/cache/WeakCARCache.class
+SHA-256-Digest: mCCPVanm7LdJ2od2lFnHXrS/8kRdRTTbheN1kUn2Sc8=
+
+Name: about.html
+SHA-256-Digest: c1LlSfj7ByhYoS2Mnd0kjeP+R+3f1wTJC1wDDwwtixw=
+
+Name: org/jvnet/tiger_types/Lister.class
+SHA-256-Digest: fBCTyESkxJGTLagVZwZ0NNGtUiFUaIaQ2ZN5++56+J8=
+
+Name: org/glassfish/hk2/utilities/general/WeakHashClock.class
+SHA-256-Digest: HjqXT6SC7hvNrD66E5rWalF2MwvZ8NkCqXZP+ky7U/I=
+
+Name: org/jvnet/tiger_types/Types$3.class
+SHA-256-Digest: 294tHldgu9RXVsquudsJXamLPSctGMbJbs+RYC+ZdhE=
+
+Name: org/glassfish/hk2/utilities/cache/CacheKeyFilter.class
+SHA-256-Digest: nNl7Irytat9zx5f7/uNcHiJ4QFEyB7kqii+ZZvftPSY=
+
+Name: org/glassfish/hk2/utilities/cache/Cache.class
+SHA-256-Digest: cGlcMiPU1sr+Yzuceg1dxkSc1ZcfZnkd0jbu5nqAFl0=
+
+Name: org/glassfish/hk2/utilities/reflection/ParameterizedTypeImpl.cla
+ ss
+SHA-256-Digest: DFk1xBHznpsaUnuepSzxxKS2GGUpr+BKqT6yuOkOlZQ=
+
+Name: org/jvnet/hk2/component/MultiMap.class
+SHA-256-Digest: Cl95v52nhP4LPosTjpEsoRadztbFuW7q7zQKR5JdpfQ=
+
+Name: org/glassfish/hk2/utilities/reflection/ReflectionHelper$1.class
+SHA-256-Digest: zkidEhcNCEJIWMGhotUBRucXqK6+Kd04XkANOQrLDnc=
+
+Name: org/glassfish/hk2/utilities/general/internal/WeakHashClockImpl.c
+ lass
+SHA-256-Digest: MB8VAN78K5AUZQilS/nobNDv1V8fI8m0+T1cCE414Rk=
+
+Name: org/glassfish/hk2/utilities/reflection/GenericArrayTypeImpl.clas
+ s
+SHA-256-Digest: OoOCRsEoHsGPhSADunyjzwXoOy+3kBzK6oAptJkBuPw=
+
+Name: org/jvnet/tiger_types/GenericArrayTypeImpl.class
+SHA-256-Digest: aNTLakvSWszSDuXl/vMQSNZTcwq1y6PCAKdFQ3eTgzs=
+
+Name: org/glassfish/hk2/utilities/general/internal/WeakHashLRUImpl.cla
+ ss
+SHA-256-Digest: 9sk2YCETxUJW87nfOxPpry7S+Fk9GEdEh6CHUI1TENE=
+
+Name: org/jvnet/tiger_types/Lister$1.class
+SHA-256-Digest: TKbW4USYwSFajyKEuOYXbkaFpaXVrvES3P7BWgR8vcI=
+
+Name: org/glassfish/hk2/utilities/reflection/internal/ClassReflectionH
+ elperImpl$1.class
+SHA-256-Digest: BAX3XyXYD22wqbgiIv2goqq2s1/R/gByMnXMBJgOLGI=
+
+Name: org/glassfish/hk2/utilities/cache/Cache$CycleHandler.class
+SHA-256-Digest: tOmVYzE4ZjrJkFS8OI54TLbB47/VPtBShFnsadxi3tw=
+
+Name: org/glassfish/hk2/utilities/general/internal/WeakHashClockImpl$1
+ .class
+SHA-256-Digest: yIfTp71Ugea4M4tEudEdaIh6xkUwFvBuJLgXtlDve14=
+
+Name: org/glassfish/hk2/utilities/reflection/internal/ClassReflectionH
+ elperUtilities$4.class
+SHA-256-Digest: 4g4mzp1c1bFXOkLOemroqMGXtFu6d004nhZ0Y4sLsus=
+
+Name: org/glassfish/hk2/utilities/reflection/ReflectionHelper$5.class
+SHA-256-Digest: JqDnvY/mzJR2hBRLLpz/B2yhXsqOiaSr+qR0OXUELQM=
+
+Name: org/jvnet/tiger_types/ParameterizedTypeImpl.class
+SHA-256-Digest: kzxepiYQhgJsUbgnpRHuAiAwlrYnzV1bEiVf3HbTyho=
+
+Name: org/glassfish/hk2/utilities/reflection/Logger.class
+SHA-256-Digest: MwBKx4HpgEwGNj/Xa4yF2MKRkzjpcJaMmU1iZJlhWgs=
+
+Name: about_files/COMMON_DEVELOPMENT_AND_DISTRIBUTION_LICENSE.html
+SHA-256-Digest: RpLGLLt4tjsK1wHgR8X1f8Ad1f5mJqKg6v5aQ84JOso=
+
+Name: org/glassfish/hk2/utilities/cache/internal/WeakCARCacheImpl$CarV
+ alue.class
+SHA-256-Digest: OEfns30bs8xysDdrAN7UxybXoLAvcsVjkobC20svDMI=
+

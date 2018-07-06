@@ -1,0 +1,107 @@
+Manifest-Version: 1.0
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-pr
+ ovider
+Archiver-Version: Plexus Archiver
+Built-By: genie.orbit
+Implementation-Vendor-Id: com.fasterxml.jackson.jaxrs
+Specification-Title: Jackson-JAXRS-JSON
+Bundle-DocURL: http://github.com/FasterXML/jackson-jaxrs-providers/jac
+ kson-jaxrs-json-provider
+Import-Package: com.fasterxml.jackson.annotation;version="2.9.2",com.f
+ asterxml.jackson.core;version="2.9.2",com.fasterxml.jackson.core.util
+ ;version="2.9.2",com.fasterxml.jackson.databind;version="2.9.2",com.f
+ asterxml.jackson.databind.cfg;version="2.9.2",com.fasterxml.jackson.d
+ atabind.introspect;version="2.9.2",com.fasterxml.jackson.databind.uti
+ l;version="2.9.2",com.fasterxml.jackson.jaxrs.base;version="2.9.2",co
+ m.fasterxml.jackson.jaxrs.cfg;version="2.9.2",javax.ws.rs;version="1.
+ 1.1",javax.ws.rs.core;version="1.1.1",javax.ws.rs.ext;version="1.1.1"
+ ,com.fasterxml.jackson.module.jaxb;version="2.9.2";resolution:=option
+ al,com.fasterxml.jackson.jaxrs.json.annotation;resolution:=optional;v
+ ersion="[2.9,3)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Implementation-Build-Date: 2017-10-14 04:33:57+0000
+Export-Package: com.fasterxml.jackson.jaxrs.json;version="2.9.2";uses:
+ ="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.faste
+ rxml.jackson.databind.cfg,com.fasterxml.jackson.jaxrs.base,com.faster
+ xml.jackson.jaxrs.cfg,com.fasterxml.jackson.jaxrs.json.annotation,jav
+ ax.ws.rs,javax.ws.rs.core,javax.ws.rs.ext",com.fasterxml.jackson.jaxr
+ s.json.annotation;version="2.9.2";uses:="com.fasterxml.jackson.annota
+ tion,com.fasterxml.jackson.databind"
+Bundle-Name: %bundleName
+Bundle-Description: Functionality to handle JSON input/output for JAX-
+ RS implementations (like Jersey and RESTeasy) using standard Jackson 
+ data binding.
+Implementation-Title: Jackson-JAXRS-JSON
+Automatic-Module-Name: com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-
+ provider
+Implementation-Version: 2.9.2
+Bundle-ManifestVersion: 2
+Specification-Vendor: FasterXML
+Bundle-Vendor: %bundleVendor
+Implementation-Vendor: FasterXML
+Originally-Created-By: Apache Maven Bundle Plugin
+Bundle-Version: 2.9.2.v20180207-1730
+X-Compile-Target-JDK: 1.7
+X-Compile-Source-JDK: 1.7
+Created-By: Eclipse Bundle Recipe Maven Plug-in
+Build-Jdk: 1.8.0_162
+Specification-Version: 2.9.2
+
+Name: META-INF/NOTICE
+SHA-256-Digest: QcM42wraw+pUDFOEW9TOxA1DfoQ7IshK4IN1pNZEJUM=
+
+Name: about.html
+SHA-256-Digest: +cmTOAd6l2eqGjSZZMS/8pB6QW/yB6e5PPIwHPxBOzQ=
+
+Name: META-INF/LICENSE
+SHA-256-Digest: 0nBqNWWNg8J9fV81f1umOHf9hpSj9q7ki4cDakERjIo=
+
+Name: com/fasterxml/jackson/jaxrs/json/annotation/JSONP$Def.class
+SHA-256-Digest: ZJMOfbXwovr8DspnL624Nn570ZMhNB/9paV8KSja1dA=
+
+Name: com/fasterxml/jackson/jaxrs/json/JacksonJaxbJsonProvider.class
+SHA-256-Digest: 0mHaBbNhEBPmqwgFz1w1z1EXJka88sUpm+wfaSj6BBI=
+
+Name: about_files/THE_APACHE_SOFTWARE_LICENSE__VERSION_2.0.txt
+SHA-256-Digest: z8d0m5b2O9McPEK1xHG/dWgUBT6EfBDz6wA0F7xSPTA=
+
+Name: com/fasterxml/jackson/jaxrs/json/JsonMapperConfigurator$1.class
+SHA-256-Digest: 69ZuPEqiUK+lqZ5EZyTto8MBpk6OKJ7NC28fWNYaH5g=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.fasterxml.jackson.j
+ axrs.jackson-jaxrs-json-provider/pom.xml
+SHA-256-Digest: Zb27TbaZwY21Xp5LcdxH06lHYdcmOtl6YTaynlqFh6c=
+
+Name: META-INF/services/javax.ws.rs.ext.MessageBodyWriter
+SHA-256-Digest: vIgCQ4l2KPb/DqScrZdNSwY12zN+ngSQLR8g9T1h4ww=
+
+Name: com/fasterxml/jackson/jaxrs/json/annotation/JacksonFeatures.clas
+ s
+SHA-256-Digest: p2TbC6CZUJ2GC1imuSOZ4zYWMGP1Dj1ohIktkpJqr3Q=
+
+Name: com/fasterxml/jackson/jaxrs/json/PackageVersion.class
+SHA-256-Digest: o0xUafRed35GmfHie5uNAahd0LIoMllgG8Hv7+0AZ1Y=
+
+Name: com/fasterxml/jackson/jaxrs/json/annotation/JSONP.class
+SHA-256-Digest: YSFu1ML6k4cE2LUFgWMlO0IzpzE+V0nC/x5oULDjI2g=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.fasterxml.jackson.j
+ axrs.jackson-jaxrs-json-provider/pom.properties
+SHA-256-Digest: zpurbF89jfrC6dbal1Gh3t51BVytsoXLqyEpU/b1Ilg=
+
+Name: com/fasterxml/jackson/jaxrs/json/JsonEndpointConfig.class
+SHA-256-Digest: bsElfV+MduoaGViJfhqbtSk1Qe7l9P7Dt2XTS8/yIU4=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: tGnXhvdw1OazNty8pxyQspyfh16apnIOmbmB9cCJpEw=
+
+Name: com/fasterxml/jackson/jaxrs/json/JacksonJsonProvider.class
+SHA-256-Digest: XGKvFg4PjUQWzVba7gh5Rm7iJFHpLK+DRnf80EsH+C8=
+
+Name: com/fasterxml/jackson/jaxrs/json/JsonMapperConfigurator.class
+SHA-256-Digest: FAsoGymKBh1/jTmoc7oi4dARcZvjQ6wzqO8PrhJ49Ss=
+
+Name: META-INF/services/javax.ws.rs.ext.MessageBodyReader
+SHA-256-Digest: vIgCQ4l2KPb/DqScrZdNSwY12zN+ngSQLR8g9T1h4ww=
+

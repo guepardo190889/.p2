@@ -1,0 +1,284 @@
+Manifest-Version: 1.0
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: com.fasterxml.jackson.datatype.jackson-datatype-g
+ uava
+Archiver-Version: Plexus Archiver
+Built-By: genie.orbit
+Implementation-Vendor-Id: com.fasterxml.jackson.datatype
+Specification-Title: Jackson datatype: Guava
+Bundle-DocURL: https://github.com/FasterXML/jackson-datatypes-collecti
+ ons
+Import-Package: com.google.common.base;version="18.0.0",com.google.com
+ mon.cache;version="18.0.0",com.google.common.collect;version="18.0.0"
+ ,com.google.common.hash;version="18.0.0",com.google.common.net;versio
+ n="18.0.0",com.fasterxml.jackson.core;version="2.9.2",com.fasterxml.j
+ ackson.core.io;version="2.9.2",com.fasterxml.jackson.core.type;versio
+ n="2.9.2",com.fasterxml.jackson.core.util;version="2.9.2",com.fasterx
+ ml.jackson.databind;version="2.9.2",com.fasterxml.jackson.databind.de
+ ser;version="2.9.2",com.fasterxml.jackson.databind.deser.std;version=
+ "2.9.2",com.fasterxml.jackson.databind.introspect;version="2.9.2",com
+ .fasterxml.jackson.databind.jsonFormatVisitors;version="2.9.2",com.fa
+ sterxml.jackson.databind.jsontype;version="2.9.2",com.fasterxml.jacks
+ on.databind.ser;version="2.9.2",com.fasterxml.jackson.databind.ser.im
+ pl;version="2.9.2",com.fasterxml.jackson.databind.ser.std;version="2.
+ 9.2",com.fasterxml.jackson.databind.type;version="2.9.2",com.fasterxm
+ l.jackson.databind.util;version="2.9.2",com.fasterxml.jackson.annotat
+ ion;resolution:=optional;version="[2.9,3)",com.fasterxml.jackson.data
+ type.guava.deser;resolution:=optional;version="[2.9,3)",com.fasterxml
+ .jackson.datatype.guava.deser.multimap;resolution:=optional;version="
+ [2.9,3)",com.fasterxml.jackson.datatype.guava.deser.multimap.list;res
+ olution:=optional;version="[2.9,3)",com.fasterxml.jackson.datatype.gu
+ ava.deser.multimap.set;resolution:=optional;version="[2.9,3)",com.fas
+ terxml.jackson.datatype.guava.deser.util;resolution:=optional;version
+ ="[2.9,3)",com.fasterxml.jackson.datatype.guava.ser;resolution:=optio
+ nal;version="[2.9,3)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Implementation-Build-Date: 2017-10-14 04:28:53+0000
+Export-Package: com.fasterxml.jackson.datatype.guava;version="2.9.2";u
+ ses:="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.f
+ asterxml.jackson.databind.deser,com.fasterxml.jackson.databind.jsonty
+ pe,com.fasterxml.jackson.databind.ser,com.fasterxml.jackson.databind.
+ type,com.google.common.collect",com.fasterxml.jackson.datatype.guava.
+ deser;version="2.9.2";uses:="com.fasterxml.jackson.core,com.fasterxml
+ .jackson.databind,com.fasterxml.jackson.databind.deser,com.fasterxml.
+ jackson.databind.deser.std,com.fasterxml.jackson.databind.jsontype,co
+ m.fasterxml.jackson.databind.type,com.google.common.base,com.google.c
+ ommon.collect,com.google.common.hash,com.google.common.net",com.faste
+ rxml.jackson.datatype.guava.deser.multimap;version="2.9.2";uses:="com
+ .fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.
+ jackson.databind.deser,com.fasterxml.jackson.databind.jsontype,com.fa
+ sterxml.jackson.databind.type,com.google.common.collect",com.fasterxm
+ l.jackson.datatype.guava.deser.multimap.list;version="2.9.2";uses:="c
+ om.fasterxml.jackson.databind,com.fasterxml.jackson.databind.jsontype
+ ,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.datatype.g
+ uava.deser.multimap,com.google.common.collect",com.fasterxml.jackson.
+ datatype.guava.deser.multimap.set;version="2.9.2";uses:="com.fasterxm
+ l.jackson.databind,com.fasterxml.jackson.databind.jsontype,com.faster
+ xml.jackson.databind.type,com.fasterxml.jackson.datatype.guava.deser.
+ multimap,com.google.common.collect",com.fasterxml.jackson.datatype.gu
+ ava.deser.util;version="2.9.2";uses:="com.google.common.collect",com.
+ fasterxml.jackson.datatype.guava.ser;version="2.9.2";uses:="com.faste
+ rxml.jackson.core,com.fasterxml.jackson.core.io,com.fasterxml.jackson
+ .databind,com.fasterxml.jackson.databind.jsonFormatVisitors,com.faste
+ rxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.ser,com
+ .fasterxml.jackson.databind.ser.impl,com.fasterxml.jackson.databind.s
+ er.std,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.data
+ bind.util,com.google.common.base,com.google.common.collect"
+Bundle-Name: %bundleName
+Bundle-Description: Add-on datatype-support module for Jackson (https:
+ //github.com/FasterXML/jackson) that handlesGuava (http://code.google
+ .com/p/guava-libraries/) types (currently mostly just collection ones
+ )
+Implementation-Title: Jackson datatype: Guava
+Automatic-Module-Name: com.fasterxml.jackson.datatype.jackson-datatype
+ -guava
+Implementation-Version: 2.9.2
+Bundle-ManifestVersion: 2
+Specification-Vendor: FasterXML
+Bundle-Vendor: %bundleVendor
+Implementation-Vendor: FasterXML
+Originally-Created-By: Apache Maven Bundle Plugin
+Bundle-Version: 2.9.2.v20180207-1730
+X-Compile-Target-JDK: 1.7
+X-Compile-Source-JDK: 1.7
+Created-By: Eclipse Bundle Recipe Maven Plug-in
+Build-Jdk: 1.8.0_162
+Specification-Version: 2.9.2
+
+Name: com/fasterxml/jackson/datatype/guava/deser/GuavaMultisetDeserial
+ izer.class
+SHA-256-Digest: MKzaGp/i3IZvJr/gr5C7+FkaiJwHeyiAbxCzXW9gXsE=
+
+Name: com/fasterxml/jackson/datatype/guava/ser/GuavaOptionalBeanProper
+ tyWriter.class
+SHA-256-Digest: G2nHRakWfkmla6jFcnJE3l7vyR52UzBS11I8Pr/TVVY=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/ImmutableSortedMultis
+ etDeserializer.class
+SHA-256-Digest: 8zromELjCa3JxEMQUk2CP9RJwubNniZ3XFzjRcmBbZc=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.fasterxml.jackson.d
+ atatype.jackson-datatype-guava/pom.xml
+SHA-256-Digest: SAzXLuFAaLv9hG1tLnMBo9VHxvST7dteYhxC47XQ0fE=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/util/RangeFactory$2.c
+ lass
+SHA-256-Digest: oweRigmmkfK9+R2TpeCquh9CF0o5G/wpEvsB4/rEN+o=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/ImmutableBiMapDeseria
+ lizer.class
+SHA-256-Digest: j2kwUY9oakDYbVzvILFJUbZo5MkZvRPBYw4/RD/Cnso=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.fasterxml.jackson.d
+ atatype.jackson-datatype-guava/pom.properties
+SHA-256-Digest: zN3XtcQHdjooq3gLADjGFpsrcNwdfkBYixGAVszPi64=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/HostAndPortDeserializ
+ er.class
+SHA-256-Digest: /KI3IMr5E8cScr0mRo/fYIhdwO+6GaIyNUix5EW2prM=
+
+Name: com/fasterxml/jackson/datatype/guava/ser/GuavaUnwrappingOptional
+ BeanPropertyWriter.class
+SHA-256-Digest: h+sBmSeb9G6V0ihFaAfEJUmXdxWv40g0cDuVqKUXD00=
+
+Name: com/fasterxml/jackson/datatype/guava/GuavaModule.class
+SHA-256-Digest: aqllaMEpgREujJ6UDFVYfJl2SWwwZXPyx61/IzKCP88=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/ImmutableMultisetDese
+ rializer.class
+SHA-256-Digest: eVCzgr4qcL21zTgoD9QjpWai6mpbZh64ETkFvcFqxCY=
+
+Name: com/fasterxml/jackson/datatype/guava/ser/GuavaBeanSerializerModi
+ fier.class
+SHA-256-Digest: +Tyz3BcmyqDkGf5iWhvODT/v/aLuUUshZC0VVmNBcfg=
+
+Name: com/fasterxml/jackson/datatype/guava/GuavaSerializers.class
+SHA-256-Digest: R+6yXQtdyjKF/wbLsqnpgOb8AM555tBkcfY31MADHsw=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/ImmutableSortedSetDes
+ erializer.class
+SHA-256-Digest: 4qpS5cUJB8F9fgTa3EFSnES1XIEVprkL2dnRx1oX1tA=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/HashCodeDeserializer.
+ class
+SHA-256-Digest: E/j+pPy8p1gfwddLbOiOnWC6rOCUqcx0O5fwACpHSPQ=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/util/RangeFactory$5.c
+ lass
+SHA-256-Digest: lN8jfMYtmSX6U4lWh3ueIAuQh68RftRN0h6bHRY1HBU=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/ImmutableListDeserial
+ izer.class
+SHA-256-Digest: MfOZVJXsIzNaobz6aZmlgIuJE9abTiS3RLbUCPYKm7w=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/GuavaImmutableCollect
+ ionDeserializer.class
+SHA-256-Digest: tdOhxh0C7i8wPJQ6Pk6mA56DHho+csDCVfVIejBNqjw=
+
+Name: com/fasterxml/jackson/datatype/guava/GuavaDeserializers.class
+SHA-256-Digest: NyQ1LbZbCtMDv9RdOecNRXXnqusywW59AbkCzzfdOxk=
+
+Name: about_files/THE_APACHE_SOFTWARE_LICENSE__VERSION_2.0.txt
+SHA-256-Digest: z8d0m5b2O9McPEK1xHG/dWgUBT6EfBDz6wA0F7xSPTA=
+
+Name: META-INF/services/com.fasterxml.jackson.databind.Module
+SHA-256-Digest: EeX387f1xUG/hLR1oOMInwCmUBJ+VeKmXrf6dzwoX/U=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/ImmutableMapDeseriali
+ zer.class
+SHA-256-Digest: EFvc7C01lS1DmJhnmZ56ci17xZIf305FrFE6ljRc5l8=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/GuavaCollectionDeseri
+ alizer.class
+SHA-256-Digest: cmEc6VCWprBPhaQtVAVlwThy2lg92xAo8s4YwngaE0U=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/util/RangeFactory$3.c
+ lass
+SHA-256-Digest: gg5eTZjuyi3fBN/BAx3vjkOpgaQHLi7KeK/MtKHa1x0=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: RSBVfzKsnrsy+bmxrDn1iwZBD1KHgJrDld033rBcac8=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/HashMultisetDeseriali
+ zer.class
+SHA-256-Digest: 4muxhsC/gj8xXlbx1WY8WJrsBLfiFmR5ddWy5I6HLNg=
+
+Name: com/fasterxml/jackson/datatype/guava/PackageVersion.class
+SHA-256-Digest: 19H8WRUpPDZSieK2e9k0nqaoXmRGeR1P6quGPQfB5rQ=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/GuavaMapDeserializer.
+ class
+SHA-256-Digest: ttGeW3/5gAzgTPk8Y8w+H2Ab4JH7Eeh8paaaMMI8dc0=
+
+Name: com/fasterxml/jackson/datatype/guava/ser/TableSerializer.class
+SHA-256-Digest: RFh/L0TD1vnrxi8MIu1wuo6fe8kTK4wUjXpQhnpCId4=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/multimap/set/HashMult
+ imapDeserializer.class
+SHA-256-Digest: 12f9jsBLccWJWjKMTIhvuWMroNIh0eBgSvOulRamuhg=
+
+Name: com/fasterxml/jackson/datatype/guava/ser/GuavaOptionalSerializer
+ .class
+SHA-256-Digest: uLY4/OVnVtq7OpK8pO4sVY8yLlPyu8cfSgtHqBIcBOU=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/LinkedHashMultisetDes
+ erializer.class
+SHA-256-Digest: O2py4pSbAETD5IfHFniz/cs/PkRe0AJS1yB6LPgjSRM=
+
+Name: com/fasterxml/jackson/datatype/guava/ser/MultimapSerializer$1.cl
+ ass
+SHA-256-Digest: Jg4TpVzDGLuLJOwD1Prjt7am3zUjR0cN1hh2TZeqidg=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/GuavaImmutableMapDese
+ rializer.class
+SHA-256-Digest: UDAX/p3SLglwxIIsYdGF0tFbOXQUAZ4MDB4hwPo+6ZQ=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/multimap/set/LinkedHa
+ shMultimapDeserializer.class
+SHA-256-Digest: 3fRirRliIInadxJDhyNrIe8TRC18nXfcZcpUfxPqZ4Y=
+
+Name: com/fasterxml/jackson/datatype/guava/ser/MultimapSerializer.clas
+ s
+SHA-256-Digest: eWWGq6EaTZ0edKCLCx1h3yqsru16ih3/twF7NtHnQ4I=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/multimap/GuavaMultima
+ pDeserializer.class
+SHA-256-Digest: qjgqZ3nu9HAXTz1cGkmZaxDoS6CdAECGuTkzDM0OsjA=
+
+Name: about.html
+SHA-256-Digest: yHcJXwgoQBZ5HrE0OTne5C2MmpuJTL0SjwG2yv6qB7o=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/util/RangeFactory$1.c
+ lass
+SHA-256-Digest: DdNvKBQICf6RNAqI8QDlX8HYC5yph9kcQaWHv53ip9M=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/multimap/list/ArrayLi
+ stMultimapDeserializer.class
+SHA-256-Digest: avUUnyU9PLWIrBqNhyuJvMOnNCGHcAnHTLIMWTRZz7k=
+
+Name: com/fasterxml/jackson/datatype/guava/GuavaTypeModifier.class
+SHA-256-Digest: 631yK7Xy4AIFt96eDemZRitSDLDziPK3TBlxQ0oqQ4I=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/ImmutableSetDeseriali
+ zer.class
+SHA-256-Digest: znwaXLq0LkF/mchJxkKcxQ59sUfNcQiLfYka8QMlIxQ=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/GuavaOptionalDeserial
+ izer.class
+SHA-256-Digest: W6nAdpY3sL0iJ8gEi7OAXTXO96/O92zk27mKDn+dWyI=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/RangeDeserializer.cla
+ ss
+SHA-256-Digest: 8Gj0lJgA9VAv15AGSHZpE2BSvf0ZMYijbXShk4XJE3M=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/multimap/list/LinkedL
+ istMultimapDeserializer.class
+SHA-256-Digest: 44cy89lC0aHB6cpMsheV1LZoAtEMmxo6RShq3UUQSbE=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/ImmutableSortedMapDes
+ erializer.class
+SHA-256-Digest: eY2gw9iHgliWySheaNMeMeWQFmT75zKsdzcDqYO7LcE=
+
+Name: com/fasterxml/jackson/datatype/guava/GuavaSerializers$FluentConv
+ erter.class
+SHA-256-Digest: LpxBgIA9kIUZ2tUTccNjuSSD082MjsKe+90ZNeoeOCE=
+
+Name: com/fasterxml/jackson/datatype/guava/ser/RangeSerializer.class
+SHA-256-Digest: hNDGJVbLf4H9agzAwvSjdLt+kp9XfDUvkSP4nj/xNOs=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/util/RangeFactory$4.c
+ lass
+SHA-256-Digest: Jl5Tkelv5HmsIWj/Vsrgq52CE1ZEbx8FXJWt4EYI0LA=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/util/RangeFactory.cla
+ ss
+SHA-256-Digest: 78U1C0aSglaKk8QhAZNcDt+sRFdBWjfghJA1KaF5KrY=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/TreeMultisetDeseriali
+ zer.class
+SHA-256-Digest: i8dFy0/+bbQoQx3U+xROY/C9BC8umWXsDIJo+lNYrFg=
+
+Name: com/fasterxml/jackson/datatype/guava/deser/InternetDomainNameDes
+ erializer.class
+SHA-256-Digest: ekZYnQfvHUDib36u4qMHwMPHBgI0J+jVqiFGOF4pyXE=
+

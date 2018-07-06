@@ -1,0 +1,406 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: oWNyjpRbRMdKc2IBtPy26Cr1fK4NB
+ 4Mjh15e3Zt/Kh4=
+SHA-256-Digest-Manifest: J3DQdZ9kK7tr6rH79pv+c625BrLPwKgxt6KexFHfGF8=
+Created-By: 1.8.0_162 (Oracle Corporation)
+
+Name: com/kenai/jffi/ObjectParameterInfo.class
+SHA-256-Digest: +nghQ2qw+YdKyrUK8g2rY64KLmstEmHHgiQhiUlqCA4=
+
+Name: com/kenai/jffi/Union.class
+SHA-256-Digest: KYa/ty6lThS1FUVJv4uI/dYrjtgdze3T2acZrHf3DOI=
+
+Name: com/kenai/jffi/ClosureManager.class
+SHA-256-Digest: nxlQBfHr9o4+0wHyDaVh0hCcJZ0gbtAy3iX1EeA/Ago=
+
+Name: com/kenai/jffi/Type$1.class
+SHA-256-Digest: LnoPCYV9e19GcK/uL4b22JqDFQ7k2S1dpr7z31CVTHQ=
+
+Name: com/kenai/jffi/NativeMethods$ResourceHolder.class
+SHA-256-Digest: ZwtJDw1QsD9IMRSkmyVKaBPbEyc5KBp7zpjOHc8AxDg=
+
+Name: com/kenai/jffi/Util.class
+SHA-256-Digest: ncM2V9/t5EsdLcPd6+rhqTCIqfh8uKTZpZRCRfCcMio=
+
+Name: com/kenai/jffi/DirectClosureBuffer$NativeWordIO.class
+SHA-256-Digest: pLawr0bqK0Rmg1bR+Ofx3j9ClwKxPwNZNFhU3tcILFk=
+
+Name: com/kenai/jffi/MemoryIO$CheckedNativeImpl.class
+SHA-256-Digest: 6zysMU0dmN3S95SzW1Hfkg6fJRrvJN7WSm0lAQriglw=
+
+Name: com/kenai/jffi/Platform$OS.class
+SHA-256-Digest: R7x3u/TbGGObAW3MHHvsbEp+8iN8H6LvKXJ2OgVoj5w=
+
+Name: com/kenai/jffi/ArrayFlags.class
+SHA-256-Digest: 8PC4TKlS3/Y3CErKBB+VYhdtS8ys9m8arXwNZwp7yDw=
+
+Name: com/kenai/jffi/DirectObjectParameterStrategy.class
+SHA-256-Digest: nTocio1ogliXU4cMw8JbZ3AuBM4uPz4esjkC96HniRg=
+
+Name: com/kenai/jffi/DirectClosureBuffer$NativeWordIO32.class
+SHA-256-Digest: QLGykMrvQ8Ndr640YG5NBkyFKELrmNKkcCnAi85Jbd8=
+
+Name: com/kenai/jffi/Platform$Windows.class
+SHA-256-Digest: /D+HLpLI8KqkPokI5kkfN01Nxtc5FYHILIQoTlmHlCI=
+
+Name: META-INF/p2.inf
+SHA-256-Digest: kWgaANex18b0Sk54Rx9zatMnlsdTQJWeZctDSX/zqo4=
+
+Name: com/kenai/jffi/MemoryIO$NativeImpl64.class
+SHA-256-Digest: lN/1yhMxJokO9jhoogupAZQveJGnpxiHZj6Hi2jAQ4A=
+
+Name: com/kenai/jffi/Platform$SingletonHolder.class
+SHA-256-Digest: /mVtY0P/0g9p9aQNKgGhsS4usEiC8AGhIbhCTAr5zf4=
+
+Name: about_files/THE_APACHE_SOFTWARE_LICENSE__VERSION_2.0.txt
+SHA-256-Digest: 70sq4AoiKPmbnFMVhYi1e9oPczCS6WKy+maEqwyunWY=
+
+Name: com/kenai/jffi/HeapInvocationBuffer$Encoder$SingletonHolder.clas
+ s
+SHA-256-Digest: ScTHfr+JEIMvHhhVbcVwuPOnzn3KO6r+w4UqylA9h+4=
+
+Name: com/kenai/jffi/ClosureManager$SingletonHolder.class
+SHA-256-Digest: JbuLDxEFW2MpAxwfqc4MMsta5YVdYPO+a5JAu2tu0NA=
+
+Name: com/kenai/jffi/Foreign$ValidInstanceHolder.class
+SHA-256-Digest: n/85iZw/5UxSKedv1FbFZmfS4joKzyDSRBvH2K3DQvE=
+
+Name: com/kenai/jffi/Closure$Buffer.class
+SHA-256-Digest: MYkNdjsT+xGi0XY9cbQBNWweTlbDlySF2sfuAFZv/UQ=
+
+Name: com/kenai/jffi/Platform$Default.class
+SHA-256-Digest: ZHaRmwwBrQEKGkyxnsMiFFq2a6eyRgk9qbjNvkUJb3Y=
+
+Name: com/kenai/jffi/Foreign$1.class
+SHA-256-Digest: QaJGCP+rj3eOKWm1e7nL2pljSBpN36W2daQzQQCwo/s=
+
+Name: com/kenai/jffi/NativeType.class
+SHA-256-Digest: B1mRaFu94JIqQlWrSS9d/jcRZcz9qL9kseWORtScvEM=
+
+Name: com/kenai/jffi/ClosurePool$Magazine$Slot.class
+SHA-256-Digest: zizodXbjYxwH4D5vXhV2kghMPC2THk4Skv32RKI4sdk=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: YwLebvJR3XKH8hmXsrofLJwBG0wcOMTxYNdZ3Le4/qg=
+
+Name: com/kenai/jffi/PageManager.class
+SHA-256-Digest: 6sgMqr2Afvyel31EDNbbOhq34xYYVYJfIBLFFX4WWhw=
+
+Name: com/kenai/jffi/Platform$ArchHolder.class
+SHA-256-Digest: 9FMliYuz/+5+ZwzBE5usg/mJ+AWe4KnB0/zaXVNe+hQ=
+
+Name: com/kenai/jffi/ObjectParameterInvoker$SingletonHolder.class
+SHA-256-Digest: IIumjDX8qJ8Q2xcL7aMqyZ7PPMsvrCO31TZaGInwvKc=
+
+Name: com/kenai/jffi/Invoker.class
+SHA-256-Digest: XHkQxB3at8d/QmxAnN/XH8PDmMqezmVmvkCcAhQZPsI=
+
+Name: com/kenai/jffi/HeapInvocationBuffer$LE32ArrayIO.class
+SHA-256-Digest: CKJfbtMoxeUcvYy2IGw+adyghXrHiDAoGG2lfBTl2dY=
+
+Name: com/kenai/jffi/internal/StubLoader$CPU.class
+SHA-256-Digest: 1sh3YWTB5SbZppi2vO0qYX0PflzPe7gXHBm1xPmi2A0=
+
+Name: com/kenai/jffi/ClosureMagazine$1.class
+SHA-256-Digest: JsOkTpuSJcUHBysUMRgUYxwZ3BDju54eeLrohvB93AE=
+
+Name: com/kenai/jffi/LastError$1.class
+SHA-256-Digest: j0S15Y2UMdYZAtwnvJw62CGUCGa3uAGTFhbAro45fIM=
+
+Name: com/kenai/jffi/ClosureMagazine.class
+SHA-256-Digest: sK0SFHXxNdzD9pXe92K2MGcX2YHtGESsFtCrSEdogBY=
+
+Name: com/kenai/jffi/ClosurePool$Magazine.class
+SHA-256-Digest: FstjFd+T6xwLoMW0UYXRKEemx2Lh3dyrFepUTkDfv5o=
+
+Name: com/kenai/jffi/HeapInvocationBuffer$BE32ArrayIO.class
+SHA-256-Digest: ilA3xlhaZokKAnBxWscPmVENg0yf+9PoyFI/AWZOPeo=
+
+Name: com/kenai/jffi/MemoryIO$SingletonHolder.class
+SHA-256-Digest: 6T6oT7ZaP/k6311eLrCLcEpEsrGwLNVmgbVnr8AVwX8=
+
+Name: com/kenai/jffi/CallContextCache$1.class
+SHA-256-Digest: x3E2971NkfjfzWSEG502KjUm71bkl5G2ebqqvmh1K+U=
+
+Name: com/kenai/jffi/ClosureMagazine$Handle.class
+SHA-256-Digest: 5j68ukC2pR3EYFMh1/knVTGX5yJJPrlRnIWWwu9go6g=
+
+Name: com/kenai/jffi/NativeObjectParameterInvoker.class
+SHA-256-Digest: NSBobMZttciguIbSyVcb8wQWg0GsRQJVEvfCdxjuZbw=
+
+Name: com/kenai/jffi/InvokeDynamicSupport$Invoker.class
+SHA-256-Digest: JAYmcpBs5ARIi0XgGqX8+ysnQHxU23CebJbLGufBRwI=
+
+Name: com/kenai/jffi/ObjectParameterInvoker.class
+SHA-256-Digest: w3yJ7w8woTTsLP0T4x4UsAJGork5Mxx/g7+YTeZ1lEA=
+
+Name: com/kenai/jffi/Closure$Handle.class
+SHA-256-Digest: CoNO6hUlYRqf2V0JerWRL3vvajgZhvIee1GlCr9MBjw=
+
+Name: com/kenai/jffi/CallContextCache$CallContextRef.class
+SHA-256-Digest: acegDvL0tEW/1uFWYcW0i4Vp9Q4sKyZh1GW//H7ZHTw=
+
+Name: com/kenai/jffi/Library.class
+SHA-256-Digest: TED2RSFMuTZEFhwyQ4GBZdaruKzTosj39cG64s7XSwM=
+
+Name: com/kenai/jffi/InvokeDynamicSupport.class
+SHA-256-Digest: UvEIDzhj339WRStCGKB2jXGPnzh34OMo92yi+RyPQhk=
+
+Name: com/kenai/jffi/ObjectParameterType.class
+SHA-256-Digest: yJECSwet/NVPGUvsM7OXhwa2lc6/iV+kWACMtWvZxeU=
+
+Name: com/kenai/jffi/PageManager$Windows.class
+SHA-256-Digest: MCrxkqfazT9ohIvUpGPvJynUR8MhDfPQTphdBsXBDtU=
+
+Name: com/kenai/jffi/ObjectParameterInfo$ObjectType.class
+SHA-256-Digest: S5x84c96aEiLOgPeenLppZ/IXNew4Q4/Aj5JeT+tuo8=
+
+Name: com/kenai/jffi/HeapInvocationBuffer$LE64ArrayIO.class
+SHA-256-Digest: 0Jr/UoFrfYnRbrjMFZPROZP6DP6OlMNbnWArsCdGk5Q=
+
+Name: com/kenai/jffi/Struct$1.class
+SHA-256-Digest: SIgTr/5x0350aWIKs5a43W+SkeLTr1t+gpk59zije1Q=
+
+Name: com/kenai/jffi/MemoryIO$UnsafeImpl32.class
+SHA-256-Digest: M/NXgUQi5dHX3MaOEb6m1vqhQszgdDyyp9AE7u8JhIc=
+
+Name: com/kenai/jffi/Foreign$InValidInstanceHolder.class
+SHA-256-Digest: GBrmANcrcGMfhB4XdaPSQYaxxY53CLYfk80GQvIXpSc=
+
+Name: com/kenai/jffi/InvocationBuffer.class
+SHA-256-Digest: hk4NtJ8SE6SDRxWStkBYIm5Aaf1D9aazaTxHtoBx49E=
+
+Name: com/kenai/jffi/Invoker$ILP32.class
+SHA-256-Digest: tQ3UN/5Kz9jaAjVuBBFPynwiEUxuqgw7g3wsW2OVYbg=
+
+Name: com/kenai/jffi/NativeMethod.class
+SHA-256-Digest: /0ujKd1MKMceTGgdJHvtMv7fl9DuKKwSSkPgj3yNpU4=
+
+Name: com/kenai/jffi/internal/StubLoader$OS.class
+SHA-256-Digest: hf64rddwFA74OE8nlWawd+dM5ePO6OBWMI3vMud4G1w=
+
+Name: com/kenai/jffi/ObjectBuffer.class
+SHA-256-Digest: H2eP5mH9lPa2hUXjdSwnPcrvKGOqHPOdZ9Q++zkLxb8=
+
+Name: com/kenai/jffi/Library$DefaultLibrary.class
+SHA-256-Digest: B6bXe/7mwsFl9E94+qscnAEr9KkYGrYEXOHefo6Rtjw=
+
+Name: com/kenai/jffi/HeapInvocationBuffer$Encoder.class
+SHA-256-Digest: aqZSJBvVA9gbOOWXR9G50Qp8aE6b1v6rPU49720WRfw=
+
+Name: com/kenai/jffi/FaultException.class
+SHA-256-Digest: z+JSufxxJx1b/w3JWnt282GNw81VTpXr/GQrAUeiWjQ=
+
+Name: com/kenai/jffi/ClosurePool$MagazineHolder.class
+SHA-256-Digest: na2egb9J2vSglMKJXP6vmmnPftA8cFSSq8rSEriQ4Kk=
+
+Name: com/kenai/jffi/DirectClosureBuffer$1.class
+SHA-256-Digest: Q/+noik8pdyI8UQc8vu+77QpINscqVpc2JF6jkaxNfA=
+
+Name: com/kenai/jffi/MemoryIO.class
+SHA-256-Digest: IrHahklRIGTBDinpwX0u3JbkcsUzrJ5ghcxMYSPmkfI=
+
+Name: com/kenai/jffi/HeapInvocationBuffer$1.class
+SHA-256-Digest: 8ASJiX8dbLzNyki+DqiPPy80aPIKDPLMvjF38CPbeYI=
+
+Name: com/kenai/jffi/Platform$1.class
+SHA-256-Digest: GEDGUAnY05jB9dKupFrEcrWzr5m+zLzBrC8we9DkOn8=
+
+Name: com/kenai/jffi/CallContext.class
+SHA-256-Digest: q+SSXmxQUyR6TsfgyM356pAOGqqzxGyhujEGgwxmM34=
+
+Name: com/kenai/jffi/Closure.class
+SHA-256-Digest: TA+nWxhrWuMkdsL4sWpyRHnh7z6cMtY9abqjF64bSvQ=
+
+Name: com/kenai/jffi/MemoryIO$NativeImpl32.class
+SHA-256-Digest: RQGBMbp/TNSmVri5aYOa3icmyvXdUbWKVn7HP4JtYKg=
+
+Name: com/kenai/jffi/Invoker$SingletonHolder.class
+SHA-256-Digest: oS9P6g8ddcD2V+i8KfwqdaNGrEsblKRwdYI5N2ak46s=
+
+Name: com/kenai/jffi/Type$TypeInfo.class
+SHA-256-Digest: VbmnU2BjW/FcOHwEQ1eczMm6MDVRo0WzcV8jvb3oopw=
+
+Name: com/kenai/jffi/Init.class
+SHA-256-Digest: 9d27bV7iCLyHw35Q60zK3rjg4hyRlPCBnQsYN/akBbM=
+
+Name: com/kenai/jffi/CallContextCache.class
+SHA-256-Digest: 34keC7A3SsQNcfq/Y03tiqkRQKK0uumGshGS3NIOyLQ=
+
+Name: com/kenai/jffi/HeapInvocationBuffer$BE64ArrayIO.class
+SHA-256-Digest: gU8mSrClK2wo6W4IQmbXFj98hK3G79tKQCZFYIM162k=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.github.jnr.jffi/pom
+ .xml
+SHA-256-Digest: VIDHUZZHV1MR5bp5lfAJrfOgtQXqlzmB/J2if/kZ3Fg=
+
+Name: com/kenai/jffi/ClosureManager$1.class
+SHA-256-Digest: HwDBnnwT2APwvFJEG2Lm81rsctZBDBvqyTZuBs8fZTs=
+
+Name: com/kenai/jffi/Struct.class
+SHA-256-Digest: 8eDEVI4kv4tO5y01/kZbUDA1FDdwOPEN1uWR7kQE2ho=
+
+Name: com/kenai/jffi/Type.class
+SHA-256-Digest: dVaJUZcISWmwLio+ur0/d+l/U1zgkp0+z2ZonwB/V6M=
+
+Name: com/kenai/jffi/ObjectParameterStrategy.class
+SHA-256-Digest: W15QrUYAmAz66vFHAd0xSiduKNb31qLR5dTEdBsXrb8=
+
+Name: com/kenai/jffi/ObjectParameterStrategy$StrategyType.class
+SHA-256-Digest: ebjQEnNvHRMKgo5tuWCPfzOm+6Jsph+owouz/ruSAN0=
+
+Name: com/kenai/jffi/HeapInvocationBuffer$DefaultEncoder.class
+SHA-256-Digest: WEZPBe98dM5pUNGaAQHxOYSHDgnERiiqF8KhWfc0dM8=
+
+Name: com/kenai/jffi/HeapInvocationBuffer.class
+SHA-256-Digest: 5QDF+fp0H807U+DEk5MAmwRoMz5hzrniA5dGI0zZ6aU=
+
+Name: com/kenai/jffi/HeapInvocationBuffer$LittleEndianArrayIO.class
+SHA-256-Digest: 0sRCcwLvUDzpwLqTFldcE/Qrx05pMJLUokN6y5sDkO0=
+
+Name: com/kenai/jffi/Invoker$LP64.class
+SHA-256-Digest: oiKBOkQN8Lcqax4pXSjUKAzPO+KQUSY6GHWiTkyXWX4=
+
+Name: com/kenai/jffi/Platform$CPU.class
+SHA-256-Digest: 1wMYsW7mh736ttD0uV9ryDeElx8H6CK7U2USrtNcmyI=
+
+Name: com/kenai/jffi/LastError$SingletonHolder.class
+SHA-256-Digest: YqRYRvflkT6I/XPmaRvvVbXgcoXZlg9hLi+qRsdCohQ=
+
+Name: com/kenai/jffi/Version.class
+SHA-256-Digest: b5s+w0t18ajHdrpR3kS4KYOmY2uYTmrqPglGq7aHPPo=
+
+Name: com/kenai/jffi/HeapInvocationBuffer$BigEndianArrayIO.class
+SHA-256-Digest: iMdjtVSaNr4FlVKVDJzF8VenlVaQa9nvegQ1vSjTTvw=
+
+Name: com/kenai/jffi/MemoryIO$1.class
+SHA-256-Digest: uuOnWsFwoeDyLTeRHQxPq5q6KOcV+Pqc/fOCwkKFdCQ=
+
+Name: com/kenai/jffi/internal/StubLoader$1.class
+SHA-256-Digest: q5x2viFLm0Tn/piYPrnqtVGN41yKIL7P2tUDxvQ1VtE=
+
+Name: com/kenai/jffi/Platform.class
+SHA-256-Digest: cywEiA1L20jRB/mvcWhr1OpLnty1ZPfwpi5pCrrqK6w=
+
+Name: com/kenai/jffi/MemoryIO$CheckedMemorySingletonHolder.class
+SHA-256-Digest: qJeq+b7NavTvcZVGYMsUrCnlgeWMcPXbgakbTFrd9rU=
+
+Name: com/kenai/jffi/Array.class
+SHA-256-Digest: od/BcWQhrwXwUG98H07eYnCyM8KMrfept+KgaAlfU/U=
+
+Name: com/kenai/jffi/ObjectParameterInfo$ComponentType.class
+SHA-256-Digest: 1qyrkZyr2Htz5p5ljzkD3mjqINGWB/DFqEMNx57W0xQ=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.github.jnr.jffi/pom
+ .properties
+SHA-256-Digest: Ga/15uD5Yi+z7MhW4qbVkEdsPrUQhUFYdpzbwg3rB4Q=
+
+Name: com/kenai/jffi/HeapInvocationBuffer$InvalidArrayIO.class
+SHA-256-Digest: EMe1Wn1YTYMA8rN6fvPlTDn2eC2tdVrwkgmr2RTNK/I=
+
+Name: com/kenai/jffi/Foreign$InstanceHolder.class
+SHA-256-Digest: cQ3h9435wvuZXBFFkDzohMjOL3V9QvI2d9IAYbt9vM8=
+
+Name: com/kenai/jffi/DirectClosureBuffer$NativeWordIO64.class
+SHA-256-Digest: FrZkeqDfAVSHPtgPJo/8+d2nMcPwmmofuLSnlKOHKq4=
+
+Name: com/kenai/jffi/MemoryIO$NativeImpl.class
+SHA-256-Digest: Hi8hj8MwWtOAK6PsOqO0A30XA4CUnCElHfLD7FEuJr8=
+
+Name: com/kenai/jffi/ClosurePool$1.class
+SHA-256-Digest: 7Pgk43if0g/naYKgwogTznfiEYD1XblCPiXh4AIxTDE=
+
+Name: com/kenai/jffi/Aggregate.class
+SHA-256-Digest: fxwu8+xnmSlr3gan3BfnunS/TTy1XEuhIB8xGeUTR0I=
+
+Name: com/kenai/jffi/Type$Builtin.class
+SHA-256-Digest: p5Z+Wo3rvoIr0zxn4zOg2/V88Op4zgvLwW4H3tWZ8I8=
+
+Name: com/kenai/jffi/ClosurePool$Handle.class
+SHA-256-Digest: BCImAJNGHnjWE9r033OAbNnRNxQOWEwAChmXbrpuhVk=
+
+Name: com/kenai/jffi/HeapInvocationBuffer$ArrayIO.class
+SHA-256-Digest: WeinE4FlwBzu+nquHcwsYlE3pmq9bIJs5GFCqxopBNs=
+
+Name: com/kenai/jffi/Platform$Darwin.class
+SHA-256-Digest: YHotN8yM/Q6F2X1JNkX1LE6m5NoFeLeY33S/hUaNdiM=
+
+Name: com/kenai/jffi/ClosurePool.class
+SHA-256-Digest: yTtUteu55SOkpC37LBtUKtIcUj4LcqIcolCgfPPJT6o=
+
+Name: com/kenai/jffi/LastError.class
+SHA-256-Digest: ReCJMwqRRex47zHGjsekNux8RzmsT+FHoW6cROMRKjM=
+
+Name: com/kenai/jffi/HeapObjectParameterInvoker.class
+SHA-256-Digest: 4F+rroRBUw6H4XvI/xJCR53CvHj+By4GY+PdEQWRkPA=
+
+Name: com/kenai/jffi/MemoryIO$UnsafeImpl64.class
+SHA-256-Digest: kWVZfxlfLa39DL4ZhJhmtrWN5phOAKoUaBKSUKNrM+g=
+
+Name: com/kenai/jffi/DirectClosureBuffer.class
+SHA-256-Digest: E17ijm7tBbzGSs8vvgyNnIOdvo3vQsFLkzd7e3ada3k=
+
+Name: com/kenai/jffi/CallingConvention.class
+SHA-256-Digest: BoFRiFnzLWNaSwmD/baYh8t3u7ySbZa7xCZoYAY3i98=
+
+Name: com/kenai/jffi/ObjectParameterType$ObjectType.class
+SHA-256-Digest: iUzMfcCThQXx5M/OW/HwCxKAImnAasr+HSOURjv2hAQ=
+
+Name: com/kenai/jffi/ObjectParameterType$ComponentType.class
+SHA-256-Digest: IpLMKki1znShMCQA3lp3XrJNVsEeopN+zCqNvTsWiyA=
+
+Name: com/kenai/jffi/Invoker$1.class
+SHA-256-Digest: Q9yOGI7Y+YCeuzl8d/Schz/n8nG5MVAz/HovsfABmmE=
+
+Name: about.html
+SHA-256-Digest: 0kj+26xC+ge9EqV26pZfS+2S7B1R2nfFXXNWePZTCHo=
+
+Name: com/kenai/jffi/PageManager$SingletonHolder.class
+SHA-256-Digest: vYMomqe8XzeNiK06BeP+dlg8R+WlRv0cZsL1hxM9L3U=
+
+Name: com/kenai/jffi/CallContextCache$Signature.class
+SHA-256-Digest: WwkP7tINsFbPSwt68QZAVV3PW9D2Qbhb2AhQMlTAJFg=
+
+Name: com/kenai/jffi/InvokeDynamicSupport$JSR292.class
+SHA-256-Digest: PBzKsESAvgxptpvBlMNgqBu4tzYTJbnRWPfVvnVzFm0=
+
+Name: com/kenai/jffi/PageManager$Unix.class
+SHA-256-Digest: IgJbCxaKSvCoOKsU8S9Xi6zrxco/sdewYp/NQrT/QoM=
+
+Name: com/kenai/jffi/Main.class
+SHA-256-Digest: O5Gam7oyaAIbs4+9RlNThj1+lh7vi7rOK4hj7LizndM=
+
+Name: com/kenai/jffi/Foreign.class
+SHA-256-Digest: 8SZR6E+soiHskJRMnTN3i5gBc9lQSgxozaAU2k5aDzo=
+
+Name: com/kenai/jffi/HeapInvocationBuffer$ArrayIO$SingletonHolder.clas
+ s
+SHA-256-Digest: fk5iRFr8HnDmvcDbN3Q7kPaSNPZlpcLdtMwTu/nsSjs=
+
+Name: com/kenai/jffi/MemoryIO$UnsafeImpl.class
+SHA-256-Digest: iFqTnFLPUQq9va9hkyzUsyHSgMp5TKAsv/Ldpoz2gsc=
+
+Name: com/kenai/jffi/Function.class
+SHA-256-Digest: Oa1m/J9RA3n6nXSxXQ0RdJZLXYp0qW2Xuj/OhwAnbF0=
+
+Name: com/kenai/jffi/Struct$StructReference.class
+SHA-256-Digest: tlo4InkGCl6bjy+JV1ya6Gr5EBw20WEF1SKrsMwsXco=
+
+Name: com/kenai/jffi/ClosurePool$Proxy.class
+SHA-256-Digest: X5aOkcy0XYk3skqJwZLrHxXjlbTz31bOJvZIM7maekU=
+
+Name: com/kenai/jffi/ObjectParameterType$TypeCache.class
+SHA-256-Digest: uHPBk8hfIicaI3G2MNQMNiUdoy4q+/fTGH+gLIHtLVA=
+
+Name: com/kenai/jffi/NativeMethods.class
+SHA-256-Digest: y/SZtqu1cmLPZVhl3Id4Foc3MPziG/zeoGE8Jt93MJo=
+
+Name: com/kenai/jffi/Internals.class
+SHA-256-Digest: bUAcD4ZZr+IzOIFXAd5T/kRseyVd7oNpcqDruKGNaWs=
+
+Name: com/kenai/jffi/CallContextCache$SingletonHolder.class
+SHA-256-Digest: 4MCMzeDwbQzUe+OCZ7o8GaKWO3EzBbJ6f0aTxOJbU7Y=
+
+Name: com/kenai/jffi/internal/StubLoader.class
+SHA-256-Digest: 3S/LH8O4Y0X2G3XkPKCyqhImk6VfuGgDFhpbHeOsrno=
+

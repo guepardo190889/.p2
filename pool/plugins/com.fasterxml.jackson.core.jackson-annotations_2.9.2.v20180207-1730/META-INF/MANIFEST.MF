@@ -1,0 +1,258 @@
+Manifest-Version: 1.0
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: com.fasterxml.jackson.core.jackson-annotations
+Archiver-Version: Plexus Archiver
+Built-By: genie.orbit
+Implementation-Vendor-Id: com.fasterxml.jackson.core
+Specification-Title: Jackson-annotations
+Bundle-DocURL: http://github.com/FasterXML/jackson
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Implementation-Build-Date: 2017-10-14 02:44:13+0000
+Export-Package: com.fasterxml.jackson.annotation;version="2.9.2"
+Bundle-Name: %bundleName
+Bundle-Description: Core annotations used for value types, used by Jac
+ kson data binding package.
+Implementation-Title: Jackson-annotations
+Automatic-Module-Name: com.fasterxml.jackson.core.jackson-annotations
+Implementation-Version: 2.9.2
+Bundle-ManifestVersion: 2
+Specification-Vendor: FasterXML
+Bundle-Vendor: %bundleVendor
+Implementation-Vendor: FasterXML
+Originally-Created-By: Apache Maven Bundle Plugin
+Bundle-Version: 2.9.2.v20180207-1730
+X-Compile-Target-JDK: 1.6
+X-Compile-Source-JDK: 1.6
+Created-By: Eclipse Bundle Recipe Maven Plug-in
+Build-Jdk: 1.8.0_162
+Specification-Version: 2.9.2
+
+Name: com/fasterxml/jackson/annotation/JsonAutoDetect.class
+SHA-256-Digest: Y1rGB9t2qvupbgOWZJdap2MlcJ0PZnJKM2asSyaMm58=
+
+Name: com/fasterxml/jackson/annotation/JsonInclude.class
+SHA-256-Digest: Z0QeaciDDs7qMoxM3tMZKirWfe5hf3AZXMcbR3YGO74=
+
+Name: com/fasterxml/jackson/annotation/ObjectIdGenerators.class
+SHA-256-Digest: qeW7vwnOpfDH9Y1skO9pq9CQ/3doRX5BawOgrZ9h+co=
+
+Name: com/fasterxml/jackson/annotation/JsonFormat$Features.class
+SHA-256-Digest: 1Yiiq15sgQv18Z4B47l+jtNMa/Rs5iiRgi47VhhGNAU=
+
+Name: com/fasterxml/jackson/annotation/JsonFormat$Feature.class
+SHA-256-Digest: 8sERfCy4mlvjG9cbv1oNTkAJmQCAgXFFj+day+qhXA4=
+
+Name: com/fasterxml/jackson/annotation/JsonIgnore.class
+SHA-256-Digest: Q7lfyQqOyVEM+QULJ5WkDTYdfY4UMbAF7hZGUTRZ4pk=
+
+Name: com/fasterxml/jackson/annotation/JsonSetter.class
+SHA-256-Digest: ExWiCEa5D+vWtWGcwdKZxSe9EWozdhE4zVuKrRSArq8=
+
+Name: com/fasterxml/jackson/annotation/JsonTypeInfo$None.class
+SHA-256-Digest: BK7V7so5c25LuV/sdePHI3IlAUtNN52qhFWwGqES2TY=
+
+Name: com/fasterxml/jackson/annotation/JsonFormat$Shape.class
+SHA-256-Digest: fR0Yo/l2o3+0/Dbs2OQXr3ZbivSwqRdwN6uA9Mxtzss=
+
+Name: com/fasterxml/jackson/annotation/JsonManagedReference.class
+SHA-256-Digest: asHeGDPIFFijEihQflfdFatAQg8RjX8mhgug0Uu5I7M=
+
+Name: com/fasterxml/jackson/annotation/JsonSubTypes.class
+SHA-256-Digest: 5a5rPbORkxSuAVbL2Cl+q4wJ/Ob5rSGLx38B6vA1XIE=
+
+Name: com/fasterxml/jackson/annotation/ObjectIdGenerators$UUIDGenerato
+ r.class
+SHA-256-Digest: HsJlekSapU7MnM8HtB0+GK8zm5QmU1jrvhjPDnglTYA=
+
+Name: com/fasterxml/jackson/annotation/JsonSetter$Value.class
+SHA-256-Digest: xA6SPIl+CEmNWtDyEY3acllj9HuRBbgSRXa9k2fiefk=
+
+Name: com/fasterxml/jackson/annotation/JacksonAnnotationsInside.class
+SHA-256-Digest: 2zClRD1R30lwq/WiwW8og0AsJSK1g//m+qvkOyeMtbU=
+
+Name: com/fasterxml/jackson/annotation/PropertyAccessor.class
+SHA-256-Digest: v+KGn3eJctjiYa+D1dur2WCobonnRKVs8YnkeYgqNtQ=
+
+Name: com/fasterxml/jackson/annotation/JsonCreator$Mode.class
+SHA-256-Digest: 4ysvmmvMpG/owmoM3189oojVKWnPmc6yxt7VA6gxQyE=
+
+Name: com/fasterxml/jackson/annotation/JsonUnwrapped.class
+SHA-256-Digest: vSzeCczJNGqB9s3UWWj+7+RDSS2WqGttJORZ6O9Mc5U=
+
+Name: com/fasterxml/jackson/annotation/JsonCreator.class
+SHA-256-Digest: eP0Y2ec9xHLJRzvrSQ+devtqNCiQ81IChe96djfidDQ=
+
+Name: com/fasterxml/jackson/annotation/JsonIgnoreProperties$Value.clas
+ s
+SHA-256-Digest: 5VTASZIfxtEslu+xueWCZoM0A0cWqDBPqVtgvWMM71Q=
+
+Name: com/fasterxml/jackson/annotation/OptBoolean.class
+SHA-256-Digest: d5pZ0HlyUQM0gK4ClwAXcUP5E1WNJ5iPzNoF795LBBc=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.fasterxml.jackson.c
+ ore.jackson-annotations/pom.properties
+SHA-256-Digest: XZWveD5wJL+0EcJSb0N0ABpRRPe5zRfuZ+GZZ0cWnT0=
+
+Name: META-INF/LICENSE
+SHA-256-Digest: QuXAIRQYwpH53735ld6vvxHpn8UOZLN7zwrHcK3Ran0=
+
+Name: com/fasterxml/jackson/annotation/Nulls.class
+SHA-256-Digest: 6asNeny6sb+moGWrr5u+ZOR108OPKN6AsncgxX2X6K0=
+
+Name: about_files/THE_APACHE_SOFTWARE_LICENSE__VERSION_2.0.txt
+SHA-256-Digest: z8d0m5b2O9McPEK1xHG/dWgUBT6EfBDz6wA0F7xSPTA=
+
+Name: com/fasterxml/jackson/annotation/JacksonInject.class
+SHA-256-Digest: PrfQohagunIPJJNcZgS8gdewtvyXNOURMsbHTg+Tj+E=
+
+Name: com/fasterxml/jackson/annotation/ObjectIdGenerators$IntSequenceG
+ enerator.class
+SHA-256-Digest: nX7w148AnAdLKwLh72+4hhyxy9sBB7Mdnevi9cDgzRY=
+
+Name: com/fasterxml/jackson/annotation/JsonAlias.class
+SHA-256-Digest: 67fiGhaIvSn+p8u4Y0c6UeOxHJPIidIlP6E4jrBBzXo=
+
+Name: com/fasterxml/jackson/annotation/JsonIdentityInfo.class
+SHA-256-Digest: Hz94eqskDKy/psernSNfL/vm2LXSoz+yIsa/AKVBqaI=
+
+Name: com/fasterxml/jackson/annotation/JsonRootName.class
+SHA-256-Digest: Xy8JQRU7MGFIn4y/EfJjyABZNzgN/S9ZiB+8LyqXW+s=
+
+Name: com/fasterxml/jackson/annotation/JsonPropertyDescription.class
+SHA-256-Digest: ZzrlFCt2PgMiUi/2vqnhOM8OPBOYblz+XUFFo8XKtWE=
+
+Name: com/fasterxml/jackson/annotation/JsonFilter.class
+SHA-256-Digest: YMZy5mvoVYDpuOfNjXiyPAklWOSb+J8f4PQwXALCRIw=
+
+Name: com/fasterxml/jackson/annotation/JsonBackReference.class
+SHA-256-Digest: 8dDD5NM7EywE2QE+AlfgVmx9BFToROMEvawStPiy5Es=
+
+Name: com/fasterxml/jackson/annotation/ObjectIdGenerators$Base.class
+SHA-256-Digest: JNMnZ72W4Aic98uZPntiufn1rjK4Ncn1E0/x1od0pzQ=
+
+Name: com/fasterxml/jackson/annotation/JsonEnumDefaultValue.class
+SHA-256-Digest: Ib9QM4hdLTPIE5NqyKV3kTWYjAGgndquRcXtLNKL7a8=
+
+Name: com/fasterxml/jackson/annotation/JsonIgnoreProperties.class
+SHA-256-Digest: 6fHkt31d6EtNRvgG8pN4/Zdl9SHnMZ3o33cdOxzWglo=
+
+Name: com/fasterxml/jackson/annotation/JsonTypeInfo$Id.class
+SHA-256-Digest: cI9wfrEigVvpZCksahBo2TRxgiMsu8LGo5hBrNCXSEQ=
+
+Name: com/fasterxml/jackson/annotation/ObjectIdGenerators$StringIdGene
+ rator.class
+SHA-256-Digest: 5bqJAlLTXweCJILjCvQFljfJ+QR6Vsow2g91ribHiOU=
+
+Name: com/fasterxml/jackson/annotation/JsonFormat$Value.class
+SHA-256-Digest: lPypAsDhsCcMVhi6JA2txF75wJB9v8Vc7sQLBCvor20=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: Be96mVYufaww9P4+JrKB69fN+D6BxdPIUhMjM1Qs6LU=
+
+Name: com/fasterxml/jackson/annotation/JsonSubTypes$Type.class
+SHA-256-Digest: 6IlSCAEZu/jUPdm5ndFV2gRCX4Ut7McZk4dg3WtBUK0=
+
+Name: com/fasterxml/jackson/annotation/JacksonAnnotationValue.class
+SHA-256-Digest: xSErPFf97CGuNd2yLAQYUw+zxlryD72JHVbk3uhNMH4=
+
+Name: com/fasterxml/jackson/annotation/JsonTypeId.class
+SHA-256-Digest: G7pe8DCXbxUm+ucPP2n0j7Z9ODbXdGpdY1xd1LBaeAE=
+
+Name: com/fasterxml/jackson/annotation/JacksonAnnotation.class
+SHA-256-Digest: y2Ry1WnhFm0/ww3kTz1+eLd7ieGQy+R76whWUu2gcSw=
+
+Name: com/fasterxml/jackson/annotation/SimpleObjectIdResolver.class
+SHA-256-Digest: i5xaTg7CIoVH7VVQnJuN39O6lu30Y3TpdRFjTPPj320=
+
+Name: com/fasterxml/jackson/annotation/JsonTypeName.class
+SHA-256-Digest: 75jSsfxPsJ6KKa2NqoY9AijHUB8QNeBEFfka5FUYSVw=
+
+Name: com/fasterxml/jackson/annotation/JsonView.class
+SHA-256-Digest: rJIaoVNWGvBwLzBm4KJ2E/IgWqyo2+/QCS9gUT/6TZw=
+
+Name: com/fasterxml/jackson/annotation/JsonTypeInfo.class
+SHA-256-Digest: rgcYsqpWK/7hRKAm5768TOOJdzcAp1aHufl5Wn83znw=
+
+Name: com/fasterxml/jackson/annotation/JsonRawValue.class
+SHA-256-Digest: rIC+/uXpW9im5gw9km0twE3uDohwv5t3V32Tt3AJWb4=
+
+Name: com/fasterxml/jackson/annotation/ObjectIdResolver.class
+SHA-256-Digest: yBMeJdji43EN/5QWqmUkV03nAExV1p5fzSJ26vJn83Y=
+
+Name: com/fasterxml/jackson/annotation/JsonAnyGetter.class
+SHA-256-Digest: vuKn1Dm9mrbxMbH5d4y5U5smHv5M9VR4+gjBiKxrhjk=
+
+Name: com/fasterxml/jackson/annotation/ObjectIdGenerator.class
+SHA-256-Digest: KOuonHIS8bhw7fsK0W90V4hRdMICH6/hL5qBdp2uob4=
+
+Name: com/fasterxml/jackson/annotation/JsonAutoDetect$1.class
+SHA-256-Digest: T+cK0dGjxNRhxZNqQYcoCok6FSsIXqJOLNLtJphoOas=
+
+Name: com/fasterxml/jackson/annotation/JsonProperty$Access.class
+SHA-256-Digest: ldzxzM7M8TzaQh1iXBnaTG64w4FWgAONhezrYJUBW1c=
+
+Name: com/fasterxml/jackson/annotation/ObjectIdGenerators$None.class
+SHA-256-Digest: Z0+gvQLQg8ifgFcJu61x1px0U8tSrnQ9c2Sa2toXDJc=
+
+Name: com/fasterxml/jackson/annotation/JsonInclude$Include.class
+SHA-256-Digest: gH1hAzD7vGahWEzrUrAMO2qQ5IKzqIeyXhcXEAHhxD0=
+
+Name: com/fasterxml/jackson/annotation/JsonAnySetter.class
+SHA-256-Digest: ZSa505+Ytntc6qty8aWbqeOK+pPdwqBXT84WG0OvVoc=
+
+Name: com/fasterxml/jackson/annotation/JsonIdentityReference.class
+SHA-256-Digest: 1VDlxbMGjkF3UR4Ls1wsSuJXmYTVXdH+59979J7yaow=
+
+Name: com/fasterxml/jackson/annotation/JsonProperty.class
+SHA-256-Digest: 7DBJJfmt/x+F5SBeByF8JCqCmeAj8ujv3FE4HfXwJVM=
+
+Name: com/fasterxml/jackson/annotation/ObjectIdGenerators$PropertyGene
+ rator.class
+SHA-256-Digest: 8JbjCYQYtf/S1Fj0Vl9EnVcy+RzTBeV9zLbC9QDVWNw=
+
+Name: com/fasterxml/jackson/annotation/JacksonInject$Value.class
+SHA-256-Digest: APsMbYAluThTiYLiJ4qmGPMdS3IIeupIgDENAwbL9+k=
+
+Name: about.html
+SHA-256-Digest: rx08/uM2RnflQoeECiUM+Wd9MVVLd5K6uLtE+Ki5PB8=
+
+Name: com/fasterxml/jackson/annotation/JsonAutoDetect$Visibility.class
+SHA-256-Digest: OfsCmBwae+Im0TRndJ+Y0BxC247GKxvPfG0Qf2zHfzU=
+
+Name: com/fasterxml/jackson/annotation/JsonValue.class
+SHA-256-Digest: Q+zT58QevJ4Oipww8+Q8VuwxT+y6XOnCFVExHogS1hA=
+
+Name: com/fasterxml/jackson/annotation/ObjectIdGenerator$IdKey.class
+SHA-256-Digest: sKIbJWaPdCkslGtO2gFEt82Fn9dl5ruZQQRnbFciEaE=
+
+Name: com/fasterxml/jackson/annotation/JsonGetter.class
+SHA-256-Digest: iV2ryxCuK3l4fcOzt0A0eu/ji+cYjXghoAJcxCAPCMA=
+
+Name: com/fasterxml/jackson/annotation/JsonTypeInfo$As.class
+SHA-256-Digest: n2znf2o39Ed5KJM/BvkFH/24uQjab1UK36wu8sO+0SQ=
+
+Name: com/fasterxml/jackson/annotation/JsonInclude$Value.class
+SHA-256-Digest: KphGH7uykzJWrP1xR+Xeylee8pM4JWG+fe6N+iq/8EQ=
+
+Name: com/fasterxml/jackson/annotation/JsonPropertyOrder.class
+SHA-256-Digest: fSq89JKUslfw5keoRdGEojv2wB393ukZAzjWO1Aho9c=
+
+Name: com/fasterxml/jackson/annotation/JsonIgnoreType.class
+SHA-256-Digest: 9StwkqbVUg2wQohsMIEH4SfE9jpj2XPYU7qte4M8x/s=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.fasterxml.jackson.c
+ ore.jackson-annotations/pom.xml
+SHA-256-Digest: 8O7nKDMda1cIpziPo1OuHcHCHhZEZTnh91eifNnWiRU=
+
+Name: com/fasterxml/jackson/annotation/JsonFormat.class
+SHA-256-Digest: yI4IFrLsS6PEWaiNuDtSA3IadqP0lISwwlm1qqwqMqc=
+
+Name: com/fasterxml/jackson/annotation/JsonMerge.class
+SHA-256-Digest: zi7IbT0IjS5frQDpvqMde23a8xJIE9/IvP4Qc9lOWWY=
+
+Name: com/fasterxml/jackson/annotation/JsonClassDescription.class
+SHA-256-Digest: Ubt9Sk+YVEv6z/ImgtNuI90jwWM2X0LbbghbhBbjkvU=
+
+Name: com/fasterxml/jackson/annotation/JsonAutoDetect$Value.class
+SHA-256-Digest: cIQmlNB2lnR6rkS+clGaNLthWuW0beCHJToVkNBbXjU=
+

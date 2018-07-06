@@ -1,0 +1,104 @@
+Manifest-Version: 1.0
+Implementation-Title: Utilities for ASM, a very small and fast Java by
+ tecode manipulation framework
+Automatic-Module-Name: org.objectweb.asm.util
+Bundle-SymbolicName: org.objectweb.asm.util
+Archiver-Version: Plexus Archiver
+Built-By: genie.orbit
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-DocURL: http://asm.ow2.org
+Bundle-Vendor: %bundleVendor
+Import-Package: org.objectweb.asm;version="6.1.1",org.objectweb.asm.si
+ gnature;version="6.1.1",org.objectweb.asm.tree;version="6.1.1",org.ob
+ jectweb.asm.tree.analysis;version="6.1.1"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.5))"
+Module-Requires: org.objectweb.asm;transitive=true,org.objectweb.asm.t
+ ree;transitive=true,org.objectweb.asm.tree.analysis;transitive=true
+Export-Package: org.objectweb.asm.util;version="6.1.1";uses:="org.obje
+ ctweb.asm,org.objectweb.asm.signature"
+Bundle-Name: %bundleName
+Bundle-Version: 6.1.1.v20180414-0329
+Created-By: Eclipse Bundle Recipe Maven Plug-in
+Build-Jdk: 1.8.0_162
+
+Name: org/objectweb/asm/util/Printer.class
+SHA-256-Digest: TXPUTffqxbpnBYFXGdRuV2iKVcUu1UwIXrya+2IvJlE=
+
+Name: org/objectweb/asm/util/TraceFieldVisitor.class
+SHA-256-Digest: xcBhlIJ9ZeEFl3Z4baEaBhuGVKcdDxkjFQhrfC+QbXw=
+
+Name: org/objectweb/asm/util/CheckMethodAdapter$Method.class
+SHA-256-Digest: gPmOqHJLmmAj9LHV6yCb0AWo87oAaIH2euGHKJNxNWc=
+
+Name: module-info.class
+SHA-256-Digest: IHFNbU/zsJ1FmInEYfOp6HhS/Xo5dFecuzFXD4EUSv4=
+
+Name: org/objectweb/asm/util/CheckMethodAdapter$1.class
+SHA-256-Digest: dRwDtAmhd9zYa0mapF1AMuPS4SW2Q0zJ5EoOWDfN/n4=
+
+Name: org/objectweb/asm/util/CheckSignatureAdapter$State.class
+SHA-256-Digest: yYOlOvty+dkpBCiZ0Ni6rcbxW80fCmDYqCyCmwQN8SI=
+
+Name: org/objectweb/asm/util/TraceModuleVisitor.class
+SHA-256-Digest: enh73bot2rK/81Hg7Un6c1bItJtuK6iw3JnpOMpaQQI=
+
+Name: org/objectweb/asm/util/CheckModuleAdapter.class
+SHA-256-Digest: UDIo+tHdQMligC0Os9+kAFaUSRx5dAKuXrV3tOdxshI=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.objectweb.asm.util/
+ pom.xml
+SHA-256-Digest: 0dWucDi6igkAAPIGrc/lc6x7EeKMJyEWC7IBqL79D3A=
+
+Name: about.html
+SHA-256-Digest: rb5Y5xCqCjYMxEaBBs/jU3UWM3/UAaQkjjvM/JRM7r0=
+
+Name: org/objectweb/asm/util/Textifiable.class
+SHA-256-Digest: BC+4NimsvrDiYloXJT+1MaSX/5ZKgTzPdvbX7PE+gik=
+
+Name: org/objectweb/asm/util/Textifier.class
+SHA-256-Digest: C6A6ndQgQHGG8g9toiPwuVZdqdi2p2Ao1olPS02qF3k=
+
+Name: org/objectweb/asm/util/ASMifier.class
+SHA-256-Digest: DgBOKaiEcebTBC/RvH+/nrLikCAZSnxdClQJk8lGgqw=
+
+Name: org/objectweb/asm/util/CheckSignatureAdapter.class
+SHA-256-Digest: 4KIMBZjfJ1Hv471JopC6fSGkFFPHns+wXd6l+2qfKEg=
+
+Name: org/objectweb/asm/util/TraceAnnotationVisitor.class
+SHA-256-Digest: W2dduAYPIKUMLNgDkWYdZ8K/lMgiy4MzsXxIp4DfjBA=
+
+Name: org/objectweb/asm/util/CheckAnnotationAdapter.class
+SHA-256-Digest: lEK+jxlpb3pQPi5bNMG5QBOWJsSQGNkGjB9EVpAIu8Q=
+
+Name: org/objectweb/asm/util/TraceClassVisitor.class
+SHA-256-Digest: KfB/OI61N2dCd1FcYygnFD3h32kPg+wIlki8CNWEpY4=
+
+Name: org/objectweb/asm/util/CheckClassAdapter.class
+SHA-256-Digest: DAOlrCi5w+nYWWqZ8LR+l3vHQ9/vC7pgD+BklgB/CN0=
+
+Name: org/objectweb/asm/util/ASMifiable.class
+SHA-256-Digest: oFpul4zuwuDv85sRAF8EMistm786BkEBgutNuQF0nKE=
+
+Name: org/objectweb/asm/util/TraceSignatureVisitor.class
+SHA-256-Digest: zayDMiQ2rLjE8CvrBfMplZ5aHt7+h8aVoayD4v3Gk9U=
+
+Name: org/objectweb/asm/util/CheckMethodAdapter.class
+SHA-256-Digest: XBM6tFtTCI3dF1ydP63erwR7IfD90bNsobxlivGKlwQ=
+
+Name: org/objectweb/asm/util/CheckFieldAdapter.class
+SHA-256-Digest: lkvMIqEpWosN0dk3pAsMgliIlo6y/EfTMVEAo8MpVhM=
+
+Name: org/objectweb/asm/util/TraceMethodVisitor.class
+SHA-256-Digest: cRrkF/cU/aLxQqdEii71wU23PmNzKk6RxYFbqp/VChM=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: OxRJcUrajOKNRd1UkGX++z9gpzwY6vfzIULrujx6QXA=
+
+Name: about_files/NEW_BSD_LICENSE.html
+SHA-256-Digest: 9mSolkoz0vHl7QBl6KxfdfTi6soXbqUYMMPFtYzid3w=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.objectweb.asm.util/
+ pom.properties
+SHA-256-Digest: 6mHQZHa3lqpv+o36+LEMcLRZklWmCRXXSYJttu5UH68=
+

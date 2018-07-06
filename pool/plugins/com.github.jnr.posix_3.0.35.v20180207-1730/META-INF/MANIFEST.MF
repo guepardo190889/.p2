@@ -1,0 +1,626 @@
+Manifest-Version: 1.0
+Bundle-Description: Common cross-project/cross-platform POSIX APIs
+Implementation-Title: JNA-POSIX
+Automatic-Module-Name: com.github.jnr.posix
+Bundle-License: http://www-128.ibm.com/developerworks/library/os-cpl.h
+ tml, http://www.gnu.org/copyleft/gpl.html, http://www.gnu.org/license
+ s/lgpl.html
+Bundle-SymbolicName: com.github.jnr.posix
+Implementation-Version: 0.5
+Archiver-Version: Plexus Archiver
+Built-By: genie.orbit
+Bundle-ManifestVersion: 2
+Bundle-Vendor: %bundleVendor
+Import-Package: jnr.constants;version="0.9.8",jnr.constants.platform;v
+ ersion="0.9.8",jnr.constants.platform.windows;version="0.9.8",jnr.ffi
+ ;version="2.1.4",jnr.ffi.annotations;version="2.1.4",jnr.ffi.byref;ve
+ rsion="2.1.4",jnr.ffi.mapper;version="2.1.4",jnr.ffi.provider;version
+ ="2.1.4",jnr.ffi.types;version="2.1.4",jnr.posix;resolution:=optional
+ ;version="[3.0,4)",jnr.posix.util;resolution:=optional;version="[3.0,
+ 4)",jnr.posix.windows;resolution:=optional;version="[3.0,4)",sun.misc
+ ;resolution:=optional
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Originally-Created-By: Apache Maven Bundle Plugin
+Export-Package: jnr.posix;version="3.0.35";uses:="jnr.constants,jnr.co
+ nstants.platform,jnr.ffi,jnr.ffi.annotations,jnr.ffi.byref,jnr.ffi.ma
+ pper,jnr.ffi.types,jnr.posix.util,jnr.posix.windows",jnr.posix.util;v
+ ersion="3.0.35";uses:="jnr.constants.platform,jnr.ffi,jnr.posix",jnr.
+ posix.windows;version="3.0.35";uses:="jnr.ffi"
+Bundle-Name: %bundleName
+Bundle-Version: 3.0.35.v20180207-1730
+Created-By: Eclipse Bundle Recipe Maven Plug-in
+Build-Jdk: 1.8.0_162
+
+Name: jnr/posix/BaseIovec.class
+SHA-256-Digest: vPSCkrSgiGMqgpXSPGFZ4Ima7juzaaDcY7EanOoS24g=
+
+Name: jnr/posix/NativeGroup.class
+SHA-256-Digest: 6z2nAt3WGdfv7RSL6Ex89wi8GQNNx0rgZ86t04QhgcQ=
+
+Name: jnr/posix/BaseNativePOSIX$6.class
+SHA-256-Digest: KWLEjXp2I5NIIdkrxhVX3es83oUOpS0n8CmhmApgRsQ=
+
+Name: jnr/posix/LibC$LibCSignalHandler.class
+SHA-256-Digest: mH2ZBLiLQTFl9gew58Zt5nKens8hK+Uqmp/NR36LwOw=
+
+Name: jnr/posix/MacOSSocketMacros.class
+SHA-256-Digest: VCuNg1qVQ1qv3hsMAdguY6UdCDpPw43JXHPWc3893g4=
+
+Name: jnr/posix/util/WindowsHelpers$1.class
+SHA-256-Digest: k8bwCcY7+TCkSuCROkDUcWnRSteSBs+236tAsiUlb9w=
+
+Name: jnr/posix/WindowsProcessInformation.class
+SHA-256-Digest: Oot3OHNZDDAyu5NKUA/HjJsbkIlQa0I6j0Hg5Qv3R8Y=
+
+Name: jnr/posix/JavaFileStat.class
+SHA-256-Digest: YmV3jKfC4WCRbExzjmYjPF0D0KAqT1SiSjl6CEapNk4=
+
+Name: jnr/posix/LinuxMsgHdr.class
+SHA-256-Digest: Jiy80aGa0sfWtJk1XwckJKRwl6IA45rcSnohDep2do4=
+
+Name: jnr/posix/AixPasswd$Layout.class
+SHA-256-Digest: dz+Ixeh8LuyYKjOAOc/l913+FyG7JYraFKffOsFtR+4=
+
+Name: jnr/posix/WindowsStartupInfo.class
+SHA-256-Digest: JGcm+5CFH5u0WfLoXFLcAzJa/+R9Uron1kPQ15uTWoc=
+
+Name: jnr/posix/HANDLE.class
+SHA-256-Digest: zM5w8rwh0qHKnAnJR9ehI9aSa92d9i4K1TjNQ2gVMUM=
+
+Name: jnr/posix/SolarisPOSIX$1.class
+SHA-256-Digest: P4JJQIZLb0ijyiYPBdiCaq9os+pZRJmqaev1PYusV94=
+
+Name: jnr/posix/Iovec.class
+SHA-256-Digest: jRIXeq2xVreTc/2JcZ0k+c0F9dhR3KSCC+i9fK5zhpA=
+
+Name: jnr/posix/OpenBSDPasswd$1.class
+SHA-256-Digest: /SQuv7okytAeMRCrdOct4/tQKwbnDGK9V7dVFPAV4nU=
+
+Name: jnr/posix/OpenBSDPasswd$Layout.class
+SHA-256-Digest: RD02nXJYboKLrB9pDqQztoGaLtViAtgxfWHZ9v9yAz8=
+
+Name: jnr/posix/LinuxPOSIX$Syscall$ABI_X86_32.class
+SHA-256-Digest: 7FXd6ELVU3Aq/+4mGQbVE6mMGOj4FcdxkhCt+BxwPrE=
+
+Name: jnr/posix/FreeBSDFileStat$Layout$time_t.class
+SHA-256-Digest: CtGe4/nCij8D86IpMdhrsXmtkuJ41BGRoyyN2gUwZOQ=
+
+Name: jnr/posix/CmsgHdr.class
+SHA-256-Digest: ro1efLpacC9oSrmpN3T20OPFUmRXNlhjmXGMIv9UqJ8=
+
+Name: jnr/posix/Group.class
+SHA-256-Digest: Tmwer6ASTGVlZcnLA7Uea7zvuJ0SODM7l2JQTLa30Eo=
+
+Name: jnr/posix/MacOSFileStat.class
+SHA-256-Digest: 6NvN0GtDrL7pcexmyKRtmV6FGt51PlDSjQs2o2q3Kl4=
+
+Name: jnr/posix/Passwd.class
+SHA-256-Digest: Zt/GHX6b92SIkQGB2VL5XE9JoYTf6PyiZayIjJ+wSXU=
+
+Name: jnr/posix/JavaPasswd.class
+SHA-256-Digest: piNW+KMwnAjw1pffTGzriS6+T22Mxeho/RoOkvni2VY=
+
+Name: jnr/posix/BaseNativePOSIX$5.class
+SHA-256-Digest: pI37y89T4YQXitLh3grTBOr6s+jaW++v+ZZjI/iAITw=
+
+Name: jnr/posix/windows/WindowsFileTime.class
+SHA-256-Digest: SuYG2tVcxP6czQh17GyuAiV+yvJkTf2Mo4/0qNwmNZY=
+
+Name: jnr/posix/LinuxPOSIX$1.class
+SHA-256-Digest: QZJxG0adq25pbaiytR2+jJuXUiIPPEcdqjVPylLZcDk=
+
+Name: jnr/posix/WindowsPOSIX$1.class
+SHA-256-Digest: h/L4cwSYM8w4j8MZ15dsb6RpIpAY33Z65ZvXfynQsZE=
+
+Name: jnr/posix/windows/CommonFileInformation.class
+SHA-256-Digest: f00WyFHh4uCPO/dOStNvwaPrPBXAjXNiPCR0ZraAFFU=
+
+Name: jnr/posix/util/ExecIt$StreamPumper.class
+SHA-256-Digest: gl6CnHQZCVPcpM3Y80dxIns1Ql4h3lwclrEk0AZmYqk=
+
+Name: jnr/posix/SolarisPasswd$Layout.class
+SHA-256-Digest: N2k1Sfbm6p54BwfQdMu6d22rnKch9vZnOQXdxEbUCSY=
+
+Name: jnr/posix/SpawnFileAction$Close.class
+SHA-256-Digest: fgH9Vwu6DlPhfcVbIz2tGUu3RyCwuLy35rIv4RH/Trc=
+
+Name: jnr/posix/FreeBSDFileStat$Layout$dev_t.class
+SHA-256-Digest: 2oyMv8OpMf8nkGBtn+1z/FOOUlG+tZHvr+CDCGj+Ut4=
+
+Name: jnr/posix/LibCProvider.class
+SHA-256-Digest: +L5pIVkhOOdsf2fiIp9lnurZsqasK00jFWssV5/vr0c=
+
+Name: jnr/posix/AixFileStat.class
+SHA-256-Digest: o9TsIUlEg+z2Mt/zTcEK0/tDtZv+/EbS3ad4sCT2TI4=
+
+Name: jnr/posix/util/Finder.class
+SHA-256-Digest: Xpq966R5bHy6xDfUcydWdlxByIthLKhSVS5eWOZFz/4=
+
+Name: jnr/posix/LazyPOSIX.class
+SHA-256-Digest: UQ9mTINf8uWkuVSB1UVhnleK4wv8xehKxoSlhU9EHMM=
+
+Name: jnr/posix/WindowsLibC.class
+SHA-256-Digest: IXiInaOFP6etg+ZcVTc0UkKH4jKhGoV0h9uVVS/yVkU=
+
+Name: jnr/posix/LinuxFileStat32$Layout.class
+SHA-256-Digest: Dt56uBEYlb6gFtMNUQOkN1IzmkK4dfp+QctuMzhAxlc=
+
+Name: jnr/posix/AixPOSIX.class
+SHA-256-Digest: tsrWQHSchvRMkB2tQx6Oef0D5BOfPGHSCSmLcJTZCbc=
+
+Name: jnr/posix/LinuxPasswd$Layout.class
+SHA-256-Digest: H1FpFD/SBsyuEz6xA9J08E89BNdeTmdS8V9OB6ZLZ2I=
+
+Name: jnr/posix/LinuxPOSIX$Syscall.class
+SHA-256-Digest: fUTpPylukURiPibjXMFSz6LEo/tfzqRTKPOhZNBveNU=
+
+Name: jnr/posix/OpenBSDPOSIX.class
+SHA-256-Digest: C5pMeyJ3EFh2NBgGdfMRsH6/6VoLOdXzGq9ISXEsAuo=
+
+Name: jnr/posix/SpawnFileAction$Dup.class
+SHA-256-Digest: Pohbo9ndf5/ZXnEW3ghckKTd9tPpZXEn96pacgwRfXs=
+
+Name: jnr/posix/BaseIovec$Layout.class
+SHA-256-Digest: TUSdKZXQvmOwqJ2ibdUo3guF6MbNVbj4yAGlnxbLPB0=
+
+Name: jnr/posix/MacOSMsgHdr$Layout.class
+SHA-256-Digest: bSzr8OQm8hjWkqcost7Sf/ESBYO2axd7obPMVHkXjl4=
+
+Name: jnr/posix/windows/WindowsByHandleFileInformation.class
+SHA-256-Digest: 0VEd8KwRBNbA+dByT+cuOgMr+KekIy60SySEzysZ6XY=
+
+Name: jnr/posix/JavaPOSIX$SunMiscSignalHandler.class
+SHA-256-Digest: 3En62cwVXW9IiFIXRtkRPPTK7zd93p+S6pPwcnzNHJw=
+
+Name: jnr/posix/util/Chmod.class
+SHA-256-Digest: yLJ9hLGWUMPqNRSlPLf/2J1saYwVACY+OssE75/dT3E=
+
+Name: jnr/posix/MacOSPOSIX$1.class
+SHA-256-Digest: LkOs8B4/uH2HNHyV/GdAfBHpbZxAPTPW33toVl9raxA=
+
+Name: jnr/posix/JavaPOSIX$IDHelper.class
+SHA-256-Digest: sLqiEU8bpYK50/gbC0IgQvRbWTNBk5MO438CPK6sD8s=
+
+Name: jnr/posix/SpawnAttribute.class
+SHA-256-Digest: 1j35Iy/jTbruiN8XpTCYSQevVzWL//yusGCy1bFMeeM=
+
+Name: jnr/posix/BaseNativePOSIX$2.class
+SHA-256-Digest: S5VyTbtYuRDWHKXCWsxj0DXMayAW8bYaICXb8SZGopo=
+
+Name: jnr/posix/SimpleFunctionMapper.class
+SHA-256-Digest: C3y+nFbmm9MW9zIqTTxCyNn3pnTGk37Yu7ytfhMyzpM=
+
+Name: jnr/posix/SolarisFileStat64.class
+SHA-256-Digest: YQybnu1iZyNgP0ZI84Fc4VlwmDQX/FXrcx9PPUZ1bWE=
+
+Name: jnr/posix/MacOSCmsgHdr$Layout.class
+SHA-256-Digest: Q1y5vT9Cte6GV+9iv+m9DwbF/O+3UfRHXf8s78X13wE=
+
+Name: jnr/posix/SignalHandler.class
+SHA-256-Digest: GX5yLuTVgusN6qEXDtcHMDe3kikGSyDUyF4qpMTy0/Q=
+
+Name: jnr/posix/BaseNativePOSIX.class
+SHA-256-Digest: 7uTIDdJZoDrEd03OYqDYrLx3ib4qjYFHIuszkAAGPmo=
+
+Name: jnr/posix/SpawnFileAction.class
+SHA-256-Digest: NiLAKkTRpCgXRFwZv2cJXDOVPWAWYz8ZdIEsLuftVso=
+
+Name: jnr/posix/windows/CommonFileInformation$HackyFileTime.class
+SHA-256-Digest: Cf+EWkdO1u+7+zyU/Qo2nViU0KFDuMaUmjJqFXXYpYo=
+
+Name: jnr/posix/JavaPOSIX$1.class
+SHA-256-Digest: dQHI14R7XjFL6OvWIJwttufNAZZZhiyYobgpFRQ9vBo=
+
+Name: jnr/posix/OpenBSDFileStat$1.class
+SHA-256-Digest: 3zkFgpkIlWsG/VKThljPT6CMBEppZ4zXYd/TiZMqsHw=
+
+Name: jnr/posix/BaseNativePOSIX$1.class
+SHA-256-Digest: M61YhRSW9K0D7okCM8a5krHoCH/Jayg+5HRH90XqG6A=
+
+Name: jnr/posix/FreeBSDFileStat$Layout.class
+SHA-256-Digest: FVWDxrNo5tiRMeqLz1doZbxkd1xaWMMR9pgli1bg6xI=
+
+Name: jnr/posix/util/ProcessMaker$Redirect.class
+SHA-256-Digest: k/K6ZBfgS95LC6i3Tg5OoNiQ6YD516YX/cmZDk/Hr1s=
+
+Name: jnr/posix/DefaultNativeGroup.class
+SHA-256-Digest: PjL7r6utSAP0OgFE/6/VOALz02BLJuR4yCnTyUwuHE4=
+
+Name: jnr/posix/LinuxPasswd$1.class
+SHA-256-Digest: 9HeXWOqTcE/KQpQnLPcNNkL0eOzoZ2J/emJtZTmjReE=
+
+Name: jnr/posix/JavaSecuredFile.class
+SHA-256-Digest: if8QhApPgGX1jhK3LJHBAJeNCedGoS0ZDye4RwsleNo=
+
+Name: jnr/posix/MacOSPasswd.class
+SHA-256-Digest: wSAmhge4uFg1oxMCtrhXFW/MMhKajNqJ/abtYrAgL+0=
+
+Name: jnr/posix/OpenBSDFileStat$Layout.class
+SHA-256-Digest: q0KTMipkfRK/TUo1DjnjdJzJ3hVwN4u9nOa9nnzzfz8=
+
+Name: jnr/posix/SpawnFileAction$Open.class
+SHA-256-Digest: ljdFzz5lz5exgxWJIvt/KEcgdYqeEcve+d1lQeaDnwk=
+
+Name: jnr/posix/util/MethodName.class
+SHA-256-Digest: hBDPPyQNVEdhdAWb+IAeGVuzi+DFvloj10WjJxGeNT0=
+
+Name: jnr/posix/SpawnAttribute$SetFlags.class
+SHA-256-Digest: 1x87p3dPe/1O3E4yDIEZRj9mMYWD6ueW9hONpXSLIW4=
+
+Name: jnr/posix/UnixLibC.class
+SHA-256-Digest: pNl1y169rlT556AuMOw0w8NImdBsOlAe8oumL2snXbg=
+
+Name: jnr/posix/SolarisFileStat32$Layout.class
+SHA-256-Digest: OPf9D9zycxq1Icf30TByAIHKstDWnE/gWGR27moworU=
+
+Name: jnr/posix/BaseCmsgHdr.class
+SHA-256-Digest: JxS1Rgduigu3fX9nPiP+jxUYEEDvK43Gk3gLaVEA5B8=
+
+Name: jnr/posix/SimpleFunctionMapper$Builder.class
+SHA-256-Digest: A0zw1NiaZOrzA9SA7UloDQ0a6GBUiVXZXVEvi6shke4=
+
+Name: jnr/posix/FreeBSDFileStat.class
+SHA-256-Digest: XsjH35JIYzisK7kABbZ8CtS34I9Gp9k1kQZxzEi2l5U=
+
+Name: jnr/posix/util/DefaultPOSIXHandler.class
+SHA-256-Digest: fa+qknrbwoSumDohlLEmnyFswi9J9E9Cy0UQSiWlWRU=
+
+Name: jnr/posix/JavaLibCHelper$1.class
+SHA-256-Digest: 0pzZLgW1tUXSxAOVzuuk6k+EN784VsuRcNiAglWGlTE=
+
+Name: jnr/posix/FreeBSDPasswd$Layout.class
+SHA-256-Digest: XdD4IKkGxkSZzCWItF1ly1Vyt2TtoUpGrxRtb4/thlE=
+
+Name: jnr/posix/OpenBSDPOSIX$1.class
+SHA-256-Digest: T4cHy7FqOKHRyZ048woY9bMYhTzyuausSoH+Rk+rhKo=
+
+Name: jnr/posix/LinuxFileStat64.class
+SHA-256-Digest: rkKyJiAXnTatyx4oo8XjDkejvgphRHsP1HcCYFeUIGA=
+
+Name: jnr/posix/POSIXFactory$1.class
+SHA-256-Digest: pjaXetHG8WpG0mjIVyuSUHBV//8MY/PIRgD2Ze6a7ps=
+
+Name: jnr/posix/BaseFileStat.class
+SHA-256-Digest: QIPL5fprkM/6XjcrSAqn4UInq2+Omm0RR78myy9HPnw=
+
+Name: jnr/posix/SolarisFileStat32.class
+SHA-256-Digest: LGNF3FdAoWDFV36+iTqjF5GTW0aMoqBdgkHZNduWkSs=
+
+Name: jnr/posix/JavaLibCHelper$ErrnoParsingOutputStream.class
+SHA-256-Digest: R/kv4afg6MAs0u6DfjVv5fEY+53kymlOKg6pJPgL5GM=
+
+Name: jnr/posix/MacOSPasswd$Layout.class
+SHA-256-Digest: Apf4mWn/y4Ic4RrP3wgYURCLX+LRunXl0l3ODiCQWrw=
+
+Name: jnr/posix/HANDLE$1.class
+SHA-256-Digest: V2TA9OMCMDOAuS/fL+Rb7NJY+ubSoU368V/hQeFYiGg=
+
+Name: jnr/posix/JavaTimes.class
+SHA-256-Digest: Rtggx4y8Kq7GFnYLR1aHw/Y2ltQZp6FXMrSp6dAdNAk=
+
+Name: jnr/posix/JavaLibCHelper$PosixExec.class
+SHA-256-Digest: 8ESzgMWhAVkMyXNXBpdJTMAqvgrFgQ9rNUKrXj9LAh8=
+
+Name: jnr/posix/LinuxPasswd.class
+SHA-256-Digest: RVcwKmrbYQHXv7Od/MHHHe4aHmecw5MLfNH/PqEijqc=
+
+Name: jnr/posix/WString$1.class
+SHA-256-Digest: fVbEDrzpl5prz1EZGikAGXf9/FBQXgPeb650f3P2ShM=
+
+Name: jnr/posix/FileTime.class
+SHA-256-Digest: 4vPRMdMnEVE0XdL5gmGL09t4a5BpaN2jrUpuHIDPgmA=
+
+Name: jnr/posix/BaseNativePOSIX$3.class
+SHA-256-Digest: Bs0YjLL8AFJX4LtbCc+P8JadvHV9W6YzF0o6Hr9cMCs=
+
+Name: jnr/posix/LinuxMsgHdr$Layout.class
+SHA-256-Digest: CQRwxJBydmbrPRyTpvimkbVgVLjAwml1L1JqvXacVpo=
+
+Name: jnr/posix/Timeval.class
+SHA-256-Digest: Nae2B/zfwH0eCagxutECILOvpbEjLE0CyVJ5srjf3Xw=
+
+Name: jnr/posix/MacOSCmsgHdr.class
+SHA-256-Digest: /a8nNmooVXx8+8HPPXdCY0VG3EO98DH0ePSDn+KnXJs=
+
+Name: jnr/posix/MsgHdr.class
+SHA-256-Digest: hsCF+xjR4AtpDN9dx92MSQ1Rhv8rSge0VW0iUJ/Nu0E=
+
+Name: jnr/posix/DefaultNativeGroup$Layout.class
+SHA-256-Digest: SlOFDyn63mxHmmtM9/nJlwA3ARMqU3Hcj8/i5SVEYkU=
+
+Name: jnr/posix/MacOSPasswd$1.class
+SHA-256-Digest: 5zO53Pk2DJADbZT58WVMoT7pKE/0WWlThklcZMItLd8=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.github.jnr.posix/po
+ m.properties
+SHA-256-Digest: gSe/TdsFh9ykznBy7794d+VxA6ISzh+St7yihgqTvZ8=
+
+Name: jnr/posix/util/Java5ProcessMaker.class
+SHA-256-Digest: 2gwnaKYjVQNOpgzvZsLC9XitNyAZRYENmt2zZCzU/xs=
+
+Name: jnr/posix/WindowsFileStat$1.class
+SHA-256-Digest: 8E3Z7Pe4nr6pBrOjrEydlziY7FUb4XG54CZCxCUJ5Ks=
+
+Name: jnr/posix/POSIXHandler$WARNING_ID.class
+SHA-256-Digest: UlzMe2Qj7twMpY2oPOWKZir5V4oLqPxelufYqPPC7UQ=
+
+Name: jnr/posix/BaseMsgHdr.class
+SHA-256-Digest: 2h1Lda9wyJy4LRY/q6xr/IFTmMlE/fppalchzmZO9N0=
+
+Name: jnr/posix/POSIXFactory.class
+SHA-256-Digest: MNlXVp5Q2rMihGIqZu8VVqfrecOLtDP9jD4XS2gakKs=
+
+Name: jnr/posix/SocketMacros.class
+SHA-256-Digest: KFN2ELiVuzA8ROqSKUMKXiG1HCZ99lLRznxFLrAA7+0=
+
+Name: jnr/posix/LibC.class
+SHA-256-Digest: xRZ8K3BBYx11yRqH1RBLyAEHrW64G5Yy3hprvn5mok0=
+
+Name: jnr/posix/util/ProcessMaker.class
+SHA-256-Digest: zNWCWvqpWMuJih5q86995m9Bvn3+oCEv8XafCX5TqI0=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: y7Z7PVmw6ZEBAi2l8ZPysACuAtKaVi3B2+8z9EhEPNE=
+
+Name: jnr/posix/POSIXFunctionMapper.class
+SHA-256-Digest: v1gTtiZyBJSLU570kZZmDcjshyIZi66xToh3zGOHSEw=
+
+Name: jnr/posix/util/FieldAccess.class
+SHA-256-Digest: zXinYbqlPeTzlsIaWOHCGhWoANdp9IgeswJqZA3Stso=
+
+Name: jnr/posix/util/JavaCrypt.class
+SHA-256-Digest: /BvhTx83D7/yRnjvOSwgsq9Er3mlMaUmNA8XOaE8N2I=
+
+Name: jnr/posix/NativePOSIX.class
+SHA-256-Digest: RxHOGt6fm8Ex4TaVzHfjmtcbfbZ/1r0P7YqQz1T856A=
+
+Name: jnr/posix/POSIXFactory$DefaultLibCProvider$SingletonHolder.class
+SHA-256-Digest: 7HUY7cvNGp2mG0JSLfdjTeZjCXo5gXX40te0CG9luRk=
+
+Name: jnr/posix/WindowsPOSIX.class
+SHA-256-Digest: pOpd2wt0hEHMiVeUVxsuhiG8H2TbPIFxVtDQkoJHQd0=
+
+Name: jnr/posix/util/ProcessMaker$Redirect$Type.class
+SHA-256-Digest: jGTBz9JCoYXkwtm3kWl2m9Gw30Uo9AZAhxgNg3cfpfc=
+
+Name: jnr/posix/FreeBSDPasswd$1.class
+SHA-256-Digest: pSSXhfr3VdwNWbKqqK08XMrUOras1l+9XjXerkpDdD8=
+
+Name: jnr/posix/AixPOSIX$1.class
+SHA-256-Digest: AMPcwluvbL8AkIeoLqpBLkCwylouqA0h8ny4HffyPaA=
+
+Name: jnr/posix/WindowsSecurityAttributes.class
+SHA-256-Digest: gMmBsRKC9hnlCFev5juURKYI6RwE+yiZR9x1WoREUZE=
+
+Name: jnr/posix/JavaPOSIX.class
+SHA-256-Digest: U4xHNO3XobnhDn/6jV7yJkXIEdHsMsdwMSJmZQBCdEQ=
+
+Name: jnr/posix/WindowsRawFileStat.class
+SHA-256-Digest: VepGZQlZLeqMwA/raXG27lYLfCBs4FAv457l0M27Wgo=
+
+Name: jnr/posix/Times.class
+SHA-256-Digest: id/jUFCN6sO+PcmnV9oDjk3kJvvB9f3wcX4Dfjnr7TM=
+
+Name: jnr/posix/windows/SystemTime.class
+SHA-256-Digest: Ibf7d9mg5DEQkh5xf2/CpH+sSSuhcMAnbSn3gDSDRFI=
+
+Name: jnr/posix/JavaPOSIX$LoginInfo.class
+SHA-256-Digest: oS8ZtpU8fvQQp50x9jDgRoic1RxoUW81du/HiCH1XJ4=
+
+Name: jnr/posix/AixFileStat$1.class
+SHA-256-Digest: 8LneJYU2bD97fnME6tZ1YjNDz0Nw3ByRFu6AO5rTG4s=
+
+Name: jnr/posix/SolarisPOSIX$Layout.class
+SHA-256-Digest: F2BJC/Scv6rBpEAtcLa8SueRuNKtD/+5XoNdW/Z7yQo=
+
+Name: jnr/posix/WindowsChildRecord.class
+SHA-256-Digest: ITc5mcR+Wqk7AvRFBegTBPTvMsHYMXGLPEzT1fZ6CX8=
+
+Name: jnr/posix/SolarisLibC.class
+SHA-256-Digest: +trW3vHOHjvmf5uZHhSGjlxCiRcXyThYIMtzvopFPVc=
+
+Name: jnr/posix/NSGetEnviron.class
+SHA-256-Digest: WVwcqpUPBdsZ+l4VpXGCW7NiEtl9xkKWEKl49bN91k4=
+
+Name: jnr/posix/NativeTimes$Layout.class
+SHA-256-Digest: e/tPRxKm1ZWvZIv0Ja3y6PjQxAtQuLEGeHorXWx2fh8=
+
+Name: jnr/posix/FreeBSDPasswd.class
+SHA-256-Digest: MUjSW/azdZ9H29kzDpCGSmd6Lq6ZUZojQvb1UsQqoZI=
+
+Name: jnr/posix/FreeBSDPOSIX.class
+SHA-256-Digest: gvyNsPAYHn1U0+yuBvCMvJdNxVxGGexGN5zLajALr9E=
+
+Name: jnr/posix/util/ExecIt.class
+SHA-256-Digest: f5LjNUBCoTwcLCxKUTVdXJE3rjAWw7JU0gUwJMtso90=
+
+Name: jnr/posix/OpenBSDFileStat$Layout$dev_t.class
+SHA-256-Digest: j9znSj6xWYL0IdfLRjgAyYqZHLM+GDgMpqebNBeGbz4=
+
+Name: jnr/posix/LinuxPOSIX.class
+SHA-256-Digest: 9UY2oefsMXB3KQ5k7jQWKK/Uu1ZoWuMMQXjMEDKEYlQ=
+
+Name: jnr/posix/util/WindowsHelpers.class
+SHA-256-Digest: oyFPpchsJS0bImhi7EVR30mzMOJNuuJi1SufTgfy6cc=
+
+Name: jnr/posix/BaseNativePOSIX$PointerConverter.class
+SHA-256-Digest: ng1LV33m7Qoijdv6Jb5CWd0RMc8U1zBdw/uXjPOjbU4=
+
+Name: jnr/posix/LinuxIoPrio.class
+SHA-256-Digest: vMlEC2fAk34RuaAOtkBrjYYixcSgN7H5+GdGyHqHGzs=
+
+Name: jnr/posix/LinuxSocketMacros.class
+SHA-256-Digest: 12UOtpxh3syGCiWz3MCakjyXirCfe/wWCcPN1VFk8q4=
+
+Name: jnr/posix/LinuxFileStat32.class
+SHA-256-Digest: W3k1CbIVAp0Ucjs3VfcIGudAwmOLFgJdO0TuY39Sb6w=
+
+Name: jnr/posix/JavaPOSIX$FakePasswd.class
+SHA-256-Digest: MY/IgilYrogjdxsguMNb1UhOsO5r4LNA1AfKch2tqZQ=
+
+Name: jnr/posix/SolarisPasswd.class
+SHA-256-Digest: D8c8HpwYaZDP4xzsrquxhj5NXETYTUJCj9I/9m/shA0=
+
+Name: jnr/posix/windows/WindowsFileInformation.class
+SHA-256-Digest: v8HVdZqSyHfy1h0kPQh5+RkBQ7+b4BCL3u7q/J+yk2g=
+
+Name: jnr/posix/BaseNativePOSIX$4.class
+SHA-256-Digest: r6o0EK0yaASAc3ajJx+v7RT6KHn29wb/Te7GmYnoRu0=
+
+Name: jnr/posix/LinuxPOSIX$Syscall$ABI_X86_64.class
+SHA-256-Digest: pL/2BT/gqsfCsbOa7usg0Uhig034kjb1CJTFnWM/9s4=
+
+Name: jnr/posix/SimpleFunctionMapper$1.class
+SHA-256-Digest: qnHcTula9fF72oQpqdiw2Far9X9yXgOwNCZqzj9CG48=
+
+Name: jnr/posix/MacOSFileStat$Layout.class
+SHA-256-Digest: L2Ev5xvqnY1AKAojkAdATuaSI9MahHRGZ5GPXxw5L+o=
+
+Name: jnr/posix/OpenBSDFileStat.class
+SHA-256-Digest: DMePEZNyWdEiSDBHcI9sagc1YZYBbJHcPeLgHXXqvh4=
+
+Name: jnr/posix/WString.class
+SHA-256-Digest: YnOe9xtaWv/PfV9V1tJdhYVx48RHWvIYob/0bZnLc7k=
+
+Name: jnr/posix/JavaLibCHelper.class
+SHA-256-Digest: XqhqIA4/GPPAaGW5yHysFp/LBgO/Vd84Brg6lhcMjiE=
+
+Name: about_files/ECLIPSE_PUBLIC_LICENSE.html
+SHA-256-Digest: pAdBtZNkzElEklXpub/h/P5qLnq003yonbO6y/sU6dI=
+
+Name: jnr/posix/LinuxFileStat32$1.class
+SHA-256-Digest: 2knn17jngMu61+dcCVEXD8GM4vKV6qWv42/Ir7DG36w=
+
+Name: jnr/posix/LinuxCmsgHdr.class
+SHA-256-Digest: /892gpLsMsBW9GD606UZLfKpLNy1tkTe/CpJACbvA+c=
+
+Name: jnr/posix/WindowsPOSIX$2.class
+SHA-256-Digest: aXX7vPMkDfiEH3uNAwD1MiXrC607rTI8zQPOro8yjDw=
+
+Name: jnr/posix/SpawnAttribute$Sigmask.class
+SHA-256-Digest: ZZELecko9oy03FwpFGk7ZgNnbOh7P1+F2VZhnYsxkSQ=
+
+Name: jnr/posix/FreeBSDPOSIX$1.class
+SHA-256-Digest: v5cwy2VVrKsdiEmG9FiGbhTywQmVpaC6OUKBbIxCdfE=
+
+Name: jnr/posix/LinuxCmsgHdr$Layout.class
+SHA-256-Digest: gr5SBcIZh9YpkvMO7RocGdDqpSpXufG0RlWCoHkMgzE=
+
+Name: jnr/posix/MacOSPOSIX.class
+SHA-256-Digest: 9q1at7evi/56m2ghiC9DS9FCbvpW8Su/ODqckIdvLYg=
+
+Name: jnr/posix/OpenBSDFileStat$Layout$time_t.class
+SHA-256-Digest: tEUFRKH/7h9qFrSole0TnKFSje0Etkk7WydBq8qaYQE=
+
+Name: jnr/posix/WindowsFileStat$Layout.class
+SHA-256-Digest: kyImrFpq+4fprG8mUavgJRoqJxiADegqquxFI6+8p1o=
+
+Name: jnr/posix/AixPasswd.class
+SHA-256-Digest: MtHc5E9nQOiQe9YBCDDklvOoQeG3vfoPAfn5nZGOQmQ=
+
+Name: jnr/posix/DefaultNativeTimeval.class
+SHA-256-Digest: pO77R5J9E8Z11rBHoSG3ztP44yJ6Xkb4jcGBrPuHSEc=
+
+Name: jnr/posix/FileStat.class
+SHA-256-Digest: y3B6g2ETGtpfiRgdIm+MDAuS27tXvuOsQ/9zOn+RRoU=
+
+Name: jnr/posix/SpawnAttribute$Sigdef.class
+SHA-256-Digest: ag7HRFw1TGKAVRuKRmnE6mnsMZdU4jm2ykOQEtQCDxw=
+
+Name: jnr/posix/MacOSFileStat$Layout$time_t.class
+SHA-256-Digest: KVzx/CnLjtHqB1AdvhCttA1JFJra07vxYrHJp+9JvFg=
+
+Name: jnr/posix/SolarisFileStat64$Layout.class
+SHA-256-Digest: VVFOxpafwr3t6dbbLYq5FS0DsV+oB5ZlmRZYUzFnU5U=
+
+Name: jnr/posix/POSIXTypeMapper.class
+SHA-256-Digest: CnoFkCq6fofUG6xw0j9sgOSFTk0W7JeZ42Edl1Z9sM0=
+
+Name: jnr/posix/LinuxPOSIX$Syscall$ABI.class
+SHA-256-Digest: RLQHRMV0Ye+DkcgknKa97LlGMIVg85SiPTSy+K+9vsg=
+
+Name: jnr/posix/RLimit.class
+SHA-256-Digest: b2VeGG9zt+upEaajJX0/e1QtvRbJaRs9ArbfHmqsS4E=
+
+Name: jnr/posix/POSIXHandler.class
+SHA-256-Digest: kC7kCc/HRZNvHAV7BQJyqZVZDWcNLPemZ6L4ovx0P/w=
+
+Name: jnr/posix/util/Platform.class
+SHA-256-Digest: +7uhIdrDO58C9YEU8edW8GXuy3Mbe4YVocSbBS/T3+U=
+
+Name: jnr/posix/SpawnAttribute$PGroup.class
+SHA-256-Digest: m+PCaZm2n6EhaWmcXA8ZyjP1J25J+23yWl6ljqf+h+o=
+
+Name: jnr/posix/OpenBSDPasswd.class
+SHA-256-Digest: dwwGZhOhXt65V3LmDTr56HSfD61a+yA5B4IIORZn7us=
+
+Name: jnr/posix/OpenBSDTimeval.class
+SHA-256-Digest: /60lYrDKrqTgsLuV9cwFy0caf3tSVdBiM4x+C8vXOQg=
+
+Name: jnr/posix/WindowsFileStat.class
+SHA-256-Digest: Aa4NIcbH0o51qqGZxj/rn17O+WvnPvUamJutZi9Ci38=
+
+Name: jnr/posix/CheckedPOSIX.class
+SHA-256-Digest: YbZPDDIByASrG5Z8FgEMSHAMpQIGc8p1NvFpGf4Um+Y=
+
+Name: jnr/posix/LinuxFileStat64$Layout.class
+SHA-256-Digest: OH0dxnFYW667OXkU3bicQfckvBccH+g5e8of2V6Qngk=
+
+Name: jnr/posix/AixFileStat$Layout.class
+SHA-256-Digest: XK6MPBR/Pk4ErsQBM93rE9I/L4Vh2C0lgJRnq/are/E=
+
+Name: jnr/posix/LinuxLibC.class
+SHA-256-Digest: Da8MsfDmBtK0kDKAPx2YL+/KxdCx4gRiMfsewFsxUKE=
+
+Name: jnr/posix/MacOSMsgHdr.class
+SHA-256-Digest: CvvXijjiDzRnRX5xHbC6vRryF6CetexHyZtpDcdv+kk=
+
+Name: about.html
+SHA-256-Digest: q8FcQkggYVyraqSC7xlgZSiRHuVlM2um+UQYs4Zo+is=
+
+Name: jnr/posix/BaseNativePOSIX$7.class
+SHA-256-Digest: awExmSnax33kKFtc2n13OjxisIVJ0qVUf85UWjNM3iI=
+
+Name: jnr/posix/SolarisPasswd$1.class
+SHA-256-Digest: 0PlOLF3znmX2A/wicFYxIi8y1Wt1QV+2LEXmPapxrjQ=
+
+Name: jnr/posix/SolarisPOSIX.class
+SHA-256-Digest: q7vXEhTuycsWSj8ZYzDarQvwLsvasOoWEwR6MfMkHLk=
+
+Name: jnr/posix/windows/WindowsFindData.class
+SHA-256-Digest: MxBCFNjY3vaeZRijUkvpp/GUIHud9mIu+7q29W/xLyY=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.github.jnr.posix/po
+ m.xml
+SHA-256-Digest: sAATAr8YffGk6qbCL3zzKvlukNL24Y3gT7hYfWh0VF4=
+
+Name: jnr/posix/UTimBuf64.class
+SHA-256-Digest: fYHwGYypgwAtej1m7dNqQu39/j0tetZVOJ6p4imSBhw=
+
+Name: jnr/posix/NativePasswd.class
+SHA-256-Digest: 3hg+v1br2kL4dT8YLh9gAK1aOc06CMBkI/XKp+lDxh8=
+
+Name: jnr/posix/NativeTimes.class
+SHA-256-Digest: b0T909MFRj23FLuZ+vx3+pYIuHHz327ur8k1FgmMomo=
+
+Name: jnr/posix/AixLibC.class
+SHA-256-Digest: tSccELwN2KJr9z61Q0dIeJjeJgbP2hLuLKicw2ah+j0=
+
+Name: jnr/posix/AixPasswd$1.class
+SHA-256-Digest: qUoRh0xlCkaOKnFSCZ+W6ZLhaSAXT0tqzQ8hVcIbScg=
+
+Name: jnr/posix/POSIXFactory$DefaultLibCProvider.class
+SHA-256-Digest: z4wHmcloO6chfbVHdIKZ7pBwQqZ6XaYeXpfWVOHHReo=
+
+Name: jnr/posix/POSIX.class
+SHA-256-Digest: IK8hunq89fsq95ZMY7O5Q9XLgwuuLa4IQGeOAa5Cvog=
+
+Name: jnr/posix/DefaultNativeRLimit.class
+SHA-256-Digest: cwYzaXMFkDmAZ3lucguOdMj3mn0Hh6UjZKVk8O8RgXs=
+
+Name: jnr/posix/FreeBSDFileStat$1.class
+SHA-256-Digest: VVoOFNGMbCHxo610q8yR2xOImsGDR+m8VeulXkr+ce0=
+
+Name: jnr/posix/util/WindowsHelpers$InternalType.class
+SHA-256-Digest: jZYDcDI1nusL+nWrW7QFlHWwL1P/nw/r1drqcWASpng=
+

@@ -1,0 +1,660 @@
+Manifest-Version: 1.0
+Bundle-Description: A set of platform constants (e.g. errno values)
+Automatic-Module-Name: com.github.jnr.constants
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: com.github.jnr.constants
+Archiver-Version: Plexus Archiver
+Built-By: genie.orbit
+Bundle-ManifestVersion: 2
+Bundle-Vendor: %bundleVendor
+Import-Package: com.kenai.constantine;resolution:=optional;version="[0
+ .9,1)",com.kenai.constantine.platform;resolution:=optional;version="[
+ 0.9,1)",jnr.constants;resolution:=optional;version="[0.9,1)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.5))"
+Originally-Created-By: Apache Maven Bundle Plugin
+Export-Package: com.kenai.constantine;version="0.9.8";uses:="jnr.const
+ ants",com.kenai.constantine.platform;version="0.9.8";uses:="com.kenai
+ .constantine",jnr.constants;version="0.9.8",jnr.constants.platform;ve
+ rsion="0.9.8";uses:="jnr.constants",jnr.constants.platform.darwin;ver
+ sion="0.9.8";uses:="jnr.constants",jnr.constants.platform.fake;versio
+ n="0.9.8";uses:="jnr.constants",jnr.constants.platform.freebsd;versio
+ n="0.9.8";uses:="jnr.constants",jnr.constants.platform.linux;version=
+ "0.9.8";uses:="jnr.constants",jnr.constants.platform.openbsd;version=
+ "0.9.8";uses:="jnr.constants",jnr.constants.platform.solaris;version=
+ "0.9.8";uses:="jnr.constants",jnr.constants.platform.windows;version=
+ "0.9.8";uses:="jnr.constants"
+Bundle-Name: %bundleName
+Bundle-Version: 0.9.8.v20180207-1730
+Created-By: Eclipse Bundle Recipe Maven Plug-in
+Build-Jdk: 1.8.0_162
+
+Name: jnr/constants/platform/linux/Fcntl.class
+SHA-256-Digest: vDLKbavW9JOHZO4Vj9sJXxCImzPt7WrsHerMdBro/Ok=
+
+Name: jnr/constants/platform/linux/PRIO.class
+SHA-256-Digest: omsAGXyW9kzcRL9WPCKv0T/PHUY+jxhhwXzSmsL9Jc4=
+
+Name: jnr/constants/platform/solaris/Fcntl.class
+SHA-256-Digest: n+9HpEs0Oyje4a1FWGH68I20NDULERO6cPgOH4q6428=
+
+Name: jnr/constants/platform/freebsd/TCP.class
+SHA-256-Digest: Ay/gRy2QPA4K2DUpBXc6GSohE2W325iyiThaaOjkbUk=
+
+Name: jnr/constants/platform/openbsd/RLIM.class
+SHA-256-Digest: xyDQBRK0ZYK42MoQfL2UKFuZHCbTEvgjpMBs17f+TGo=
+
+Name: jnr/constants/platform/ProtocolFamily.class
+SHA-256-Digest: /Ngtn2caYBFu1/+bCYGWxmXaeIcy5YaHwey3H4O8EcU=
+
+Name: jnr/constants/platform/openbsd/AddressFamily.class
+SHA-256-Digest: ab995tNyDTJ0qlWOpiE8Q6BGxphL3WA1WUwFJU2SOhw=
+
+Name: jnr/constants/platform/windows/Errno$StringTable.class
+SHA-256-Digest: uCoBaSmb31P6lzUtxdX5pFJ+jUN1/WlSG3r/nkI0gFU=
+
+Name: jnr/constants/platform/openbsd/IPProto.class
+SHA-256-Digest: tyvQahwGXghBCEqmts0YwWndX07O6Q06qS+B7cQWLWU=
+
+Name: jnr/constants/platform/freebsd/Signal.class
+SHA-256-Digest: PDgblUzDA0qUz8dRcmSR38LDghXlVUMxyATiCVlPyK8=
+
+Name: jnr/constants/platform/fake/Shutdown.class
+SHA-256-Digest: cNIoqQykccISszcyWOimvL7qsOKx9R0ML8WO/Cj7/w8=
+
+Name: jnr/constants/platform/darwin/NameInfo.class
+SHA-256-Digest: Qlw4rAhU09w3Vkx7Nh8fue4TpRZ/Ppc/aNhFRhISSts=
+
+Name: jnr/constants/platform/solaris/OpenFlags.class
+SHA-256-Digest: HpZ6byF01aT4Jk6x7EHFTk6NjmWeKQJxN67QnrN+1CU=
+
+Name: jnr/constants/platform/INAddr.class
+SHA-256-Digest: cUlN7eu8bPQEKUw5BIoGm9rwSNWPIo2azWhQ/eMFt4Y=
+
+Name: jnr/constants/platform/SocketLevel.class
+SHA-256-Digest: Hq4D2oSaM5tImVfdWUFhn/W4GN+1UYu0YWwXMIdxCDE=
+
+Name: com/kenai/constantine/platform/ConstantResolver.class
+SHA-256-Digest: 2BdPu/lGfz217yHAtVFhXX3+8F1bc2pkNLqvLq4trdE=
+
+Name: com/kenai/constantine/Constant.class
+SHA-256-Digest: hdHDaOs0VdR0eHdDEhohjWy2eiUQPKV+GObR9tV3OpU=
+
+Name: jnr/constants/platform/fake/INAddr.class
+SHA-256-Digest: 4gqzLiGSv+QPquwwqUorGe7hqKtFWWo/YImPeYwE/2M=
+
+Name: about_files/THE_APACHE_SOFTWARE_LICENSE__VERSION_2.0.txt
+SHA-256-Digest: z8d0m5b2O9McPEK1xHG/dWgUBT6EfBDz6wA0F7xSPTA=
+
+Name: jnr/constants/platform/solaris/Sysconf.class
+SHA-256-Digest: IaN09hZpnqCsw8oG7PcCu4szBtG/1SGX3HFzPdMBBM0=
+
+Name: jnr/constants/platform/solaris/Signal.class
+SHA-256-Digest: wk0YLo0tySssAmqsLy1wJT7ANSqyGR8569YTrO1X+DA=
+
+Name: jnr/constants/platform/linux/Sysconf.class
+SHA-256-Digest: 68/AKFdZjtVonEqM3XFcegJQJQsSbpIOBDcq1rq75Fo=
+
+Name: jnr/constants/platform/darwin/RLIM.class
+SHA-256-Digest: s4BplWjOe6BFAGkNgsORuVzImFqJ/3XgNN2GncNEgCc=
+
+Name: jnr/constants/platform/openbsd/SocketOption.class
+SHA-256-Digest: //UQKT3AwWUt0rET4TVL4IGRCxR2nTsaOQBOSLcfe7o=
+
+Name: jnr/constants/platform/darwin/RLIMIT.class
+SHA-256-Digest: vZc3iW5jc6t9p5UO1FGdTW10dWflMIlq41Hlc8chgLo=
+
+Name: jnr/constants/platform/darwin/Shutdown.class
+SHA-256-Digest: hdaVZ5bQ1oSURY3r1wwhXD7sbGopVk8u6Su7AKQPqZ0=
+
+Name: jnr/constants/platform/linux/IPProto.class
+SHA-256-Digest: yqUXtUxTrxxVqxzQX6ZsVys6UWEuLG0PJ79bZRmTf9w=
+
+Name: com/kenai/constantine/platform/RLIM.class
+SHA-256-Digest: eKrcT+QYWBxwVUjqykV1RH2FJkGPfIXS9/mFxB7w0zE=
+
+Name: jnr/constants/platform/freebsd/WaitFlags.class
+SHA-256-Digest: JKPTBeBeWdqtQkTc/1DoyqjIoCEQiL+viyRufbQZygA=
+
+Name: jnr/constants/platform/fake/Sock.class
+SHA-256-Digest: mKGFeV6InBme8tDNgMiiMxaeYMQFrGyW2j2vfHneEJ8=
+
+Name: jnr/constants/platform/Errno.class
+SHA-256-Digest: 1KeTjVvaelAbNOsduNEjuF+DqSC7NHM4DOHGz3uAoYo=
+
+Name: jnr/constants/platform/freebsd/AddressFamily.class
+SHA-256-Digest: bCEyg8QOFHn3LrCEOeRV7049d39TATQxw779wlrjZMs=
+
+Name: jnr/constants/platform/windows/Signal.class
+SHA-256-Digest: CbQ6vDOWTEoBVRY+LLqf2an7GMHFGr52OMws98inyM0=
+
+Name: jnr/constants/platform/darwin/TCP.class
+SHA-256-Digest: GyASF6ROLRwsSY9RGzabhePxI80lFccgbVIFT9e8qsc=
+
+Name: jnr/constants/platform/freebsd/Sock.class
+SHA-256-Digest: QXDSa4nFu4blmWqm3EriqBNWzNIoTfDACNq4Tk5XGV0=
+
+Name: jnr/constants/platform/linux/Locale.class
+SHA-256-Digest: Xuhl30b1mKdAuB36EqsvuDgyOYDpEnc64ezU8Uiy6Vc=
+
+Name: jnr/constants/platform/darwin/WaitFlags.class
+SHA-256-Digest: YRSvoD6kfe/SeG5QcRCuOaR1tP9ANMiaIR4XesSw4WM=
+
+Name: jnr/constants/platform/fake/PRIO.class
+SHA-256-Digest: Pqz28E5F/OYA9MDm8yL3bNVtuciQBiWCnoUx6duib9Y=
+
+Name: jnr/constants/platform/openbsd/Errno.class
+SHA-256-Digest: P1SYDv2exPtl63tRtb0ZLmDUUuleCWRnyrjGXKCRPfM=
+
+Name: jnr/constants/platform/TCP.class
+SHA-256-Digest: 66J+OMaQtKNdIgRzdUk4H5+81HYg9+8VRbDM4H4ttP0=
+
+Name: com/kenai/constantine/platform/AddressFamily.class
+SHA-256-Digest: W9p+vNnIEf2wHE9qBvJY5t84dpRhfqZKPkrwFsX6Who=
+
+Name: jnr/constants/platform/ConstantResolver.class
+SHA-256-Digest: v+pWzdb5zseRv2GepYOPaU8pp+4k6iZgpznwt0PvDD0=
+
+Name: com/kenai/constantine/platform/SocketLevel.class
+SHA-256-Digest: v0x2InRy4M7AMrq7Q1p9XZAJHE/5zS7Cf1tUQog/rTE=
+
+Name: jnr/constants/platform/linux/RLIMIT.class
+SHA-256-Digest: YLGThMio0A1aUGN1qnUui+XqbD7F3rA5KzPtilFAFBs=
+
+Name: jnr/constants/platform/linux/WaitFlags.class
+SHA-256-Digest: cHJs6mBaiukVWZnFSgpDpIArqHU8Ge+Lez6DNfQnlfU=
+
+Name: jnr/constants/platform/fake/IPProto.class
+SHA-256-Digest: L9LHjfWlGHObsj9U8nM81IXDT7emCNQQ0ijO/8We2g0=
+
+Name: jnr/constants/platform/openbsd/WaitFlags.class
+SHA-256-Digest: 0eM6tZRfTAcXao9jDcBdZPGpwEfBbtAqOt+2Sw6gDpg=
+
+Name: jnr/constants/platform/fake/NameInfo.class
+SHA-256-Digest: QNr+hQnFYDeAhkgB7BZAN5fpBYY826plmOU0/ZRog88=
+
+Name: jnr/constants/platform/fake/OpenFlags.class
+SHA-256-Digest: +R64OMaR2VtUZ6BWzgnQCxOntKk+pO23u9evIx1jrYM=
+
+Name: jnr/constants/platform/fake/SocketOption.class
+SHA-256-Digest: fk8CP83rU1QmlYb8dNRkxMggsSq7km9K+8+8hNYrFmg=
+
+Name: jnr/constants/platform/solaris/SocketLevel.class
+SHA-256-Digest: 2PBXwin81robZWN9A7/GfKV91Z0Cev6ijOqAorXcG4I=
+
+Name: jnr/constants/platform/freebsd/PosixFadvise.class
+SHA-256-Digest: yo05Fc1gDmDj2waBM04al3m7bGIAXu9ZpWkJNPYo4jo=
+
+Name: jnr/constants/platform/darwin/LangInfo.class
+SHA-256-Digest: ppoPnRjCGZYgPsn0Rni2Oy6zqwBKYaLSKRRFDhUNMBQ=
+
+Name: jnr/constants/platform/darwin/Errno$StringTable.class
+SHA-256-Digest: U2V9vk2P6dN0VErrykbdvjK1KrwI/3qT5vLtuVSoV4o=
+
+Name: jnr/constants/platform/linux/RLIM.class
+SHA-256-Digest: ti3gc9B50hIHX+cuVj+56yxALgX422P4wP9hwWesohk=
+
+Name: jnr/constants/platform/darwin/AddressFamily.class
+SHA-256-Digest: Vuo6i8KxW9psZR4grSmcSB93BO5ceMd9NmN8xqMzxE4=
+
+Name: com/kenai/constantine/platform/TCP.class
+SHA-256-Digest: t16UFsCF/VbRwpSEUnSGn97RStNiniqVebEtnIgSDbM=
+
+Name: jnr/constants/platform/solaris/AddressFamily.class
+SHA-256-Digest: HK84JkwnftgKEgD4g3/sznovOLWOHbBzis8jcdtP23k=
+
+Name: jnr/constants/platform/solaris/PosixFadvise.class
+SHA-256-Digest: 994A+pJ2rcBUWi0MY1pr997S6Vre2PYMYFcsPR5XZX4=
+
+Name: jnr/constants/platform/freebsd/Sysconf.class
+SHA-256-Digest: kyL0Dc73mogNkBNTX5pTz5T4NWmfa/GN9UKlYfLKjWo=
+
+Name: jnr/constants/ConstantSet.class
+SHA-256-Digest: KjWYBrJt0bhmcNDL1SAUcMc924ty4GIAftA01SddumM=
+
+Name: jnr/constants/platform/darwin/PRIO.class
+SHA-256-Digest: jRlAIH7qUqn3JFuTpMZoAbsscxvaUjVP3RcfdfuMhlc=
+
+Name: jnr/constants/platform/Fcntl.class
+SHA-256-Digest: rkdqx574NF3Qq4MEm4tSYf5BTrhfzZH/nuf9/d+rDBU=
+
+Name: jnr/constants/platform/freebsd/Errno$StringTable.class
+SHA-256-Digest: pFfslBRKJJcitfOxsMCyNMRSpQ6hgKnkIkt72YcHEF4=
+
+Name: jnr/constants/platform/linux/ProtocolFamily.class
+SHA-256-Digest: 1pI2vsWWed+0t4a/8SvH4+jWaZKnkQ5JxxQoVZFPIqk=
+
+Name: jnr/constants/platform/AddressFamily.class
+SHA-256-Digest: 1iqW7EVJ3fJjoyfwTUvu+IhCDWgQxIEvrTpXy4y8lxA=
+
+Name: com/kenai/constantine/ConstantSet.class
+SHA-256-Digest: 14BQulPKLZ2YrxJGP6KmteJZE9mgKVfi8l75VlGPD+s=
+
+Name: jnr/constants/platform/fake/TCP.class
+SHA-256-Digest: qiDyT3ZuVhAhcpPMFHcvVwruEW9qMVlcPo8/U2s3SB0=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.github.jnr.constant
+ s/pom.xml
+SHA-256-Digest: FKODVS+JtNpiGELtAflPrrzsn5gbVzUywNVPFmHfsks=
+
+Name: jnr/constants/platform/linux/Access.class
+SHA-256-Digest: oIdJDC6/ee+xMseSansGGg87qVxHlqoRBtHM7JLWkis=
+
+Name: jnr/constants/platform/fake/RLIMIT.class
+SHA-256-Digest: UYSnu8MCeb0/WjNv7tE1Bnoj/yW5/f1XIlFdn4uZu5M=
+
+Name: jnr/constants/platform/fake/Fcntl.class
+SHA-256-Digest: 2bUt6Wz1To0BFSchU0CDqYvJ1lEcbrJmjCQv62niiXA=
+
+Name: jnr/constants/platform/darwin/INAddr.class
+SHA-256-Digest: JDh0Ra15o7yD8f2Qwx0B+eQLKOnNTwGDlMIIrtM9EGc=
+
+Name: jnr/constants/platform/linux/Sock.class
+SHA-256-Digest: xK/HBRIqyTm1W1AV2xCLywYmUIegI9r3/x+ZGlUxS7c=
+
+Name: jnr/constants/platform/openbsd/Access.class
+SHA-256-Digest: Ny565bWzvr8/S4gBdA6RQ5rx2FTC/YUzi2NWKn7zs+k=
+
+Name: jnr/constants/platform/solaris/IPProto.class
+SHA-256-Digest: fUg2gbyA16sWaIOS3xuL88esHc93zLRDnUxPR2gBPjI=
+
+Name: jnr/constants/platform/linux/SocketOption.class
+SHA-256-Digest: HD21jjPvVSXPp/N5PXMqCYxi9f4J2CQAItGVib9fjfM=
+
+Name: jnr/constants/platform/openbsd/TCP.class
+SHA-256-Digest: fN0h72f4/mcC3ndamfJlzSyrPZHxN5rMllnGucMQY4A=
+
+Name: jnr/constants/platform/darwin/SocketLevel.class
+SHA-256-Digest: xhOGUd5elN8r5gelZESeBn5teBAsXuj3QHiFbP1rz5I=
+
+Name: jnr/constants/platform/freebsd/ProtocolFamily.class
+SHA-256-Digest: 5Llz2M95LPRkKxAMiLWtSVAn0WFXIMEEUBubzN9AylA=
+
+Name: jnr/constants/platform/solaris/Sock.class
+SHA-256-Digest: dk9XdwSjMZt+Bax/XffMXZhZZC+sPFC/jM5MQrNxhU0=
+
+Name: com/kenai/constantine/platform/OpenFlags.class
+SHA-256-Digest: eIVwfSbezdpjhT0s7+vH0isarWJ5FXuh7moMV7fB550=
+
+Name: com/kenai/constantine/platform/Sysconf.class
+SHA-256-Digest: wk6+DMjc+j6b4alviseybJqsqiIoDIqCrgZyQTMFSL4=
+
+Name: jnr/constants/platform/fake/LangInfo.class
+SHA-256-Digest: p5hwtPsjaD8zajxNDa9EJnfnlNlpAo4Hkb1ER+CqVoc=
+
+Name: jnr/constants/platform/openbsd/ProtocolFamily.class
+SHA-256-Digest: U4SBPUp/afPhhRsKr0J58y1O1CB3euG9jvlkF9IPwV8=
+
+Name: jnr/constants/platform/solaris/RLIM.class
+SHA-256-Digest: kVzbW8/ZjPVJEvGVBJozM7MsDFrWtoQY2ycZWnUfLoA=
+
+Name: jnr/constants/platform/IPProto.class
+SHA-256-Digest: KiI3+w0cAQ+6ucQpyyAyJ6Dj8m1TacYNFKd2xy9CAeA=
+
+Name: jnr/constants/platform/solaris/Errno$StringTable.class
+SHA-256-Digest: Wsf+ExIZNjOq8NCjkbzidfmwO4PoOeXDyktkA05HC6U=
+
+Name: jnr/constants/platform/darwin/Locale.class
+SHA-256-Digest: 1hf4iLqFi9I8Cm/OhEycll5TGaTPt2ZaiH8zjpijuZU=
+
+Name: jnr/constants/platform/linux/Errno$StringTable.class
+SHA-256-Digest: SsD2b3kN/ri7h9gvotVQZPotiJxOHsqpv0fAoSwV3VY=
+
+Name: jnr/constants/ConstantSet$ConstantIterator.class
+SHA-256-Digest: 9OMyAf3vs1yap7oKhv6QlL3N5WlkUMWCprW5Xyuy424=
+
+Name: jnr/constants/platform/fake/AddressFamily.class
+SHA-256-Digest: COdzzKQSGoO5tdIReM26a19cK3gpm9uajg+4CqPoE/w=
+
+Name: com/kenai/constantine/ConstantSet$ConstantImpl.class
+SHA-256-Digest: SQG2sXGt5kmnAXpUpDmWIWGBtw3b1qrEhS9tvhTbrMU=
+
+Name: jnr/constants/platform/freebsd/INAddr.class
+SHA-256-Digest: Jc51om+AtQhIS8scHM6AfDEOsR8vhyrpWg+cZ3kiKpU=
+
+Name: jnr/constants/platform/solaris/SocketOption.class
+SHA-256-Digest: 0p0cQ/VlAckWCe+idPgarzC9yg4Y+00vEkWDFjZQsx4=
+
+Name: jnr/constants/platform/openbsd/Errno$StringTable.class
+SHA-256-Digest: FaGVdLxsNzHtw3IkwU9gwlkHBABuzETMiuRc83W2LXI=
+
+Name: jnr/constants/platform/ConstantResolver$UnknownConstant.class
+SHA-256-Digest: mZHq5csLUYQTnVr5V3uZbmGzJlH/lRt27CHTdVjKkOk=
+
+Name: jnr/constants/Platform$PackageNameResolver.class
+SHA-256-Digest: 4uju6USsFOIlXPpfSg8ryth/REUYSKS9JDd44lrq5Kk=
+
+Name: jnr/constants/platform/fake/Locale.class
+SHA-256-Digest: SoylIyjzDtmDCatKKGtS5AKwBIoNpprmT7OLtBp2caM=
+
+Name: jnr/constants/platform/PRIO.class
+SHA-256-Digest: AxWlXyO0NQ3aJSURUyXu8wQrIj+6c6V0d761yBcuQjY=
+
+Name: jnr/constants/platform/OpenFlags.class
+SHA-256-Digest: ij7CGhJGmehXi0sZqo0w/+fs3879q7X2nfWpxD8fB2I=
+
+Name: jnr/constants/platform/freebsd/Errno.class
+SHA-256-Digest: oFFgVJ7+tlu9OmRBtS+EqAWPMjQ7VZtVRPf3i6ZRVgA=
+
+Name: jnr/constants/platform/Access.class
+SHA-256-Digest: 3GGoV6wXYsIVSknVUSuWaUCK/y/hH1jkVmF1Gt5DZg0=
+
+Name: jnr/constants/platform/freebsd/Locale.class
+SHA-256-Digest: C2AmC9VUZghgYNqXT4Ejk6g8cTeJS9zH1gBnHv/r75g=
+
+Name: jnr/constants/platform/freebsd/SocketLevel.class
+SHA-256-Digest: 84bgWqhvRdKxBBIQHTv8xm2AurY4zVQw4I6zA0SV9N8=
+
+Name: jnr/constants/platform/solaris/Locale.class
+SHA-256-Digest: UKBkq7I2h9KFqAiJzvzVJGxbDDl5EWsUb5dErVkvQ1A=
+
+Name: jnr/constants/platform/freebsd/Shutdown.class
+SHA-256-Digest: OQ5yLcFcXoyRWqMK6oogLy/Dcfx6QgXiJVMUzTU+PJo=
+
+Name: jnr/constants/platform/linux/AddressFamily.class
+SHA-256-Digest: Znw+a4pO0tXxburzp/mw/cvQrAfFg+hV+bX4YRzqY5s=
+
+Name: jnr/constants/platform/openbsd/Sock.class
+SHA-256-Digest: WasEeLrQoOfu426gvUeb1HFVSYi5oN8Ync4/uBQLTrI=
+
+Name: jnr/constants/platform/solaris/INAddr.class
+SHA-256-Digest: PAYsR2x0NCprcW9aRWdAq9/vikoLRl7qXYGPleGiOrs=
+
+Name: jnr/constants/platform/openbsd/Fcntl.class
+SHA-256-Digest: Opu+Bf8ap+chKnqBdoZW7ky8B1utWlwYfngo0XH8S3Y=
+
+Name: jnr/constants/platform/fake/PosixFadvise.class
+SHA-256-Digest: lZdxMoDPSxKCvKTOl1yIOdfnLV0VDCqsD/ijnssGD6g=
+
+Name: jnr/constants/platform/openbsd/LangInfo.class
+SHA-256-Digest: uNVJmgNUOjN84P+GJJNg92T1MfLMLVcfmJtuPdzZPDc=
+
+Name: jnr/constants/platform/darwin/Sock.class
+SHA-256-Digest: EwXow/YNwifWT5FvjpKj86oNhVd2mlmOl00pDaCUxRg=
+
+Name: jnr/constants/platform/NameInfo.class
+SHA-256-Digest: N5eeWfxcGck291a9sKGojknBRBBz7ctP3KHGgIqaEAM=
+
+Name: jnr/constants/platform/linux/PosixFadvise.class
+SHA-256-Digest: Yv6rzL5loo0/Um2uIJ6OGzfHXEtbNj1+gs8jSYbTszI=
+
+Name: jnr/constants/platform/windows/OpenFlags.class
+SHA-256-Digest: DJfxKi45BoKd55QMht4/ughImnrLzSm3+AQC7fZx5uk=
+
+Name: jnr/constants/platform/fake/RLIM.class
+SHA-256-Digest: 9oapjm+N5K0CfqBj/aP6Qnl9dxDL93cCSv7Dp7/ePeg=
+
+Name: jnr/constants/platform/freebsd/LangInfo.class
+SHA-256-Digest: RpHQTK8YEkGvxpRCg+A0o7Y3YHj31UuD3GWKsJLGphI=
+
+Name: jnr/constants/platform/freebsd/OpenFlags.class
+SHA-256-Digest: JUOeghQAxx7jmb3v8WAI/Z96WZDr9zZkrsbrcjEOlFQ=
+
+Name: com/kenai/constantine/platform/Shutdown.class
+SHA-256-Digest: JZ0CTOw94A2igBxZc0LZNwGR3xB4O30NSzIBYTWddKU=
+
+Name: jnr/constants/platform/LangInfo.class
+SHA-256-Digest: AvEs7L0t8CxMhnGO95c8BqcOECg/5lsZOd36TakZyL0=
+
+Name: jnr/constants/platform/solaris/Access.class
+SHA-256-Digest: kFz4LXzlwg+sRAbSIWNHJHfFCrfhB6nOJt1tE0AStE8=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: qyh9A+0bZWrF/yQ/3JQ/qWqiAUSf0bMwyweDjCGSF6E=
+
+Name: com/kenai/constantine/platform/Sock.class
+SHA-256-Digest: ZlQH9K4een8kk6MtcV4EAkx6yEBwQ74QNPQt+C5zMv0=
+
+Name: jnr/constants/platform/darwin/ProtocolFamily.class
+SHA-256-Digest: yK87nlDfgU+qZ9Cb+YXLIKZxe6fxptngNu+29VWA6yU=
+
+Name: jnr/constants/platform/openbsd/NameInfo.class
+SHA-256-Digest: xLeCAhSmzRp+f/mWw2gY26pSOcxUfz5lnIH+OLuZiec=
+
+Name: jnr/constants/platform/windows/LastError.class
+SHA-256-Digest: LXCjBAjyeeb9v8LPcl2KlwAu8rMxJdLlvbSwcdTaAHs=
+
+Name: com/kenai/constantine/platform/NameInfo.class
+SHA-256-Digest: HRHHUtM2EC+2T6b5Pv+bKnMnJw+WbozCyXeXmkDuDck=
+
+Name: jnr/constants/platform/linux/OpenFlags.class
+SHA-256-Digest: PQK0vn2PUor30MGal6XBKBngxOyutNnabKDAwDy5k1c=
+
+Name: com/kenai/constantine/platform/Fcntl.class
+SHA-256-Digest: VSzCofglZr7Ki9YNcdE77ncdL9rXG05EpuNAGlXS6Jk=
+
+Name: com/kenai/constantine/platform/IPProto.class
+SHA-256-Digest: 2K9J8EhW8yjeYZipYzqoatuiPs+T/B2/jknJqAagCok=
+
+Name: jnr/constants/platform/darwin/Signal.class
+SHA-256-Digest: tD+ZSoR8K90giU7pvjheQ5XU7yxAlFOQZwcgwg+oFN8=
+
+Name: jnr/constants/platform/openbsd/RLIMIT.class
+SHA-256-Digest: QOxDdsMy+lFfZrxM+yik6yP6/ZbAJkKdNGNzjSQU06E=
+
+Name: jnr/constants/platform/freebsd/RLIM.class
+SHA-256-Digest: 2XAlt4ibs5P78VX97DaN3lUD/9E48UcFfhonkpZ262Q=
+
+Name: jnr/constants/platform/solaris/RLIMIT.class
+SHA-256-Digest: 6nIo04r8QbT9/b6htf7NXJvHCX3geY0308RSkaaEwQI=
+
+Name: jnr/constants/platform/darwin/OpenFlags.class
+SHA-256-Digest: Hq/Qqzkb1DtRjiaerNcssXo4a+TpWA+k9QdltwmRYqo=
+
+Name: jnr/constants/platform/darwin/Sysconf.class
+SHA-256-Digest: EGSgihoSnmYdWWt1kPOAvDUq4WpUOYQRq0THVdpOKYg=
+
+Name: com/kenai/constantine/platform/RLIMIT.class
+SHA-256-Digest: 4AVmO9m2J4oJkFwq5ulc6RqMERfqgeMyRMtBPRLbsmI=
+
+Name: jnr/constants/platform/solaris/WaitFlags.class
+SHA-256-Digest: Nr1MRQsGCpwOwBR/EDQvX+GCWVFe3RGFJMH43msZ9RM=
+
+Name: com/kenai/constantine/platform/PRIO.class
+SHA-256-Digest: iTTU5qSjfiZ19T/ESzMsK8dIt6l0lPaH+DRuw1p2Nn8=
+
+Name: jnr/constants/platform/freebsd/RLIMIT.class
+SHA-256-Digest: xn2IfXlsoqZnbzNi3Gd/QbmyzMbvXOyR5A09Qn1DVSw=
+
+Name: jnr/constants/platform/freebsd/NameInfo.class
+SHA-256-Digest: vCkuropM0xuZ7wGCDv/2cJUWbyD1Cud2bsEyw+0hHmQ=
+
+Name: jnr/constants/platform/freebsd/Fcntl.class
+SHA-256-Digest: NHUROFxyi/kWshiMksrxEw0l8FoRucAFE1oax3V2rlU=
+
+Name: com/kenai/constantine/platform/ConstantResolver$UnknownConstant.
+ class
+SHA-256-Digest: wRGiYq99oiH+hiJdkApRz3P8T/jr1tQkVBepgd2Tb78=
+
+Name: jnr/constants/platform/fake/Signal.class
+SHA-256-Digest: oSbMKZrUE4Yr7aKgiFji6nXICuD8jUkj4rjjiO+cvnQ=
+
+Name: jnr/constants/platform/fake/ProtocolFamily.class
+SHA-256-Digest: w7KSCtnLlRwEp/kMPnpq8qxrdYIJ9UpAvPP0wzsSIis=
+
+Name: jnr/constants/platform/fake/WaitFlags.class
+SHA-256-Digest: 1z0dLfI8ho4Y4/3qs4nFfJJQwpg4/qC4R/YG6OUTKUA=
+
+Name: jnr/constants/platform/fake/SocketLevel.class
+SHA-256-Digest: 0RSDXqzje6E37n3J0W5zY6j+De++GxWuEImFCBwMKqg=
+
+Name: jnr/constants/platform/freebsd/IPProto.class
+SHA-256-Digest: KH+6IM5xtiEfBC0a6L9g7u5NM7O4q6H/NhNae6i3Vrc=
+
+Name: jnr/constants/platform/freebsd/Access.class
+SHA-256-Digest: ErSs2Xt5x5u3HjAAJ8pQ/5sZBgtogHbLr14w/x05ZL4=
+
+Name: jnr/constants/platform/openbsd/OpenFlags.class
+SHA-256-Digest: kqYqeRc+5xxJQL0QOZN8Knv+bquX7lwVCPa9klJbxbA=
+
+Name: jnr/constants/platform/Signal.class
+SHA-256-Digest: WCx+NanAJrubPPJjS3FhWf2AekrFISlQ+T/3uBegbEY=
+
+Name: jnr/constants/platform/solaris/Errno.class
+SHA-256-Digest: U2VUJni+Qtm8f6RErCoDNul4aRoNGILQvrZt2jmdOtg=
+
+Name: jnr/constants/platform/Shutdown.class
+SHA-256-Digest: ermB1/QLfy0l//L1NSAYGgHNQX9G1F4fx5k3v4Xw7cI=
+
+Name: jnr/constants/platform/darwin/SocketOption.class
+SHA-256-Digest: r3/dZNDU9pQ0RWSduG27av9U1kFuGMPXWz9WU/K3Sts=
+
+Name: jnr/constants/platform/linux/NameInfo.class
+SHA-256-Digest: ccdgW6FYHl5F/6gIdGH4m3dZ3J9wGpoLezxUeqkHOTg=
+
+Name: jnr/constants/platform/linux/SocketLevel.class
+SHA-256-Digest: UAh2p/Jfb85CWHI7QOYnm8QJ6LmYg3I421BvbFw+00s=
+
+Name: jnr/constants/platform/linux/Errno.class
+SHA-256-Digest: al5Bm+Sz3LnWK9aGjoelLmb1b0/9T9XSxrOpRMswF1g=
+
+Name: jnr/constants/platform/solaris/ProtocolFamily.class
+SHA-256-Digest: n/XhindHGAejGsIbjYdpk9om7FQ04vWXdEaSifxXjL4=
+
+Name: jnr/constants/platform/openbsd/PRIO.class
+SHA-256-Digest: zHR5hWGgH92zBUigUvp0PgHyve/SZhq1jbqod/gOP/U=
+
+Name: jnr/constants/platform/solaris/NameInfo.class
+SHA-256-Digest: pYYkR3hHSUjxZUG6DkNP66mFwTLVapg/sn1Lcu2o8fo=
+
+Name: jnr/constants/platform/openbsd/SocketLevel.class
+SHA-256-Digest: StRC7EH1WucbPpT51trKL794AiPxy6/5jBIQ5CNvUeM=
+
+Name: jnr/constants/platform/SocketOption.class
+SHA-256-Digest: KvJrFxUOzhb9QlQjatX/45gwIJXsOi7gEgV9yHIdIEY=
+
+Name: jnr/constants/platform/windows/LastError$StringTable.class
+SHA-256-Digest: EgDjwm/kplWkoQIkRmkHWKfuIf7f+XI2+fkF2X7wWDU=
+
+Name: jnr/constants/platform/Sysconf.class
+SHA-256-Digest: mPALcdFy6gEME4jiAbiuNEhwuLMcMrMZYEly2rkip1U=
+
+Name: jnr/constants/platform/darwin/IPProto.class
+SHA-256-Digest: B6r9I9JULcXErULbO8yJ9dHjStKikCoqZk+RV5EIl1g=
+
+Name: jnr/constants/platform/freebsd/SocketOption.class
+SHA-256-Digest: eiPAB/S8sdhsxG2GkFpd+9QuJ7N0QbDBP4Y5BU81kNY=
+
+Name: jnr/constants/platform/darwin/Fcntl.class
+SHA-256-Digest: 299gNyw46E7jgkhdfmD+oWdgNE1MLarr5jxMbAEd4kY=
+
+Name: com/kenai/constantine/platform/Signal.class
+SHA-256-Digest: IrQJvajhj1/TOMiqzEcP1rKNeY0Ksh1si5zwfQRXrBI=
+
+Name: jnr/constants/platform/solaris/LangInfo.class
+SHA-256-Digest: Pfa6b1kihWdhSKULJSWoEzvfTXhwG8Kt9GESMKQPpyk=
+
+Name: jnr/constants/platform/linux/Signal.class
+SHA-256-Digest: W8fY8CUdb//pArzElYpMeT6Wg6NYX6d0rYroXAkIdlo=
+
+Name: jnr/constants/platform/freebsd/PRIO.class
+SHA-256-Digest: ERHYXjOKXueBLkWVOtpo4XY6OQdMZkcY3H+I1OPa96U=
+
+Name: com/kenai/constantine/platform/ProtocolFamily.class
+SHA-256-Digest: vtN3MetU+iQlkbD+P3pXGgoFrwi4aWDk1jOm1rIfKmQ=
+
+Name: com/kenai/constantine/platform/INAddr.class
+SHA-256-Digest: UrqQDv05omXh5oY88h0KwZTm1rnc7HtGWkM5Qaljq7c=
+
+Name: com/kenai/constantine/ConstantSet$ConstantIterator.class
+SHA-256-Digest: MwiF1j9it+QHkBKb3wJqVKDTZVQXAbR+Y/FV6s7Xelk=
+
+Name: jnr/constants/platform/openbsd/Signal.class
+SHA-256-Digest: QI0v2Oel/eI3DmiNAKTd+7PCPT5mVqOKMT2VJgFEKE0=
+
+Name: jnr/constants/Platform$2.class
+SHA-256-Digest: dJl2+xCC/43/0RxDH+uM/ERT8m7t4t+B/RN7jCAAqrs=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.github.jnr.constant
+ s/pom.properties
+SHA-256-Digest: FGUPEmEXLu1fzYQ0NTzXcNjM8aGk8Zko8nGhk8zGqos=
+
+Name: jnr/constants/platform/solaris/TCP.class
+SHA-256-Digest: 6Gwf2sin9bfVjNJN0/N+fvd36+pMBhpyFBF9r1Fh2Bo=
+
+Name: jnr/constants/platform/openbsd/Locale.class
+SHA-256-Digest: oFZMeTdWdb1gBEHcbWAMbp1JPlmaIats+uuJNmhoH+4=
+
+Name: jnr/constants/platform/linux/Shutdown.class
+SHA-256-Digest: nUEir4++rprBBR2T+t5Iq+7noCLzMIANB4tJ0a64QHc=
+
+Name: com/kenai/constantine/platform/SocketOption.class
+SHA-256-Digest: BUwKRhD5YphqG0FgTK0sdcNjgE8u1gxJFO58iucyczk=
+
+Name: jnr/constants/platform/RLIMIT.class
+SHA-256-Digest: pK2Gvl9n7MBbrsd/n5xz8tgUntg9Fqta470L7szX6m4=
+
+Name: jnr/constants/platform/WaitFlags.class
+SHA-256-Digest: /TrGcAziZT3hGMMlv7TjNbRdnyV8FhRPm3uXjK13els=
+
+Name: jnr/constants/Constant.class
+SHA-256-Digest: GmXLoQ7leA7pi2y7bPh6WgvsPlXoI3VdvtBlew1xPFc=
+
+Name: jnr/constants/platform/solaris/Shutdown.class
+SHA-256-Digest: egrFWlNXO1Zf5L9c/lTrrC7AAg+wxXb9G+kPTgpJwdU=
+
+Name: jnr/constants/Platform.class
+SHA-256-Digest: 5RILga7BnGSPwC2g3D7UzJUxD1HmCzr+8i36TSc4awc=
+
+Name: jnr/constants/platform/fake/Errno.class
+SHA-256-Digest: ACG8sU6BkpIQNzwn5ylGPYMCbzqUEjRHf//vuNqgBIg=
+
+Name: jnr/constants/platform/linux/LangInfo.class
+SHA-256-Digest: UgLbVyH2m8Ydv3ZHGnDd/oFLm7XUyDfLQftpfIsAd48=
+
+Name: jnr/constants/platform/windows/Errno.class
+SHA-256-Digest: nh231Ns6SHHmOwO/U6/01+rGWFgTfLchfGtXBVkvZfo=
+
+Name: jnr/constants/platform/darwin/Errno.class
+SHA-256-Digest: ud1gCkjayxpMJ9N4H+KqA72WHSuS1vGV9sQiRs2Vf2k=
+
+Name: jnr/constants/Platform$1.class
+SHA-256-Digest: HJ5NgyFJvEBvs3bRidCah86QY7iMgiUSFO/U2y3tENI=
+
+Name: jnr/constants/platform/openbsd/INAddr.class
+SHA-256-Digest: HIrMSMsBt23RsqdyHokE2WG6b5CSY+WzJaKThh00auk=
+
+Name: jnr/constants/platform/darwin/Access.class
+SHA-256-Digest: nB2lSDRQyo31+dIGphyHZtcVu1u9RzEfmQOxJbijnv0=
+
+Name: about.html
+SHA-256-Digest: l/3Gc7WLTNciwaZhgKW6Kjkkct1ARHJut+Xqp/DDFhs=
+
+Name: jnr/constants/platform/solaris/PRIO.class
+SHA-256-Digest: T+3tXDlTa0h+91U2b7O8hTzzVOqgRRs4Eg4oqF08TPo=
+
+Name: jnr/constants/platform/fake/Access.class
+SHA-256-Digest: 1fdTaddB0Iw9QJLu/OZyi1DoVVx0JGZgSTYWYJzp+To=
+
+Name: jnr/constants/platform/RLIM.class
+SHA-256-Digest: rhQ4WKMKetZJzAKAJ6EMMaRkVWoTDZxN0E3HxcxzPNg=
+
+Name: com/kenai/constantine/platform/Errno.class
+SHA-256-Digest: 2n1z/z3Vb3gQ2zuZxS9EBnXsFnqwLP75o7mQDmH5U7Q=
+
+Name: jnr/constants/platform/openbsd/Shutdown.class
+SHA-256-Digest: R8sYxNokPjTfbS8OLe8j80k8pLrTrhpLCmmfs498/XE=
+
+Name: jnr/constants/platform/Sock.class
+SHA-256-Digest: rRP0guGRPeaZXittN/fGGULFtnwWSo2o5Fi1Uuji4tg=
+
+Name: jnr/constants/platform/linux/TCP.class
+SHA-256-Digest: cGxkCT4HLw1mWblOUlaIm9n+hk4cpOk9LypVv96Fvbw=
+
+Name: com/kenai/constantine/platform/WaitFlags.class
+SHA-256-Digest: wmLbxJ6h/yDwlvfRYpplVNP5xr35SetHGT1PdnCenEw=
+
+Name: jnr/constants/platform/openbsd/Sysconf.class
+SHA-256-Digest: RxxbZd0YliZtNgm41GNn0zeqPZaSYUwcu11nXpqSI6E=
+
+Name: jnr/constants/platform/PosixFadvise.class
+SHA-256-Digest: fqcU4ygJe+8mWBzX0c726uDr6z0q3gTBsDhY4HK61Hs=
+
+Name: jnr/constants/platform/linux/INAddr.class
+SHA-256-Digest: TBme+Q9+6ab3HXlwkYPRb1PnW4ym/TXPiC7lImBZG2U=
+
+Name: jnr/constants/platform/fake/Sysconf.class
+SHA-256-Digest: /KHuNDWL63dUKvqxTITqTM9xvDznWginnWGqgoeaeHI=
+
+Name: jnr/constants/platform/Locale.class
+SHA-256-Digest: s4O4vHgGPOKCY5L/7LMjAYmWSo1IGoefyLxgdpJw3xU=
+

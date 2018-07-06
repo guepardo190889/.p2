@@ -1,0 +1,355 @@
+Manifest-Version: 1.0
+Bundle-Description: ServiceLocator Default Implementation
+Bundle-License: https://glassfish.java.net/nonav/public/CDDL+GPL_1_1.h
+ tml
+Bundle-SymbolicName: org.glassfish.hk2.locator
+Archiver-Version: Plexus Archiver
+Built-By: genie.orbit
+Bundle-ManifestVersion: 2
+Bundle-DocURL: http://www.oracle.com
+Bundle-Vendor: %bundleVendor
+Import-Package: javassist.util.proxy;version="[3.13.0,4.0.0)",javax.in
+ ject;version="[1.0,2)",org.glassfish.hk2.api;version="[2.5.0,2.6)",or
+ g.glassfish.hk2.api.messaging;version="[2.5.0,2.6)",org.glassfish.hk2
+ .extension;version="[2.5.0,2.6)",org.glassfish.hk2.utilities;version=
+ "[2.5.0,2.6)",org.glassfish.hk2.utilities.cache;version="[2.5.0,2.6)"
+ ,org.glassfish.hk2.utilities.general;version="[2.5.0,2.6)",org.glassf
+ ish.hk2.utilities.reflection;version="[2.5.0,2.6)",org.glassfish.hk2.
+ utilities.reflection.internal;version="[2.5.0,2.6)",org.jvnet.hk2.ann
+ otations;version="[2.5.0,2.6)",org.jvnet.hk2.external.runtime;version
+ ="[2.5.0,2.6)",org.jvnet.hk2.internal;version="[2.5.0,2.6)",org.aopal
+ liance.intercept;version="[1.0,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Originally-Created-By: Apache Maven Bundle Plugin
+Export-Package: org.jvnet.hk2.internal;x-internal:=true;version="2.5.0
+ .b03";uses:="javassist.util.proxy,javax.inject,org.aopalliance.interc
+ ept,org.glassfish.hk2.api,org.glassfish.hk2.api.messaging,org.glassfi
+ sh.hk2.utilities,org.glassfish.hk2.utilities.reflection,org.jvnet.hk2
+ .external.runtime",org.jvnet.hk2.external.generator;version="2.5.0.b0
+ 3";uses:="org.glassfish.hk2.api,org.glassfish.hk2.extension",org.jvne
+ t.hk2.external.runtime;version="2.5.0.b03";uses:="org.glassfish.hk2.a
+ pi,org.jvnet.hk2.annotations"
+Bundle-Name: %bundleName
+Bundle-Version: 2.5.0.v20161103-0227
+Created-By: Eclipse Bundle Recipe Maven Plug-in
+Build-Jdk: 1.8.0_131
+
+Name: org/jvnet/hk2/internal/PerLocatorUtilities$1.class
+SHA-256-Digest: 9Jb3DqylRtR6kJNVVlgYZw50fJ6RAxtsBG4ao1+JHBc=
+
+Name: org/jvnet/hk2/internal/MethodInterceptorInvocationHandler.class
+SHA-256-Digest: 5ODMu3Rsd2WYAdESq0Vksq3S21iQNm21BrJyA24JT2Y=
+
+Name: org/jvnet/hk2/internal/SoftAnnotatedElementAnnotationInfo.class
+SHA-256-Digest: cmlqEfNkxYHtu9WLpfwv1z+AHlRMrvuGK66FHjbR4ak=
+
+Name: org/jvnet/hk2/internal/ServiceHandleComparator.class
+SHA-256-Digest: LsdMZwpURx1W+kVW5xVqkBPJs0NYY+S8QixtwaqZAkI=
+
+Name: org/jvnet/hk2/internal/Utilities$Interceptors.class
+SHA-256-Digest: FK8zIZIjfZESFSRG9A0OfzGVtiQlx6yVrPSvNwV5T0M=
+
+Name: org/jvnet/hk2/internal/PerLocatorUtilities.class
+SHA-256-Digest: +ctKbTgGaAzuQ7t6RaeWCxMeu78RUI+2rVDgPzaR274=
+
+Name: org/jvnet/hk2/internal/InstantiationServiceImpl$1.class
+SHA-256-Digest: jow7QcKVqR/FnJ0i+B0hXtx8ZdGPEfiuEZikhcHTdNU=
+
+Name: org/jvnet/hk2/internal/ClazzCreator$1.class
+SHA-256-Digest: MA4o3bwZ18Gg/nsWRR8+eP4rVmAbIvtoJeoqX5ktRZY=
+
+Name: org/jvnet/hk2/internal/FactoryCreator.class
+SHA-256-Digest: TJtB1NPOdFFCcMWdrW5r4vRmfxSt6brpobeaaMpw1X8=
+
+Name: org/jvnet/hk2/internal/ServiceLocatorImpl$CheckConfigurationData
+ .class
+SHA-256-Digest: 4o3wDzkUnoEOF5MOy6xsTk1daSqCvk4h5HOzloJJnEc=
+
+Name: org/jvnet/hk2/internal/Utilities$3.class
+SHA-256-Digest: zkziEZSn/aeAM8T5G/flVX594Lz6CwnGgWkSvJdzXx8=
+
+Name: org/jvnet/hk2/internal/NarrowResults.class
+SHA-256-Digest: PaVi74F3iXyGtU1yvKe66/0eJynsxYEaKPYkljBwA/U=
+
+Name: org/jvnet/hk2/internal/ImmediateResults.class
+SHA-256-Digest: ZppRBPGHrYmYUD2xw3HexapuygcruZH+29f6y7pgdrU=
+
+Name: org/jvnet/hk2/internal/MethodInterceptorHandler.class
+SHA-256-Digest: OEqfNODMq5i7QpA9gszkz5SW6lOidSrleNsEmWD5fMU=
+
+Name: org/jvnet/hk2/internal/ServiceHandleImpl.class
+SHA-256-Digest: LpvaQf+dp6/VuPis/ox85KIQvv7AuMx4zheCgfUtNE0=
+
+Name: org/jvnet/hk2/internal/ServiceLocatorImpl$7.class
+SHA-256-Digest: 37rNfu3eHHc/xzEjjyx/0WWmgnJ0mum6Zlo5I59dLf8=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: 4FXjpaRCkmRCFrFyFjYZgIS5OC/LhvUWSZCFH/qt6iQ=
+
+Name: org/jvnet/hk2/internal/IterableProviderImpl.class
+SHA-256-Digest: /Nj96QDpZW40we7ivdX2jkbPh7wNvIv2pyjIrBbOmdQ=
+
+Name: org/jvnet/hk2/internal/ServiceLocatorImpl$4.class
+SHA-256-Digest: Mv53UPeKMwSqCcNjK6VBb66uHo5BnadiQNKguDInYus=
+
+Name: org/jvnet/hk2/internal/ClazzCreator$ResolutionInfo.class
+SHA-256-Digest: uU6+XagnQ+oViz5NdwLvsG1lJ8WuxNs8BaA3RP1+5ok=
+
+Name: org/jvnet/hk2/internal/ConstructorActionImpl$2.class
+SHA-256-Digest: WdArG1RtPJoonaLf4S03yU52Dd8X93QY3QdscARu9Kc=
+
+Name: org/jvnet/hk2/internal/InstantiationServiceImpl.class
+SHA-256-Digest: n8Fl3TqFCPlnMbRF/N+HsxHthqlUHPLTxiau5Gzw8OA=
+
+Name: org/jvnet/hk2/internal/DescriptorComparator.class
+SHA-256-Digest: M6wCvIxhOHeDE4vPukoaW3co54NnMAaSMhEFjc8oW/k=
+
+Name: org/jvnet/hk2/internal/ServiceLocatorImpl.class
+SHA-256-Digest: LzvTUxc91gLFNr0wyL8olpZqlgfcePGwy5+fOT4aTSc=
+
+Name: org/jvnet/hk2/internal/IterableProviderImpl$MyHandleIterator.cla
+ ss
+SHA-256-Digest: eqDp/RT86zDBzBrAm+iyPp3xChQ7i28KfxEk8sJ2epQ=
+
+Name: org/jvnet/hk2/external/runtime/Hk2LocatorUtilities$1.class
+SHA-256-Digest: vWmxh7O12hWRhbAS04eVBc/1QJG77EqLC/d+lLgrWts=
+
+Name: org/jvnet/hk2/internal/ProxyUtilities$3.class
+SHA-256-Digest: HJTmFOqqP9mYO4Aa3vqcHdktOfJz97h3yjgHXozmst8=
+
+Name: org/jvnet/hk2/internal/SystemDescriptor.class
+SHA-256-Digest: qyshVu74zpPrGLidfQOrj/cXynvNFms2K6eCji+6UDE=
+
+Name: org/jvnet/hk2/internal/ProxyUtilities.class
+SHA-256-Digest: kE/X8T/0772tFiaVZldprGrxwPtcKqF055JXrc5Pd1E=
+
+Name: org/jvnet/hk2/internal/Utilities.class
+SHA-256-Digest: sEHl1V5bw8c4xgxPvL99do/mmaau7Bna8tugn3NI5Yc=
+
+Name: org/jvnet/hk2/internal/ServiceLocatorImpl$5.class
+SHA-256-Digest: 4I4f8H82DlocTnE8N3+eF+BonPg8AJsH9PJuO0KX4ng=
+
+Name: org/jvnet/hk2/internal/Utilities$5.class
+SHA-256-Digest: L35VJb+higKucsF952JwEcvnheyxulhBcbW4j8btpdw=
+
+Name: org/jvnet/hk2/internal/ConstructorInterceptorHandler.class
+SHA-256-Digest: BCpnBs5jSw7MjErU/wN/+wGEfjzIU/hBxVBTpxL+qkY=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.glassfish.hk2.locat
+ or/pom.xml
+SHA-256-Digest: a9z1lIM5fTnyfBT2Itib4iJr65J6ot9biKSIeRK2qrQ=
+
+Name: org/jvnet/hk2/internal/IndexedListData.class
+SHA-256-Digest: Sho3dR28Or1ftpO6XMC05E9PptqxnwAJbnchn+96o5o=
+
+Name: org/jvnet/hk2/external/runtime/ServiceLocatorRuntimeBean.class
+SHA-256-Digest: Xix4T7ZYRUp4IEYMIwbnp0a1v1IzRc3Xeg5cjGP2NDQ=
+
+Name: org/jvnet/hk2/internal/SystemDescriptor$1.class
+SHA-256-Digest: HYrOuYeSU4o1kRghn/tXaP4BOXyMF4+LjG1B41W3q/8=
+
+Name: org/jvnet/hk2/internal/ConstructorActionImpl$1.class
+SHA-256-Digest: +0UHhrEelQ400VYL0MORRPGXdIvWOzVakDLJUUZpPqM=
+
+Name: org/jvnet/hk2/internal/ProxyUtilities$4.class
+SHA-256-Digest: /zf8qZk9PEbYSzwRVeS6VBZgEXZYw6+0VLFQxglcs6o=
+
+Name: org/jvnet/hk2/internal/AutoActiveDescriptor.class
+SHA-256-Digest: hSY8GohyXgJnqmIzX6336+5QUwb1VZdinfFio2iwHaU=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.glassfish.hk2.locat
+ or/pom.properties
+SHA-256-Digest: j20nGU1z+2MhOHj9z4ymyFYl7gdeA+Y36Ca70liY08s=
+
+Name: org/jvnet/hk2/external/generator/ServiceLocatorGeneratorImpl.cla
+ ss
+SHA-256-Digest: z1mVhh21NdLV0yJH567o1YxWWwcngAI+X8G35TlW9bY=
+
+Name: org/jvnet/hk2/internal/SingletonContext$1.class
+SHA-256-Digest: gUt08Y7Q0dOdXs7K78KLDI8ugJ9HedxKcQnuppSSTc8=
+
+Name: org/jvnet/hk2/internal/Utilities$4.class
+SHA-256-Digest: ZUPWIbOUAnpGc8uHOQUQDyUUPpl2WhBtP95+pQybV1M=
+
+Name: org/jvnet/hk2/internal/ProxyUtilities$2.class
+SHA-256-Digest: agWgi6B8JvKgPdzFQsk84CdVWQACaVFDRvvzARhx70g=
+
+Name: org/jvnet/hk2/internal/ServiceLocatorImpl$12.class
+SHA-256-Digest: pxT1K84FaDrC2GLetqJawotI0drUOrUxQacVxlfa/5I=
+
+Name: org/jvnet/hk2/internal/ClazzCreator.class
+SHA-256-Digest: 7C7P2EZ+qWQZBszAgMG1GaTd2CoscWyGY7v4Nr2ajNA=
+
+Name: org/jvnet/hk2/internal/ValidationInformationImpl.class
+SHA-256-Digest: TKMQgYr2pH5uPru9p6lqjZR1Z8BtlYpFyiJdoT4tCu0=
+
+Name: org/jvnet/hk2/internal/ServiceLocatorImpl$6.class
+SHA-256-Digest: TReu7C2es4ywQMcGB2Mjdj8Fd27FBH2hsPmf0j4LHfc=
+
+Name: org/jvnet/hk2/internal/ConstructorInterceptorHandler$1.class
+SHA-256-Digest: IxBCKaBB1YrXlToKbaQKj3rmAZPqDw6aFC2VDDm3wXs=
+
+Name: org/jvnet/hk2/internal/ServiceLocatorImpl$IgdValue.class
+SHA-256-Digest: 7Z3FubCSdDIyImbJeV6M7dL2qyoTtnBsMOBRN7UPQkg=
+
+Name: org/jvnet/hk2/internal/ThreeThirtyResolver.class
+SHA-256-Digest: Q9ttVgIr4/VLcvsMICAGic9yFYaXrQ+wf/WXyKCV7NM=
+
+Name: org/jvnet/hk2/internal/DelegatingClassLoader.class
+SHA-256-Digest: T8sEQ08UHgYgfam5XqDybrBn857/NvK6rwaXD0FKs+c=
+
+Name: META-INF/services/org.glassfish.hk2.extension.ServiceLocatorGene
+ rator
+SHA-256-Digest: YydInX1fXuY30+65gT+IF75xIYvVoVxGISGPi6trqLQ=
+
+Name: org/jvnet/hk2/internal/ServiceLocatorImpl$3.class
+SHA-256-Digest: OM/K0Ps3VcIzIsd4cjvy6aBiESez3xlrNQOJANnCD4I=
+
+Name: org/jvnet/hk2/internal/MethodInterceptorHandler$1.class
+SHA-256-Digest: 98gYyZDSUZQDdu9NX4SGY6RP3A6NVmbmZtHbvzby+Cc=
+
+Name: org/jvnet/hk2/internal/IterableProviderImpl$MyIterator.class
+SHA-256-Digest: t2CCr+7HhxCZXj8Ij4KkNxJek4jxszPazWb4PUsNc5o=
+
+Name: org/jvnet/hk2/internal/IterableProviderImpl$HandleIterable.class
+SHA-256-Digest: wzCs4UAAUNcqhU233KjzmweJcOFT8k3ZBRC5LoV3fQw=
+
+Name: org/jvnet/hk2/internal/InstanceLifecycleEventImpl.class
+SHA-256-Digest: teL44Oq51cghylQUcj3eY7BgFxiRpmWkesmTLgvG++Q=
+
+Name: org/jvnet/hk2/internal/PerLocatorUtilities$2.class
+SHA-256-Digest: /BI1kLB/4WF0SeQV1CtaHzFjU/7INQHQtLNMePCDhT4=
+
+Name: org/jvnet/hk2/internal/SingletonContext$2.class
+SHA-256-Digest: INAK2GOrDZBwkwdUaIkdms0K/fbS70jiC0k8ZjGFDKA=
+
+Name: org/jvnet/hk2/internal/ErrorResults.class
+SHA-256-Digest: On9A95DaBlj4bcqlsdLuNGmg6u8TVhH3/jlT9FoNJfA=
+
+Name: org/jvnet/hk2/internal/DefaultClassAnalyzer.class
+SHA-256-Digest: S9A7lUAU0CYsob1gWszV8v+07a7pl9f7KaEWIR7Mcnc=
+
+Name: org/jvnet/hk2/internal/ConstructorInterceptorHandler$Constructor
+ InvocationImpl.class
+SHA-256-Digest: zVuUo1Wrtb4pPeLjCuw3SvfMTimqQ5eRMySB1Aizz9s=
+
+Name: org/jvnet/hk2/internal/SingletonContext.class
+SHA-256-Digest: 5ic7nND6FOCTabTF+wA4UEAEBnlTpL73jxe/JYxD83I=
+
+Name: org/jvnet/hk2/internal/ProxyUtilities$4$1.class
+SHA-256-Digest: PQTlMnegEbTGX7+zQIyAe9yAge9/442bRoV+WefScBY=
+
+Name: org/jvnet/hk2/internal/ErrorInformationImpl.class
+SHA-256-Digest: 5Org6fbdBLJpH6GiRwEFtrsRZAbn9GHBh+UKcUhjFtE=
+
+Name: org/jvnet/hk2/internal/Creator.class
+SHA-256-Digest: LEnxa0aPTHAuQs6r066Q+wL0riDBpewV+w/URyLeDsY=
+
+Name: org/jvnet/hk2/internal/Closeable.class
+SHA-256-Digest: F0it6MHjcKLt5V1iNKo9R3NIR64k+n8LYAbUhRv2aaA=
+
+Name: org/jvnet/hk2/internal/ServiceLocatorImpl$UnqualifiedIndexedFilt
+ er.class
+SHA-256-Digest: fV5v2rFKJJYz2xuleFuHUrfvVGnZykrzzIsKZB52cAM=
+
+Name: org/jvnet/hk2/internal/CacheKey.class
+SHA-256-Digest: CpIHdN0uHVPkTRKtgRqsbA5SWkNsSVQhgjt4XQH7pFk=
+
+Name: org/jvnet/hk2/internal/ConstructorActionImpl.class
+SHA-256-Digest: d6tjta8U6dKWerm4zv5H7Bd6jc3wQi55VHFPMw17ArE=
+
+Name: org/jvnet/hk2/internal/PerLocatorUtilities$3.class
+SHA-256-Digest: e9BDGC87ns0IgvLTfWN9Zp/b07X7tMoC7e/DXccETMw=
+
+Name: org/jvnet/hk2/internal/SystemInjecteeImpl.class
+SHA-256-Digest: 8tIbfhaAsEjXJ9fHrCF0BVFCZbihKaZO7qXeyH0+drY=
+
+Name: org/jvnet/hk2/internal/ConstantActiveDescriptor.class
+SHA-256-Digest: 11eQ+VyV7GF1BfNT6YoiwrWekq0sYydNR0XnG54/mlQ=
+
+Name: org/jvnet/hk2/internal/ServiceLocatorImpl$1.class
+SHA-256-Digest: k1yjDHeLUOEggZouesytUTNwrqGSqsL/bs7niyR72bQ=
+
+Name: org/jvnet/hk2/internal/ServiceLocatorImpl$IgdCacheKey.class
+SHA-256-Digest: cqrwfnujgCxluyx7kjwvJjabscA6+SzUszRIoVdTWk8=
+
+Name: org/jvnet/hk2/internal/SingletonContext$GenerationComparator.cla
+ ss
+SHA-256-Digest: 34PyGBeSTmjcin5BTu2rN4P+3EdUFZsL/I+0fcyKZAI=
+
+Name: org/jvnet/hk2/internal/ServiceLocatorImpl$8.class
+SHA-256-Digest: vyOssGkHvcRWR2m97SwIXNjMiOXtMh9KLi7hmu9gHP0=
+
+Name: org/jvnet/hk2/internal/MethodInterceptorImpl.class
+SHA-256-Digest: 5DyXdNRVFKyPkEqm88dFd7Fz/ww9lR2b9Ng5cYhJBfc=
+
+Name: org/jvnet/hk2/internal/Utilities$2.class
+SHA-256-Digest: TxgGr8ZoNK6Ob3NHY8pvfj4mYpQ8EtOlqvjjR66IpCY=
+
+Name: org/jvnet/hk2/internal/TopicImpl.class
+SHA-256-Digest: 07SwGgCpm4z7BVllzGmCj57ec05yQ+viqZeO9oGUcz0=
+
+Name: org/jvnet/hk2/internal/ServiceLocatorImpl$11.class
+SHA-256-Digest: 3WJyg8OLRbXr3Fzt4ymOrA7TkIjXf2+vPakHpvFk0I0=
+
+Name: org/jvnet/hk2/internal/DynamicConfigurationImpl.class
+SHA-256-Digest: NkdIvlnH5VHN7csniDQ3KaXViGUNvnDpc08m4DggUgU=
+
+Name: org/jvnet/hk2/external/runtime/Hk2LocatorUtilities.class
+SHA-256-Digest: PreZD/DTFzEryN8RKMYJw1JqZHtTUIlMiIjvacZOsDk=
+
+Name: about.html
+SHA-256-Digest: qJhBdFe72zHqynLzeAkRei3fsUhsnNdzqxme0KiSJB0=
+
+Name: org/jvnet/hk2/internal/ServiceLocatorRuntimeImpl.class
+SHA-256-Digest: 9eMF6bxlc1OwHeMj/uLTGMmmfxni6KjnRTV7BBaK2qM=
+
+Name: org/jvnet/hk2/internal/CacheKey$1.class
+SHA-256-Digest: Tr2SOt6OssqFYg1vSEMPT8zkqe8s4CpNyJhjoBI5qjM=
+
+Name: org/jvnet/hk2/internal/ProxyUtilities$1.class
+SHA-256-Digest: o37lV95Tkf+r06x039HhpdoZKvkmRggtdGl9B63VKEM=
+
+Name: org/jvnet/hk2/internal/Collector.class
+SHA-256-Digest: lE/HMi9MiR0CJ2xk+Wo+GtZuXjRb4GxNdbul5pSIUX4=
+
+Name: org/jvnet/hk2/internal/Utilities$AnnotationInformation.class
+SHA-256-Digest: e4z6HdZq18wge4mtufuT9fQO50g2qkaUVjO6iOGAx50=
+
+Name: org/jvnet/hk2/internal/ConstructorAction.class
+SHA-256-Digest: +4cv7U4o4KO6FzIuMnbX8/Pps1y1pkZANx67AmQGctw=
+
+Name: org/jvnet/hk2/internal/PopulatorImpl.class
+SHA-256-Digest: wMhiVUxEMbdCoAcZFP06cf8UgpIgOZARYjWa+2aAuGQ=
+
+Name: org/jvnet/hk2/internal/AnnotatedElementAnnotationInfo.class
+SHA-256-Digest: kzwaUEpIDp0Hus6PnjhgBTfBM/xDGLBw7DfEKDbaZ6M=
+
+Name: org/jvnet/hk2/internal/MethodInterceptorHandler$MethodInvocation
+ Impl.class
+SHA-256-Digest: WMSWxr9/OzO3cfdsLMuuNclrVVkBT67aTlhfWn0Z2BY=
+
+Name: org/jvnet/hk2/internal/ServiceLocatorImpl$10.class
+SHA-256-Digest: qGIPg0IAtaETJxNkGMaoy4k3kc7Ic9Ns5CjkcHQqJBA=
+
+Name: org/jvnet/hk2/internal/PerLookupContext.class
+SHA-256-Digest: LY0GnvhsLVMeo3m4SXDlrM8cgNbcGCMu1t2oSzCaDQs=
+
+Name: org/jvnet/hk2/internal/ServiceLocatorImpl$2.class
+SHA-256-Digest: /W8mO6GaRFufp56vG68ksmziZgbf6L3G+pgwcBlJ8bk=
+
+Name: org/jvnet/hk2/internal/ServiceLocatorImpl$9.class
+SHA-256-Digest: xcT4WWWx36C0834AIFabg0WdB5aMm2RYyvUDTkCGiQ8=
+
+Name: about_files/COMMON_DEVELOPMENT_AND_DISTRIBUTION_LICENSE.html
+SHA-256-Digest: RpLGLLt4tjsK1wHgR8X1f8Ad1f5mJqKg6v5aQ84JOso=
+
+Name: org/jvnet/hk2/internal/IterableProviderImpl$1.class
+SHA-256-Digest: EvqMMI7B5hTZynb0j6qZ6cx26g8MvJ/Y8jTb1lFpHkw=
+
+Name: org/jvnet/hk2/internal/Utilities$1.class
+SHA-256-Digest: OZY6zp1VgbxFaFgReFWb93fOYVdVT5+nbhGoq9rGeS4=
+
+Name: org/jvnet/hk2/internal/DynamicConfigurationServiceImpl.class
+SHA-256-Digest: VUgBhPvdXt2klPIlFXcW/fn2ZWlf69SA6pgXUZQTenA=
+

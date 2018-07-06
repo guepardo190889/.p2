@@ -1,0 +1,64 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: Z02CQ6kq6vMV114LRbuTc6GrjmUOM
+ Sgo7ApJNp7Rz4c=
+SHA-256-Digest-Manifest: OrOmwshRxH5A7hDHNywOa/esEQnFot/aeF1yJ/YqGq8=
+Created-By: 1.8.0_131 (Oracle Corporation)
+
+Name: org/glassfish/hk2/osgiresourcelocator/ServiceLoaderImpl$1.class
+SHA-256-Digest: ZYlTZiOCjoIkXqg7Jnx+jxsMZOOgbsj50hOw2D/8Ruk=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.glassfish.hk2.osgi-
+ resource-locator/pom.properties
+SHA-256-Digest: bjqv4sNXq/XS0q67u+0kg+F1Ib/xFcW+atQqWAxG39k=
+
+Name: about.html
+SHA-256-Digest: mQRob9ctyc4sSN6TOG4uFq09cpvlKFtQwmU68V9vsTs=
+
+Name: org/glassfish/hk2/osgiresourcelocator/ServiceLoader$ProviderFact
+ ory.class
+SHA-256-Digest: usf+wHOO2obXX2BJOCRp1RPZaqjD+asT8KKgahXzcZg=
+
+Name: org/glassfish/hk2/osgiresourcelocator/ServiceLoader.class
+SHA-256-Digest: 1DzjBiKkwxsLmm/J3gzXr0EwkoY/A0ApFlJ2Ao++0xM=
+
+Name: org/glassfish/hk2/osgiresourcelocator/ServiceLoaderImpl$Provider
+ sPerBundle.class
+SHA-256-Digest: fu8BrSqC6FTVdKu1gN6IkuR0HNnVkTNJhS6SMRxHbag=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.glassfish.hk2.osgi-
+ resource-locator/pom.xml
+SHA-256-Digest: y7CnDdt4Hj+g6tcysXSe85/k/Ao1uZvt8PaZ/2gQsVs=
+
+Name: org/glassfish/hk2/osgiresourcelocator/ResourceFinder.class
+SHA-256-Digest: THXrvI6hNI3ngASEop8oyMRyJ4TFngJcvBps/YJDWVo=
+
+Name: org/glassfish/hk2/osgiresourcelocator/ResourceFinderImpl.class
+SHA-256-Digest: CMD7SLAKjesq9T+2vV0tMipuS2pplac6XSWfcf907Co=
+
+Name: org/glassfish/hk2/osgiresourcelocator/Activator.class
+SHA-256-Digest: elwp6F6EYRtHsQZKJh9HyI5tGaPJ6N4KoI8amyy6pLA=
+
+Name: org/glassfish/hk2/osgiresourcelocator/ServiceLoaderImpl$DefaultF
+ actory.class
+SHA-256-Digest: iRoP8bCkE5CVUAFZmtFfi8mYUyDWQK745lQRQQyefms=
+
+Name: about_files/COMMON_DEVELOPMENT_AND_DISTRIBUTION_LICENSE.html
+SHA-256-Digest: f1UbDqKOgFU2oHETg9d3lgv5M/2mOlmehD3RKL4Z1ow=
+
+Name: org/glassfish/hk2/osgiresourcelocator/ServiceLoaderImpl.class
+SHA-256-Digest: XpbRJUwtRCxov0U4N9C2hSI5Q9UxRkOZYm5v2QUwZDo=
+
+Name: org/glassfish/hk2/osgiresourcelocator/ServiceLoaderImpl$BundleTr
+ acker.class
+SHA-256-Digest: /tnP24n4rEExa6CF7p+Uv6ckgacmW6phrluUW/KSLmg=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: 3jiSGPupfZ+OGgLDgEud0CZwwFACF7br4iedHDBwWig=
+
+Name: org/glassfish/hk2/osgiresourcelocator/ServiceLoaderImpl$Provider
+ sList.class
+SHA-256-Digest: grFQ730fqjOqqnbTzX9ivbQroLpMEoIVnahgi4cfQNg=
+
+Name: org/glassfish/hk2/osgiresourcelocator/ServiceLoaderImpl$2.class
+SHA-256-Digest: E8bPxh1Ga2ttEk/7TEbBCLQkLioL8WbpkhXR1sNtZqw=
+

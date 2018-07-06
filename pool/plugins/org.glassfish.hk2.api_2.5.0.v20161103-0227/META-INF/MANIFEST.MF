@@ -1,0 +1,563 @@
+Manifest-Version: 1.0
+Bundle-Description: HK2 API module
+Bundle-License: https://glassfish.java.net/nonav/public/CDDL+GPL_1_1.h
+ tml
+Bundle-SymbolicName: org.glassfish.hk2.api
+Archiver-Version: Plexus Archiver
+Built-By: genie.orbit
+Bundle-ManifestVersion: 2
+Bundle-DocURL: http://www.oracle.com
+Bundle-Vendor: %bundleVendor
+Import-Package: javax.inject;version="[1.0,2)",org.glassfish.hk2.osgir
+ esourcelocator;version="[2.5,3)",org.glassfish.hk2.api;version="[2.5.
+ 0,2.6)",org.glassfish.hk2.extension;version="[2.5.0,2.6)",org.glassfi
+ sh.hk2.internal;version="[2.5.0,2.6)",org.glassfish.hk2.utilities;ver
+ sion="[2.5.0,2.6)",org.glassfish.hk2.utilities.binding;version="[2.5.
+ 0,2.6)",org.glassfish.hk2.utilities.general;version="[2.5.0,2.6)",org
+ .glassfish.hk2.utilities.reflection;version="[2.5.0,2.6)",org.jvnet.h
+ k2.annotations;version="[2.5.0,2.6)",org.jvnet.hk2.component;version=
+ "[2.5.0,2.6)",org.aopalliance.intercept;version="[1.0,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Originally-Created-By: Apache Maven Bundle Plugin
+Export-Package: org.glassfish.hk2.internal;x-internal:=true;version="2
+ .5.0.b03";uses:="javax.inject,org.glassfish.hk2.api,org.glassfish.hk2
+ .extension,org.glassfish.hk2.utilities",org.glassfish.hk2.api;version
+ ="2.5.0.b03";uses:="javax.inject,org.aopalliance.intercept,org.glassf
+ ish.hk2.extension,org.glassfish.hk2.utilities,org.jvnet.hk2.annotatio
+ ns",org.glassfish.hk2.api.messaging;version="2.5.0.b03";uses:="javax.
+ inject,org.glassfish.hk2.api,org.jvnet.hk2.annotations",org.glassfish
+ .hk2.extension;version="2.5.0.b03";uses:="org.glassfish.hk2.api",org.
+ glassfish.hk2.utilities;version="2.5.0.b03";uses:="javax.inject,org.g
+ lassfish.hk2.api,org.glassfish.hk2.utilities.binding,org.jvnet.hk2.an
+ notations",org.glassfish.hk2.utilities.binding;version="2.5.0.b03";us
+ es:="org.glassfish.hk2.api,org.glassfish.hk2.utilities",org.jvnet.hk2
+ .annotations;version="2.5.0.b03";uses:="org.glassfish.hk2.api"
+Bundle-Name: %bundleName
+Bundle-Version: 2.5.0.v20161103-0227
+Created-By: Eclipse Bundle Recipe Maven Plug-in
+Build-Jdk: 1.8.0_131
+
+Name: org/glassfish/hk2/api/ActiveDescriptor.class
+SHA-256-Digest: xKZBzEMe7IdFOAwWS6iyNxyzgSL6bZxI46MS+DVgI5s=
+
+Name: org/glassfish/hk2/utilities/InjecteeImpl.class
+SHA-256-Digest: LZEpNQMbm25wbJGHJwLgCyvWOE8SFjoLrlFiPi13TQI=
+
+Name: org/glassfish/hk2/api/Proxiable.class
+SHA-256-Digest: 0TcUF5+zIo157aFa9zPONsxzVmVlSPUMU+yLEihxTWE=
+
+Name: org/glassfish/hk2/api/ProxyCtl.class
+SHA-256-Digest: PfJeYAz/EAYYhEvLcR4j4qhEcffz52kSTwmvx+HmwVc=
+
+Name: org/glassfish/hk2/api/DynamicConfiguration.class
+SHA-256-Digest: s/VK07AGk+waOqNGeoKk5PixbL7l+jEuN2XToP//dc4=
+
+Name: org/glassfish/hk2/api/InjectionResolver.class
+SHA-256-Digest: lnKgiwZErbBp42hpYhbXLU4Eg0KyGkWqAH/CDQP4zQM=
+
+Name: org/glassfish/hk2/internal/ImmediateHelper$1.class
+SHA-256-Digest: DOU0bV65KqZ1IErSy6GZK82gAudiRFXqVwkwd6QI2lQ=
+
+Name: org/glassfish/hk2/api/Validator.class
+SHA-256-Digest: snTOPrcSiHGlCa0yhCPoNGiyBA1E2iWzN54hXkk0sM0=
+
+Name: org/glassfish/hk2/api/PopulatorPostProcessor.class
+SHA-256-Digest: xT87Sz7fMyTpkUWfOBJIqTFSK6YZ9mE2M6aXsjc5Ruc=
+
+Name: org/glassfish/hk2/utilities/Binder.class
+SHA-256-Digest: hLZ3RzxAzqyL+uo1rJhYP97LN3kZQTUd+P5Q1PdtfP8=
+
+Name: org/glassfish/hk2/utilities/ClasspathDescriptorFileFinder$1.clas
+ s
+SHA-256-Digest: LgRQ9sjr5LAuzYlKLALht+5acGbb+mhFgaY56Ury86k=
+
+Name: org/glassfish/hk2/internal/InheritableThreadContext.class
+SHA-256-Digest: k297fWX+PcmINDCKof8f9l4LDy2/aprTgFN1aJblj1w=
+
+Name: org/glassfish/hk2/utilities/binding/BindingBuilderFactory.class
+SHA-256-Digest: doBuu1d9hAYqgB+V9Mv4D7hCM93kNbQvJrHzj2jiN1k=
+
+Name: org/glassfish/hk2/api/ClassAnalyzer.class
+SHA-256-Digest: U4FXtk8naY0GkDEGyMvXAecTKMsHDdzLefk/Y75b1tM=
+
+Name: org/glassfish/hk2/api/PerThread.class
+SHA-256-Digest: WWtcmcAYk/IWgbOV8lOZwEpY4wjzL5buMu+YrDc94aA=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.glassfish.hk2.api/p
+ om.properties
+SHA-256-Digest: r9NgPgUVpLJvq1r0srV0kDeHElJLVRoqofmAR/362yM=
+
+Name: org/glassfish/hk2/api/ServiceLocatorFactory.class
+SHA-256-Digest: nxgySrn2zEdscBuUXeC69NT3d4m14L2b6vJ0PAgeIyQ=
+
+Name: org/glassfish/hk2/api/Filter.class
+SHA-256-Digest: sFw5erHUiiARgVTuZ0XIJrnK6jvPCPm990driS11YGE=
+
+Name: org/glassfish/hk2/api/DescriptorFileFinder.class
+SHA-256-Digest: 1nNKia4e9fYe8sWiWsClWdyyaBIneKSe2gWbTYFdL5w=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.glassfish.hk2.api/p
+ om.xml
+SHA-256-Digest: 4EVfgqEg2yl2wzNoJSj66TbDhzmRoBLwPa4QXSAGQEk=
+
+Name: org/glassfish/hk2/utilities/UnqualifiedImpl.class
+SHA-256-Digest: g3BT3MSGPviEr0fCeCrya1rtZmb8fyqW5ZJ4Q8F3VKw=
+
+Name: org/glassfish/hk2/api/HK2Exception.class
+SHA-256-Digest: 3ljP9RvqBolSSE7zW+7ZMEfHewxMD2da+jHF3Rgsg5c=
+
+Name: org/glassfish/hk2/internal/InheritableThreadContext$InheritableC
+ ontextThreadWrapper.class
+SHA-256-Digest: X+SIjGX0P/MBpwjuDGEiG8nJzzoplJWxmQxMN4tkn4E=
+
+Name: org/glassfish/hk2/internal/ServiceLocatorFactoryImpl$DefaultGene
+ ratorInitializer.class
+SHA-256-Digest: nmyzm6cw7n4VUhmroAFSoLiGeAPTim5WJC2cZAsc+OE=
+
+Name: org/glassfish/hk2/api/AnnotationLiteral$1.class
+SHA-256-Digest: aVW2Rug0Jn2/MBwYMAkEOa5CAE5v2b6YTqqNOaB9Yug=
+
+Name: org/glassfish/hk2/utilities/RethrowErrorService.class
+SHA-256-Digest: y3ZSuphW1wpzV7VA3eaLbcF3wCR2XGEeFU8WafR+7/0=
+
+Name: org/glassfish/hk2/api/PreDestroy.class
+SHA-256-Digest: A4hgqGAdQVjLcQCuFkNxsZF/uFdzy0PJxnxvToNDsYo=
+
+Name: org/glassfish/hk2/api/DynamicConfigurationListener.class
+SHA-256-Digest: 0+wGEscmfvydHcxfa2wyoRq5Le6mhqVoOLsCAKuqMAY=
+
+Name: org/glassfish/hk2/api/AnnotationLiteral.class
+SHA-256-Digest: 2N74t7GyQ/WCu2ycXMLzZ8UazkYnMLBrdak1ZdkKhCI=
+
+Name: org/glassfish/hk2/api/InjectionPointIndicator.class
+SHA-256-Digest: KtLCspLwNQFMxMBadLgyN3e2fNuqbdzHunQNxHHeaBM=
+
+Name: org/glassfish/hk2/api/TypeLiteral.class
+SHA-256-Digest: ePx2Wx6PQ2ZME0kvhdmje096O3MOXLyVXPRdB1gaNT0=
+
+Name: org/glassfish/hk2/utilities/binding/AbstractBindingBuilder$Facto
+ ryTypeBasedBindingBuilder.class
+SHA-256-Digest: RUIIzGrFWrakVJxu/We6Uqbi/ZWrxrTHBkVCUn+81xI=
+
+Name: org/glassfish/hk2/utilities/ClasspathDescriptorFileFinder.class
+SHA-256-Digest: D+V+GNL+4ZvJUuqphsUmjuiHVwPMf2+fXdU0531bZ6Q=
+
+Name: org/glassfish/hk2/utilities/binding/AbstractBinder$1.class
+SHA-256-Digest: 1UDmFYC4zHnJtAhK+BmaG59qwP6e7PkT+4ESn2nfWJo=
+
+Name: org/glassfish/hk2/utilities/AbstractActiveDescriptor.class
+SHA-256-Digest: BsNya6QmDKYLlWHi6I8fQJ+OxR/gbP3oGouVz3e+aSE=
+
+Name: org/glassfish/hk2/api/ServiceLocatorListener.class
+SHA-256-Digest: enInG/OIQngrDT4JbhG/Z1GEYeZnZNKOZ1S0qbQfxSE=
+
+Name: org/glassfish/hk2/internal/ImmediateLocalLocatorFilter.class
+SHA-256-Digest: mFog8qxohZQH0bQkXjEXtkj7LL75UIBq/ioZmdfRcBw=
+
+Name: org/glassfish/hk2/utilities/ServiceLocatorUtilities$InheritableT
+ hreadImpl.class
+SHA-256-Digest: QVPUPYupRR30qJaCyOYVCrFXKKgaOF71Xx3w4uZEbHE=
+
+Name: org/glassfish/hk2/api/Context.class
+SHA-256-Digest: 5d/eg6BHczuZPxhDk/6CXhCJbxNXQSopv0Nbkqmb5o0=
+
+Name: org/glassfish/hk2/utilities/binding/AbstractBinder.class
+SHA-256-Digest: iJoAASuuJeHETeH7xJwVxydcCoYP4kJjSJS79RulmBs=
+
+Name: org/glassfish/hk2/api/ValidationService.class
+SHA-256-Digest: ddYX1Q/Fd+ev1GzLH4NpGkubht0uQquh53gEyncZ7sk=
+
+Name: org/glassfish/hk2/utilities/binding/BindingBuilder.class
+SHA-256-Digest: +5VzoDfDvJ4AZ0v0TjBkS2mnEVHEDK3nVsdDcTFXce8=
+
+Name: org/glassfish/hk2/utilities/ServiceLocatorUtilities.class
+SHA-256-Digest: Sc9VAaZXTceEcTNIDEvVhDpgfSft47ehWiK+FzyltrQ=
+
+Name: org/glassfish/hk2/internal/ImmediateHelper$ImmediateThreadFactor
+ y.class
+SHA-256-Digest: XhTiq0nxUS3yZHK14I1NfmIhbNEUlYa4fLGAh1FcIww=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: d+qMTtQkcQBlwPqfymgBfzK+e29OmnUAh7vvAHkQqQw=
+
+Name: org/glassfish/hk2/internal/PerThreadContext$2.class
+SHA-256-Digest: /eI24bPkjLB2Iy9B8zaR83wHznr6lqfvqlsxUBNp324=
+
+Name: org/glassfish/hk2/utilities/BuilderHelper.class
+SHA-256-Digest: N2uH7sUiL3AiXtK9tp8oist1KRQMK8VzUdyI8dd1KKU=
+
+Name: org/glassfish/hk2/utilities/HK2LoaderImpl.class
+SHA-256-Digest: wJZs4UHLizKEk5X79I5CGR70JkAV45l7SPyMYV5KynI=
+
+Name: org/glassfish/hk2/utilities/DuplicatePostProcessor.class
+SHA-256-Digest: 5FdUbWcVmD22Vtnsyx7zoUKS9/K4CJXLL9rKE3dBvfs=
+
+Name: org/glassfish/hk2/utilities/ServiceLocatorUtilities$1.class
+SHA-256-Digest: IYXmjttIZwaXJyFGl+R550F8jWeOObKdyqiNfWCPI0A=
+
+Name: org/glassfish/hk2/utilities/DescriptorImpl.class
+SHA-256-Digest: RbAMlsisMmleSwRvqj/Zpo3x0YdVF/xCVdQCsFu4b0Y=
+
+Name: org/glassfish/hk2/api/ErrorInformation.class
+SHA-256-Digest: HNTflXo6ZS4Otv83gm9+hGfYwDgevUF2dqJIJ9XrOIM=
+
+Name: org/glassfish/hk2/utilities/ActiveDescriptorBuilder.class
+SHA-256-Digest: VLPWV1zO1p/x9NR3JB8tmRXs0jvsaPeu5S4g5iPkHNI=
+
+Name: org/glassfish/hk2/utilities/FactoryDescriptorsImpl.class
+SHA-256-Digest: Z58J9w7HUESUYTUpx4zDaO483wClVeueIh02/kp43GI=
+
+Name: org/glassfish/hk2/api/ServiceLocatorFactory$CreatePolicy.class
+SHA-256-Digest: Y1La+4R75zJMChiZqJ+6uO6oaaEQ92OfckDEeBQzA+8=
+
+Name: org/glassfish/hk2/api/Immediate.class
+SHA-256-Digest: 1WuoG+My+pIp3JT31H6TjsiVuZcKrVy2m8hII1SUM10=
+
+Name: org/glassfish/hk2/api/ValidationInformation.class
+SHA-256-Digest: Yu4RwvvM3W4HmXWIvCbyIz3fjYbvUF+pYAneDHGaaic=
+
+Name: org/glassfish/hk2/utilities/AliasDescriptor.class
+SHA-256-Digest: lyPz9yBZBwn5odkjsBz4ETLvf3zpR8RICqP5JEnOruE=
+
+Name: org/glassfish/hk2/internal/PerThreadContext$PerContextThreadWrap
+ per.class
+SHA-256-Digest: rIatoYdqHBXgZD0LVcW7re2oY1SicbOZlIGzdAE93g0=
+
+Name: org/glassfish/hk2/api/JustInTimeInjectionResolver.class
+SHA-256-Digest: yVpAnGH3dlIhzKYJJA+Mdtjnk+ZIhVRZI6z+a5Nxcxc=
+
+Name: org/glassfish/hk2/api/PerLookup.class
+SHA-256-Digest: WjLDftOCT5/97Mlowe+qa/diaVEaN0HdmWx6/CVdTS4=
+
+Name: org/glassfish/hk2/api/InstanceLifecycleEvent.class
+SHA-256-Digest: rtcScqm4st+sJY93hQNTEnOy2Y/xMJiI+0W3LJ5SJ+Q=
+
+Name: org/glassfish/hk2/api/UseProxy.class
+SHA-256-Digest: btJCHo+atcRlVEH7dnl8nvSzoJifJ8SvW9PkGVJ7LuY=
+
+Name: org/glassfish/hk2/utilities/binding/ScopedBindingBuilder.class
+SHA-256-Digest: JmePp6iLYu5pKmgWx/p8UgA2t3xSysxtIhxyN+ySyyE=
+
+Name: org/glassfish/hk2/api/Populator.class
+SHA-256-Digest: YSr9rr19MbYghcsw/gNoFZ4PswyLodm6ks+YwD9MbVk=
+
+Name: org/glassfish/hk2/api/ErrorService.class
+SHA-256-Digest: OWTGhvSrZ9we/devGaxlewXIrzEvOGeruWpDUG6nHE8=
+
+Name: org/glassfish/hk2/internal/DescriptorBuilderImpl.class
+SHA-256-Digest: GJq0Gm1fw8I+5CQwlKmbhdNk4IGBEf4TyFhA+tIYIKQ=
+
+Name: org/glassfish/hk2/api/DynamicConfigurationService.class
+SHA-256-Digest: aWwLIjvcGV55G6qs6rVRk9yfS829M5OvC/isOGWo/Ik=
+
+Name: org/glassfish/hk2/api/Unqualified.class
+SHA-256-Digest: vW6sxkCQWkuJ8sQ/VqWT/5vmdYIB7ComgOqPa63MRZ8=
+
+Name: org/jvnet/hk2/annotations/Service.class
+SHA-256-Digest: xbgJfzfCqjSDrOyV3obgsF+7gaLRyB6ijSV/Is/00Xg=
+
+Name: org/glassfish/hk2/api/Unproxiable.class
+SHA-256-Digest: aLZhlrVEIGycs2EOGL5u9jAptfLehmgfqFosLr8S1w4=
+
+Name: org/glassfish/hk2/utilities/binding/AbstractBindingBuilder$Insta
+ nceBasedBindingBuilder.class
+SHA-256-Digest: hPnHJ7ACGNWOJpCOeqE1IMW09IGsFKtadlFtVX1cu2E=
+
+Name: org/glassfish/hk2/internal/InheritableThreadContext$1.class
+SHA-256-Digest: cmaHYPgkLEbQrWiykcDf5QIRP0GcAvEl3Xhzr+tuvHM=
+
+Name: org/glassfish/hk2/api/FactoryDescriptors.class
+SHA-256-Digest: QMEM5p0q1X/yNvF1NDgJLHGCgMCkzjAj+xUm9JXTihg=
+
+Name: org/glassfish/hk2/api/InstanceLifecycleListener.class
+SHA-256-Digest: zOvqEVZZLiKd9JFJbLByja0XhgKd8Lnl+5tbPDjKduY=
+
+Name: org/glassfish/hk2/utilities/ServiceLocatorUtilities$SingletonImp
+ l.class
+SHA-256-Digest: aMPRgF2I9EpqoghtBHxIAJnmOG3F4pKrmnX+iIyCUw0=
+
+Name: org/glassfish/hk2/internal/ImmediateHelper$ImmediateThread.class
+SHA-256-Digest: IpelAxIvfyJ41CrTJuOvyOeQRSJXhC60WMBPyuQrjRY=
+
+Name: org/glassfish/hk2/api/Operation.class
+SHA-256-Digest: 2BLGNvMr1/d3VTUxtFO3MSi5Q1aS5FzMC0p2W+OgnBw=
+
+Name: org/glassfish/hk2/utilities/BuilderHelper$4.class
+SHA-256-Digest: xJq027EDBYtOx3l5HLIBA7QdpAEletVpjZQYFWiMD/E=
+
+Name: org/glassfish/hk2/api/ImmediateController.class
+SHA-256-Digest: YttP2EneLCNphwsLFBfYV/1XTk+B5QaamlAaEggcYBw=
+
+Name: org/glassfish/hk2/api/HK2Loader.class
+SHA-256-Digest: OBSHsJU5tTflvLU28ZGtrAG5Vwy3y6kGUz7jahFdw24=
+
+Name: org/glassfish/hk2/api/Self.class
+SHA-256-Digest: t9lcOCtHAuz0v2rJthfo0oG+jNFehaOG2iJwRF4M9ZM=
+
+Name: org/glassfish/hk2/utilities/InheritableThreadScopeModule.class
+SHA-256-Digest: XbteTIJ2paYjyI1B7drhWJV64GL4lDJPBs4pe6v5pwQ=
+
+Name: org/glassfish/hk2/api/messaging/SubscribeTo.class
+SHA-256-Digest: AeQ5ls8jSchRNsusTght+XyoMZCqBKggiZ+za5cbpXY=
+
+Name: org/glassfish/hk2/internal/PerThreadContext$1.class
+SHA-256-Digest: mY2AvKBDhKydlYZ3zNA/cuQkdi7F/437734PM3/SYZA=
+
+Name: org/glassfish/hk2/utilities/EnableLookupExceptionsModule.class
+SHA-256-Digest: zwS7EcmaGgQcqsZT7a+crztTmSLC1bWKQLqAMl1mUJg=
+
+Name: org/glassfish/hk2/utilities/binding/AbstractBinder$2.class
+SHA-256-Digest: Is774h5kFOgBQCSzawQbxavyM17oEE/pqJOZAPV3WZU=
+
+Name: org/jvnet/hk2/annotations/InhabitantAnnotation.class
+SHA-256-Digest: YJJZ+cHTrHM3QEeNtxdQPVkTAGtMNDIbqo2lG+hdffY=
+
+Name: org/glassfish/hk2/internal/InheritableThreadContext$2.class
+SHA-256-Digest: k8wWG/enyp5PzY30a4WjA6hp4hXTIy/0d1rKQ6GKqRo=
+
+Name: org/glassfish/hk2/api/DescriptorVisibility.class
+SHA-256-Digest: iN1pQrA2h331N+wYFnxEckrqSICnATfi5kEEkn05XhI=
+
+Name: org/glassfish/hk2/api/AOPProxyCtl.class
+SHA-256-Digest: DZcxVpzxaGkfiQ6pdMOLTaZHGKtzKgKOCiJntCzDI60=
+
+Name: org/glassfish/hk2/internal/ActiveDescriptorBuilderImpl$BuiltActi
+ veDescriptor.class
+SHA-256-Digest: pJnFAWiQW41BncRKOWQqdrMrXfaUx4Ml7rI3lFjk9YE=
+
+Name: org/jvnet/hk2/annotations/Contract.class
+SHA-256-Digest: sUwMjiuXjoGB0BFJ+mdwZgQYOI5EW7kngT4qbEu24Iw=
+
+Name: org/glassfish/hk2/api/HK2RuntimeException.class
+SHA-256-Digest: pLnz1cWHQqnpn1JHFv9zj9adUSyaclEk06Hr7x+Dm6U=
+
+Name: org/glassfish/hk2/utilities/ImmediateErrorHandler.class
+SHA-256-Digest: fatnL8mAfZoL4drL/zx8W0/3EBBacz0ut413IxW0N7g=
+
+Name: org/glassfish/hk2/internal/ImmediateHelper.class
+SHA-256-Digest: HVISpdAAvq+jx+QJkQuAsZHz365qqZjoVXmFah1HbDs=
+
+Name: org/glassfish/hk2/api/MultiException.class
+SHA-256-Digest: 0J/ZP1KN7W36ox84z9BoqzOeVpmsTgQZkSzuxx2VtKI=
+
+Name: org/glassfish/hk2/api/Descriptor.class
+SHA-256-Digest: L0vm4D5APD8+mdjeFHR9Qg0G9a7jUkpWQekRhqq62b4=
+
+Name: org/glassfish/hk2/api/ImmediateController$ImmediateServiceState.
+ class
+SHA-256-Digest: QaJD8Bxmb18CkZaQG9/nisDviFx2pg2j7Wc5e3GJtZc=
+
+Name: org/glassfish/hk2/internal/ServiceLocatorFactoryImpl$1.class
+SHA-256-Digest: bffH5r7EwqB+8HpJ56ZV8SOAD4KXOgDgpwaxHnKZPcs=
+
+Name: org/glassfish/hk2/api/IndexedFilter.class
+SHA-256-Digest: gRKXohWcCS0ssqAUHJZZgq1ydFBDsfZKaLzKCz7cXs4=
+
+Name: org/glassfish/hk2/api/UnsatisfiedDependencyException.class
+SHA-256-Digest: J4eAXbjPsBCSq54vw5Ekrq09a0C61yJELQaXKCCyVtk=
+
+Name: org/glassfish/hk2/internal/ActiveDescriptorBuilderImpl$1.class
+SHA-256-Digest: u7sQYoNiAS3xR4MOVyyvlzouKP0ZluLSqOhtfJmybP0=
+
+Name: org/glassfish/hk2/api/IterableProvider.class
+SHA-256-Digest: xQI37BpcmdFuzkn6krBBB1Km3i0YrIkPdQyJarYFEwA=
+
+Name: org/glassfish/hk2/api/DescriptorFileFinderInformation.class
+SHA-256-Digest: RDL//X0u6HbBzb6jDIEreKAV5+JuKRHgGqeh3gn9wvQ=
+
+Name: org/glassfish/hk2/utilities/binding/ServiceBindingBuilder.class
+SHA-256-Digest: kkyMtN4IwNiBJvw7rWcGfKiWqNWx7UtLdt7UP1zvLso=
+
+Name: org/glassfish/hk2/internal/HandleAndService.class
+SHA-256-Digest: SwAtxPQmB+70l/vDfOVleHUsBh4xOMbslfsT1vwnjTU=
+
+Name: org/glassfish/hk2/api/Rank.class
+SHA-256-Digest: KJEfv5I9vpkonPZl4GP+VAgvRqT36OjFeOfWZCiWiig=
+
+Name: org/glassfish/hk2/utilities/ContextualInput.class
+SHA-256-Digest: XruVuNZAOiKonrce+qzHuCHw1ZwI2tUsjvDmYU+8NYY=
+
+Name: org/glassfish/hk2/utilities/DescriptorBuilder.class
+SHA-256-Digest: j4rEpzeaecvxTRKzsyjgaOzRKQd1nBnWSAmb++iq388=
+
+Name: org/glassfish/hk2/api/SingleCache.class
+SHA-256-Digest: A0CZWdBmKhCSJ2HWIbyPHjgrtAPcHvbEUDDs5VWAlBA=
+
+Name: org/glassfish/hk2/utilities/binding/AbstractBindingBuilder$Class
+ BasedBindingBuilder.class
+SHA-256-Digest: Y7VhZyeVpi+hgu4GGXCukYqc5eLf5QToFpfhQZGbPuY=
+
+Name: org/glassfish/hk2/api/InstantiationData.class
+SHA-256-Digest: zm6HHwS55KtPl8bE5bd9/lDUB6V7DMKpeHCpgz0DPXw=
+
+Name: org/glassfish/hk2/api/InheritableThread.class
+SHA-256-Digest: Lkj8M4fAqsdOmX/74YmVEKZJw8LyrtsCY9GSn8mCl6Y=
+
+Name: org/glassfish/hk2/utilities/BuilderHelper$3.class
+SHA-256-Digest: vtNA54UTME5E5BxeJMy3aYPcEK2QONNk5wRhCE8saHw=
+
+Name: org/glassfish/hk2/utilities/ServiceLocatorUtilities$ImmediateImp
+ l.class
+SHA-256-Digest: EXsg/PuewT0g78BI+Tn9Uxc30kZPivPXYSU2t7683Dw=
+
+Name: org/glassfish/hk2/utilities/ServiceLocatorUtilities$AliasFilter.
+ class
+SHA-256-Digest: NHopAb1VtuF71Job9E1mIE/KWa+DUvwxi9AGMiqWV8s=
+
+Name: org/glassfish/hk2/utilities/ServiceLocatorUtilities$2.class
+SHA-256-Digest: We6dV25XqsYyWEePSKrKHzYsOitRhv2U+O5Ekwss1rA=
+
+Name: org/glassfish/hk2/api/ProxyForSameScope.class
+SHA-256-Digest: GaeXrYR56Ilgw8S3es1qUhQTa/iJrAj72Mrk6Sm/5E8=
+
+Name: org/glassfish/hk2/api/Factory.class
+SHA-256-Digest: bYZJ5zT1t6SWHfhRjJvMHAKHbmKy+HSFmj1p3AyWirI=
+
+Name: org/jvnet/hk2/annotations/Optional.class
+SHA-256-Digest: iin0FEL5dNvtbFqF3l6/6B98kVHgRqG904PB+LTHVSw=
+
+Name: org/glassfish/hk2/api/Visibility.class
+SHA-256-Digest: z2fGU6gCcTMeEixqazU3hKj5N3w2oF2DenZ6zZl9rbU=
+
+Name: org/glassfish/hk2/api/Injectee.class
+SHA-256-Digest: EsGXGnqW9cuFnPAGOVzva9SpztVaFAmc/3XbFyhGur0=
+
+Name: org/glassfish/hk2/utilities/ImmediateContext.class
+SHA-256-Digest: C5dxjS66euStxbPMAyIU4zDuWQlkdOvp3ZP7rdjXF/8=
+
+Name: org/glassfish/hk2/api/DuplicateServiceException.class
+SHA-256-Digest: 3tt14f685gcyDTpPBFHR+ugRq99GDoCiboKNChbKd9I=
+
+Name: org/glassfish/hk2/utilities/ServiceLocatorUtilities$PerThreadImp
+ l.class
+SHA-256-Digest: SFLlxzR7P0lblqnPq1Hm2B24os7irywjBGISd695qMs=
+
+Name: org/glassfish/hk2/utilities/PerThreadScopeModule.class
+SHA-256-Digest: IuU78W99ydRQUNBUrX/e5B3cFDR7QwL03Xd4IL9IAjw=
+
+Name: org/glassfish/hk2/internal/StarFilter.class
+SHA-256-Digest: jvPro1TT5TFExDG/9+7VvW0kuStFEt4i520mroh0+W0=
+
+Name: org/glassfish/hk2/utilities/BuilderHelper$2.class
+SHA-256-Digest: 9eRmeNBfZQuaRmXA4KH38JxhSiiOVAerRqeCZjbqaeA=
+
+Name: org/glassfish/hk2/utilities/NamedImpl.class
+SHA-256-Digest: 1EvrkPR/oPN+7J70jVbzdy4zFyx29XJ5m/AOhTExgDI=
+
+Name: org/glassfish/hk2/api/AnnotationLiteral$2.class
+SHA-256-Digest: 2/giMXF0uxA1nxbC47qwCgYR1aQGOcLWUmRDYeFyhVE=
+
+Name: org/glassfish/hk2/internal/ConstantActiveDescriptor.class
+SHA-256-Digest: 4rFedlcYKNFtsGIjnhP5l4tOSPS2PlIPcPB+aDTNLUA=
+
+Name: org/glassfish/hk2/utilities/binding/ScopedNamedBindingBuilder.cl
+ ass
+SHA-256-Digest: ynaagcv7iJDWCeUTzf5zsZd1W3wetIBxZKARFafGzd8=
+
+Name: org/glassfish/hk2/api/messaging/MessageReceiver.class
+SHA-256-Digest: 9xJrV5c6to2CSwPY4tafu1XjYnYTCAmQyWRPp7sp0n8=
+
+Name: org/glassfish/hk2/internal/ActiveDescriptorBuilderImpl.class
+SHA-256-Digest: srQ+l+hbOgDds2gaREJW34roHVUbdg96LjmOO8RYN3U=
+
+Name: org/glassfish/hk2/api/PostConstruct.class
+SHA-256-Digest: 8JgojfDEll60acrJcQIeD43rnITdOO4M7T1G6a6DKIQ=
+
+Name: org/glassfish/hk2/utilities/DuplicatePostProcessor$1.class
+SHA-256-Digest: Ek0/leGhOsFJXEWtOCSzZbWzWm4k3tHQJaPwY9MSM1M=
+
+Name: org/glassfish/hk2/api/InterceptionService.class
+SHA-256-Digest: Vxth88GkkXtmn4XnDb2nnzUQ263CJ32+GLXy1xHDEAU=
+
+Name: org/glassfish/hk2/api/InstantiationService.class
+SHA-256-Digest: cqUvU/oAMdhRsN8mmPPlPBO2ZwVmLP2c8mWOluCiig0=
+
+Name: org/glassfish/hk2/utilities/binding/AbstractBindingBuilder$Facto
+ ryInstanceBasedBindingBuilder.class
+SHA-256-Digest: v5nPzu8iVQ3/z1qYkwC6j17lhlDjhrgskQeZF5SyGVE=
+
+Name: org/glassfish/hk2/api/InstanceLifecycleEventType.class
+SHA-256-Digest: rQ8WmbAcdSvQ5IBi7147QQr2tmjPgqt7avxFsaxZWC8=
+
+Name: about.html
+SHA-256-Digest: QZO20kKBmy8Km7RCM/1PJqQzD9MfBwZOcBmanttPSW4=
+
+Name: org/jvnet/hk2/annotations/ContractsProvided.class
+SHA-256-Digest: 4GiPgvmqHcrBeTL9kpE3d04bxiArSwJsjnaoIzVffGM=
+
+Name: org/glassfish/hk2/api/Metadata.class
+SHA-256-Digest: kthgfPGxKRkYlEn4DtTB3XO10i5Tj2vRZQAYOmtt+g0=
+
+Name: org/glassfish/hk2/utilities/BuilderHelper$1.class
+SHA-256-Digest: LV5oBvxPiN1/snrG58BsckvnbUT62NgRLZNCWXXGqIM=
+
+Name: org/glassfish/hk2/api/ServiceLocatorState.class
+SHA-256-Digest: OJz4OeZL/SBNiWZT7NvPx225F/ke/rH5EKX/xxJB8Lk=
+
+Name: org/glassfish/hk2/api/messaging/Topic.class
+SHA-256-Digest: lobvQaIRMQAw5PBzRgFQBnIs4VzXO7ZHGiQIuTrUR3Y=
+
+Name: org/glassfish/hk2/internal/ServiceLocatorFactoryImpl$2.class
+SHA-256-Digest: X4FKOLXMz1MLputtIWhlIb/2s2hbnLBoAHAF1vVBbDU=
+
+Name: org/glassfish/hk2/utilities/ClassLoaderPostProcessor.class
+SHA-256-Digest: 4Ovw4bzULc1IpDKD9e6w1XHU4ZZlpECe+wB26A0QTfw=
+
+Name: org/glassfish/hk2/api/messaging/TopicDistributionService.class
+SHA-256-Digest: 6mgni+LCjDtIQ7N8fnYsoT2lyOMFjxtL1z97yvPgIdI=
+
+Name: org/glassfish/hk2/api/ServiceLocator.class
+SHA-256-Digest: 0lcCDCedO0MrJnXt8ioODTP9AkilyP0FmBQMurGnSv0=
+
+Name: org/glassfish/hk2/api/ContractIndicator.class
+SHA-256-Digest: zsSmd4J5wCIsjQKsNWujHwzeWqh/a7EaiHMoxZLkGVg=
+
+Name: org/glassfish/hk2/api/ErrorType.class
+SHA-256-Digest: miG7e7xK3I07vUlktNLpnUb58R//4iXEuYHbMhquOJc=
+
+Name: org/glassfish/hk2/internal/ServiceLocatorFactoryImpl.class
+SHA-256-Digest: QKrdDHuJinFlKp57KBfKwumpO4dK9ka7QsZkctaWkX0=
+
+Name: org/glassfish/hk2/api/DescriptorType.class
+SHA-256-Digest: 4jUjxx7GxVQD2jElVU1nAhN8SLfPuWs6bvspQO/FV68=
+
+Name: org/glassfish/hk2/internal/SpecificFilterImpl.class
+SHA-256-Digest: UUlI6RuQ/9Oco7TBvZ08FJ4MC/64Xh41YrLDsk/LtRI=
+
+Name: org/glassfish/hk2/utilities/ServiceLocatorUtilities$PerLookupImp
+ l.class
+SHA-256-Digest: iTGMuDLBp/L0nfOw8DCwH1wPaZneLH7HbeuAoXLIhVE=
+
+Name: org/glassfish/hk2/utilities/Stub.class
+SHA-256-Digest: VVzD8v0HI4MBQ1DH7JZd54o3V51hhkwJJX+kA2aIjOI=
+
+Name: org/glassfish/hk2/utilities/binding/AbstractBindingBuilder.class
+SHA-256-Digest: Rk/u9VMIZzs6EqwF30eIpTvEiB3+5vQFvTXj7m8hmUU=
+
+Name: org/glassfish/hk2/api/HK2Invocation.class
+SHA-256-Digest: +EN2CPTBAQx2AaRqORehHRzsYwxPSCHMI11kSJASN+U=
+
+Name: about_files/COMMON_DEVELOPMENT_AND_DISTRIBUTION_LICENSE.html
+SHA-256-Digest: RpLGLLt4tjsK1wHgR8X1f8Ad1f5mJqKg6v5aQ84JOso=
+
+Name: org/glassfish/hk2/utilities/OrFilter.class
+SHA-256-Digest: rsMOwGbBoXtNtDXql3d0illozUfzqjZekFnawSiq7w8=
+
+Name: org/glassfish/hk2/internal/PerThreadContext.class
+SHA-256-Digest: G5cLTfiVml5+y++1RS9iH11BvqJAqr5P5YySOGaGfdo=
+
+Name: org/glassfish/hk2/extension/ServiceLocatorGenerator.class
+SHA-256-Digest: jbmVqfxLM5/1IdNwBbsvBVjgn9CKvZwMc71bsgsVSp4=
+
+Name: org/glassfish/hk2/api/ServiceHandle.class
+SHA-256-Digest: fMZ53nOsDR8ToXx9mrOcDbjwwJ6wSIIN7pkuTD7EWV8=
+
+Name: org/glassfish/hk2/internal/IndexedFilterImpl.class
+SHA-256-Digest: k3zk/qnVOOqniB9dYyv9dhFTaGPt6pl6k7L4xCDMuCQ=
+
+Name: org/glassfish/hk2/utilities/binding/NamedBindingBuilder.class
+SHA-256-Digest: tEiwS+628zDuhwK0LH8czCDXStxIFZNFYscuPPK4nTU=
+
+Name: org/glassfish/hk2/utilities/ImmediateScopeModule.class
+SHA-256-Digest: 9jsXy9OC4cJhPHVaYgRqEGeRV8astb+UQF/tPdRGJ+w=
+

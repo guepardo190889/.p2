@@ -1,0 +1,2100 @@
+Manifest-Version: 1.0
+Bundle-Description: A library for invoking native functions from java
+Automatic-Module-Name: com.github.jnr.ffi
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: com.github.jnr.ffi
+Archiver-Version: Plexus Archiver
+Built-By: genie.orbit
+Bundle-ManifestVersion: 2
+Bundle-Vendor: %bundleVendor
+Import-Package: com.kenai.jffi;version="1.2.15",jnr.x86asm;version="1.
+ 0.2",org.objectweb.asm;version="5.0.1",jnr.ffi;resolution:=optional;v
+ ersion="[2.1,3)",jnr.ffi.annotations;resolution:=optional;version="[2
+ .1,3)",jnr.ffi.byref;resolution:=optional;version="[2.1,3)",jnr.ffi.m
+ apper;resolution:=optional;version="[2.1,3)",jnr.ffi.provider;resolut
+ ion:=optional;version="[2.1,3)",jnr.ffi.provider.converters;resolutio
+ n:=optional;version="[2.1,3)",jnr.ffi.provider.jffi;resolution:=optio
+ nal;version="[2.1,3)",jnr.ffi.types;resolution:=optional;version="[2.
+ 1,3)",jnr.ffi.util;resolution:=optional;version="[2.1,3)",jnr.ffi.uti
+ l.ref;resolution:=optional;version="[2.1,3)",org.objectweb.asm.util;v
+ ersion="5.0.1"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Originally-Created-By: Apache Maven Bundle Plugin
+Export-Package: jnr.ffi.util.ref.internal;x-internal:=true;version="2.
+ 1.4",jnr.ffi;version="2.1.4";uses:="jnr.ffi.mapper,jnr.ffi.provider,j
+ nr.ffi.util",jnr.ffi.annotations;version="2.1.4";uses:="jnr.ffi",jnr.
+ ffi.byref;version="2.1.4";uses:="jnr.ffi",jnr.ffi.mapper;version="2.1
+ .4";uses:="jnr.ffi",jnr.ffi.provider;version="2.1.4";uses:="jnr.ffi,j
+ nr.ffi.mapper",jnr.ffi.provider.converters;version="2.1.4";uses:="jnr
+ .ffi,jnr.ffi.annotations,jnr.ffi.byref,jnr.ffi.mapper",jnr.ffi.provid
+ er.jffi;version="2.1.4";uses:="com.kenai.jffi,jnr.ffi,jnr.ffi.mapper,
+ jnr.ffi.provider,jnr.ffi.types,org.objectweb.asm",jnr.ffi.provider.jf
+ fi.platform.aarch64.linux;version="2.1.4";uses:="jnr.ffi",jnr.ffi.pro
+ vider.jffi.platform.arm.linux;version="2.1.4";uses:="jnr.ffi",jnr.ffi
+ .provider.jffi.platform.i386.darwin;version="2.1.4";uses:="jnr.ffi",j
+ nr.ffi.provider.jffi.platform.i386.freebsd;version="2.1.4";uses:="jnr
+ .ffi",jnr.ffi.provider.jffi.platform.i386.linux;version="2.1.4";uses:
+ ="jnr.ffi",jnr.ffi.provider.jffi.platform.i386.openbsd;version="2.1.4
+ ";uses:="jnr.ffi",jnr.ffi.provider.jffi.platform.i386.solaris;version
+ ="2.1.4";uses:="jnr.ffi",jnr.ffi.provider.jffi.platform.i386.windows;
+ version="2.1.4";uses:="jnr.ffi",jnr.ffi.provider.jffi.platform.mips.l
+ inux;version="2.1.4";uses:="jnr.ffi",jnr.ffi.provider.jffi.platform.m
+ ipsel.linux;version="2.1.4";uses:="jnr.ffi",jnr.ffi.provider.jffi.pla
+ tform.ppc.aix;version="2.1.4";uses:="jnr.ffi",jnr.ffi.provider.jffi.p
+ latform.ppc.darwin;version="2.1.4";uses:="jnr.ffi",jnr.ffi.provider.j
+ ffi.platform.ppc.linux;version="2.1.4";uses:="jnr.ffi",jnr.ffi.provid
+ er.jffi.platform.ppc64.linux;version="2.1.4";uses:="jnr.ffi",jnr.ffi.
+ provider.jffi.platform.ppc64le.linux;version="2.1.4";uses:="jnr.ffi",
+ jnr.ffi.provider.jffi.platform.s390.linux;version="2.1.4";uses:="jnr.
+ ffi",jnr.ffi.provider.jffi.platform.s390x.linux;version="2.1.4";uses:
+ ="jnr.ffi",jnr.ffi.provider.jffi.platform.sparc.solaris;version="2.1.
+ 4";uses:="jnr.ffi",jnr.ffi.provider.jffi.platform.sparcv9.solaris;ver
+ sion="2.1.4";uses:="jnr.ffi",jnr.ffi.provider.jffi.platform.x86_64.da
+ rwin;version="2.1.4";uses:="jnr.ffi",jnr.ffi.provider.jffi.platform.x
+ 86_64.freebsd;version="2.1.4";uses:="jnr.ffi",jnr.ffi.provider.jffi.p
+ latform.x86_64.linux;version="2.1.4";uses:="jnr.ffi",jnr.ffi.provider
+ .jffi.platform.x86_64.openbsd;version="2.1.4";uses:="jnr.ffi",jnr.ffi
+ .provider.jffi.platform.x86_64.solaris;version="2.1.4";uses:="jnr.ffi
+ ",jnr.ffi.provider.jffi.platform.x86_64.windows;version="2.1.4";uses:
+ ="jnr.ffi",jnr.ffi.types;version="2.1.4";uses:="jnr.ffi,jnr.ffi.annot
+ ations",jnr.ffi.util;version="2.1.4";uses:="jnr.ffi.mapper",jnr.ffi.u
+ til.ref;version="2.1.4"
+Bundle-Name: %bundleName
+Bundle-Version: 2.1.4.v20180207-1730
+Created-By: Eclipse Bundle Recipe Maven Plug-in
+Build-Jdk: 1.8.0_162
+
+Name: jnr/ffi/provider/InterfaceScanner$2.class
+SHA-256-Digest: iopXoqrqxZJDZczUQ+2k6Q4yWKn6beDp1ocmBwOuEVM=
+
+Name: jnr/ffi/provider/jffi/BufferParameterStrategy$1.class
+SHA-256-Digest: r/Wq7wI5eUUr5aRqfNho4QO59pZlH57WEUyuhe/Pf3U=
+
+Name: jnr/ffi/provider/jffi/HeapBufferParameterStrategy.class
+SHA-256-Digest: kl/PARs8yhTudjDhYiM+OYDpZk2D9OQEOnbyJ8ykVW4=
+
+Name: jnr/ffi/Struct$AsciiString.class
+SHA-256-Digest: 9uIYco4V++USVjcOGCvfzuRmLl2Onc0xFAfYO8sTgXI=
+
+Name: jnr/ffi/provider/converters/NativeLong64ArrayParameterConverter$
+ Out.class
+SHA-256-Digest: b6+nZc9300hXD5JpHOM3KIEY4veJeQxTUR+HtWCDdfs=
+
+Name: jnr/ffi/types/nlink_t.class
+SHA-256-Digest: QLOBziSPQ1Mh96oXtAX9JoRnfmOeJmvSqKNe6OXBUEY=
+
+Name: jnr/ffi/Struct$blkcnt_t.class
+SHA-256-Digest: t07mHLI3jcKfuthSPANC5XP2VfUUKCSB2ofZ6JFAwKU=
+
+Name: jnr/ffi/provider/jffi/PrimitiveArrayParameterStrategy$7.class
+SHA-256-Digest: PjRXgsML0qgVCAuRW2sz8z2qwNdiCURJ42TlqnYZeHA=
+
+Name: jnr/ffi/annotations/Synchronized.class
+SHA-256-Digest: /iwbdoGmyxB2cckBz4PXKoX/V9uST9fviIQIfCz5WwQ=
+
+Name: jnr/ffi/Struct$int32_t.class
+SHA-256-Digest: uBGufqRZP1dkcOThG7EE3R8xB64XZgNYOYmF/spvOQo=
+
+Name: jnr/ffi/provider/jffi/ParameterStrategy.class
+SHA-256-Digest: OYvnb62SoDWhN68KkJOr1vxbA+D26Tt0rnLyoilPfzs=
+
+Name: jnr/ffi/StructLayout$id_t.class
+SHA-256-Digest: OHJcuUaEC6x3m48MvtvL/HiiyVz3APhJfm0tjxwFc1E=
+
+Name: jnr/ffi/Struct$IntegerAlias.class
+SHA-256-Digest: Z7bQ9JvjM3HZLELa3MRHb4SDT53G0QIW8LnzWAhYJuw=
+
+Name: jnr/ffi/Struct$UTF8StringRef.class
+SHA-256-Digest: IjqlWOIJyBaLCq9Wg2WcyQQQCo8gZfXOrCfIY3QJxUg=
+
+Name: jnr/ffi/util/AnnotationProxy.class
+SHA-256-Digest: HuCn0cNvFCmyS88VqJK4XDcyE7hHQWThbrlq6aTrvEA=
+
+Name: jnr/ffi/Struct$DWORD.class
+SHA-256-Digest: kmGDHuzld5rW3sDVlW3f8kTK9zfdnHGzEsYxxz8ZvEU=
+
+Name: jnr/ffi/mapper/CompositeFunctionMapper.class
+SHA-256-Digest: gCqI8+grXk0NeL3nknWV3nD5P2WEYiD+UuTbKP6owQ4=
+
+Name: jnr/ffi/Struct$dev_t.class
+SHA-256-Digest: D/sDugtTScIFFpnnKCTCe3nUE1q+opIDK1CyLSMOoUc=
+
+Name: jnr/ffi/provider/jffi/NativeFinalizer$SingletonHolder.class
+SHA-256-Digest: 0G+PqQsGgXpvkGVIJr3hUGo4K7406VbF7zZXbERozBY=
+
+Name: jnr/ffi/provider/jffi/SimpleNativeContext.class
+SHA-256-Digest: sggT7kyeoYgIaGrBAl3r47GyXL4uAgNizvfZM79kOm0=
+
+Name: jnr/ffi/provider/BadType.class
+SHA-256-Digest: mZgUHwzw9iAwMr9vh70H8FgKlEcmk/BF4ug04t/lbHQ=
+
+Name: jnr/ffi/provider/jffi/Provider.class
+SHA-256-Digest: 2tP/dbgmcKTCQ8cAw8sqVHz5mggrshf/AZL4nKG+OT4=
+
+Name: jnr/ffi/provider/jffi/FastIntMethodGenerator.class
+SHA-256-Digest: fdw/PTLpBUXiFn9VNboYbwp3waV6aIk7voYJl77+yew=
+
+Name: jnr/ffi/byref/FloatByReference.class
+SHA-256-Digest: 2CoOlrFdDjTHtCmeCN44uRqqCRdFUwi4OnF3Yb5q7tQ=
+
+Name: jnr/ffi/provider/jffi/platform/s390/linux/TypeAliases.class
+SHA-256-Digest: FMwvqRWv7FEmAzO67WdLRUilFcvUG1Ma7CDRknanLqY=
+
+Name: jnr/ffi/Struct$Padding.class
+SHA-256-Digest: stXTXd7gJ4qT9IrVq5jThqU5WiLqPdQwos0lCv9ud3I=
+
+Name: jnr/ffi/byref/DoubleByReference.class
+SHA-256-Digest: M6LyDuQJ8Yk2rtsACoX6HDvpIRFpuTVhlvin3qbSh4s=
+
+Name: jnr/ffi/types/size_t.class
+SHA-256-Digest: 4qmljADgH9QfI+ASgnyTaW2CGkGDODW3MrnrbzCIKQg=
+
+Name: jnr/ffi/provider/IdentityFunctionMapper$SingletonHolder.class
+SHA-256-Digest: 74Trdiv14bRFHpC+wkkt2RUBQjh5DzagqehoSUXImys=
+
+Name: jnr/ffi/provider/jffi/NativeRuntime$1.class
+SHA-256-Digest: WHEX+8KcXf/L9EOBFBPJD9g8v1FHBA5WcJ0mC0FDhLo=
+
+Name: jnr/ffi/provider/jffi/platform/i386/darwin/TypeAliases.class
+SHA-256-Digest: OsfSy9CuIpbGx55gMzzfASCZxuvAu0e1tv6x9kCWByA=
+
+Name: jnr/ffi/Struct$AbstractBoolean.class
+SHA-256-Digest: R1HIgPIPreOILmvJHKFpHcOVkMeUtA50OstA8qMRTXg=
+
+Name: jnr/ffi/mapper/DataConverter.class
+SHA-256-Digest: FfFVAACUpIDa61C+6Ooh/WPIU9eiHqinTY7LOOJJ65k=
+
+Name: jnr/ffi/provider/converters/StructArrayParameterConverter$Out.cl
+ ass
+SHA-256-Digest: 6UNnHO3Iajw2/XvFzDvz+bC4kIif4G0Qs1N0ttE4azM=
+
+Name: jnr/ffi/provider/jffi/MemoryUtil.class
+SHA-256-Digest: wWX+kOY22OPvSf296wTb0qvoRFwlBawnrWo61LUnQ9U=
+
+Name: jnr/ffi/mapper/DefaultTypeMapper.class
+SHA-256-Digest: vCC4BJ5VkN2tQ1c8R2XYFWW11EcKUBSyaVw+1WNsHNQ=
+
+Name: jnr/ffi/provider/IdentityFunctionMapper.class
+SHA-256-Digest: YgeekaLeIKaqPlA6/MQl1s3dP2tLZhL9HuqPA93c8sY=
+
+Name: jnr/ffi/Platform$CPU.class
+SHA-256-Digest: /asHvY/F7R0+Sub/ORJjKA+19xiE1eil3CX+l03oS/8=
+
+Name: jnr/ffi/provider/jffi/PrimitiveArrayParameterStrategy$2.class
+SHA-256-Digest: V/g1sAd768eVAFkZhoLhrlk+/kcdcKaa9047zvNrIz4=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$IntInvoker.class
+SHA-256-Digest: qUmbfI+HcSbh/ALm2F4uypJilg8VHkOwfenGgde+G+g=
+
+Name: jnr/ffi/provider/converters/NativeLong64ArrayParameterConverter$
+ 1.class
+SHA-256-Digest: kHF8pqJVo4o7uv34hSTfn7cimd0QjcsHBhefixJ827k=
+
+Name: jnr/ffi/provider/AbstractArrayMemoryIO$ArrayIO.class
+SHA-256-Digest: BjSiJglU6C754eN7cupd/WXi4GW5XluCODAVD0OFEX0=
+
+Name: jnr/ffi/types/socklen_t.class
+SHA-256-Digest: ZxxVUdLAtSCPHWET4RG1wXHld094LuMhcu3g/xvx/cU=
+
+Name: jnr/ffi/types/rlim_t.class
+SHA-256-Digest: iE89vIKuzP4GW6Z4Q1Zm1qZY3lgx3vl8lv4s+j6Yxm8=
+
+Name: jnr/ffi/provider/jffi/BufferMethodGenerator$1.class
+SHA-256-Digest: pbkZ/YhxLLyIImHOmDvHmBYo0gZ2zFSVsPE7zLasfc0=
+
+Name: jnr/ffi/provider/jffi/SymbolNotFoundError.class
+SHA-256-Digest: AEyJ3hp05gbbZc7N4BMrMpoKkEvBGX0EjNqyGS/VgsI=
+
+Name: jnr/ffi/provider/jffi/InvokerUtil.class
+SHA-256-Digest: Ts3SfQcIKd+KNpwjQDn9Wz7sy/pGhTeMa4uBdrHiung=
+
+Name: jnr/ffi/util/ref/FinalizableReference.class
+SHA-256-Digest: yFHXLRyryNA7ytbH5kOhxDLWFNbkYxHWKjsahA9pKDc=
+
+Name: jnr/ffi/mapper/MethodResultContext.class
+SHA-256-Digest: kBhyD2bo3p/DbUZW7Xe7ewlSVYqb7P6EYO/cfvD0dps=
+
+Name: jnr/ffi/Platform$Supported.class
+SHA-256-Digest: jnSfVT2+J0bIuALl0xIgQlP99r3lwHjjxprPKfCBPRI=
+
+Name: jnr/ffi/mapper/Util.class
+SHA-256-Digest: xEdxhmkifRoCdKgW2Skp2UiYuZZC4qsrnxWsMK063cI=
+
+Name: jnr/ffi/Struct$int64_t.class
+SHA-256-Digest: lD3OX2E8nRvdu+Z7lzHmaS3lQu64YLK3Yk6k8vn/Hc0=
+
+Name: jnr/ffi/provider/converters/BoxedShortArrayParameterConverter.cl
+ ass
+SHA-256-Digest: fiD7WFdbdaU0SIdDVXDL3hpUKdcn07kdThUqFysUzV8=
+
+Name: jnr/ffi/util/ref/FinalizableSoftReference.class
+SHA-256-Digest: 0hpy50Om8WoGHysrPpIfJG0wERI3bdL+JPf3bGwVisk=
+
+Name: jnr/ffi/Library.class
+SHA-256-Digest: gER3AYg1JuAY+g4eIRn1tMYDZUVNn9NPDtT9WcefJEc=
+
+Name: jnr/ffi/provider/jffi/ReflectionVariableAccessorGenerator$Int64P
+ ointerOp.class
+SHA-256-Digest: Y/ELH9DGeshhhULaQb3UAVmPj9MFtMopFn9PHuh0eLo=
+
+Name: jnr/ffi/provider/converters/BoxedByteArrayParameterConverter$Out
+ .class
+SHA-256-Digest: OtDhD5j3H66pl0pyHNsOTlhN3WqvBNpwK1h42LkqIzs=
+
+Name: jnr/ffi/provider/jffi/InvokerTypeMapper.class
+SHA-256-Digest: NsT4+46ZfcomlmEXUVv3CxKQvnErX289TZyWr2HNe+c=
+
+Name: jnr/ffi/provider/jffi/ReflectionVariableAccessorGenerator$1.clas
+ s
+SHA-256-Digest: DOcHuh8A2yXgx2xGV5Fr9xjbzuCgRsAsVN5ME8rYAWE=
+
+Name: jnr/ffi/StructLayout$Offset.class
+SHA-256-Digest: fL8uZplnsauLP30zLbuT1a015HIRfX5osMIbVUFnzFw=
+
+Name: jnr/ffi/provider/jffi/NoX86.class
+SHA-256-Digest: 81JcGNCruPHzbFQPIcqS3lT7CaV+1bAed6RSQSaW7CY=
+
+Name: jnr/ffi/NativeLong.class
+SHA-256-Digest: kF+6nKGyM6Ortt7h0xEKX5HO5Cnt1D5o00FcplhsGTg=
+
+Name: jnr/ffi/types/uintptr_t.class
+SHA-256-Digest: l/X+wjFEY09JiYqjhexZVRAjvKD4w3xqVB+CC7zwnHo=
+
+Name: jnr/ffi/Struct$Boolean.class
+SHA-256-Digest: 9RRjV8D2LqWpuMJexZr/FrI/jnvNcIIhnk6cyhxA/FI=
+
+Name: jnr/ffi/util/EnumMapper$StaticDataHolder.class
+SHA-256-Digest: wTZwmFwiLxPJNdE4HPvtRjATndAKUuofq6bI/EeN75g=
+
+Name: jnr/ffi/types/int16_t.class
+SHA-256-Digest: 6PoSGNFVpRDo9qHOHjhUbJ9g5/yMQY9FI2l+epz4TKo=
+
+Name: jnr/ffi/StructLayout$Enum8.class
+SHA-256-Digest: CmRv+uLL0QlwB0f8tc5Ut6v0s0s4ozLD9ibaNtybYNs=
+
+Name: jnr/ffi/Struct$in_port_t.class
+SHA-256-Digest: fQYJWfmQByqrTfpMZxkT/3oZh1wLqLx71kHczKiuSQ8=
+
+Name: jnr/ffi/provider/jffi/TransientNativeMemory.class
+SHA-256-Digest: umvAOqs9Yj+NAoCWo6Z9Jsj7q90GzaY/kimocUt6U1E=
+
+Name: jnr/ffi/Struct$fsfilcnt_t.class
+SHA-256-Digest: 47OMmEG01icfyhwUprA2Hq0qQ169N0hJ8xPN2sg/qp8=
+
+Name: jnr/ffi/StructLayout$gid_t.class
+SHA-256-Digest: AvnI7yJspuqV/AEoue7mGa9IV8i/ySt3eZMWTTLZd/4=
+
+Name: jnr/ffi/StructLayout$ssize_t.class
+SHA-256-Digest: pZs/IDq827PEQIYEeiS/jHiMGq62bEV+jMula4N5BM0=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$PointerInvoker.class
+SHA-256-Digest: 4QRBxoZdJwLqzb+HMts5DYFZ2BmFEI3OdWSPuYvHl24=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$LongResultConverter.
+ class
+SHA-256-Digest: hFVyXjn/0IdxA0zyxXaBe50fCM3h+3kugJQEe2hMULc=
+
+Name: jnr/ffi/provider/jffi/AnnotationTypeMapper$ReflectionFromNativeC
+ onverter.class
+SHA-256-Digest: LoritTO6xrGdZF6dH53/RmeM+MKedxyvaaWIPmCTHvc=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$ResultConverter.clas
+ s
+SHA-256-Digest: XzpCe06TC+8hC8jO7pQHtWUW1aXnu/6cQsGStNesVpo=
+
+Name: jnr/ffi/Struct$gid_t.class
+SHA-256-Digest: JNoWLoIbXNe+Har4dqc4Edllr8L6e/L5asxKvwFoCBM=
+
+Name: jnr/ffi/mapper/TypeMapper.class
+SHA-256-Digest: +qr+FhH0S7quYyzOE59BIRvZwXvveRBkWn/SRdfdZrE=
+
+Name: jnr/ffi/Struct$Enum8.class
+SHA-256-Digest: oBWd2+TULRzQL1QXegAydeGFrWEFsdT/BRHgXwGdiqI=
+
+Name: jnr/ffi/provider/jffi/BufferMethodGenerator.class
+SHA-256-Digest: +Te+QgbgodcJD8idq243cjQlZdrscLqaxoTMItk0NHM=
+
+Name: jnr/ffi/provider/converters/Long32ArrayParameterConverter$1.clas
+ s
+SHA-256-Digest: 6Oppcbp+UzUaHU/Ys1Ons2da5d0WH0Vy/Qfs6u1wsrg=
+
+Name: jnr/ffi/Struct$Function.class
+SHA-256-Digest: PLfsUHGTJiNTk7lfimJQsV/n9My7IUBJKUGHV4mCwfg=
+
+Name: jnr/ffi/provider/DelegatingMemoryIO.class
+SHA-256-Digest: B29Rd0yWmZwCbSZz1oO0oHNVC6QexKZp9HiLytfo0SI=
+
+Name: jnr/ffi/annotations/Out.class
+SHA-256-Digest: DlZBIXVzQW8C6RUhDRMUQxxPSYCYXj44R8EfovMs+HI=
+
+Name: jnr/ffi/StructLayout$ino64_t.class
+SHA-256-Digest: UaG5CgkEGCYNyMfGm/GxjShfRBD0r80vB2l0aVQEr+c=
+
+Name: jnr/ffi/provider/jffi/platform/x86_64/openbsd/TypeAliases.class
+SHA-256-Digest: YlorarVsrN4lHdHU9lAcQ5fjAUQFabMQ2X67kamG5Aw=
+
+Name: jnr/ffi/provider/jffi/Util.class
+SHA-256-Digest: mPE+Pfu8uXJFPvfTkLX7PzKsNzN4VgrdLe9No4eJV3A=
+
+Name: jnr/ffi/mapper/AbstractDataConverter.class
+SHA-256-Digest: KjpcO+xm6ZL8uzWMx6K1Q47XOUpdPq50eerB9NDfBbI=
+
+Name: jnr/ffi/Variable.class
+SHA-256-Digest: VMhhFOvPIu1JlL1wuoj2PuJUki+RXG9mVwBHlyT045M=
+
+Name: jnr/ffi/provider/NativeInvocationHandler.class
+SHA-256-Digest: aqNLriaNv4N7xhU3kjXZX1nexaGovJlijIDyhBmVKa8=
+
+Name: jnr/ffi/mapper/ToNativeTypes$Cacheable.class
+SHA-256-Digest: /G7VxM76oNbRy4e218eGh8EIV6gonBn/z1KXpH34v58=
+
+Name: jnr/ffi/Union.class
+SHA-256-Digest: 39EeQWafi51MCFLdOf2DtuPT5ySECDni2Sto38DkZzM=
+
+Name: jnr/ffi/Struct$Pointer.class
+SHA-256-Digest: GTLLyEXY8VJ8qjE/fe58vcN7Gmi642PUji70tvXttzw=
+
+Name: jnr/ffi/provider/jffi/StubCompiler$1.class
+SHA-256-Digest: lOfAiPvb5qlSo/iFoMW6jLj1GMkOTrnqw1TGKAktiD8=
+
+Name: jnr/ffi/provider/jffi/NumberUtil.class
+SHA-256-Digest: Q3I3TE/L0cmcu7P3SUfKmDC8AuOc2GmmHONK8nB204c=
+
+Name: jnr/ffi/provider/jffi/NativeFunctionMapperContext.class
+SHA-256-Digest: rEEUzE0olGfEl7snVJB/zDQECFPaUYxgqtrBZ7UDIkg=
+
+Name: jnr/ffi/byref/NumberByReference.class
+SHA-256-Digest: Scy+ow5jbPZEGhNhXZV0s1GK0l6qP+BRVbXhwqmChXY=
+
+Name: jnr/ffi/types/int8_t.class
+SHA-256-Digest: X2vaoBR9phlxYLwoX/gwJYC6Ozz9HuA1SwFN9OnDbwU=
+
+Name: jnr/ffi/Struct$caddr_t.class
+SHA-256-Digest: 2ItfDzy41UslG0/x/TBd7MdRjhDqBxSGql6q+27YQg0=
+
+Name: jnr/ffi/provider/converters/CharSequenceArrayParameterConverter$
+ Out.class
+SHA-256-Digest: EFe3jgYJHjAVFsGOylPomieiOtQeRxWjJJZS0iwHrtA=
+
+Name: jnr/ffi/StructLayout$AsciiString.class
+SHA-256-Digest: s7cimgOLDdtXpL3Eg0YvWPahpzSlE3EpYzAXQojCv/4=
+
+Name: jnr/ffi/StructLayout$EnumField.class
+SHA-256-Digest: x02JSRlpK2ZkWQz5DFK6/datpEQ56pD/wroA7p/W0tI=
+
+Name: jnr/ffi/provider/converters/NativeLong32ArrayParameterConverter$
+ Out.class
+SHA-256-Digest: rLNJZ0n9Giw1OIVDMDb2p9GTSSJfYvzwX3IdFFyYQuU=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$BooleanInvoker.class
+SHA-256-Digest: MoAheclp9XX3ASLdxHBg7swfXh+SGc5bJMywi5QwMIo=
+
+Name: jnr/ffi/Runtime$SingletonHolder.class
+SHA-256-Digest: 7+THqqpE9KVwlTamRp6p50KJEDGxlSD6XKtyqp2JLGc=
+
+Name: jnr/ffi/provider/converters/NativeLong32ArrayParameterConverter.
+ class
+SHA-256-Digest: AWWmj9+m0e6CPcxSu8WV7IRuD7CZiOxRI88MXP5mgUg=
+
+Name: jnr/ffi/provider/DefaultObjectReferenceManager$ObjectReference.c
+ lass
+SHA-256-Digest: 4Wzi3/gAgj42JYr/sQBFxjgYHSxTGI13hCFPsDj2+bM=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$BooleanMarshaller.cl
+ ass
+SHA-256-Digest: zej4Bi3gRaXP4KiWOhKaLLaBARsikvgaaLCdGHqvCd0=
+
+Name: jnr/ffi/Struct$Float.class
+SHA-256-Digest: 5IOl1cJE67gUfN6AvnoPVlIxuThBeZ4Fx9eAEY03QeY=
+
+Name: jnr/ffi/Struct$PointerField.class
+SHA-256-Digest: KqqwKmByHI+RKNjOoMVUexu6za+N4U9j/VRxzBeFSoI=
+
+Name: jnr/ffi/StructLayout$AbstractField.class
+SHA-256-Digest: 2sOSzzifDjImc9TbgV//lX4COketNDWhAE7Pv5o2rqE=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$FloatConverter.class
+SHA-256-Digest: goTTIBmvIeFKwT2uz+kFxQ0Ojw1FN0v9D7hU/FkTEPM=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$Int16Marshaller.clas
+ s
+SHA-256-Digest: dq0f+KmdLhsjBDWCFaR07H/UQgOAQNEYIeHQtvnxXUA=
+
+Name: jnr/ffi/StructLayout.class
+SHA-256-Digest: yiUyiuXfdTlayfY8dButvmaiDPc53SKgvSEruqgV6NQ=
+
+Name: jnr/ffi/provider/converters/NativeLong64ArrayParameterConverter.
+ class
+SHA-256-Digest: 62GqcVhhmvg8s5QrYf1SX+Jz0tcFI2mBssc9yxhveL4=
+
+Name: jnr/ffi/types/gid_t.class
+SHA-256-Digest: yAbmAVIdzaS7Hh+YP4xIILJJD0WzElYJfpyJZKnsNhA=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$Float32Invoker.class
+SHA-256-Digest: bh27h1i5B9J51US/sa2zhFa2lOq9fT6/UeO9OwxFKQs=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$ConvertingInvoker.cl
+ ass
+SHA-256-Digest: 2ISSpUaqXrAO2SlDZPHQUTSWwmabEoisjjzYxuHuPBk=
+
+Name: jnr/ffi/StructLayout$UnsignedLong.class
+SHA-256-Digest: yENP5TrwsQNHBCtqCkDxf6/w5CZBFEYR91JPXd6ae+0=
+
+Name: jnr/ffi/mapper/SignatureTypeMapperAdapter.class
+SHA-256-Digest: F3sb6931QhyxmNQYiBuDaa2dY3mU/tMTP5ViVMnucP8=
+
+Name: jnr/ffi/Struct$u_int32_t.class
+SHA-256-Digest: AEb3Q2WOzDXxlHlO5sULzbRfWetq7EtQuIkXTZ77bBI=
+
+Name: jnr/ffi/provider/jffi/ToNativeOp$AddressOp.class
+SHA-256-Digest: jt+r06sHYu4H48gnL9zVPhGJWJ7MuoT+HM1QE/UtKZI=
+
+Name: jnr/ffi/StructLayout$Double.class
+SHA-256-Digest: 4EhNq0zTb0zIKSU3q7fPcETbTB5JR1+dCcU66hBVop8=
+
+Name: jnr/ffi/provider/converters/CharSequenceArrayParameterConverter.
+ class
+SHA-256-Digest: ZN9dsmssEfosdme5R5xtNeVXxDk56kr2M3bGlq33HLM=
+
+Name: jnr/ffi/provider/jffi/CodegenUtils.class
+SHA-256-Digest: NmU9C3dfCXZ6lFFFjcxTnr4Ps9cVTENu6xGI71NoqaE=
+
+Name: jnr/ffi/provider/jffi/NativeRuntime.class
+SHA-256-Digest: 3Rm4gbToLcchYU594a6HB6xGxWHsxAr8OE/qn5dNwOw=
+
+Name: jnr/ffi/provider/jffi/platform/ppc/darwin/TypeAliases.class
+SHA-256-Digest: hvEPLgM1U5/87ZH1iP5PugqTXcd8g70N73eS4un6p7c=
+
+Name: jnr/ffi/provider/jffi/SkinnyMethodAdapter.class
+SHA-256-Digest: GQ89gd0p7NATlZgPRK8ykCRnokyorkK3qpXnZQ1bWfA=
+
+Name: jnr/ffi/types/u_int16_t.class
+SHA-256-Digest: SSG+0dX3anQca0VyP97mjmP4sNGakGDVNtdvgnKCddQ=
+
+Name: jnr/ffi/mapper/ToNativeConverter.class
+SHA-256-Digest: aQhe6GiKnwm3oiawPmCzrlalXUaE0npw2fZIJKmwDWA=
+
+Name: jnr/ffi/annotations/StdCall.class
+SHA-256-Digest: v2XMoUxz6ckAuyxViIflFIqvM27KuHvoBbxeEOF5loo=
+
+Name: jnr/ffi/util/ref/FinalizableReferenceQueue$DirectLoader.class
+SHA-256-Digest: 5XWHEfFZSPT3wral2tzDBeaMoeA3lqcSmU/2GouTXWw=
+
+Name: jnr/ffi/provider/jffi/platform/x86_64/solaris/TypeAliases.class
+SHA-256-Digest: EmAiF2CduUOvCy1m6935g9iluU5BD2fKEnWa62ldwa4=
+
+Name: jnr/ffi/provider/InvalidProvider$1.class
+SHA-256-Digest: Z+ABU78NuUoeybXxZIIikgcZHfp3ysNHGbFHbPLe43U=
+
+Name: jnr/ffi/StructLayout$UTFStringRef.class
+SHA-256-Digest: MrZGcxLoL42cXTqMou21MPCkO+M3t0VBxgHLTuTmcOw=
+
+Name: jnr/ffi/util/Annotations.class
+SHA-256-Digest: Zqhl/ljqFtqa71tdisw+Sq256zAxR5HDbbErdF79V0M=
+
+Name: jnr/ffi/provider/MemoryManager.class
+SHA-256-Digest: Ss9rTBeJfYkFgQMyJ0vZRHQBOU5ta2oh+U6u0CbxXAM=
+
+Name: jnr/ffi/util/ref/FinalizableReferenceQueue$SystemLoader.class
+SHA-256-Digest: qAUhqn1F844BUyaxGgNzxWBDB0EqMrlslB10sHLmOuc=
+
+Name: jnr/ffi/util/AnnotationProperty.class
+SHA-256-Digest: R4Oodbk3SMfCnmrutETurdtoGMayoXE3FDPya4DudW0=
+
+Name: jnr/ffi/provider/jffi/NativeClosureFactory.class
+SHA-256-Digest: jHVQXJABA8R4FkG7H+1MrZhIRqPTLl8woEKVdvAKelA=
+
+Name: jnr/ffi/provider/AbstractArrayMemoryIO$BE64ArrayIO.class
+SHA-256-Digest: xazpXpfMtXK/mgdyuw4Rcmy42KnjXrOOUqA/VWWA/4k=
+
+Name: jnr/ffi/provider/jffi/ReflectionLibraryLoader$FunctionNotFoundIn
+ voker.class
+SHA-256-Digest: V56G+mC9dfaXsnPnWmZt0OICJ7OhYYlAndrigtxljHM=
+
+Name: jnr/ffi/provider/ResultType.class
+SHA-256-Digest: M3ZpX962J0/a7X95T9m0ZNd/FsDunMAxsDOySdQ9oBQ=
+
+Name: jnr/ffi/StructLayout$u_int16_t.class
+SHA-256-Digest: UpnW/U1Rols0Zn6QdJo4NLsyJHHvl/j8rCwp4zs+5c4=
+
+Name: jnr/ffi/provider/jffi/BufferMethodGenerator$Operation.class
+SHA-256-Digest: p4u2RZYeUm65ARW/Nof+OSaduXAjJuDyVJqB8RgAZVQ=
+
+Name: jnr/ffi/mapper/CachingTypeMapper$InvalidType.class
+SHA-256-Digest: vriTcoHFsgwLKXqFCBkP7YLBXEiz+ahRH6gu1B88roU=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$Int8Marshaller.class
+SHA-256-Digest: rTFBbHtaR5obh7MYT3eInYygiDZ2Mfrh3iOUJBdMdhQ=
+
+Name: jnr/ffi/provider/jffi/AbstractX86StubCompiler$PageHolder.class
+SHA-256-Digest: gl8pkDsf+aCjiYzaWtt/8M9WpGw+uXZpj+/k4hjddDw=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory.class
+SHA-256-Digest: MUOgwDgvTs4pm5tO0279SSyB/P5P5tw654/Z1mKD9y4=
+
+Name: jnr/ffi/Struct$StructRef.class
+SHA-256-Digest: FVdpts/iJRXn4Lwq/J48RlonPBagxguAPJlTt/AUzeI=
+
+Name: jnr/ffi/util/ref/FinalizableReferenceQueue.class
+SHA-256-Digest: 7sZHt8g0gr9BXcbIzrm1HlzibQclloZN24CFNm4lvbs=
+
+Name: jnr/ffi/Struct$swblk_t.class
+SHA-256-Digest: h8bfxpRxPBc6eFdgNl4zCWeRrFldUleXbt8kQahLjek=
+
+Name: jnr/ffi/provider/jffi/AbstractAsmLibraryInterface.class
+SHA-256-Digest: +qnb4fj2q+u6lS3GeQmLmQ344iVlgj7RO415kR71/Dk=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$1.class
+SHA-256-Digest: GKunqS5QLC2y6fK1qeS7QNZTuBEroBjCx5r9GiKM2P0=
+
+Name: jnr/ffi/Platform$Linux.class
+SHA-256-Digest: T+PEkGw741GY3NeEvoOwgRnGghpo28dT8o+Ew/BdDDs=
+
+Name: jnr/ffi/StructLayout$int16_t.class
+SHA-256-Digest: UspL01pOMiNq8+ywfyMtqA+G6MsrH+hPQkZBqG5ziLw=
+
+Name: jnr/ffi/provider/jffi/platform/x86_64/freebsd/TypeAliases.class
+SHA-256-Digest: Qy2Bl0O/E4qcmGGLWYUBDLD7hHJottDFmk8CemnV8W8=
+
+Name: jnr/ffi/byref/ShortByReference.class
+SHA-256-Digest: bPIyHyuoByUuMIlFT+22ZJsvb5s4ciRJBDZ2YDBWDrc=
+
+Name: jnr/ffi/NativeType.class
+SHA-256-Digest: 27SJ77v6o9vaens5qT68vW/ej+jImZOLI8QqTAFiC+0=
+
+Name: jnr/ffi/provider/jffi/X86Disassembler.class
+SHA-256-Digest: s2dTYu0U6x5zz8+1dyg/pvv2JLp1OAQciTgEVCodPR8=
+
+Name: jnr/ffi/provider/AbstractArrayMemoryIO$LE32ArrayIO.class
+SHA-256-Digest: tJ1rTkKQ9DEpelG28z6i/reinSZfhxM/YQRLRxbYByI=
+
+Name: jnr/ffi/types/blksize_t.class
+SHA-256-Digest: OZyGvvQWbxRW06vNjzyHwmgh48f6U/RDt2Tq/SO1I/Q=
+
+Name: jnr/ffi/annotations/Meta.class
+SHA-256-Digest: u8UFqmv7KZ3N8BE50ercdYN7krHZPWeSb7dyKuAK6V8=
+
+Name: jnr/ffi/Struct$UTFString.class
+SHA-256-Digest: JwsYiOT+JTg2M2RA7gVieMxKhSFfXNYeiPfu+pMEIsQ=
+
+Name: jnr/ffi/Struct$in_addr_t.class
+SHA-256-Digest: IUDp8W5oP/i6tLHNq6fGgzqcJI0lpH4EHeWeW1Vtud4=
+
+Name: jnr/ffi/Struct$Alignment.class
+SHA-256-Digest: GIrwwNsNqnCM5E10iC2eIKqPX3ZZi3GOuNvQ9gmXcng=
+
+Name: jnr/ffi/provider/jffi/AllocatedDirectMemoryIO.class
+SHA-256-Digest: OapVM/r8FGqV7JOp5VLdk5YRkOkHZQgdoNmHPWHnpos=
+
+Name: jnr/ffi/Struct$rlim_t.class
+SHA-256-Digest: zxKn5/2XqgcXk7PAgAzLk/QnfOW4PtHCZcmvfsg4kUc=
+
+Name: jnr/ffi/provider/jffi/NotImplMethodGenerator.class
+SHA-256-Digest: sp49gksr+JCKpW+fYmbo3atwSYt2UlVaBw2K0FCZy1I=
+
+Name: jnr/ffi/provider/jffi/platform/mips/linux/TypeAliases.class
+SHA-256-Digest: +H/zgnPzT3uWY8H5qrjcBhFK6lZQLy/4Vc4EK/7C2sg=
+
+Name: jnr/ffi/annotations/Direct.class
+SHA-256-Digest: ZkkJ0iWwa+pwdC2Z2HXbum6LTU2eUmU2ZaVUNnuAfYQ=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$Int64Marshaller.clas
+ s
+SHA-256-Digest: XsyYamfdo0WKYe9j+zaT+z+iHB1kswpNnbxXKZrGD50=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$Signed32Converter.cl
+ ass
+SHA-256-Digest: 1BXbGsL0hKqObhEjqSxsaRY7G1hLGkpQ1f1NhzuavYA=
+
+Name: jnr/ffi/provider/jffi/X86MethodGenerator$1.class
+SHA-256-Digest: nRbl7h95n/dcKg3eDh0VBPG3FLC0xcc4Ze6RLUIINfg=
+
+Name: jnr/ffi/provider/jffi/NativeLibraryLoader.class
+SHA-256-Digest: rmurW0+fMvlN/kF9IcUM4sD0KM2aC7g4hirOCiTYs4M=
+
+Name: jnr/ffi/provider/InterfaceScanner$FunctionsIterator.class
+SHA-256-Digest: SY3YC5b6KAxhP6WXC+ONo8lCcg4ye7O2pkPuz91rkZQ=
+
+Name: jnr/ffi/types/mode_t.class
+SHA-256-Digest: 2B6px9swFSRKqvIIFU36pHRmmdvi+aAnWqj15I3S0as=
+
+Name: jnr/ffi/Struct$intptr_t.class
+SHA-256-Digest: kpZPWKdJUnllDtR3pLog1HiizIPq+tQerHR5Ylx3Lxc=
+
+Name: jnr/ffi/StructLayout$Function.class
+SHA-256-Digest: exXIdJ88tgvF1ji5xyZbuu3SiZzU1uU8TgrFYRNoIPA=
+
+Name: jnr/ffi/provider/ParameterFlags.class
+SHA-256-Digest: 7U547tZ19mFcodWHvsHsqduNpCKJtJtzFjlJSap0PNA=
+
+Name: jnr/ffi/provider/jffi/platform/i386/freebsd/TypeAliases.class
+SHA-256-Digest: oqBqPDFo0nPWka/1qNYk8LwUAlV5liVcll7upr3G+8I=
+
+Name: jnr/ffi/byref/ByteByReference.class
+SHA-256-Digest: 7YrjX8bb06BFBFmnpQT9HJUJCydKfPIYCPjQnIymQhw=
+
+Name: jnr/ffi/StructLayout$Unsigned8.class
+SHA-256-Digest: 1wOyfreyUqXv3NAuX/jveK4nqJdLKbKBbaWkHM28k8M=
+
+Name: jnr/ffi/Struct$AsciiStringRef.class
+SHA-256-Digest: UI6nosiqKNFXu7vPn8ZpoHkKr1DSUc2Cu30TktnCf0w=
+
+Name: jnr/ffi/StructLayout$AsciiStringRef.class
+SHA-256-Digest: kHuaVz2CSXhQjyX0TcuYKycjVDP0mFQQMT2Fc+VHzCE=
+
+Name: jnr/ffi/provider/jffi/ClosureUtil.class
+SHA-256-Digest: CQfdyvtYZx4b9FLVqfr3DQEAZwhlBHaaIOuDDyyNjXs=
+
+Name: jnr/ffi/provider/NullMemoryIO.class
+SHA-256-Digest: YF+qEFX+klwUZDvIN+0R926VqyyPA3YCAKgu55SmA7A=
+
+Name: jnr/ffi/StructLayout$pid_t.class
+SHA-256-Digest: teK5Kt+HTwX/4c4XlnuzvmOhYjdwa4l8PYZ4KJHIYiw=
+
+Name: jnr/ffi/provider/jffi/ReflectionVariableAccessorGenerator$Pointe
+ rOp.class
+SHA-256-Digest: piW0h3PFKDKBKVZPN9Nk5Bt35FZdpynWkwaVT5tc6Sk=
+
+Name: jnr/ffi/StructLayout$size_t.class
+SHA-256-Digest: ULhcMKthzNdbHrx7/G5469s4SavbHnRGfPiuc5zWySw=
+
+Name: jnr/ffi/provider/AbstractBufferMemoryIO.class
+SHA-256-Digest: nlOHQRTwwhkoN1rJ0ZkIVNzUzMVEhb4jCFA8w2bIKc8=
+
+Name: jnr/ffi/provider/jffi/ClosureFromNativeConverter$AbstractClosure
+ Pointer.class
+SHA-256-Digest: QEye5UKbgrylPAvYbux0O+Ix+MQVNJ2lsczZNtSnrWc=
+
+Name: jnr/ffi/types/sa_family_t.class
+SHA-256-Digest: /vDgj0K8m0AeyFnmbFVuMMwU0PztLWHGed80X+7z3P4=
+
+Name: jnr/ffi/provider/jffi/X86Disassembler$Syntax.class
+SHA-256-Digest: 5Z+Fiy0yESPGj+dosdRLh7Rs/Bp5bQ0zyae4UtlykpA=
+
+Name: jnr/ffi/provider/jffi/AbstractX86StubCompiler.class
+SHA-256-Digest: iXvsHl/jOUV6FZh8iE/51+/7nmoVh6J6pmxy8hdpcy0=
+
+Name: jnr/ffi/provider/AbstractRuntime.class
+SHA-256-Digest: cnJ627N7edOVFaUynF2JBCbaXXGusMZnRbTZ0Tf9orE=
+
+Name: jnr/ffi/LibraryOption.class
+SHA-256-Digest: ZQMghsPS6CY9Lhu87xjCvPjExu7GAW1h+S1wOmxm5uY=
+
+Name: jnr/ffi/Struct$Address.class
+SHA-256-Digest: ai6eJ9zLCv7ZVQe7cZOQI/p96lTcWqmCafchfdAMSdY=
+
+Name: jnr/ffi/provider/InvocationSession.class
+SHA-256-Digest: 8yjFuXb1GF49Vw0VGXA5BbUe6sdp2Wt9tmBAEpoZl1U=
+
+Name: jnr/ffi/StructLayout$int8_t.class
+SHA-256-Digest: sCczsGDQU5QV98eV7/6rwFycCoq0RR/478KjXREo1dM=
+
+Name: jnr/ffi/provider/jffi/platform/mipsel/linux/TypeAliases.class
+SHA-256-Digest: 3UNPwUgiiv4QU5aEps4mGo48eNWciK8Q21XLNrdBEbk=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$BaseInvoker.class
+SHA-256-Digest: 608Ab3PSEXRRBTd0dSMFTSegW1V3VSpvIYJPLa8MI+Q=
+
+Name: jnr/ffi/mapper/FromNativeTypes$Cacheable.class
+SHA-256-Digest: NVACZgpEpWPf/hdj5uWnzaE9YmYrk/r0jJtPBPVDMmA=
+
+Name: jnr/ffi/Struct$BYTE.class
+SHA-256-Digest: ZLfv79prPXoe2leEY5sNhC6q0qfS+kgazXj83H6qM4E=
+
+Name: jnr/ffi/provider/DefaultObjectReferenceManager.class
+SHA-256-Digest: mf17WYjoQ3S7tH/tXR/ly1flc4YVipiWe9DZrpqWqyg=
+
+Name: jnr/ffi/types/ssize_t.class
+SHA-256-Digest: uM8P4zfxM4WO5hD/EQmnOxFqcVV4+sq2JABl9EIVJq0=
+
+Name: jnr/ffi/util/EnumMapper.class
+SHA-256-Digest: mXOTtpzRE50HH4iw7kkDEQET5AdpRyT4O2Cy2BmlD3o=
+
+Name: jnr/ffi/StructLayout$Signed16.class
+SHA-256-Digest: 4DpJ/7n1Upl/l33qKqyX/oOPWkKqJXf4X+/cyYRqXVE=
+
+Name: jnr/ffi/provider/jffi/NativeClosureManager.class
+SHA-256-Digest: 0y6QFwXSKW9q7IFZ9f6AXpX2B+8dbOfrpS0lKKlbGy8=
+
+Name: jnr/ffi/Struct$WORD.class
+SHA-256-Digest: v4LEQkk6YQzR2Je+RkPulq+zjPCQcUP/kdxfXwccres=
+
+Name: jnr/ffi/Struct$EnumLong.class
+SHA-256-Digest: lTNcJJhoY3Ltigan6/QJLMNXhHzR3GsFhLbWcD/u6sQ=
+
+Name: jnr/ffi/provider/jffi/AbstractX86StubCompiler$Stub.class
+SHA-256-Digest: tJgFk0nG0T+8arfajH36C+3DS5Y3NzPu/rdGgqMxRsg=
+
+Name: jnr/ffi/Platform$Default.class
+SHA-256-Digest: rqodlxsOz4ya0YGzy9R62m+8Kke9Zvh7EC/VpPKCvMI=
+
+Name: jnr/ffi/provider/jffi/ClosureFromNativeConverter.class
+SHA-256-Digest: ipqVCRPyHAOrZffryJ0w2zMCEXdySUwqRSs2EfI9JHk=
+
+Name: jnr/ffi/mapper/ToNativeConverter$ToNative.class
+SHA-256-Digest: 6A0/myjTmRerlmDkf/hjUxzrKmXPYXl3+YrhgTZh3yk=
+
+Name: jnr/ffi/annotations/Clear.class
+SHA-256-Digest: fJtYP+64fbBorPyWNWhOOsVPUTY1ZgF4RjYjWnmcbGk=
+
+Name: jnr/ffi/provider/jffi/platform/x86_64/darwin/TypeAliases.class
+SHA-256-Digest: EZ2bpsYM18BvsTrdO8HjWEMt1x+Eez3NCe5dgoY4z+I=
+
+Name: jnr/ffi/types/intptr_t.class
+SHA-256-Digest: w8imRGlEw0tOkLuRmXlwD2/yZDsV04X6xy/IXT1rMc8=
+
+Name: jnr/ffi/Struct$Unsigned32.class
+SHA-256-Digest: 0qZJE/vI4pcsAYa7yAnYx4zk72L7Vy+UXLv2Hjtqo8Q=
+
+Name: jnr/ffi/provider/jffi/PointerParameterStrategy.class
+SHA-256-Digest: nJSBQWSQ3dqfYEEJT/Q+FGYjabYBOQ92+B+VivrKMoU=
+
+Name: jnr/ffi/provider/jffi/PrimitiveArrayParameterStrategy.class
+SHA-256-Digest: sP3vMMtR+1L4brgjmCI9iy42LZ4mKKvgLqOLDn5gxiY=
+
+Name: jnr/ffi/Struct$fsblkcnt_t.class
+SHA-256-Digest: sy9AfpIRyNQPzz2JQcKX3V9VK/nSRqRQuBwwzDpjdJA=
+
+Name: jnr/ffi/annotations/NulTerminate.class
+SHA-256-Digest: /QUwTCGskssjD8LdkzOlANus+5A/cJQ+Xo7i4g9lgNw=
+
+Name: jnr/ffi/Struct$Unsigned16.class
+SHA-256-Digest: vTkJLGBzEIM2G9oqrKuhWSeZiKHnaM68An/ZxkyX+FE=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$Unsigned8Converter.c
+ lass
+SHA-256-Digest: dLx4qnSYxcZg8EmJgXfu+tr/jsLiNX1052R3EbJDYXo=
+
+Name: jnr/ffi/Type.class
+SHA-256-Digest: NGyLoWKnuYt7IHyAan1rYGRxX8tlgFFbsI7xmgVJ+7k=
+
+Name: jnr/ffi/CallingConvention.class
+SHA-256-Digest: XX9ZurdOzl7NTusrlqGTKFIzkioGsjMGtFMhDfppV60=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$FunctionInvoker.clas
+ s
+SHA-256-Digest: KIsR5bb5jKTl0H1lX66L0+rBGAAi4ZKM5kn15imyFbQ=
+
+Name: jnr/ffi/provider/jffi/ReflectionVariableAccessorGenerator$Pointe
+ rVariable.class
+SHA-256-Digest: B6H2pnQnDg24ii5uAQmOJILudZt+s40Te7QSklJ4gQc=
+
+Name: jnr/ffi/mapper/AbstractSignatureTypeMapper.class
+SHA-256-Digest: 717cuG5njkYFfoENrmhXQm4WvsjE2CmyTLm0Sw1f+ns=
+
+Name: jnr/ffi/provider/converters/BoxedFloatArrayParameterConverter$Ou
+ t.class
+SHA-256-Digest: faxN9lHtaNxYpviCZzvhwj8YS7AMrr1GqDdRAAuMbS8=
+
+Name: jnr/ffi/StructLayout$socklen_t.class
+SHA-256-Digest: z4G9n/8SMFyXKSVC/xLzwaoynOWZGP3e+d5A2HkB0L4=
+
+Name: jnr/ffi/StructLayout$Enum64.class
+SHA-256-Digest: W2vg3qudrhQvqvyrerE8GZY+pnO57LszM0qgN1ev90Q=
+
+Name: jnr/ffi/Struct$size_t.class
+SHA-256-Digest: gdRqQcaGVwEsggzPbgjLLhtarFGulsE+ym1xQi3Zzuc=
+
+Name: jnr/ffi/Pointer.class
+SHA-256-Digest: g3DpwvbXIsWi5mpiNUuQAV/v7kdKmn0J4b9h82j6p6E=
+
+Name: jnr/ffi/provider/jffi/ReflectionVariableAccessorGenerator$Conver
+ tingVariable.class
+SHA-256-Digest: itZfoIPoAVkOuM/ypH1rfgg7BrH+W3clN9P9Et4aomI=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$IntegerResultConvert
+ er.class
+SHA-256-Digest: Gwn3WpbaFw3FXYEpy7Bi45xCrgWuMBuWVi9WAkXx1Is=
+
+Name: jnr/ffi/annotations/Encoding.class
+SHA-256-Digest: LH06J2dKxrhNLcP5AXc8c9X1JR2Zgigb2cRPEymhfMY=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$Marshaller.class
+SHA-256-Digest: Xbg87KIv4VqWD/jRLTv7xZdqC6gXGpkZFZXKhuS2hhc=
+
+Name: jnr/ffi/mapper/FromNativeTypes.class
+SHA-256-Digest: Rj+mw4PopGEModvSFLWOGtcFdZ6SMd3iBNHDql1Ov0Q=
+
+Name: jnr/ffi/provider/FFIProvider$SystemProviderSingletonHolder.class
+SHA-256-Digest: SpIzM9wjZqfBYabHXzoNQUbRvsRYPptbTa5OxbHQieQ=
+
+Name: jnr/ffi/util/ref/FinalizableWeakReference.class
+SHA-256-Digest: iR4CpkWJWzX4MeRzhbsAUqdCAMQp7PgH64DlJQMCpuU=
+
+Name: jnr/ffi/types/pid_t.class
+SHA-256-Digest: VywgsUX7wX5CDr3l+zcVCUObFS7ppQQexHd0BzMYI24=
+
+Name: jnr/ffi/Memory.class
+SHA-256-Digest: BJjYHHvOfScmzh8hVabQW11IgzODMxHeKE0idYHS1sw=
+
+Name: jnr/ffi/byref/ByReference.class
+SHA-256-Digest: IA3duwaeWAVlyI77nOYb0vJcBySQ7X4lH8s2axUkCKA=
+
+Name: jnr/ffi/Struct.class
+SHA-256-Digest: vw74nuZcYtcWUhoLcqS1Tpi9xoTTXqqKwG1O6Q1znyo=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$Signed16Converter.cl
+ ass
+SHA-256-Digest: 2xe/lu+fZK984e+gqXXdCBgge+HvlU7HJSn6Ks4z1qA=
+
+Name: jnr/ffi/types/fsblkcnt_t.class
+SHA-256-Digest: D7wc39PlOJtL3ZoUV3LFxZuRMJTIa3qqVVH0SA+Vs+U=
+
+Name: jnr/ffi/provider/jffi/ClosureFromNativeConverter$ProxyConverter.
+ class
+SHA-256-Digest: GQwXJVRPwJgkI/yGTA2feGlMOF4Ojfr7PT/ZHBca/UU=
+
+Name: jnr/ffi/provider/jffi/InvokerUtil$1.class
+SHA-256-Digest: pZHbRXxpAl4t5uHZYBievcyMXy61fOMM2AE/MwO5Wn4=
+
+Name: jnr/ffi/annotations/Pinned.class
+SHA-256-Digest: qlKAvmQJbaXWVbjYL7NBkb6T5pWhA8+dcVyZSVj/GJg=
+
+Name: jnr/ffi/util/BufferUtil.class
+SHA-256-Digest: JPddqZ/pvsUrCmDUexZlM8KvhDrWl2zy+QQeukubbpA=
+
+Name: jnr/ffi/provider/jffi/NativeLibrary.class
+SHA-256-Digest: jCwKjN3Y3kAiaMN/5R7ff+qTHxF02Ga5uzXIvsrBmYg=
+
+Name: jnr/ffi/provider/jffi/X86Disassembler$SingletonHolder.class
+SHA-256-Digest: 5BG8r8OQjYz7dKBVROoPHjenZdxuj+keZKU5vmyzIv8=
+
+Name: jnr/ffi/annotations/TypeDefinition.class
+SHA-256-Digest: G6YpjGHxHli6Lrg/zACXgua4FhYsbiKkeiX+h/tNkHg=
+
+Name: jnr/ffi/provider/converters/Pointer32ArrayParameterConverter.cla
+ ss
+SHA-256-Digest: XdekyfuVI6FYcMMLVKRJh+Fcr2ye6G1/SpYX6iFZLBQ=
+
+Name: jnr/ffi/provider/jffi/ToNativeOp$Delegate.class
+SHA-256-Digest: UXZu/kkfoVbLWYTcQh+NJFGzCYQfCli1tvt6kGxE7ZY=
+
+Name: jnr/ffi/byref/AddressByReference.class
+SHA-256-Digest: KR3kXpU0dKTTeh+qzT4gvScGIUXXxtcvv5giVlT7SRY=
+
+Name: jnr/ffi/provider/AbstractArrayMemoryIO$LittleEndianArrayIO.class
+SHA-256-Digest: AYe41Qs+4cIK4M8m2p7uaaLQtQ6LtxNvi8PEvakvoX0=
+
+Name: jnr/ffi/provider/NullTypeMapper.class
+SHA-256-Digest: 08DR4pIGYT8L00FK1fF20ZrCTw3IS6ieiH4Mmz3UKHI=
+
+Name: jnr/ffi/mapper/FunctionMapper$Builder.class
+SHA-256-Digest: nhESvVIYQAAMWw3Uihr8hy4Z8+VjOeV5JVqju+mA/5U=
+
+Name: jnr/ffi/mapper/FromNativeConverter.class
+SHA-256-Digest: 2uMbP9dEmuFihT1WhN2DbVu8cTOI+Ildt9cGbTUPgRA=
+
+Name: jnr/ffi/provider/converters/Pointer64ArrayParameterConverter.cla
+ ss
+SHA-256-Digest: vnzb/GGiaXJPCmTbTGwlttd/8Q/bcMpnipT5DmW26qg=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$FunctionNotFoundInvo
+ ker.class
+SHA-256-Digest: A0Y1UNmSTXHh/Gh9Byn2kon21ha4ntc7It5f5DvhvXc=
+
+Name: jnr/ffi/Struct$Enum.class
+SHA-256-Digest: VoAFALmhnMOQHRVEx28BwmGTSXe7nfHhsUYaeWtrtlk=
+
+Name: jnr/ffi/StructLayout$u_int8_t.class
+SHA-256-Digest: mFZtWWks2uAgPUf2/vV03t3wTbpen1vbhWbcr8D4NHA=
+
+Name: jnr/ffi/provider/converters/ByReferenceParameterConverter.class
+SHA-256-Digest: rb5Fztlgp1GoK/MLOMMkKVelpGf/0/XGxUVTr7l6t48=
+
+Name: jnr/ffi/provider/jffi/ArrayMemoryIO.class
+SHA-256-Digest: epxRZMpoiZk942ABupdT9cqcJmAXE+UmU0SPQtRbShA=
+
+Name: jnr/ffi/mapper/CompositeTypeMapper.class
+SHA-256-Digest: U9zTxRGji+mPk7O/QUNS0pAKVFeipgHpSHCKObqCcO4=
+
+Name: jnr/ffi/provider/InvalidRuntime.class
+SHA-256-Digest: C8w+VPHnh7fJoI9ZynLREGoWeSDlAbI154/dN7YmZe4=
+
+Name: jnr/ffi/byref/AbstractNumberReference.class
+SHA-256-Digest: AyB8GJ4RPh8J1SpBlu2A0Q1L15G8uhEGe8eXBr91GMM=
+
+Name: jnr/ffi/Struct$ino_t.class
+SHA-256-Digest: G2rPAsmm8KZGdJcWIviDvEhGWaYMaOHcACadeXQy7Y4=
+
+Name: jnr/ffi/types/fsfilcnt_t.class
+SHA-256-Digest: EBMnA5Y1Rp5XOkKOODyDodhr+fIOKfc8BLmXsZ8vOuI=
+
+Name: jnr/ffi/provider/jffi/NativeFinalizer.class
+SHA-256-Digest: d/2A/wPjzQ4a0wMQ14zfSn0hco/aJraQyW/d0WPVQzg=
+
+Name: jnr/ffi/provider/jffi/ReflectionVariableAccessorGenerator$Abstra
+ ctVariable.class
+SHA-256-Digest: YtJsK33WA9bzyqRqkwrEURh2Fp/HOBognTShftSEu4w=
+
+Name: jnr/ffi/provider/FFIProvider.class
+SHA-256-Digest: cGXTJihu6k3xGeO9TZNrpp6Sh8++tMOUR2EyQeWbLzI=
+
+Name: jnr/ffi/provider/InterfaceScanner.class
+SHA-256-Digest: qbsEwan6QglztXYNsR/hoG1MLEmXA/HL4UwshnFdSy0=
+
+Name: jnr/ffi/provider/jffi/AsmRuntime.class
+SHA-256-Digest: VYwmrfjfqXi3xMfazahBi83DwlGZTXoOvId180qyJ94=
+
+Name: jnr/ffi/byref/NativeLongByReference.class
+SHA-256-Digest: lYrrjWk2VyeWO8cYvdhD2CCcbTjT2aNJmUV/Y9OUGiM=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$VariadicInvoker.clas
+ s
+SHA-256-Digest: E52Jvh4X1+Jma8Rfrd7JfiScqxD1oUMWhRCFka8MuRI=
+
+Name: jnr/ffi/Struct$Unsigned8.class
+SHA-256-Digest: /qV+vnMdjNgI7Kw8v+6UxGeP+M1P9gdhgeSCCFhr49I=
+
+Name: jnr/ffi/provider/jffi/AsmStructByReferenceFromNativeConverter.cl
+ ass
+SHA-256-Digest: jMtgVgpmy5+JF5bWDDGTS2OThfMIXora/UKI6iP0KZA=
+
+Name: jnr/ffi/Struct$u_int64_t.class
+SHA-256-Digest: H7J/JWYyWP5aEBUAIx9xrzeCKQ+we1EprKYZt4tdByk=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$DoubleResultConverte
+ r.class
+SHA-256-Digest: TC2ZKojjWzFlePjbnZEbYOvAtNfhg6M0SsRWbjjna6k=
+
+Name: jnr/ffi/provider/jffi/ByteBufferMemoryIO.class
+SHA-256-Digest: /9X2ZSKnLr8E/9P3GrjJVXCQprgJZvsQQwgQEVt4uLo=
+
+Name: jnr/ffi/byref/NumberByReference$1.class
+SHA-256-Digest: c8/VtDcuo2WKCcCye1Lk6qetoikeY4TGUfyPF4oibNw=
+
+Name: jnr/ffi/types/in_port_t.class
+SHA-256-Digest: pYcxJgC98fhmxCeHED0dyRTUgGTKMgVFMHgR5YgxtEw=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$PrimitiveArrayMarsha
+ ller.class
+SHA-256-Digest: /3D+9lq+uFe39PfyedoH3p8NQXzr2OOiY0GrkrVFzss=
+
+Name: jnr/ffi/provider/converters/Pointer32ArrayParameterConverter$Out
+ .class
+SHA-256-Digest: 88tdYCA9wzDgtANB/jLNlzSCgOD8A87g4j8LcKc6xic=
+
+Name: jnr/ffi/mapper/ToNativeConverter$Cacheable.class
+SHA-256-Digest: UljDpFoAgBeN58e0AvALQIfDId6H88Y6SPYSXGLQUFU=
+
+Name: jnr/ffi/Struct$int8_t.class
+SHA-256-Digest: D35LGyMrU/+9LCY3/K7LNJDvJskrlMjTm790vcA890Y=
+
+Name: jnr/ffi/StructLayout$Signed64.class
+SHA-256-Digest: AiwE/v4CAAUMdMH+6xLk+uZiGNIpDtiFY/oypcgQJww=
+
+Name: jnr/ffi/types/int64_t.class
+SHA-256-Digest: U+S0YKZ8CWH3m/cJxQsa5Hkklp0ocM7D5eER3w++50I=
+
+Name: jnr/ffi/mapper/FromNativeConverter$Cacheable.class
+SHA-256-Digest: WDZfSd5fF9soM/YFo1lYGPIkZ0eD6Qn3GHBq/kpkmOs=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$ByteResultConverter.
+ class
+SHA-256-Digest: RxQi4009tk0f6WRzZ5Xu/tGyI7pVoEhKarhSeg41M6w=
+
+Name: jnr/ffi/util/EnumMapper$IntegerEnum.class
+SHA-256-Digest: JZ2MhVXGxXSCdIbIIFqewc3dipzD3E/f7U13h1dr73o=
+
+Name: jnr/ffi/Struct$Signed8.class
+SHA-256-Digest: Kybnfadj5E0hKpmeqm+p1D5gq8xwU/g8XaXfBro2jS8=
+
+Name: jnr/ffi/provider/IntPointer.class
+SHA-256-Digest: R4o1mo+1KGY9miT4LpzNemEDoTafXOHOJrs+wSDnelU=
+
+Name: jnr/ffi/provider/converters/BoxedDoubleArrayParameterConverter.c
+ lass
+SHA-256-Digest: XdgRYo+7oKR5ioyY47jAnG0kjLKyzFF+fws7gpSyAfk=
+
+Name: jnr/ffi/provider/converters/BoxedByteArrayParameterConverter.cla
+ ss
+SHA-256-Digest: oXE+23duZXFed/XtNjiYHwX9Kc6DAkont04p2hWOIik=
+
+Name: jnr/ffi/Struct$SignedLong.class
+SHA-256-Digest: 8kE0bw6l9dErbkZysOvt1pOY7PQBsZKeCkhvcIqgMP8=
+
+Name: jnr/ffi/StructLayout$ino_t.class
+SHA-256-Digest: JrrQFxCbx3iadmvv3Xx4b5JegZjM+QTPHoeo9+tBGIU=
+
+Name: jnr/ffi/provider/jffi/TransientNativeMemory$Sentinel.class
+SHA-256-Digest: 8r3sTBI2d8h6I3fNqBpHavy+vQXJ/76d7IJaey90bAk=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$Float64Marshaller.cl
+ ass
+SHA-256-Digest: 3ul/0Ma/EGOpvDAy0eq1TLPtc5fg/dxS5PAv9CMgVqI=
+
+Name: jnr/ffi/provider/AbstractArrayMemoryIO$1.class
+SHA-256-Digest: YjjnfN8yK/LIiXHImhzc55I6H9TC9vt7Dnauuc3jtsM=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.github.jnr.ffi/pom.
+ properties
+SHA-256-Digest: 9h1sZbRcc6AGFsohe2qJA63tZjLgCu8dDVm/wxBXFt0=
+
+Name: jnr/ffi/provider/jffi/platform/s390x/linux/TypeAliases.class
+SHA-256-Digest: XXDa2zWZfDGbNAvrrE+qJs/Bkx+5Riaep/w+Z6QCB3M=
+
+Name: jnr/ffi/provider/jffi/ToNativeOp$Float32.class
+SHA-256-Digest: gyjdai+jKoei/D9DzH2vqVMty41yUTclNMSPS//ew9o=
+
+Name: jnr/ffi/byref/AbstractReference.class
+SHA-256-Digest: BiUsrRyiIT0RELiVqFb1y+u/iJFXYC8pv64a/AuBPKU=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$VoidInvoker.class
+SHA-256-Digest: ah5bEbJyWohuZs/tr9xl9b213MCO4Q1/cqE//4eEzzg=
+
+Name: jnr/ffi/provider/jffi/ReflectionLibraryLoader.class
+SHA-256-Digest: zxi/l50C3S2/XjiS+e3ne5deL+BGak+jaLmuKcoSt5c=
+
+Name: jnr/ffi/provider/converters/BoxedShortArrayParameterConverter$Ou
+ t.class
+SHA-256-Digest: 3FmKNGsoBqtgFVIr/JhFbB8C2l/1u6oLEbcoEj/1eaU=
+
+Name: jnr/ffi/provider/InAccessibleMemoryIO.class
+SHA-256-Digest: cbrou3hFBFKRx2/tyrz7b+/Oax9N6b+P6bCHX8jPK6A=
+
+Name: jnr/ffi/provider/converters/ByReferenceParameterConverter$1.clas
+ s
+SHA-256-Digest: AIHFo+Jyq1r5SZKhf0zwarc5ZMG4bmpK7DLHg15l8qM=
+
+Name: jnr/ffi/util/AnnotationProxy$1.class
+SHA-256-Digest: 2X+17WQYpRgw4hIlJ5hOaAtHSbMMKhf+dQY3/igAZtk=
+
+Name: jnr/ffi/provider/converters/StringUtil.class
+SHA-256-Digest: mGwilo0MPY1PqVngavdIvmhXctEHYfCNIn4icSNx4Pc=
+
+Name: jnr/ffi/provider/jffi/X86MethodGenerator.class
+SHA-256-Digest: gWXHV7HY1T3cmGRkwlI6thwAfALToMEQLEqZ/IKJk0Q=
+
+Name: jnr/ffi/Runtime.class
+SHA-256-Digest: ewME8eW0g8bnAKvPlMGmmgPztA7HZf4EqhqQGC9qXpA=
+
+Name: jnr/ffi/StructLayout$uid_t.class
+SHA-256-Digest: qaLS6w6j3Oqe/gaP5Y6TfNK0KRvSyD+vDMAqO43gDP4=
+
+Name: jnr/ffi/mapper/FunctionMapper$1.class
+SHA-256-Digest: BF2M0k1iUU8gbHcxmPYP2Qb6/QTDg8iSeRyV29vC+74=
+
+Name: jnr/ffi/StructLayout$Padding.class
+SHA-256-Digest: vjC/fH9YCs8Q7TCnkf1h4DmuSTRyMJoFWhN1BH9YgBU=
+
+Name: jnr/ffi/provider/converters/Pointer64ArrayParameterConverter$Out
+ .class
+SHA-256-Digest: b8hQfkCcxXp2qSFcF3jqQwHntv10L0TnGzrUf0gD1Ag=
+
+Name: jnr/ffi/provider/InvalidProvider.class
+SHA-256-Digest: WPHEZY4SNuGmDkf38wkiD3j0IKZlOmfwyM+03Qu367o=
+
+Name: jnr/ffi/provider/ClosureManager.class
+SHA-256-Digest: wTpZpKtYO0Mt/VhCj/zu04qHrnrW1rVX0wrsrEFjncQ=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$AbstractNumberResult
+ Converter.class
+SHA-256-Digest: zNF7Gw5x7+DDczZUWkKaqXoxsKHcs4HP7JaeTy0JqCA=
+
+Name: jnr/ffi/StructLayout$sa_family_t.class
+SHA-256-Digest: +tV85oY5EA5eX8atIzfF5do1RHnFLxsqgkC64jO2jBw=
+
+Name: jnr/ffi/mapper/FromNativeType.class
+SHA-256-Digest: DyhVqddK4uxALl21P7AyvrYCE8MKwCeHe9BPCBRWUHg=
+
+Name: jnr/ffi/Struct$Enum64.class
+SHA-256-Digest: Xs9O8BZ7rivCfRmd2vnGFCBWuEpOzrMhGutZ8Q+gyFA=
+
+Name: jnr/ffi/provider/ShareMemoryIO.class
+SHA-256-Digest: 3QWqTi3++uJxMfosHbFDF7LMudpYZ5qTcLa/5QtoE8w=
+
+Name: jnr/ffi/provider/BoundedMemoryIO.class
+SHA-256-Digest: 3XhK7MyFnxVbJKuwOv70sFi46Iwk4Aukr1mIIVAat3c=
+
+Name: jnr/ffi/StructLayout$Signed8.class
+SHA-256-Digest: tDu0INflDZXUjFJdshiugmBDMExTnOI4rjiiu2T/9ws=
+
+Name: about_files/THE_APACHE_SOFTWARE_LICENSE__VERSION_2.0.txt
+SHA-256-Digest: z8d0m5b2O9McPEK1xHG/dWgUBT6EfBDz6wA0F7xSPTA=
+
+Name: jnr/ffi/provider/jffi/DirectMemoryIO.class
+SHA-256-Digest: LibW5qH5A+yS1gJ5fQvUGVDcYloOU4eBl+TMQdXOCB4=
+
+Name: jnr/ffi/provider/converters/Long32ArrayParameterConverter.class
+SHA-256-Digest: 0kKZS/69lR9bouRxIFraMxlSfBCBoWG7uR28t9QnLJg=
+
+Name: jnr/ffi/provider/jffi/StructByReferenceResultConverterFactory.cl
+ ass
+SHA-256-Digest: QzFdSXPV5Z9ksOj4Aboh70RecGStYbbnsJa1g35D/h8=
+
+Name: jnr/ffi/StructLayout$String.class
+SHA-256-Digest: OnxXWsMY3/be00s/7ii9ThBdme3luc3etoTCbq7M3uE=
+
+Name: jnr/ffi/provider/jffi/NativeClosureProxy$1.class
+SHA-256-Digest: 2vyoZTAbCrRo+DieycikObh7/uLEMF0bKPVrT8acmqc=
+
+Name: jnr/ffi/types/clock_t.class
+SHA-256-Digest: sQlQSuZoKET4bdob9Eh1yYh3VYpQvey5gZFR6hkJFh8=
+
+Name: jnr/ffi/StructLayout$in_addr_t.class
+SHA-256-Digest: r/w6qYRqWkrF2kq94elaI2DykutZTnOMdDhiMxkJFCw=
+
+Name: jnr/ffi/annotations/IgnoreError.class
+SHA-256-Digest: 1ObP2zxzS59GiisnoDgFUh8CaBrXZc8Ku3kx0PqtfO8=
+
+Name: jnr/ffi/provider/NativeVariable.class
+SHA-256-Digest: MsCe+P4claTObYAX/hou2CIemUI9xvbCFC2Ak47l6u0=
+
+Name: jnr/ffi/byref/IntByReference.class
+SHA-256-Digest: RxSBBrcm56002hjZFEd6lpZPEzQrZUDnJugrhJTsG70=
+
+Name: jnr/ffi/StructLayout$u_int32_t.class
+SHA-256-Digest: 5LuPfPlt8seO/PaKg27QMeNpei3LQIygsL4T8tT/AR8=
+
+Name: jnr/ffi/provider/jffi/ReflectionLibraryLoader$1.class
+SHA-256-Digest: /wjazJd0JnUJtikrR3948NDlkvhcTVjVyWWpq9zfinw=
+
+Name: jnr/ffi/provider/jffi/NoTrace.class
+SHA-256-Digest: 5wGBBdZBgFqfLSW2IT9Hs+1HF7QeNQq/fG26rBr9V3s=
+
+Name: jnr/ffi/types/id_t.class
+SHA-256-Digest: DmyyjPz+MmhulB+O334GSgvklaFmSOTuhVSg7EI9ZEw=
+
+Name: jnr/ffi/LibraryLoader.class
+SHA-256-Digest: SICQ1YzmtAHeP6he8var9p8NmjQyCe3wC1xMbjAxMvw=
+
+Name: jnr/ffi/provider/jffi/BaseMethodGenerator.class
+SHA-256-Digest: ZIuQivcu9TnIU77kt1dOp5nQKxd74/liZaYjIpVDduY=
+
+Name: jnr/ffi/provider/jffi/FastIntMethodGenerator$1.class
+SHA-256-Digest: UP6MXrH3pcOknQqXibK5m+aIC3iRWNvncUVXk0/2eiE=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$ToNativeConverterMar
+ shaller$1.class
+SHA-256-Digest: gkL1caF07q8uOd2mN4J7kXlcNH6+8WDuyJXMUy4knCw=
+
+Name: jnr/ffi/provider/jffi/platform/aarch64/linux/TypeAliases.class
+SHA-256-Digest: KsmcfHx7hiRMH/8daHW/symnWAYijOj5uogj9wrQFkY=
+
+Name: jnr/ffi/provider/jffi/VariableAccessorGenerator$1.class
+SHA-256-Digest: Y3MkQRPWi3P7PeXsXw4g3G+5kDfSdINBO4rOuW0sGXY=
+
+Name: jnr/ffi/StructLayout$IntegerAlias.class
+SHA-256-Digest: MZi67KYzj/dPma8uMwgXlYHePBy46T5HXI4CMbmp73I=
+
+Name: jnr/ffi/provider/jffi/platform/i386/linux/TypeAliases.class
+SHA-256-Digest: 4j/tnqSeKCdcuck76lKHRfWWII0SjdNwfikkd6dveXE=
+
+Name: jnr/ffi/Struct$mode_t.class
+SHA-256-Digest: 8Kwy7/Y138Flg4/AKXsaNm/ncutjwClzKX3Ba76J5mw=
+
+Name: jnr/ffi/provider/jffi/NativeRuntime$SingletonHolder.class
+SHA-256-Digest: BOu2QpHS1k9WR8hBVHiV/8QUC+E3I7XAiTY/wl+XVqU=
+
+Name: jnr/ffi/provider/AbstractArrayMemoryIO$LE64ArrayIO.class
+SHA-256-Digest: wJD/ddm4aD/0odvYXZMJZ2qsxqh3/l/YkFRE4HJ6fHM=
+
+Name: jnr/ffi/StructLayout$int32_t.class
+SHA-256-Digest: FKlIbg9t3xXmd0NUlXY9zStZlmYLU2mbLiUeh41edig=
+
+Name: jnr/ffi/mapper/ToNativeTypes$UnCacheable.class
+SHA-256-Digest: Tu080+JJXxl08BUGmM4HNkzeOyrJ85Je0QBbhkbDbEk=
+
+Name: jnr/ffi/Struct$Enum16.class
+SHA-256-Digest: AxH8FSXMB8DDzqKB7Tel1HojqlvJ95ONde4f3ADbeak=
+
+Name: jnr/ffi/Struct$WBOOL.class
+SHA-256-Digest: Au0BcdwqWHKzlBbiM3A+Lu1/4n7bsPYdws7G0FM2PiY=
+
+Name: jnr/ffi/provider/jffi/platform/arm/linux/TypeAliases.class
+SHA-256-Digest: vmxVAmtCpBr3weQzMErOQIKJz//EP6u++jGCSH2mnKE=
+
+Name: jnr/ffi/provider/jffi/PrimitiveArrayParameterStrategy$8.class
+SHA-256-Digest: UEZg9PuUAjTfE8TuQHSDoxWjzJCwywr+JbitW/yNF7o=
+
+Name: jnr/ffi/provider/jffi/platform/i386/solaris/TypeAliases.class
+SHA-256-Digest: uqLvVDpAZc4K2SiBIwxAS61Raz9s83qrPHXg3X0lxZs=
+
+Name: jnr/ffi/mapper/FromNativeContext.class
+SHA-256-Digest: ROwFameL5MwTMLRrYPkCXA5tMXt5/8jYag5WBjmFrlA=
+
+Name: jnr/ffi/LibraryLoader$StaticDataHolder.class
+SHA-256-Digest: xVseemH+9kvmBZE7ivyMzOr6h2DXTp469liXeJphw6E=
+
+Name: jnr/ffi/provider/jffi/StubCompiler.class
+SHA-256-Digest: nKuXJl+I3cwE7iC05YPZNCznoEv2YAxtQiKa6m7JSkw=
+
+Name: jnr/ffi/StructLayout$WBOOL.class
+SHA-256-Digest: rnT9Wj8qNXAp/ZgqiO68dbyxAM2CM6Dz+/SwFEEJ53A=
+
+Name: jnr/ffi/StructLayout$caddr_t.class
+SHA-256-Digest: 2qUJyrywEz+FhqY+Q2lpHdOqJn08yh8xEh1/dahDNfg=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$ToNativeConverterMar
+ shaller.class
+SHA-256-Digest: aoSdh72yoB+ZUSkQXhweOTrQW6IxD+hCZ2xKYio+pCw=
+
+Name: jnr/ffi/provider/jffi/AbstractX86StubCompiler$StaticDataHolder.c
+ lass
+SHA-256-Digest: 5o5WaF3k4UQjBEPw5a93bF/i8TL/zboGLffLvG9uq5Q=
+
+Name: jnr/ffi/provider/jffi/AnnotationTypeMapper$AbstractReflectionCon
+ verter.class
+SHA-256-Digest: v7Wzg8ROv3hU7rq80Yy04s2WeeNU8ivFerX7vIrnEy8=
+
+Name: jnr/ffi/provider/jffi/JNIInvokeInterface.class
+SHA-256-Digest: cQPK0POdzUMR/O7H5mSesOQpOlONq54WWyunxYZYris=
+
+Name: jnr/ffi/mapper/ToNativeConverter$NoContext.class
+SHA-256-Digest: Whi2diQsUHIV/7TvlILn9ZX548vAx7ikQ24tdKfVImU=
+
+Name: jnr/ffi/Struct$UTFStringRef.class
+SHA-256-Digest: p6xR12Bv7NfBuM93bHXz4o5OvZ3F8zTBCl1K5bEGpcA=
+
+Name: jnr/ffi/StructLayout$UTFString.class
+SHA-256-Digest: DiFX2QrkpgUedxBpSd5UkrJEr1difT/yHawsg9/3cTk=
+
+Name: jnr/ffi/StructLayout$time_t.class
+SHA-256-Digest: N+3KhlvVt+kYvUI7eaid8A1ioIebw0QiQUT1bZ/K1uA=
+
+Name: jnr/ffi/mapper/ToNativeConverter$PostInvocation.class
+SHA-256-Digest: 8NmnHzjBxPrPp2K/pT7NBVfMovSx16GpSnkG541yZFU=
+
+Name: jnr/ffi/provider/jffi/AsmClassLoader.class
+SHA-256-Digest: oONOAEpEgqVrvJZERYimtMKsYaH5SIkfhFa0TM0jJsw=
+
+Name: jnr/ffi/provider/AbstractMemoryIO$1.class
+SHA-256-Digest: HrzQ7yCwoFbilbhJVVIXzJj9YoAUEDcsQwgDNVuGv4E=
+
+Name: jnr/ffi/Platform$SingletonHolder.class
+SHA-256-Digest: zLq1aTpKhHUjfDoODNR3ss/WtPojTfWzkAN11RtN41I=
+
+Name: jnr/ffi/Struct$u_int16_t.class
+SHA-256-Digest: 19Rq1wJh/94RikEOSuP2dBOvqn6IjvuuqS+ObSWDvuo=
+
+Name: jnr/ffi/Struct$uid_t.class
+SHA-256-Digest: n0kaW+q0uzP4t/eqzi17vxAzAVRxfkY2jX3xEDd0zTA=
+
+Name: jnr/ffi/provider/jffi/StubCompiler$DummyStubCompiler.class
+SHA-256-Digest: qR+oMTOFtvtNYrgiiJZUyQ6Egqv8AGOrzhF25uwct44=
+
+Name: jnr/ffi/provider/jffi/PrimitiveArrayParameterStrategy$1.class
+SHA-256-Digest: WawCN3oWdP3iz4BY7m57jq7dW6IzbkO3CTog1tlnwkw=
+
+Name: jnr/ffi/StructLayout$u_int64_t.class
+SHA-256-Digest: kEz/KPbLhUyo4UZjTRyBRU85r/w6YgUCAmyvbgn8EPg=
+
+Name: jnr/ffi/mapper/ToNativeType$Cacheable.class
+SHA-256-Digest: Wh3zMERgWBmmXCSHV8oqrIP0WlxtZq7YRlnyEKoNkro=
+
+Name: jnr/ffi/provider/converters/BoxedLong64ArrayParameterConverter$O
+ ut.class
+SHA-256-Digest: cXoHb3Zj0j9jnEyEtygVcvW7dJy8axecFVd1RtL8wrA=
+
+Name: jnr/ffi/Struct$UTF8String.class
+SHA-256-Digest: 2UJ+6hrrT67lOMRhVFGqZyoV7AYZtf2wNYHS/jx8rFo=
+
+Name: jnr/ffi/Struct$Member.class
+SHA-256-Digest: rim0FvAUieRMh+10NaiNAUzF9QCKwhv0WPLvkEmklV4=
+
+Name: jnr/ffi/provider/jffi/ClosureTypeMapper.class
+SHA-256-Digest: okJY4TmpFqCuIBRj+CK/+6w+JDgVlJ8j9+OohA5Lo4U=
+
+Name: jnr/ffi/Struct$ssize_t.class
+SHA-256-Digest: lQrFf4KCsV2pcBY0iL/T/pAz2PIZYTF7WXx6sErNEtY=
+
+Name: jnr/ffi/types/off_t.class
+SHA-256-Digest: m6kLBBEAK/Znr/A4TqZPndKC3ZkAfAZ+4+OnTojGmIA=
+
+Name: jnr/ffi/provider/LoadedLibrary.class
+SHA-256-Digest: WAksHIGA3HyQ5Nuig6yzNbckcYAXLGwELwC465n2MCE=
+
+Name: jnr/ffi/StructLayout$Signed32.class
+SHA-256-Digest: 0YE5vgJwVQtKN9QneS6hjxgd2la4LssGK/BAjgsCW6I=
+
+Name: jnr/ffi/provider/converters/StructArrayParameterConverter.class
+SHA-256-Digest: 2s+kjWB0GOA01oMLKO+BXGXHVMz8cahM+pj6jNwudIw=
+
+Name: jnr/ffi/Struct$ino64_t.class
+SHA-256-Digest: RluvJabNfhygpzlZ3uAajDlIVxjjozOoZHRuwlv8nEE=
+
+Name: jnr/ffi/provider/jffi/NativeMemoryManager.class
+SHA-256-Digest: tciHQrFf+UVpXj16fqh694BbcHRFfFWxBdj5S2Y74Lo=
+
+Name: jnr/ffi/mapper/SignatureTypeMapper.class
+SHA-256-Digest: 0ZfTAIl14p0HA2rYDu4M8xQHASYoEbgL12TSuQ9SJrc=
+
+Name: jnr/ffi/provider/FromNativeType.class
+SHA-256-Digest: ZOUJM5VkH4NeQF12+5x391yC+wiPVbCHosRi9ZqrRc4=
+
+Name: jnr/ffi/provider/ToNativeType.class
+SHA-256-Digest: Fxr/23rH0kEr/9NFYYDip0SRgMBXSP1A9s5yqn9GgLw=
+
+Name: jnr/ffi/Platform$Linux$1.class
+SHA-256-Digest: X0+EwSKDvG3p6VtAxeZp7kNFjQ6/U0gxW+hi9wLXg+g=
+
+Name: jnr/ffi/provider/converters/BoxedLong64ArrayParameterConverter.c
+ lass
+SHA-256-Digest: jwrNut6loVc++JIffMpz9LuYL9NQ8HXSWrTx3mv3rT4=
+
+Name: jnr/ffi/Struct$UnsignedLong.class
+SHA-256-Digest: wSGu93NNleaog5GDAaqy0jWGDR6T5sM86pddvwAlito=
+
+Name: jnr/ffi/provider/jffi/ReflectionLibraryLoader$GetRuntimeInvoker.
+ class
+SHA-256-Digest: 2W3wYKJIw/GudpjzoLMTDE4tV/zgwAutVhds30VuIFM=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$ShortResultConverter
+ .class
+SHA-256-Digest: aJeyG9VVSzMv1eSqFcjd4anhpXayY33cuVJI+fRPDXg=
+
+Name: jnr/ffi/StructLayout$SignedLong.class
+SHA-256-Digest: 7qd+hPVziAxllGeYiUgdRI6Kf9PW4aQxxU5RH69wVCU=
+
+Name: jnr/ffi/mapper/TypeMapper$Builder.class
+SHA-256-Digest: GH8ttWZonVhlOoN6NklIMeE9IgT9m1gCTwVOUrreKHc=
+
+Name: jnr/ffi/StructLayout$key_t.class
+SHA-256-Digest: ZUREei+JiVaB6DmoAOINPZ54CgG21ooapW6SX6uFXBY=
+
+Name: jnr/ffi/provider/converters/BoxedLong32ArrayParameterConverter.c
+ lass
+SHA-256-Digest: PyeUTa2121VX8z0tzUmgoKnIIFcSPTJajSLcPbJ/o8A=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$NumberDataConverter.
+ class
+SHA-256-Digest: JF0cw8CfEYvynJGgIo9fX67U95Qtw06JnNSma/tglCc=
+
+Name: jnr/ffi/StructLayout$rlim_t.class
+SHA-256-Digest: HksHA8YBsai4WTcAJu3RCKRNUUfYbgG6mGSApsJsmfY=
+
+Name: jnr/ffi/mapper/FromNativeType$Cacheable.class
+SHA-256-Digest: jGiLep1UvkwJeQOQj9mlWlYIpuyqbM8nLMgHei8jT3A=
+
+Name: jnr/ffi/StructLayout$Unsigned64.class
+SHA-256-Digest: bsw8RSTLDB+GGmG9YfPFGbeZ1sa7TRI6CJtGRTn9vGA=
+
+Name: jnr/ffi/Struct$Enum32.class
+SHA-256-Digest: yWvcF/XTmV0lTPq4UlxmMQ/9arY+G1lT7KPizRieN/0=
+
+Name: jnr/ffi/provider/converters/BoxedIntegerArrayParameterConverter.
+ class
+SHA-256-Digest: u6BbjykPw3fjgkho8MK1bIrdROH+wa2GVsLcIT2K6UE=
+
+Name: jnr/ffi/mapper/FromNativeTypes$UnCacheable.class
+SHA-256-Digest: zcGq31bnKxt+rr0hWrzQjno1gzdle4P2v5ZKsb+vCvA=
+
+Name: jnr/ffi/types/int32_t.class
+SHA-256-Digest: 22QtQzM4WXkWv4w4cs8ANLKSFv03PEQRBKbA+f44mPE=
+
+Name: jnr/ffi/StructLayout$Boolean.class
+SHA-256-Digest: 4VuYtvH+dUH2qA2nH9Jyz4Hl9OgsDN6S1qjk5q+Agd4=
+
+Name: jnr/ffi/provider/converters/StringBufferParameterConverter.class
+SHA-256-Digest: zdFJ+RwnpCu6ueyK0hKRo/CN1qb0yQmRhAXpe0YFiow=
+
+Name: jnr/ffi/types/key_t.class
+SHA-256-Digest: sCZTvH3w5iEG5qUQqhVLN8fdbi4ktcbeEtRIjA4nmzY=
+
+Name: jnr/ffi/StructLayout$Unsigned32.class
+SHA-256-Digest: 3UE3IYkaQn7x/IjsOb4heIo7ryivOayCS1yxFyTb6TA=
+
+Name: jnr/ffi/StructLayout$mode_t.class
+SHA-256-Digest: 0sI4TIdDMS2RTHzZgBRJTwMZ1TKAci82Q8eCwhFRrWo=
+
+Name: jnr/ffi/provider/jffi/AsmBuilder$ObjectNameGenerator.class
+SHA-256-Digest: B9uPtG/up4V6YrsgD/HLSFrXAJWnXoW3wwRn0JNA7HE=
+
+Name: jnr/ffi/mapper/AbstractFromNativeType.class
+SHA-256-Digest: dApowuD1UlOfc1n/X2M2lENSgndGLNAnJyb/1vf9BSw=
+
+Name: jnr/ffi/Platform$OS.class
+SHA-256-Digest: 0kta3vy9S2IP9Nlvkx2vOYDRzRU3i1HgWeUpxLSp+yY=
+
+Name: jnr/ffi/provider/jffi/ConverterMetaData.class
+SHA-256-Digest: xb5fk+NZ9pgWjIjbAvgPgihAe13Q3Zw3xWD2fc8liW4=
+
+Name: jnr/ffi/Struct$nlink_t.class
+SHA-256-Digest: kgExeZ4EfDM/FxOCNXU7NxoD1BYTnsGKB0q54NNRz+o=
+
+Name: jnr/ffi/Platform.class
+SHA-256-Digest: g1jMQCWEPQFBi1S6Hg2nHEwMU/qWY0AEtAcYasr3A1w=
+
+Name: jnr/ffi/provider/jffi/ReflectionVariableAccessorGenerator$Int16P
+ ointerOp.class
+SHA-256-Digest: b+VLqrRheaXC/HdWUtLPFTcfj6hYNl2hMoMxV83qKlU=
+
+Name: jnr/ffi/StructLayout$UTF8String.class
+SHA-256-Digest: NmFiBaYa74lnV479sEz/6cz6A1pYHkbuUSd0fItsK0I=
+
+Name: jnr/ffi/LastError.class
+SHA-256-Digest: kO+fhA+/T+3Sdzj4iCECnXK/tdkan6nEc0wTLRiQjpw=
+
+Name: jnr/ffi/StructLayout$int64_t.class
+SHA-256-Digest: HQBQLluTB7oBJWOkxgZZzKghP+NWhDy4Fm9xu8UwWus=
+
+Name: jnr/ffi/provider/jffi/NativeClosureFactory$1.class
+SHA-256-Digest: dIf9GOTa/O8tudnivpEo8t06avV7sPBF3/H1V1T7PZk=
+
+Name: jnr/ffi/provider/jffi/ReflectionLibraryLoader$LazyLoader.class
+SHA-256-Digest: GPx6VFpobyvWjk9mWS6xvhSkrqx43DEh7wICMQxrVTg=
+
+Name: jnr/ffi/provider/jffi/ReflectionVariableAccessorGenerator$Double
+ PointerOp.class
+SHA-256-Digest: 4hohod4zMKzW1L4S2Qd4Bq78Ed27BzleXuxWN8A/im4=
+
+Name: jnr/ffi/StructLayout$Pointer.class
+SHA-256-Digest: QxUxrBM19r/Xb3Ru0YziZ+ZXyXtA/o0V71I2Kj/vbBI=
+
+Name: jnr/ffi/provider/jffi/Types.class
+SHA-256-Digest: 70ageP/2Eewh+zCZyJqv5dqkVbucFaxJMlXqkeMW9ck=
+
+Name: jnr/ffi/annotations/In.class
+SHA-256-Digest: yw4rjz8Q7yRWS77Je/lI1G/DK+agmTgAr7f6HlYz87c=
+
+Name: jnr/ffi/Platform$Windows.class
+SHA-256-Digest: HeSH7BshBbDp4XNL7P5PugVTRHqh81QsOnEdDu/thDE=
+
+Name: jnr/ffi/provider/InvocationSession$PostInvoke.class
+SHA-256-Digest: eJzYgbJSf5nkYi+vo7EW51wlABWPkUy//x9xY5zdvv0=
+
+Name: jnr/ffi/provider/converters/BoxedDoubleArrayParameterConverter$O
+ ut.class
+SHA-256-Digest: pLhv0PUtS5MrelpxfXZlfOu4NTUycX89sgdRACSiUP8=
+
+Name: jnr/ffi/NativeLong$Cache.class
+SHA-256-Digest: NA80tjydx6exgNXQY9z8lUV0ZEZme8JjHl6NkkgfRVA=
+
+Name: jnr/ffi/provider/jffi/ToNativeOp$Float64.class
+SHA-256-Digest: KRnxG2pjInm+87SYpQAoZNRn3Uje3rq8nfvlzV5RkmA=
+
+Name: jnr/ffi/util/AnnotationNameComparator.class
+SHA-256-Digest: 4EG2UMNhAhBnU5/HLkObd7G+aQBYN+2vrhUWozVy+rw=
+
+Name: jnr/ffi/Struct$time_t.class
+SHA-256-Digest: 2ta8hcaqd8bQNwxXAis2PBuat03EXm7niHp2L3B02dM=
+
+Name: jnr/ffi/Platform$Darwin.class
+SHA-256-Digest: SoPtVcyt1hFq+cw/KdySjHfgbBvDatQ8w6Xj0W2Bip8=
+
+Name: jnr/ffi/Struct$int16_t.class
+SHA-256-Digest: EsMEJMdVR17A0r24Al7qQG8shRJzpYO5h1ojwqgJabY=
+
+Name: jnr/ffi/provider/jffi/platform/ppc/linux/TypeAliases.class
+SHA-256-Digest: KUWqEjKgtQLOnXUTlTvzzu1NkCJ9a0E2eQJ3C9OQwCM=
+
+Name: jnr/ffi/provider/jffi/TransientNativeMemory$Magazine.class
+SHA-256-Digest: ctiKItgJFUX/82S1su1UWg9oXLCT0BvWX64bkeblZLU=
+
+Name: jnr/ffi/StructLayout$swblk_t.class
+SHA-256-Digest: udJvcjuxdga9cQq+QnSDnNU8+Qv2yUax1cxa3CSlyPY=
+
+Name: jnr/ffi/provider/jffi/AsmUtil.class
+SHA-256-Digest: DTopyYQoBthaOOj82Bj6zUui/T7Y0dXQTsb/SLsXjpk=
+
+Name: jnr/ffi/StructLayout$Float.class
+SHA-256-Digest: 5YRFamWr22mZeNoyh3V4kDY1B/2SYAiGTFnjX4XM+bw=
+
+Name: jnr/ffi/provider/jffi/ReflectionVariableAccessorGenerator$Int8Po
+ interOp.class
+SHA-256-Digest: mzOauwj9WqxQ67iDUbeCKNEq6J5+79ZxgtSb5deJetY=
+
+Name: jnr/ffi/mapper/ToNativeType.class
+SHA-256-Digest: h2m8zhs0PV5DKeLHPuIbHlUwBJB8Kg8q6t1TJqOuaFE=
+
+Name: jnr/ffi/Struct$Info.class
+SHA-256-Digest: W/WcYd95650UEyvD4QhvIacx4RxEh8C+bwG0JKnE460=
+
+Name: jnr/ffi/StructLayout$off_t.class
+SHA-256-Digest: NEOqWXi1/jtotpbStuatzzdznt55YaypIFHvwH4L6lE=
+
+Name: jnr/ffi/mapper/ToNativeTypes.class
+SHA-256-Digest: 34uHV/tJaqOmJrjb3PkXgbJz70usardPb9urTjP+8lQ=
+
+Name: jnr/ffi/Struct$socklen_t.class
+SHA-256-Digest: 8byWq2AddcYIolOQcvNK0kF250sy35x1ZiShhS1ByJo=
+
+Name: jnr/ffi/provider/jffi/FastLongMethodGenerator.class
+SHA-256-Digest: W1ap+2WGWkTixbcPx6ZMUiseD/e9iTR+PWDKlvhsB4k=
+
+Name: jnr/ffi/Platform$1.class
+SHA-256-Digest: vxTKJmzzYIYKyPz1YnarSCC29PDSnH3m5HP5tEv2Nzk=
+
+Name: jnr/ffi/Struct$off_t.class
+SHA-256-Digest: fEsqHLI8APoouhATh0maudJqMFBU67f+eIl5Nj53/a4=
+
+Name: jnr/ffi/byref/LongLongByReference.class
+SHA-256-Digest: Cjm4sJXPfJ9JFVg172P2jAI8Zr2OzRUF4SOnkFdYDLQ=
+
+Name: jnr/ffi/provider/jffi/X86_64StubCompiler.class
+SHA-256-Digest: UJeb5uG7Jqcy0a94TYARrxD4BVtCwGH5T17uZyT7pBI=
+
+Name: jnr/ffi/provider/jffi/LocalVariable.class
+SHA-256-Digest: WCuYfwetE68CdN82Y+FuN4eTLbpoJ9BR5mDjo/gnMR8=
+
+Name: jnr/ffi/Struct$key_t.class
+SHA-256-Digest: SZ2SKpEuwQC4iz4sDBgAcakiXmVvxg2zKpf8059p+zs=
+
+Name: jnr/ffi/provider/jffi/BufferMethodGenerator$InvokeOp.class
+SHA-256-Digest: 2mkojijXSBPFRQ46PR7so8yakZlvQz0QfFt8EIqQldY=
+
+Name: jnr/ffi/Struct$Offset.class
+SHA-256-Digest: EN2h1EPzEZ76NwHLgXD58WNW3Yf+RvuM/iMwMJ4eOYI=
+
+Name: jnr/ffi/provider/jffi/NativeClosurePointer.class
+SHA-256-Digest: ouf5eLJCJKo0/xb8NxqFNFfhz0cJdG3kLsvv9obbQT8=
+
+Name: jnr/ffi/StructLayout$blkcnt_t.class
+SHA-256-Digest: X3uxvkv9BrUQD9xNwprTyao756TwN7igWg4G2UO/8jg=
+
+Name: jnr/ffi/provider/converters/StringBuilderParameterConverter.clas
+ s
+SHA-256-Digest: 4uzMcXkkSbfAAhn4XTKokfxUEiY7EH6kq+9ocT2iDUY=
+
+Name: jnr/ffi/provider/SigType.class
+SHA-256-Digest: e/AMheVg8dzReKjj+KmPsngc/4Ut/K+VtQT0ojHeip4=
+
+Name: jnr/ffi/Struct$AbstractMember.class
+SHA-256-Digest: rwJz4HyAfu4q03CadixmmpnJcJ+910f/cyl5EcFqrS4=
+
+Name: jnr/ffi/provider/InterfaceScanner$1.class
+SHA-256-Digest: 1n2d0BVB0rTDI4n+C/rS5NFoVYFAFJGNW2+PUdICpYU=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$Float32Marshaller.cl
+ ass
+SHA-256-Digest: SiSbkjtQ88008x+UzubyHid5Mvun2EnebYfndv1u3Xw=
+
+Name: jnr/ffi/StructLayout$NumberField.class
+SHA-256-Digest: xhaIzb1wgeIUMLwDeeSoe74JnCgK/Opbq3EqcP2HopE=
+
+Name: jnr/ffi/Struct$Unsigned64.class
+SHA-256-Digest: Nl88RiuQ8Is3biBDHCu3+75+hcmhXUC0FjhBDZTpXiU=
+
+Name: jnr/ffi/provider/jffi/AnnotationTypeMapper$ReflectionToNativeCon
+ verter.class
+SHA-256-Digest: 49pq+01ewcgULht457kxJh/VbO/DbMUGRTqvDopRyzM=
+
+Name: jnr/ffi/Struct$NumberField.class
+SHA-256-Digest: F98DcuYlDpcWDk61etpJtXUtnMPdflmEqsNeSBe0PgM=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$BufferMarshaller.cla
+ ss
+SHA-256-Digest: jCnS8DQ1mIqRcz37XmgEg5FKZj8bH05Xnva/vqtkkkc=
+
+Name: jnr/ffi/provider/Invoker.class
+SHA-256-Digest: ubvgZ1pGehlaDxrtEbH/wj+UBRlVT2t60lz3QXgEbIU=
+
+Name: jnr/ffi/StructLayout$EnumLong.class
+SHA-256-Digest: aZWG1DkEOWSh1F1pTMq/5peIY+QSwKDjLfRupULiUYo=
+
+Name: jnr/ffi/provider/AbstractArrayMemoryIO.class
+SHA-256-Digest: yRC1CoMGs5zHKo/fj6LRYuFkYn7BrLqaFpypK2IO0Gs=
+
+Name: jnr/ffi/provider/jffi/NativeClosureProxy$Factory.class
+SHA-256-Digest: v7O7mJnjxLtgrLvrVUEuzCjePuH5vfdjxmfGxGGaiG8=
+
+Name: jnr/ffi/types/in_addr_t.class
+SHA-256-Digest: OnJFwd4WZ2D42BH6aof03js0Nl5d+mS/vhLh9hp2MF4=
+
+Name: jnr/ffi/StructLayout$Enum16.class
+SHA-256-Digest: Dv/NDpntVFam7r9oQmtzY3lwWX0+H1Nu/Zw8DmtsQxE=
+
+Name: jnr/ffi/provider/jffi/ToNativeOp$Integral.class
+SHA-256-Digest: zfFjxbcn3ylxzBJHsmdlnXg6xt08s6cLam4/CKcl4Rk=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$PointerMarshaller.cl
+ ass
+SHA-256-Digest: QWMnhSDF0pRKYPVuWdqKBG+W/0qH/Sc7TqMioTzmA3E=
+
+Name: jnr/ffi/types/u_int32_t.class
+SHA-256-Digest: hlX0yG7hN7JAE58mfGGKYhbzzjgD5q5fbrHeD9DWaL0=
+
+Name: jnr/ffi/provider/jffi/ReflectionVariableAccessorGenerator.class
+SHA-256-Digest: DyIQUqSWzmQaFIZDcJGMDwdHQzZseSm4Bookn2Zr2Hc=
+
+Name: jnr/ffi/provider/jffi/X86Disassembler$X86DisassemblerConverter.c
+ lass
+SHA-256-Digest: 2m7v6z0IoDqg4NbN1r7lT+byVIi8HgZQII1FQZyalVg=
+
+Name: jnr/ffi/provider/converters/EnumSetConverter.class
+SHA-256-Digest: KvzxhnNbyXgF25B0ngq7RYgHm6jVvqeI/VkjR5sIvro=
+
+Name: jnr/ffi/provider/jffi/LocalVariableAllocator.class
+SHA-256-Digest: Ms8jIjqGV3ZW1FOSfgYMoXKjOzIZCkWW8u+1xM9DvHY=
+
+Name: jnr/ffi/LibraryLoader$1.class
+SHA-256-Digest: 6Hi8TBQ8s5X+isTxy0XhhsuTu4jXOEghx5ZqkTXOYLg=
+
+Name: jnr/ffi/types/dev_t.class
+SHA-256-Digest: 8uCAlyJ5sefttnekIRBVUd0TbveiMx5RhI7O8NVwito=
+
+Name: jnr/ffi/types/u_int64_t.class
+SHA-256-Digest: kMJJRJRQ6+ca5g1LfWl0vMU3HoC4OE8sbVC78Kb5Bys=
+
+Name: jnr/ffi/util/ref/FinalizableReferenceQueue$DecoupledLoader.class
+SHA-256-Digest: HqvrBgerlNY9CDxz/nAVQ9uelYH+JAoxZ5YTBp7dMLg=
+
+Name: jnr/ffi/provider/AbstractArrayMemoryIO$BigEndianArrayIO.class
+SHA-256-Digest: ZKGE7GBD45nQH1yshDlbkIY8EkiHCHTom3ZmaP5pirY=
+
+Name: jnr/ffi/provider/jffi/ReflectionLibraryLoader$LazyLoader$Variabl
+ eAcccessorInvoker.class
+SHA-256-Digest: VItnN1JIqGfVym1lbeZjvLZs3yU/UzNdHCjjov7Vs60=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$DefaultInvoker.class
+SHA-256-Digest: mG40FAgDB3fNGDg4SSsXFn4EPqHij8hRz+2jaxrW7U4=
+
+Name: jnr/ffi/util/ref/FinalizablePhantomReference.class
+SHA-256-Digest: 53nCiscJ8yn2pqGhVIbKShEcJsfKtzu0BD9tFVAJKcw=
+
+Name: jnr/ffi/StructLayout$nlink_t.class
+SHA-256-Digest: +Y84L2TEn0MG7w5rLvfu8Kk1OHrLv82gz19gCtECPUc=
+
+Name: jnr/ffi/provider/jffi/AsmLibraryLoader.class
+SHA-256-Digest: 4StglBp6jdYzDmmZCP6q1SAF55kYxD98m/KsqbLJomQ=
+
+Name: jnr/ffi/provider/InterfaceScanner$VariablesIterator.class
+SHA-256-Digest: Vi8RjA8bDwKs1tSkEQs5XQcdnjgd8BF58dcjSEI8tsU=
+
+Name: jnr/ffi/provider/converters/Long32ArrayParameterConverter$Out.cl
+ ass
+SHA-256-Digest: WcLQK5+RCQnnL2N8KQ/33Rw8tw8GSa09OrvA4FetkHM=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$Float64Invoker.class
+SHA-256-Digest: 7yWtknJ9c/bGKMyWLwa0UyY9CbvckGHH90iJir7z5Ek=
+
+Name: jnr/ffi/provider/ParameterType.class
+SHA-256-Digest: KisBIylVsbPxBJoPHrDfoROzWc0E6b1vrpxTtN4EwsU=
+
+Name: jnr/ffi/Struct$String.class
+SHA-256-Digest: IgRdCeumOpAGXQy18b3oq+xTLICGpTogs+sf4cBsjhk=
+
+Name: jnr/ffi/Struct$BOOL16.class
+SHA-256-Digest: YduAt0gMCb4/XaOueulxNYU1oabnecMgKjzp5s2EuOs=
+
+Name: jnr/ffi/provider/jffi/platform/ppc64le/linux/TypeAliases.class
+SHA-256-Digest: Tard49/vfI4ejYxuLnnQkLa0SNkoLYzrgkk5/v5RYfg=
+
+Name: jnr/ffi/provider/converters/BoxedBooleanArrayParameterConverter.
+ class
+SHA-256-Digest: ngY+owYN6s77EjpnoEQQrD8y4mzDw3Swwx4C81LYr54=
+
+Name: jnr/ffi/mapper/ToNativeContext.class
+SHA-256-Digest: PyHUwe6UqWyIUnoQdAViIXtqpZM3Ta/IgWS/ONXe4Og=
+
+Name: jnr/ffi/StructLayout$UTF8StringRef.class
+SHA-256-Digest: CYunHD1n99Na5ejRiHl2cljtqu+tF5fuSri+DxVcBI0=
+
+Name: jnr/ffi/provider/jffi/platform/ppc64/linux/TypeAliases.class
+SHA-256-Digest: 8VOj4NnOE4EDkx7soAANS82z70QM0gpL1JXjG47pfLg=
+
+Name: jnr/ffi/mapper/FromNativeConverter$NoContext.class
+SHA-256-Digest: 5kr/zlBn2kPL0rPGYQ1rzb9m1fZNSDx4TjNzeUiof1o=
+
+Name: jnr/ffi/Struct$id_t.class
+SHA-256-Digest: ogYwgYiw6RcRpRkkWL7oHd+WGJJfxWadTcLEr60X/Ww=
+
+Name: jnr/ffi/types/caddr_t.class
+SHA-256-Digest: mWwyFlVge/LgqQP7BZQ5HGIfkb5GbmwJPlnldJi0HrI=
+
+Name: jnr/ffi/Struct$Signed32.class
+SHA-256-Digest: SNBjv27dZV4zaHz54aVs4zT0MsNV0uTdhw4bDtk5t3I=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: SMC6OBxGFFhUyLHj0TMAnVUzHsCOK1PfYSzlr/UmLFo=
+
+Name: jnr/ffi/provider/jffi/platform/i386/openbsd/TypeAliases.class
+SHA-256-Digest: 4j78keOU8SXx3ca/BAFM/gv48b8V4W5GQYDSvTsv9w0=
+
+Name: jnr/ffi/provider/jffi/AbstractFastNumericMethodGenerator.class
+SHA-256-Digest: zRg7viyxRa/fNo5L5q9wUkkpqnABo2RwAS+JQIym2Ds=
+
+Name: jnr/ffi/provider/jffi/ToNativeOp.class
+SHA-256-Digest: qDrquTLbspnhQpAI+2Hf/3Yp1YKnlqqzq3imoNV3ey8=
+
+Name: jnr/ffi/mapper/FromNativeConverter$FromNative.class
+SHA-256-Digest: U0rhsDsP+flHlWd3r0r8gxNt8tWEWek/hp1mcn903uI=
+
+Name: jnr/ffi/Struct$Signed64.class
+SHA-256-Digest: Doasy1XzW9MdxMcJ6Gz2vTDhaqCyzBDIa4PsEWN9bvo=
+
+Name: jnr/ffi/provider/jffi/ReflectionVariableAccessorGenerator$Int32P
+ ointerOp.class
+SHA-256-Digest: Nw6zRRlvmZV3WwVUHem2WKtaOl2r1QQQhsIv57EA9N8=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$Unsigned32Converter.
+ class
+SHA-256-Digest: hb82q3wcXM+ElgpRcfaCc2bOCfOBMozufY6GCRXsFiY=
+
+Name: jnr/ffi/provider/jffi/VariableAccessorGenerator.class
+SHA-256-Digest: 2iOyazQnPyzG4ZBRibGNQGC+WwCB4PG1Bd5BoH8UpoQ=
+
+Name: jnr/ffi/Struct$blksize_t.class
+SHA-256-Digest: bl2MpW/730/63bBiEuuVQ4d63qGH1l838GcDkuzUiTw=
+
+Name: jnr/ffi/annotations/SaveError.class
+SHA-256-Digest: iSkkBqaoDYFRnOUhUmYB68RJ5ByHRqexivI/5bcTwdY=
+
+Name: jnr/ffi/provider/jffi/X86Disassembler$Mode.class
+SHA-256-Digest: UEjsHJ0flp2cglO3lDR4ikudxObtmuWj/PsX76kAnkU=
+
+Name: jnr/ffi/annotations/Delegate.class
+SHA-256-Digest: 3WLH9rwvZYFdHfN05dZqZiypB+MYDu3AjMNSxrzrxl8=
+
+Name: jnr/ffi/StructLayout$AbstractBoolean.class
+SHA-256-Digest: FMS8xR9J7oToimGB+vm6MjxoNgXpSH3nNTHGwiZbzx4=
+
+Name: jnr/ffi/mapper/SimpleTypeMapper.class
+SHA-256-Digest: pdNdMojWHo1tzclfvGvaFhQSmzIyqPz68y/JSiutxgc=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$FloatResultConverter
+ .class
+SHA-256-Digest: kQHK3w1zrBnROM1t91JRb0mKTtZ71D30ReQ1Z10hw0A=
+
+Name: jnr/ffi/provider/converters/EnumConverter.class
+SHA-256-Digest: tjMX0RQFfhD3oFNqd+1iuFG/SZ+8aCFQoxiUVv4ZeQ8=
+
+Name: jnr/ffi/StructLayout$uintptr_t.class
+SHA-256-Digest: OXImWWbM8m4HDKCNsZC03G6ovGnJtESowR2XwwgD2PM=
+
+Name: jnr/ffi/Struct$u_int8_t.class
+SHA-256-Digest: jiBuT3/ZBP2YTlZ/JCyGnBahA6MP/4kqTJCRwu5JblI=
+
+Name: jnr/ffi/provider/jffi/ReflectionVariableAccessorGenerator$Number
+ Variable.class
+SHA-256-Digest: tpOW2wv63mTokKG5uFnmfsZvMwO9UtcACzPsUoNFpJo=
+
+Name: jnr/ffi/types/ino_t.class
+SHA-256-Digest: wb+07+F7gZvICarO9FCjTc6cuxyGM6WxX87wneS9Y9A=
+
+Name: jnr/ffi/mapper/SignatureType.class
+SHA-256-Digest: MTontFsoyxaKSkqw7mR4D0dnUm2rKWFrCZ6dqjbnhL0=
+
+Name: jnr/ffi/annotations/LongLong.class
+SHA-256-Digest: VAuRh/X8xvREFIN4R8OaNGl1U1Ru0Fle7EQ2D8yJ9PM=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$SynchronizedInvoker.
+ class
+SHA-256-Digest: LaDL1zR2nkRtWii1aIXbrnnghPHXhXPSq0llz4Ga/+s=
+
+Name: jnr/ffi/ObjectReferenceManager.class
+SHA-256-Digest: ZAOPeuernWx2DB8BzjtD4lz3AbNzx7fk3BtjHPgpOgg=
+
+Name: jnr/ffi/provider/jffi/AnnotationTypeMapper.class
+SHA-256-Digest: GqCSu4OBVibRs3M12fDzHWmmdPsTic+KEncXfU6MVWg=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$AddressResultConvert
+ er.class
+SHA-256-Digest: jUpDOtjDHvvwAPdJoGnBUeq8X2u7tCo8YgCJPZXYGTo=
+
+Name: jnr/ffi/mapper/DefaultSignatureType.class
+SHA-256-Digest: fox+y+r0Ecye0fCFQyZOeqr/DHd4yRqeu9Ui+oKanw8=
+
+Name: jnr/ffi/provider/jffi/AsmBuilder$ObjectField.class
+SHA-256-Digest: HjA2Fz26qvyvdUpSKUEeIYWsDepVWzkAoCYfYXUR6PE=
+
+Name: jnr/ffi/provider/jffi/NativeClosureManager$ClosureSite.class
+SHA-256-Digest: 1G2WOhZJ0dwbagxGOKgCX2/hcuku9cryYv5CYkGjaW8=
+
+Name: jnr/ffi/types/u_int8_t.class
+SHA-256-Digest: JYFFSysNetgWAuhnOPbXe71UyF76m3tHBfq3hk1WxuQ=
+
+Name: jnr/ffi/Struct$LONG.class
+SHA-256-Digest: iquUmCvMP+TnFa6J3IJH6E9jb58Ob61veQ/7nRInCFA=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$LongLongConverter.cl
+ ass
+SHA-256-Digest: EQuaYi2wAA5Nr/5f0MPiDMt2cNrziK4l9ayX9etJjO4=
+
+Name: jnr/ffi/provider/jffi/AsmUtil$1.class
+SHA-256-Digest: z5MW8+iqOtpD8/m8C0WuRSVgW7v1f+gBhf/Xc10fOT4=
+
+Name: jnr/ffi/Platform$Unsupported.class
+SHA-256-Digest: G8o6V4pz+24cQgYeDIHEKoo0aRJaPGmKwQT0tQ4Ubwo=
+
+Name: jnr/ffi/provider/jffi/JNINativeInterface.class
+SHA-256-Digest: ZPPdmIeQpDavfnTAD8GyKS0BjXHAs9fqjp0p4mxQOVc=
+
+Name: jnr/ffi/provider/NativeFunction.class
+SHA-256-Digest: g9ztmqSiJUes1IxW/8/3zem8GdoDc8m49jHIBaoT1do=
+
+Name: jnr/ffi/mapper/FunctionMapper.class
+SHA-256-Digest: izAO0G1Lm+pjHp/TApztVAnhrWk7YG1dR4muZvcSrc8=
+
+Name: jnr/ffi/Struct$Double.class
+SHA-256-Digest: H/I0KzpDNn/7S7VKfnYlDB9ePt4g6KS8NqxV17Q+sTc=
+
+Name: jnr/ffi/provider/converters/StringResultConverter.class
+SHA-256-Digest: k3hI40+tKMcOuU2p2BPCILsy+wsg45HvTqoVzsJZ+Z0=
+
+Name: jnr/ffi/provider/jffi/platform/x86_64/windows/TypeAliases.class
+SHA-256-Digest: /MeNVYvv+RyU1qHhchgQdswIGfNzhS9o9mzS4WSt9yw=
+
+Name: jnr/ffi/mapper/FunctionMapper$Context.class
+SHA-256-Digest: wkABIKY6gFDjwsWwYXOhTLdaM4xkcjL0ciG7lt6KH2I=
+
+Name: jnr/ffi/provider/jffi/LibraryLoader.class
+SHA-256-Digest: Cx72IOOv5qfmfswzy/x4BtWQr8yKERKykUemtVH+TDY=
+
+Name: jnr/ffi/provider/jffi/ToNativeOp$Primitive.class
+SHA-256-Digest: VnX+S61lr8psYnpayGnp8tu4IBENF2U+Ys2GohDht/4=
+
+Name: jnr/ffi/provider/jffi/PrimitiveArrayParameterStrategy$3.class
+SHA-256-Digest: 5uvKKhHUZHb/RpHIBRUW0A1MttlR6EwPgn35+L1EA8w=
+
+Name: jnr/ffi/Struct$EnumField.class
+SHA-256-Digest: 0KD4n6GiKz/1v/jCTFELHeFSHOxEpCFoT+DJIg+TsyY=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$Int32Marshaller.clas
+ s
+SHA-256-Digest: wjld5jR+L0CoAQy8ozIQMKyoQ9zOtrVdx7H2Z5uAeLo=
+
+Name: jnr/ffi/provider/jffi/X86Disassembler$UDis86.class
+SHA-256-Digest: uLZJ+0Qy3+E2HBRr8Ed3yDuR2GhadOCNBEeT9I6dCiA=
+
+Name: jnr/ffi/provider/jffi/FastNumericMethodGenerator.class
+SHA-256-Digest: vp94lUfXKLoR4hMVVjCxdbwcQCjte0pBOn2kCmat5vM=
+
+Name: jnr/ffi/Struct$sa_family_t.class
+SHA-256-Digest: dH2v6SdC5PcoR9v/lCg4OOprcLv7ObbUtrOda5Hl4yY=
+
+Name: jnr/ffi/StructLayout$fsblkcnt_t.class
+SHA-256-Digest: upOPHegTSMFwJJznNrzXgTk6dRTW/gfX/I/3SzGOioQ=
+
+Name: jnr/ffi/provider/jffi/NullObjectParameterStrategy.class
+SHA-256-Digest: P71MHr+Zj6UJdHTUfdeeWcpXuI3Gbw7Y9qdfNvSiGMc=
+
+Name: jnr/ffi/annotations/Transient.class
+SHA-256-Digest: X6akbIRzZ5JGV+84CHAMUOTAKaWITVzznIO0FePNMY4=
+
+Name: jnr/ffi/provider/converters/CharSequenceArrayParameterConverter$
+ StringArray.class
+SHA-256-Digest: HIE/HGPnrgxngxmYTvnOjR69HhVYoDvBVLxkzEiGZKw=
+
+Name: jnr/ffi/provider/jffi/X86_64StubCompiler$1.class
+SHA-256-Digest: N9M/QR5gs8Qk5OM8Dh2aHWZE5RAokzgirN/iUUsmL0I=
+
+Name: jnr/ffi/provider/jffi/BufferMethodGenerator$MarshalOp.class
+SHA-256-Digest: IQUn9Mh73krCzX4C+BOoN/5v/K+pZw5tYcRgkO5V/7A=
+
+Name: jnr/ffi/Struct$Signed16.class
+SHA-256-Digest: Adju3OixUkATD6hv3mFiNiDQTfroHOUSmzcDjE3wqY4=
+
+Name: jnr/ffi/Address.class
+SHA-256-Digest: 1UrZmPvrRNWVNoAcohU0AAO/eCNaFsFvuXp9jMXvafQ=
+
+Name: jnr/ffi/provider/jffi/ReflectionVariableAccessorGenerator$FloatP
+ ointerOp.class
+SHA-256-Digest: ifyp8ISedsAkOqb+Mxa65hpF7FcZLJ+Jjr2gtoBY3OA=
+
+Name: jnr/ffi/mapper/AbstractToNativeType.class
+SHA-256-Digest: Fvc2T92q4v0TFv6TZzYrsEXBwCc8iGGPry8FLv0PuAw=
+
+Name: jnr/ffi/provider/converters/ByReferenceParameterConverter$Out.cl
+ ass
+SHA-256-Digest: GO/UQLUu7JMKHiWURb9g8LjCiT+4BNmKPVarQYvG7CY=
+
+Name: jnr/ffi/StructLayout$intptr_t.class
+SHA-256-Digest: fUy8TGxpIdoK/13QL1aUAerDhUaCvsZkcJOqGDI1vv8=
+
+Name: jnr/ffi/provider/AbstractMemoryIO.class
+SHA-256-Digest: 1H/1VDOq7kXIy2fnec9doWiKXSP+PkxoVhDKEPa122M=
+
+Name: jnr/ffi/provider/AbstractArrayMemoryIO$BE32ArrayIO.class
+SHA-256-Digest: Kw43InkRaVN0fRbaVH4qwcUqc2vBgohQkUSvKPUXpC0=
+
+Name: jnr/ffi/provider/jffi/NativeClosureProxy.class
+SHA-256-Digest: 0jiOX7y/zT6ge/EL3GLxNnOykwbsz0DC0L2u+qTs06I=
+
+Name: jnr/ffi/provider/jffi/NativeClosureManager$1.class
+SHA-256-Digest: LNrl22gy1j8rEzEo0xJieJn8EArpAwDbFXNF9vUdfPM=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.github.jnr.ffi/pom.
+ xml
+SHA-256-Digest: J6FhTrWnbnDMk5UM1d6oq7D9wUA81jlWmbfF9slMVmM=
+
+Name: jnr/ffi/StructLayout$dev_t.class
+SHA-256-Digest: kddNkvdYws+EvQLcZXYfQjYhIMi0uWL2Z+VHwUR49bU=
+
+Name: jnr/ffi/provider/converters/BoxedBooleanArrayParameterConverter$
+ Out.class
+SHA-256-Digest: pZB0Kp33a9OjZtPZKVOMdtgEKKS5DQcky6VtfY7xoKU=
+
+Name: jnr/ffi/provider/jffi/platform/ppc/aix/TypeAliases.class
+SHA-256-Digest: mqkOqiZHx0qx4jWujRV+kPo9yC4sbTG3vB398Wf7204=
+
+Name: jnr/ffi/provider/jffi/BufferParameterStrategy.class
+SHA-256-Digest: zhIezyIob5YmmHVOpoAeUtVIFNhWEWz9CPCCjvRx9nA=
+
+Name: jnr/ffi/LibraryLoader$2.class
+SHA-256-Digest: RJkRTw21+D7JUUFN1o1Z2Ob5Hc5xFbo90f9wn6k0Y30=
+
+Name: jnr/ffi/StructLayout$Field.class
+SHA-256-Digest: UxZHrvLDSY7Xe5XjX2pO22jSK8K9NJ9KHY2TYouvuWo=
+
+Name: jnr/ffi/util/ref/internal/Finalizer.class
+SHA-256-Digest: q0M2Yx93AAGYeouQdsKxiRkEB0SyZvsugex74yGcLhk=
+
+Name: jnr/ffi/provider/converters/BoxedLong32ArrayParameterConverter$O
+ ut.class
+SHA-256-Digest: qVSdSzE6IUqJgs96ewI69H58lU+i4NCbKQP9FLmV/5w=
+
+Name: jnr/ffi/provider/jffi/NativeRuntime$TypeDelegate.class
+SHA-256-Digest: hW7RN5Di374BsGwM+cHULNhdm3ng4bb+EBtcn5pHUVM=
+
+Name: jnr/ffi/types/blkcnt_t.class
+SHA-256-Digest: ud2W6Z1EiSyVH3yPPot4qnrJ2T5+9waYVyVbGpKU41k=
+
+Name: jnr/ffi/Struct$clock_t.class
+SHA-256-Digest: 6qvqLRz/+YUht58dzH/Zouns9/N22Im7S17ShOWYMzE=
+
+Name: jnr/ffi/types/ino64_t.class
+SHA-256-Digest: kXf2SyGC4EYzsUWO/gREsUv5a0xVEYozMmcENO9y3rg=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$BooleanConverter.cla
+ ss
+SHA-256-Digest: 822b5W/Mlu0NTMLKDN1G203zwNUfajihQ4ewaOVSrzw=
+
+Name: jnr/ffi/provider/jffi/PrimitiveArrayParameterStrategy$6.class
+SHA-256-Digest: Yzlggpb3FRL/8e+XDGBMGhKMalFCjwV/RYXbbrEcfuw=
+
+Name: jnr/ffi/provider/jffi/X86_32StubCompiler.class
+SHA-256-Digest: L5T+SA/7l02LlAzGRZQflUfeNkYcP2S8n9/diqzdTvI=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$DoubleConverter.clas
+ s
+SHA-256-Digest: 5A/0ACMYTKbesXXJLejSe2lPNb9I+7wohsA6x5fnK6A=
+
+Name: jnr/ffi/Struct$pid_t.class
+SHA-256-Digest: NrAHnhG10Nv8XWoSabUYnGoZlmUju/gjR/UO53n1QQo=
+
+Name: jnr/ffi/StructLayout$fsfilcnt_t.class
+SHA-256-Digest: B7AW+mE0Ve5Li9fHjuzz2M5b9wpy3NDTikTrQr/mX4M=
+
+Name: jnr/ffi/provider/jffi/PrimitiveArrayParameterStrategy$5.class
+SHA-256-Digest: PWTYU4MxQ/lOgTVYUh3b/TwNhlwhEHKI/fdpuW62E4c=
+
+Name: jnr/ffi/types/uid_t.class
+SHA-256-Digest: ZILvuBbtlcTKZDK+a04o8ZQH4cO/XltC3L4s7B4V03g=
+
+Name: jnr/ffi/StructLayout$Enum.class
+SHA-256-Digest: atif3yDwA/RJN3XnB3fg6lOldzAi3399OfrHC6QXklA=
+
+Name: jnr/ffi/provider/jffi/BaseMethodGenerator$2.class
+SHA-256-Digest: l9l+6FzjHLBZU1vHdUTEUKLypdqv2UsGIsTnbjYitXE=
+
+Name: jnr/ffi/Struct$uintptr_t.class
+SHA-256-Digest: rG1Sw6yMsPqpfswAqkHuC77xqdjxkr0YGk83h0zZTiE=
+
+Name: jnr/ffi/provider/jffi/NumberUtil$1.class
+SHA-256-Digest: Wmqw9xcWzZaQZT7ohBVgE8tfrBvk5GnKLZnprUA2+0o=
+
+Name: jnr/ffi/provider/converters/BoxedIntegerArrayParameterConverter$
+ Out.class
+SHA-256-Digest: JAD4HxZG9tEE8PtSQGHbjSwpRvBKBpIBlEBWmCeJGzs=
+
+Name: jnr/ffi/mapper/SimpleFunctionMapper.class
+SHA-256-Digest: z2eEa4QkR6q/5gboe2jzuRsrgxqLo3dhVzK5DDDZi44=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$LongInvoker.class
+SHA-256-Digest: wVciUQcpBGJgpvXCSgmZIxl8ZxyfiJuNx3c/WRZnFZc=
+
+Name: jnr/ffi/TypeAlias.class
+SHA-256-Digest: VjxB9pPAQax1x+Cfk04gxbhOguq0a/WHviRl6y9Ssv4=
+
+Name: jnr/ffi/provider/converters/BoxedFloatArrayParameterConverter.cl
+ ass
+SHA-256-Digest: IUzKYPsphyYC4aZ/Zncbzq1/MMNn/DlvMVEZNZqxmRk=
+
+Name: jnr/ffi/mapper/CachingTypeMapper$1.class
+SHA-256-Digest: Yug+kobdip7pEp3vB2h+dLC75MVE2GHTidUPi4yjRDk=
+
+Name: jnr/ffi/mapper/MethodParameterContext.class
+SHA-256-Digest: aqlBEKIIrGrUeAxByxM9xRLOrTNomzAT0Vyku/3g640=
+
+Name: jnr/ffi/StructLayout$clock_t.class
+SHA-256-Digest: UQBFO/dQD/HvSjFSIfxSnYgNHWkfDfZCCHWLqBVPUNI=
+
+Name: jnr/ffi/provider/jffi/platform/i386/windows/TypeAliases.class
+SHA-256-Digest: Ssiz0Va+gAdukDNyTJAMN1zoFzHRaP1DeA1Jg4BxgjE=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$Signed8Converter.cla
+ ss
+SHA-256-Digest: PxvTag/7T11tCrvpm73F9QLW9jmHMTaxmom/6TP2Wfc=
+
+Name: jnr/ffi/provider/converters/NativeLongConverter.class
+SHA-256-Digest: KNGdDxmKP73/2MF875jJrZLr4cMT6oDjyE3Oqw5nTNk=
+
+Name: jnr/ffi/provider/jffi/BaseMethodGenerator$1.class
+SHA-256-Digest: wG2XatFDIZpyo/91Zwwq/disMptKAOz5iXgn1SQs0E4=
+
+Name: jnr/ffi/provider/jffi/MethodGenerator.class
+SHA-256-Digest: Wh7TOWEVIXuPLQAsXXtkoUPYOJQD0xC8jGYeIKvLQFo=
+
+Name: jnr/ffi/StructLayout$Unsigned16.class
+SHA-256-Digest: /F5IGihiu97LrVAca/QwYcIncaB/qH5uJFqepjIWOLc=
+
+Name: jnr/ffi/provider/jffi/platform/x86_64/linux/TypeAliases.class
+SHA-256-Digest: LyEOXT25Jp6GJCeDbajsYYH+Ov4z9mbFYL34/zIPBro=
+
+Name: jnr/ffi/StructLayout$Enum32.class
+SHA-256-Digest: SeyCrvtF7EuGJuCHpmUucILlfcI4gL0n5z2xze7ndNc=
+
+Name: about.html
+SHA-256-Digest: Z194R4VwtEXJ0b5tq/XrTwAdz4PB/s3N2BHbBwc8f9M=
+
+Name: jnr/ffi/provider/jffi/platform/sparc/solaris/TypeAliases.class
+SHA-256-Digest: q0Pv69q1Yu/EL64+UA7QPEg+pYJvJqhpDhVJRsj32Ts=
+
+Name: jnr/ffi/provider/jffi/PrimitiveArrayParameterStrategy$4.class
+SHA-256-Digest: Vod/hXCSpcW4FECUFo7Jj/vz49pwXioNi0Z4OJ/IYes=
+
+Name: jnr/ffi/byref/PointerByReference.class
+SHA-256-Digest: xI6emZJk8yKzmsl+Vsp0yJ3q3HsksCU9jWJL+bqO06g=
+
+Name: jnr/ffi/provider/jffi/platform/sparcv9/solaris/TypeAliases.class
+SHA-256-Digest: 0i3hcmE1b76sKn56vaHOSeX+0wJIOSSAqx6nUAZPuCc=
+
+Name: jnr/ffi/provider/jffi/NativeClosureFactory$ClosureReference.clas
+ s
+SHA-256-Digest: Uy5ucwmoF6JDpaWhs952D8WTTEUUteuFLCJZcDOWTYU=
+
+Name: jnr/ffi/provider/jffi/VariableAccessorGenerator$PointerOp.class
+SHA-256-Digest: 2Vpuw/ks+1qw6ylCaL8y58KS25+5AsqtEHHVS+4VQOc=
+
+Name: jnr/ffi/provider/jffi/AsmBuilder.class
+SHA-256-Digest: ekueOeSvIiR0ZokNFb2avmmKER/LUQKWA70deW/wKis=
+
+Name: jnr/ffi/provider/converters/StructByReferenceToNativeConverter.c
+ lass
+SHA-256-Digest: Z21HMmTfsrp31v7BZVEIXPuO3JGPhUBu/y6udWWNU/M=
+
+Name: jnr/ffi/provider/jffi/TransientNativeMemory$1.class
+SHA-256-Digest: W1jaPMnsqkuZv9GrZTj+HHPYooVjNTayb6WlXy+BJGY=
+
+Name: jnr/ffi/mapper/CachingTypeMapper.class
+SHA-256-Digest: djykdbQzBJEpoRQmR8gJS67gMW7MvC3g8TEDZ6Ys2VI=
+
+Name: jnr/ffi/types/time_t.class
+SHA-256-Digest: bTc47TrT0j+bsAdAxgJFR5L1oIObxbDMpPLoJJM/uXs=
+
+Name: jnr/ffi/StructLayout$in_port_t.class
+SHA-256-Digest: mtJ8q7ruPiw19BfaoTu8wDwUy7qOJXHZ8c1OCJqnugA=
+
+Name: jnr/ffi/util/ref/FinalizableReferenceQueue$FinalizerLoader.class
+SHA-256-Digest: MrZ9OXrQB3K64uQg0BJNcOY2T6c62nPdDlJZ0Jcllh8=
+
+Name: jnr/ffi/provider/converters/CharSequenceParameterConverter.class
+SHA-256-Digest: SYWN189JOUlNaunYYP8hYj9RfTdprvN3TIvTnYsobTI=
+
+Name: jnr/ffi/provider/jffi/X86_32StubCompiler$1.class
+SHA-256-Digest: ami9V8rWpx/Z3GpF3jvr3OQK/KvJQ7kG/DcnJzubOFw=
+
+Name: jnr/ffi/StructLayout$blksize_t.class
+SHA-256-Digest: i+TP/8x3qqNPm6hqwsbRsPU7mOXULRHT+KsT8l/7gEs=
+
+Name: jnr/ffi/provider/converters/StructByReferenceFromNativeConverter
+ .class
+SHA-256-Digest: i3kkX+Hk9PkTgZG7NsDBlNPIzw1rLzSmIiL8lA2sw0Q=
+
+Name: jnr/ffi/types/swblk_t.class
+SHA-256-Digest: 0RAfJ3muG4CGaxGhCqfDNXmuOt3Xk7A2CTgPAr3Gz64=
+
+Name: jnr/ffi/provider/jffi/DefaultInvokerFactory$Unsigned16Converter.
+ class
+SHA-256-Digest: Fd56lowL1R6VuURvu0StjDFJkObZnhUjFKZ+I54khrI=
+

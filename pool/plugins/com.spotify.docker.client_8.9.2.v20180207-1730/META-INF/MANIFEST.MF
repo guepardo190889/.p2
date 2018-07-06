@@ -1,0 +1,2132 @@
+Manifest-Version: 1.0
+Implementation-Title: docker-client
+Automatic-Module-Name: com.spotify.docker.client
+Bundle-SymbolicName: com.spotify.docker.client
+Implementation-Version: 8.9.2
+Archiver-Version: Plexus Archiver
+Built-By: genie.orbit
+Bundle-ManifestVersion: 2
+Implementation-Vendor-Id: com.spotify
+Specification-Title: docker-client
+Bundle-Vendor: %bundleVendor
+Import-Package: org.apache.commons.compress.archivers;version="1.6.0",
+ org.apache.commons.compress.archivers.tar;version="1.6.0",org.apache.
+ commons.compress.compressors.gzip;version="1.6.0",org.apache.commons.
+ compress.utils;version="1.6.0",org.apache.http;version="4.4.1",org.ap
+ ache.http.config;version="4.4.1",org.apache.http.protocol;version="4.
+ 4.1",org.apache.http.ssl;version="4.4.1",org.apache.http.client;versi
+ on="4.5.0",org.apache.http.client.config;version="4.5.0",org.apache.h
+ ttp.client.methods;version="4.5.0",org.apache.http.conn;version="4.5.
+ 0",org.apache.http.conn.socket;version="4.5.0",org.apache.http.conn.s
+ sl;version="4.5.0",org.apache.http.impl.client;version="4.5.0",org.ap
+ ache.http.impl.conn;version="4.5.0",jnr.unixsocket;version="0.8.0",co
+ m.fasterxml.jackson.annotation;version="2.9.2",com.fasterxml.jackson.
+ core;version="2.9.2",com.fasterxml.jackson.databind;version="2.9.2",c
+ om.fasterxml.jackson.databind.annotation;version="2.9.2",com.fasterxm
+ l.jackson.databind.module;version="2.9.2",com.fasterxml.jackson.datab
+ ind.node;version="2.9.2",com.fasterxml.jackson.databind.util;version=
+ "2.9.2",com.fasterxml.jackson.datatype.guava;version="2.9.2",com.goog
+ le.common.base;version="18.0.0",com.google.common.collect;version="18
+ .0.0",com.google.common.io;version="18.0.0",com.google.common.net;ver
+ sion="18.0.0",javax.ws.rs;version="2.0.0",javax.ws.rs.client;version=
+ "2.0.0",javax.ws.rs.core;version="2.0.0",javax.ws.rs.ext;version="2.0
+ .0",org.bouncycastle.asn1.pkcs;version="1.52.0",org.bouncycastle.open
+ ssl;version="1.52.0",org.glassfish.hk2.api;version="2.4.0",org.glassf
+ ish.jersey.apache.connector;version="2.19.0",org.glassfish.jersey.cli
+ ent;version="2.19.0",org.glassfish.jersey.client.spi;version="2.19.0"
+ ,org.glassfish.jersey.internal.util;version="2.19.0",org.glassfish.je
+ rsey.jackson;version="2.19.0",org.slf4j;version="1.7.2",com.google.ap
+ i.client.util;resolution:=optional,com.google.auth.oauth2;resolution:
+ =optional,com.spotify.docker.client;resolution:=optional;version="[8.
+ 9,9)",com.spotify.docker.client.auth;resolution:=optional;version="[8
+ .9,9)",com.spotify.docker.client.exceptions;resolution:=optional;vers
+ ion="[8.9,9)",com.spotify.docker.client.jackson;resolution:=optional;
+ version="[8.9,9)",com.spotify.docker.client.messages;resolution:=opti
+ onal;version="[8.9,9)",com.spotify.docker.client.messages.mount;resol
+ ution:=optional;version="[8.9,9)",com.spotify.docker.client.messages.
+ swarm;resolution:=optional;version="[8.9,9)",javax.annotation;resolut
+ ion:=optional;version="[1.2,2)",javax.net.ssl;resolution:=optional,ja
+ vax.security.auth.x500;resolution:=optional
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Originally-Created-By: Apache Maven 3.5.2
+Export-Package: com.spotify.docker.client;version="8.9.2";uses:="com.f
+ asterxml.jackson.databind,com.fasterxml.jackson.databind.util,com.goo
+ gle.common.base,com.google.common.collect,com.spotify.docker.client.a
+ uth,com.spotify.docker.client.exceptions,com.spotify.docker.client.me
+ ssages,com.spotify.docker.client.messages.swarm,javax.net.ssl,javax.w
+ s.rs,javax.ws.rs.core,javax.ws.rs.ext,jnr.unixsocket,org.apache.http,
+ org.apache.http.client.methods,org.apache.http.conn.socket,org.apache
+ .http.protocol",com.spotify.docker.client.auth;version="8.9.2";uses:=
+ "com.spotify.docker.client,com.spotify.docker.client.exceptions,com.s
+ potify.docker.client.messages",com.spotify.docker.client.auth.gcr;ver
+ sion="8.9.2";uses:="com.google.auth.oauth2,com.spotify.docker.client.
+ auth,com.spotify.docker.client.exceptions,com.spotify.docker.client.m
+ essages",com.spotify.docker.client.exceptions;version="8.9.2";uses:="
+ javax.annotation",com.spotify.docker.client.jackson;version="8.9.2";u
+ ses:="com.fasterxml.jackson.core,com.fasterxml.jackson.databind",com.
+ spotify.docker.client.messages;version="8.9.2";uses:="com.fasterxml.j
+ ackson.annotation,com.fasterxml.jackson.databind.annotation,com.googl
+ e.common.collect,com.spotify.docker.client.jackson,com.spotify.docker
+ .client.messages.swarm,javax.annotation",com.spotify.docker.client.me
+ ssages.mount;version="8.9.2";uses:="com.fasterxml.jackson.annotation,
+ com.google.common.collect,javax.annotation",com.spotify.docker.client
+ .messages.swarm;version="8.9.2";uses:="com.fasterxml.jackson.annotati
+ on,com.google.common.collect,com.spotify.docker.client.messages,com.s
+ potify.docker.client.messages.mount,javax.annotation"
+Bundle-Name: %bundleName
+Bundle-Version: 8.9.2.v20180207-1730
+Created-By: Eclipse Bundle Recipe Maven Plug-in
+Build-Jdk: 1.8.0_162
+Implementation-URL: https://github.com/spotify/docker-client
+Specification-Version: 8.9
+
+Name: com/spotify/docker/client/messages/MemoryStats$Stats.class
+SHA-256-Digest: PszqP/sJmBpA8eKYMn5Gk++tLrp+BhF6Ww6LYCoOPVo=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_SecretSpec.cl
+ ass
+SHA-256-Digest: zQNaHP5Kpmnr5zv6Ua82uMoFDslqU4CBLE65+x05etA=
+
+Name: com/spotify/docker/client/messages/Volume.class
+SHA-256-Digest: qPOKBYXKBNAUS6ZTQc3qFYSl9D+zlPH1CdO+MgRcnK4=
+
+Name: com/spotify/docker/client/messages/ContainerState$HealthLog.clas
+ s
+SHA-256-Digest: SDRbFy4qH1WkybjMoRab7CjckwfPRh+xwv/GKv6rsNg=
+
+Name: com/spotify/docker/client/messages/NetworkSettings.class
+SHA-256-Digest: CGPi8lZDrCs+RqUfVYGL94afY9c4wrFLz110dvc8WEc=
+
+Name: com/spotify/docker/client/messages/ImageSearchResult.class
+SHA-256-Digest: BDvSzvx+/lHYxJwpGVuCmSaip2dOrVM7NV8+MBET0L4=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_IpamConfig.cl
+ ass
+SHA-256-Digest: eBx7yxVBRdbV87CGT0qZaK3POo8A/kOVGnFLmA2YBHc=
+
+Name: com/spotify/docker/client/exceptions/ContainerNotFoundException.
+ class
+SHA-256-Digest: voBXxyBNAzHX/Bl4pZetb8OAaTlUAmaNMifRI7UoHgc=
+
+Name: com/spotify/docker/client/messages/AutoValue_ContainerMount.clas
+ s
+SHA-256-Digest: rmDoWWgj/eBFXNOW/jeuGMXzX08g0RpAweK4pVNDbbI=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Service_Crite
+ ria.class
+SHA-256-Digest: steQTFvdDKz8MEsGQwecLsosfN9cqv5kDLlqSlHE8w4=
+
+Name: com/spotify/docker/client/messages/AutoValue_MemoryStats_Stats.c
+ lass
+SHA-256-Digest: jzWAGBagaitZJ4AWUlNyKG0XNmeB0VhfJTTTlOtpz4k=
+
+Name: com/spotify/docker/client/messages/ContainerConfig.class
+SHA-256-Digest: GQSw1VbqVH7wFKJ/0qYgwMO1Dq/JVCWwtfYZyyG69hY=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_NetworkAttach
+ ment.class
+SHA-256-Digest: FeLbxVnsJ9VY+v2d0b8s830okN+0JsjK8fiswyWzXMw=
+
+Name: com/spotify/docker/client/messages/AutoValue_CpuStats.class
+SHA-256-Digest: JWEJWDAiMQZGXuJFW+JosSyBeLxfQ42oQhrJDOv565o=
+
+Name: com/spotify/docker/client/messages/ContainerUpdate.class
+SHA-256-Digest: b+3/M6kzTfuljqZ4G5Z7AYSoToinKS6PElZ4iZHB8Tw=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_DispatcherCon
+ fig$1.class
+SHA-256-Digest: gxT8X06+p/rmNOem1c6hqM3/Vpl1BtPurbaMNxjD8i4=
+
+Name: com/spotify/docker/client/DockerClient$ListVolumesFilterParam.cl
+ ass
+SHA-256-Digest: 3ZINzZ07+Yhu/kv1ApYuHgTJAczKZqWsSy+eTuMgFeI=
+
+Name: com/spotify/docker/client/messages/swarm/TaskSpec.class
+SHA-256-Digest: 4UvkW8k8uPV1r4rSl1c0phb41ykpis+0XHaoYnRXOfk=
+
+Name: com/spotify/docker/client/messages/mount/BindOptions.class
+SHA-256-Digest: v+IeqO//VvlxICTERAPSVXc4CooQVGs22W/N52SgeCE=
+
+Name: com/spotify/docker/client/messages/HostConfig$Builder.class
+SHA-256-Digest: Z7MKhpYt2nrcJzfkgS0gJy7k7mAxi6Rrx3W3QzOdyfs=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_DnsConfig$1.c
+ lass
+SHA-256-Digest: hMiDP12fKb2IH0y39btdvQkcIUjniiEIdnT4xzH4w3A=
+
+Name: com/spotify/docker/client/messages/swarm/GlobalService.class
+SHA-256-Digest: Hgsue3i675PxuZ0Z3K1d1T0NS6pPkE84TRnXlS4aOEA=
+
+Name: com/spotify/docker/client/messages/EndpointConfig$Builder.class
+SHA-256-Digest: yhlZxgSBgwPSX954hS4/TfrfoEHisYt3oHQ5xvKVjdE=
+
+Name: com/spotify/docker/client/messages/NetworkConnection$Builder.cla
+ ss
+SHA-256-Digest: jZu14G50xUmag8bTHIt/o7PygzrXSVZOtISXtmKGfkg=
+
+Name: com/spotify/docker/client/DefaultDockerClient$9.class
+SHA-256-Digest: hGnG0REAE2pxxPD1DcHZu0Yd4aN1tBO9X/GsOhAEy+4=
+
+Name: com/spotify/docker/client/exceptions/DockerCertificateException.
+ class
+SHA-256-Digest: Vgi3XXmWdhFcJebtUgsRSykZj9PjCDh3FvLLoS9ITLQ=
+
+Name: com/spotify/docker/client/messages/Image.class
+SHA-256-Digest: 4FJoliIdIRWP1icFbsyMQa0debqPpIxbduV5Qvx9y2k=
+
+Name: com/spotify/docker/client/messages/HostConfig$Ulimit.class
+SHA-256-Digest: Qgc77wbHkXY5w8S+BjnnGaA/+mftcn0T1a8NLgcS8c0=
+
+Name: com/spotify/docker/client/messages/AutoValue_ContainerExit.class
+SHA-256-Digest: hTWWXd0DokIidrg/SFAfG4ilE9uK1FHmi+Myqe5E73w=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ExternalCa.cl
+ ass
+SHA-256-Digest: 5GAHKA4Y8CH1wrx04mel+3RKgI4HiclZIh7qiX79n08=
+
+Name: com/spotify/docker/client/messages/HostConfig$BlkioWeightDevice$
+ Builder.class
+SHA-256-Digest: M5zdyPsSB3wEW5V7IW7GJ1a7A7uOQmKt6qcRRu28Hwk=
+
+Name: com/spotify/docker/client/messages/swarm/ServiceSpec$Builder.cla
+ ss
+SHA-256-Digest: HWN6A1kAtK8VBQ0r0kKYxvSbExaGbEy3Y1sE8ESGhb0=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_NetworkAttach
+ mentConfig$1.class
+SHA-256-Digest: VQ6c6ieiSSLifqwRHdQCJc/+CyGSWE4fFwFKqnBkXbY=
+
+Name: com/spotify/docker/client/messages/Container.class
+SHA-256-Digest: attEhLOf0fWrgszI5QMMKGvWZCI2eHJMwiHT6W+QTQQ=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_DnsConfig$Bui
+ lder.class
+SHA-256-Digest: hj6k/AA0GINdpotZ3LjTrNwJDaTyAwA+doZs+bPo/lk=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_RaftConfig$1.
+ class
+SHA-256-Digest: dxnn4Cf3hHVmf6n5slzIwWsbwwWsXXeKWNEuUbXr8jU=
+
+Name: com/spotify/docker/client/messages/AutoValue_VolumeList.class
+SHA-256-Digest: i7qtbc0ynDqaMnG+FRvrQSlK/TLQStWPP0LfB7MDHmw=
+
+Name: com/spotify/docker/client/messages/HostConfig$BlkioWeightDevice.
+ class
+SHA-256-Digest: FAgMX53qGrExhoL0Nn2gv01WS0UlLhEnrRWGXSwJp2o=
+
+Name: com/spotify/docker/client/jackson/UnixTimestampSerializer.class
+SHA-256-Digest: uapqMA27DCBHMwa+PV0LC51RvcMa1I4W++dMQpon30o=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ReplicatedSer
+ vice$Builder.class
+SHA-256-Digest: w4XMZCaGAXqyH3PLo26rZCZy33N+HmCGATPjEwS1O1o=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ConfigSpec$Bu
+ ilder.class
+SHA-256-Digest: /a8zxi1AMJNwc8UNOYXPhCjhszc4zAFTjD8wIPfwuyk=
+
+Name: com/spotify/docker/client/exceptions/NetworkNotFoundException.cl
+ ass
+SHA-256-Digest: Ic+sSWTq34MjqdfICl+ULhpxDN06KmUBUPofz+97zI8=
+
+Name: com/spotify/docker/client/LogMessage$Stream.class
+SHA-256-Digest: Fn3AkMZp8/ZVQuaLwVLTJZbhQpHezaXK/kk9yh8lPOE=
+
+Name: com/spotify/docker/client/messages/RemovedImage$Type.class
+SHA-256-Digest: xn5p98a++eJ8fcWB/q4HzIRYTQYfEfxm+RvGh0aDs5g=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_RestartPolicy
+ $Builder.class
+SHA-256-Digest: lNtta+eAuzYZHSmlOgqTGrLyeOO4Lfna/qJrwnjZUm0=
+
+Name: com/spotify/docker/client/messages/swarm/ConfigSpec.class
+SHA-256-Digest: 7XhKwTuBe4rwlKoJqbzjZdlZrIJFlAVvORQ1BTSGC2Y=
+
+Name: com/spotify/docker/client/messages/swarm/ReplicatedService.class
+SHA-256-Digest: dpJQfIag6RIH1SlC1mk4YL0uChdQs1tCm4LnUTrc2CU=
+
+Name: com/spotify/docker/client/messages/AutoValue_HostConfig_Bind$1.c
+ lass
+SHA-256-Digest: nBBWlmLcBBCO53SE3Ew+g3WDV3KgNah6On+o0HbbtUE=
+
+Name: com/spotify/docker/client/messages/mount/Mount.class
+SHA-256-Digest: Pv8WN25sTG/e+KhJngnSGJ5d352esj/ncirOjEjO1bA=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Config.class
+SHA-256-Digest: O2zob0+luBRKrCR/gZdWxfXd6c5u1EdmufnsXls5P/A=
+
+Name: com/spotify/docker/client/DefaultDockerClient$4.class
+SHA-256-Digest: VjUHKx0FjSwdOEqGSHbPC4bLuuhgdi2JLjUWDfaBoW8=
+
+Name: com/spotify/docker/client/messages/AutoValue_RegistryAuth.class
+SHA-256-Digest: +q/xgMp6h8JJIi73g9QAfH9NvSVwP0ATqvjNyAsZs7o=
+
+Name: com/spotify/docker/client/messages/AutoValue_Volume.class
+SHA-256-Digest: HaYxaSUmIuGkslRPe3kW1isaJv/x+5Vmp17D0FZAs9E=
+
+Name: com/spotify/docker/client/messages/AutoValue_ContainerState_Heal
+ thLog.class
+SHA-256-Digest: d7iT144aC2yMPrn5CmVDedL6b7lZ0qhKAov3UaiD/VQ=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Resources$1.c
+ lass
+SHA-256-Digest: X8kXCk2X7Z9L+q1Ugtt1k/SwI/LdsURVUKHjQzPoIJA=
+
+Name: com/spotify/docker/client/DockerHost$1.class
+SHA-256-Digest: Kh0P17n5A4/N6w7IsJKiGoLmpZ7khT5NtbYcqNPxU5Y=
+
+Name: com/spotify/docker/client/messages/AutoValue_AttachedNetwork.cla
+ ss
+SHA-256-Digest: rNgJ5v2a7RSnWuUga7D/67A6i2lcQ7vN05KyB1dyXdY=
+
+Name: com/spotify/docker/client/auth/gcr/ContainerRegistryAuthSupplier
+ .class
+SHA-256-Digest: A/0myyAwdo/j2Qv2EwclNAcppNUlkML2vRX1xRd/HxE=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Resources.cla
+ ss
+SHA-256-Digest: i6AVRfU+OcS92+6CW/tgkpP70YL00LTaa1RMDbs9lZ0=
+
+Name: com/spotify/docker/client/messages/swarm/EnginePlugin.class
+SHA-256-Digest: 55vmaF+gfQekUCpFUnJe+MiLpVEqY+c6Qt1C6oM2Sis=
+
+Name: com/spotify/docker/client/messages/swarm/Secret.class
+SHA-256-Digest: jxJudl06DUIWFSDXLy/6teSyVv6wnXn6oadFrK2hcN4=
+
+Name: com/spotify/docker/client/messages/AutoValue_NetworkCreation.cla
+ ss
+SHA-256-Digest: H2SLSNQbrsQnkpPwT/58Oe2HRy1FpguMEy7Z3q5r/rA=
+
+Name: com/spotify/docker/client/messages/AutoValue_Ipam.class
+SHA-256-Digest: L75xzxfnmTrIlAi+IiISywuuzXyuR7fNGXYufj/ZU20=
+
+Name: com/spotify/docker/client/messages/AutoValue_ContainerConfig.cla
+ ss
+SHA-256-Digest: 3gLAsosDFcftrT/2CWI3+Fs/Y2vi+G3EPT/+4P6fDVg=
+
+Name: com/spotify/docker/client/messages/Device$Builder.class
+SHA-256-Digest: 0298XjuDtdWntJw0l8LUkmo0S8uDf2yEe2slIq65sok=
+
+Name: com/spotify/docker/client/exceptions/DockerRequestException.clas
+ s
+SHA-256-Digest: Xtd5T7dpTBtSEWDjRrFFs+C8u1IFFgOAiWdhN1zd2/g=
+
+Name: com/spotify/docker/client/DefaultLogStream$1.class
+SHA-256-Digest: +McpM9zMhzSBjAitbsWBfuVZ/SYMLTnwWjLd0DPOwmU=
+
+Name: com/spotify/docker/client/messages/AutoValue_ContainerCreation$B
+ uilder.class
+SHA-256-Digest: 3rP3DDe7NRV76sl9IYf4f4S1cPaMjOR5CktXVq+VKUM=
+
+Name: com/spotify/docker/client/messages/swarm/JoinTokens.class
+SHA-256-Digest: vjPv5dpWJ0TjuHVqKLb3b0T5toZbvmwkaO0V0k/0FKk=
+
+Name: com/spotify/docker/client/CompressedDirectory$1.class
+SHA-256-Digest: PMMnB5ESj0Nn+gmfz5zEBeLoxfSP3yKbprU7yvPEP/8=
+
+Name: com/spotify/docker/client/messages/AutoValue_TopResults.class
+SHA-256-Digest: xXk9Sv008PeuPgZk4lfnnoKfDyv1or0P0bZVuUhHBLQ=
+
+Name: com/spotify/docker/client/messages/AutoValue_Image.class
+SHA-256-Digest: rzgSXVcbMb5fBGy7sk/iyAwS/qLUH5L++F6PN0JSH84=
+
+Name: com/spotify/docker/client/messages/HostConfig$Bind.class
+SHA-256-Digest: w+njJ2bU200N8s8zS4z2qXYL7nwhJveoVzgojQxUxcs=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_DispatcherCon
+ fig$Builder.class
+SHA-256-Digest: a5lgoryc5ie52oOqYe4GfCSXubwOFwquNQAmuYWP7zg=
+
+Name: com/spotify/docker/client/messages/swarm/PortConfig$PortConfigPu
+ blishMode.class
+SHA-256-Digest: 7T2HBs6TyYXG29w70isE0YeNFjyKfr1o6ZjpqaNIGho=
+
+Name: com/spotify/docker/client/messages/RootFs.class
+SHA-256-Digest: FY39o/9K6dJO+ZUoxA0DK6NuUFcbD9BOPP0X02cAJ6w=
+
+Name: com/spotify/docker/client/EventReader.class
+SHA-256-Digest: LmN5dYkkKVOSS91pVFHYergg3sAHN47S39bPkSe65j8=
+
+Name: com/spotify/docker/client/messages/LogConfig.class
+SHA-256-Digest: EYx5dr75EJgBT2hnbnCyUgWQKU+yNU7jgwYPc40PWxg=
+
+Name: com/spotify/docker/client/messages/AutoValue_ServiceCreateRespon
+ se.class
+SHA-256-Digest: zTeTQ/TCfr8JKYpRakeJ0149tgLJNGNDMjVDHR6OpOg=
+
+Name: com/spotify/docker/client/DockerCertificatesStore.class
+SHA-256-Digest: qc6OQ/7IowlVBxORoBj2IdqbQWKrj3iVmx44xJpiU2c=
+
+Name: com/spotify/docker/client/messages/NetworkConnection.class
+SHA-256-Digest: /5QZ6nu2gWMRaIAoL79ZHIfIvhuAUYf8arEQeGZSALU=
+
+Name: com/spotify/docker/client/exceptions/VolumeNotFoundException.cla
+ ss
+SHA-256-Digest: qHbMzueyVJYj/ia2DL0OSEUnMFoQ33vXTOQ6Y1gj+d0=
+
+Name: com/spotify/docker/client/exceptions/ConflictException.class
+SHA-256-Digest: ZSmBAjo/GUWi3+IMfEnBbjS6eRlp3vL/wVu4RWxTsNg=
+
+Name: com/spotify/docker/client/messages/swarm/EndpointSpec$Builder.cl
+ ass
+SHA-256-Digest: WPod8F7ZUe4vBvoIh4xc7cFYzISgvkl7q7rvRRt6dxs=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Version.class
+SHA-256-Digest: 65r3NXA7hKDykxxVnnEFVw2Xl/cmdzr8gVWE5ALIWPA=
+
+Name: com/spotify/docker/client/messages/AutoValue_Device$1.class
+SHA-256-Digest: 2UfuptqJxgKJeQcvRzWjW9YWAZkA7FWIyf6pGmFBLVA=
+
+Name: com/spotify/docker/client/messages/swarm/ConfigFile$Builder.clas
+ s
+SHA-256-Digest: iwyuDICFEQBcp5oBQGgFTxfyHWIMzrMxv8noljdIHMc=
+
+Name: com/spotify/docker/client/messages/AutoValue_EndpointConfig.clas
+ s
+SHA-256-Digest: 3wpexmx1onu5feds9b1yJzV2/zruW6r7ic9MNboKGjI=
+
+Name: com/spotify/docker/client/messages/HostConfig.class
+SHA-256-Digest: c7Up83hNK+/awBVQ6fKrTdNvRfbVrhOWURA2n8pZrdA=
+
+Name: com/spotify/docker/client/LoggingPullHandler.class
+SHA-256-Digest: tpuNl4rjSFiVzaT7zx0X/GDrp/kTWu3QV051XJuS10A=
+
+Name: com/spotify/docker/client/messages/ImageInfo.class
+SHA-256-Digest: DaIaepE5bqaUz5iMZW1bmqu7XYoW3Kw0vXCWGl347hc=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Config_Criter
+ ia$1.class
+SHA-256-Digest: ilpgkJsIq2FF8AqZr+O/BKmhCOsT0m7peoNhX0Zuhkg=
+
+Name: com/spotify/docker/client/messages/RegistryConfigs.class
+SHA-256-Digest: 8htUBfwctzMQoxuekBUHpkh8ridR8iqrYvOHqijfThM=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Task_Criteria
+ .class
+SHA-256-Digest: 605jcEtvrsRrku9YOuaOX8RhfwLbWlckgLX7COWbA9w=
+
+Name: com/spotify/docker/client/messages/ProgressDetail.class
+SHA-256-Digest: WpLnvDXe818yBkq2UoK/zjDAqoiubBVgzji4WjNe61A=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_RestartPolicy
+ $1.class
+SHA-256-Digest: waEDXBR/RWh7hh+VrIQg9BrDUoGoRmZJUQQ94d5A9xk=
+
+Name: com/spotify/docker/client/messages/swarm/ContainerSpec.class
+SHA-256-Digest: 3AvZJPxZgfNHKXnz1eHS8o5ernYDLp+gaoDagMOhbI4=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_NodeStatus.cl
+ ass
+SHA-256-Digest: 057TkoBkI86vnCMP0fnhDXgN6eph0R0xQNRKLe418oc=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_DnsConfig.cla
+ ss
+SHA-256-Digest: hscAOAjRRPYKXLRJ4hsmD8uCw3ct1u8uUN7Gs/xTscg=
+
+Name: com/spotify/docker/client/OsUtils.class
+SHA-256-Digest: aV6It9THPiw0IT/nkFjSfsQsfw29gJkdcchjvRjDGv8=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ServiceMode.c
+ lass
+SHA-256-Digest: Hmcp84fUE9lnGygsthn/eJ/1zD6hbAs4Apu9lJb7Lz0=
+
+Name: com/spotify/docker/client/DefaultDockerClient$7.class
+SHA-256-Digest: P9T9DrVwU6t0tLlEHDJTqEMLG9PlicWNmY6NVL4nkNs=
+
+Name: com/spotify/docker/client/messages/AutoValue_ContainerUpdate$1.c
+ lass
+SHA-256-Digest: vC5/DczDMB2rNHH8wdIhppwhQFi2H9NLs8HCWGLufKU=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Orchestration
+ Config$Builder.class
+SHA-256-Digest: B31/C+9NkOilDwAWnDZGsEUo7r0kGKK2Adi9ioNmFoI=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_RaftConfig$Bu
+ ilder.class
+SHA-256-Digest: AMwkddoNRd4jRueYz4N9lnr+1rst6Ed8a995P0YuAJ8=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ServiceSpec.c
+ lass
+SHA-256-Digest: wMRz2DC8O7/ld8Ejw9TxSgPKZa9h1XDUyqkhOPEyD5E=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_SwarmJoin$1.c
+ lass
+SHA-256-Digest: r/l8Bm9+iwQxCGE1n+LkaiUZSnqjJDxvyk1JMWp8fnk=
+
+Name: com/spotify/docker/client/messages/AutoValue_ContainerState.clas
+ s
+SHA-256-Digest: eon9WBSf607orRKoxzY4EUnZjepNPpyKbml/b8nvhB0=
+
+Name: com/spotify/docker/client/messages/mount/AutoValue_TmpfsOptions$
+ Builder.class
+SHA-256-Digest: Q2XRKw0v0HP4EZjKJv2rcMD7Q4sEgI5eXxY90uhhcT8=
+
+Name: com/spotify/docker/client/messages/AutoValue_ImageHistory.class
+SHA-256-Digest: Vqo6iWZAsKL5YjzSnmXBhms5gTFeuXgx0wPp5p8jM8Y=
+
+Name: com/spotify/docker/client/DockerClient$EventsFilterParam.class
+SHA-256-Digest: 6JgXdremQWxn9vRgM0GHVSRsckFzlGvWyefancFSLuA=
+
+Name: com/spotify/docker/client/messages/RegistryAuth$Builder.class
+SHA-256-Digest: rjFVjzgSTcR6prvSfFroYm0D6fC6Q5rOmfxKqzlkTwo=
+
+Name: com/spotify/docker/client/DockerClient$BuildParam.class
+SHA-256-Digest: zb9jfHHTxHShjQMGtcEylKx5B38Q4HfWfejfZ546SB8=
+
+Name: com/spotify/docker/client/LoggingBuildHandler.class
+SHA-256-Digest: DvpO5pwMlSeozOIYHnzpLJkIOfRDfHbvm4jBNceiTx4=
+
+Name: com/spotify/docker/client/messages/AutoValue_ContainerUpdate.cla
+ ss
+SHA-256-Digest: K+bbj6yX42RUJY6L5AZ+2tjLcX80ERyYVhles/wuy2M=
+
+Name: com/spotify/docker/client/messages/CpuStats$CpuUsage.class
+SHA-256-Digest: 82jKEnokAi0x1JMGRQ5gdZVBNIXZboZ5Q0IACMTdGFA=
+
+Name: com/spotify/docker/client/messages/mount/VolumeOptions$Builder.c
+ lass
+SHA-256-Digest: rnYVJ8uuHTHKAVgBqdLqcVCrtpmTs9OnIqKSAiusa6A=
+
+Name: com/spotify/docker/client/messages/swarm/NetworkSpec.class
+SHA-256-Digest: 5w6/6DBeQ9V5naG/khDh8JGrd2h4+xQ9/wlLslxm+/o=
+
+Name: com/spotify/docker/client/DockerClient$FilterParam.class
+SHA-256-Digest: zSnoGVqHHJKkzedSCh+gO2SXkT0PkiLX/iPxyDZINWE=
+
+Name: com/spotify/docker/client/DockerClient$Signal.class
+SHA-256-Digest: zL+94vG6BbdU+1aotRGjbjitSxCjfilXoxUqns9M/a8=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Driver$Builde
+ r.class
+SHA-256-Digest: kOYdfr5vjRHuTe/9uWtj841NnSdAPKk0LX+B7wT7z5w=
+
+Name: com/spotify/docker/client/messages/swarm/Node.class
+SHA-256-Digest: SdmrSPsV58TlOf5ySlswofZgBh2t0z598rxK+no89qc=
+
+Name: com/spotify/docker/client/DockerCertificates$SslContextFactory.c
+ lass
+SHA-256-Digest: ODdshbzyqqqOsjnR0fligrY3GGhIxMW41muyXymqMt8=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_SecretFile$1.
+ class
+SHA-256-Digest: 8nAUPFU/BMhGKA0jey+1X19JVNYHWvIcYP35pvhORy4=
+
+Name: com/spotify/docker/client/messages/ExecCreation.class
+SHA-256-Digest: XUtiBEVsyp3QDqssrQi/3sAjW/JAA3qu9ELfkwqE4zs=
+
+Name: com/spotify/docker/client/messages/AutoValue_ContainerChange.cla
+ ss
+SHA-256-Digest: Mbb74k4DRWUODqlLST93RlDOTU2lA5w7pef7tP8GLdE=
+
+Name: com/spotify/docker/client/messages/AutoValue_HostConfig_Ulimit.c
+ lass
+SHA-256-Digest: EkHEIG4t48OMOr6u0tdq3Jdikzlqt8OqiJ9Ympv2u+c=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_EngineConfig.
+ class
+SHA-256-Digest: Uk7eDVLJPz+iJ6jKsOpOlEKpTfc4lr2xKT7+jgOV3Ec=
+
+Name: com/spotify/docker/client/messages/swarm/Task$Criteria.class
+SHA-256-Digest: gGxiXmxobPyfSxLkmMuJB66O4Z2AzP/bqoFN+D0fp4M=
+
+Name: com/spotify/docker/client/messages/swarm/NetworkAttachment.class
+SHA-256-Digest: O+PXW0wcQjoJAYwIFUUxVrdQMH+kXDJvfb+EXlGYeAQ=
+
+Name: com/spotify/docker/client/exceptions/ContainerRenameConflictExce
+ ption.class
+SHA-256-Digest: KUxM/a3dkXpUvGosPkM+B2TzpjfWa4MGoqGNoIrcVEI=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ConfigBind$Bu
+ ilder.class
+SHA-256-Digest: 2ulA2fNOsTWwFzfqMfpiias7M1yIZ1Izkty6yBB0RLc=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Node_Criteria
+ $1.class
+SHA-256-Digest: lAVGuWsXifkaV6y8Ws9UrLUXSkANDYlrXI6PmZCPbLk=
+
+Name: com/spotify/docker/client/messages/AutoValue_ContainerStats.clas
+ s
+SHA-256-Digest: OpzEKpOlJXYxpvE1guC/L4+0CeI/u539pUgoLS6Yah4=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_SecretSpec$Bu
+ ilder.class
+SHA-256-Digest: G1imersjzs4rYeKv/GYn8lP/Zhy9F3r4O35u8Y9gtK4=
+
+Name: com/spotify/docker/client/messages/AutoValue_NetworkConfig$Build
+ er.class
+SHA-256-Digest: BDGL1+b4wRnudsHrukYot02uKpsBcO0Hyn5ySX1NR3o=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_SecretCreateR
+ esponse.class
+SHA-256-Digest: L0Yeen1TfYGuK9REy3KUQNgNxEAc5mn+8FIEXIBLu/4=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Network.class
+SHA-256-Digest: 3BSuvGJEc6XCjwHELNE3+gNLHG1pVh7KhrfSh1DeD+4=
+
+Name: com/spotify/docker/client/messages/AutoValue_ImageSearchResult.c
+ lass
+SHA-256-Digest: Doj4eQI5RFcOo9Q4caCMy/rAdzntRF6XDUs9WRVM4C0=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_PortConfig$1.
+ class
+SHA-256-Digest: Vf5kZBp5AO+v0nrM4CNHtf8qONjNcHdZd1nmqQZjhBg=
+
+Name: com/spotify/docker/client/DockerCertificates.class
+SHA-256-Digest: Nh98mKx/iyh1DYNFj21XHKT2r/bsO1eiKR4ns/f/xxY=
+
+Name: com/spotify/docker/client/messages/swarm/Config$Criteria$Builder
+ .class
+SHA-256-Digest: db7JjwI63V+D1tTSXoc60wJLoNkgEEYfgtlHpSv6O9M=
+
+Name: com/spotify/docker/client/messages/AttachedNetwork.class
+SHA-256-Digest: Ji7UPxrSadLoOW2ZXY4vMzemmyM+rwOyaMQFizMF/II=
+
+Name: com/spotify/docker/client/messages/swarm/EndpointSpec$Mode.class
+SHA-256-Digest: 7WwAmAnVlFcpKHyPGC/HZo1n0u5ZrmV73p2AsmM3+uI=
+
+Name: com/spotify/docker/client/messages/ContainerState$Health.class
+SHA-256-Digest: rPOGiOs2a/RwqBKngXtutOHbM3x70QAaPek5gSejhWE=
+
+Name: com/spotify/docker/client/messages/swarm/NodeSpec.class
+SHA-256-Digest: puHaMZ+KCq7DGSutSGbdqTCgLTNCj+wlYjxSCbdWqGM=
+
+Name: com/spotify/docker/client/messages/ImageHistory.class
+SHA-256-Digest: ZBeWsSI/d4cSFNjsPHqnVXIiCYzyxGE5LMvy5/6kajU=
+
+Name: com/spotify/docker/client/messages/HostConfig$BlkioDeviceRate.cl
+ ass
+SHA-256-Digest: x98zKtSTmOgG9f5M5xUjXgsXW6GW8O8fouov/NDwXRo=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Config_Criter
+ ia.class
+SHA-256-Digest: a5kZMjHgbitMKnjWl9759NSx3gV8Za7zYRhRzMSWER0=
+
+Name: com/spotify/docker/client/messages/swarm/TaskSpec$Builder.class
+SHA-256-Digest: r8kh9CTzIWj2HAdyaQcWBrO4/+yGsDKEM6K8pMNTP4o=
+
+Name: com/spotify/docker/client/messages/AutoValue_RegistryAuth$1.clas
+ s
+SHA-256-Digest: Fzima6B+hEPLFTgGv2p54KGCgxHPyjrftKXpJ93h9+Y=
+
+Name: com/spotify/docker/client/messages/mount/Driver$Builder.class
+SHA-256-Digest: KfRQ7SfFS+Z1MeBTIUz//43dKuIE1iV6B25/oDrAxVM=
+
+Name: com/spotify/docker/client/ObjectMapperProvider$SetSerializer.cla
+ ss
+SHA-256-Digest: sk/5Gimd0RPIlQtUHYIDSeVYu6ns41LcLtpzn6aW0SY=
+
+Name: com/spotify/docker/client/messages/RegistryAuth.class
+SHA-256-Digest: Q0fIGQcCO/SdNq+Vsn/dwT5EGjE8Pet+Kt+mHthxjBk=
+
+Name: com/spotify/docker/client/exceptions/BadParamException.class
+SHA-256-Digest: OT5KKXZhD/0VBBf6FOfStT6+7CsnOfMRC5vuFrL9sbU=
+
+Name: com/spotify/docker/client/DefaultDockerClient$6.class
+SHA-256-Digest: nxy8hotjfYEmHpmN8BkNvjZ/tXMC0HONtueLLh6l8aw=
+
+Name: com/spotify/docker/client/messages/swarm/RaftConfig$Builder.clas
+ s
+SHA-256-Digest: 08YM8zKe+wr5Yl4kBARng3YRhkwpSXFh4J0opOA9V7w=
+
+Name: com/spotify/docker/client/messages/swarm/ContainerStatus.class
+SHA-256-Digest: +PMHrFS4kljlQDMmVESYiSLT4N3ipfAOqkNrcFhvKqY=
+
+Name: com/spotify/docker/client/exceptions/ExecCreateConflictException
+ .class
+SHA-256-Digest: 1uhnGfdbhd68Pvyddy1YNhya99xWQfIdCe2htlOc/o0=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_NodeSpec$Buil
+ der.class
+SHA-256-Digest: QpHvFa4T/fvbX1nvKImeEr3KTWVTxRopl2Gvb1MWk8o=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_TaskSpec.clas
+ s
+SHA-256-Digest: Kp7BoOkuovXFDSMx5xrKsKpuOmFqeXjhUS0goZOxzZ0=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_NetworkAttach
+ mentConfig.class
+SHA-256-Digest: w7sDKt0JMxxVqODMZ51yHilRSYSwvUBqsG3mQdsL/kE=
+
+Name: com/spotify/docker/client/messages/mount/AutoValue_BindOptions$1
+ .class
+SHA-256-Digest: ukgLS81Hw9QZjuKxxnIg+Bqa5zriThj7/oYeOsMtzII=
+
+Name: com/spotify/docker/client/messages/swarm/GlobalService$Builder.c
+ lass
+SHA-256-Digest: Q4os/UPrAjz0w9LiUoQEDB6Ei9R6dmNBzyoWtBWnb1M=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_DispatcherCon
+ fig.class
+SHA-256-Digest: TZmHeJDB28OTX2nv04fnPQlzrNDifx4Mqg2Qj12HfPk=
+
+Name: com/spotify/docker/client/messages/swarm/ConfigCreateResponse.cl
+ ass
+SHA-256-Digest: K9IgkukN9mxDs30cySypNjeLUPhAXAC4e23HncqPHA8=
+
+Name: com/spotify/docker/client/messages/Network$Container.class
+SHA-256-Digest: 8Z+u1tfmKqwiQ3HEmNMNrmrlJCx06nmKhuUBzgTNzFU=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_TaskStatus.cl
+ ass
+SHA-256-Digest: Xek6af+V85zLLMq7JG/qwC5OywxNVPIhwXPBnE6+oL8=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Node_Criteria
+ $Builder.class
+SHA-256-Digest: Ng1qD2/rgP7AVoKbw2bq1A42DzZzt0AA1ndlLIfpQoc=
+
+Name: com/spotify/docker/client/messages/swarm/DnsConfig$Builder.class
+SHA-256-Digest: w8ZO3+SXyNJ/uvqXRcnYpj4PCBc/tRsCIhJnXxiFlWY=
+
+Name: com/spotify/docker/client/messages/Device.class
+SHA-256-Digest: 5wJWV+U4JWgy0WNeC9JCE/PspZ/knnQxNOgLDr7BVGA=
+
+Name: com/spotify/docker/client/messages/mount/AutoValue_VolumeOptions
+ $Builder.class
+SHA-256-Digest: UsumOVdjOG9izXezaLJGIfEz0839hbm3ILzz93TqmAo=
+
+Name: com/spotify/docker/client/messages/Version.class
+SHA-256-Digest: rLFrGoB/Crewc17KtLXYHFAMtSa7Ssanr5hS9Ten0z0=
+
+Name: com/spotify/docker/client/messages/ContainerInfo$Node.class
+SHA-256-Digest: h16FRW3tcnqSvfZW4f+o9G+saks4V8BW6/9leNUqLIA=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_EndpointSpec$
+ 1.class
+SHA-256-Digest: 8LVXqBVbcxxAY+QlTdEQ6WmMo0NqXcuoLGmC3UddaJU=
+
+Name: com/spotify/docker/client/messages/AutoValue_HostConfig_BlkioDev
+ iceRate$1.class
+SHA-256-Digest: +0m2/+Kl0YAZ4zX5O2jtF0rgYWZtpNuG0x8qDDA6R+A=
+
+Name: com/spotify/docker/client/messages/swarm/OrchestrationConfig.cla
+ ss
+SHA-256-Digest: VgCU6XbTAqf4mKsDUWfE+PhPchSAg93NYQ9XZWQoA3k=
+
+Name: com/spotify/docker/client/messages/swarm/EngineConfig.class
+SHA-256-Digest: DUjCaI8ANuPWfVZzlt5GSac+zecbO398764zdqbU284=
+
+Name: com/spotify/docker/client/messages/swarm/SwarmSpec.class
+SHA-256-Digest: 4Y2CbSViI/UOyP837rKZJeIpnQOcui6LDPcuKKy9JxM=
+
+Name: com/spotify/docker/client/messages/swarm/OrchestrationConfig$Bui
+ lder.class
+SHA-256-Digest: +ZzLc3Q5HzTGIYY+3TWfGVtmrnSeqNUiwzGJHg3J+mM=
+
+Name: com/spotify/docker/client/messages/swarm/NetworkAttachmentConfig
+ .class
+SHA-256-Digest: VleP+8dPsX4bej22VowMgqfo3ydGCh3TY8g/igrqq9Q=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Swarm.class
+SHA-256-Digest: viqU279oK1dlNmD1+1bpjYbUZhI39qu3f0hVf2XCm/Q=
+
+Name: com/spotify/docker/client/messages/swarm/NetworkAttachmentConfig
+ $Builder.class
+SHA-256-Digest: Ysbf2bP9UT3oloGZDHYjfq5ysgZzkzc2TXgQGgMAdzE=
+
+Name: com/spotify/docker/client/messages/AutoValue_NetworkConfig$1.cla
+ ss
+SHA-256-Digest: +rTQbQffQCnmHq4f9g2m2uR1ODtMjg/LOo3i55p4nak=
+
+Name: com/spotify/docker/client/messages/swarm/ConfigSpec$Builder.clas
+ s
+SHA-256-Digest: Z05UUFAhhiW7oMfWM2JbRNjfj8cLDks6jFENaouBO3k=
+
+Name: com/spotify/docker/client/LoggingPushHandler.class
+SHA-256-Digest: jcQ0vis9SDA+ie08/Ovau4ahqhM+1BrEGbJEsWsSqCI=
+
+Name: com/spotify/docker/client/DefaultDockerClient.class
+SHA-256-Digest: zciVwETwMWvgp3pYnvmL30wQfZjoYfWxuxe4Mh++hck=
+
+Name: com/spotify/docker/client/messages/AutoValue_ProgressDetail.clas
+ s
+SHA-256-Digest: +iSZ9e/s1ut3xNQrW2ifudBbS0RMTkESdb0po7tlJa8=
+
+Name: com/spotify/docker/client/DockerClient$ExecCreateParam.class
+SHA-256-Digest: XzoFUHNpaBDnLODN5D/C1n1zcomlfGU/oHNlSiEKDLU=
+
+Name: com/spotify/docker/client/messages/AutoValue_ContainerConfig$Bui
+ lder.class
+SHA-256-Digest: YLV6ZkCa5UpPuOd7DZIeJExcoB5dccmL+bMWJbd84/4=
+
+Name: com/spotify/docker/client/messages/mount/AutoValue_VolumeOptions
+ $1.class
+SHA-256-Digest: EUoAkB8/wsw8JlcABNj3fG46OYy3kGj6bO1TQy+P1eQ=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_TaskDefaults$
+ 1.class
+SHA-256-Digest: rDY/+vJ/9sO9xe/wDo486fYUntOnSvkOE20n+nKTTGE=
+
+Name: com/spotify/docker/client/messages/AutoValue_HostConfig$Builder.
+ class
+SHA-256-Digest: fOYXXNQowaDKlTLbNUn7pfPtTaMbxWHdHtkNGiTMq24=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_SwarmInit.cla
+ ss
+SHA-256-Digest: 84/FK8fIN52nz383nS85nDN8nYQR32+dmgQTVZov5Us=
+
+Name: com/spotify/docker/client/messages/ServiceCreateResponse.class
+SHA-256-Digest: T8ZfJaHMVKJyleKbjVH2/IeVGPeHGA3LOIrdvcoihNg=
+
+Name: com/spotify/docker/client/exceptions/ServiceNotFoundException.cl
+ ass
+SHA-256-Digest: G+Ec3pMHs7UDvpehrhpXFlsMjEo4xMt0YX06TkZ515I=
+
+Name: com/spotify/docker/client/messages/mount/AutoValue_Driver.class
+SHA-256-Digest: 382pn5VoMZg0C0Cbes4YLAvK/2Kfi7bnVH6dx4EwjB8=
+
+Name: com/spotify/docker/client/messages/swarm/ResourceRequirements$Bu
+ ilder.class
+SHA-256-Digest: xPvA9tnd8c9tmEGnlg/Z4uwbIE29ysb037g1AAmKyQY=
+
+Name: com/spotify/docker/client/messages/swarm/RaftConfig.class
+SHA-256-Digest: L46hFKBgbiS799znHwcI0AETOI3s0hde2DHUXyx7WFo=
+
+Name: com/spotify/docker/client/ProgressStream.class
+SHA-256-Digest: mxgynjOWq9GbJFnIFbvYCJCFona2NCz2slF0tvjGA7I=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ContainerSpec
+ $1.class
+SHA-256-Digest: PCtiSn95rkTNqc5TAliyIQnv9RM2AS6V/UihVwaKm/o=
+
+Name: com/spotify/docker/client/messages/AutoValue_RemovedImage.class
+SHA-256-Digest: PdmYpSXeNqaEpAPekovbbXjF9w/u1nC8lPk6h58AN6U=
+
+Name: com/spotify/docker/client/messages/Info$IndexConfig.class
+SHA-256-Digest: sy2kxVWSs3CBiLD4B/z1oAQsgJTIlgXVk1j2hN7SXXA=
+
+Name: com/spotify/docker/client/messages/AutoValue_ProgressMessage$1.c
+ lass
+SHA-256-Digest: Qh4YDr/9SGatpktRX34MdnAZFB0cFP/KKAF8eYZMdk8=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_SwarmSpec.cla
+ ss
+SHA-256-Digest: AJFrqKc1KzzlznoaFruQKZolB2iIpc1iW3BHML6KrXY=
+
+Name: com/spotify/docker/client/messages/swarm/DispatcherConfig$Builde
+ r.class
+SHA-256-Digest: BREJMoEuqcAUOyBM+o4hn8xSFBVdXTX6iIHM0/9metQ=
+
+Name: com/spotify/docker/client/messages/swarm/Node$Criteria.class
+SHA-256-Digest: 7fZMoeIkD61hI/gMcnhHz/Oot6zTCX5oIbaORiR3MCA=
+
+Name: com/spotify/docker/client/messages/HostConfig$RestartPolicy.clas
+ s
+SHA-256-Digest: daZBzdIURPCAtmKB1PjExv/DrGEy5vSFFJd4gGSKTPM=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ResourceRequi
+ rements.class
+SHA-256-Digest: sb3PjxtqBZ5wOo0rVuTcRi74TE9JZppKqt+HCbElxZk=
+
+Name: com/spotify/docker/client/messages/Event.class
+SHA-256-Digest: mpD4EO9cfbDZzDAAAZXT/XM5ynGac05E+SWn6Rg1HRs=
+
+Name: com/spotify/docker/client/messages/swarm/Task$Criteria$Builder.c
+ lass
+SHA-256-Digest: zVhw/HMOQCEgjO5AEZR+lHprMh4YPxV17g1CczYANiM=
+
+Name: com/spotify/docker/client/messages/Ipam.class
+SHA-256-Digest: klIlyva/thV34IDVOvRXDAqimzq3GOG1prvG5v0fPTM=
+
+Name: com/spotify/docker/client/DockerCertificates$Builder.class
+SHA-256-Digest: ZcjLsJ5cE8hw6pl/72nW/Be8wLJNqfUFzRKfKa2mQT8=
+
+Name: com/spotify/docker/client/messages/ContainerConfig$Builder.class
+SHA-256-Digest: tgfPqjejl7SWNxyyI46oOp/tuHAPQFsQ+1wA0qJt2is=
+
+Name: com/spotify/docker/client/ProgressResponseReader.class
+SHA-256-Digest: mDOutV8OzUiDpahvd6R6i354es33mMRCiodo+33WKvY=
+
+Name: com/spotify/docker/client/messages/AutoValue_EndpointConfig_Endp
+ ointIpamConfig$Builder.class
+SHA-256-Digest: xi9xb9OLtdVb/loz5PUWDnvhgpaWZL+CPHHOXdC/dww=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Resources$Bui
+ lder.class
+SHA-256-Digest: 1/MGxjp3/NcTMlbelm9XZu7RCGwEn1JvQWlFORj5QYg=
+
+Name: com/spotify/docker/client/messages/AutoValue_ContainerInfo_Node.
+ class
+SHA-256-Digest: JmWA0DdGAKXID7X0+cJx5tMoUaZfZ04NWizOx3FdvNg=
+
+Name: com/spotify/docker/client/exceptions/PermissionException.class
+SHA-256-Digest: LHyPSY/K0AKK7W1KzLymrq+y8faK0zkPNNyTJvWX3PM=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_SecretBind$Bu
+ ilder.class
+SHA-256-Digest: kfYVZ6AiDu1Lp5Vuf0asYgyPHam1nT5aeFymvijnBtM=
+
+Name: com/spotify/docker/client/messages/AutoValue_ProgressMessage$Bui
+ lder.class
+SHA-256-Digest: PWZ5yDP7jdb1v7FaBmVUKg8HGX+W3sfmw6wPzLw/oeI=
+
+Name: com/spotify/docker/client/DefaultDockerClient$CreateProgressHand
+ ler.class
+SHA-256-Digest: fdlk8XCSZh0tf9xBbG0nBGoDcJH78FVVDlm3gM8chg4=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_TaskSpec$Buil
+ der.class
+SHA-256-Digest: i0rIMaWSwYPkKjwrWr6RwNYS/DtBsc1tI7ioZkqhg14=
+
+Name: com/spotify/docker/client/messages/AutoValue_Info_IndexConfig.cl
+ ass
+SHA-256-Digest: TFM5UMIsmVSR2F/W5B0xgBhuu/+E+DAL9HWW3DtxqOg=
+
+Name: com/spotify/docker/client/messages/AutoValue_NetworkConfig.class
+SHA-256-Digest: 9MkOrMHLXKxaBPHrEVP7MmJtbxg3euMihJ8Jj9RJgPg=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_SecretFile$Bu
+ ilder.class
+SHA-256-Digest: ESIxgRNmJ+raytCgS/ctwcojiSE5qzffFxCWfgcGlOg=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_EndpointSpec.
+ class
+SHA-256-Digest: 2pM0y15NVA1Kxqw62ozb9iCGEwMjCtlL/5O24ejNenc=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_SwarmCluster.
+ class
+SHA-256-Digest: MCo+vJAq6Ktxxp377/WVtzpBETUtXkb8qTjWPZTrETA=
+
+Name: com/spotify/docker/client/DefaultDockerClient$2.class
+SHA-256-Digest: CJnCp9NqOjmK1Fr04G/46+OUsA8O0xIzNvhQgTk5H9s=
+
+Name: com/spotify/docker/client/messages/EndpointConfig$EndpointIpamCo
+ nfig$Builder.class
+SHA-256-Digest: vtbifCgLclTJReWjCaS1HSR9sng63w5rSNIlFcfv12o=
+
+Name: com/spotify/docker/client/DockerClient$ListNetworksParam.class
+SHA-256-Digest: Jvttf0A+J0N8R/6nve0t0Wc5vXAqpC+orup+R2nK06k=
+
+Name: com/spotify/docker/client/messages/AutoValue_ContainerCreation$1
+ .class
+SHA-256-Digest: 8rKtPkKYPvrhR5H8t++oD8vQvNejoVq3eXxGx25gKzc=
+
+Name: com/spotify/docker/client/messages/swarm/UpdateStatus.class
+SHA-256-Digest: ity7tft10q75fFqIMeC4s0c/G75BrWTbUB2ep/LCmD8=
+
+Name: com/spotify/docker/client/messages/AutoValue_NetworkStats.class
+SHA-256-Digest: Mc8XL6D8NQ+a8N3diE/0YEHUJTrLCh4nOyOZYl5UyVk=
+
+Name: com/spotify/docker/client/messages/AutoValue_Container.class
+SHA-256-Digest: CY+999E18sxKiYrCbvLsSkQ0dPDtrDpX18P3lbsSsVQ=
+
+Name: com/spotify/docker/client/messages/swarm/ResourceRequirements.cl
+ ass
+SHA-256-Digest: ab3DQZoEmOcOZlur+KLmDoySVJFWMJFyUP8wB56D5wE=
+
+Name: com/spotify/docker/client/messages/AutoValue_PortBinding.class
+SHA-256-Digest: Ha4v5NW2xDnrGGtH0yzAI6hhhGsERyIRQIHnl5CztFU=
+
+Name: com/spotify/docker/client/messages/ContainerConfig$Healthcheck.c
+ lass
+SHA-256-Digest: 3ehVCFiv1O+nKd9CjD7rI2EW2yR13OTMCXgS/z2NjRc=
+
+Name: com/spotify/docker/client/messages/swarm/Task.class
+SHA-256-Digest: fc3E7+wPBG2n5mcqSC/oNw+tmA7N6DLmbuIBc1o4S08=
+
+Name: com/spotify/docker/client/messages/AutoValue_ExecState.class
+SHA-256-Digest: gYZpMA4d0iCm8nwV4+RcgeuQWOhmbO2yGjkJtYzj6lU=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ConfigFile$1.
+ class
+SHA-256-Digest: eaz211gCId4ndYTpQUrwVeNBLZsoMnwXQJ2badeOr7Q=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Config_Criter
+ ia$Builder.class
+SHA-256-Digest: Ixu9yPfY9pLdKNVYkjK1yyxKwa7oDpciiKNoi/Uwgp0=
+
+Name: com/spotify/docker/client/messages/ContainerCreation$Builder.cla
+ ss
+SHA-256-Digest: tB0q7dUD/pFZggGf0dMgp7ZAwknKD04a+6lNHgxoNDs=
+
+Name: com/spotify/docker/client/messages/EndpointConfig.class
+SHA-256-Digest: qtyMBjwRwoAmuKnutToXxsVFXZWmABWrRxg55iSRTnk=
+
+Name: com/spotify/docker/client/messages/swarm/NodeStatus.class
+SHA-256-Digest: xvBPfj4uyUqKF8f5B7ySkIuh30TcNODNKwA2c+nR/Fs=
+
+Name: com/spotify/docker/client/DockerHost.class
+SHA-256-Digest: VJOplM76avgdjO6/iY7R+qmc9sj5YFGlImw69XBafbY=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_SwarmJoin.cla
+ ss
+SHA-256-Digest: yiPqvBLc87sM9VER11whLSxseKZjc+GqnR+JlhhGfvs=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Node_Criteria
+ .class
+SHA-256-Digest: ixpjAc3aksgf/6xk6PfMzcqXnW0VVZ+nT+4/Qukjkqo=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ManagerStatus
+ .class
+SHA-256-Digest: pF1RDUK22RufIBBqSBO8UXyRVhcPph4JFfM2a2FVn+0=
+
+Name: com/spotify/docker/client/messages/AutoValue_Info_Plugins.class
+SHA-256-Digest: nUPfoR3eqdp+/Y/I3z/XkU11hO+5uMVyjs0Lxf84nbc=
+
+Name: com/spotify/docker/client/DockerClient$EventsParam.class
+SHA-256-Digest: tc/fFJ8iqjZdqstttkkmnQPJ54Az+M7a8q/1aa9Zuac=
+
+Name: com/spotify/docker/client/messages/swarm/ServiceMode$Builder.cla
+ ss
+SHA-256-Digest: PG/knDFH+5iQVi/URhE3Sp7YxILYdDwy+fpqkq+SN8Y=
+
+Name: com/spotify/docker/client/messages/swarm/Resources$Builder.class
+SHA-256-Digest: +PwK8tcofZhfDVAFB0b+IYOb9WGDrw43Diof4wxbA/w=
+
+Name: com/spotify/docker/client/messages/AutoValue_ContainerUpdate$Bui
+ lder.class
+SHA-256-Digest: m3GmEXKvgLl8LUFCiUPUKymrNGXq2/aaZ8VPYyXJat8=
+
+Name: com/spotify/docker/client/messages/NetworkConfig.class
+SHA-256-Digest: 6FRMXzVFpiQjQV4l7hn1cG1tv0I2YLa9UGEnr3Y2Xds=
+
+Name: com/spotify/docker/client/messages/AutoValue_BlockIoStats.class
+SHA-256-Digest: WUzeGSBJqmUt+Fj/tqdY+Fgki+6QYMne4ezsEjFcJIg=
+
+Name: com/spotify/docker/client/exceptions/ExecStartConflictException.
+ class
+SHA-256-Digest: 2ijiASt9z98oiMzYqXtzw2rk6ygWy7Dmv49O1qV/c5s=
+
+Name: com/spotify/docker/client/messages/ContainerStats.class
+SHA-256-Digest: uAjBg7TAitnzMyNseJ2ByyaOyJTnNEouvQLMArfzjEU=
+
+Name: com/spotify/docker/client/messages/swarm/Network.class
+SHA-256-Digest: zY8KunMuvp+4+tML6XKt9bdmz72zesrHpDxiPxwVk3g=
+
+Name: com/spotify/docker/client/DockerClient$Param.class
+SHA-256-Digest: pCth2f5zRDWF3cO1vPLTNM6kQw6nTrNhGv2O2Gwv7RQ=
+
+Name: com/spotify/docker/client/messages/swarm/SecretFile$Builder.clas
+ s
+SHA-256-Digest: uRwdjWPUnXD6dTxyvAd+auXMSLvvr0gBbnesN2zSBLk=
+
+Name: com/spotify/docker/client/messages/mount/AutoValue_TmpfsOptions$
+ 1.class
+SHA-256-Digest: ABL852TW2ZK28B2Pqn1DlcP4VB8T9LOf79hjEC0ocq4=
+
+Name: com/spotify/docker/client/messages/NetworkSettings$Builder.class
+SHA-256-Digest: +tM0SZ3PumeqgnW53ZWBRwRp77duvzqS7TTemX14ImA=
+
+Name: com/spotify/docker/client/auth/gcr/ContainerRegistryAuthSupplier
+ $1.class
+SHA-256-Digest: ZMWVCxoKgYRORcjNWmqIq2T76P1Wfbwd+4C5C7D8X8E=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_IpamOptions.c
+ lass
+SHA-256-Digest: 0VyeRYwNWRrHH9xiIXMgg96puRXzT1yh0wAn091ZnbM=
+
+Name: com/spotify/docker/client/messages/TopResults.class
+SHA-256-Digest: 9sFcsz/jNICbkZbkNi/RSxi7KCPfx3Rac+akLqSC7ew=
+
+Name: com/spotify/docker/client/messages/swarm/RestartPolicy$Builder.c
+ lass
+SHA-256-Digest: RXf3eCYCtgSOUn2OFP2WErffBpjPsFfr5ZxCfyi58CE=
+
+Name: com/spotify/docker/client/DockerClient$1.class
+SHA-256-Digest: J3J/+vW5atnKm2qSVMN+3cDiAC7VDwlc/nFHbbYViU8=
+
+Name: com/spotify/docker/client/messages/Info$RegistryConfig.class
+SHA-256-Digest: h/YoZBJFhG8UtWdOIGDzzoOv6gfTsn0FKvl3CCPT/zY=
+
+Name: com/spotify/docker/client/messages/mount/BindOptions$Builder.cla
+ ss
+SHA-256-Digest: /25XmFc0075Bje24OSZB6juWSOMFI1OW1W2uuGxgaNs=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ServiceSpec$B
+ uilder.class
+SHA-256-Digest: U5E4BF/SiFUbpC9mHhoW53zAoCpTP5rzvoXyZAzaTa8=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_RemoteManager
+ .class
+SHA-256-Digest: L9Ekclvli+PdJPCyi02QnI3Ikho1Z1uPUaQNUBMsg4A=
+
+Name: com/spotify/docker/client/messages/swarm/DnsConfig.class
+SHA-256-Digest: 4eZ0Yhgg+RDhhaR2uvJ27FyCW/XWtCyIOlLLPi2PMNo=
+
+Name: com/spotify/docker/client/messages/swarm/SecretCreateResponse.cl
+ ass
+SHA-256-Digest: fbhIZQSz2AAouHaXSuYBTMPYZUNlL3qTa8HvlcJa6Ms=
+
+Name: com/spotify/docker/client/messages/AutoValue_Network.class
+SHA-256-Digest: yfYjG78m2VfVTYo0uP4hSPTRCtGmMGsZZ+zXLckCHXg=
+
+Name: com/spotify/docker/client/DockerClient.class
+SHA-256-Digest: TWELR3xbv1MdafiyrxTYp/9UyZIHFk/TKChZHj44Hqk=
+
+Name: com/spotify/docker/client/messages/MemoryStats.class
+SHA-256-Digest: fYdjrtEiQ4UHyMFJ2zC57TNBoCFnXSOQv3FxN4rhsmc=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_EnginePlugin.
+ class
+SHA-256-Digest: hSRd1/GXgwuYvXcjmmSuY6DqqiHF2cTXJw7qNOTxcbw=
+
+Name: com/spotify/docker/client/messages/swarm/SecretBind$Builder.clas
+ s
+SHA-256-Digest: cJh4WlOE41gMBUQ+TfHZxb5QroxJW8d8E+zTzTl4sY0=
+
+Name: com/spotify/docker/client/messages/ContainerCreation.class
+SHA-256-Digest: kcmcC30Ynl5llXZ2plPes0ueg8znnk/SEKRObXZiXSs=
+
+Name: com/spotify/docker/client/messages/AutoValue_Volume$Builder.clas
+ s
+SHA-256-Digest: RQoRgfZ7+YQeLuxSutgLRzEfWcKP0509VoGxyCw3nEY=
+
+Name: com/spotify/docker/client/messages/AutoValue_NetworkConnection$1
+ .class
+SHA-256-Digest: z1TPrsjCy8zgZ85I6Ao4luXttKG1WcD2AHXHKY/vhC8=
+
+Name: com/spotify/docker/client/messages/HostConfig$Bind$BuilderFrom.c
+ lass
+SHA-256-Digest: 9cvfmWgjgabUlDrPh8bT/nKMnbY1vBjM6SHAf9FtW1Y=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.spotify.docker.clie
+ nt/pom.xml
+SHA-256-Digest: rBqiHcS6abA+bP8EoZ3qAW8iO3Vp+3NJ2P2YFffGPeQ=
+
+Name: com/spotify/docker/client/messages/swarm/Driver$Builder.class
+SHA-256-Digest: MqW/nVbsbx9l+UwLFcOUTWAIpBmHgBYtnObqcQ3IjG0=
+
+Name: com/spotify/docker/client/VersionCompare.class
+SHA-256-Digest: yGSB8CgXRPJ6cdTiIqCam0il+/09z7bqlS8CdEly9RM=
+
+Name: com/spotify/docker/client/messages/swarm/EncryptionConfig$Builde
+ r.class
+SHA-256-Digest: QDm+VlRXjKxAMwUCym+ibrOjkb1jFzeID6AUvPtFm90=
+
+Name: com/spotify/docker/client/messages/mount/AutoValue_Mount$1.class
+SHA-256-Digest: 6oFeCpRyuWtIvIHt8S69iTODrhj6prjsN88kbxNjFXc=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ContainerStat
+ us.class
+SHA-256-Digest: oG/hUMcEaxicQipows+Kyv1HV+L3FqPDG2xJRqdyFek=
+
+Name: com/spotify/docker/client/exceptions/DockerException.class
+SHA-256-Digest: vFe5U4FzDY9rP8Gm2UqQW8Qicwbca5CHor7ngG1Dvrg=
+
+Name: com/spotify/docker/client/messages/ContainerMount.class
+SHA-256-Digest: IAH93legYZa38kbyNfICM8TwP/c9W9Nn3NS331+YEk8=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_RaftConfig.cl
+ ass
+SHA-256-Digest: H96XNfQ6bpeC1YdDptv1oKStwZcfjA6yXw0JCt1EEf4=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_UnlockKey.cla
+ ss
+SHA-256-Digest: KWnV65ch+YVufHdNcFUU4Xpp+s7mOcXY+qjr+cEuVUE=
+
+Name: com/spotify/docker/client/DefaultDockerClient$1.class
+SHA-256-Digest: 2aEHMtJj7aoUEZo+qV1pM0eWNZM+sJqniJCDB1aNziM=
+
+Name: com/spotify/docker/client/messages/AutoValue_RootFs.class
+SHA-256-Digest: YZ+cVbjiLD7UWzsdEiMrLb84QiJzvZZVCChoRk58cSY=
+
+Name: com/spotify/docker/client/messages/EndpointConfig$EndpointIpamCo
+ nfig.class
+SHA-256-Digest: 2EDBgUvMjDjk4JMZC0eh0Tz8vyxomyQKhawJbqNJpQ0=
+
+Name: com/spotify/docker/client/auth/MultiRegistryAuthSupplier.class
+SHA-256-Digest: nXYFbLMyfOgi6IOSDnAoWsYnGkuY7IDuyV035AwuRxw=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_CaConfig$1.cl
+ ass
+SHA-256-Digest: tq+KnvQvATlCMRZ1g6aLxBUIGnvqB9ghtUZfrNnfKuI=
+
+Name: com/spotify/docker/client/LogReader.class
+SHA-256-Digest: 5MBbCEPRLs8ZMeNXjNPGuBYAdtar82SvSqwHjCDwl/E=
+
+Name: com/spotify/docker/client/messages/BlockIoStats.class
+SHA-256-Digest: JW08Wf27JO4GCvPGz7uMtKBecmb9n82DJKklSvLI8Lk=
+
+Name: com/spotify/docker/client/messages/swarm/ConfigBind.class
+SHA-256-Digest: w0fi3SkyJ158elnXb20t4yNv3NjpIEnHXAsvQNBYTgA=
+
+Name: com/spotify/docker/client/messages/AutoValue_HostConfig.class
+SHA-256-Digest: beX0wCTAHmsNaBCnnZ52BlJCsjwu/k80D0J+fbV63oI=
+
+Name: com/spotify/docker/client/exceptions/TaskNotFoundException.class
+SHA-256-Digest: aqina8N7tKXQ3Bw9Qavcewum5UWgIkpbyxYBYgkH23E=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_NodeSpec.clas
+ s
+SHA-256-Digest: X8XdC3oArPUt5ZlErnKg3fMc5rl8Fk8YFPOUMq7PBjw=
+
+Name: com/spotify/docker/client/messages/AutoValue_HostConfig_Bind$Bui
+ lder.class
+SHA-256-Digest: v4APj93GkHpULALbljEecKtpArOIox4wJbL5eXx71mE=
+
+Name: com/spotify/docker/client/LoggingLoadHandler.class
+SHA-256-Digest: 7HHx7r84ySrksyzculiSCePCMvvZ1h48yhgxYQ/SKM4=
+
+Name: com/spotify/docker/client/messages/mount/TmpfsOptions$Builder.cl
+ ass
+SHA-256-Digest: lZ4yTz3Y5fLcqE8fhq4ivxJUyjSK5lF78SHdhggKmmk=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_UpdateConfig.
+ class
+SHA-256-Digest: ZR4TWeebLbR/Q9z9gflhRrgltAJZsF23kgZdMGKhC08=
+
+Name: com/spotify/docker/client/messages/AutoValue_ContainerState_Heal
+ th.class
+SHA-256-Digest: 9/r1R1EsJmoFwqao/7HwWAmvE4GyCkhql2tOE612SZw=
+
+Name: com/spotify/docker/client/exceptions/ImageNotFoundException.clas
+ s
+SHA-256-Digest: Q65DruuUB2cZgZ+9Ov2fC+6YsO1bC42NDUwW35Iboh8=
+
+Name: com/spotify/docker/client/messages/AutoValue_HostConfig_Bind_Bui
+ lderTo.class
+SHA-256-Digest: YUfbcGdmDnFAX8LliqGcn+IMDXqAFPKIfclOg/SDZDI=
+
+Name: com/spotify/docker/client/messages/swarm/Config.class
+SHA-256-Digest: XmZGABViioUSSbk1u8UPgcE/SIr9mQeTLk4rHtkamzM=
+
+Name: com/spotify/docker/client/messages/mount/AutoValue_VolumeOptions
+ .class
+SHA-256-Digest: ujjbFpAyCdmpTyA/UES9C4zmmhF81QS+ecmhqkdLZOM=
+
+Name: com/spotify/docker/client/messages/swarm/ServiceMode.class
+SHA-256-Digest: UxRkfaxNsvPOwXA45FOcGo/mDrbv6085rbk7leXJpzI=
+
+Name: com/spotify/docker/client/ObjectMapperProvider$1.class
+SHA-256-Digest: VxaLuuV6+otHgrfjVMc3JY/aTaSZP6UZ3SsO/8alwlQ=
+
+Name: com/spotify/docker/client/messages/AutoValue_EndpointConfig$Buil
+ der.class
+SHA-256-Digest: b0k0fATOflznDXLx1IFtN2zqM0ErZpIMK5flxvcd1wE=
+
+Name: com/spotify/docker/client/DefaultLogStream.class
+SHA-256-Digest: 5nfzfQyR4Gqpge4918DqrPiwhK4RiHNijjlYigmfnvM=
+
+Name: about_files/THE_APACHE_SOFTWARE_LICENSE__VERSION_2.0.txt
+SHA-256-Digest: z8d0m5b2O9McPEK1xHG/dWgUBT6EfBDz6wA0F7xSPTA=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Platform.clas
+ s
+SHA-256-Digest: IDCGHA9i2c3u5J8TODCmiyncHyIh5nZ4nG2bv0s7V14=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_PortConfig$Bu
+ ilder.class
+SHA-256-Digest: aeCnezRI5No73l2+CxmZRUwEOs2vTJwsqUod2Tn5QuI=
+
+Name: com/spotify/docker/client/messages/NetworkConfig$Builder.class
+SHA-256-Digest: SfJ+vgo+dPYnWcs5RY6YlSbjR8uTiSXLcVQOD+k18FE=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ConfigSpec$1.
+ class
+SHA-256-Digest: OX8QfOk+pe8Ri1bkjvPbdu4li/z88jkb9qzpe0gnhwo=
+
+Name: com/spotify/docker/client/messages/swarm/ServiceSpec.class
+SHA-256-Digest: OSOmn+04J5A5PkJgxUGnf1XuQsnqcTUWZ97YZ+H9uW8=
+
+Name: com/spotify/docker/client/messages/swarm/TaskStatus.class
+SHA-256-Digest: GrPcLbyg9D0CGr4mmtOSdjDiqXi3Up6/VQtHQJQp8EQ=
+
+Name: com/spotify/docker/client/auth/gcr/ContainerRegistryAuthSupplier
+ $DefaultCredentialRefresher.class
+SHA-256-Digest: KIN8VEol9zIWwtMGIfDVrF4ZhJxpY/FrjgOm46zDIsU=
+
+Name: com/spotify/docker/client/messages/AutoValue_Ipam$1.class
+SHA-256-Digest: nytl2HehGzdbFEnYHEqrBlV+v06LizFR5lpY9Ieu3hY=
+
+Name: com/spotify/docker/client/DockerClient$AttachParameter.class
+SHA-256-Digest: jZ+6xNjZL8w3wI3nO8g7Xs7HuCoko9dHl7GA5I+BTYs=
+
+Name: com/spotify/docker/client/DefaultDockerClient$3.class
+SHA-256-Digest: KrvnG5wrwlvby5hsMHyU03oy2Tdp77RGwVv1qeM19do=
+
+Name: com/spotify/docker/client/messages/AutoValue_HostConfig_BlkioWei
+ ghtDevice.class
+SHA-256-Digest: sj88E+Pe3TSfObGEXRYTZx9a0aXPnkSw+oPLoPEuMPo=
+
+Name: com/spotify/docker/client/messages/HostConfig$BlkioDeviceRate$Bu
+ ilder.class
+SHA-256-Digest: Z5mgOgb/crqaGK3tX7Zhw5bD7nGrhd6ncqOVNO6XlYI=
+
+Name: com/spotify/docker/client/exceptions/NonSwarmNodeException.class
+SHA-256-Digest: SNAhNKjDGXKneFyDbLTMMEsHgxkyHjkXmgazUeqhocA=
+
+Name: com/spotify/docker/client/messages/AutoValue_NetworkConnection$B
+ uilder.class
+SHA-256-Digest: 7nn5Dh/7XJ7c2JOnRAMs26/jR6zpuXGuTiBFDjTJiek=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_UpdateStatus.
+ class
+SHA-256-Digest: RfkrqF9qm/wO0AtBAKjmalDHA5VLxss+SDafRcANUqM=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_NodeSpec$1.cl
+ ass
+SHA-256-Digest: cA7T1hPKXo3gz+y0rYK8gMPCg/Kw59seH9xs32bSro4=
+
+Name: com/spotify/docker/client/messages/mount/AutoValue_BindOptions$B
+ uilder.class
+SHA-256-Digest: UZLZjcarrJ7Urb0Q+CVZcnXlysB7JE8RDFYJP0jmL8I=
+
+Name: com/spotify/docker/client/messages/RemovedImage.class
+SHA-256-Digest: +YV4j6NI/+bvGFN7HEle65PXVJot5kimQtrwx6FD+Xc=
+
+Name: com/spotify/docker/client/messages/Info$Plugins.class
+SHA-256-Digest: FV/69+RTxSJHDIh74u4qfOhEfX3U75BfOFs5hqkG2Tc=
+
+Name: com/spotify/docker/client/messages/swarm/Service.class
+SHA-256-Digest: tuNVOwjNCAqEY1BAzeSPpqlhAJGgsjYAcUrfvzeADnQ=
+
+Name: com/spotify/docker/client/messages/AutoValue_Network_Container.c
+ lass
+SHA-256-Digest: iWkMzSbe1kfs2CYjrFTcewjXxum2eA8qoRjGKv9d+Ww=
+
+Name: com/spotify/docker/client/ObjectMapperProvider.class
+SHA-256-Digest: QPZ/Ihqqnq31wZ5Gu/WPWWlA0CaqL6V4tiuIcrMapL8=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Endpoint.clas
+ s
+SHA-256-Digest: d5frZ1vt1uVKPaA5x2iDrLE1vYbtb1Dn+yt8iLHSSfg=
+
+Name: com/spotify/docker/client/messages/HostConfig$Ulimit$Builder.cla
+ ss
+SHA-256-Digest: cRZ8oyyd4YF7Ug/ywtjUTjjAzAbNuBnJnEV0YW4L1M8=
+
+Name: com/spotify/docker/client/messages/AutoValue_HostConfig_BlkioDev
+ iceRate.class
+SHA-256-Digest: aNUItiq+TZUjVOXprZHYJqezhxd1KJrMOFWqZe/ERwg=
+
+Name: com/spotify/docker/client/exceptions/NodeNotFoundException.class
+SHA-256-Digest: gkt6rsvVCxIni8RP4iddDXR1PXVTIszry80sBU5uA9Q=
+
+Name: com/spotify/docker/client/exceptions/DockerTimeoutException.clas
+ s
+SHA-256-Digest: Gz6DDJoruOmOzN9wwRMQWzUCf249ntpRM97HJa2WHS0=
+
+Name: com/spotify/docker/client/DefaultDockerClient$10.class
+SHA-256-Digest: EJ1qY4UE3/udgRNBvdemC6JeDKaehZv+fDeCcXTrLpI=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ConfigCreateR
+ esponse.class
+SHA-256-Digest: VCNb5m0Om7DMCerRNhQy2JdQqVgsAK8mPbCgiIqFIUE=
+
+Name: com/spotify/docker/client/messages/ContainerExit.class
+SHA-256-Digest: dYomBizRrn810t7r7ruFcG6x0aguCU1ywwcMPJlk8jc=
+
+Name: com/spotify/docker/client/messages/mount/Mount$Builder.class
+SHA-256-Digest: H3P4ykZ4zn6zzaFw2cQWXd1cZcsCoZhMdJYaTJQdTmw=
+
+Name: com/spotify/docker/client/messages/AutoValue_Event.class
+SHA-256-Digest: dc7mJeh7YGPkjAfheSwAvPzhwDN1epuN35UYYwyd3AU=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_SwarmInfo.cla
+ ss
+SHA-256-Digest: yW0NV6oOnsqTsA6DClfiZcpaANLIYz3W7jtAijaAkLI=
+
+Name: com/spotify/docker/client/messages/AutoValue_EndpointConfig_Endp
+ ointIpamConfig$1.class
+SHA-256-Digest: lZDTVdp+O91yU1UIAZU2TG9DrIvK/l3El3AqDXBdvKw=
+
+Name: com/spotify/docker/client/messages/Container$PortMapping.class
+SHA-256-Digest: H1fMjHNZfL3U/YkO8p9H5t+xqnZ2nt+1rLdLFMzEufU=
+
+Name: com/spotify/docker/client/messages/AutoValue_Event_Actor.class
+SHA-256-Digest: UOtBpVAWPDpcVgu2gDMwk/oE5rRUeLIB2Ch2S4mElCs=
+
+Name: com/spotify/docker/client/messages/AutoValue_HostConfig_BlkioDev
+ iceRate$Builder.class
+SHA-256-Digest: gJCzuhFnYACbCsZv9AolNZh3zYk1L6LtNeZJo224mrs=
+
+Name: com/spotify/docker/client/messages/RegistryConfigs$1.class
+SHA-256-Digest: rXLtFqCnA9rItt+iSHn/2/gSLFrEZJ7NROcVhXR6qSI=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_GlobalService
+ .class
+SHA-256-Digest: L499gXiL/iR7zWE9JHrgzqswOEwf39MhZBFW/qBvnU4=
+
+Name: com/spotify/docker/client/messages/AutoValue_EndpointConfig_Endp
+ ointIpamConfig.class
+SHA-256-Digest: +iWcG2hShr5esXBmpTTbOnDPqkjue5VzlTUupQf2DGw=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Task.class
+SHA-256-Digest: 71Eifj6x4cMUGxx5YpnkZc1EecHyDVRTi06W/wMUy6Y=
+
+Name: com/spotify/docker/client/DockerClient$RemoveContainerParam.clas
+ s
+SHA-256-Digest: POUH+n8+5dk9o0OFQkn6SW4hiOmpGvsHMYcuzfi16H8=
+
+Name: com/spotify/docker/client/DefaultDockerClient$5.class
+SHA-256-Digest: afkUCwCmPYXmfBa9+i/OEIEsNtxTKYn780KCX3J+EvU=
+
+Name: com/spotify/docker/client/messages/mount/Driver.class
+SHA-256-Digest: pV0g2fYb24d0LGvilB0mpukYTTqYUk3ESKxvh9QPSn0=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_PortConfig.cl
+ ass
+SHA-256-Digest: 0Zg/jA6HVuvMTmOG2FL5U3YENnsxcXaModhi4BoYB5k=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ConfigBind$1.
+ class
+SHA-256-Digest: yhGXz0rKvzC4jJv5GCuMTQdRCQMCaXRm/3pdsDgCV58=
+
+Name: com/spotify/docker/client/messages/AutoValue_LogConfig.class
+SHA-256-Digest: U7zOJ0rxkABWPWVbxFsHWpIzcs4oeN9bYzYFnpp09dk=
+
+Name: com/spotify/docker/client/messages/AutoValue_ImageInfo.class
+SHA-256-Digest: gmm59B7RngVpgeKltUYr63ufhFRly0MzQ4jdXLuptkI=
+
+Name: com/spotify/docker/client/messages/swarm/NodeSpec$Builder.class
+SHA-256-Digest: 0JuvBLnMMbr4YpIVkuS4m4cA2xoklnLr2rC1zSFJ7y4=
+
+Name: com/spotify/docker/client/messages/swarm/PortConfig$Builder.clas
+ s
+SHA-256-Digest: A4NlASYKkhGUdcjKb65YCOPrLUnvZRpLXSNf02iov24=
+
+Name: com/spotify/docker/client/exceptions/ExecNotFoundException.class
+SHA-256-Digest: FFX1nVTJ8ISOg0B39+jTD0AN14iaskq2q/wee7WOIQ8=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_JoinTokens.cl
+ ass
+SHA-256-Digest: ATltlH8D1IomaWoxoWcxcciKP2SEOHOgz0AjGBeyZpE=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_NetworkAttach
+ mentConfig$Builder.class
+SHA-256-Digest: yTbCaRBE8v+Et7TxQ09TCq/XH75seK9D49ZgGm/X8YU=
+
+Name: com/spotify/docker/client/messages/AutoValue_HostConfig_BlkioWei
+ ghtDevice$Builder.class
+SHA-256-Digest: fbxH07eB8gi9t1AOD2sM5qNvpN3mrVNlr9Mr4j7lif0=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ContainerSpec
+ $Builder.class
+SHA-256-Digest: SO2k7iQLzJcKeq1W4e6slq1sjielmWlqoeSyqyAsty4=
+
+Name: com/spotify/docker/client/messages/swarm/CaConfig$Builder.class
+SHA-256-Digest: uu1CsPymcQot3geRZJvLcXuzuBrbIEFwzsBbixFcKjs=
+
+Name: com/spotify/docker/client/messages/AutoValue_NetworkSettings$1.c
+ lass
+SHA-256-Digest: Px5jlFDHHX9uwLVs5KTEBxoPcxn/oqg4HQPdH5dbyXc=
+
+Name: com/spotify/docker/client/messages/swarm/SecretSpec$Builder.clas
+ s
+SHA-256-Digest: GPIGhvyIstIb1YtP+f1AYpV41VcybNhD6DyKqnDBy08=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_SecretFile.cl
+ ass
+SHA-256-Digest: YgGirZ1R9eVXm1a7BLv3XHsB/t+w6++KL1oouqskoSY=
+
+Name: com/spotify/docker/client/messages/swarm/SwarmInfo.class
+SHA-256-Digest: FkzwVuYOMNpGEPt7+utVS3G8KWgpb0V84EFpQ2Zr66c=
+
+Name: com/spotify/docker/client/messages/AutoValue_HostConfig_Ulimit$B
+ uilder.class
+SHA-256-Digest: sTEOgPaLUH7WccZ85pJeiDFRtPbVYzoYzlDH2XiJm30=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Task_Criteria
+ $Builder.class
+SHA-256-Digest: +Mf8HsSYeK8CWhP3BGlawSrpMGxIAH+Ii5vMSTHEB1k=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_TaskSpec$1.cl
+ ass
+SHA-256-Digest: dYTaSuFJtC1/c8u+kgGbjHL0HeJib6DX3mPipyPm4o0=
+
+Name: com/spotify/docker/client/messages/swarm/ConfigBind$Builder.clas
+ s
+SHA-256-Digest: gWJlV4AjyF8qvVZDxz27KlyLY4l1xvCVLPWembqbUEM=
+
+Name: com/spotify/docker/client/messages/AutoValue_ContainerConfig_Hea
+ lthcheck.class
+SHA-256-Digest: 57S0IL98uAwG7TVYzO6LjEEBksvcliVkv7thZcF1vlA=
+
+Name: com/spotify/docker/client/DockerClient$ListVolumesParam.class
+SHA-256-Digest: AfLVrdu/M+cU4OfF/vh6segL+ojpWik3m5qMCygIYQs=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_GlobalService
+ $1.class
+SHA-256-Digest: uU8ArpbLB5OwvPB393ybIeyRKdEOP83bTQ3iorfMUkg=
+
+Name: com/spotify/docker/client/messages/swarm/DispatcherConfig.class
+SHA-256-Digest: /7JdEuRobRVZ9XFRTDIoGYJq0UuXi8SjjLwvfyQuq3k=
+
+Name: com/spotify/docker/client/messages/AutoValue_Ipam$Builder.class
+SHA-256-Digest: DjmYEjvvTjuRdDfCLtU7idmxa7Mt9+XbqcUHFy2wg/k=
+
+Name: com/spotify/docker/client/UnixConnectionSocketFactory.class
+SHA-256-Digest: 2RMYx1qNfUZedgykqGY7B8+uCJPShpUlNJzj54QgDjM=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.spotify.docker.clie
+ nt/pom.properties
+SHA-256-Digest: 4/JREoGIIjWveVnsknNECsBDWdzBEQ845bZdI0OCZhM=
+
+Name: com/spotify/docker/client/messages/swarm/Placement.class
+SHA-256-Digest: n9gzZjvEFd9N/ItK20UKg4c/xwaFbnQpkyaDH2bCfYQ=
+
+Name: com/spotify/docker/client/DockerCertificates$DefaultSslContextFa
+ ctory.class
+SHA-256-Digest: 8ElHVcNd+0cuVENKc3sutXQVVlX+M7ncIdPEdeTu90U=
+
+Name: com/spotify/docker/client/messages/Event$Actor.class
+SHA-256-Digest: fwNYjE3ZnhVcPsBsmChuhd5v+DJsp2BDkSWBJldWbi4=
+
+Name: com/spotify/docker/client/messages/Info.class
+SHA-256-Digest: 93PlivNcc41CbF2cmtka0X2gPxd8a+r6ErTUFUpFJ0A=
+
+Name: com/spotify/docker/client/messages/Volume$Builder.class
+SHA-256-Digest: hCDzCovpcr7i7axGLWUSowkaTL4w4Qa45tn22ORbtJc=
+
+Name: com/spotify/docker/client/messages/swarm/ConfigFile.class
+SHA-256-Digest: zXe+aqlydy+YXxrmo0WG5RENQ7BTKJhhzp+kmktAT2s=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Orchestration
+ Config$1.class
+SHA-256-Digest: Yfevc7Xc8eTzBj5UZkEVR3WFVD2bQvAft8t+qPdsSgc=
+
+Name: com/spotify/docker/client/messages/AutoValue_HostConfig$1.class
+SHA-256-Digest: kcBGhTTWNYnW+aPQpXSDvCfkJ2RT0OUKe/aIyswHyls=
+
+Name: com/spotify/docker/client/ObjectMapperProvider$SetDeserializer.c
+ lass
+SHA-256-Digest: W4th4ragR3pDnFsMaR0NLNzaKBi14iD5TzHoKnCXAs4=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_EncryptionCon
+ fig$Builder.class
+SHA-256-Digest: yMt38rU7HZDSoqsYSzTB6iFavllMZDAn+nzaP3ZSIRg=
+
+Name: com/spotify/docker/client/messages/AutoValue_RegistryConfigs.cla
+ ss
+SHA-256-Digest: 7LVP1LIHt2H2Nbm2XFEPYpfRHLM8tzp8RtB7q6gu35o=
+
+Name: com/spotify/docker/client/exceptions/UnsupportedApiVersionExcept
+ ion.class
+SHA-256-Digest: qeLSC+d/cdQt1CGW/0vs0rJ0Ew5p7UPIslPxnMwS6H4=
+
+Name: com/spotify/docker/client/messages/mount/VolumeOptions.class
+SHA-256-Digest: t7xc9tVW+X+l5p7SQvYqfKoCTUr/vQgvabInYsTlA+E=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Orchestration
+ Config.class
+SHA-256-Digest: JXv7U1OL1sgABBUES0RCIYtfyV5jrB1nEfFQ6EtSaG8=
+
+Name: com/spotify/docker/client/messages/AutoValue_Volume$1.class
+SHA-256-Digest: Ybch3qrqfqsHX3xx+DF1/26lC4S/BAFBYl586zzDPcc=
+
+Name: com/spotify/docker/client/messages/AutoValue_ContainerInfo.class
+SHA-256-Digest: 5WqWI3Ei5LIZwR6KEeaQvE3GI9aLHAb4KtE5Z7UZyy8=
+
+Name: com/spotify/docker/client/messages/ProgressMessage$Builder.class
+SHA-256-Digest: E9fl/Iot8bBgX/I1NWjzUwigH/nUMHCMm42S+/IVk/s=
+
+Name: com/spotify/docker/client/messages/swarm/PortConfig.class
+SHA-256-Digest: 0ZoTeLUa9zQKHySWalDluMc4krGHVbASwUjdMFW2rmU=
+
+Name: com/spotify/docker/client/messages/IpamConfig.class
+SHA-256-Digest: 4MOMf4UCmt3LhxBjE3KnPrTEmdKYJvccVCwv8q+9zQc=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Task_Criteria
+ $1.class
+SHA-256-Digest: c6oHBWW9IbboaJMhRNUvKFFFY32OsZ4Tv7tf6uUVrb8=
+
+Name: com/spotify/docker/client/messages/swarm/EncryptionConfig.class
+SHA-256-Digest: 9dzYb4GRzRGNE+wTDAFnTE4LgYwkIAMciJPM9wSghrE=
+
+Name: com/spotify/docker/client/LogsResponseReader.class
+SHA-256-Digest: Vyk0zIsjR1I6LstsPRepQlnXhTR9xfC/iECUpWvPXW4=
+
+Name: com/spotify/docker/client/messages/AutoValue_HostConfig_LxcConfP
+ arameter.class
+SHA-256-Digest: Z04NSgUwI3hoUFq6YZqOYDz2lWHn68oR7zTCb8q9PIg=
+
+Name: com/spotify/docker/client/ProgressHandler.class
+SHA-256-Digest: fE5OT2aJqbB+B3Jn+sLN1OekVaSWNpgDNm7nG837Tow=
+
+Name: com/spotify/docker/client/messages/ContainerConfig$Healthcheck$B
+ uilder.class
+SHA-256-Digest: N+v1TBjKuUMd0nvCqb9WwLJ+WrZSPzXlm79FdZcLfjI=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ContainerSpec
+ .class
+SHA-256-Digest: 0J5T2u4sHkvvdcZc3klJC/WZFHJe3n8AOEJFcOMwpBw=
+
+Name: com/spotify/docker/client/ObjectMapperProvider$ImmutableSetDeser
+ ializer.class
+SHA-256-Digest: TF5804s88kysPT36wrA8h75Fvt3kMh/mKgT7c4N8eII=
+
+Name: com/spotify/docker/client/messages/swarm/TaskDefaults.class
+SHA-256-Digest: Xaro7O0tqNWh+SebN+f9N5musvwPsBqFo0mQyTx+gJ8=
+
+Name: com/spotify/docker/client/messages/AutoValue_ContainerConfig$1.c
+ lass
+SHA-256-Digest: wQV/RXVbkqkWftLU84p96xVEO4eeKCbt6BhtwWAGkAo=
+
+Name: com/spotify/docker/client/messages/NetworkCreation.class
+SHA-256-Digest: LIWRbyhvlxagfmMk6ahzdHb7JDo9mMk8uNJVhAhvO54=
+
+Name: com/spotify/docker/client/DefaultDockerClient$8.class
+SHA-256-Digest: 7lkXcilp3vCES3PA534jakRepZ9Sl5CXRtsoX7Qj/Ys=
+
+Name: com/spotify/docker/client/auth/FixedRegistryAuthSupplier.class
+SHA-256-Digest: jw9Aivfpd5Sau18oecfPN2xaM8lI/ATSNtH2g4OWMH4=
+
+Name: com/spotify/docker/client/messages/AutoValue_NetworkConnection.c
+ lass
+SHA-256-Digest: 561Yd/aYpiJNaUIx7VpAtmg0DYgf5Gc+RBqsZacKPiw=
+
+Name: com/spotify/docker/client/messages/AutoValue_Info_RegistryConfig
+ .class
+SHA-256-Digest: AYjdBQeg6Jr/Y68+O0xsP4HZX1r5TXi2Wq/ICN1XYcU=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_RestartPolicy
+ .class
+SHA-256-Digest: t09VAxxBzOSzrp1jgK+V77TTXuv5kbT6qT3LyOt/vNo=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ServiceSpec$1
+ .class
+SHA-256-Digest: oIHV3ZaPOkRM++6vjASMLCEcynw2zooomugpBxyHlC4=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Driver$1.clas
+ s
+SHA-256-Digest: /nsnjLqPykc6uMQI/0827SiD2+UYB3tlqIa79bMqwWs=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ConfigFile$Bu
+ ilder.class
+SHA-256-Digest: u0WwfHTNCU0SOP6PZ1jPoubB6qeh/eR+mkmGnnJqUzY=
+
+Name: com/spotify/docker/client/DockerClient$LogsParam.class
+SHA-256-Digest: Ntwu3sFq3/qxy/ReEGG7xVbuWxbWrCMU8UMS3tlRyY8=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_SecretBind.cl
+ ass
+SHA-256-Digest: rNhA5SmngvFn+DndlCh9SDi88SDKzrcEDk341KXQTHY=
+
+Name: com/spotify/docker/client/messages/mount/AutoValue_TmpfsOptions.
+ class
+SHA-256-Digest: RHCnUiRFEjsQa1cpFjg9WNG2j/0KDdTOvOC5fz0gt9s=
+
+Name: com/spotify/docker/client/messages/mount/AutoValue_Driver$1.clas
+ s
+SHA-256-Digest: iA+BwoQUhP9W3bu+1qshMdGp2ZK6cNqT+9PtfSo6Fo0=
+
+Name: com/spotify/docker/client/DefaultDockerClient$12.class
+SHA-256-Digest: +OBPvG6oGadde3nkvG4JAJIVXc6wqY2/g9dG4PDHZ7I=
+
+Name: com/spotify/docker/client/DockerClient$ExecStartParameter.class
+SHA-256-Digest: CwT1wbhIeVaoCQ3Srp956FyVk+dlOYUJp8aPSaxEcAI=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Service.class
+SHA-256-Digest: DQmR7Ewi46I7WP5T87Etc6bRGQQdnKW6JkQVMY9dkHw=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ReplicatedSer
+ vice.class
+SHA-256-Digest: wxe1LP4a0NfFwbVB6G5hjG3KoaS6issl/4XuUgai50M=
+
+Name: com/spotify/docker/client/messages/swarm/Config$Criteria.class
+SHA-256-Digest: 8GjrzPys/LgrcKrgtGaqicSvdBll13tHv85sL+l5lI4=
+
+Name: com/spotify/docker/client/messages/swarm/SecretBind.class
+SHA-256-Digest: wHO0+6uSboMgQmgxOPwzaebguDrn/thiMQiQZiKBdR4=
+
+Name: com/spotify/docker/client/DockerDateFormat.class
+SHA-256-Digest: Gjur9tH8QT+1CNaHJUJ4rxBTzZAuvrw695MZzpt2HyI=
+
+Name: com/spotify/docker/client/messages/mount/AutoValue_Mount$Builder
+ .class
+SHA-256-Digest: E49OOEsxWvoPz7glQ0gz0SiBzdJNEvY5jLW2p3/DQ0o=
+
+Name: com/spotify/docker/client/auth/gcr/ContainerRegistryAuthSupplier
+ $Builder.class
+SHA-256-Digest: 9a6y9cXiN9B2chMGKYn2kN8o6Fcum0YHAlALlKk9Ouc=
+
+Name: com/spotify/docker/client/DefaultDockerClient$LoadProgressHandle
+ r.class
+SHA-256-Digest: RZVc1tSxhkApeT9XZjEO+7v0hznOFW6spMGOhZTQCuc=
+
+Name: com/spotify/docker/client/messages/swarm/Resources.class
+SHA-256-Digest: ZV3Yedt8cEELK0ifrkK8pbx1reNg0CYRmqbGWArrr2c=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_EncryptionCon
+ fig$1.class
+SHA-256-Digest: 9YcJFubAiOiyG1BmfvA+8rqVMmHfSND0ghhwywgg6lA=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ConfigBind.cl
+ ass
+SHA-256-Digest: 44zd7wkCUNMP1DHbA8v85J6KCZgvlzW/tpWF3myRtlI=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_CaConfig$Buil
+ der.class
+SHA-256-Digest: p1h+akXTUXHAx3R8zCrrtWYptDAD6ndg7GrUzLGPhPw=
+
+Name: com/spotify/docker/client/messages/swarm/SecretSpec.class
+SHA-256-Digest: yieeaDaom/XBJW5jg4gQhUzra26/8uDwBwulSDAuYxo=
+
+Name: com/spotify/docker/client/messages/mount/AutoValue_Driver$Builde
+ r.class
+SHA-256-Digest: WBM1L6JB+ShTenN1yTxe9MNcDm9uJf6m3V71Z/KCPUA=
+
+Name: com/spotify/docker/client/DockerHost$SystemDelegate.class
+SHA-256-Digest: vrHGnDpMPhRxGoQeEqgjp6MFZDzPndqibfjbCdYmUbA=
+
+Name: com/spotify/docker/client/messages/AutoValue_CpuStats_Throttling
+ Data.class
+SHA-256-Digest: OXR/TuSpVH5CzkrzByO+MBWqvOYAkiPlNTHaHOR38jg=
+
+Name: com/spotify/docker/client/CompressedDirectory$Visitor.class
+SHA-256-Digest: FtBR3blH68/DGkLsVKy02A2b9z867mX34FTIA5IN+j8=
+
+Name: com/spotify/docker/client/messages/AutoValue_ProgressMessage.cla
+ ss
+SHA-256-Digest: QVcPC7EQ6wRii56i6ejC2YuhCzFP19BqKlzPRfCooxs=
+
+Name: com/spotify/docker/client/messages/swarm/Platform.class
+SHA-256-Digest: DOYCPUDfPzt6uIwLj7/Y9kaWAGzoyLLR1vi6vOzt/Dc=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_NetworkSpec.c
+ lass
+SHA-256-Digest: Ysb1W+8rJeucbKQuhMq3vJzNNWzCfoTmik4NK8aXsI8=
+
+Name: com/spotify/docker/client/messages/swarm/SwarmJoin$Builder.class
+SHA-256-Digest: t0vD+vDcpZkkSn9gTMueTFTkVPX+uoibB7eIqcQHuz0=
+
+Name: com/spotify/docker/client/messages/swarm/Service$Criteria.class
+SHA-256-Digest: mjOz/tb/ZJojqhNZSC/zGNkEk9wNavRC40dg02UDnQo=
+
+Name: com/spotify/docker/client/messages/swarm/UnlockKey.class
+SHA-256-Digest: 0qZSpDWJyq8KeOP9lFcnmgl1vSgXPZbtIbhNyFeMnxw=
+
+Name: com/spotify/docker/client/messages/HostConfig$LxcConfParameter.c
+ lass
+SHA-256-Digest: L22vznzL0C9SkmuFsWGRoILYvLnBkwDkIQYkrFYvTYw=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Secret.class
+SHA-256-Digest: nKHk+ZAoUJ/JGUpCjxe6RTB3dp5H6t96dXlmsuItMPs=
+
+Name: com/spotify/docker/client/messages/swarm/Version.class
+SHA-256-Digest: HAvvvGqmayN/dBCnnRBfERIT7Rp2NsOcikwKKXoboZE=
+
+Name: com/spotify/docker/client/messages/swarm/NodeDescription.class
+SHA-256-Digest: u09+eQUt7/Oq+w/3aJrnbLuqq2xUX05kKq9PIMpD8ww=
+
+Name: com/spotify/docker/client/messages/swarm/Service$Criteria$Builde
+ r.class
+SHA-256-Digest: KLDfo5FBS6zNumsqqr1s5I7RiUaqhfd0g+chTnLXrpI=
+
+Name: com/spotify/docker/client/messages/VolumeList.class
+SHA-256-Digest: DRe9mJ5MzqKG7U6MUsH0u1jQqDIilMGIoWDEeNc1bmE=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: vnlVem7dJz7mMn06+fxbIG+gdCM/Hnn7sqxwg0xeBQU=
+
+Name: com/spotify/docker/client/messages/swarm/Endpoint.class
+SHA-256-Digest: rbluHLcnSRCxva/V44mkBTtUWYzmLiGz7H0UExAgg6g=
+
+Name: com/spotify/docker/client/messages/AutoValue_NetworkSettings$Bui
+ lder.class
+SHA-256-Digest: R78gjMKjjOTQzyw89PFYwKmEeu5qnfC3K66h1mkqsaQ=
+
+Name: com/spotify/docker/client/messages/AutoValue_HostConfig_Bind.cla
+ ss
+SHA-256-Digest: yU/iatV7yXdG/naJEK9kdJ9ZnhB8QbetvGNY2ZIy9G8=
+
+Name: com/spotify/docker/client/messages/PortBinding.class
+SHA-256-Digest: hK/u9OMcSxh7RGWj1ViiXDhdcUko4OwH6HQJgwbXEnQ=
+
+Name: com/spotify/docker/client/messages/swarm/ManagerStatus.class
+SHA-256-Digest: 9iI4BXwle/DA4pUGpvjiOe2cClP4WU55f8mWWNo2zy0=
+
+Name: com/spotify/docker/client/LogStream.class
+SHA-256-Digest: Fo1DWaPON256RqqbECODgg+bFamCLmJA2ZZtmEmqfeI=
+
+Name: com/spotify/docker/client/messages/ContainerChange.class
+SHA-256-Digest: OChsHKy/rbxEhzXGqrMoDTsZMcIgilG9KJGXCfXbZaM=
+
+Name: com/spotify/docker/client/messages/ContainerUpdate$Builder.class
+SHA-256-Digest: WUCOEmD3DIP0/vhS/sE9UKi+Z6EWB7XY/ZvPEnqxNpM=
+
+Name: com/spotify/docker/client/messages/AutoValue_IpamConfig.class
+SHA-256-Digest: xNz6Ky21lA6RVIjPzIA8DK1idOhpKUvCoWFSomCXbXc=
+
+Name: com/spotify/docker/client/messages/AutoValue_Info.class
+SHA-256-Digest: P/C37rdjiOJftGuKJCJng6qwWgF9EYzGdHd0k8ZZfkk=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_SwarmSpec$1.c
+ lass
+SHA-256-Digest: gBMnKl7627EbwYP7+20bFmLh01rKPCyJfakBpe765UQ=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_SwarmInit$Bui
+ lder.class
+SHA-256-Digest: g5KoSaUsS2w5mo4XrARRKB+urMH0Qwr+ztHFgGM68Po=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_GlobalService
+ $Builder.class
+SHA-256-Digest: H8LxzstOKonppWA5OwsNi2edLBtm+BOrj8i4mX7iIkk=
+
+Name: com/spotify/docker/client/messages/ProcessConfig.class
+SHA-256-Digest: NRJyazxt50XcNOSCau1K7AWRQNI6Xv7VLbaPn8TYZqg=
+
+Name: com/spotify/docker/client/CompressedDirectory$DockerIgnorePathMa
+ tcher.class
+SHA-256-Digest: pKZnLuQoDLDqnxS0g4f8g36ry+vtLx/ntloSElXgLXU=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Placement.cla
+ ss
+SHA-256-Digest: f5P1FiWYr4gFBEQlq0u0KPqwpsuoaWtN7BwgC6f9XIw=
+
+Name: com/spotify/docker/client/auth/RegistryAuthSupplier.class
+SHA-256-Digest: wfDEvEn+nS/98wbD+u1i+yhEEjAJo3yno6TZ5YGMo9s=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_TaskDefaults.
+ class
+SHA-256-Digest: i61Q6YoW0NWkSTmpLVsih1obSE0IuBxD+w5hWKLihmA=
+
+Name: com/spotify/docker/client/messages/swarm/RestartPolicy.class
+SHA-256-Digest: NoAOPXbp6JZCs7Js4+RNdI1/9NwNsuv8CtbtaLD94sM=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Driver.class
+SHA-256-Digest: Q+30DKdtVQa3G0+xbb2C9tfS4LDJrXUSPMzvLougPGk=
+
+Name: com/spotify/docker/client/messages/Network$Type.class
+SHA-256-Digest: c80YIakB7CzgKIBm1zVfMBTZVKtSJie99wXiSoSFG28=
+
+Name: com/spotify/docker/client/messages/AutoValue_HostConfig_RestartP
+ olicy.class
+SHA-256-Digest: nyJYqJwpLUquvnfOPf8Wzc+Jjuj2JG3ITLsJ6mAzbKc=
+
+Name: com/spotify/docker/client/DockerClient$ListContainersFilterParam
+ .class
+SHA-256-Digest: 1/7+zpM4UpJ1r3U1QBSF01DrqT36vtP6pmA021aef58=
+
+Name: com/spotify/docker/client/messages/AutoValue_HostConfig_BlkioWei
+ ghtDevice$1.class
+SHA-256-Digest: oCk0fqUqlg0zrlx+B11qo5Qt5ZNBXrHz0B+V/Yiwyxs=
+
+Name: com/spotify/docker/client/messages/swarm/EndpointVirtualIp.class
+SHA-256-Digest: XFTgWGoU1Ve9N3uo1izsHNqBdGTVhtXwoCSgXBDzZ2w=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ConfigFile.cl
+ ass
+SHA-256-Digest: 8pblaqbynDIGGa5xYRV7b956VuW8cql2num1vUmw3M8=
+
+Name: com/spotify/docker/client/messages/swarm/Driver.class
+SHA-256-Digest: HoQJYmcanJNgCfZYoQ+Tluapn61jz9EogeOquuwqLiM=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_TaskDefaults$
+ Builder.class
+SHA-256-Digest: nSB4ukNVo2sCkMA5nVTMlVjEqBi6WTXM+eRNSWdqvNU=
+
+Name: com/spotify/docker/client/messages/swarm/IpamConfig.class
+SHA-256-Digest: Y8gNwSPkxKKa3PfMVC+Y8k+gbQVHYxJ2EAvOPufyJRA=
+
+Name: com/spotify/docker/client/messages/AutoValue_Version.class
+SHA-256-Digest: vSZILPCFnT0r/V7kCIGYewoRCV1d4SXOWi+uu8UPH4w=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Service_Crite
+ ria$1.class
+SHA-256-Digest: lE8ivNAAHawOtaHfwYMidJVCFpQ93HgUhMTE8tPicEE=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_NodeDescripti
+ on.class
+SHA-256-Digest: rZoX9LvC1UZr32Iiul3R+Ks/+yGcoCWTDM+LHcKWZNE=
+
+Name: com/spotify/docker/client/messages/NetworkStats.class
+SHA-256-Digest: UT/LtcSV2KG/qPricYC+sCsweuDqI2A+UE4o0MIh1IY=
+
+Name: com/spotify/docker/client/messages/swarm/SwarmCluster.class
+SHA-256-Digest: FjF+OBHOU1mC+wqOAr0xsq+mkYqXuVIWWjqJHG/FNiU=
+
+Name: com/spotify/docker/client/DockerClient$ListNetworksFilterParam.c
+ lass
+SHA-256-Digest: S5O4m/pBDHr86CdQ5Mg6kPIoGePtWqFGYMmwdJRyIRE=
+
+Name: com/spotify/docker/client/messages/AutoValue_Container_PortMappi
+ ng.class
+SHA-256-Digest: 5CjvNndf7ZWens1nWLPW0nyndFCw7hPWz53XVnlMUl8=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_EncryptionCon
+ fig.class
+SHA-256-Digest: OsnWpA4AGCtiZdctEOILgs0TcThYTh0PdYHemVIthi0=
+
+Name: com/spotify/docker/client/messages/swarm/SwarmJoin.class
+SHA-256-Digest: 5gBGMCJ5ydloazc7NIWWhkPGC/dF5G4EX0ds5OxTRRk=
+
+Name: com/spotify/docker/client/ObjectMapperProvider$ImmutableSetSeria
+ lizer.class
+SHA-256-Digest: 79GFnu2/9XJsOu2AZ12bz8FjkzO7ebwaj0tAxbPFVzw=
+
+Name: com/spotify/docker/client/messages/AutoValue_ContainerConfig_Hea
+ lthcheck$1.class
+SHA-256-Digest: pg6VN3XgGaYCzvUJqH/HHUw/uqzQ+SObkkA5tUtBtc4=
+
+Name: com/spotify/docker/client/messages/mount/AutoValue_BindOptions.c
+ lass
+SHA-256-Digest: Ua46T1PgkAQH7I5KS7o1xX5EdQnTsJPG5jxGcb6vrXg=
+
+Name: com/spotify/docker/client/messages/AutoValue_HostConfig_Ulimit$1
+ .class
+SHA-256-Digest: +dIvVP2OoXcx1suciLXnpc9vL32wDbs5pnQSg7klQ94=
+
+Name: com/spotify/docker/client/DefaultDockerClient$11.class
+SHA-256-Digest: fqgifzv2p5gINgIs6FOYPumIdPC3Z/Hhpm9ltAZD+tk=
+
+Name: com/spotify/docker/client/messages/swarm/SwarmSpec$Builder.class
+SHA-256-Digest: NbvD4BvlZ3rPgLObd8cojsrcolkQGZdpr4ZLT/IaxNE=
+
+Name: com/spotify/docker/client/exceptions/NotFoundException.class
+SHA-256-Digest: 46tSC26CJ00V1YxeVPDEs281dMm7gaUwxEqmQl7Mjf4=
+
+Name: com/spotify/docker/client/messages/swarm/EndpointSpec.class
+SHA-256-Digest: gLERYNcrSuBRzrdmCHrZEE+gKdfhCOFEEoTowwALnAA=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ReplicatedSer
+ vice$1.class
+SHA-256-Digest: cfjIRMRgR/yAKkJjj3hzmTIlOglGR+mfHzJUZhyAS5Q=
+
+Name: com/spotify/docker/client/messages/Ipam$Builder.class
+SHA-256-Digest: lJ+HqyLUThylfThUL2EP+0Lrs0zj7YBxnBAMahnWM7M=
+
+Name: com/spotify/docker/client/ImageRef.class
+SHA-256-Digest: PsFRzH23Fhc6Yd7ut0ipyT9Mr1q/pwk6BIy0OiVQwMY=
+
+Name: com/spotify/docker/client/messages/ContainerInfo.class
+SHA-256-Digest: x00e/TNRm203bPC/etA9fc5DdPc3uyrC5HIfTHJwQfg=
+
+Name: com/spotify/docker/client/messages/swarm/UpdateConfig.class
+SHA-256-Digest: pb0xeBtPm+dVl/S4yR97fDwrADTYkmj9f5gRUuXDpgk=
+
+Name: com/spotify/docker/client/messages/AutoValue_CpuStats_CpuUsage.c
+ lass
+SHA-256-Digest: 48NVekxChyaP7OrdPFY5sr1/At4mfjuOPsAXC5oIkmQ=
+
+Name: com/spotify/docker/client/messages/swarm/Node$Criteria$Builder.c
+ lass
+SHA-256-Digest: 7pQqxW13TEH+Y9XNTNza/ssVA/CTUGM9xC3r8hxPF8U=
+
+Name: com/spotify/docker/client/exceptions/ImagePushFailedException.cl
+ ass
+SHA-256-Digest: 2SYbwGJH4VUCqIljK2HsU6rjb0uqywFixttByMDCWLg=
+
+Name: com/spotify/docker/client/DockerClient$ListImagesFilterParam.cla
+ ss
+SHA-256-Digest: 8vONDF8kcVE3AgtiWmjiSKm8AfYOaOGW9GbIjx6DFk8=
+
+Name: com/spotify/docker/client/messages/ContainerConfig$NetworkingCon
+ fig.class
+SHA-256-Digest: MX8mC+2M8Nwu6x2aQ3nwj3Z6RkFayyjmqL2qAOUncw0=
+
+Name: com/spotify/docker/client/messages/AutoValue_ContainerConfig_Hea
+ lthcheck$Builder.class
+SHA-256-Digest: 61i6magg6a17BPibUdqmFQ1JdnEpM7S68+cihwX0TWY=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_SwarmSpec$Bui
+ lder.class
+SHA-256-Digest: prX9+uDp3krw/7NnbI2HCfFAG7c0cY0NJHOOXhH1XCs=
+
+Name: com/spotify/docker/client/DefaultDockerClient$Builder.class
+SHA-256-Digest: NIZ2LlZpyyYWa2JWld6ayIWcrIT0Pa5wQTWkjRK/HbE=
+
+Name: com/spotify/docker/client/messages/HostConfig$Bind$BuilderTo.cla
+ ss
+SHA-256-Digest: hI0+xcU6TQjbzDtEgK0gljG6ei2gQEfGObzV5exnjsc=
+
+Name: com/spotify/docker/client/messages/AutoValue_RegistryAuth$Builde
+ r.class
+SHA-256-Digest: lu8GYtrOX3cx6cMqcknQCyqO4co5xr0v79s8G51v1tY=
+
+Name: com/spotify/docker/client/LogMessage.class
+SHA-256-Digest: ptWE3f5DoRWrlgZ6XZJptCCrj+7uLSr5E4qNpW98Bic=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ResourceRequi
+ rements$1.class
+SHA-256-Digest: PPj0uvUJhKs8EBAj8k6kCeq2yVl8ZKsC9lcMeLfyyz0=
+
+Name: com/spotify/docker/client/DockerClient$ListContainersParam.class
+SHA-256-Digest: W3H5GwcIIwWnNeFeFTTIQiCIx7QsTjqnhtoFUUpXXX0=
+
+Name: com/spotify/docker/client/messages/swarm/CaConfig.class
+SHA-256-Digest: HD/DmmUqREHvllYkmP25WRFJkiBuDk6vRMjMS+QwIl4=
+
+Name: com/spotify/docker/client/messages/ProgressMessage.class
+SHA-256-Digest: guFr3UGQ9i24OcxbU2ihMAaMvEAv7vcRT0KKzbsDmt4=
+
+Name: com/spotify/docker/client/auth/ConfigFileRegistryAuthSupplier.cl
+ ass
+SHA-256-Digest: +3OQqWgDHm+qeUi+lHvL+rgNr0UrKpFJtLnVoQ8LiNs=
+
+Name: com/spotify/docker/client/messages/AutoValue_NetworkSettings.cla
+ ss
+SHA-256-Digest: 3KJZwijaAXNx0cxVnyOHGLH3PnrsgaEtMFZaYdomWmA=
+
+Name: com/spotify/docker/client/messages/AutoValue_Device.class
+SHA-256-Digest: np5OWr7aYxc8DRpo5C16R0FuAcHtfd7TS9M0M5ciKuo=
+
+Name: com/spotify/docker/client/messages/AutoValue_ExecCreation.class
+SHA-256-Digest: B5/mq4yFq5+GU4iHdMbBXzZBvhrSFgkAuB+z9V/0VIk=
+
+Name: com/spotify/docker/client/jackson/UnixTimestampDeserializer.clas
+ s
+SHA-256-Digest: 5nbzzLdjCFe+KPGJjbLgrC8nKHh13mAUuZk0vv+ya7Q=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ServiceMode$1
+ .class
+SHA-256-Digest: KuR2I60dnUPM+jwweUi8VUIRNrhpeN2lY3pDWfTITeI=
+
+Name: com/spotify/docker/client/messages/mount/TmpfsOptions.class
+SHA-256-Digest: 6XyWUX0zvWjNWZcfe+di94Uusc9k9IBHYIhGAfrXyCc=
+
+Name: com/spotify/docker/client/messages/AutoValue_Device$Builder.clas
+ s
+SHA-256-Digest: Mu2HVjQkypKqFh/a+DB7qt2e9PsT8XYinjWtu1fbekA=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Service_Crite
+ ria$Builder.class
+SHA-256-Digest: 0w/dcB3We1XVDzNVfDkKRhnfPGOjT0i8tuIdZA+F30U=
+
+Name: com/spotify/docker/client/messages/AutoValue_EndpointConfig$1.cl
+ ass
+SHA-256-Digest: hiv96tdHkeCeymjZmfMmHQoOFM7KKE6BJ1dmH5TXlvA=
+
+Name: com/spotify/docker/client/messages/AutoValue_ContainerConfig_Net
+ workingConfig.class
+SHA-256-Digest: aq7UU1nnN4q0Ar0WHdoTJgozorbUN9+hxqxHhuFMKmM=
+
+Name: com/spotify/docker/client/messages/HostConfig$Bind$Builder.class
+SHA-256-Digest: FDVb+isqVgw3eVi2xrYJaRKsWlRhZEu2EO6ZshcUikg=
+
+Name: com/spotify/docker/client/DockerCertificates$1.class
+SHA-256-Digest: 4+tAaqregqn65FUuC55Dpx4fTJmStKmlS3okPE4Fh9E=
+
+Name: com/spotify/docker/client/messages/swarm/TaskDefaults$Builder.cl
+ ass
+SHA-256-Digest: BHSXiWmSjzOkQYGI3lqx0+rUNqeFSxppcLtQUyZ4AqU=
+
+Name: com/spotify/docker/client/messages/swarm/SecretFile.class
+SHA-256-Digest: c/0ll64ujaEfv1SteWiDaQuj3BVm2iDshUy/Tv1k/Tk=
+
+Name: com/spotify/docker/client/messages/swarm/ReplicatedService$Build
+ er.class
+SHA-256-Digest: PhlMi+WoDqj92eylJpdr/RFG3pB0SwsUSBoO2yg6kdM=
+
+Name: com/spotify/docker/client/messages/swarm/SwarmInit.class
+SHA-256-Digest: 2exYUXZ8uzAR9AvIpcriD/6u6RARq8msIxUUE0j11bQ=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_CaConfig.clas
+ s
+SHA-256-Digest: dALbzOCrEB/nqEi14f5KSei2GGUa73GEPUwBNKtnJoE=
+
+Name: com/spotify/docker/client/AnsiProgressHandler.class
+SHA-256-Digest: 1fCWKgb4A4NduFOxTleE4OsT9F9qNKxCIhEI+MWSdqw=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_SecretBind$1.
+ class
+SHA-256-Digest: TXdmrQoe/ACgnZGD9wfhddDA9ruAUt6eTM/f7yv9+98=
+
+Name: com/spotify/docker/client/messages/ExecState.class
+SHA-256-Digest: QCWazv6dfMl2LaM/7bZiVUmxAlqTWgHAUlnW7MpS1NU=
+
+Name: com/spotify/docker/client/messages/swarm/Swarm.class
+SHA-256-Digest: cOfSTWhl9CTx2uTJczumiq4/K+dcf0oAiNpcHoDmdgY=
+
+Name: com/spotify/docker/client/messages/swarm/IpamOptions.class
+SHA-256-Digest: uA4rcvdrtHLiQRDR2R2d2NAds9ax37QNvk9FEGuMEA0=
+
+Name: com/spotify/docker/client/messages/ContainerState.class
+SHA-256-Digest: +4sA4brqQmnWfdacFn7RNJN95pzigm75DRVqRP2ujMs=
+
+Name: com/spotify/docker/client/messages/swarm/RemoteManager.class
+SHA-256-Digest: Ei/cT08Nd/zBWlM1nUrPqFpronJNwRCJ9/N9CceUmDU=
+
+Name: com/spotify/docker/client/messages/swarm/ExternalCa.class
+SHA-256-Digest: X0ivxLyAx74UB9w4cVShO2j3UKv4RhVmm1uH0kufYw4=
+
+Name: com/spotify/docker/client/messages/Event$Type.class
+SHA-256-Digest: wriBFZrxoXH99hT9mcM0j3oavNPpigfwz2275Ao1g/M=
+
+Name: com/spotify/docker/client/auth/gcr/ContainerRegistryAuthSupplier
+ $CredentialRefresher.class
+SHA-256-Digest: TmIXTGKW7Um+9NI5Mq+19pnmMCJdjAjGDY9m9l4AJ8w=
+
+Name: com/spotify/docker/client/messages/AutoValue_MemoryStats.class
+SHA-256-Digest: hm+UhHuIs+PsZ23BoWyD1HotdhOXVet8KNUUmbG+BoI=
+
+Name: com/spotify/docker/client/messages/CpuStats$ThrottlingData.class
+SHA-256-Digest: lbiZQlHjrANLxjSZr1wif+uq8sC4pOjmff1RDI4JqAo=
+
+Name: com/spotify/docker/client/EventStream.class
+SHA-256-Digest: IHpdwIVzDaCY+2Phh0/x7W3nZIJR5PSaHKlJ2Clo+Qs=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_SwarmInit$1.c
+ lass
+SHA-256-Digest: XBB7JVazozqrsmTcAYMvdJNILDS0Z9neYeUh/7bZKbc=
+
+Name: com/spotify/docker/client/DockerConfigReader.class
+SHA-256-Digest: sUNRL1M9T57JW1USczrQ+dVJGGhQ9Ht3h9W/Po8DwGg=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_NodeInfo.clas
+ s
+SHA-256-Digest: hxLZlMd5MDsntsPbTDKR/V0B8vD2iz5OTkT/+0RBUEo=
+
+Name: about.html
+SHA-256-Digest: iQxYcrzKfIYv4vdZhAtbQqi8lviCjPy7kvv7MgdVNHc=
+
+Name: com/spotify/docker/client/messages/swarm/NodeInfo.class
+SHA-256-Digest: sDeXJQ5rOBiZVdQMNKansUthJVV7zTSMamkt/jbYElo=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_EndpointSpec$
+ Builder.class
+SHA-256-Digest: QAyT7Mz1IfK0rj1XRUV+dy54/1MTT1QvjVP+lXL+cVw=
+
+Name: com/spotify/docker/client/DockerClient$ListImagesParam.class
+SHA-256-Digest: cyBVfMevBUUcuWC+x7iBENDTrPKr9ERRXS9uaf1sNcA=
+
+Name: com/spotify/docker/client/messages/Network.class
+SHA-256-Digest: LncM9IUTqsntjV2xS9+g7qL5LvQ97WD3GLViLdWIvHo=
+
+Name: com/spotify/docker/client/messages/swarm/SwarmInit$Builder.class
+SHA-256-Digest: gdWpj31vdXh36dCX+f6eCV36QJBcLJ6uUBwTSgVWs98=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_SecretSpec$1.
+ class
+SHA-256-Digest: nJ8EgsVP1q7ZJzysSoKZQhvt2MHRrJlZRfVga7eQ8jg=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ServiceMode$B
+ uilder.class
+SHA-256-Digest: 0nP/hrwiTWQkIJ+BZYv4JRiplgxe4fgN3gPa8brJDiQ=
+
+Name: com/spotify/docker/client/messages/mount/AutoValue_Mount.class
+SHA-256-Digest: U/AeDo65SNsYZcujQio3/Zs/511u8cFVUw36zmPV5GM=
+
+Name: com/spotify/docker/client/exceptions/ImagePullFailedException.cl
+ ass
+SHA-256-Digest: euygijd91igJPw7F9HoKDon4B78q90IIWN8N5A2IKeo=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_Node.class
+SHA-256-Digest: H3F7NDuKhjz2YwZGoqM/2sXGR947msjCRc1TZ9b2/No=
+
+Name: com/spotify/docker/client/messages/AutoValue_ContainerCreation.c
+ lass
+SHA-256-Digest: tWNG3WceMMfzqTClfa2PpdOzGKfBLhpH5Domjxg8qOY=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_EndpointVirtu
+ alIp.class
+SHA-256-Digest: usnUqNhdCTPhQv80YnxbQJFuzQ9Red7mGlCn348wUw8=
+
+Name: com/spotify/docker/client/messages/swarm/ContainerSpec$Builder.c
+ lass
+SHA-256-Digest: q5ydzncMoqqhAYkWjN0gAwtWTRAaNiK2bMst24S1WMM=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_SwarmJoin$Bui
+ lder.class
+SHA-256-Digest: AJgfNQdphD9nuO2QKk2oMAPfhZmxB6hQv4vPGuDyo38=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ConfigSpec.cl
+ ass
+SHA-256-Digest: zOCf//eEg6R3aMxWFNfnp9YEUpvxt/vMv1ByK9TsNyU=
+
+Name: com/spotify/docker/client/messages/AutoValue_HostConfig_Bind_Bui
+ lderFrom.class
+SHA-256-Digest: w7MRx6JekEey3rmLV4cItzmkJKZ3KbKO47MnTaDS3RA=
+
+Name: com/spotify/docker/client/messages/swarm/AutoValue_ResourceRequi
+ rements$Builder.class
+SHA-256-Digest: OLrxxUKCZLLAjI105MwGd88aDl0bJ01fzhRWXda/rsU=
+
+Name: com/spotify/docker/client/messages/AutoValue_ProcessConfig.class
+SHA-256-Digest: QndCWsHhrtpY7DBzabLUd6UJ1dokdgPcBvL0a0Y6h/c=
+
+Name: com/spotify/docker/client/messages/CpuStats.class
+SHA-256-Digest: oUj2BCzlH8mKI7H72YUAqZkTqrmMaBIUZ/WWxsYoB3M=
+
+Name: com/spotify/docker/client/CompressedDirectory.class
+SHA-256-Digest: YyLH2BQDt3qXgGKoBYaNarSLf2fWq8ck+x9ETqvbXpU=
+

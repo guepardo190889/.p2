@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.jboss.tools.jst.feature"
+      label="%featureName"
+      version="3.9.0.v20180614-0303"
+      provider-name="%providerName"
+      plugin="org.jboss.tools.jst.web.ui">
+
+   <description url="http://www.jboss.org/tools">
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import feature="org.jboss.tools.common.feature" version="3.6.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="org.jboss.tools.jst.web"
+         download-size="968"
+         install-size="3848"
+         version="3.9.0.v20180614-0303"
+         unpack="false"/>
+
+   <plugin
+         id="org.jboss.tools.jst.web.kb"
+         download-size="485"
+         install-size="1321"
+         version="3.9.0.v20180614-0303"/>
+
+   <plugin
+         id="org.jboss.tools.jst.web.ui"
+         download-size="2139"
+         install-size="4289"
+         version="3.9.0.v20180614-0303"
+         unpack="false"/>
+
+</feature>

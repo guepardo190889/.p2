@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.jboss.tools.common.projecttemplates;singleton
+ :=true
+Built-By: hudson
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.7.0",org.ec
+ lipse.ui;bundle-version="3.7.0",org.jboss.tools.common
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Eclipse-SourceReferences: scm:git:https://github.com/jbosstools/jbosst
+ ools-base.git;path="common/plugins/org.jboss.tools.common.projecttemp
+ lates";commitId=856f5d850c07494b8ca5d2b27cca5d1ac06d2957
+Bundle-Vendor: %providerName
+Export-Package: org.jboss.tools.common.projecttemplates
+Bundle-Name: %pluginName
+Bundle-Version: 3.10.0.v20180614-0302
+Bundle-Localization: plugin
+Bundle-Activator: org.jboss.tools.common.projecttemplates.ProjectTempl
+ atesPlugin
+Created-By: Apache Maven 3.5.2
+Build-Jdk: 1.8.0_171
+Eclipse-BundleShape: dir
+

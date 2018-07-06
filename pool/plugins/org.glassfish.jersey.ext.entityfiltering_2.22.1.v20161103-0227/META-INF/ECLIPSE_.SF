@@ -1,0 +1,236 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: EF9nsE0d6zuVi+aYJHV/5vzGu/EXN
+ S8O8ZyzOeKT1ek=
+SHA-256-Digest-Manifest: SA8xt1SmeQW8Csg8lB5wp5CXS194/nO98FXdY1e1PFo=
+Created-By: 1.8.0_131 (Oracle Corporation)
+
+Name: org/glassfish/jersey/message/filtering/SelectableScopeResolver.c
+ lass
+SHA-256-Digest: Q05eaGat7/wF8kPDHByeoVkXRJ1qAiGMLyIb9wYC6/w=
+
+Name: org/glassfish/jersey/message/filtering/EmptyObjectGraph.class
+SHA-256-Digest: 465KYE3wHLoVuGRHkJ2ivsJNrSI9iV7GRpn7mqh+qUw=
+
+Name: org/glassfish/jersey/message/filtering/spi/EntityGraphProvider.c
+ lass
+SHA-256-Digest: 9mcBY21LeP5D18eQyEis0//HlYW2QQqxnrs1h+M1Hhk=
+
+Name: org/glassfish/jersey/message/filtering/SelectableEntityFiltering
+ Feature.class
+SHA-256-Digest: qPV3dU5cGmuuY66hxthKpEOHIRPtJ5A1QtTs7YBXDJo=
+
+Name: org/glassfish/jersey/message/filtering/EntityFilteringBinder$1.c
+ lass
+SHA-256-Digest: B8Dnp8D1NlLgkihdlGsXtc0V8XbD/kTetHNP+I1eM+8=
+
+Name: org/glassfish/jersey/message/filtering/spi/EntityGraph.class
+SHA-256-Digest: fLFZ1CgehHLcConZAIEPBV08huL8hfrLzvKbqQuS4uc=
+
+Name: org/glassfish/jersey/message/filtering/EntityGraphImpl.class
+SHA-256-Digest: +T7AaqRv1deepTHQbDYnHA/XuiZOcd1m/CIeHGb1NtU=
+
+Name: org/glassfish/jersey/message/filtering/EntityFilteringFeature.cl
+ ass
+SHA-256-Digest: jm9tLsd9DmzNYXkhdxjTm4CX/EdAc6Dr5klOogzsjLs=
+
+Name: org/glassfish/jersey/message/filtering/SecurityAnnotations$DenyA
+ llImpl.class
+SHA-256-Digest: ONb712e2w6TtCqsYD8s+brmPzR5d3W8kTZX6ZJbyefY=
+
+Name: org/glassfish/jersey/message/filtering/EntityFilteringHelper.cla
+ ss
+SHA-256-Digest: cR0MTlrxX8SS/LJV6sJKRI+Womud32YlriDwS8+hNGE=
+
+Name: org/glassfish/jersey/message/filtering/spi/AbstractEntityProcess
+ or$1.class
+SHA-256-Digest: rxmYLmlptYo+4SmIBq+NiKdxyHJ0xUo4nnVHNWJGv+U=
+
+Name: org/glassfish/jersey/message/filtering/spi/EntityProcessorContex
+ t$Type.class
+SHA-256-Digest: 25zLtwb0Qh4Y1YrM4smT//q2j53Ed+3NrNnXOOfONvI=
+
+Name: org/glassfish/jersey/message/filtering/DefaultEntityProcessor$1.
+ class
+SHA-256-Digest: wDsyo7t1ULWhJP2RpwE2hetivxzZDNxjhrbU+dINzqc=
+
+Name: org/glassfish/jersey/message/filtering/spi/EntityProcessor.class
+SHA-256-Digest: BNfTNvvMCfxRYfqUdHXNr+EVqfuCOvEgDcMuTAIDGFE=
+
+Name: org/glassfish/jersey/message/filtering/internal/localization.pro
+ perties
+SHA-256-Digest: 0aFxOopJjUZ/NFX/EDJjRScbATdOCE0pzDwdWV1I5io=
+
+Name: org/glassfish/jersey/message/filtering/spi/EntityProcessor$Resul
+ t.class
+SHA-256-Digest: 3HIw4hTT+k6QzX140gIVoEHjnMNbMRdMLwZgQv31b30=
+
+Name: org/glassfish/jersey/message/filtering/EntityInspectorImpl.class
+SHA-256-Digest: yzig2kp5Artfm1yHy9Hcr1KAc4GLmmcjkCN3BmjaKiE=
+
+Name: org/glassfish/jersey/message/filtering/ObjectGraphImpl.class
+SHA-256-Digest: YrbRpHOJOY49a5s6F/qoqVFg9rEmuH+uFRWPmGGxa2o=
+
+Name: org/glassfish/jersey/message/filtering/spi/ScopeResolver.class
+SHA-256-Digest: Zq3A6geSPCOxjZrf3OSV0CJNqAV64EpIR0wQJHXWrCA=
+
+Name: org/glassfish/jersey/message/filtering/internal/LocalizationMess
+ ages.class
+SHA-256-Digest: 8o7svsEbyaAl6BxCD/aEu69RCJQidyI3svU4HgPllxo=
+
+Name: org/glassfish/jersey/message/filtering/spi/ObjectProvider.class
+SHA-256-Digest: qB63cPa8wf4b2v4achBZrJAMwLWyCqqLFJoVKgRxppI=
+
+Name: org/glassfish/jersey/message/filtering/spi/AbstractEntityProcess
+ or.class
+SHA-256-Digest: 3u5PpIClkhPF4F6/krOap6sxXZKd1h2DED0VRrpGMUE=
+
+Name: org/glassfish/jersey/message/filtering/spi/ObjectGraph.class
+SHA-256-Digest: T9HhYPOMO9ZQD0DyqWNMmP0Nb1qCIq8+FBfz5kXITxE=
+
+Name: org/glassfish/jersey/message/filtering/EntityFiltering.class
+SHA-256-Digest: 4qB1oYVmKSL9TD9UGMi+1C1Cmxfs6tXF/++M2d/posw=
+
+Name: org/glassfish/jersey/message/filtering/spi/ScopeProvider.class
+SHA-256-Digest: zlywSktq1asPiSDU5MQfeExze6IhzWS2i6dp5muk27M=
+
+Name: org/glassfish/jersey/message/filtering/spi/FilteringHelper.class
+SHA-256-Digest: 9s8ftBAoUE3KwZGURAFK/s9cQ/qeztMHkydkzJwIy7g=
+
+Name: org/glassfish/jersey/message/filtering/EntityFilteringBinder$4.c
+ lass
+SHA-256-Digest: wUSVl/jTsxEIkfRfXyLh6mHIopTwCyMgurMY+Q0PR9Q=
+
+Name: org/glassfish/jersey/message/filtering/SecurityHelper.class
+SHA-256-Digest: lO9jQRBkAvFYruUpGxiwAUEwqRhU5FDiHkbQu4G5Tlg=
+
+Name: org/glassfish/jersey/message/filtering/EntityProcessorContextImp
+ l.class
+SHA-256-Digest: MomtevJy4UiRgNNdQyyywAK+CGZvHbxhZeFrPHtvdwg=
+
+Name: org/glassfish/jersey/message/filtering/SecurityAnnotations.class
+SHA-256-Digest: b1+xnULGOG1CJIedlQblvYAj37Sat6iSJnHXyND+2qQ=
+
+Name: org/glassfish/jersey/message/filtering/EntityFilteringProcessor$
+ 1.class
+SHA-256-Digest: a42ezPeOsNbK+GPF+AO3zJfXZqqRDYdA5xSCLjgWNZA=
+
+Name: org/glassfish/jersey/message/filtering/ObjectGraphProvider.class
+SHA-256-Digest: jpQX70PllQHPVJ3zT0sV1aaUiJ33ku4Fgmd2NY5aatU=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: nQTy0b40x4ndEREaZ/6ZlVLSdoLRhj5kINbFQsTVfko=
+
+Name: org/glassfish/jersey/message/filtering/spi/AbstractObjectProvide
+ r$1.class
+SHA-256-Digest: 0fw8WV8CpomlgdP0BgGxMTzmcjP4ZwVlxINihwTXr3M=
+
+Name: org/glassfish/jersey/message/filtering/SecurityAnnotations$1.cla
+ ss
+SHA-256-Digest: HCN3QGDhnNn4RXcm+8OEgGGr6cHHIfa2/IR8lkjPCTQ=
+
+Name: org/glassfish/jersey/message/filtering/ObjectGraphImpl$1.class
+SHA-256-Digest: o2VA6wZmc1nj9Rmc8DPgAIaex1s0N+oAsos1rmsSj+o=
+
+Name: org/glassfish/jersey/message/filtering/CommonScopeProvider.class
+SHA-256-Digest: aldILRgYnH/o2LpUE1FJVOdKrUI1FVR/VqGuQRTGmlk=
+
+Name: org/glassfish/jersey/message/filtering/spi/EntityProcessorContex
+ t.class
+SHA-256-Digest: dsR7uaGpZrX76NXLJ4CikUFceJuftl/ZOdSCzFANnME=
+
+Name: org/glassfish/jersey/message/filtering/spi/EntityInspector.class
+SHA-256-Digest: FZtRGSZNw+EUA7Y3MS/g406O6UqpAlma9JHYoW/mFTc=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.glassfish.jersey.ex
+ t.entityfiltering/pom.properties
+SHA-256-Digest: /ZXQBqr1NfFI0rNGbvzKjgpTF0NexS3MOzpSwdW0b8c=
+
+Name: org/glassfish/jersey/message/filtering/SecurityServerScopeProvid
+ er.class
+SHA-256-Digest: +5Cr1uor8fpzdGnjwseOLQ/c9HJm/XjdAp2b6jMlcqw=
+
+Name: org/glassfish/jersey/message/filtering/ServerScopeProvider.class
+SHA-256-Digest: 8Pa4f2FlV+5oVNlbuvar3qLbPixWW+WT2qYllOd+X3E=
+
+Name: org/glassfish/jersey/message/filtering/SecurityAnnotations$Permi
+ tAllImpl.class
+SHA-256-Digest: /6WFfoUUYY4rBDpnTwW1EaBuFHUJ9O5I030nwCr5Jsc=
+
+Name: org/glassfish/jersey/message/filtering/SecurityEntityProcessor.c
+ lass
+SHA-256-Digest: oxXHxyN/Tf8n9vFIT4bt9YBx7UA/2OQUk0F3WIA94U0=
+
+Name: org/glassfish/jersey/message/filtering/SelectableEntityProcessor
+ .class
+SHA-256-Digest: j+sqXTtsfu2aO15ECIt9S5jkpBQbYnrazP1BY1xXhpw=
+
+Name: org/glassfish/jersey/message/filtering/SecurityServerScopeResolv
+ er.class
+SHA-256-Digest: fokj0GumU2eqQHfce7S9tXLq0LdX1DGJEeWTv2Bj3n0=
+
+Name: org/glassfish/jersey/message/filtering/EntityFilteringBinder$3.c
+ lass
+SHA-256-Digest: FWJb2+Ack6gRXFtaSaBE84Mpw2pVCo6H4pm5JhENByE=
+
+Name: org/glassfish/jersey/message/filtering/EntityFilteringProcessor.
+ class
+SHA-256-Digest: XQ2ThG3lOvSZ6/HwMPHQhI4PrV8Pi2pVl/fH5VUgdAc=
+
+Name: org/glassfish/jersey/message/filtering/EntityFilteringBinder.cla
+ ss
+SHA-256-Digest: +LMuflDLGdNJkUYGERX5tH7o+/q38phOEIOEhYO1Wrw=
+
+Name: about.html
+SHA-256-Digest: NQA2xBpWzoB535VI9oidqSpArcsduXnqaZjZF7vBHWk=
+
+Name: about_files/CDDL+GPL_LICENSE.html
+SHA-256-Digest: 5W5forONtYP59FVmudbGAr356eGvZKOsmA7sV0oEylc=
+
+Name: org/glassfish/jersey/message/filtering/EntityFilteringBinder$2.c
+ lass
+SHA-256-Digest: fw0/ETvIzSBXOx4kcw199hcv9sBN1LweVUKr5If9l5A=
+
+Name: org/glassfish/jersey/message/filtering/DefaultEntityProcessor.cl
+ ass
+SHA-256-Digest: tGyQr+EQyKtdMav9aYCG4IQmCNxqUH/V56JVZWj6COc=
+
+Name: org/glassfish/jersey/message/filtering/SecurityAnnotations$Roles
+ AllowedImpl.class
+SHA-256-Digest: nUdL7QYX167H0g0Hc7Zm2d+g8Ee+9SZ98bxmkqRNPLs=
+
+Name: org/glassfish/jersey/message/filtering/spi/AbstractObjectProvide
+ r$EntityContext.class
+SHA-256-Digest: k3MgHMb/wGrnyVtqmxe+dgEhuJ9AhH675+6JcaVvM38=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.glassfish.jersey.ex
+ t.entityfiltering/pom.xml
+SHA-256-Digest: FbaMJCokUgScWV9H5iMXgzc3dFRrckbnVy5CjNlPo7M=
+
+Name: org/glassfish/jersey/message/filtering/spi/AbstractObjectProvide
+ r.class
+SHA-256-Digest: kzXdsF3IPT5IruITk6pHHBMkJtA7XSEgeh/9ZtrRovI=
+
+Name: org/glassfish/jersey/message/filtering/EmptyEntityGraphImpl.clas
+ s
+SHA-256-Digest: P+54ULOY5a0ZYtEqF7cXYn25NbwiDItdq36vXMwYr4s=
+
+Name: org/glassfish/jersey/message/filtering/SecurityEntityFilteringFe
+ ature.class
+SHA-256-Digest: XbaxbjoAe2A/V1G9muREUbe9e3YgSJhKKnTaz9JKxL0=
+
+Name: org/glassfish/jersey/message/filtering/SecurityScopeResolver.cla
+ ss
+SHA-256-Digest: jKXPsoAepcHzXthCRe2DDIWM91sfI1d3cqVg7D7o2bM=
+
+Name: org/glassfish/jersey/message/filtering/spi/ObjectGraphTransforme
+ r.class
+SHA-256-Digest: 1YXM7gAaXllyR5x9nMKcctHWi9YTs6j+b/iyrSUFliE=
+
+Name: org/glassfish/jersey/message/filtering/EntityGraphProviderImpl.c
+ lass
+SHA-256-Digest: /f/im9SoTkr7Q4RyvUcpvgIumVtoE5loApRToMUCKOk=
+
+Name: org/glassfish/jersey/message/filtering/EntityFilteringScopeResol
+ ver.class
+SHA-256-Digest: Vx1gWPSI33CPOLpRiUKi/qIzzUGG20QeY65z6SVuyrQ=
+

@@ -1,0 +1,2391 @@
+Manifest-Version: 1.0
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: com.fasterxml.jackson.core.jackson-databind
+Archiver-Version: Plexus Archiver
+Built-By: genie.orbit
+Implementation-Vendor-Id: com.fasterxml.jackson.core
+Specification-Title: jackson-databind
+Bundle-DocURL: http://github.com/FasterXML/jackson
+Import-Package: com.fasterxml.jackson.core;version="2.9.2",com.fasterx
+ ml.jackson.core.base;version="2.9.2",com.fasterxml.jackson.core.filte
+ r;version="2.9.2",com.fasterxml.jackson.core.format;version="2.9.2",c
+ om.fasterxml.jackson.core.io;version="2.9.2",com.fasterxml.jackson.co
+ re.json;version="2.9.2",com.fasterxml.jackson.core.type;version="2.9.
+ 2",com.fasterxml.jackson.core.util;version="2.9.2",com.fasterxml.jack
+ son.annotation;version="2.9.2",com.fasterxml.jackson.databind;resolut
+ ion:=optional;version="[2.9,3)",com.fasterxml.jackson.databind.annota
+ tion;resolution:=optional;version="[2.9,3)",com.fasterxml.jackson.dat
+ abind.cfg;resolution:=optional;version="[2.9,3)",com.fasterxml.jackso
+ n.databind.deser;resolution:=optional;version="[2.9,3)",com.fasterxml
+ .jackson.databind.deser.impl;resolution:=optional;version="[2.9,3)",c
+ om.fasterxml.jackson.databind.deser.std;resolution:=optional;version=
+ "[2.9,3)",com.fasterxml.jackson.databind.exc;resolution:=optional;ver
+ sion="[2.9,3)",com.fasterxml.jackson.databind.ext;resolution:=optiona
+ l;version="[2.9,3)",com.fasterxml.jackson.databind.introspect;resolut
+ ion:=optional;version="[2.9,3)",com.fasterxml.jackson.databind.jsonFo
+ rmatVisitors;resolution:=optional;version="[2.9,3)",com.fasterxml.jac
+ kson.databind.jsonschema;resolution:=optional;version="[2.9,3)",com.f
+ asterxml.jackson.databind.jsontype;resolution:=optional;version="[2.9
+ ,3)",com.fasterxml.jackson.databind.jsontype.impl;resolution:=optiona
+ l;version="[2.9,3)",com.fasterxml.jackson.databind.node;resolution:=o
+ ptional;version="[2.9,3)",com.fasterxml.jackson.databind.ser;resoluti
+ on:=optional;version="[2.9,3)",com.fasterxml.jackson.databind.ser.imp
+ l;resolution:=optional;version="[2.9,3)",com.fasterxml.jackson.databi
+ nd.ser.std;resolution:=optional;version="[2.9,3)",com.fasterxml.jacks
+ on.databind.type;resolution:=optional;version="[2.9,3)",com.fasterxml
+ .jackson.databind.util;resolution:=optional;version="[2.9,3)",javax.x
+ ml.datatype;resolution:=optional,javax.xml.namespace;resolution:=opti
+ onal,javax.xml.parsers;resolution:=optional,org.w3c.dom;resolution:=o
+ ptional,org.w3c.dom.bootstrap;resolution:=optional,org.w3c.dom.ls;res
+ olution:=optional,org.xml.sax;resolution:=optional
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Implementation-Build-Date: 2017-10-14 03:28:49+0000
+Export-Package: com.fasterxml.jackson.databind.deser.impl;x-internal:=
+ true;version="2.9.2";uses:="com.fasterxml.jackson.annotation,com.fast
+ erxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jacks
+ on.databind.cfg,com.fasterxml.jackson.databind.deser,com.fasterxml.ja
+ ckson.databind.deser.std,com.fasterxml.jackson.databind.introspect,co
+ m.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.
+ util",com.fasterxml.jackson.databind.jsontype.impl;x-internal:=true;v
+ ersion="2.9.2";uses:="com.fasterxml.jackson.annotation,com.fasterxml.
+ jackson.core,com.fasterxml.jackson.core.type,com.fasterxml.jackson.da
+ tabind,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.datab
+ ind.introspect,com.fasterxml.jackson.databind.jsontype,com.fasterxml.
+ jackson.databind.type,com.fasterxml.jackson.databind.util",com.faster
+ xml.jackson.databind.ser.impl;x-internal:=true;version="2.9.2";uses:=
+ "com.fasterxml.jackson.annotation,com.fasterxml.jackson.core,com.fast
+ erxml.jackson.core.io,com.fasterxml.jackson.databind,com.fasterxml.ja
+ ckson.databind.annotation,com.fasterxml.jackson.databind.cfg,com.fast
+ erxml.jackson.databind.introspect,com.fasterxml.jackson.databind.json
+ FormatVisitors,com.fasterxml.jackson.databind.jsontype,com.fasterxml.
+ jackson.databind.node,com.fasterxml.jackson.databind.ser,com.fasterxm
+ l.jackson.databind.ser.std,com.fasterxml.jackson.databind.util",com.f
+ asterxml.jackson.databind;version="2.9.2";uses:="com.fasterxml.jackso
+ n.annotation,com.fasterxml.jackson.core,com.fasterxml.jackson.core.fi
+ lter,com.fasterxml.jackson.core.format,com.fasterxml.jackson.core.io,
+ com.fasterxml.jackson.core.type,com.fasterxml.jackson.databind.annota
+ tion,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.databin
+ d.deser,com.fasterxml.jackson.databind.deser.impl,com.fasterxml.jacks
+ on.databind.introspect,com.fasterxml.jackson.databind.jsonFormatVisit
+ ors,com.fasterxml.jackson.databind.jsonschema,com.fasterxml.jackson.d
+ atabind.jsontype,com.fasterxml.jackson.databind.jsontype.impl,com.fas
+ terxml.jackson.databind.node,com.fasterxml.jackson.databind.ser,com.f
+ asterxml.jackson.databind.ser.impl,com.fasterxml.jackson.databind.typ
+ e,com.fasterxml.jackson.databind.util",com.fasterxml.jackson.databind
+ .annotation;version="2.9.2";uses:="com.fasterxml.jackson.annotation,c
+ om.fasterxml.jackson.databind,com.fasterxml.jackson.databind.deser,co
+ m.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.databind.
+ ser,com.fasterxml.jackson.databind.util",com.fasterxml.jackson.databi
+ nd.cfg;version="2.9.2";uses:="com.fasterxml.jackson.annotation,com.fa
+ sterxml.jackson.core,com.fasterxml.jackson.core.type,com.fasterxml.ja
+ ckson.databind,com.fasterxml.jackson.databind.deser,com.fasterxml.jac
+ kson.databind.introspect,com.fasterxml.jackson.databind.jsontype,com.
+ fasterxml.jackson.databind.ser,com.fasterxml.jackson.databind.type,co
+ m.fasterxml.jackson.databind.util",com.fasterxml.jackson.databind.des
+ er;version="2.9.2";uses:="com.fasterxml.jackson.annotation,com.faster
+ xml.jackson.core,com.fasterxml.jackson.core.format,com.fasterxml.jack
+ son.databind,com.fasterxml.jackson.databind.annotation,com.fasterxml.
+ jackson.databind.cfg,com.fasterxml.jackson.databind.deser.impl,com.fa
+ sterxml.jackson.databind.deser.std,com.fasterxml.jackson.databind.int
+ rospect,com.fasterxml.jackson.databind.jsonFormatVisitors,com.fasterx
+ ml.jackson.databind.jsontype,com.fasterxml.jackson.databind.type,com.
+ fasterxml.jackson.databind.util",com.fasterxml.jackson.databind.deser
+ .std;version="2.9.2";uses:="com.fasterxml.jackson.annotation,com.fast
+ erxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.jacks
+ on.databind.annotation,com.fasterxml.jackson.databind.deser,com.faste
+ rxml.jackson.databind.deser.impl,com.fasterxml.jackson.databind.intro
+ spect,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.d
+ atabind.util",com.fasterxml.jackson.databind.exc;version="2.9.2";uses
+ :="com.fasterxml.jackson.core,com.fasterxml.jackson.databind,com.fast
+ erxml.jackson.databind.introspect",com.fasterxml.jackson.databind.ext
+ ;version="2.9.2";uses:="com.fasterxml.jackson.core,com.fasterxml.jack
+ son.databind,com.fasterxml.jackson.databind.deser,com.fasterxml.jacks
+ on.databind.deser.std,com.fasterxml.jackson.databind.introspect,com.f
+ asterxml.jackson.databind.jsonFormatVisitors,com.fasterxml.jackson.da
+ tabind.jsontype,com.fasterxml.jackson.databind.ser,com.fasterxml.jack
+ son.databind.ser.std,javax.xml.datatype,javax.xml.parsers,org.w3c.dom
+ ,org.w3c.dom.ls",com.fasterxml.jackson.databind.introspect;version="2
+ .9.2";uses:="com.fasterxml.jackson.annotation,com.fasterxml.jackson.c
+ ore,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.ann
+ otation,com.fasterxml.jackson.databind.cfg,com.fasterxml.jackson.data
+ bind.jsontype,com.fasterxml.jackson.databind.jsontype.impl,com.faster
+ xml.jackson.databind.ser,com.fasterxml.jackson.databind.type,com.fast
+ erxml.jackson.databind.util",com.fasterxml.jackson.databind.jsonForma
+ tVisitors;version="2.9.2";uses:="com.fasterxml.jackson.annotation,com
+ .fasterxml.jackson.core,com.fasterxml.jackson.databind",com.fasterxml
+ .jackson.databind.jsonschema;version="2.9.2";uses:="com.fasterxml.jac
+ kson.annotation,com.fasterxml.jackson.databind,com.fasterxml.jackson.
+ databind.node",com.fasterxml.jackson.databind.jsontype;version="2.9.2
+ ";uses:="com.fasterxml.jackson.annotation,com.fasterxml.jackson.core,
+ com.fasterxml.jackson.core.type,com.fasterxml.jackson.databind,com.fa
+ sterxml.jackson.databind.cfg,com.fasterxml.jackson.databind.introspec
+ t",com.fasterxml.jackson.databind.module;version="2.9.2";uses:="com.f
+ asterxml.jackson.core,com.fasterxml.jackson.databind,com.fasterxml.ja
+ ckson.databind.deser,com.fasterxml.jackson.databind.jsontype,com.fast
+ erxml.jackson.databind.ser,com.fasterxml.jackson.databind.type",com.f
+ asterxml.jackson.databind.node;version="2.9.2";uses:="com.fasterxml.j
+ ackson.core,com.fasterxml.jackson.core.base,com.fasterxml.jackson.dat
+ abind,com.fasterxml.jackson.databind.jsontype,com.fasterxml.jackson.d
+ atabind.util",com.fasterxml.jackson.databind.ser;version="2.9.2";uses
+ :="com.fasterxml.jackson.annotation,com.fasterxml.jackson.core,com.fa
+ sterxml.jackson.core.io,com.fasterxml.jackson.databind,com.fasterxml.
+ jackson.databind.annotation,com.fasterxml.jackson.databind.cfg,com.fa
+ sterxml.jackson.databind.introspect,com.fasterxml.jackson.databind.js
+ onFormatVisitors,com.fasterxml.jackson.databind.jsonschema,com.faster
+ xml.jackson.databind.jsontype,com.fasterxml.jackson.databind.node,com
+ .fasterxml.jackson.databind.ser.impl,com.fasterxml.jackson.databind.s
+ er.std,com.fasterxml.jackson.databind.type,com.fasterxml.jackson.data
+ bind.util",com.fasterxml.jackson.databind.ser.std;version="2.9.2";use
+ s:="com.fasterxml.jackson.annotation,com.fasterxml.jackson.core,com.f
+ asterxml.jackson.core.type,com.fasterxml.jackson.databind,com.fasterx
+ ml.jackson.databind.annotation,com.fasterxml.jackson.databind.introsp
+ ect,com.fasterxml.jackson.databind.jsonFormatVisitors,com.fasterxml.j
+ ackson.databind.jsonschema,com.fasterxml.jackson.databind.jsontype,co
+ m.fasterxml.jackson.databind.node,com.fasterxml.jackson.databind.ser,
+ com.fasterxml.jackson.databind.ser.impl,com.fasterxml.jackson.databin
+ d.type,com.fasterxml.jackson.databind.util",com.fasterxml.jackson.dat
+ abind.type;version="2.9.2";uses:="com.fasterxml.jackson.core,com.fast
+ erxml.jackson.core.type,com.fasterxml.jackson.databind,com.fasterxml.
+ jackson.databind.jsontype,com.fasterxml.jackson.databind.util",com.fa
+ sterxml.jackson.databind.util;version="2.9.2";uses:="com.fasterxml.ja
+ ckson.annotation,com.fasterxml.jackson.core,com.fasterxml.jackson.cor
+ e.base,com.fasterxml.jackson.core.json,com.fasterxml.jackson.core.uti
+ l,com.fasterxml.jackson.databind,com.fasterxml.jackson.databind.cfg,c
+ om.fasterxml.jackson.databind.introspect,com.fasterxml.jackson.databi
+ nd.jsontype,com.fasterxml.jackson.databind.type"
+Bundle-Name: %bundleName
+Bundle-Description: General data-binding functionality for Jackson: wo
+ rks on core streaming API
+Implementation-Title: jackson-databind
+Automatic-Module-Name: com.fasterxml.jackson.core.jackson-databind
+Implementation-Version: 2.9.2
+Bundle-ManifestVersion: 2
+Specification-Vendor: FasterXML
+Bundle-Vendor: %bundleVendor
+Implementation-Vendor: FasterXML
+Originally-Created-By: Apache Maven Bundle Plugin
+Bundle-Version: 2.9.2.v20180207-1730
+X-Compile-Target-JDK: 1.7
+X-Compile-Source-JDK: 1.7
+Created-By: Eclipse Bundle Recipe Maven Plug-in
+Build-Jdk: 1.8.0_162
+Specification-Version: 2.9.2
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotationCollector$No
+ Annotations.class
+SHA-256-Digest: NTKkdYnvlWMH2Z/zM7dzYk2XsRQRbht8buK4qnSyoSc=
+
+Name: com/fasterxml/jackson/databind/deser/impl/BeanAsArrayBuilderDese
+ rializer.class
+SHA-256-Digest: KC4qDEb6DUSAlmO9q5zPd/PETlDk5PqByb6xz6ZZsVk=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotatedMethodMap.cla
+ ss
+SHA-256-Digest: ZthsYS8f/FR6NzvbVpSEeSuzZmxqUlvZErYsBu7clxc=
+
+Name: com/fasterxml/jackson/databind/BeanDescription.class
+SHA-256-Digest: aP9+fwXYddy7zw3ilivjI3y9OG/kddvk7pWRO5w3dKI=
+
+Name: com/fasterxml/jackson/databind/SerializerProvider.class
+SHA-256-Digest: lKQfGztQf0X8/zODp3chGCRI8q1WV0GtXSvQhq8kBNU=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotationCollector$On
+ eAnnotation.class
+SHA-256-Digest: QNBxzApherhGMzPlWSknhlCOR+WNMdpQbqyWsuWRK+U=
+
+Name: com/fasterxml/jackson/databind/ser/std/StaticListSerializerBase.
+ class
+SHA-256-Digest: msohPIIwLY5zHKaPYPJycimb/u4iDwY0l1yuwNBpTnM=
+
+Name: com/fasterxml/jackson/databind/ser/std/NumberSerializers$ShortSe
+ rializer.class
+SHA-256-Digest: aHbjXe3sx0DYkOq7jT5diUlz8WQtNnALN4WYlzSxVp0=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotationCollector$Tw
+ oAnnotations.class
+SHA-256-Digest: X27C6UXZpAmKjMdxEw5oADVVbwDfB/nGQMlSGHOPO2s=
+
+Name: com/fasterxml/jackson/databind/ser/BeanSerializerFactory.class
+SHA-256-Digest: JLTvmPdPSe2t8adT2CikokcCpkX2PqNumIRsS7uwDEI=
+
+Name: com/fasterxml/jackson/databind/exc/InvalidNullException.class
+SHA-256-Digest: YO+xDIwFDdiG76JUzQXaNuMZEXJhI2x/lsBT3dJBcYs=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonMapFormatV
+ isitor.class
+SHA-256-Digest: tGGoZdpeh+nSjJ1pOd63A3a15TCD/KfwNWpWS4tywFE=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonFormatType
+ s.class
+SHA-256-Digest: GQheNQ1GuML85zHENzaiWljh3T8micI/Z5EMZu13lc4=
+
+Name: com/fasterxml/jackson/databind/deser/impl/MethodProperty.class
+SHA-256-Digest: Ra9X40iQ0CqhCxoaaNe9EKqlgkZ53H+2oiFFpbeZDzw=
+
+Name: com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeseriali
+ zers$IntDeser.class
+SHA-256-Digest: miSM0CbgnXUWE2+cWUZuvgIOAIcvnPBNU2K0QvYAsS0=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotatedMethodCollect
+ or.class
+SHA-256-Digest: WJx8BkikrKFq75nWWjnZSme7hoAUEZBz1+c/1aqY1Dw=
+
+Name: com/fasterxml/jackson/databind/introspect/VisibilityChecker.clas
+ s
+SHA-256-Digest: oDAxWPlZVpBP86O7+i8b7T6+oTjY/iRNx6J1fbun1wQ=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotatedField$Seriali
+ zation.class
+SHA-256-Digest: sA6LIQibO6rfeMrVZKMx7qeDhpJD5zINf5h11obZW/s=
+
+Name: com/fasterxml/jackson/databind/jsontype/impl/TypeDeserializerBas
+ e.class
+SHA-256-Digest: 4eUM1Ba4N6WbczPYNSeEega6YJEbhA164quNw09J85o=
+
+Name: com/fasterxml/jackson/databind/deser/impl/PropertyBasedCreator$C
+ aseInsensitiveMap.class
+SHA-256-Digest: Q8l+2TAyTNixdtacwyfLrLpQMpOQ0w46wRFONgLlxuA=
+
+Name: com/fasterxml/jackson/databind/ser/impl/SimpleBeanPropertyFilter
+ $1.class
+SHA-256-Digest: U9nbmFGiuqc1gmjqAdfomg7Q08JJdPm5QlaSzKm+Qrw=
+
+Name: com/fasterxml/jackson/databind/util/ArrayBuilders$DoubleBuilder.
+ class
+SHA-256-Digest: g7XOm4vZ6zgK/OiLU8Ko5K3RbSLIIdIIgXo77SkR1hw=
+
+Name: com/fasterxml/jackson/databind/ext/DOMDeserializer$DocumentDeser
+ ializer.class
+SHA-256-Digest: Y2/yaEQ33nVdvnFdhiQivKBdTXQQXJ9vGdB0GFR3x4c=
+
+Name: com/fasterxml/jackson/databind/node/MissingNode.class
+SHA-256-Digest: hLO1/BtttgxWvHuHoAt11BDX7vmqplcEXw38iObVhlA=
+
+Name: com/fasterxml/jackson/databind/util/RootNameLookup.class
+SHA-256-Digest: +y/j61D30uIQtRwcMY8pING0BeqaPUcZ4IJKSSJoKHM=
+
+Name: com/fasterxml/jackson/databind/deser/std/StdKeyDeserializer$Stri
+ ngCtorKeyDeserializer.class
+SHA-256-Digest: TvLsVOAm9Sp2EdomLnDDpfRDpMXeFdaO8xNAOj489dU=
+
+Name: com/fasterxml/jackson/databind/util/EnumResolver.class
+SHA-256-Digest: fRUY8390hDzNvwDlUl9VNztHuAp3Dxx8C05OucbVqfE=
+
+Name: com/fasterxml/jackson/databind/deser/std/BaseNodeDeserializer.cl
+ ass
+SHA-256-Digest: E2BrxV3RWjapUASLwiaOpzGBNs/3wtdXaKRwLeFQ7kU=
+
+Name: com/fasterxml/jackson/databind/introspect/BeanPropertyDefinition
+ .class
+SHA-256-Digest: 1nHIgX/OjnBrzPJ+wJ6PbIQREfKcBO4Ee0IL2eGJsWo=
+
+Name: com/fasterxml/jackson/databind/annotation/JsonSerialize$Typing.c
+ lass
+SHA-256-Digest: I7czG7SRVkqqPw+U12i6OyMbE5TDE8bI4qkj8aad6tw=
+
+Name: com/fasterxml/jackson/databind/node/TextNode.class
+SHA-256-Digest: MJghHTSSzk+sh61KpR2GuDwG/9O9lgX9yU3aBLeW+no=
+
+Name: com/fasterxml/jackson/databind/ser/std/StdKeySerializers$StringK
+ eySerializer.class
+SHA-256-Digest: 350q2BGWeWPFJRojlDazbmoT+TLU5joIydsZt8Y0u08=
+
+Name: com/fasterxml/jackson/databind/ext/CoreXMLSerializers$XMLGregori
+ anCalendarSerializer.class
+SHA-256-Digest: 6KJ0ld4tslGgqxKDsWEFVI5yzTzQZ1JWvMqA+r6uiQo=
+
+Name: com/fasterxml/jackson/databind/BeanProperty$Bogus.class
+SHA-256-Digest: mBUaCNoW1gssJ/cnqEN2I83LhkE+fiqzmyeoaIZCaZA=
+
+Name: com/fasterxml/jackson/databind/deser/impl/ObjectIdReader.class
+SHA-256-Digest: j8erqRJR/D907WiDbkbMzZd9qsAcEh1AcJ+p/yZy3wY=
+
+Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder$2.
+ class
+SHA-256-Digest: UALi5GwOGWvquOnmsTzFd9nvnZZmSEcznmxdfab0EFY=
+
+Name: com/fasterxml/jackson/databind/ser/impl/FilteredBeanPropertyWrit
+ er$SingleView.class
+SHA-256-Digest: pdautNrcoPwsTAjPcNOBbUTAgSRul9WdsziEsRx681s=
+
+Name: com/fasterxml/jackson/databind/ser/impl/PropertySerializerMap$Ty
+ peAndSerializer.class
+SHA-256-Digest: ksesPoKUnt++W19OpAKEMGjgC7460Jon2vYVLJihiK0=
+
+Name: com/fasterxml/jackson/databind/deser/std/DelegatingDeserializer.
+ class
+SHA-256-Digest: p29kpVZoJX+IiTmw9NC//x+ytaQLqOiKceNFm3EN//0=
+
+Name: com/fasterxml/jackson/databind/annotation/JsonSerialize.class
+SHA-256-Digest: +IsG1nygBqQOkD+5eGgcLGCax1Ry8/xjuMBIvBtfcAk=
+
+Name: com/fasterxml/jackson/databind/ser/BeanPropertyWriter.class
+SHA-256-Digest: TKpXdraYuEXryEuXPcW5LsVPXpf/glm9vf7osCr3CcM=
+
+Name: com/fasterxml/jackson/databind/ser/impl/FilteredBeanPropertyWrit
+ er$MultiView.class
+SHA-256-Digest: 81ftpC93nRrR5GT3FKDjd0tZ/28LkltZO3KppUiteL0=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotatedMethod$Serial
+ ization.class
+SHA-256-Digest: onYyxzteRfxKeEa5x0oCJN9qvAp/1D6e4QYnpoil9GM=
+
+Name: com/fasterxml/jackson/databind/ser/impl/PropertyBasedObjectIdGen
+ erator.class
+SHA-256-Digest: urUvrhOVadmE8cbw+aBVWKCtAjlrwyW3UcUGLrZEpvk=
+
+Name: com/fasterxml/jackson/databind/cfg/ConfigOverrides.class
+SHA-256-Digest: rT+9i69aI0xhVcxUsakihfgJOh0d8nFHP2BC8TR8rw8=
+
+Name: com/fasterxml/jackson/databind/util/SimpleBeanPropertyDefinition
+ .class
+SHA-256-Digest: gI0RCKHY4t4LmobtxJBiv6YW/hWrG7bTr378wA/Zhfc=
+
+Name: com/fasterxml/jackson/databind/deser/impl/ExternalTypeHandler.cl
+ ass
+SHA-256-Digest: iJ5flxPDPaPLKGAM5UCLT1PNDTv37RtcKI8z9oy9qI0=
+
+Name: com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeseriali
+ zers$DoubleDeser.class
+SHA-256-Digest: o4ZxgG91ezLaWOh/w59ISbK0MY65iEzY7SU9PUw0OC0=
+
+Name: com/fasterxml/jackson/databind/jsontype/TypeSerializer$1.class
+SHA-256-Digest: G22nS5HQiU5k82H16DbMmZ7D4Ex+zkdZ43aBC7tVYIY=
+
+Name: com/fasterxml/jackson/databind/node/FloatNode.class
+SHA-256-Digest: 5ech+ZCDBclNt3myorYCK7eZiaMGv8zncJyud9l9oBo=
+
+Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder$10
+ .class
+SHA-256-Digest: 0K+5UIp5ZTlH88W3zhVZrXfJna0/qwsxx2PgdmJLq0g=
+
+Name: com/fasterxml/jackson/databind/PropertyNamingStrategy$LowerCaseS
+ trategy.class
+SHA-256-Digest: 2pAKZ8ESD3ZWmYw18yB/vKGrKdPsZMVb+jIHB6kDS1Y=
+
+Name: com/fasterxml/jackson/databind/MapperFeature.class
+SHA-256-Digest: rUmJpgRwmb0DWGGWDWkwVdicoRppJrX9BOFXaNT/ZSg=
+
+Name: com/fasterxml/jackson/databind/ser/std/InetAddressSerializer.cla
+ ss
+SHA-256-Digest: REohJRiEmqUAh9hRXonxPKHHQyNFdcbRhz0Z/FKe8Q8=
+
+Name: com/fasterxml/jackson/databind/introspect/MemberKey.class
+SHA-256-Digest: 8mmn9b5964CFn9tFD+UdQn8iVKZBFI/dIKfEcS3QMg0=
+
+Name: com/fasterxml/jackson/databind/type/MapLikeType.class
+SHA-256-Digest: u9w+h1JjALUeIqBsrOTRSAIZg275SzGR5WTiVV58riM=
+
+Name: com/fasterxml/jackson/databind/exc/InvalidDefinitionException.cl
+ ass
+SHA-256-Digest: i/ph+p01mrA0hPZpCmzFzwWlC/O1X71AvUi2R4a4jmo=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotationCollector$Em
+ ptyCollector.class
+SHA-256-Digest: nD92eziqOxElwJux3xIQnIxlHnTGdF3pcWKV0dz050o=
+
+Name: com/fasterxml/jackson/databind/deser/DataFormatReaders$Match.cla
+ ss
+SHA-256-Digest: vuyswNxBnHiVJmHIepJvu2NuIo+MdX5RIMnvNIfuYJY=
+
+Name: com/fasterxml/jackson/databind/jsontype/NamedType.class
+SHA-256-Digest: mDJ1o7S6jHi20BdzWAbk5uda/O1B0npKT0fbIv6f4tw=
+
+Name: com/fasterxml/jackson/databind/deser/std/NumberDeserializers$Boo
+ leanDeserializer.class
+SHA-256-Digest: 02/y4zGivSenR+DhwWpUIgz2RH2fgMDzcSahK4XzMgU=
+
+Name: com/fasterxml/jackson/databind/ser/impl/UnwrappingBeanPropertyWr
+ iter$1.class
+SHA-256-Digest: YFK5eABuAcypzm/Yco7k3f1lPWq46cKJRbjZPxN5hPs=
+
+Name: com/fasterxml/jackson/databind/deser/SettableAnyProperty.class
+SHA-256-Digest: sH9AXykn6HNt18Pp6+a9g1P1V13qRfWGRNHflr7PuMs=
+
+Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder$7.
+ class
+SHA-256-Digest: fy52eV1g0Y85MF+pLHznKjcPUAVgF7uFO1DBCIhhrAk=
+
+Name: com/fasterxml/jackson/databind/module/SimpleValueInstantiators.c
+ lass
+SHA-256-Digest: 8iyDercSkfjqVpvpU17AKcKlV+cnxBg3QD8qd7Ht/JY=
+
+Name: com/fasterxml/jackson/databind/deser/ValueInstantiator$Base.clas
+ s
+SHA-256-Digest: ZEN4H933jT0ZUUDxG+UuFe+sdbgEczRpIYoZxOaGbCE=
+
+Name: com/fasterxml/jackson/databind/introspect/CollectorBase.class
+SHA-256-Digest: vN6jCk1uvE8XKkiceaGZwla77HyCXu/e+KAEbZ5ttOw=
+
+Name: com/fasterxml/jackson/databind/ser/std/NumberSerializers$IntLike
+ Serializer.class
+SHA-256-Digest: JYrKcdfjOGNDVFzDmuCFZaIgogAY5xnbmxBClRSe/EQ=
+
+Name: com/fasterxml/jackson/databind/ser/std/StdJdkSerializers$AtomicB
+ ooleanSerializer.class
+SHA-256-Digest: 4HznIseELY0UmzDIXTMjooKSTrVP0lpYwFkf2whlAYQ=
+
+Name: com/fasterxml/jackson/databind/deser/impl/FailingDeserializer.cl
+ ass
+SHA-256-Digest: Y6uN+gO79z9W+cxPbXx1FOch8C9cJql0Y1XZVY1XAD8=
+
+Name: com/fasterxml/jackson/databind/deser/std/NumberDeserializers$Big
+ IntegerDeserializer.class
+SHA-256-Digest: 6vJAUK80XTj7WPvgJfHptRuStaorXFpk3w2eW4O1oGY=
+
+Name: com/fasterxml/jackson/databind/deser/std/DateDeserializers$DateD
+ eserializer.class
+SHA-256-Digest: 49s0s6D5UdMTMFI2IXDSMYV+QU5mdqxWSaP0ZmPJgq8=
+
+Name: com/fasterxml/jackson/databind/ser/std/DateTimeSerializerBase.cl
+ ass
+SHA-256-Digest: feepDOMH1CxAOXEMWELOWmfJ20zQCUR1lIENIbq2NcU=
+
+Name: com/fasterxml/jackson/databind/deser/impl/NullsFailProvider.clas
+ s
+SHA-256-Digest: 1QKAVIDcYt8p8SdjRNFFhSrYr0Dio/NWepy2K6l9Kuw=
+
+Name: com/fasterxml/jackson/databind/deser/std/EnumDeserializer.class
+SHA-256-Digest: u2XOeCkJ8/1Dj5R4WRR/WGipm+bIfSYM/cRPbh+ckSc=
+
+Name: com/fasterxml/jackson/databind/DeserializationContext.class
+SHA-256-Digest: 8t51lQhjHmMDRDEGFrmjmV5iJ56ooN4L3zJZQmR6h0M=
+
+Name: com/fasterxml/jackson/databind/ser/BasicSerializerFactory$1.clas
+ s
+SHA-256-Digest: ZEoC1iWJ87w1eFFq2Md9FeESC7Jrog2dGJqVWk5NSuk=
+
+Name: com/fasterxml/jackson/databind/ser/DefaultSerializerProvider.cla
+ ss
+SHA-256-Digest: gCmh6arwLwqvNxsPfabT7NGsT3zRGRR0seqstPg95yE=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotatedMethodCollect
+ or$MethodBuilder.class
+SHA-256-Digest: jTfGvbjpytLhgaqoqJQIsmRe+fbjOg509UEQ4ixYXLo=
+
+Name: com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntro
+ spector$1.class
+SHA-256-Digest: TPdJZAaer0itsJzjacBRN0Jhrf/io5I1b1RfMCw+T5Y=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotatedFieldCollecto
+ r.class
+SHA-256-Digest: E3dSomGTaanrylzAigkpt28WdlzHTa3LIc4xY/YbuEM=
+
+Name: com/fasterxml/jackson/databind/introspect/SimpleMixInResolver.cl
+ ass
+SHA-256-Digest: hICnF93/ZRDjLtihK/qBULus9vMACYFoDU42FsQCE+Y=
+
+Name: com/fasterxml/jackson/databind/ser/ResolvableSerializer.class
+SHA-256-Digest: Q0jn44Gi3nIMf7VPabQZWnq1jnWO9fmxehhaEafcjYs=
+
+Name: com/fasterxml/jackson/databind/deser/KeyDeserializers.class
+SHA-256-Digest: aM92//dxUBP2OZwF28KBHbqzv7WOwoNkds7FNXJfqsk=
+
+Name: com/fasterxml/jackson/databind/ser/std/StdArraySerializers.class
+SHA-256-Digest: Hc1k2Cm4xJXAKFbweG/V/raKKPuHtldmb+FAoPMS6Qo=
+
+Name: com/fasterxml/jackson/databind/deser/std/UntypedObjectDeserializ
+ er.class
+SHA-256-Digest: rHm2E4GUW3URo3BVArE2Eb4pX3cHT+XQvsVNkrcxzw8=
+
+Name: com/fasterxml/jackson/databind/ser/std/NumberSerializers$LongSer
+ ializer.class
+SHA-256-Digest: 192ifZD6i/SO7C6+6nS2DNgMRT7TrVybvvAno5a8ov4=
+
+Name: com/fasterxml/jackson/databind/deser/impl/PropertyValue$Regular.
+ class
+SHA-256-Digest: p4mJJRpsfVRkenw0GlAz4U0ylowogeg3yzkAHudzryk=
+
+Name: com/fasterxml/jackson/databind/util/ByteBufferBackedOutputStream
+ .class
+SHA-256-Digest: WXaVzzQgHeMeUs3MUYgp1HiQDn8eM93tbEWkSL6Yvrc=
+
+Name: com/fasterxml/jackson/databind/deser/ValueInstantiator.class
+SHA-256-Digest: TRr7SOEZvbaBHOrPhmbyA53vXomLDe1XINsRFtKyM/E=
+
+Name: META-INF/LICENSE
+SHA-256-Digest: 0nBqNWWNg8J9fV81f1umOHf9hpSj9q7ki4cDakERjIo=
+
+Name: com/fasterxml/jackson/databind/ser/BeanSerializer.class
+SHA-256-Digest: hbVnpIDFv632fupsg4ex8j0X+Jrs+XzgM9ylomcHGrk=
+
+Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder$9.
+ class
+SHA-256-Digest: 8Za51FXRWJ3uQjcX+md/x7MpCTpl+NF5rUoJuCyq4Ao=
+
+Name: com/fasterxml/jackson/databind/ser/std/StdArraySerializers$Doubl
+ eArraySerializer.class
+SHA-256-Digest: xxjngUu7xiu8iQYVL0QhAWKuyJw6O5KoQvorA+aUVv0=
+
+Name: com/fasterxml/jackson/databind/KeyDeserializer.class
+SHA-256-Digest: FC0ReYJTT522hTH0aNniObdhYwnAk2A07+K+e4W21fo=
+
+Name: com/fasterxml/jackson/databind/ser/std/StringSerializer.class
+SHA-256-Digest: LWHAg39K9fPcxtGh2LCsbqeYZVZhgqQyUVC4CJmJsac=
+
+Name: com/fasterxml/jackson/databind/deser/std/FactoryBasedEnumDeseria
+ lizer.class
+SHA-256-Digest: 6Y/DOxqReJPO24yCiaZ5cc8tpeSUs+aKQRvd5Y/yTDQ=
+
+Name: com/fasterxml/jackson/databind/ser/std/EnumSerializer.class
+SHA-256-Digest: /GsYuGMo7Xky8NKrn1qsw3VYD4q9dvf+Vm404E6PxjU=
+
+Name: com/fasterxml/jackson/databind/deser/SettableAnyProperty$AnySett
+ erReferring.class
+SHA-256-Digest: UjqX0+pKVXkvTCz1UVIlzXoKO7lVT2k8VdzVZcGJOd4=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonNullFormat
+ Visitor$Base.class
+SHA-256-Digest: 3RtEsKpK04yBNoU4Yg8x/a6Fv2XlPpV3yk8W/dCk/1U=
+
+Name: com/fasterxml/jackson/databind/util/RawValue.class
+SHA-256-Digest: 847pi8PydQ1bnNwxCfZbBHhg6PH4uQxIunUjtG/7Bu4=
+
+Name: com/fasterxml/jackson/databind/module/SimpleSerializers.class
+SHA-256-Digest: dHUJhExVTd4vuu8jg5EwWVNCLp4Cd9BMdtOudJ9PIxg=
+
+Name: com/fasterxml/jackson/databind/deser/std/StackTraceElementDeseri
+ alizer.class
+SHA-256-Digest: /7buZn0rTYuke8OHxWuhtv42hbAK1blevCRx0/N3whM=
+
+Name: com/fasterxml/jackson/databind/ser/std/NumberSerializers$1.class
+SHA-256-Digest: uEeWRvcEgu7uMPu2c95XZAYPoFaF2J9dOt7Lmf7tpHg=
+
+Name: com/fasterxml/jackson/databind/ser/std/SerializableSerializer.cl
+ ass
+SHA-256-Digest: 45eZvcV6LzqqcDANd1jRcF9drpOfLxXX37zTTezH6IM=
+
+Name: com/fasterxml/jackson/databind/ser/std/StdArraySerializers$LongA
+ rraySerializer.class
+SHA-256-Digest: AoravogmMpN++Ifsee843j6IQdXutsAAQuwRstrJaMw=
+
+Name: com/fasterxml/jackson/databind/type/ClassStack.class
+SHA-256-Digest: 3gDkJ5BqaoAINGZDFqxVvpXG5H29LFypFYqYkqkI30g=
+
+Name: com/fasterxml/jackson/databind/deser/std/DateDeserializers$DateB
+ asedDeserializer.class
+SHA-256-Digest: l9hCX1ANwHi4eKM4EZauduZ1lwPxL6k5iZ0kJo/lmSE=
+
+Name: com/fasterxml/jackson/databind/PropertyNamingStrategy.class
+SHA-256-Digest: P4DTwdum2/tOtY/KFQKdQE/udvVVL3dbWVSX6FXQyOw=
+
+Name: com/fasterxml/jackson/databind/deser/std/NullifyingDeserializer.
+ class
+SHA-256-Digest: vvVjXf1bbBlLPt884O1aUxcGg7sFr5Q19ENVW9JuOm8=
+
+Name: com/fasterxml/jackson/databind/deser/DeserializerFactory.class
+SHA-256-Digest: AmCQhNXX+SfOc01xuEZ776OtLgt5dr8b8PmCqLDapAc=
+
+Name: com/fasterxml/jackson/databind/ser/SerializerFactory.class
+SHA-256-Digest: vgwX2sgNNBw2rzWkxsAVdUabHRdsg/VhMn6jCNXUgQw=
+
+Name: com/fasterxml/jackson/databind/ser/impl/MapEntrySerializer.class
+SHA-256-Digest: dH0tX0Ih64cLX2/odWdY48ZwD/wgS3Tv1JNfU7Cj20U=
+
+Name: com/fasterxml/jackson/databind/SerializationFeature.class
+SHA-256-Digest: bvR/hilY5JTa/XvZDWL9K25mZAMucDOfifuo5m7aqYg=
+
+Name: com/fasterxml/jackson/databind/cfg/ConfigOverride$Empty.class
+SHA-256-Digest: 6GFMYb8ZjaxjM6aptxxm1+GcmM8ePixSyDUXw5B6dQg=
+
+Name: com/fasterxml/jackson/databind/AnnotationIntrospector$ReferenceP
+ roperty$Type.class
+SHA-256-Digest: RAoAbCXCQ/5/57OjFmq93XDMUxWwebv6YRDXZkzpVGo=
+
+Name: com/fasterxml/jackson/databind/type/CollectionLikeType.class
+SHA-256-Digest: esBchtdQGh2XHK3bmCK5IvTeJhetrIJgZHRGvTfbM4c=
+
+Name: com/fasterxml/jackson/databind/introspect/ClassIntrospector.clas
+ s
+SHA-256-Digest: YF9OWWkSa6KFw4+gtUC6EpgS18bzOeOlVlnKd49XYuc=
+
+Name: com/fasterxml/jackson/databind/node/IntNode.class
+SHA-256-Digest: L6PwY46b3+CTc/FM5qVN5lyMl+QAdJ3FB97/zpFLJXo=
+
+Name: com/fasterxml/jackson/databind/deser/std/StdKeyDeserializers.cla
+ ss
+SHA-256-Digest: ovnKb2ZDx/WuBT1M6DMV3xT4ytRBhNGyepBSLTA5P5o=
+
+Name: com/fasterxml/jackson/databind/ser/std/StdArraySerializers$IntAr
+ raySerializer.class
+SHA-256-Digest: f2/5gDxKZnXTNHqgw8KnZX0KhWbSemmncuMOh1C7r8o=
+
+Name: com/fasterxml/jackson/databind/jsontype/impl/StdSubtypeResolver.
+ class
+SHA-256-Digest: fqZ8qv0EWiKrvkmJGeHCei5cGxebF0X08TYlAwVtefw=
+
+Name: com/fasterxml/jackson/databind/Module$SetupContext.class
+SHA-256-Digest: W5weq+CYK/MsPtcO3el9OsFPCPjWL1GLkF7tSAb5Jug=
+
+Name: com/fasterxml/jackson/databind/ext/Java7SupportImpl.class
+SHA-256-Digest: jeeXEdl+UxSS1iX7Z6DD2TOG1lqNVfgKfQWxeKLSzp4=
+
+Name: com/fasterxml/jackson/databind/deser/impl/CreatorCollector$StdTy
+ peConstructor.class
+SHA-256-Digest: LztPB2zknN9Q4Dv9WN7boAzp1HAH9c1uV9SMVFwf/ME=
+
+Name: com/fasterxml/jackson/databind/deser/std/MapEntryDeserializer.cl
+ ass
+SHA-256-Digest: QkwIft4ihhSlBQm5lRAww/HKsvCJ46LPc/p9K+heFQo=
+
+Name: com/fasterxml/jackson/databind/deser/std/NumberDeserializers$1.c
+ lass
+SHA-256-Digest: jM7pdipEKblVIZtJFH1tSnXaeIzG00FOKqXvAc/vtYk=
+
+Name: com/fasterxml/jackson/databind/exc/InvalidFormatException.class
+SHA-256-Digest: gpINE6AIzVw2F/9d1DHSaouCU3qNBHKHzinGD+wVUcY=
+
+Name: com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeseriali
+ zers$BooleanDeser.class
+SHA-256-Digest: ho0qdlaSX3hP0iwFxjf7DQjCEZtG66hbqm92Abir2OQ=
+
+Name: com/fasterxml/jackson/databind/util/PrimitiveArrayBuilder$Node.c
+ lass
+SHA-256-Digest: mBbt7i4BEN1a4tJPlCLsS9ZVV+qI2nWl2RrRhwgBs3Q=
+
+Name: com/fasterxml/jackson/databind/ser/PropertyWriter.class
+SHA-256-Digest: hbYPB1zqP6SVKCduA2l/MhNf9xUYsrP4A31QNiIejR4=
+
+Name: com/fasterxml/jackson/databind/type/ClassKey.class
+SHA-256-Digest: irXiLKXFmyWr5zsdzBe8LKt+OTIHh/s+w79zDNaiIBk=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.fasterxml.jackson.c
+ ore.jackson-databind/pom.properties
+SHA-256-Digest: TmdUlRLcKvhbCTJOQb2RTIHIlb7pGLWEaR+JPPai6xM=
+
+Name: com/fasterxml/jackson/databind/ser/std/EnumSetSerializer.class
+SHA-256-Digest: rNFZrCENUFBuIj1U/wGCbOQyqv2HRq4MGqDbWEIDD3w=
+
+Name: com/fasterxml/jackson/databind/ext/Java7Support.class
+SHA-256-Digest: 1gzuUkM19RJNaSqoyCLXe5q78F2MA51IBt7zM4NwuV4=
+
+Name: com/fasterxml/jackson/databind/deser/std/StdKeyDeserializer$Enum
+ KD.class
+SHA-256-Digest: pHC/UUFNPISFEI9DXehzOFgLXO99tHBx6iZ6JHYWfnI=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotatedCreatorCollec
+ tor.class
+SHA-256-Digest: dcGOdNOmlvAdlco5cAA+kwInvMfdGEl+w7Z3M/+OhMs=
+
+Name: com/fasterxml/jackson/databind/introspect/ClassIntrospector$MixI
+ nResolver.class
+SHA-256-Digest: 9uYwcUW4bshpTE9T3whex752EroPrT2xWUn51JHYe+0=
+
+Name: com/fasterxml/jackson/databind/ser/impl/StringCollectionSerializ
+ er.class
+SHA-256-Digest: 4ehg1TQKkUnWKHveRBFaZovUAO/0o/KB3LhbNm5J0gQ=
+
+Name: com/fasterxml/jackson/databind/deser/impl/ExternalTypeHandler$Bu
+ ilder.class
+SHA-256-Digest: YFDVNj8m//QfnOMfGRUwxO1xqiz/DBZXZZ2ZmlKQJUw=
+
+Name: com/fasterxml/jackson/databind/ser/impl/UnknownSerializer.class
+SHA-256-Digest: vaI/Oy1Hpx/2rj7TpWOADCgTbqqc4jWFcCo+64385MQ=
+
+Name: com/fasterxml/jackson/databind/ser/std/StdKeySerializers$EnumKey
+ Serializer.class
+SHA-256-Digest: O8e5mQj4suzToCwWtlb5WUojCHgbCcdKxD0IdNWmfBE=
+
+Name: com/fasterxml/jackson/databind/introspect/NopAnnotationIntrospec
+ tor.class
+SHA-256-Digest: DshQHOJWNRcCaabiBEZsTYrB//ML8UObrN7NtUC2w8A=
+
+Name: com/fasterxml/jackson/databind/deser/impl/NullsConstantProvider.
+ class
+SHA-256-Digest: 21C2a0Igy5hay9owcbCoRLQ0zevdY25bAY9uumnlOQg=
+
+Name: com/fasterxml/jackson/databind/node/NodeCursor$ObjectCursor.clas
+ s
+SHA-256-Digest: hqlHY+Gwr4FSIkAjpfidpQ5ubVPUIQ/hlfFSYZeCpfQ=
+
+Name: com/fasterxml/jackson/databind/type/TypeBindings.class
+SHA-256-Digest: uPqH4wWWX9ly/Y0HBxObayt7ro0F0aSvOZqS9HIb+oM=
+
+Name: com/fasterxml/jackson/databind/deser/impl/ObjectIdReferencePrope
+ rty$PropertyReferring.class
+SHA-256-Digest: gdmTlQTeLPX+SXOG7KV3CrNnauo0v561H6KfGXgvl64=
+
+Name: com/fasterxml/jackson/databind/jsontype/impl/ClassNameIdResolver
+ .class
+SHA-256-Digest: G6q3flGt9Vy6lnWW0jk9LZknVW32I4Nl7fwv+5afxJA=
+
+Name: com/fasterxml/jackson/databind/introspect/TypeResolutionContext$
+ Basic.class
+SHA-256-Digest: t9b29qubE5Liua1GdD0FlyyCvZI1EByHnjQNONlM8aQ=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotatedField.class
+SHA-256-Digest: EoHg9hcDuX9dBtD9vTyRPbvjOhP1q2TAJ7QH4QbcVek=
+
+Name: com/fasterxml/jackson/databind/util/EnumValues.class
+SHA-256-Digest: MVRO7QYjTf0beTQo54c0VE7M2rvN1ofKPHp9ah+lrTE=
+
+Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder$5.
+ class
+SHA-256-Digest: CnJLSkP/kT7mNEgthhdzvWnTNdWJTY1UDClEbCX2qgg=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotatedParameter.cla
+ ss
+SHA-256-Digest: iAPwquGRITzFFQtLzNSCLWYQJJ5Su3Oo75JvabnEuhg=
+
+Name: com/fasterxml/jackson/databind/ext/NioPathDeserializer.class
+SHA-256-Digest: 0SRjKRSTfZJSqy8ByeKcuzSvfTJhz6xkyLFQWvWUsYM=
+
+Name: com/fasterxml/jackson/databind/JsonDeserializer$None.class
+SHA-256-Digest: GZFh1Y06cFsphIJ+YXaEhghhn0FaDbTQw3rb/4JIGYk=
+
+Name: com/fasterxml/jackson/databind/jsontype/impl/AsArrayTypeSerializ
+ er.class
+SHA-256-Digest: zHZkhpfRrV2syVGM48BXp7HlYUOhiRG47DaJSkGs25I=
+
+Name: com/fasterxml/jackson/databind/type/SimpleType.class
+SHA-256-Digest: wq5w2LKOemEksCrnFCt92gzRihf9la6gBsQ8S1Gu4bM=
+
+Name: com/fasterxml/jackson/databind/ObjectMapper$3.class
+SHA-256-Digest: ghH1Pm8Y8k2YezTpE+GeJk2ldduQ+Qkz2d9ouEJ2+h8=
+
+Name: com/fasterxml/jackson/databind/ser/std/MapSerializer.class
+SHA-256-Digest: wlHD0nX4JcXXmASIxzBuGHeuUUlnLNsuJvu9mJw6+5s=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonFormatVisi
+ table.class
+SHA-256-Digest: veLchJTYXoCGr+bnSuDz/LnXafda7ewhO0IQ0I0ieqo=
+
+Name: com/fasterxml/jackson/databind/node/ValueNode.class
+SHA-256-Digest: F/B3utbqg0hQ7GRTEGtBrJZYz5N7wYMgyx9/mqWMqIE=
+
+Name: com/fasterxml/jackson/databind/ser/std/StdKeySerializers.class
+SHA-256-Digest: KO0PzngDmq6QUAWC5//vmqkYT6R/boJuWyrOVqrO5Lw=
+
+Name: com/fasterxml/jackson/databind/deser/impl/PropertyValue$Any.clas
+ s
+SHA-256-Digest: SgnMbHKeSIJJgXLOQAECdua2cEr0+WUL8XjWSBjkBF4=
+
+Name: com/fasterxml/jackson/databind/deser/impl/UnwrappedPropertyHandl
+ er.class
+SHA-256-Digest: Mjv1fV2CHtqgGjRHNhQdZ19BeY/pA28uJMWU2uA+D/E=
+
+Name: com/fasterxml/jackson/databind/type/ReferenceType.class
+SHA-256-Digest: iOyMR8LA7fzE6lX9nBdfjM6HDKMK576cDjZmMDKLasg=
+
+Name: com/fasterxml/jackson/databind/JsonMappingException$Reference.cl
+ ass
+SHA-256-Digest: mPmRbSIXCytkf0BWcjoY3+TMQmRzBa501DYv/6D26vk=
+
+Name: com/fasterxml/jackson/databind/deser/std/JsonNodeDeserializer$Ob
+ jectDeserializer.class
+SHA-256-Digest: FmKMc7ra6v4EXZslHxaqtNDKYBbWDDAg8cVuhWLm3lI=
+
+Name: com/fasterxml/jackson/databind/deser/std/ReferenceTypeDeserializ
+ er.class
+SHA-256-Digest: jLMcln3SC1t5Y5qTfvxc9SGY0tozNgUS9TYmA9+D8FU=
+
+Name: com/fasterxml/jackson/databind/deser/BeanDeserializer$BeanReferr
+ ing.class
+SHA-256-Digest: Uy6v6e0lycgCZxcoJ4W1vHyhlSA9AKeXz8x6In9O+yg=
+
+Name: com/fasterxml/jackson/databind/cfg/DeserializerFactoryConfig.cla
+ ss
+SHA-256-Digest: u3FpE8rDWo+r7Zod5OHUNE0JbddItDx33cUh5JzFCnk=
+
+Name: com/fasterxml/jackson/databind/deser/std/ObjectArrayDeserializer
+ .class
+SHA-256-Digest: MwyJNwsZpkhLDJ7io78phUa7ocm4TOhhh6ev56q1a6w=
+
+Name: com/fasterxml/jackson/databind/util/ArrayBuilders$FloatBuilder.c
+ lass
+SHA-256-Digest: tKExthpcWVZCO2gyHUjkz2OAfTj3MiAM301+tUyecMM=
+
+Name: com/fasterxml/jackson/databind/deser/impl/ObjectIdReferencePrope
+ rty.class
+SHA-256-Digest: 4rPJl8m8AFMpcJGwkdC4I86bmled2k1vo06Ub7L74qM=
+
+Name: com/fasterxml/jackson/databind/deser/impl/CreatorCollector.class
+SHA-256-Digest: fa8uBsx/NSQI/fq+u9SC2m3fuKIWUVTeni0Hb1o8RK0=
+
+Name: com/fasterxml/jackson/databind/deser/std/ByteBufferDeserializer.
+ class
+SHA-256-Digest: VYl0T+Uzxjci+11yQi6I36nNjEmn/lR/Oai+TY+6kdk=
+
+Name: com/fasterxml/jackson/databind/deser/std/NumberDeserializers$Lon
+ gDeserializer.class
+SHA-256-Digest: GHWSWHAjPW5F2671oo5YFJ89Ux7CYSvtGeoXCH++OkA=
+
+Name: com/fasterxml/jackson/databind/util/ObjectBuffer.class
+SHA-256-Digest: 26ju6QE16EtAxUt4c2SJIUCtk48ba9f2OPjSjslkzI0=
+
+Name: com/fasterxml/jackson/databind/util/Named.class
+SHA-256-Digest: 8lAE2xU/lyOSHukqeGYjyrFgYMIKunm8IDe4vMW7rWk=
+
+Name: com/fasterxml/jackson/databind/KeyDeserializer$None.class
+SHA-256-Digest: lRotckqG5EVb52IZOAqsSevAAxilPHK4VJxYMudISXk=
+
+Name: com/fasterxml/jackson/databind/annotation/JsonAppend.class
+SHA-256-Digest: 9qellTYHB+oRw90hNKdhAp1HBCJM8gMvopSkDYUb+ak=
+
+Name: com/fasterxml/jackson/databind/ser/std/StdSerializer.class
+SHA-256-Digest: LImDXbM3Rxs3K/WW8gTLaofKrgNRJFJkCrvH73nj2MI=
+
+Name: com/fasterxml/jackson/databind/deser/ContextualDeserializer.clas
+ s
+SHA-256-Digest: XAKO2d4ixpiFOsxbFKGdH/M9cNglY58AyMdWqHZz0Q4=
+
+Name: com/fasterxml/jackson/databind/deser/Deserializers.class
+SHA-256-Digest: udiqLeJjLZMEN5Qz242eqxd5H/1cpVwFhiIwIWRiBAA=
+
+Name: com/fasterxml/jackson/databind/MappingJsonFactory.class
+SHA-256-Digest: noE1Gcw9EvHZHrFP3qG3mixCTiIGXqRuowWpVsPvx0Q=
+
+Name: com/fasterxml/jackson/databind/deser/std/StdKeyDeserializer$Dele
+ gatingKD.class
+SHA-256-Digest: zT4cE9mwLhcGe6hk+INFQV6ua4FbrS0A9O9xCLG0N6A=
+
+Name: com/fasterxml/jackson/databind/ser/impl/WritableObjectId.class
+SHA-256-Digest: 7oXzKyXAcQPhVet1R7JS2DISB1AuQbKYDn2UK05qeCk=
+
+Name: com/fasterxml/jackson/databind/ser/std/RawSerializer.class
+SHA-256-Digest: hvI18uEXuS0VhW60gRYkO0ONspmBbtKtNHg+/7dlk6s=
+
+Name: com/fasterxml/jackson/databind/ser/std/NumberSerializers$FloatSe
+ rializer.class
+SHA-256-Digest: LS/EXGDfRxWc0sj0aq/Jw8Y+yuBbiR+2ndKZLhgudBU=
+
+Name: com/fasterxml/jackson/databind/jsontype/TypeDeserializer.class
+SHA-256-Digest: X00ho+27R9RkDE/+nQhQwBTS7S3JL2NLaarPg+k/5wY=
+
+Name: com/fasterxml/jackson/databind/cfg/ConfigOverride.class
+SHA-256-Digest: DB/IG4OmMZffCuhFsEtsT1ch5mKCo6z5I4jmyXLWmQQ=
+
+Name: com/fasterxml/jackson/databind/util/ClassUtil.class
+SHA-256-Digest: yO/9BEAG9vg5mi6HvIUEGsiusiXQn248Vw/ywsHaWPQ=
+
+Name: com/fasterxml/jackson/databind/deser/BeanDeserializerFactory.cla
+ ss
+SHA-256-Digest: 9sHYxE3UtuikO5ejj9QNkGApARmmBiPR3fkDMHkktDI=
+
+Name: com/fasterxml/jackson/databind/ObjectMapper$2.class
+SHA-256-Digest: lI1U1m7YltsFmPiSysXbhocAEIqfanJKSCjAfyD2y44=
+
+Name: com/fasterxml/jackson/databind/deser/std/NumberDeserializers$Big
+ DecimalDeserializer.class
+SHA-256-Digest: AbeIdzzA2iu/aVrLASPQVSLn8v1tZSR/1OU7VZ3irHQ=
+
+Name: com/fasterxml/jackson/databind/node/BinaryNode.class
+SHA-256-Digest: W3OO/48rCxon7YsnhRThcowLifFqfjJucriiDu8RG9w=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonValueForma
+ tVisitor$Base.class
+SHA-256-Digest: 2R9xlwMzyp1z595sa0hED57THC7k2F5RTTaZHksi2hE=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotatedClass.class
+SHA-256-Digest: u5BTc5cGWfaeKzsXNuy6QnJAA1kSFKPw4FfkDHDFE+k=
+
+Name: com/fasterxml/jackson/databind/cfg/ConfigFeature.class
+SHA-256-Digest: oezwPWDGQdCgTwx181+zzjj+N0wFuu6+uRHak5cNfjU=
+
+Name: com/fasterxml/jackson/databind/module/SimpleModule.class
+SHA-256-Digest: CjzK56m/mEnYhDxoIPPj7XzpTFv0s8CSkHO+ihsGgfA=
+
+Name: com/fasterxml/jackson/databind/util/ClassUtil$EnumTypeLocator.cl
+ ass
+SHA-256-Digest: YrAZsogBVktlBIQOdLaXkc4I1/kylTCjAuvELP3fG4E=
+
+Name: com/fasterxml/jackson/databind/type/TypeParser.class
+SHA-256-Digest: FrPK/54tYPNsOW/hFim+O+STCpGpauNjXH6fdIlN63c=
+
+Name: com/fasterxml/jackson/databind/deser/impl/InnerClassProperty.cla
+ ss
+SHA-256-Digest: 2CYiWBktnyxHjUDS9Y1z3U5ZFs3pRlb8qqfqOvS02Ag=
+
+Name: com/fasterxml/jackson/databind/deser/BeanDeserializerBuilder.cla
+ ss
+SHA-256-Digest: cI+6UhvlRy+iMAwH8nSnREceptoTOclQ+H6GQgkUDzE=
+
+Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder$6.
+ class
+SHA-256-Digest: U/5l8Y7BLLNUFElXPKje4M+q/0mL9xSxm6ZG0Cmlpps=
+
+Name: com/fasterxml/jackson/databind/PropertyNamingStrategy$KebabCaseS
+ trategy.class
+SHA-256-Digest: JaGsuWOUpCahH8SfpQGR+udocBVsJrXnGXcRHZCdKm4=
+
+Name: com/fasterxml/jackson/databind/ser/impl/ReadOnlyClassToSerialize
+ rMap$Bucket.class
+SHA-256-Digest: w5QkwXJXTJ1gTVDBOIoEFjFkTsjGk6PtBMduaNQQr3k=
+
+Name: com/fasterxml/jackson/databind/ser/impl/IndexedStringListSeriali
+ zer.class
+SHA-256-Digest: 80jiDGnihox42L/s41WUiIcNoJibjb6cwC9RwFrtPVY=
+
+Name: com/fasterxml/jackson/databind/ser/std/NumberSerializers$DoubleS
+ erializer.class
+SHA-256-Digest: kTN6cxHCiHBGTW8Q+n0n8fGd5uNLXWfZSfgg0iE2ocw=
+
+Name: com/fasterxml/jackson/databind/util/ViewMatcher$Single.class
+SHA-256-Digest: pL1jO/JPf3q54W97OX2z7H/hNgs6V2Nb6hqONd6Fg1I=
+
+Name: com/fasterxml/jackson/databind/introspect/VirtualAnnotatedMember
+ .class
+SHA-256-Digest: dwNXsDY2XAB8Yo6tYmnGYdfdkIXkMHIXmjbDXVNptp8=
+
+Name: com/fasterxml/jackson/databind/cfg/SerializerFactoryConfig.class
+SHA-256-Digest: hnhm2gv7A9/3PtT2qCGTGcNStKWWlG5aiBM5PS+nuxA=
+
+Name: com/fasterxml/jackson/databind/exc/UnrecognizedPropertyException
+ .class
+SHA-256-Digest: sRoBilP/vw1y6PY1IKUXNgWfqngD5kBbAkUMGtLLYWQ=
+
+Name: com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeseriali
+ zers.class
+SHA-256-Digest: Ce+N4QliL7pdYfmKlw+hdi7yGt7y1RtTpP5glianAhw=
+
+Name: com/fasterxml/jackson/databind/ser/VirtualBeanPropertyWriter.cla
+ ss
+SHA-256-Digest: ByY3CSZb3aqf4DRc02bU2KtDfxx7JW3XTC2f1c2RqBQ=
+
+Name: com/fasterxml/jackson/databind/ObjectWriter$GeneratorSettings.cl
+ ass
+SHA-256-Digest: /btEPiBHeqYD7FXBR8Zy9tJm6sUOAwA4oY57EtAOV4Y=
+
+Name: com/fasterxml/jackson/databind/deser/std/StdKeyDeserializer.clas
+ s
+SHA-256-Digest: h5CFyVr1w2WMdQo2dL42tg4sHZBzzpUf+GCURnuXTpE=
+
+Name: com/fasterxml/jackson/databind/ser/std/UUIDSerializer.class
+SHA-256-Digest: s6vcPx3ZPH7MIh+moabu7nM/3VR+X+BwNf0wIdKPIKg=
+
+Name: com/fasterxml/jackson/databind/ser/impl/StringArraySerializer.cl
+ ass
+SHA-256-Digest: DSSysrYuymmod2Z14Kk29xAfRnXG5Vfe9N7f2rW4vQ8=
+
+Name: com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeseriali
+ zers$FloatDeser.class
+SHA-256-Digest: gah/nft0aiEi35qnKSxgDhY6We24fww3mpdGh6YvRY4=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotatedWithParams.cl
+ ass
+SHA-256-Digest: ZDC6XI9Ph2ydvw6C2U8aK2J1k+rjMnSGuULzfw6nWTc=
+
+Name: com/fasterxml/jackson/databind/ser/std/StdJdkSerializers.class
+SHA-256-Digest: StMwfsjp7YCD3nJL1hrDp49B/fn852AAxQnb2gfSp6Q=
+
+Name: com/fasterxml/jackson/databind/PropertyNamingStrategy$PropertyNa
+ mingStrategyBase.class
+SHA-256-Digest: Fv47YURMnspFaYLKjRuQFxLT4zyR7TvoPwMipkzxhF4=
+
+Name: com/fasterxml/jackson/databind/deser/std/AtomicReferenceDeserial
+ izer.class
+SHA-256-Digest: 81PgIS4Uq6UKiFkRzSe/3vL4zMxWVyiM/biSuJcn7l4=
+
+Name: com/fasterxml/jackson/databind/ser/std/AsArraySerializerBase.cla
+ ss
+SHA-256-Digest: v4o9BxR4cZpVByFhL4h89XMRW7ZOII5oUvZ+CVUlw/M=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonObjectForm
+ atVisitor.class
+SHA-256-Digest: rvpmHoHH0LJFkfbcrMWJkkp+bpmwQN9XYIMXDQGHN6o=
+
+Name: com/fasterxml/jackson/databind/annotation/JsonValueInstantiator.
+ class
+SHA-256-Digest: mTzXU2r1JD4VUHyI4PLMZJ0iVwYeya/e65y7i284uV0=
+
+Name: com/fasterxml/jackson/databind/ser/PropertyFilter.class
+SHA-256-Digest: ma3HqItqlj9CNDm7vaNnl5vpv8YssLbw5AOhvDf8fKw=
+
+Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder$1.
+ class
+SHA-256-Digest: St/lnLqsOTKmmpKK3Up+Z3yjJ/j6kAy9BR8Wj/S862o=
+
+Name: com/fasterxml/jackson/databind/cfg/MapperConfigBase.class
+SHA-256-Digest: qD77uHibTici86TYHpOh0HVjq0DfytCSo90DbwJ+9PE=
+
+Name: com/fasterxml/jackson/databind/deser/impl/BeanAsArrayDeserialize
+ r.class
+SHA-256-Digest: /3YY3bhvWxlZW2O2I0oeH6s1BpIqUdfG0XIY7pg6/8U=
+
+Name: com/fasterxml/jackson/databind/node/NodeCursor$RootCursor.class
+SHA-256-Digest: Lir7tS6+0ESME2QnUvfxb4AGt7jydzFPtb39AETS7WI=
+
+Name: com/fasterxml/jackson/databind/ser/std/TokenBufferSerializer.cla
+ ss
+SHA-256-Digest: SjGCDccUj7YlegjrLQfZJYIF6hLnNzinOTogoG+CTnU=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotatedMethod.class
+SHA-256-Digest: aSGEZbJnRZ2gZ5QLfvwVOUhOl5J8iSFQbhtNdtTcBKQ=
+
+Name: com/fasterxml/jackson/databind/ser/impl/UnwrappingBeanPropertyWr
+ iter.class
+SHA-256-Digest: crR9MbkdlkQ8KENL2HJbdoKlmGL7j38MyX6ZXzcG0LI=
+
+Name: com/fasterxml/jackson/databind/deser/SettableBeanProperty.class
+SHA-256-Digest: B9YebWz0xkeTHbVdks3o3jWEpTRZmXx4wrV9iimvem0=
+
+Name: com/fasterxml/jackson/databind/deser/std/TokenBufferDeserializer
+ .class
+SHA-256-Digest: Vz9YC+5MyOGJXK1MnWqbwJ4W7fDKvpV8dRHUEMyqhcI=
+
+Name: com/fasterxml/jackson/databind/deser/std/DateDeserializers.class
+SHA-256-Digest: 8Fqx6W5jA2HjeNEhhof9hIIsIyeS0HZ8qrV5ia+n5EQ=
+
+Name: com/fasterxml/jackson/databind/ser/std/NumberSerializers$Integer
+ Serializer.class
+SHA-256-Digest: PvyPdAf+dD/2huNzRFGgkgwIkH3SbV4wZ54U/MQEx9M=
+
+Name: com/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuil
+ der.class
+SHA-256-Digest: dzqmOg9NrK6PNWW6KbiWFdKNOvvv5jxSnj2CEG5ZzXY=
+
+Name: com/fasterxml/jackson/databind/DatabindContext.class
+SHA-256-Digest: JYx4P7VltSnY9hHQ8HawaOwZU6JTzCz1zThffXqPxmo=
+
+Name: com/fasterxml/jackson/databind/ser/std/BeanSerializerBase$1.clas
+ s
+SHA-256-Digest: L2x40fqbOUdORujerDP94O0hQ3s9QaB3gtVCXcj9gXQ=
+
+Name: com/fasterxml/jackson/databind/deser/UnresolvedId.class
+SHA-256-Digest: 0teTEdl2RjBMjf7KYvT784D1syLK8gXPrHt8hinwyBE=
+
+Name: com/fasterxml/jackson/databind/ObjectMapper$1.class
+SHA-256-Digest: 6f5Am9/SF6xDmh2EH1RACPxf38t6PJVH8shy+cZJeYo=
+
+Name: com/fasterxml/jackson/databind/deser/impl/ExternalTypeHandler$Ex
+ tTypedProperty.class
+SHA-256-Digest: Y8XvJ4Sp0jnIf3kjW68CskcEkDVEvaOsWMcie9qr4zI=
+
+Name: com/fasterxml/jackson/databind/deser/AbstractDeserializer.class
+SHA-256-Digest: cdKWbQu/yYf2IqKoSyUNKQj1xJaxGMryF6Sk3ugDt2M=
+
+Name: com/fasterxml/jackson/databind/ser/std/NullSerializer.class
+SHA-256-Digest: qVH5gN64DfDanpD3/lTfEYSeR+8cfUd/ackhS2V6QEs=
+
+Name: com/fasterxml/jackson/databind/deser/std/FromStringDeserializer$
+ Std.class
+SHA-256-Digest: NHLchViJGb2Csi5KDkHIlYKnyZq5EFG2ulcoDtFv0dM=
+
+Name: com/fasterxml/jackson/databind/node/ObjectNode.class
+SHA-256-Digest: 2S0T59NhkkB96DwhYkn6qWxryxVwi0zEG60D/d5NgOc=
+
+Name: com/fasterxml/jackson/databind/ser/ContainerSerializer.class
+SHA-256-Digest: hZjYj1DESL/VND2xBE5ocoxmsBPQWbBAImFGnA/b1XM=
+
+Name: com/fasterxml/jackson/databind/jsontype/TypeSerializer.class
+SHA-256-Digest: fsO1RvjY+y0TIVkeGjrMQdBuQGqNXHZtKBJvAu9TERs=
+
+Name: com/fasterxml/jackson/databind/type/ArrayType.class
+SHA-256-Digest: uK/P0LbWeGeppQE7zTd1eo4Iblbw+ovV+nnoUtjEKgE=
+
+Name: com/fasterxml/jackson/databind/node/TreeTraversingParser.class
+SHA-256-Digest: MLAv4m7MaFKuc/bKdEjAHJDS8UyWwZboY9RB8KXDA6Y=
+
+Name: com/fasterxml/jackson/databind/annotation/JsonTypeResolver.class
+SHA-256-Digest: 3RytCj4KZ7+EgV75MuzYw6eleWxLDh7lIY2OzxVo2q8=
+
+Name: com/fasterxml/jackson/databind/annotation/JsonDeserialize.class
+SHA-256-Digest: Fq8taH/+BzVex6IHsHgPwGrks314uaX+Aev56Zs47fQ=
+
+Name: com/fasterxml/jackson/databind/jsontype/impl/AsExistingPropertyT
+ ypeSerializer.class
+SHA-256-Digest: yLlX8VdqlUquOs4wboILZ4MTNus8b/dQcu6Wfu3Hp4Q=
+
+Name: com/fasterxml/jackson/databind/DeserializationConfig.class
+SHA-256-Digest: KP+L99WNjqJa/f6NJhQXLmRyMNiuWSwEWRJ//kTbXYE=
+
+Name: com/fasterxml/jackson/databind/jsonschema/JsonSerializableSchema
+ .class
+SHA-256-Digest: MENIijjdV/V5m7Eh582afO5TWagL9fI/DyjqOLsKnUE=
+
+Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder$3.
+ class
+SHA-256-Digest: 9l2wIZBOuoVcHXq0y2lfvC1JvorpbG3aEs8dyx2Fn3k=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonValueForma
+ t.class
+SHA-256-Digest: S4aZNg1RwtbhwCTN7aLb0tWmQ/lEZlLynPR3Skw+Yrc=
+
+Name: com/fasterxml/jackson/databind/AbstractTypeResolver.class
+SHA-256-Digest: NISe1yf3LvpxpqzHupSKgRPh7J5RZSDEhs7FLqUPRq0=
+
+Name: com/fasterxml/jackson/databind/cfg/ContextAttributes$Impl.class
+SHA-256-Digest: Dh9qIuECMYfeuHAS05ZMvWr0euGn3CmAy274vR2UMgw=
+
+Name: com/fasterxml/jackson/databind/deser/std/FromStringDeserializer.
+ class
+SHA-256-Digest: qyQbEEyd7B9dtcmefi8V6EGcVhj7V0H8u/Bc+v3nwAo=
+
+Name: com/fasterxml/jackson/databind/ser/impl/SimpleBeanPropertyFilter
+ .class
+SHA-256-Digest: 7Gu7BNQ/4Q97soN41BcpSicogxtXw0rX124XhyX6A9Q=
+
+Name: META-INF/services/com.fasterxml.jackson.core.ObjectCodec
+SHA-256-Digest: pklDsKPn5XNOlP5tcRc6krjA+D72UDBbRKxDiwe4jME=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonAnyFormatV
+ isitor.class
+SHA-256-Digest: ZROUqkftjJoA4hcFI7iOJ4DwQl347Ap3PtbiP8aUyR8=
+
+Name: com/fasterxml/jackson/databind/node/BigIntegerNode.class
+SHA-256-Digest: reQcPpYY9KY/N/7hcSnQmw/sWs8C6FuYOpRQ7KrlRAc=
+
+Name: com/fasterxml/jackson/databind/util/ISO8601Utils.class
+SHA-256-Digest: DSSdc9eKESdWIbwI/HNYb3xeBmSX9Envp+Jmt+gGuj0=
+
+Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer$
+ CollectionReferring.class
+SHA-256-Digest: S6o1HxKOG54LNdblg/Xd9RSy3kKd4d4w8i2x50ocVP8=
+
+Name: com/fasterxml/jackson/databind/deser/impl/BeanPropertyMap.class
+SHA-256-Digest: qhr/RuUcNEHoLuVqYjoTzIM8NskMpyWUS8679ffoHvE=
+
+Name: com/fasterxml/jackson/databind/jsonschema/JsonSchema.class
+SHA-256-Digest: CVTO4LC21IA0UvTbnZBBWFbB33oitqRWyhaLtq4n1Mg=
+
+Name: com/fasterxml/jackson/databind/ser/std/JsonValueSerializer$TypeS
+ erializerRerouter.class
+SHA-256-Digest: s+aJz1lVQAEs1rF12fQNlM/Y3xSJz9RQ5PHpkZN5l0M=
+
+Name: com/fasterxml/jackson/databind/type/ResolvedRecursiveType.class
+SHA-256-Digest: +ZsttJsZwUoMf+C/rZXAIbM4mol9gu9KP1n8LV0Z1Nw=
+
+Name: com/fasterxml/jackson/databind/deser/std/NumberDeserializers$Pri
+ mitiveOrWrapperDeserializer.class
+SHA-256-Digest: Jc1rt9BT4LcIhpmjk7yIgVukF9pwOsyLDJz2S5IniuA=
+
+Name: com/fasterxml/jackson/databind/deser/std/MapDeserializer.class
+SHA-256-Digest: 5gu7nENy68YtlElv8ExiVyPV37K8kXnHOHDl7KDTLVA=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotatedConstructor$S
+ erialization.class
+SHA-256-Digest: o0D7gpUZ797r7rln2zV0zrxnP3sJHSbDp8aQ4WcdviM=
+
+Name: com/fasterxml/jackson/databind/JsonSerializable.class
+SHA-256-Digest: HVLaClZBJso19wnbyBueThbN5opjxAE6SzgADoRXebA=
+
+Name: com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeseriali
+ zers$LongDeser.class
+SHA-256-Digest: UXpYLLmeVfDsSy2mpfoEREHiSoNGolLyTkxnQrC27dw=
+
+Name: com/fasterxml/jackson/databind/ser/std/StdKeySerializer.class
+SHA-256-Digest: PTDq3KVs75MiRBtMNPLXLV/vArJO8N20aU+pS9982nI=
+
+Name: com/fasterxml/jackson/databind/deser/impl/PropertyBasedObjectIdG
+ enerator.class
+SHA-256-Digest: P5oinQw59fvDkBgWu4jwDnkEC5ZUVmqekA8plqDxUSU=
+
+Name: com/fasterxml/jackson/databind/ser/std/NonTypedScalarSerializerB
+ ase.class
+SHA-256-Digest: GuQg/hiMBJmmkW1EFkh30G7WOo1vTRxQ5bmWtw+MTyA=
+
+Name: com/fasterxml/jackson/databind/deser/impl/NullsAsEmptyProvider.c
+ lass
+SHA-256-Digest: ijDd+/LyVzq8ZUZBRdmSObBi2be7ZjxAHdzTJVlXcT0=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonFormatVisi
+ torWithSerializerProvider.class
+SHA-256-Digest: b0iE3dqdRzwCVI2ul56sIVbe0anVhLw4wS2KVHNizWI=
+
+Name: com/fasterxml/jackson/databind/jsontype/impl/TypeSerializerBase.
+ class
+SHA-256-Digest: sEVKgX3RfHpoASJsTCUDFwEWtu8YveAz6yMybmSZBnU=
+
+Name: META-INF/NOTICE
+SHA-256-Digest: QcM42wraw+pUDFOEW9TOxA1DfoQ7IshK4IN1pNZEJUM=
+
+Name: com/fasterxml/jackson/databind/deser/DataFormatReaders$AccessorF
+ orReader.class
+SHA-256-Digest: THR7j2aTB0Kx5Umc4nXYRgx2aydikFCZewPOO3Dp2Zw=
+
+Name: com/fasterxml/jackson/databind/jsontype/impl/AsArrayTypeDeserial
+ izer.class
+SHA-256-Digest: LjC7yiB2PerU4E/+xySswTr5yBpQ5EMv3g2gFXgcPQg=
+
+Name: com/fasterxml/jackson/databind/deser/std/StdKeyDeserializer$Stri
+ ngFactoryKeyDeserializer.class
+SHA-256-Digest: qmZJcxJA19A4EQRB9uLxeBbwIBs73f3p9RgKejiX7+8=
+
+Name: com/fasterxml/jackson/databind/deser/std/NumberDeserializers$Dou
+ bleDeserializer.class
+SHA-256-Digest: mzP72aFNuS+ajSrM6qzR2R8ynRM5ARwbfLkKr/ppKkw=
+
+Name: com/fasterxml/jackson/databind/ser/std/BooleanSerializer$AsNumbe
+ r.class
+SHA-256-Digest: NIL7ZOoS8GFrKuj0mpiYB01PnqZs9K98IGFkKBhzZIA=
+
+Name: com/fasterxml/jackson/databind/ser/std/NumberSerializers$Base.cl
+ ass
+SHA-256-Digest: 1LJz58tgQHng0kFI66V9swYimcp4seprgxye75cke4Y=
+
+Name: com/fasterxml/jackson/databind/deser/SettableBeanProperty$Delega
+ ting.class
+SHA-256-Digest: /CswnMLouOXPVUOcNEjhpYyJFJNln2rZEVEcFmvRJk8=
+
+Name: com/fasterxml/jackson/databind/ser/BeanPropertyFilter.class
+SHA-256-Digest: 5xC799vg2+4UjyC6W3gG6OYlAKk7LpmshalWjcLsuxw=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotationCollector.cl
+ ass
+SHA-256-Digest: u57znXYfj2Ni2Sz/OGx0w6O5Fdj46DN56tnV1Vb1MgI=
+
+Name: com/fasterxml/jackson/databind/jsontype/SubtypeResolver.class
+SHA-256-Digest: TsXR06ZN8nKaNPo6o0apl4jWmB7VXPMZXqY76loxlDU=
+
+Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder$4.
+ class
+SHA-256-Digest: LxbVo0Fqy0Elg077vnvlpyBX71PL8Nw+juOA+kxjsQc=
+
+Name: com/fasterxml/jackson/databind/ser/std/FileSerializer.class
+SHA-256-Digest: R/ixFDThYlg32wQGLMopOKutmmKaRRSZqkDkn1w+tBw=
+
+Name: com/fasterxml/jackson/databind/ser/impl/IteratorSerializer.class
+SHA-256-Digest: 2Luo4s/W4ZCFmndXr6QUJW7Ly1/q1E4sn4PKm3mRGuk=
+
+Name: com/fasterxml/jackson/databind/deser/std/NumberDeserializers$Sho
+ rtDeserializer.class
+SHA-256-Digest: rYkHPtGIp8flBWftnmIXyPzJrBRwyM/bpue1OwHB2dA=
+
+Name: com/fasterxml/jackson/databind/deser/BasicDeserializerFactory$1.
+ class
+SHA-256-Digest: v2O1vRXjym+hqmwoLGQwbYqadg85YxspoHHjyrEtkOs=
+
+Name: com/fasterxml/jackson/databind/ser/PropertyBuilder.class
+SHA-256-Digest: 07uxF3RhSuDtca41Wc6bVMkNJDAo1dbw3+/5kIibd6w=
+
+Name: com/fasterxml/jackson/databind/ser/std/MapSerializer$1.class
+SHA-256-Digest: sQqnd7OUJUaaRWgZazwkQH+vtgDDoaXT4+FjEN/slu0=
+
+Name: com/fasterxml/jackson/databind/cfg/MutableConfigOverride.class
+SHA-256-Digest: El9gJ10YfHVDKLMfzN1fg3+vUTT0y0U1YXdQll+pBkg=
+
+Name: com/fasterxml/jackson/databind/ser/std/BeanSerializerBase.class
+SHA-256-Digest: K6omus27/uFdPbWU3kRme3JOS7yiMKqy+sHIbY47zOc=
+
+Name: com/fasterxml/jackson/databind/deser/impl/CreatorCandidate.class
+SHA-256-Digest: 4ebVS3hYytiDveEejvDUOkLLePlmjKQhe39zc6LTKQk=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotationIntrospector
+ Pair.class
+SHA-256-Digest: wki4qhr1ugWBnHfEI3P3i418y2ZKNB42mpUi58urgzc=
+
+Name: com/fasterxml/jackson/databind/deser/std/StringDeserializer.clas
+ s
+SHA-256-Digest: L/SKYqyfrVi2nZoIIxFVltY92vUW0yzj7kTg4A+q9Ck=
+
+Name: com/fasterxml/jackson/databind/util/ArrayBuilders$1.class
+SHA-256-Digest: lTPi4WzJujY0p+ahd2hp7vzXyRsR65gp3e7WvEt8S2Q=
+
+Name: com/fasterxml/jackson/databind/module/SimpleAbstractTypeResolver
+ .class
+SHA-256-Digest: NcNb8FmpyUXITFEUWXRp+QGl1B5pZlVY8RcVh1k7xrg=
+
+Name: com/fasterxml/jackson/databind/ser/std/StdArraySerializers$Typed
+ PrimitiveArraySerializer.class
+SHA-256-Digest: /q5mvQMK3w5nYk3MGWsUjxCy3ELJbZoiaYfGrhrjaP8=
+
+Name: com/fasterxml/jackson/databind/PropertyMetadata$MergeInfo.class
+SHA-256-Digest: eSkc1yCqnS6f6K5b6ae3LS5g8vqQHL38XlKgfdhLf8o=
+
+Name: com/fasterxml/jackson/databind/node/NumericNode.class
+SHA-256-Digest: kJU3O/M/AyAcbni893glMrWKYU9TeUpHx93zfssLSno=
+
+Name: com/fasterxml/jackson/databind/deser/std/JsonNodeDeserializer$Ar
+ rayDeserializer.class
+SHA-256-Digest: yuk5QQcs1Drakmfr0f3y+HC5DG8qwMYoyZAEBQ33AYQ=
+
+Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder$8.
+ class
+SHA-256-Digest: iXtSZifrDRnFq6cJsDL3d462mUnbywDJzj+tW9HQPYo=
+
+Name: com/fasterxml/jackson/databind/MappingIterator.class
+SHA-256-Digest: dLoRQoyufHIQ/FbEhrEZpOtoXgMcq6CocCNCJoUCgMs=
+
+Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder$Li
+ nked.class
+SHA-256-Digest: Y6+zs/lB+z/BLaEP1CFR8+XnRzGlMUS0ER4og9Nt2Os=
+
+Name: com/fasterxml/jackson/databind/jsontype/impl/TypeNameIdResolver.
+ class
+SHA-256-Digest: wf1Fixiip0TuasL07xG/6q0A7R8xnphEePSEtiLCbVo=
+
+Name: com/fasterxml/jackson/databind/DeserializationFeature.class
+SHA-256-Digest: ywa/PJ1p4H5/gZbjqAB+kvqpUKbG1ewbIsdqfuDtCGM=
+
+Name: com/fasterxml/jackson/databind/jsontype/TypeResolverBuilder.clas
+ s
+SHA-256-Digest: lhK5R2yvaGWs7z9ZxIDiW0Ml62WsCQ+W1O5XCIRvL74=
+
+Name: com/fasterxml/jackson/databind/deser/NullValueProvider.class
+SHA-256-Digest: gTo0KFUacb7OUtLEBlPohTCNWUWTWcyEZYwwb5KlfEY=
+
+Name: com/fasterxml/jackson/databind/node/TreeTraversingParser$1.class
+SHA-256-Digest: tql9Sp6OIf2m+5z13CRx/P7t9Zl/R+EMvlDghm8Ds9Q=
+
+Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer$
+ CollectionReferringAccumulator.class
+SHA-256-Digest: HuizX6UhhzithseoUq1lRZkfsp3Re/cnd5jmR8jZxCQ=
+
+Name: com/fasterxml/jackson/databind/node/JsonNodeFactory.class
+SHA-256-Digest: 5Se0Mg+9YdQDaCv5xO3XeGNnyaWE7uS82bv7w+uD7xc=
+
+Name: com/fasterxml/jackson/databind/node/ArrayNode.class
+SHA-256-Digest: xMADFsoP4yA5h9ADHybuUwXLjxsJOWRV/sY0sxlG/Tg=
+
+Name: com/fasterxml/jackson/databind/util/ArrayBuilders$IntBuilder.cla
+ ss
+SHA-256-Digest: +rCJubaNUkgYcC717cCF4yctT4++cUNMQCnkXwBtnts=
+
+Name: com/fasterxml/jackson/databind/deser/std/StringArrayDeserializer
+ .class
+SHA-256-Digest: 5B91MnEFxMIdazVf014GngGsw0Jr5Z4fH9U6I01wcbU=
+
+Name: com/fasterxml/jackson/databind/jsontype/impl/AsWrapperTypeDeseri
+ alizer.class
+SHA-256-Digest: zKqkN5zHbUn12aX8REvv+FAWrPUmmZ1jbPIhr55Rggo=
+
+Name: com/fasterxml/jackson/databind/cfg/HandlerInstantiator.class
+SHA-256-Digest: tcPLA3HXIDyJ9o04ri8Lg6dGG4ymooLp/1jsPTD+ABE=
+
+Name: com/fasterxml/jackson/databind/deser/impl/FieldProperty.class
+SHA-256-Digest: T2VgLVDqyg1ZGL11COG1sora2mgFX9fN4vYT/VbOF6g=
+
+Name: com/fasterxml/jackson/databind/ser/std/StdDelegatingSerializer.c
+ lass
+SHA-256-Digest: 5J5KSMEz8h9aCH6vM6r0uz8xsuncBoufn9NQZOq3Jg0=
+
+Name: com/fasterxml/jackson/databind/introspect/ObjectIdInfo.class
+SHA-256-Digest: Q3S+Mf1AMLWtvv5ey42wgOdeaKnGzDq1ktOuyVStf28=
+
+Name: about_files/THE_APACHE_SOFTWARE_LICENSE__VERSION_2.0.txt
+SHA-256-Digest: z8d0m5b2O9McPEK1xHG/dWgUBT6EfBDz6wA0F7xSPTA=
+
+Name: com/fasterxml/jackson/databind/ser/impl/PropertySerializerMap.cl
+ ass
+SHA-256-Digest: rWDG46VVxOraCOit2G10izKehB3n5eyFhcCjzrxF7UM=
+
+Name: com/fasterxml/jackson/databind/util/ArrayBuilders$LongBuilder.cl
+ ass
+SHA-256-Digest: hGJgI6Q5y1jdZ7pYyDFGgmjhoAvdr9ZU4Fze0xx9pSI=
+
+Name: com/fasterxml/jackson/databind/jsontype/TypeIdResolver.class
+SHA-256-Digest: QYpy1KA/Awpot7OZ8Ttn66skSOg8x+0DhuUlOovqwZw=
+
+Name: com/fasterxml/jackson/databind/ser/std/ArraySerializerBase.class
+SHA-256-Digest: DCf2lfP+dYJhG5/0bJvxeNOhffb4lhvUv5et7pje91g=
+
+Name: com/fasterxml/jackson/databind/cfg/PackageVersion.class
+SHA-256-Digest: aXPwhaTDTJnQG/371C8lfh7jf2GFp+kghgWRSiOdIzI=
+
+Name: com/fasterxml/jackson/databind/util/TokenBuffer.class
+SHA-256-Digest: BzHHmTCZMf/eR+7oCEOSe4/DH1HRbXHE5cTO8L3ted0=
+
+Name: com/fasterxml/jackson/databind/ObjectReader.class
+SHA-256-Digest: JQCKZXwBaxo0T+auOSf2rikv74tojJVIijwt+dXzK/U=
+
+Name: com/fasterxml/jackson/databind/node/BaseJsonNode.class
+SHA-256-Digest: teH5Z3S/5+KNGbJsOtoHOaaw5h8IX6qWN12nWnNsovs=
+
+Name: com/fasterxml/jackson/databind/deser/BuilderBasedDeserializer.cl
+ ass
+SHA-256-Digest: 4EKsxhi7rvDYX0ByEXcSN1xGCOpgCKc4/aCqiROx/8M=
+
+Name: com/fasterxml/jackson/databind/ser/AnyGetterWriter.class
+SHA-256-Digest: MGCRBBnxG+uAiSUEYdr6kmIVrPaLuv5REgPZHWe+xkw=
+
+Name: com/fasterxml/jackson/databind/util/TokenBuffer$Parser.class
+SHA-256-Digest: 5V6Hoz5JvYoKAM16ii/W7CrS0/72kn9G7u2WxoqDro4=
+
+Name: com/fasterxml/jackson/databind/util/LinkedNode.class
+SHA-256-Digest: AVwHmywghbgyS/tlNVHAWOy0JORa1zUOLGOdfJZoTek=
+
+Name: com/fasterxml/jackson/databind/annotation/JsonNaming.class
+SHA-256-Digest: X/4Li19vOvIYOaNkkN3/t6/fTz1d961mpmovJRYXBKE=
+
+Name: com/fasterxml/jackson/databind/util/NameTransformer$3.class
+SHA-256-Digest: j4SFdcCcSlt+pW5tXCB07mBD3wE16iwvNxu6HJm4pcc=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonIntegerFor
+ matVisitor.class
+SHA-256-Digest: oQIpsGzUGhxFAXcouhVecvNwYHL+GnGxtZe0CFwNlLI=
+
+Name: com/fasterxml/jackson/databind/introspect/ConcreteBeanPropertyBa
+ se.class
+SHA-256-Digest: RDuAT+3mNha1YF85M20TK9k6xDqRjDKi1gTEUGoqfo4=
+
+Name: com/fasterxml/jackson/databind/util/ArrayIterator.class
+SHA-256-Digest: NCVV0WxKDyIwlLnCVt+ZIUGra1poKKQx37POVxTIjxs=
+
+Name: com/fasterxml/jackson/databind/deser/std/DateDeserializers$Times
+ tampDeserializer.class
+SHA-256-Digest: 7Oe3TmbYQMlz4MsfDv0XZXe0s/DIuvniuo3FfLosjKE=
+
+Name: com/fasterxml/jackson/databind/deser/std/NumberDeserializers.cla
+ ss
+SHA-256-Digest: vQi/FX4cFloPdavEtcrGuYcMMJTWcEjoj+2Wd4hK/fM=
+
+Name: com/fasterxml/jackson/databind/deser/ResolvableDeserializer.clas
+ s
+SHA-256-Digest: el2Cngkzca4xgCa2WdMTVQCPgkpt37HXBtvMRVQk2zA=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotationCollector$NC
+ ollector.class
+SHA-256-Digest: AOZoMnkv+efDX8TzrCU1pkfjwS+au9kcQhpzsb7uBPA=
+
+Name: com/fasterxml/jackson/databind/deser/std/DateDeserializers$Calen
+ darDeserializer.class
+SHA-256-Digest: whlVpodDa+MT5v9nfyn0RADCFoPipjJSWKXmKkCF7y8=
+
+Name: com/fasterxml/jackson/databind/deser/std/MapDeserializer$MapRefe
+ rring.class
+SHA-256-Digest: aRdlMnyKuAm97jpD2DSc2HlU5e5HZUC+TuPp90s9BGU=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonFormatVisi
+ torWrapper.class
+SHA-256-Digest: DiF2SuO/30LMNGZVFqQW4v9Tqbe4NKMuCp1qDMHXgxw=
+
+Name: com/fasterxml/jackson/databind/JsonSerializer.class
+SHA-256-Digest: H8jWiqaQltMl7osw8F7UcBcugNoJLZns021pYVl4U8E=
+
+Name: com/fasterxml/jackson/databind/cfg/BaseSettings.class
+SHA-256-Digest: NI5bRAbjhR1e15WdAjlos/3QKa1yUU/VBuQRhZq29eg=
+
+Name: com/fasterxml/jackson/databind/deser/std/UUIDDeserializer.class
+SHA-256-Digest: 5NyzQDgASD2rIxBLdYpeK9/8m5GPR3JVFlcA4ruwAUc=
+
+Name: com/fasterxml/jackson/databind/introspect/WithMember.class
+SHA-256-Digest: 5X291HEZOxzp0o0L1gvjxySLVJPtYghJv2iIuFjrGdg=
+
+Name: com/fasterxml/jackson/databind/jsontype/impl/AsExternalTypeDeser
+ ializer.class
+SHA-256-Digest: c2yePs4akwCzcFZcGLr30OLr2fZaGoXzSMiVCLEZZDo=
+
+Name: com/fasterxml/jackson/databind/type/TypeModifier.class
+SHA-256-Digest: 2mcJ4XZGKpZ/6g4kkuFjuULtrgN2/cmbYw1gUDucGhE=
+
+Name: com/fasterxml/jackson/databind/jsonschema/SchemaAware.class
+SHA-256-Digest: J9nRgcWb6f4HZkynO+ynDM6mAHCxk3uoTNmce/ysZMI=
+
+Name: com/fasterxml/jackson/databind/util/NameTransformer.class
+SHA-256-Digest: wMnIgbFwA3ZKqrtGgwfHWE5abxnZCaiBTi1Gs4YTt8U=
+
+Name: com/fasterxml/jackson/databind/ser/std/NumberSerializers.class
+SHA-256-Digest: lQAb5JVYadluA2qI+Ny1RRcQ/SftF8+lnbRPElGmnWc=
+
+Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder$Wi
+ thMember.class
+SHA-256-Digest: +I6iyhEXJcdhLAXs5gygNCgawc57e/mF2e86vcAYvbs=
+
+Name: com/fasterxml/jackson/databind/jsontype/TypeDeserializer$1.class
+SHA-256-Digest: nycvWv0oZqDBKqY5wwhzHnfcNkgsFpny2Xh6pZqPhwk=
+
+Name: com/fasterxml/jackson/databind/jsontype/impl/TypeIdResolverBase.
+ class
+SHA-256-Digest: IfK7x2HC7BKJZg2MGHr1tvO02uEL2r1hzZVIn8osvvM=
+
+Name: com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntro
+ spector.class
+SHA-256-Digest: 1AqwUfxiBxjyuCJWKzd8ZEJrDBJOjZw+2ALj2dKbXrk=
+
+Name: com/fasterxml/jackson/databind/deser/ValueInstantiator$Gettable.
+ class
+SHA-256-Digest: pm2fIrQwuaCviCTSbC4yYovbtF4ZlrVx9xQXjIXvvEI=
+
+Name: com/fasterxml/jackson/databind/ser/std/StdArraySerializers$Short
+ ArraySerializer.class
+SHA-256-Digest: hvmaOoOEdwI1yI6O0gLOrrb7/tvamKapiGF/ib4N2Q0=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonStringForm
+ atVisitor$Base.class
+SHA-256-Digest: N3l2MvJQpqhGeQuvFnFE0QkKiUpsB+hBTzdxDADRsbI=
+
+Name: com/fasterxml/jackson/databind/ser/impl/PropertySerializerMap$Em
+ pty.class
+SHA-256-Digest: Jcc0HAEOaHWcDIJVXJSfLobv5/v3A8ZzejtAqm+ulMo=
+
+Name: com/fasterxml/jackson/databind/deser/std/JdkDeserializers.class
+SHA-256-Digest: OtIeDMSC/BKNSq0cGfCY/hp1jQXx/9ZAgdbAkA0rKwc=
+
+Name: com/fasterxml/jackson/databind/deser/impl/TypeWrappedDeserialize
+ r.class
+SHA-256-Digest: cjHB9xP62r0DTMp+V81ayk56Q+/A8BPKmaPEp00jHnk=
+
+Name: com/fasterxml/jackson/databind/ser/std/InetSocketAddressSerializ
+ er.class
+SHA-256-Digest: ghepTAJdwcSLrov5bmHa+futzn1b0ifxom0nk+3200Q=
+
+Name: com/fasterxml/jackson/databind/deser/std/MapDeserializer$MapRefe
+ rringAccumulator.class
+SHA-256-Digest: i9jw8Yp/QNfBMUxjBpX8wGrGM4szf2VjzETrAly3LRw=
+
+Name: com/fasterxml/jackson/databind/ser/impl/SimpleBeanPropertyFilter
+ $SerializeExceptFilter.class
+SHA-256-Digest: 1S8Us4C8Gr+O75AlksJzejcxpfWqsaQOdgqabnhdO2E=
+
+Name: com/fasterxml/jackson/databind/deser/std/NumberDeserializers$Byt
+ eDeserializer.class
+SHA-256-Digest: 04ZTwen37QKjG7diypXxln9dcpD45uYyedyWy9/Saco=
+
+Name: com/fasterxml/jackson/databind/type/MapType.class
+SHA-256-Digest: zZfU0basHhzx+Nh7PPR+r7jSvwHesNhyg24TwOh27hI=
+
+Name: com/fasterxml/jackson/databind/module/SimpleKeyDeserializers.cla
+ ss
+SHA-256-Digest: xdg/flEamxq5GZCg+WSkoEogHoHW+OJ3Ic8QPmmIBMI=
+
+Name: com/fasterxml/jackson/databind/node/NodeCursor.class
+SHA-256-Digest: PUJbITX0WYGm9Via50cNRMR4PjkoRs8bIhxc3iui5Og=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonAnyFormatV
+ isitor$Base.class
+SHA-256-Digest: ZdrOEHZUOzaxnWPaJAyUGtZ56uxKKxInJYcQyFgi6+o=
+
+Name: com/fasterxml/jackson/databind/ser/BeanSerializerBuilder.class
+SHA-256-Digest: JrvT7kZCOxIiR6gBx1x9Y7hQvuuODCHrdcnaRLyLKtc=
+
+Name: com/fasterxml/jackson/databind/JsonNode$1.class
+SHA-256-Digest: 8/P/xp9GSBlm05o8Qh5nW4IG4rtUIOBk7WEAgT5Gtzo=
+
+Name: com/fasterxml/jackson/databind/util/ByteBufferBackedInputStream.
+ class
+SHA-256-Digest: 12A7LdilXtXhpWq62H2J89s8tn3xFdtW5Mq99xtPIHA=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonBooleanFor
+ matVisitor.class
+SHA-256-Digest: wXZWoIn8gnaTbWnz5P0AOOMQGatIa+ds0Ulw+c/2I5s=
+
+Name: com/fasterxml/jackson/databind/ser/impl/ReadOnlyClassToSerialize
+ rMap.class
+SHA-256-Digest: mhfmmcZ6hJ8fEeqCkEF57cagNs6N9sQbg8EQ8D2TTPo=
+
+Name: com/fasterxml/jackson/databind/JsonSerializer$None.class
+SHA-256-Digest: +TTlsNwob4jyz9CAR22L6OH1oe6yCiG4aPUwKknpMm0=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonValueForma
+ tVisitor.class
+SHA-256-Digest: 8YpYTYddadrGhHwecynkZ+pjQ8hzD8u1pIIRBdc4zvE=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonNumberForm
+ atVisitor.class
+SHA-256-Digest: biwewC5fcHK9eyG1F/E6d3I23jIwWVye2wtVxGq5+zY=
+
+Name: com/fasterxml/jackson/databind/util/ArrayBuilders$BooleanBuilder
+ .class
+SHA-256-Digest: CXNOo4mAOqOZ2/jUbbEtXFf0Ay4mXrkrN5BCMBsctPc=
+
+Name: com/fasterxml/jackson/databind/ser/BasicSerializerFactory.class
+SHA-256-Digest: odWk+CrkbxDP49zYF9myl+u/6amtasK7YPktIDn1IDs=
+
+Name: com/fasterxml/jackson/databind/deser/impl/SetterlessProperty.cla
+ ss
+SHA-256-Digest: 3KhNIa/eG/+bTc1jjFcPV5zBxJmz/8BOcRaYafO1jWM=
+
+Name: com/fasterxml/jackson/databind/ser/impl/IndexedListSerializer.cl
+ ass
+SHA-256-Digest: Z3lFvghTSHA2vhtpk+vBFJioK9vQDPu6PkvLQK0CPJ0=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotatedMember.class
+SHA-256-Digest: 6fvO32Wk4lQqwx+aAE9JZ5cKaiwWlwBlpsmst7zCUP0=
+
+Name: com/fasterxml/jackson/databind/jsontype/impl/AsWrapperTypeSerial
+ izer.class
+SHA-256-Digest: QzH6kD2Hg1C95K021a5iM9iHu2OGeK9JXMHRuXgp68Y=
+
+Name: com/fasterxml/jackson/databind/BeanProperty.class
+SHA-256-Digest: Ph9u7k7IRfyEq3UUlYOD7qOJ7x/HCsn/5UpAREUooLA=
+
+Name: com/fasterxml/jackson/databind/ext/CoreXMLSerializers.class
+SHA-256-Digest: og5HH5MPuM6eo+3R9W+wI3A8NT0jygnlgomQJxZPhAM=
+
+Name: com/fasterxml/jackson/databind/ser/std/ClassSerializer.class
+SHA-256-Digest: yxyip3o/jMLZDA8//puyUus/p3euJOxt91DhDNyQS2M=
+
+Name: com/fasterxml/jackson/databind/ObjectWriter$Prefetch.class
+SHA-256-Digest: e6bhux/1ueTW7yLiXfFmVHkGaZuSayTHVcPTLLM3hH8=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/com.fasterxml.jackson.c
+ ore.jackson-databind/pom.xml
+SHA-256-Digest: ytaTd9xagiTK4SGlaXGNBpkr5l6L2Nqpgi6JSQpzvSw=
+
+Name: com/fasterxml/jackson/databind/annotation/JsonTypeIdResolver.cla
+ ss
+SHA-256-Digest: pigc+dY2ptY9ZsSyoLqyhu7JJhRN8wWsX+O4NC1KlkU=
+
+Name: com/fasterxml/jackson/databind/deser/impl/PropertyValueBuffer.cl
+ ass
+SHA-256-Digest: 2lggrXgGcfXyqC3F8p+XGLxjbmZ383jvUcedsS9Gkv8=
+
+Name: com/fasterxml/jackson/databind/ser/std/StdArraySerializers$Boole
+ anArraySerializer.class
+SHA-256-Digest: WUzHrlF/+OEfxVupcd8PEi7UEGMtCzyXFc9TWMGe+9Q=
+
+Name: com/fasterxml/jackson/databind/deser/std/NumberDeserializers$Cha
+ racterDeserializer.class
+SHA-256-Digest: UxECQGRDNPKTQT/0SB5E1WpZM1cmi1+PNC4qeI0YxNE=
+
+Name: com/fasterxml/jackson/databind/InjectableValues$Std.class
+SHA-256-Digest: UFpT4bcBQUrhA0ykURwT4tmJi0/nqBQfjSD2J79YkH0=
+
+Name: com/fasterxml/jackson/databind/util/TokenBuffer$Segment.class
+SHA-256-Digest: wRm9Gg/TpYTepdH989ijer+EZgCLVWY/T7yKEoPKp4k=
+
+Name: com/fasterxml/jackson/databind/ser/impl/MapEntrySerializer$1.cla
+ ss
+SHA-256-Digest: ZZNH5m1YArqbTo23z+rfqFOgQkhNhocteltrUSfbUxM=
+
+Name: com/fasterxml/jackson/databind/ser/std/MapProperty.class
+SHA-256-Digest: cJIFnK92BFMCDv+YwvP73z+6ZIxhnNQ27I6VgrLRphQ=
+
+Name: com/fasterxml/jackson/databind/deser/std/StdNodeBasedDeserialize
+ r.class
+SHA-256-Digest: 2PD/b/gFCB2cyY4Io8T3B+jTmcjhkNaDQk+9P9nf3NQ=
+
+Name: com/fasterxml/jackson/databind/jsontype/impl/StdTypeResolverBuil
+ der$1.class
+SHA-256-Digest: modM4RxXFLQJj6St1r/XEvOk09y/v+ovpv/6T7oEm9I=
+
+Name: com/fasterxml/jackson/databind/ser/std/AtomicReferenceSerializer
+ .class
+SHA-256-Digest: a7QxR/fQGdjYRqZD/zx1D5B0Nz9eHIXgqyDpvTV0hzk=
+
+Name: com/fasterxml/jackson/databind/deser/impl/PropertyValue$Map.clas
+ s
+SHA-256-Digest: mGkWHzEFILlTGjtZ7IhAZDg6+D3hJ1dgDFbKryf88ME=
+
+Name: com/fasterxml/jackson/databind/util/Converter.class
+SHA-256-Digest: ruVKn3mH683co3g7IMoMr/ZEEP5l+EZ8Mim4/WXBGck=
+
+Name: com/fasterxml/jackson/databind/deser/std/EnumMapDeserializer.cla
+ ss
+SHA-256-Digest: hj3WYcyk7YsAxdslrnUw5E/3owj7hvQM2DxEjvJ/Jy0=
+
+Name: com/fasterxml/jackson/databind/exc/IgnoredPropertyException.clas
+ s
+SHA-256-Digest: SXuN//b3FpRJouDLdiZJDo/m8fMWwZ4KOdlNpN0vWJM=
+
+Name: com/fasterxml/jackson/databind/deser/Deserializers$Base.class
+SHA-256-Digest: ogodj+6iatXv/j7zn+nkoQ9wCga55Bnp5hHASqpCLqM=
+
+Name: com/fasterxml/jackson/databind/ser/ContextualSerializer.class
+SHA-256-Digest: UdOIFgtr/3ghlioCz9rIdEvbllYsjOp28+XXFLHrnhw=
+
+Name: com/fasterxml/jackson/databind/ext/OptionalHandlerFactory.class
+SHA-256-Digest: g32RDen/xyZKnAf/JP/JEAueIYZK2Ld3RbN4go/GtGA=
+
+Name: com/fasterxml/jackson/databind/introspect/BasicClassIntrospector
+ .class
+SHA-256-Digest: opecE6oOfH2Jf0nowIxr896qiMKk6H8bJSlCHOht54o=
+
+Name: com/fasterxml/jackson/databind/annotation/JsonAppend$Prop.class
+SHA-256-Digest: soKu5DEUae4SaojTfL6L3g8vKaUp/vP5uCeie0dAMC8=
+
+Name: com/fasterxml/jackson/databind/util/TokenBuffer$1.class
+SHA-256-Digest: QXoPxYUi8j942a4Bc7WTQdowi+sR/Egn5k/1xb+78bg=
+
+Name: com/fasterxml/jackson/databind/ser/std/ObjectArraySerializer.cla
+ ss
+SHA-256-Digest: Zcznrg53laj3xD9x/4IAy/nHhE5eFpYqLrOc5aRRgx4=
+
+Name: com/fasterxml/jackson/databind/util/LRUMap.class
+SHA-256-Digest: FWtfiwB+yVIQ85Al3DZjT2roixRNFkqOQJBPF/ZzT5w=
+
+Name: com/fasterxml/jackson/databind/deser/std/NumberDeserializers$Num
+ berDeserializer.class
+SHA-256-Digest: jvMTQg3k9Utgu0FiPlMpF4grLDsqH7UZhu65WXzMHCQ=
+
+Name: com/fasterxml/jackson/databind/deser/std/EnumSetDeserializer.cla
+ ss
+SHA-256-Digest: Xa0hmAKskPaE/F/s169cKO2sdF6h1ZGJm1yl9hJMA9Y=
+
+Name: com/fasterxml/jackson/databind/ser/impl/AttributePropertyWriter.
+ class
+SHA-256-Digest: 1ooDargwzZ73yspLtQIWKf7/t2rL8yGsLc28ZRtLuVU=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonFormatVisi
+ torWrapper$Base.class
+SHA-256-Digest: wiD9ciiEGqoQWLaLSMsPyxV+lb4SOllv2uvOmsYi2Wo=
+
+Name: com/fasterxml/jackson/databind/node/DecimalNode.class
+SHA-256-Digest: poM4DvmzBW7lxsspIwSxzLy107NQBcw3JRyZlWDgwrs=
+
+Name: com/fasterxml/jackson/databind/deser/impl/ErrorThrowingDeseriali
+ zer.class
+SHA-256-Digest: EWMbWlR2bO/iLzBosZ7HFy1q6mE3LIARbOLJ8kRYSiE=
+
+Name: com/fasterxml/jackson/databind/ser/DefaultSerializerProvider$Imp
+ l.class
+SHA-256-Digest: /n9VsKyWAZ8IGswjBPt/Mdr0ewuvyjCw9tmPzFFwkpQ=
+
+Name: com/fasterxml/jackson/databind/deser/ContextualKeyDeserializer.c
+ lass
+SHA-256-Digest: TLC18PdW9gzx7TMdx6xIz3xGw7RRWmtxfdOLj4HGgAE=
+
+Name: com/fasterxml/jackson/databind/ser/std/ReferenceTypeSerializer$1
+ .class
+SHA-256-Digest: z1E5F2JWV8OGM1XaFosIBqTl7lUSZx2rMoJX8zGy3pk=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonNumberForm
+ atVisitor$Base.class
+SHA-256-Digest: mrcWx1SokY1rmJvCGVLw2LcdxenwgMQx1vJ2rTnvwJo=
+
+Name: com/fasterxml/jackson/databind/ser/std/CalendarSerializer.class
+SHA-256-Digest: YxPohT+CKiJJ2z09LwsHomeFggxbyOZEUvWH1LDcy+g=
+
+Name: com/fasterxml/jackson/databind/deser/impl/PropertyValue.class
+SHA-256-Digest: Qdn7es5XD2IVU5Fo+SyhBWJunUqvj+w3QzUykdl4QAk=
+
+Name: com/fasterxml/jackson/databind/ser/std/JsonValueSerializer.class
+SHA-256-Digest: +2252yGqpsVkzNnHQchcpYle/kPPlGhwLeCQ3cpntoY=
+
+Name: com/fasterxml/jackson/databind/util/ArrayBuilders$ByteBuilder.cl
+ ass
+SHA-256-Digest: TZrfz0gwNQpdjGI6UOCyX88/kzuGtf2zFtHeIn4oDYE=
+
+Name: com/fasterxml/jackson/databind/node/NullNode.class
+SHA-256-Digest: y7H+3tmjt4vx8AUJYwWzjUj4fsNF4a7T4sWxjdXXI7Y=
+
+Name: com/fasterxml/jackson/databind/AnnotationIntrospector.class
+SHA-256-Digest: cKsO1xBjVKwI8wkKOc0CraHusHxpIzXVz8LebfTtMfE=
+
+Name: com/fasterxml/jackson/databind/deser/BeanDeserializer$1.class
+SHA-256-Digest: 5wWmZ/Wr9PfF2WWmL9DoHVG9DegHl6Jr346R/C89G/4=
+
+Name: com/fasterxml/jackson/databind/deser/impl/MergingSettableBeanPro
+ perty.class
+SHA-256-Digest: SR/ZKm6STar5ybcRhtB0iX4odVYfmgSOlhm6EsfbAN4=
+
+Name: com/fasterxml/jackson/databind/ser/impl/PropertySerializerMap$Do
+ uble.class
+SHA-256-Digest: MGp3qGPrP0YRHgXPhjZPpa9+j32KjRxgKyMYBVNkghw=
+
+Name: com/fasterxml/jackson/databind/deser/std/StdScalarDeserializer.c
+ lass
+SHA-256-Digest: NyjwznFOvK11vNGaROp8VY/WKKbjiBSGB9SQ5VrVGWQ=
+
+Name: com/fasterxml/jackson/databind/deser/std/UntypedObjectDeserializ
+ er$Vanilla.class
+SHA-256-Digest: XDbV9a0p1fin1wubv2SaDlf/bctdjZiuNiGddUoWaAk=
+
+Name: com/fasterxml/jackson/databind/Module.class
+SHA-256-Digest: qDwLw5mlxWa0bmdzNXpqShVWR1IQBpfdRhJW2Rr7Jvw=
+
+Name: com/fasterxml/jackson/databind/jsontype/impl/MinimalClassNameIdR
+ esolver.class
+SHA-256-Digest: hyqlM9CQwwllH98xe0jZmrs09HojP/sM7mVmaP3Vysc=
+
+Name: com/fasterxml/jackson/databind/node/ShortNode.class
+SHA-256-Digest: VwuuDua/4zoBxTxWoagYxS3lTvsbdwWdniSdPjgwzA4=
+
+Name: com/fasterxml/jackson/databind/ser/impl/TypeWrappedSerializer.cl
+ ass
+SHA-256-Digest: 4meMVTbPmxxTYTMJKpcYat4SUTYQRIn6KDf1O1vo2B8=
+
+Name: com/fasterxml/jackson/databind/node/BooleanNode.class
+SHA-256-Digest: 5YjBntvAU8VVa7BedH5JmpxT0wYqULysCHV494Y0HbM=
+
+Name: com/fasterxml/jackson/databind/ser/BeanSerializerModifier.class
+SHA-256-Digest: sUhECxeB1DWKYSffyQN0kPx23ySt24ReFn8G2itMyoU=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonMapFormatV
+ isitor$Base.class
+SHA-256-Digest: BRzH7+kAL9qAeaLuEsOoWpuBeUoDSfSpP4C13Fae9EE=
+
+Name: com/fasterxml/jackson/databind/deser/DeserializerCache.class
+SHA-256-Digest: 86YllMvVsQV3gWpdduLtia88VUf0gZVOkCpVgLbe+Vg=
+
+Name: com/fasterxml/jackson/databind/util/PrimitiveArrayBuilder.class
+SHA-256-Digest: PrIKPt5PnpVZO/2oHWXWtF99LNvGfi8MZWzmcdT9xWI=
+
+Name: com/fasterxml/jackson/databind/exc/InvalidTypeIdException.class
+SHA-256-Digest: eshSQc7eR9A6H9f0/TL+M+iE4uPbLmIUr2urtpH1AIE=
+
+Name: com/fasterxml/jackson/databind/ObjectMapper$DefaultTypeResolverB
+ uilder.class
+SHA-256-Digest: 7SJxFxDxv7hPFstO1hSkHxtakP1jroxhVepZbJd8Eck=
+
+Name: com/fasterxml/jackson/databind/ser/std/IterableSerializer.class
+SHA-256-Digest: o/Na1BKGKUzxg+n1IkkIYs9QSVji9t7lhRReXp7BYRo=
+
+Name: com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeseriali
+ zers$CharDeser.class
+SHA-256-Digest: 0+pb/MP+BuZcb8ZMexah8LfNoNbVFUCFfmSzqRZaMOg=
+
+Name: com/fasterxml/jackson/databind/ser/std/StdArraySerializers$Float
+ ArraySerializer.class
+SHA-256-Digest: /KWw6NQVEufyuOExc/VNyyTnSQ8Ft73Er0bLqxJgXIE=
+
+Name: com/fasterxml/jackson/databind/PropertyName.class
+SHA-256-Digest: 0XmSKYKtVCKP2QHGc3nl1rmcWwv+HGXWv1XGhsJ8FiQ=
+
+Name: com/fasterxml/jackson/databind/deser/impl/ObjectIdValueProperty.
+ class
+SHA-256-Digest: Wj0DSNSyb3GnB13WhDCwXsskjMmAEAY+Ab0lHvkSkxE=
+
+Name: com/fasterxml/jackson/databind/introspect/VisibilityChecker$Std.
+ class
+SHA-256-Digest: xOnkk4tTCe5JVNAUDsQyJ6HH873pXZwo6MUztSN6B3s=
+
+Name: com/fasterxml/jackson/databind/type/TypeBindings$TypeParamStash.
+ class
+SHA-256-Digest: v1BKL+fx09GMZxbrQtT1KonYw451ognGjn4ppwdlQ1g=
+
+Name: com/fasterxml/jackson/databind/deser/CreatorProperty.class
+SHA-256-Digest: jRBG+al5LhRIMZRXSjDToqvo8weGNj1JV+A4DxUnR+I=
+
+Name: com/fasterxml/jackson/databind/type/TypeBase.class
+SHA-256-Digest: 3vgva5oNAKPSuv/x3DKdbrIVyKA6in8DL0a1PZ+Mkf4=
+
+Name: com/fasterxml/jackson/databind/ser/std/CollectionSerializer.clas
+ s
+SHA-256-Digest: GCud4/gufI8P9B5i40ppCBZJdpblqAJPsNBYl6UoLNI=
+
+Name: com/fasterxml/jackson/databind/deser/std/NumberDeserializers$Flo
+ atDeserializer.class
+SHA-256-Digest: ye5JvO6ZnZ5kXBGKT2OAr9kfeZe6p2eGEz+L+f9KvWU=
+
+Name: com/fasterxml/jackson/databind/node/POJONode.class
+SHA-256-Digest: E5QmkkFfOlIi5WmU0YQzHcJhxpdomUdtISoaOYZl9iU=
+
+Name: com/fasterxml/jackson/databind/ser/std/TimeZoneSerializer.class
+SHA-256-Digest: 1eNXSLVN2BseO8dsVmw6/OX5YGCjhPp61W3g19IlRPI=
+
+Name: com/fasterxml/jackson/databind/deser/BeanDeserializerBase.class
+SHA-256-Digest: WZ9fqIGMeir+1THjWobbMhikq9BCAmwnG6xzRTQ709g=
+
+Name: com/fasterxml/jackson/databind/ser/impl/PropertySerializerMap$Si
+ ngle.class
+SHA-256-Digest: Zoj3A/BwCSCTPRhPGTJ6adC6pBfb5EdFJ9zwJnwjuqo=
+
+Name: com/fasterxml/jackson/databind/jsontype/impl/AsPropertyTypeDeser
+ ializer.class
+SHA-256-Digest: crK2aTCpRgNQgH+GwLlCXkb7wCFMK6j8OwT4bBmjkrQ=
+
+Name: com/fasterxml/jackson/databind/node/ContainerNode.class
+SHA-256-Digest: zVCcSH1eaunyx3hBRbbABEVq6S6YRZvzrFcT67S81ZY=
+
+Name: com/fasterxml/jackson/databind/PropertyNamingStrategy$SnakeCaseS
+ trategy.class
+SHA-256-Digest: +SlNHCkxBXXxe+z1irST5+FVOkBrULlA2mqvAZODXjo=
+
+Name: com/fasterxml/jackson/databind/deser/DeserializationProblemHandl
+ er.class
+SHA-256-Digest: u6mmzwKuJ430p2LFsddbyv38QfpROPuu5OkicCHPcnM=
+
+Name: com/fasterxml/jackson/databind/exc/MismatchedInputException.clas
+ s
+SHA-256-Digest: /YH9+hlmkxnqsba56KcH4cap4vJhu8s8fSzfcvqN584=
+
+Name: com/fasterxml/jackson/databind/ser/std/ReferenceTypeSerializer.c
+ lass
+SHA-256-Digest: uBWWvVENl6m7ZibSsfppgZet4nUzClCeuB58A1UbYLI=
+
+Name: com/fasterxml/jackson/databind/RuntimeJsonMappingException.class
+SHA-256-Digest: MiN6y8deQrUd4jCRphRJAoXmq8fC5iPnV+/s98wHOyc=
+
+Name: com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeseriali
+ zers$ByteDeser.class
+SHA-256-Digest: gaYXpsQvOMZEMiLwnDvSyN+ERhp1ujUQJW7TbRcs2dY=
+
+Name: com/fasterxml/jackson/databind/JavaType.class
+SHA-256-Digest: 9TblvUL+xJomOjLTpbIoynw/TaKip+Ru7zVbvxcfjak=
+
+Name: com/fasterxml/jackson/databind/util/NameTransformer$1.class
+SHA-256-Digest: euZgAwzYlnIx9RrHw3dSafldqcw9etaqYxQ2Y3F2yMk=
+
+Name: com/fasterxml/jackson/databind/ser/impl/FilteredBeanPropertyWrit
+ er.class
+SHA-256-Digest: BDrp/Lh0QfmznuLBRfWcrQyER859qLuYb8vipIklzQw=
+
+Name: com/fasterxml/jackson/databind/deser/std/StdKeyDeserializer$Stri
+ ngKD.class
+SHA-256-Digest: tiZApATG27KHPUloERbXog2LvBHeh/nqSKu4hG7psxY=
+
+Name: com/fasterxml/jackson/databind/annotation/JacksonStdImpl.class
+SHA-256-Digest: roon1rFTa92j+yHVDdAY0BAjVwuj79P84OHg9X4Jjug=
+
+Name: com/fasterxml/jackson/databind/deser/impl/ValueInjector.class
+SHA-256-Digest: wLyafTcuXjuP9T/+xDXj4cfNaZgLkgAsWqo/ec3Fbow=
+
+Name: com/fasterxml/jackson/databind/util/JSONWrappedObject.class
+SHA-256-Digest: 7Zq30cmaBd0+rzYbfdjYNrNsiru1DRxLr/pVvWGIvgI=
+
+Name: com/fasterxml/jackson/databind/AnnotationIntrospector$ReferenceP
+ roperty.class
+SHA-256-Digest: n7pGzGxd0+UWahSlUjcJZq1lQXI6z7kblpyFcAEC3LQ=
+
+Name: com/fasterxml/jackson/databind/ext/NioPathSerializer.class
+SHA-256-Digest: D7cF2nrP8Astv18+gdQ+S24pChUMIRY4H59Y9D5mK3w=
+
+Name: com/fasterxml/jackson/databind/annotation/JsonAppend$Attr.class
+SHA-256-Digest: ozrvJdmgbTfo5sTBdt7Ngdb5Wb9TXwSCVUPamxA8Kns=
+
+Name: com/fasterxml/jackson/databind/deser/std/ContainerDeserializerBa
+ se.class
+SHA-256-Digest: 7OvBugpKE/e6HqR+WKxbzQvpaN5/JvTlyEGns68ae2o=
+
+Name: com/fasterxml/jackson/databind/deser/ValueInstantiators$Base.cla
+ ss
+SHA-256-Digest: roMWIlwN012hQkEeQOksWTe6uYCiANq5CnPOG8wPn3k=
+
+Name: com/fasterxml/jackson/databind/ser/impl/FailingSerializer.class
+SHA-256-Digest: +pUQYLkZ0lQ15JcNhapqRrqAsfRkDiPtc7UTjhWhMH8=
+
+Name: com/fasterxml/jackson/databind/annotation/JsonSerialize$Inclusio
+ n.class
+SHA-256-Digest: ZguitP/+Cc1PywczcGSXFd5bo1gY3mD0hny+LdRcEGA=
+
+Name: com/fasterxml/jackson/databind/ext/DOMDeserializer.class
+SHA-256-Digest: UeGYYxcjpCcZuPiriZxpq/8u2Wz6+Zc9fzyCS2+caps=
+
+Name: com/fasterxml/jackson/databind/ext/DOMSerializer.class
+SHA-256-Digest: hkK2N2yVbmY4Nby2wLL5IDJgPb2fBuDZdxL2ZKAzxoQ=
+
+Name: com/fasterxml/jackson/databind/util/JSONPObject.class
+SHA-256-Digest: AzjOHNV4D03+865nbEjFXN47RmibPAY8+iiThA43Sk8=
+
+Name: com/fasterxml/jackson/databind/deser/std/StdValueInstantiator.cl
+ ass
+SHA-256-Digest: qw6LSuBxbNzSD4mfR+lED8dPaBBQgwx+IhWCnF3RFtc=
+
+Name: com/fasterxml/jackson/databind/deser/impl/CreatorCandidate$Param
+ .class
+SHA-256-Digest: 9NWTBtTGvuWqvVLnUYw8aWsNuFwrrHUvOCEEujxNQ4E=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: YQ57sZXENZxZAhEQgOrrQvxrFpFgt9XB2jQaQuTYr4E=
+
+Name: com/fasterxml/jackson/databind/ser/PropertyBuilder$1.class
+SHA-256-Digest: kbJdf+5P4b7BakJzyVBQmJWJsQtzdTpzkZjz6TD76oM=
+
+Name: com/fasterxml/jackson/databind/deser/impl/ReadableObjectId$Refer
+ ring.class
+SHA-256-Digest: 0TuRucRo0lQK1KgiZLXHUZup+tSBUgfHLOVFZ6e1ULc=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonObjectForm
+ atVisitor$Base.class
+SHA-256-Digest: o7oMWT6t7rHn8C8PlulfSaWh2DKBUZd2zWSxs3MncIw=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotationMap.class
+SHA-256-Digest: gB+jpRoV5c8KrIe3fetSdCQxlZcEBB8DreY+2I39/ss=
+
+Name: com/fasterxml/jackson/databind/cfg/ContextAttributes.class
+SHA-256-Digest: xnutZjcoGb4TTkBhWw83hTELUUgg5GLgbIb4ip2jV38=
+
+Name: com/fasterxml/jackson/databind/util/ISO8601DateFormat.class
+SHA-256-Digest: oSfUMfxW7TfNO5kaIeF2pDI8bBI82O/uua0cnWZLzUs=
+
+Name: com/fasterxml/jackson/databind/deser/std/CollectionDeserializer.
+ class
+SHA-256-Digest: ojx3Q+33bcqqZkAOJJ1/Z1sQd1KzZYuM412VTQokN3A=
+
+Name: com/fasterxml/jackson/databind/SequenceWriter.class
+SHA-256-Digest: 213qq3StuIn61wLQG76P8bMXoM35M9FBzK+GiXdctpE=
+
+Name: com/fasterxml/jackson/databind/deser/std/StdDelegatingDeserializ
+ er.class
+SHA-256-Digest: ZHrz1iucnnhiT94ODfEUk+d1YlUIaqV+ZzU+dxYyoqE=
+
+Name: com/fasterxml/jackson/databind/util/NameTransformer$Chained.clas
+ s
+SHA-256-Digest: y55uM8nzPEYrRSlXAYLkqX4A1XXGC6dLXNY3VZ5sgFc=
+
+Name: com/fasterxml/jackson/databind/deser/UnresolvedForwardReference.
+ class
+SHA-256-Digest: /gSofH4rTHPryTQ/0fEFNNhL1GG2vhanp+JsIohwwsE=
+
+Name: com/fasterxml/jackson/databind/ser/std/SqlTimeSerializer.class
+SHA-256-Digest: 49d9Whwu8s8nftWyB0GmmklJ7POz2FjcNofNhchf8a0=
+
+Name: com/fasterxml/jackson/databind/util/StdConverter.class
+SHA-256-Digest: yCFfG7upjtqevXVbKz8K+CtenvPZY/vw8zUvm61JMnY=
+
+Name: com/fasterxml/jackson/databind/BeanProperty$Std.class
+SHA-256-Digest: AVFJOQNrB4V3+JzmWX+NjcjOzG3e4Ci8pD8Hq8DdAjA=
+
+Name: com/fasterxml/jackson/databind/deser/DefaultDeserializationConte
+ xt.class
+SHA-256-Digest: bBNUTkwdoTjc6euuWOXoAHAtFKXkgRaMFbHUmuEIxJM=
+
+Name: com/fasterxml/jackson/databind/deser/BeanDeserializerModifier.cl
+ ass
+SHA-256-Digest: ZLGOXzo4Zwjx2kkZevxtZNrDFzlMm4E3DyCfmf4332k=
+
+Name: com/fasterxml/jackson/databind/ser/impl/PropertySerializerMap$Mu
+ lti.class
+SHA-256-Digest: Koi+RpII/H1BWeJWksjuIBjAhjXd9p3N66YaqAM6TvU=
+
+Name: com/fasterxml/jackson/databind/ser/Serializers.class
+SHA-256-Digest: 028+xLyvZX6juwRKyaBTYrIWPriOxwWmmEfm5FL4smY=
+
+Name: com/fasterxml/jackson/databind/PropertyNamingStrategy$UpperCamel
+ CaseStrategy.class
+SHA-256-Digest: 4g4xzssXdoOUPNmxHmjLNcF50sn4LScaAAzJAl5pg+o=
+
+Name: com/fasterxml/jackson/databind/util/NameTransformer$NopTransform
+ er.class
+SHA-256-Digest: B5S6ahq2E+mRXLrXiRUMM5gr6Pa4iBARNwfp6zk/jUE=
+
+Name: com/fasterxml/jackson/databind/deser/std/JsonLocationInstantiato
+ r.class
+SHA-256-Digest: qxTutfQP2U6yZGDwWGSVQwQWZ5kUgFJIiNjCYG92E20=
+
+Name: com/fasterxml/jackson/databind/deser/impl/ReadableObjectId.class
+SHA-256-Digest: +Cle1yoiJGNE2z1dFHMGk1HnuyuYXa4B/zU8dJt27yw=
+
+Name: com/fasterxml/jackson/databind/util/BeanUtil.class
+SHA-256-Digest: p1rhnknC9SmkbGGQRH69r6k60sDkK1mdg7MJ4jrBCQc=
+
+Name: com/fasterxml/jackson/databind/util/NameTransformer$2.class
+SHA-256-Digest: dq9jTGUJ7pBDrOEqXEzwHpJz30PQZUNUJ+iWNLDDg4Q=
+
+Name: com/fasterxml/jackson/databind/util/ViewMatcher$Multi.class
+SHA-256-Digest: 9XwuaoDtn4i2Ff9uCWiVFHHRNTR7tgYrLP2WrxaE9Ug=
+
+Name: com/fasterxml/jackson/databind/node/NodeCursor$ArrayCursor.class
+SHA-256-Digest: DLesK4Ttfyg5SICj96kfSEBOYp6mIaqHnu7h9bAK+Y4=
+
+Name: com/fasterxml/jackson/databind/jsontype/impl/AsExternalTypeSeria
+ lizer.class
+SHA-256-Digest: 6F9Wnhf575YzlLiREqXqeLplUCBns0q0a56WI0pkS/Y=
+
+Name: com/fasterxml/jackson/databind/type/CollectionType.class
+SHA-256-Digest: 52W7ZwcTbRS+96sKEsCTsgpIJwmJG0J/lM4dWki74ZQ=
+
+Name: com/fasterxml/jackson/databind/deser/std/JsonNodeDeserializer.cl
+ ass
+SHA-256-Digest: 4VCe2YutxZwFMPfsF7uQKbAkR+cC8Gc3GP7MzND7NeU=
+
+Name: com/fasterxml/jackson/databind/type/TypeFactory.class
+SHA-256-Digest: Ose5dUYk+r2zuDAWhF8c1Fq4m/jujjq5wlpbEs/g3jg=
+
+Name: com/fasterxml/jackson/databind/util/ClassUtil$Ctor.class
+SHA-256-Digest: LEupL+ewKyWqApJTM91sHN507EKj0BE+vy+5tR1yrxs=
+
+Name: com/fasterxml/jackson/databind/node/JsonNodeCreator.class
+SHA-256-Digest: wntEGLUBIonqbKjtdOrgCMwKN2dM2jeh1rS1yYsmNGI=
+
+Name: com/fasterxml/jackson/databind/ser/std/StdKeySerializers$Dynamic
+ .class
+SHA-256-Digest: iTuQsqdekXafV+y5qVwfopyEVvQEUtGDwNutxg5BWcE=
+
+Name: com/fasterxml/jackson/databind/deser/std/AtomicBooleanDeserializ
+ er.class
+SHA-256-Digest: GZleCo5ZyguwXXWc7avEyY51kSEkDWXwgAw1uKNa0Ic=
+
+Name: com/fasterxml/jackson/databind/ser/std/ByteArraySerializer.class
+SHA-256-Digest: GDXdDwiXPfN9i3xU7UK/sNLfEkc8hIBqrgwVqVvXBjc=
+
+Name: com/fasterxml/jackson/databind/util/Converter$None.class
+SHA-256-Digest: i3h2mJxUY4cmZYbTx8nU89mX0p6C/oQp0pELaKWkSNE=
+
+Name: com/fasterxml/jackson/databind/deser/std/DateDeserializers$SqlDa
+ teDeserializer.class
+SHA-256-Digest: LksCrr7HWYutZHorhepmubwoAW6TgPqNm4gAQTK+pXw=
+
+Name: com/fasterxml/jackson/databind/ser/std/ByteBufferSerializer.clas
+ s
+SHA-256-Digest: Ag1x6Zn6XBcIRUW6HgTQHas32xrIzce8vXdSA+PsYnw=
+
+Name: com/fasterxml/jackson/databind/annotation/NoClass.class
+SHA-256-Digest: AJVVdrBlUhOdn2vWHo6CBFH8IENv16+lgxvBy07ofos=
+
+Name: com/fasterxml/jackson/databind/ser/std/NumberSerializer.class
+SHA-256-Digest: 6dyz/nllBR4yD1q8FwsYF5EJrpL/syzhTsOb8KpsnBQ=
+
+Name: com/fasterxml/jackson/databind/ser/FilterProvider.class
+SHA-256-Digest: NmZm4pfeFoHdvIGzy8iF0DUFlXFFNfqkQKR0UQ7GqN8=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonArrayForma
+ tVisitor.class
+SHA-256-Digest: NbZTFBKI14E38lZPx1PpfpNwoEdBHepC4ty+Y6+ll2A=
+
+Name: com/fasterxml/jackson/databind/util/ViewMatcher.class
+SHA-256-Digest: JWjmqRexGcgEqqxc1O5p1owzpSSi6oUicleM1Milnv8=
+
+Name: com/fasterxml/jackson/databind/introspect/NopAnnotationIntrospec
+ tor$1.class
+SHA-256-Digest: gcg8xV4Lc3wdjyLh2zbtdi7rA1fCT+OuqRoldqt8su4=
+
+Name: com/fasterxml/jackson/databind/deser/ValueInstantiators.class
+SHA-256-Digest: e6tDI5/c0P1KsvAEQ483uClvp0wYQeREIjsQJvFzaxI=
+
+Name: com/fasterxml/jackson/databind/PropertyNamingStrategy$LowerCaseW
+ ithUnderscoresStrategy.class
+SHA-256-Digest: JZTjaw8e2RrCY4QCcdH/Y3G4jz5OkRRQZmyX9JThmeA=
+
+Name: com/fasterxml/jackson/databind/PropertyMetadata.class
+SHA-256-Digest: k1zz3Sg+0XO6+AevjRHUv7gTTPcZJgayREYN+SEn3ic=
+
+Name: com/fasterxml/jackson/databind/util/Annotations.class
+SHA-256-Digest: axJbOg2EaH46f6b7MAR135e+ZOczX4lAq17bysrDfZA=
+
+Name: com/fasterxml/jackson/databind/ser/impl/BeanAsArraySerializer.cl
+ ass
+SHA-256-Digest: cjeB9mquri1cpxqEs5R826JB7hV5SJqpjoYMI4ACkhs=
+
+Name: com/fasterxml/jackson/databind/ser/std/StdJdkSerializers$AtomicL
+ ongSerializer.class
+SHA-256-Digest: g0fwsehDjwwfYXVewBbVaSHgMY31Uktpm5rgojDfiNo=
+
+Name: com/fasterxml/jackson/databind/PropertyNamingStrategy$PascalCase
+ Strategy.class
+SHA-256-Digest: GWRgehRl8K5cn+DgmqcBbGRmd0ZYsCYyzASAi4o5RSU=
+
+Name: com/fasterxml/jackson/databind/deser/BasicDeserializerFactory.cl
+ ass
+SHA-256-Digest: 1iiC3Jr4vMnd6QyveZmjp3wFODWWD5EjJ7xdapOUqt8=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotationCollector$On
+ eCollector.class
+SHA-256-Digest: paXJ0vNTrUo7CXfOTcvghczgJpXUe4oovB3kIBdIPKE=
+
+Name: com/fasterxml/jackson/databind/util/ArrayBuilders$ShortBuilder.c
+ lass
+SHA-256-Digest: BcRKl3T0YeOArVdTrENp65XSbZvs1E5MdAA39fjrPCg=
+
+Name: com/fasterxml/jackson/databind/deser/impl/ManagedReferenceProper
+ ty.class
+SHA-256-Digest: zhjCPEuWPnQHsE9047IipWU/8G5vzwu7KJsW+K5XxKA=
+
+Name: com/fasterxml/jackson/databind/ser/impl/ObjectIdWriter.class
+SHA-256-Digest: Yxnkntffjw/iZCHXLpetrPGfbiagRDdpaarQZXcMXrI=
+
+Name: com/fasterxml/jackson/databind/JsonSerializable$Base.class
+SHA-256-Digest: Byoo2BWevoO9O/mRwivgE4H2lPRZIB1on5jkXJ+359o=
+
+Name: com/fasterxml/jackson/databind/deser/std/StringCollectionDeseria
+ lizer.class
+SHA-256-Digest: ZaF47tNHFBacChyQGRlmjuRpvBx2Oe3//eq3sdFmbao=
+
+Name: com/fasterxml/jackson/databind/ext/DOMDeserializer$NodeDeseriali
+ zer.class
+SHA-256-Digest: 37kteQBQ3Pbxu7+auyHvge6gpZna/Nvgr6Lpb4I921g=
+
+Name: com/fasterxml/jackson/databind/jsontype/impl/AsPropertyTypeSeria
+ lizer.class
+SHA-256-Digest: s/tk+MZkCgCn2M7pyFrIFscf30MGInOX4K7qt+x79qE=
+
+Name: com/fasterxml/jackson/databind/deser/BeanDeserializer.class
+SHA-256-Digest: 3yamh6aDUk37V93oUlwwi1hyE6dNN5YBiKO3CsGTi3A=
+
+Name: com/fasterxml/jackson/databind/ObjectMapper.class
+SHA-256-Digest: jaHmf4KhrPfBEzXuFP0L9IvzX5fCGlBuSIzWuPMY5Xg=
+
+Name: com/fasterxml/jackson/databind/introspect/POJOPropertiesCollecto
+ r.class
+SHA-256-Digest: UP/K8fl7qZWOJ2ZKe4IDRLrzbUiKS2fNFEEnpZWVhXA=
+
+Name: com/fasterxml/jackson/databind/ser/impl/UnwrappingBeanSerializer
+ .class
+SHA-256-Digest: 3dG/xEQRHLEwsNzhQfdGbhfNfqFPzzTR6fpySU1QexI=
+
+Name: com/fasterxml/jackson/databind/ser/SerializerCache.class
+SHA-256-Digest: eSWA0MxXIG3yw8pxPw0I/2zs4hQkH9Y1SjNGZW6c69s=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotatedConstructor.c
+ lass
+SHA-256-Digest: DLJ4+9sEmXlr8cRYbP2GugPcGMtkhzYy8a6Xg20sYsQ=
+
+Name: com/fasterxml/jackson/databind/introspect/VisibilityChecker$1.cl
+ ass
+SHA-256-Digest: si/pl/MXg7cIp6aN0CnTIufUR8rd88AtYymkYkQtuWU=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotatedClassResolver
+ .class
+SHA-256-Digest: 32zPYo/KwprjuITLJNlipgMf9vZV5aGTCSCDDi8OT9A=
+
+Name: com/fasterxml/jackson/databind/ser/Serializers$Base.class
+SHA-256-Digest: rvPR4/uJ/FyxQnjHPGGac/gwv5OM2SBtN2BNkzVhTRY=
+
+Name: com/fasterxml/jackson/databind/SerializationConfig.class
+SHA-256-Digest: 6LRojACp7errQbFTe52zgDqDYiRJMyP1Pb2uY6xMhEA=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonBooleanFor
+ matVisitor$Base.class
+SHA-256-Digest: HOPTd7MQOlcxbPud6MmYp7/2s7bdl0Pspm4N3dgoJOM=
+
+Name: com/fasterxml/jackson/databind/introspect/TypeResolutionContext.
+ class
+SHA-256-Digest: 5eJN7naLkLVGRd1cLvNGa23yChCajB5dlsD6Wmc5Vy0=
+
+Name: com/fasterxml/jackson/databind/annotation/JsonPOJOBuilder$Value.
+ class
+SHA-256-Digest: OvcyTsdM3pXs6jXNUKRMPO519wis1EYLD87eOz+CVc4=
+
+Name: com/fasterxml/jackson/databind/util/TokenBufferReadContext.class
+SHA-256-Digest: m7xAx5Je/mn/bFxqza/5s4BQct4XyMhdEhUo48ck02s=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonIntegerFor
+ matVisitor$Base.class
+SHA-256-Digest: Pkn5rafPwknGmokqBLmGNXs3JsezSh2Q0PgNKlpDL2w=
+
+Name: com/fasterxml/jackson/databind/ser/std/StdJdkSerializers$AtomicI
+ ntegerSerializer.class
+SHA-256-Digest: Vsw7LBGKjQDVU0EPxXcTDjT4NjcD+CXauOFgKL3BnXk=
+
+Name: com/fasterxml/jackson/databind/ser/std/DateSerializer.class
+SHA-256-Digest: qYW3JNGP+xCd1UJXVRMmXEohx8xWda1UnX20XBFCkEs=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonArrayForma
+ tVisitor$Base.class
+SHA-256-Digest: GAJqv03yPc5XS3dcUd7ghULqgFPrxqJzpP+lf8dgNxE=
+
+Name: com/fasterxml/jackson/databind/deser/std/StdDeserializer.class
+SHA-256-Digest: 22FxSxFZnX/dPhuhceraxtVLmVKDqaWlQIpwwzwqblU=
+
+Name: com/fasterxml/jackson/databind/ser/std/ToStringSerializer.class
+SHA-256-Digest: a4O66il9iYlZiUIlWKup0lfvfhYC4xcMhRIPutlbCCw=
+
+Name: com/fasterxml/jackson/databind/exc/PropertyBindingException.clas
+ s
+SHA-256-Digest: ZKmjBz6o/dDwrd1vJuR7LtjdnY9tKaduN37boPXBHCI=
+
+Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder$Me
+ mberIterator.class
+SHA-256-Digest: t1CYMP5I6vY8+1j3u5o5nGHxa/SB0rbkoGXPYiZzPiY=
+
+Name: com/fasterxml/jackson/databind/util/AccessPattern.class
+SHA-256-Digest: CqN2E58QDrT13g+uKGImB7/EfrsyUQUMk9bGC0QlELM=
+
+Name: com/fasterxml/jackson/databind/JsonMappingException.class
+SHA-256-Digest: DDAuWva2UxEHZfji6Th2XpnInpU+YREM+tPwGGgP2j8=
+
+Name: com/fasterxml/jackson/databind/util/CompactStringObjectMap.class
+SHA-256-Digest: m+HlbUX5v89wOi4oAFZ6DeCAwcHtetCWTT+bmv4iXys=
+
+Name: com/fasterxml/jackson/databind/deser/std/ThrowableDeserializer.c
+ lass
+SHA-256-Digest: DcMmwUYJe+EAmXdh3JUvtofqUODVAsQSR6WrcQwU3zg=
+
+Name: com/fasterxml/jackson/databind/deser/DefaultDeserializationConte
+ xt$Impl.class
+SHA-256-Digest: r+9y8N2+xsn+jhj7X0I7vG/l7LfDfm9P6ZIoFhoG7+Y=
+
+Name: com/fasterxml/jackson/databind/deser/std/NumberDeserializers$Int
+ egerDeserializer.class
+SHA-256-Digest: YMsvSKKCYC0FL6DnVynQ6J/BobuImyfdehkYeVdFPXw=
+
+Name: com/fasterxml/jackson/databind/util/StdDateFormat.class
+SHA-256-Digest: hKzxr4skMUqBLRG6n/kafuYJvzN+dZJ/ipD/EzSmJlQ=
+
+Name: com/fasterxml/jackson/databind/node/LongNode.class
+SHA-256-Digest: qOd0y1WsyomHtlPvkl/mwJtxzYvjgvEvvGG7wwOVbQY=
+
+Name: com/fasterxml/jackson/databind/ser/impl/SimpleFilterProvider.cla
+ ss
+SHA-256-Digest: lba7fwfc5i2eETsH1ZeIk6U/ioIqNkmbFsizyh2tWVE=
+
+Name: com/fasterxml/jackson/databind/cfg/MapperConfig.class
+SHA-256-Digest: IRKCT1YQC2e+vS0XLpQwQPKU7OhtmdpUkhPhXrBn/V4=
+
+Name: com/fasterxml/jackson/databind/util/ArrayBuilders.class
+SHA-256-Digest: fmJeXXFgqoUUYdTZs8h0j8wSgGOe+AjZE+O6BbXC2Rg=
+
+Name: com/fasterxml/jackson/databind/deser/DataFormatReaders.class
+SHA-256-Digest: ilqzGhrEX6+8Mmoh+4IFk/X9WJj7F7QctZAgSWdZ3Ls=
+
+Name: com/fasterxml/jackson/databind/introspect/POJOPropertyBuilder.cl
+ ass
+SHA-256-Digest: VxzgG+RhpYGPJcConHC1bYtDQhFcajZdtY+oDG4g7Pg=
+
+Name: com/fasterxml/jackson/databind/node/DoubleNode.class
+SHA-256-Digest: AtpDs2gGHhkakMkhgEcdt3OECmN2SObE1MzUAc9YsZw=
+
+Name: com/fasterxml/jackson/databind/annotation/JsonPOJOBuilder.class
+SHA-256-Digest: 1ChLIZkY4t7pBNm9uZPCkZnwM4qP8KyW45VAJ8I/sww=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotatedClass$Creator
+ s.class
+SHA-256-Digest: MIniaeM3CvvZECHyEeh5BOGA7XP/9Z5LKBA1IlUdZSo=
+
+Name: com/fasterxml/jackson/databind/ser/impl/SimpleBeanPropertyFilter
+ $FilterExceptFilter.class
+SHA-256-Digest: Lfci8nvcMFvp1WWBm+Be3JRwFHiXLdPAJZYsYa2/3/Y=
+
+Name: com/fasterxml/jackson/databind/ser/std/StdScalarSerializer.class
+SHA-256-Digest: UDkqkTkaCQeak1sl3xnvvNH1U1ewux9meETiZLsz0cQ=
+
+Name: com/fasterxml/jackson/databind/ObjectMapper$DefaultTyping.class
+SHA-256-Digest: DENv/cZI0hNgFJvXwhYLvHwSIGbKpsojVR6+p71edrA=
+
+Name: com/fasterxml/jackson/databind/ser/std/SqlDateSerializer.class
+SHA-256-Digest: m+GCdTUiDU1hBqx3ZHZGIQGzIgSMMVZAYyAqDV0txNo=
+
+Name: com/fasterxml/jackson/databind/type/TypeParser$MyTokenizer.class
+SHA-256-Digest: f1XZF7EKB1ThpUTgY06o7TO4Lht2K/HzLi3fgFUF7Pg=
+
+Name: com/fasterxml/jackson/databind/InjectableValues.class
+SHA-256-Digest: kqPe4thiCPfuKPlxWKJcxQCyBsTLNOsGsBDv9bE30ls=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonNullFormat
+ Visitor.class
+SHA-256-Digest: iU8FrZ4T2dkder60znY3X96TOLV0fFftToCyXdGY2I0=
+
+Name: com/fasterxml/jackson/databind/module/SimpleDeserializers.class
+SHA-256-Digest: HFyz4HNrGhAZY6VEe2HJPjAALl59f1PWpwyXN1KcxFE=
+
+Name: com/fasterxml/jackson/databind/jsonFormatVisitors/JsonStringForm
+ atVisitor.class
+SHA-256-Digest: eYlWbm8biCQYGLdZccBp3Ko1cW1KWFUv9r8pv7LP1ZI=
+
+Name: about.html
+SHA-256-Digest: 2NMfRgmZ04+jpAutwDVJ5f//tfDp8tu6sFSuSeDK+uQ=
+
+Name: com/fasterxml/jackson/databind/deser/impl/PropertyBasedCreator.c
+ lass
+SHA-256-Digest: mJrA8/DBQe2Emsn8Aik3+XpvbE5VdqGeMxPSVZBbeIE=
+
+Name: com/fasterxml/jackson/databind/node/JsonNodeType.class
+SHA-256-Digest: tkSPBsOfOTXfkEfaGL2a1b+YLFIYUDiMiGNpZSSdYO0=
+
+Name: com/fasterxml/jackson/databind/ser/std/StdKeySerializers$Default
+ .class
+SHA-256-Digest: /kLlI1giK72aSvCrOTWaEzOZsKYKkpV+KZI8S1vpTQg=
+
+Name: com/fasterxml/jackson/databind/ser/std/StdArraySerializers$CharA
+ rraySerializer.class
+SHA-256-Digest: CYANoa4RB5alEDZ5bCW0QsbTtVVHalCOjDXFyaHeU3g=
+
+Name: com/fasterxml/jackson/databind/deser/std/ArrayBlockingQueueDeser
+ ializer.class
+SHA-256-Digest: Ju/FFS7w79DVa7PZ92hocaqSXtJwmhfU3tjDeBsKSTk=
+
+Name: com/fasterxml/jackson/databind/ser/impl/PropertySerializerMap$Se
+ rializerAndMapResult.class
+SHA-256-Digest: Xxk2vM0SoPDY9I9uQdvE3LwCR0V12vYLtaPAQeVQZ8k=
+
+Name: com/fasterxml/jackson/databind/deser/std/PrimitiveArrayDeseriali
+ zers$ShortDeser.class
+SHA-256-Digest: YflVusaB9sifst/r+udXvjKC8l7dGFrWXSbNTTuBDRs=
+
+Name: com/fasterxml/jackson/databind/ext/CoreXMLDeserializers.class
+SHA-256-Digest: 7I5y3x+S5cCORCnX/pTBE+j5LSzCsF2rBhFpuKuLzVQ=
+
+Name: com/fasterxml/jackson/databind/introspect/AnnotatedFieldCollecto
+ r$FieldBuilder.class
+SHA-256-Digest: gD+6crUdE0n1w0+5j/uniwJJxySCozpIQqEUnJzEnNk=
+
+Name: com/fasterxml/jackson/databind/ser/std/BooleanSerializer.class
+SHA-256-Digest: VTmJD36d+s1YCuaPdzJEJqwRpkO9gro9PW2e7JiSofA=
+
+Name: com/fasterxml/jackson/databind/introspect/Annotated.class
+SHA-256-Digest: pHStm9AxXtTfcMXYnIYGUhy+2HIE5+xkr0znepRZ+QA=
+
+Name: com/fasterxml/jackson/databind/JsonNode.class
+SHA-256-Digest: eLo6MnM85+88x3f4fK3FwyazW1JUOw0uKRh1zESZvk0=
+
+Name: com/fasterxml/jackson/databind/introspect/BasicBeanDescription.c
+ lass
+SHA-256-Digest: mUXBmVgCAR6dCBaDwuz5CTEbNCz+571oTLiFkwbMouk=
+
+Name: com/fasterxml/jackson/databind/ObjectWriter.class
+SHA-256-Digest: 4C8HSu4v8LW0FEbRMdSkV92n8O9nMxS8nxlagYKFVRY=
+
+Name: com/fasterxml/jackson/databind/JsonDeserializer.class
+SHA-256-Digest: OhGPTuqXUy/exf25AoGBf35A1mLvms5VNL2aC/T/K2I=
+
+Name: com/fasterxml/jackson/databind/ext/CoreXMLDeserializers$Std.clas
+ s
+SHA-256-Digest: z3XYJHlcDo5LTp+O536EqveJMAzy5lR6BPiY20xccoA=
+
+Name: com/fasterxml/jackson/databind/util/TypeKey.class
+SHA-256-Digest: SmYP6xVu5/4asm8u5gtM9D3L1HNgwabeCRIFem+So3I=
+
+Name: com/fasterxml/jackson/databind/type/TypeBindings$AsKey.class
+SHA-256-Digest: FvwigAsxQ2plagy4aBDdr6Lv4Vd2diQCNMasqoD0Gxk=
+

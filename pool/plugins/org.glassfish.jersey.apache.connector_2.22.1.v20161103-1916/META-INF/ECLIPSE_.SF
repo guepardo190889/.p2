@@ -1,0 +1,61 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: 0Gwzj84OhKExkjuhLfPIzNNV0bvMZ
+ IG5P8yh7DybsMM=
+SHA-256-Digest-Manifest: mR0SlzTkmbF2v1NKdDzdLkXkfwrS+aiTrATtv6NY/pE=
+Created-By: 1.8.0_131 (Oracle Corporation)
+
+Name: about.html
+SHA-256-Digest: AzEdQAqPOhe1OcxSxlZ7l1iAqOZFqirRuq1lVIl1lrQ=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.glassfish.jersey.ap
+ ache.connector/pom.xml
+SHA-256-Digest: 4Eq9jcllUqcH3kzMtxQZZyKRukpoPtaZzx5DHa5qms0=
+
+Name: about_files/CDDL+GPL_LICENSE.html
+SHA-256-Digest: 5W5forONtYP59FVmudbGAr356eGvZKOsmA7sV0oEylc=
+
+Name: org/glassfish/jersey/apache/connector/ApacheConnectorProvider.cl
+ ass
+SHA-256-Digest: uxAclZhdHhBxC6XUBsMxitNmljxqi4J37bHKxumXUsU=
+
+Name: org/glassfish/jersey/apache/connector/localization.properties
+SHA-256-Digest: m7G4KrRWEycNuMxVcyKvDXnlAeQ8SkCp/io56AG1DtM=
+
+Name: org/glassfish/jersey/apache/connector/ApacheConnector$2.class
+SHA-256-Digest: msE8XR/AhK44xlH0O9o8D69QY+64lpkUgxGdBbSIoBI=
+
+Name: org/glassfish/jersey/apache/connector/ApacheConnector$1.class
+SHA-256-Digest: vQFcghSoXcH8mNbSW7Ro65y0Q1flse2qgEJ+/FhNNZ4=
+
+Name: org/glassfish/jersey/apache/connector/ApacheConnector.class
+SHA-256-Digest: XSeEXH7tf6ZgsnG89XM0b9XRslmj7wuf8sihLGa11Zg=
+
+Name: org/glassfish/jersey/apache/connector/ApacheConnector$HttpClient
+ Connection.class
+SHA-256-Digest: vBqGYUa2tLP8vqfLQ+rPhJcKDtMTuH924KEES1Ajxoo=
+
+Name: org/glassfish/jersey/apache/connector/ApacheClientProperties.cla
+ ss
+SHA-256-Digest: rVHjdLV5EGJQi4fDjsUPFQm+cChJ3MQ8ofwGuUKzFPw=
+
+Name: META-INF/maven/org.eclipse.orbit.bundles/org.glassfish.jersey.ap
+ ache.connector/pom.properties
+SHA-256-Digest: 63RyXxG2uQ67EyPgx6q4SZF6yvefAS9ivaSVTfkjiZg=
+
+Name: org/glassfish/jersey/apache/connector/ApacheConnector$2$1.class
+SHA-256-Digest: GOebeu8IirNi4RVZKaXvFPtgTR6CwVmUlzAWHOAPwwc=
+
+Name: org/glassfish/jersey/apache/connector/ApacheConnector$Connection
+ Factory.class
+SHA-256-Digest: EP+TGDi9yfERw1y6c8kzYy0bvoaH6nAdE/eJwPzY2xA=
+
+Name: org/glassfish/jersey/apache/connector/ApacheConnector$HttpClient
+ ResponseInputStream.class
+SHA-256-Digest: buT9aJ5EYtDDfIgBjgNs8Lp0FzOqZ46Sz1sAa1pAKOA=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA-256-Digest: C+H9aRxOOYg1/h6pVrz4gF8SBzdqk01sKQTSZoWSEVw=
+
+Name: org/glassfish/jersey/apache/connector/LocalizationMessages.class
+SHA-256-Digest: jpdxT5PHV9/qgvYrp4effdd4uUZa5r8uXDn1JeDFayo=
+
